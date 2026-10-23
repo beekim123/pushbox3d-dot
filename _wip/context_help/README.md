@@ -22,3 +22,11 @@ remote assets are still incomplete (47/62 GLB, 0/18 audio, 0/6 Blender sources).
 - `scripts/main.gd.uid`: `abcafb008acc0c644f562ce1f66548628dbfbcda3fd7e1d3b03bb2eb58f974ca`
 - `scripts/context_help.gd`: `87cc343f9d568eb99b4dac3ec355366a56a9878f98d34ddd8262d9c8c354e220`
 - `scripts/context_help.gd.uid`: `b42951d6ee7c0c4cb19947d766060e93b53f426b045422630927d425544b3fa5`
+
+## Author evidence added — 2026-10-23 15:09 UTC
+
+The author supplied the import/font/capture logs, capture script, font-coverage
+source/result, and updated decisions/test report. Independent review remains pending.
+These checks do not promote the feature to main or imply player acceptance. The four
+PNG captures were not uploaded while binary confirmation is unresolved. Production
+source hashes still match the first WIP snapshot.

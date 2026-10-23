@@ -1,0 +1,19 @@
+{
+  "engine": "4.7.2-stable (official)",
+  "explicit_symbols": "↑↓←→…✓·",
+  "font_families": [
+    "Noto Sans CJK JP"
+  ],
+  "missing": [],
+  "passed": true,
+  "platform": "Linux",
+  "scope": "Cloud font coverage only; macOS font fallback not tested.",
+  "source_files": [
+    "scripts/main.gd",
+    "scripts/resume_controller.gd",
+    "scripts/context_help.gd",
+    "assets/levels.json"
+  ],
+  "total_checked": 539,
+  "unique_cjk_characters": 532
+}
