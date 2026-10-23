@@ -3,6 +3,7 @@ extends Node3D
 const UI = preload("res://scripts/ui_kit.gd")
 const RULES = preload("res://scripts/puzzle_rules.gd")
 const HINTS = preload("res://scripts/hint_solver.gd")
+const CONTEXT_HELP = preload("res://scripts/context_help.gd")
 const HINT_OVERLAY = preload("res://scripts/hint_overlay.gd")
 const RESUME = preload("res://scripts/resume_controller.gd")
 const VIEW = preload("res://scripts/world_view.gd")
@@ -26,6 +27,8 @@ var exit_previous_mode:="title"
 var exit_status: Label
 var shutting_down:=false
 var require_direction_release:=false
+var help_release_keys: Dictionary={}
+const DIRECTION_KEYS := [KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_W,KEY_A,KEY_S,KEY_D]
 var hints = HINTS.new()
 var hint_request: int = -1
 var hint_active := false
@@ -236,6 +239,7 @@ func sfx(name: String) -> void:
 	player.play()
 
 func clear_ui(w: String) -> void:
+	guard_help_dismissal()
 	invalidate_hint()
 	for child in ui.get_children():
 		ui.remove_child(child)
@@ -592,6 +596,7 @@ func open_modal(title: String, subtitle: String) -> VBoxContainer:
 	return v
 
 func close_modal() -> void:
+	guard_help_dismissal()
 	invalidate_hint()
 	if modal:
 		ui.remove_child(modal)
@@ -599,7 +604,14 @@ func close_modal() -> void:
 		modal=null
 
 func show_help() -> void:
+	if exit_pending or shutting_down: return
 	var v:=open_modal("一步一步，把世界织好","没有倒计时，没有生命损耗。每个错误都可以撤销。")
+	modal.set_meta("contextual_help",true)
+	var context:=CONTEXT_HELP.text_for(mode,level)
+	if not context.is_empty():
+		var exercise:=wrapped(context,510,18)
+		exercise.set_meta("chapter_exercise",true)
+		v.add_child(exercise)
 	v.add_child(wrapped("方向键 / WASD：移动与推动\nZ / Backspace：无限撤销\nR：重置本关（重置本身也可撤销）\nEsc：关闭弹窗 / 返回选关\nM：切换声音\nH：线索开关；J：主动展开下一层\nF2：精细 / 轻量画质（软件渲染器自动轻量）\n\n只有铺路格可以移动，草地与边缘园景不是可走的格子。\n把所有箱子推到发光目标上，即可完成谜题。只能推，不能拉；一次只能推动一只箱子。",510,20))
 	v.add_child(UI.button("明白了",close_modal,Vector2(510,54)))
 
@@ -614,6 +626,20 @@ func toggle_mute() -> void:
 	save_progress()
 	for n in find_children("","Button",true,false):
 		if n.text.begins_with("声音"): n.text="声音  "+("关" if progress.muted else "开")
+
+func guard_help_dismissal() -> void:
+	if not is_instance_valid(modal) or not modal.get_meta("contextual_help",false): return
+	pending_direction=""
+	help_release_keys.clear()
+	for key in DIRECTION_KEYS:
+		if Input.is_physical_key_pressed(key): help_release_keys[key]=true
+
+func _input(event: InputEvent) -> void:
+	# Key releases are observed before UI consumption, including release/repress
+	# within one rendered frame. Do not consume the event or mutate game state.
+	if event is InputEventKey and not event.pressed:
+		var key: int=event.physical_keycode if event.physical_keycode!=0 else event.keycode
+		help_release_keys.erase(key)
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if exit_pending: return
@@ -643,7 +669,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	get_viewport().set_input_as_handled()
 
 func request_direction(direction: String) -> void:
-	if require_direction_release or mode!="level" or modal: return
+	if require_direction_release or not help_release_keys.is_empty() or mode!="level" or modal: return
 	hold_timer=0.24
 	if moving:
 		pending_direction=direction
@@ -660,6 +686,9 @@ func _process(delta: float) -> void:
 		refresh_resume_ui()
 		if exit_pending and not exit_waiting: poll_resume_exit()
 	if exit_pending: return
+	# Focus changes may clear physical key state without a key-up event.
+	for key in help_release_keys.keys():
+		if not Input.is_physical_key_pressed(key): help_release_keys.erase(key)
 	if require_direction_release:
 		var held:=false
 		for key in [KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_W,KEY_A,KEY_S,KEY_D]:
@@ -672,7 +701,7 @@ func _process(delta: float) -> void:
 		capture_pending=false
 		capture.call_deferred()
 	hold_timer-=delta
-	if mode=="level" and not moving and not modal and not require_direction_release:
+	if mode=="level" and not moving and not modal and not require_direction_release and help_release_keys.is_empty():
 		if hold_timer<=0.0:
 			var dir:=""
 			if Input.is_physical_key_pressed(KEY_UP) or Input.is_physical_key_pressed(KEY_W): dir="U"

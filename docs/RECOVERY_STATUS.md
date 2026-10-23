@@ -1,5 +1,38 @@
 # Cloud interruption and recovery record
 
+## Latest source checkpoint and newer recovery archives — 2026-10-23 15:32 UTC
+
+The F1 contextual-help integration is now in this main source checkpoint: chapter
+practice wording plus help-close key-release protection. Final sources are locked
+in `tests/context_help_audit/FROZEN_TEXT_MANIFEST.json`; focused review passed 2,889
+assertions plus 352 separately counted parsed key events. Six final X11 captures
+were independently inspected locally. A native WASD A hold of 1,273 ms passed;
+physical-arrow-key and OS autorepeat limits remain explicit in the report. A new
+204-level original-handler run also completed: 7,852 checks, zero failures, exit 0,
+with unchanged input hashes. This does not reuse the earlier interrupted run.
+
+The newer complete resume-stage archives are a recovery fallback for main `77e1d7b`,
+including daylight and resume, **before this F1 change**:
+
+| File | Bytes | SHA256 |
+| --- | ---: | --- |
+| Loom_Resume_Full_4.7.2.zip | 38149510 | 2d1d3a908ac921f7397d5a9fa582b88062fab15724e2a1dd8460f655dff9184b |
+| Loom_Resume_Project_4.7.2.zip | 17015505 | d35c4e7f27e741323c71618d9461f21a93346756f412c4fa6b48a8fac5b46a1b |
+
+The full archive was durably saved. Native delivery of the Project archive was
+accepted at 2026-10-23 14:57 UTC; this is not proof of user download or art acceptance.
+Both contain the complete local binary assets. Earlier 12:42 hints archives remain
+historical, not the newest recovery baseline. No private storage identifiers are
+published. The archives are separate from the still incomplete GitHub asset migration.
+
+GitHub still has 47/62 GLB, 0/18 audio, and 0/6 Blender sources. Context-help PNGs
+were not uploaded. New binary uploads remain paused under the unresolved confirmation.
+The WIP history remains on `work/context-help` through `156d9f2`; this main tree does
+not include `_wip` or private userdata. Repository-only documentation changes after
+author freeze are recorded in `CONTEXT_HELP_SOURCE_CHECKPOINT.json`.
+
+---
+
 ## Recovered and revalidated — 2026-10-23 14:39 UTC
 
 The complete delivered project backup has been restored in the recovered cloud workspace.

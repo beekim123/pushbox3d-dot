@@ -56,3 +56,14 @@ CPU软件渲染器的结果不等于Mac/GPU性能；未做真人谜题盲测、�
 - 已亲看并复制当前原生窗口截图 `screenshots/v2/resume_title.png`、`resume_restored.png`、`resume_exit_failure.png`。退出图为真实外部文件冲突，显示“不是当前最新局面”“不保证仍可恢复”，无文本裁切；不是停机前的假注入旧图。
 - 原两项阻塞缺陷新环境回归通过：取消启动旧档reader会明确只读暂停，不再静默停存；磁盘token变更清可恢复candidate，禁用Continue，只保留参考摘要，不承诺旧档可恢复。
 - 独审测得本轮共享2ms软预算调用峰9.616ms，8192历史tick峰3.072ms；这些是实际测量而非硬实时保证。当前Linux/X11结果不证明macOS/Retina/硬断电持久性或极限历史完全无卡顿。
+
+## F1 情境帮助：最终增量验证
+
+- 首版生产导入无ERROR；最终新增formatter纳入Linux实际字体链扫描，532汉字及7符号无缺字。`tests/results/context_help_import.log`、`context_help_font.log`。
+- 真实Godot图形窗口1440×900、高画质截图已生成并亲看：`screenshots/context_help/city_04.png`（最长）、`heaven_13.png`、`city_06.png`、`title_generic.png`。长说明与关闭按钮完整，无裁切；非棋局标题帮助不显示残留上一关章说明。脚本与实际尺寸在 `tests/context_help_capture.gd`、`tests/results/context_help_capture.log`。
+- 最初CLI分辨率被窗口初始化限制到1180×737；最终测试脚本明确设置root.size后重拍为1440×900。只将最终目标尺寸图片作为本轮证据，不宣称Mac/Retina/小窗口已测。
+- 最终类型守卫版本独审：193行为＋2696布局＝2889断言通过，352个真实Input.parse_input_event键事件；覆盖8方向键、同帧release/repress、R/Z、缓冲与已提交tween终点、胜利协调、pending hint、退出优先级及实际自动保存往返。全204关加非棋局模式共208布局场景；不是2889条关卡，也不把事件数重复计作断言。证据 `tests/context_help_audit/summary.json`、`behavior.json`、`layout.json`。
+- 缺失/null/数字/数组/空白元数据省略已加负向断言；内置关卡数据、规则、H/J及续玩模块未改变。最终main SHA为15a68661146db4cc1e47c11ea2a60ca2be0115099d529d0e54a1b46a11a6650e，formatter SHA为0b43d5dedeffa7a305c87a897b103766097c72387ce601ba7a342488fbfd32f4；独审前后运行输入hash一致。
+- 独审在最终类型守卫源码上另行真实X11高画质重拍并亲看6图：`screenshots/context_help_audit/`，包括city_04、heaven_13、city_06、confluence_01、title_generic、world_stale_level，全部1440×900。选关保留旧level对象时exercise_count仍为0，六图无裁切。证据 `tests/context_help_audit/native_manifest.json`；保留作者首版4图但不混称最终hash截图。
+- 本阶段最终源码另行新跑全204关真实处理器：7852检查、204完成、0失败、退出0，无ERROR/WARNING/泄漏；全部运行源码、关卡与project前后SHA一致。证据 `tests/results/context_help_handlers.json`、`.log`，JSON含源指纹。该回归带混音、QA关闭续玩sidecar，因此证明原玩法无回归，不能替代续玩/帮助生命周期专项；不是复用上一阶段7852。Linux/X11与当前1440×900目标以外的平台、Retina、小窗口尚未验证。
+- 额外原生窗口输入探针：WASD A产生真实physical_keycode=65，跨关闭帮助按住1273ms、21个held/guard/moves=0采样；释放后新a只走1步。独立证据 `tests/context_help_audit/native_hold_wasd.json`。原生Left由CUA产生physical_keycode=0，不能据此验证原生箭头held状态；两次探针无echo，不声称OS自动重复已测。方向键与echo覆盖来自上面的Input.parse_input_event行为测试，不能混称原生硬件验收；此额外探针不重复计入2889断言。

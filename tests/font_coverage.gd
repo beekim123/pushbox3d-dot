@@ -4,7 +4,7 @@ func _initialize():
 	var ui_script = load("res://scripts/ui_kit.gd")
 	var actual_theme = ui_script.theme(Color.WHITE)
 	var font: Font = actual_theme.default_font
-	var source_files=["scripts/main.gd","scripts/resume_controller.gd","assets/levels.json"]
+	var source_files=["scripts/main.gd","scripts/resume_controller.gd","scripts/context_help.gd","assets/levels.json"]
 	var corpus=""
 	for source in source_files: corpus+=FileAccess.get_file_as_string("res://"+source)
 	var unique = {}

@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)
+
+QUALITY high adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+CONTEXT_NATIVE_CAPTURE {"cached_level":"city_04","exercise_count":1,"id":"city_04","image_size":[1440,900],"mode":"level","path":"res://screenshots/context_help_audit/city_04.png","save_error":0}
+CONTEXT_NATIVE_CAPTURE {"cached_level":"heaven_13","exercise_count":1,"id":"heaven_13","image_size":[1440,900],"mode":"level","path":"res://screenshots/context_help_audit/heaven_13.png","save_error":0}
+CONTEXT_NATIVE_CAPTURE {"cached_level":"city_06","exercise_count":1,"id":"city_06","image_size":[1440,900],"mode":"level","path":"res://screenshots/context_help_audit/city_06.png","save_error":0}
+CONTEXT_NATIVE_CAPTURE {"cached_level":"confluence_01","exercise_count":1,"id":"confluence_01","image_size":[1440,900],"mode":"level","path":"res://screenshots/context_help_audit/confluence_01.png","save_error":0}
+CONTEXT_NATIVE_CAPTURE {"cached_level":"confluence_01","exercise_count":0,"id":"world_stale_level","image_size":[1440,900],"mode":"world","path":"res://screenshots/context_help_audit/world_stale_level.png","save_error":0}
+CONTEXT_NATIVE_CAPTURE {"cached_level":"confluence_01","exercise_count":0,"id":"title_generic","image_size":[1440,900],"mode":"title","path":"res://screenshots/context_help_audit/title_generic.png","save_error":0}

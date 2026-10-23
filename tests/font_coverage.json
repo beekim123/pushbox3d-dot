@@ -11,8 +11,9 @@
   "source_files": [
     "scripts/main.gd",
     "scripts/resume_controller.gd",
+    "scripts/context_help.gd",
     "assets/levels.json"
   ],
-  "total_checked": 536,
-  "unique_cjk_characters": 529
+  "total_checked": 539,
+  "unique_cjk_characters": 532
 }
