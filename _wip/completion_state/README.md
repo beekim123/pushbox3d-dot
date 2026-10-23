@@ -29,3 +29,14 @@ assertions passing; final independent verification remains pending.
 
 Current main.gd SHA-256: `b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e`.
 The initial 9e42102d draft remains historical and is not the current candidate.
+
+## Author/root regression evidence — 2026-10-23 15:47 UTC
+
+The candidate source still has SHA b529ffb5…. The author supplied 14 passing focused
+reconciliation checks, and the parent observed a fresh 204-level original-handler
+run completing 8,056 checks, zero failures, exit 0. Its source map/log hash were
+checked when frozen; evidence is retained under tests/results/.
+
+Independent review is still running. Author documentation is not frozen yet and is
+intentionally omitted from this increment. No final acceptance/main promotion is
+implied; these are new scoped results, not reused context-help counts.
