@@ -1,0 +1,1617 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "Approved chapter learning_goal corrections only; all puzzle structure, IDs/order, pars and saved solutions unchanged.",
+  "historical_audit": "fourfold_next/pacing/metrics.json retains original prechange hashes and optimal-envelope results.",
+  "main_gd_note": "Concurrent hint integration changed main.gd after audit; it is observational UI context, not a frozen puzzle-validation dependency.",
+  "approved_changes": [
+    {
+      "key": "city_chapter_1",
+      "ids": [
+        "city_01",
+        "city_02",
+        "city_03",
+        "city_04",
+        "city_05"
+      ],
+      "old": "先让一只箱子压住灯板，另一只才能借桥通过。",
+      "new": "箱子压住灯板后桥门开启；按当前布局，让旅人或另一只箱子借桥通行。"
+    },
+    {
+      "key": "city_chapter_2",
+      "ids": [
+        "city_06",
+        "city_07",
+        "city_08",
+        "city_09",
+        "city_10"
+      ],
+      "old": "压桥箱不是固定工具，何时收回也要安排。",
+      "new": "先让一只箱子在兼作目标的灯板上停稳，再让旅人借桥绕到另一只箱子的推动位置。"
+    },
+    {
+      "key": "inferno_chapter_1",
+      "ids": [
+        "inferno_01",
+        "inferno_02",
+        "inferno_03",
+        "inferno_04",
+        "inferno_05"
+      ],
+      "old": "箱子进入炉门后出现在成对出口，旅人仍留在原处。",
+      "new": "箱子进入炉门后会出现在成对出口；旅人移到箱子原来的格子，不会随箱传送。"
+    },
+    {
+      "key": "inferno_chapter_7",
+      "ids": [
+        "inferno_31",
+        "inferno_32",
+        "inferno_33",
+        "inferno_34",
+        "inferno_35"
+      ],
+      "old": "三只箱子轮流使用出口，不要把通道当永久仓库。",
+      "new": "三只箱子共享取位空间；先留好炉门出口，再安排传送与归位次序。"
+    }
+  ],
+  "source_fingerprints": {
+    "assets/campaign_preview.json": {
+      "before_sha256": "b005ed001ed5ceb6fdb7b2c3c7dd71c58a9bfeed249f73c2de0dbce42b6de367",
+      "after_sha256": "d64dd749dcd361bf25155fd86da6e8a1f4c04b6a80cc790a6152ad5ba385e710"
+    },
+    "assets/levels.json": {
+      "before_sha256": "8b24090cc84a25bc99f41fd6eb4e3785ba8353a3117cc3ceab4c041a330b4bb0",
+      "after_sha256": "3658774f0015b859ff27e13b0ef48c6e5071df921d0d155be797565de302fcda"
+    },
+    "docs/campaign_chapters.md": {
+      "before_sha256": "569b971c987833c10a30694e1a2118d13daa05379f2ab935a6781bf2bd35c824",
+      "after_sha256": "ab029e31301e61270cdcc442b46a6a2082a98196cc1508680af0bb741cd48bb5"
+    },
+    "tests/campaign_parts/city.json": {
+      "before_sha256": "0529a7e63d9ebac0e7613d112a961b856d03df50b9f75e846aa73cbe4b96e1c8",
+      "after_sha256": "a64e98b6dbd36b328dac44896510e7292cbdcbeca987528c3219a881815c68f2"
+    },
+    "tests/campaign_parts/inferno.json": {
+      "before_sha256": "19d4e4bda25f85232175c1158e2a8a24a7cac84e8e1e011d8ee7780a4623f2e7",
+      "after_sha256": "b7749900eccc920493b6b0dd1005e8000c69b24f0f528221a11a3aab840b544d"
+    },
+    "tools/generate_campaign.py": {
+      "before_sha256": "85dc7404d2fad8a342f9d589743d782172db9c7d38b4ec1fa309e3ad60264066",
+      "after_sha256": "7c159dffa9cd578b1cc51dfa0a9a99c23afbd7c6ac31119a021955765a1c2b34"
+    }
+  },
+  "solver_report_sha256": "8aca00614377e857023e16db0949b164b5e9087e960e028e377561dcc6f1279b",
+  "solver_report_unchanged": true,
+  "puzzle_rules_sha256": "b34ef77f76bb36ce99601210cae6cf5e8a1a2f244924135c40388112fbd6e560",
+  "puzzle_rules_unchanged": true,
+  "preflight": [
+    {
+      "path": "tools/generate_campaign.py",
+      "syntax_valid": true,
+      "only_assignment_changed": "LESSONS"
+    },
+    {
+      "path": "assets/campaign_preview.json",
+      "changed_level_ids": [
+        "inferno_01",
+        "inferno_02",
+        "inferno_03",
+        "inferno_04",
+        "inferno_05",
+        "city_01",
+        "city_02",
+        "city_03",
+        "city_04",
+        "city_05"
+      ],
+      "only_changed_field": "learning_goal",
+      "normalized_excluding_learning_goal_identical": true
+    },
+    {
+      "path": "tests/campaign_parts/city.json",
+      "changed_level_ids": [
+        "city_01",
+        "city_02",
+        "city_03",
+        "city_04",
+        "city_05",
+        "city_06",
+        "city_07",
+        "city_08",
+        "city_09",
+        "city_10"
+      ],
+      "only_changed_field": "learning_goal",
+      "normalized_excluding_learning_goal_identical": true
+    },
+    {
+      "path": "tests/campaign_parts/inferno.json",
+      "changed_level_ids": [
+        "inferno_01",
+        "inferno_02",
+        "inferno_03",
+        "inferno_04",
+        "inferno_05",
+        "inferno_31",
+        "inferno_32",
+        "inferno_33",
+        "inferno_34",
+        "inferno_35"
+      ],
+      "only_changed_field": "learning_goal",
+      "normalized_excluding_learning_goal_identical": true
+    },
+    {
+      "path": "docs/campaign_chapters.md",
+      "exact_paragraph_replacements": 4
+    },
+    {
+      "path": "assets/levels.json",
+      "changed_level_ids": [
+        "inferno_01",
+        "inferno_02",
+        "inferno_03",
+        "inferno_04",
+        "inferno_05",
+        "inferno_31",
+        "inferno_32",
+        "inferno_33",
+        "inferno_34",
+        "inferno_35",
+        "city_01",
+        "city_02",
+        "city_03",
+        "city_04",
+        "city_05",
+        "city_06",
+        "city_07",
+        "city_08",
+        "city_09",
+        "city_10"
+      ],
+      "only_changed_field": "learning_goal",
+      "normalized_excluding_learning_goal_identical": true
+    }
+  ],
+  "verification": {
+    "levels_replayed": 204,
+    "all_won": true,
+    "all_costs_match": true,
+    "all_snapshots_match": true,
+    "normalized_level_data_excluding_learning_goal_identical": true,
+    "ids_order_chapter_stage_and_save_keys_unchanged": true,
+    "no_candidate_generation": true,
+    "no_new_optimality_claim": true,
+    "ui_smoke_test": "not_run"
+  },
+  "levels": [
+    {
+      "id": "heaven_01",
+      "pushes": 1,
+      "moves": 1,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_02",
+      "pushes": 1,
+      "moves": 4,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_03",
+      "pushes": 2,
+      "moves": 5,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_04",
+      "pushes": 3,
+      "moves": 6,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_05",
+      "pushes": 3,
+      "moves": 8,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_06",
+      "pushes": 4,
+      "moves": 6,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_07",
+      "pushes": 4,
+      "moves": 11,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_08",
+      "pushes": 4,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_09",
+      "pushes": 4,
+      "moves": 22,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_10",
+      "pushes": 5,
+      "moves": 13,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_11",
+      "pushes": 5,
+      "moves": 13,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_12",
+      "pushes": 5,
+      "moves": 20,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_13",
+      "pushes": 6,
+      "moves": 15,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_14",
+      "pushes": 6,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_15",
+      "pushes": 8,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_16",
+      "pushes": 5,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_17",
+      "pushes": 7,
+      "moves": 20,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_18",
+      "pushes": 7,
+      "moves": 24,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_19",
+      "pushes": 10,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_20",
+      "pushes": 10,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_21",
+      "pushes": 6,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_22",
+      "pushes": 7,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_23",
+      "pushes": 7,
+      "moves": 21,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_24",
+      "pushes": 9,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_25",
+      "pushes": 9,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_26",
+      "pushes": 7,
+      "moves": 13,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_27",
+      "pushes": 7,
+      "moves": 21,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_28",
+      "pushes": 8,
+      "moves": 20,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_29",
+      "pushes": 8,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_30",
+      "pushes": 9,
+      "moves": 28,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_31",
+      "pushes": 8,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_32",
+      "pushes": 8,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_33",
+      "pushes": 10,
+      "moves": 28,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_34",
+      "pushes": 10,
+      "moves": 28,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_35",
+      "pushes": 11,
+      "moves": 31,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_36",
+      "pushes": 9,
+      "moves": 22,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_37",
+      "pushes": 10,
+      "moves": 20,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_38",
+      "pushes": 10,
+      "moves": 42,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_39",
+      "pushes": 11,
+      "moves": 31,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_40",
+      "pushes": 16,
+      "moves": 52,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_41",
+      "pushes": 10,
+      "moves": 31,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_42",
+      "pushes": 10,
+      "moves": 37,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_43",
+      "pushes": 11,
+      "moves": 33,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_44",
+      "pushes": 12,
+      "moves": 37,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_45",
+      "pushes": 14,
+      "moves": 41,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_46",
+      "pushes": 11,
+      "moves": 36,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_47",
+      "pushes": 12,
+      "moves": 37,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_48",
+      "pushes": 13,
+      "moves": 53,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_49",
+      "pushes": 14,
+      "moves": 43,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "heaven_50",
+      "pushes": 14,
+      "moves": 47,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_01",
+      "pushes": 2,
+      "moves": 6,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_02",
+      "pushes": 2,
+      "moves": 5,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_03",
+      "pushes": 3,
+      "moves": 7,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_04",
+      "pushes": 3,
+      "moves": 11,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_05",
+      "pushes": 5,
+      "moves": 14,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_06",
+      "pushes": 4,
+      "moves": 9,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_07",
+      "pushes": 4,
+      "moves": 17,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_08",
+      "pushes": 5,
+      "moves": 15,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_09",
+      "pushes": 5,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_10",
+      "pushes": 5,
+      "moves": 21,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_11",
+      "pushes": 5,
+      "moves": 14,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_12",
+      "pushes": 5,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_13",
+      "pushes": 5,
+      "moves": 26,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_14",
+      "pushes": 7,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_15",
+      "pushes": 8,
+      "moves": 30,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_16",
+      "pushes": 5,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_17",
+      "pushes": 6,
+      "moves": 14,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_18",
+      "pushes": 6,
+      "moves": 17,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_19",
+      "pushes": 7,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_20",
+      "pushes": 9,
+      "moves": 21,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_21",
+      "pushes": 7,
+      "moves": 15,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_22",
+      "pushes": 7,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_23",
+      "pushes": 7,
+      "moves": 20,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_24",
+      "pushes": 9,
+      "moves": 20,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_25",
+      "pushes": 10,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_26",
+      "pushes": 8,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_27",
+      "pushes": 8,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_28",
+      "pushes": 9,
+      "moves": 36,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_29",
+      "pushes": 10,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_30",
+      "pushes": 11,
+      "moves": 28,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_31",
+      "pushes": 9,
+      "moves": 15,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_32",
+      "pushes": 9,
+      "moves": 16,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_33",
+      "pushes": 9,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_34",
+      "pushes": 10,
+      "moves": 24,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_35",
+      "pushes": 11,
+      "moves": 35,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_36",
+      "pushes": 9,
+      "moves": 33,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_37",
+      "pushes": 11,
+      "moves": 66,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_38",
+      "pushes": 12,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_39",
+      "pushes": 12,
+      "moves": 45,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_40",
+      "pushes": 13,
+      "moves": 54,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_41",
+      "pushes": 10,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_42",
+      "pushes": 12,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_43",
+      "pushes": 12,
+      "moves": 33,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_44",
+      "pushes": 14,
+      "moves": 45,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_45",
+      "pushes": 17,
+      "moves": 75,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_46",
+      "pushes": 13,
+      "moves": 54,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_47",
+      "pushes": 15,
+      "moves": 42,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_48",
+      "pushes": 15,
+      "moves": 46,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_49",
+      "pushes": 16,
+      "moves": 47,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "inferno_50",
+      "pushes": 16,
+      "moves": 52,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_01",
+      "pushes": 1,
+      "moves": 6,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_02",
+      "pushes": 1,
+      "moves": 6,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_03",
+      "pushes": 3,
+      "moves": 6,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_04",
+      "pushes": 3,
+      "moves": 11,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_05",
+      "pushes": 4,
+      "moves": 8,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_06",
+      "pushes": 3,
+      "moves": 12,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_07",
+      "pushes": 4,
+      "moves": 15,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_08",
+      "pushes": 5,
+      "moves": 10,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_09",
+      "pushes": 5,
+      "moves": 17,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_10",
+      "pushes": 5,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_11",
+      "pushes": 5,
+      "moves": 8,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_12",
+      "pushes": 5,
+      "moves": 22,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_13",
+      "pushes": 5,
+      "moves": 24,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_14",
+      "pushes": 6,
+      "moves": 14,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_15",
+      "pushes": 7,
+      "moves": 33,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_16",
+      "pushes": 5,
+      "moves": 14,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_17",
+      "pushes": 8,
+      "moves": 32,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_18",
+      "pushes": 9,
+      "moves": 28,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_19",
+      "pushes": 10,
+      "moves": 24,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_20",
+      "pushes": 10,
+      "moves": 31,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_21",
+      "pushes": 6,
+      "moves": 15,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_22",
+      "pushes": 8,
+      "moves": 17,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_23",
+      "pushes": 9,
+      "moves": 21,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_24",
+      "pushes": 9,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_25",
+      "pushes": 9,
+      "moves": 26,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_26",
+      "pushes": 8,
+      "moves": 17,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_27",
+      "pushes": 8,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_28",
+      "pushes": 8,
+      "moves": 30,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_29",
+      "pushes": 9,
+      "moves": 39,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_30",
+      "pushes": 10,
+      "moves": 28,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_31",
+      "pushes": 9,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_32",
+      "pushes": 9,
+      "moves": 24,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_33",
+      "pushes": 9,
+      "moves": 30,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_34",
+      "pushes": 12,
+      "moves": 40,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_35",
+      "pushes": 13,
+      "moves": 35,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_36",
+      "pushes": 10,
+      "moves": 47,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_37",
+      "pushes": 11,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_38",
+      "pushes": 11,
+      "moves": 30,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_39",
+      "pushes": 11,
+      "moves": 34,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_40",
+      "pushes": 12,
+      "moves": 38,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_41",
+      "pushes": 10,
+      "moves": 35,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_42",
+      "pushes": 11,
+      "moves": 30,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_43",
+      "pushes": 11,
+      "moves": 32,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_44",
+      "pushes": 12,
+      "moves": 43,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_45",
+      "pushes": 13,
+      "moves": 30,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_46",
+      "pushes": 11,
+      "moves": 40,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_47",
+      "pushes": 12,
+      "moves": 33,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_48",
+      "pushes": 12,
+      "moves": 58,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_49",
+      "pushes": 14,
+      "moves": 49,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "rainforest_50",
+      "pushes": 15,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_01",
+      "pushes": 3,
+      "moves": 4,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_02",
+      "pushes": 3,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_03",
+      "pushes": 5,
+      "moves": 13,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_04",
+      "pushes": 5,
+      "moves": 17,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_05",
+      "pushes": 5,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_06",
+      "pushes": 3,
+      "moves": 9,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_07",
+      "pushes": 4,
+      "moves": 19,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_08",
+      "pushes": 5,
+      "moves": 12,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_09",
+      "pushes": 5,
+      "moves": 15,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_10",
+      "pushes": 6,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_11",
+      "pushes": 4,
+      "moves": 20,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_12",
+      "pushes": 6,
+      "moves": 12,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_13",
+      "pushes": 6,
+      "moves": 21,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_14",
+      "pushes": 6,
+      "moves": 24,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_15",
+      "pushes": 7,
+      "moves": 25,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_16",
+      "pushes": 6,
+      "moves": 17,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_17",
+      "pushes": 8,
+      "moves": 17,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_18",
+      "pushes": 8,
+      "moves": 25,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_19",
+      "pushes": 9,
+      "moves": 18,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_20",
+      "pushes": 10,
+      "moves": 25,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_21",
+      "pushes": 7,
+      "moves": 16,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_22",
+      "pushes": 7,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_23",
+      "pushes": 8,
+      "moves": 22,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_24",
+      "pushes": 8,
+      "moves": 26,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_25",
+      "pushes": 10,
+      "moves": 35,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_26",
+      "pushes": 7,
+      "moves": 28,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_27",
+      "pushes": 9,
+      "moves": 25,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_28",
+      "pushes": 10,
+      "moves": 31,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_29",
+      "pushes": 10,
+      "moves": 42,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_30",
+      "pushes": 10,
+      "moves": 46,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_31",
+      "pushes": 8,
+      "moves": 26,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_32",
+      "pushes": 9,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_33",
+      "pushes": 9,
+      "moves": 24,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_34",
+      "pushes": 10,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_35",
+      "pushes": 12,
+      "moves": 30,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_36",
+      "pushes": 11,
+      "moves": 23,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_37",
+      "pushes": 11,
+      "moves": 39,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_38",
+      "pushes": 12,
+      "moves": 39,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_39",
+      "pushes": 12,
+      "moves": 39,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_40",
+      "pushes": 14,
+      "moves": 40,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_41",
+      "pushes": 10,
+      "moves": 30,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_42",
+      "pushes": 11,
+      "moves": 38,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_43",
+      "pushes": 12,
+      "moves": 55,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_44",
+      "pushes": 13,
+      "moves": 44,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_45",
+      "pushes": 13,
+      "moves": 48,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_46",
+      "pushes": 11,
+      "moves": 39,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_47",
+      "pushes": 13,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_48",
+      "pushes": 13,
+      "moves": 34,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_49",
+      "pushes": 13,
+      "moves": 47,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "city_50",
+      "pushes": 15,
+      "moves": 45,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "confluence_01",
+      "pushes": 10,
+      "moves": 41,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "confluence_02",
+      "pushes": 14,
+      "moves": 55,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "confluence_03",
+      "pushes": 9,
+      "moves": 29,
+      "won": true,
+      "all_snapshots_match": true
+    },
+    {
+      "id": "confluence_04",
+      "pushes": 9,
+      "moves": 26,
+      "won": true,
+      "all_snapshots_match": true
+    }
+  ]
+}

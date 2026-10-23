@@ -777,7 +777,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": true,
-      "learning_goal": "箱子进入炉门后出现在成对出口，旅人仍留在原处。",
+      "learning_goal": "箱子进入炉门后会出现在成对出口；旅人移到箱子原来的格子，不会随箱传送。",
       "stage_intent": "单箱练习：参考最优路线含 1 次炉门转运；先为出口留出接手位置。",
       "topology": "authored_tutorial",
       "par_pushes": 2,
@@ -903,7 +903,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": false,
-      "learning_goal": "箱子进入炉门后出现在成对出口，旅人仍留在原处。",
+      "learning_goal": "箱子进入炉门后会出现在成对出口；旅人移到箱子原来的格子，不会随箱传送。",
       "stage_intent": "单箱练习：参考最优路线含 1 次炉门转运；先为出口留出接手位置。",
       "par_pushes": 2,
       "par_moves": 5
@@ -1028,7 +1028,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": false,
-      "learning_goal": "箱子进入炉门后出现在成对出口，旅人仍留在原处。",
+      "learning_goal": "箱子进入炉门后会出现在成对出口；旅人移到箱子原来的格子，不会随箱传送。",
       "stage_intent": "单箱练习：参考最优路线含 1 次炉门转运；先为出口留出接手位置。",
       "par_pushes": 3,
       "par_moves": 7
@@ -1161,7 +1161,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": false,
-      "learning_goal": "箱子进入炉门后出现在成对出口，旅人仍留在原处。",
+      "learning_goal": "箱子进入炉门后会出现在成对出口；旅人移到箱子原来的格子，不会随箱传送。",
       "stage_intent": "单箱练习：参考最优路线含 1 次炉门转运；先为出口留出接手位置。",
       "par_pushes": 3,
       "par_moves": 11
@@ -1294,7 +1294,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": false,
-      "learning_goal": "箱子进入炉门后出现在成对出口，旅人仍留在原处。",
+      "learning_goal": "箱子进入炉门后会出现在成对出口；旅人移到箱子原来的格子，不会随箱传送。",
       "stage_intent": "单箱练习：参考最优路线含 1 次炉门转运；先为出口留出接手位置。",
       "par_pushes": 5,
       "par_moves": 14
@@ -2074,7 +2074,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": true,
-      "learning_goal": "先让一只箱子压住灯板，另一只才能借桥通过。",
+      "learning_goal": "箱子压住灯板后桥门开启；按当前布局，让旅人或另一只箱子借桥通行。",
       "stage_intent": "2箱调度：压板兼作目标，可让归位的箱子保持桥亮。解法中有 2 次桥格通行，要保留两侧的接近空间。",
       "topology": "authored_tutorial",
       "par_pushes": 3,
@@ -2208,7 +2208,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": false,
-      "learning_goal": "先让一只箱子压住灯板，另一只才能借桥通过。",
+      "learning_goal": "箱子压住灯板后桥门开启；按当前布局，让旅人或另一只箱子借桥通行。",
       "stage_intent": "2箱调度：压板兼作目标，可让归位的箱子保持桥亮。解法中有 3 次桥格通行，要保留两侧的接近空间。",
       "par_pushes": 3,
       "par_moves": 19
@@ -2349,7 +2349,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": false,
-      "learning_goal": "先让一只箱子压住灯板，另一只才能借桥通过。",
+      "learning_goal": "箱子压住灯板后桥门开启；按当前布局，让旅人或另一只箱子借桥通行。",
       "stage_intent": "2箱调度：压板兼作目标，可让归位的箱子保持桥亮。解法中有 2 次桥格通行，要保留两侧的接近空间。",
       "par_pushes": 5,
       "par_moves": 13
@@ -2490,7 +2490,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": false,
-      "learning_goal": "先让一只箱子压住灯板，另一只才能借桥通过。",
+      "learning_goal": "箱子压住灯板后桥门开启；按当前布局，让旅人或另一只箱子借桥通行。",
       "stage_intent": "2箱调度：压板不是目标，运送完成后还要收回压桥箱。解法中有 1 次桥格通行，要保留两侧的接近空间。",
       "par_pushes": 5,
       "par_moves": 17
@@ -2623,7 +2623,7 @@
       "tier": 1,
       "difficulty": "引导",
       "tutorial": false,
-      "learning_goal": "先让一只箱子压住灯板，另一只才能借桥通过。",
+      "learning_goal": "箱子压住灯板后桥门开启；按当前布局，让旅人或另一只箱子借桥通行。",
       "stage_intent": "2箱调度：压板不是目标，运送完成后还要收回压桥箱。解法中有 2 次桥格通行，要保留两侧的接近空间。",
       "par_pushes": 5,
       "par_moves": 19
