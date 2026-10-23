@@ -1,0 +1,82 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "display_server": "X11",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "headless": false,
+  "passed": true,
+  "rows": [
+    {
+      "cached_level": "city_04",
+      "exercise_count": 1,
+      "id": "city_04",
+      "image_size": [
+        1440,
+        900
+      ],
+      "mode": "level",
+      "path": "res://screenshots/context_help_audit/city_04.png",
+      "save_error": 0
+    },
+    {
+      "cached_level": "heaven_13",
+      "exercise_count": 1,
+      "id": "heaven_13",
+      "image_size": [
+        1440,
+        900
+      ],
+      "mode": "level",
+      "path": "res://screenshots/context_help_audit/heaven_13.png",
+      "save_error": 0
+    },
+    {
+      "cached_level": "city_06",
+      "exercise_count": 1,
+      "id": "city_06",
+      "image_size": [
+        1440,
+        900
+      ],
+      "mode": "level",
+      "path": "res://screenshots/context_help_audit/city_06.png",
+      "save_error": 0
+    },
+    {
+      "cached_level": "confluence_01",
+      "exercise_count": 1,
+      "id": "confluence_01",
+      "image_size": [
+        1440,
+        900
+      ],
+      "mode": "level",
+      "path": "res://screenshots/context_help_audit/confluence_01.png",
+      "save_error": 0
+    },
+    {
+      "cached_level": "confluence_01",
+      "exercise_count": 0,
+      "id": "world_stale_level",
+      "image_size": [
+        1440,
+        900
+      ],
+      "mode": "world",
+      "path": "res://screenshots/context_help_audit/world_stale_level.png",
+      "save_error": 0
+    },
+    {
+      "cached_level": "confluence_01",
+      "exercise_count": 0,
+      "id": "title_generic",
+      "image_size": [
+        1440,
+        900
+      ],
+      "mode": "title",
+      "path": "res://screenshots/context_help_audit/title_generic.png",
+      "save_error": 0
+    }
+  ]
+}

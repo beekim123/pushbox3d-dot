@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "method": "Independent reviewer loaded and inspected each final native PNG with view_image; no generated or composited images.",
+  "images": [
+    {
+      "path": "screenshots/context_help_audit/city_04.png",
+      "sha256": "13f0e46a3209b655ec537c2db40cd7dfa1bc4b65c9791c3fe0e9da82e54bf628",
+      "viewed": true,
+      "copy_and_button_unclipped": true
+    },
+    {
+      "path": "screenshots/context_help_audit/heaven_13.png",
+      "sha256": "071b66da4a7f137337a71c3e0d2d2d4c72c76e76282a25695f6acd128f91ab4d",
+      "viewed": true,
+      "copy_and_button_unclipped": true
+    },
+    {
+      "path": "screenshots/context_help_audit/city_06.png",
+      "sha256": "1167faec93c40131acf5db355b90dc63a9426b5a92941842870628fb079d0fb0",
+      "viewed": true,
+      "copy_and_button_unclipped": true
+    },
+    {
+      "path": "screenshots/context_help_audit/confluence_01.png",
+      "sha256": "6307948f7133eb9532181c3135fc52e026449fd6791f64c35359c2a7710cb834",
+      "viewed": true,
+      "copy_and_button_unclipped": true
+    },
+    {
+      "path": "screenshots/context_help_audit/world_stale_level.png",
+      "sha256": "f44c44e8f71b2887d523fec6b962e551a5351066afd77ca0c0f0ee208bc65761",
+      "viewed": true,
+      "copy_and_button_unclipped": true
+    },
+    {
+      "path": "screenshots/context_help_audit/title_generic.png",
+      "sha256": "60907a74794aaa79e2617f8124874c532619f47366557783cc4dc1f399d9a693",
+      "viewed": true,
+      "copy_and_button_unclipped": true
+    }
+  ],
+  "scope": "Actual rendered 1440x900 game viewport; not smaller desktop-window containment or cross-platform certification."
+}

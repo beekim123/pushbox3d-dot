@@ -93,7 +93,7 @@ func run():
   game.close_modal()
  await clean_level("city_04");await open_help()
  check(help_text().contains("这里的灯板不是目标") and not help_text().contains("一只果篮"),"new level refreshes question")
- for absent in [{},{"chapter_name":"x"},{"learning_goal":"x"},{"chapter_name":" ","learning_goal":"x"}]:
+ for absent in [{},{"chapter_name":"x"},{"learning_goal":"x"},{"chapter_name":" ","learning_goal":"x"},{"chapter_name":null,"learning_goal":"x"},{"chapter_name":"x","learning_goal":null},{"chapter_name":12,"learning_goal":"x"},{"chapter_name":"x","learning_goal":[]}]:
   check(game.CONTEXT_HELP.text_for("level",absent).is_empty(),"missing/blank metadata omits exercise")
  # Every physical direction, both schemes: hold, dismiss, release/repress within one frame.
  for pair in [[KEY_UP,"U"],[KEY_DOWN,"D"],[KEY_LEFT,"L"],[KEY_RIGHT,"R"],[KEY_W,"U"],[KEY_A,"L"],[KEY_S,"D"],[KEY_D,"R"]]:
@@ -116,6 +116,27 @@ func run():
   await wait_motion()
   var after:=snapshot();await create_timer(.25).timeout
   unchanged(after,"released key has no delayed repeat "+str(pair[0]))
+ # Hold began before F1, and repeated F1 while still held cannot remove the guard.
+ for held_code in [KEY_LEFT,KEY_A]:
+  await clean_level("heaven_03")
+  event(held_code,true);before=snapshot();tap(KEY_F1);tap(KEY_F1)
+  check(game.moving,"held-before-help retains original tween")
+  tap(KEY_ESCAPE);await wait_motion();await create_timer(.27).timeout
+  unchanged(before,"held-before-help and repeated F1 cannot leak repeat "+str(held_code))
+  event(held_code,false);tap(KEY_LEFT);check(game.state.moves==before.state.moves+1,"release after repeated F1 admits deliberate movement")
+  await wait_motion()
+ # clear_ui dismisses a help modal on navigation, but never displays stale text.
+ await clean_level("heaven_13");await open_help();event(KEY_LEFT,true)
+ game.show_world_menu("city",1)
+ check(game.help_release_keys.has(KEY_LEFT),"clear_ui preserves held-key guard when replacing help")
+ game.start_level(entry("heaven_03"));before=snapshot();await create_timer(.27).timeout
+ unchanged(before,"held key from old help cannot move new level")
+ event(KEY_LEFT,false)
+ # A non-help modal dismissal must not create this new help-specific guard.
+ game.open_modal("Independent generic modal fixture","No help metadata")
+ event(KEY_A,true);game.close_modal()
+ check(game.help_release_keys.is_empty(),"generic modal close does not acquire help guard")
+ event(KEY_A,false)
  # Pointer close has same guard; all old keys must release, not just one.
  await clean_level("heaven_03");await open_help()
  before=snapshot();event(KEY_LEFT,true);event(KEY_A,true)

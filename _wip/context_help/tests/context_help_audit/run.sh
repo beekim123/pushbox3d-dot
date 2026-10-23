@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/../.."
-GODOT="${GODOT:-/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot}"
+GODOT="${GODOT:-$(command -v godot || command -v godot4 || true)}"
+if [ -z "$GODOT" ]; then echo "Set GODOT=/path/to/Godot-4.7.2" >&2; exit 1; fi
 export GODOT
-HOME_AUDIT="$(mktemp -d /tmp/fourfold-context-audit.XXXXXX)"
+HOME_AUDIT="$(mktemp -d "${TMPDIR:-/tmp}/fourfold-context-audit.XXXXXX")"
+trap 'rm -rf "$HOME_AUDIT"' EXIT
 export XDG_DATA_HOME="$HOME_AUDIT/data" XDG_CACHE_HOME="$HOME_AUDIT/cache" XDG_CONFIG_HOME="$HOME_AUDIT/config"
 mkdir -p "$XDG_DATA_HOME" "$XDG_CACHE_HOME" "$XDG_CONFIG_HOME"
-"$GODOT" --version | grep -q '^4\.7\.2\.'
+VERSION="$("$GODOT" --version)"
+if [[ "$VERSION" != 4.7.2.* ]]; then echo "Godot 4.7.2 required; got $VERSION. Set GODOT=/path/to/Godot-4.7.2" >&2; exit 1; fi
 python3 - <<'PY'
 import hashlib,json,pathlib
 files=['scripts/main.gd','scripts/context_help.gd','scripts/ui_kit.gd','scripts/puzzle_rules.gd','scripts/hint_solver.gd','scripts/hint_overlay.gd','scripts/world_view.gd','scripts/resume_controller.gd','scripts/resume/resume_codec.gd','scripts/resume/resume_store.gd','assets/levels.json','project.godot']

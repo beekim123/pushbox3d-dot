@@ -38,3 +38,16 @@ missing/null/numeric/array values are omitted rather than displayed. Author-repo
 SHA-256: `0b43d5dedeffa7a305c87a897b103766097c72387ce601ba7a342488fbfd32f4`.
 `main.gd` remains `15a68661146db4cc1e47c11ea2a60ca2be0115099d529d0e54a1b46a11a6650e`.
 The independent final rerun is in progress. No main promotion is implied.
+
+## Focused audit evidence — 2026-10-23 15:21 UTC
+
+Final type-guard source passed 193 behavior + 2,696 layout assertions (2,889 total)
+with 352 parsed physical-key events. Six real 1440×900 X11 captures were separately
+viewed by the reviewer; `visual_review.json` records this later review, while the
+original native capture manifest intentionally retains its earlier Pending wording.
+PNG bytes remain excluded from GitHub. Source hashes are locked in FINAL_SUMMARY.json.
+
+The parent has additionally requested a native CUA held-key probe. That new probe is
+still pending at this checkpoint, so this backup is not a final main-promotion claim.
+Author README is retained as AUTHOR_README.md without replacing this scope note.
+Large layout.json is raw textual test evidence, not a screenshot or binary asset.
