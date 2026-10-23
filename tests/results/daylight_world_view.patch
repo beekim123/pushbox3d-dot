@@ -1,0 +1,52 @@
+--- a/scripts/world_view.gd
++++ b/scripts/world_view.gd
+@@ -8,6 +8,12 @@
+ 	"rainforest": {"accent":Color("c1e981"), "sky":Color("408b86"), "light":Color("fff1b6")},
+ 	"city": {"accent":Color("f3c66f"), "sky":Color("7ba8b9"), "light":Color("ffe6be")},
+ 	"confluence": {"accent":Color("d1b5f3"), "sky":Color("747aa4"), "light":Color("fff2d6")}
++}
++# Restrained theme backdrops keep the authored diorama separate from the void.
++const BACKDROP_TONES := {
++	"hub": Color("65758a"), "heaven": Color("73998e"),
++	"inferno": Color("62576e"), "rainforest": Color("527f79"),
++	"city": Color("708c9b"), "confluence": Color("73788f")
+ }
+ var camera: Camera3D
+ var set_root: Node3D
+@@ -36,14 +42,14 @@
+ 	env.background_color = THEMES.hub.sky
+ 	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+ 	env.ambient_light_color = Color("d7e7ff")
+-	env.ambient_light_energy = 0.18
++	env.ambient_light_energy = 0.15
+ 	env.tonemap_mode = Environment.TONE_MAPPER_LINEAR
+-	env.tonemap_exposure = 0.8
++	env.tonemap_exposure = 0.90
+ 	environment.environment = env
+ 	add_child(environment)
+ 	light = DirectionalLight3D.new()
+-	light.rotation_degrees = Vector3(-54,-32,0)
+-	light.light_energy = 0.36
++	light.rotation_degrees = Vector3(-48,-32,0)
++	light.light_energy = 0.60
+ 	light.light_color = Color("fff0d5")
+ 	light.shadow_enabled = true
+ 	light.directional_shadow_max_distance = 70
+@@ -52,7 +58,7 @@
+ 	add_child(light)
+ 	var fill := DirectionalLight3D.new()
+ 	fill.rotation_degrees = Vector3(-35,145,0)
+-	fill.light_energy = 0.05
++	fill.light_energy = 0.055
+ 	fill.light_color = Color("b7d2ff")
+ 	add_child(fill)
+ 	camera = Camera3D.new()
+@@ -98,7 +104,7 @@
+ func theme_world(world: String) -> void:
+ 	current_world = world
+ 	var t: Dictionary = THEMES.get(world,THEMES.hub)
+-	environment.environment.background_color = t.sky
++	environment.environment.background_color = t.sky.lerp(BACKDROP_TONES.get(world,BACKDROP_TONES.hub),0.22)
+ 	light.light_color = t.light
+ 
+ func grid_pos(p: Vector2i) -> Vector3:

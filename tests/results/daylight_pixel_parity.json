@@ -1,0 +1,54 @@
+{
+  "production_world_sha256": "b73a8cad67115445cf9c9bdb0c6312dd5280a0fe43c1c2ddc0ec11b021893a6d",
+  "comparison": "Production actually rendered using source defaults, no light override; same frozen pose, level45,1440x900high settings as accepted isolated candidate",
+  "records": [
+    {
+      "world": "heaven",
+      "png": "fourfold_atelier/screenshots/daylight/heaven_daylight.png",
+      "pixel_identical": true,
+      "changed_pixel_fraction": 0.0,
+      "mean_absolute_channel_difference": 0.0,
+      "max_channel_difference": 0,
+      "camera_identical": true,
+      "geometry_identical": true,
+      "missing_assets": [],
+      "sha256": "b5b9acdbb6c42a29833c60cb9e5dd39ecb78e4c82ab87863a18f9ca410cc8741"
+    },
+    {
+      "world": "inferno",
+      "png": "fourfold_atelier/screenshots/daylight/inferno_daylight.png",
+      "pixel_identical": true,
+      "changed_pixel_fraction": 0.0,
+      "mean_absolute_channel_difference": 0.0,
+      "max_channel_difference": 0,
+      "camera_identical": true,
+      "geometry_identical": true,
+      "missing_assets": [],
+      "sha256": "7927d3b7d525ea9ebe176ad3945b752f8361a5b33ff96f901932fe6678120601"
+    },
+    {
+      "world": "rainforest",
+      "png": "fourfold_atelier/screenshots/daylight/rainforest_daylight.png",
+      "pixel_identical": true,
+      "changed_pixel_fraction": 0.0,
+      "mean_absolute_channel_difference": 0.0,
+      "max_channel_difference": 0,
+      "camera_identical": true,
+      "geometry_identical": true,
+      "missing_assets": [],
+      "sha256": "2f3710cbbcebfac73dadf7ce065f4029cc55f682cbe6e4c8be9c65f1c036ca27"
+    },
+    {
+      "world": "city",
+      "png": "fourfold_atelier/screenshots/daylight/city_daylight.png",
+      "pixel_identical": true,
+      "changed_pixel_fraction": 0.0,
+      "mean_absolute_channel_difference": 0.0,
+      "max_channel_difference": 0,
+      "camera_identical": true,
+      "geometry_identical": true,
+      "missing_assets": [],
+      "sha256": "75dbbb4ddd9316be762c4bb08fbd1ce549c704e1bd5ccfc803458a27586098c9"
+    }
+  ]
+}

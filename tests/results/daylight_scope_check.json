@@ -1,0 +1,8 @@
+{
+  "scripts/main.gd": true,
+  "scripts/puzzle_rules.gd": true,
+  "scripts/ui_kit.gd": true,
+  "all_62_glbs_unchanged": true,
+  "runtime_world_matches_approved_patch": true,
+  "production_test_harness_matches_tested_copy": true
+}

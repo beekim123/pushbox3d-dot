@@ -1,0 +1,28 @@
+{
+  "runtime_source_files_changed": [
+    "scripts/world_view.gd"
+  ],
+  "new_doc": "docs/render_daylight.md",
+  "new_test_harness": "tests/daylight_capture.gd",
+  "files": {
+    "scripts/world_view.gd": "b73a8cad67115445cf9c9bdb0c6312dd5280a0fe43c1c2ddc0ec11b021893a6d",
+    "docs/render_daylight.md": "76d56064b328efda942d801ce019c0dd3012e3546162591a82bdf2d64247f34f",
+    "tests/daylight_capture.gd": "d4ca17165876d4fa21befbd0a1a8e80854878ac292f3122456e2e2da360cbfc5",
+    "tests/results/daylight_import.log": "f57c9027935c87d1aba71ca716a0148c664a63fdef65561a9b51dee3cb9a35e9",
+    "tests/results/daylight_harness_parse.log": "6d1c065383a27c36804949b6ffa4b09714470b112e5dacc0bd5aeb7b9c147c4e",
+    "tests/results/daylight_camera_fit.log": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+    "tests/results/daylight_hint_layout.log": "1f76bc5db9211a407e8fc1345a5d5dac1d3cadbd6d0edc264b14f5e9c7f4dddf",
+    "tests/results/daylight_checks_exit.txt": "ae2b6355149b37d9533e02d8f92419da6b9d2112a9d0ceda98338f1189d95528",
+    "tests/results/daylight_production_capture.log": "a931ed7171e58d79d64620592bd607360d9818d678809bf80f0e9dda43283ca7",
+    "tests/results/daylight_pixel_parity.json": "3088e6ccdc002f6107c2535a945a1b18c07e9eb34d3954cfa5e153fc684288a0",
+    "tests/results/daylight_scope_check.json": "e363bb09fdc544facdd6488b8971b59a88fe05c113c41e1c1e5d4374f8d92d8c",
+    "tests/results/daylight_world_view.patch": "900ae56d2dd1ba964abddbecb5701445fa3b1108f41415021f0cc2e10ff737d8",
+    "tests/results/daylight_lookdev_summary.json": "f4c6591b9d4fc07de9c96e7d096227d5b4004b842f9b6c76c3495cad0fdbe6ef",
+    "screenshots/daylight/capture_metrics.json": "fb6633e62d69381dc50653028589970105ef4a46321f875f659cdc421d19435a",
+    "screenshots/daylight/heaven_daylight.png": "b5b9acdbb6c42a29833c60cb9e5dd39ecb78e4c82ab87863a18f9ca410cc8741",
+    "screenshots/daylight/inferno_daylight.png": "7927d3b7d525ea9ebe176ad3945b752f8361a5b33ff96f901932fe6678120601",
+    "screenshots/daylight/rainforest_daylight.png": "2f3710cbbcebfac73dadf7ce065f4029cc55f682cbe6e4c8be9c65f1c036ca27",
+    "screenshots/daylight/city_daylight.png": "75dbbb4ddd9316be762c4bb08fbd1ce549c704e1bd5ccfc803458a27586098c9",
+    "tests/results/daylight_test_harness_parse.log": "6d1c065383a27c36804949b6ffa4b09714470b112e5dacc0bd5aeb7b9c147c4e"
+  }
+}

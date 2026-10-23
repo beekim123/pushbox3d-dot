@@ -1,0 +1,110 @@
+{
+  "recommendation": "daylight",
+  "production_applied": true,
+  "user_acceptance_claimed": false,
+  "comparison_capture_count": 35,
+  "extra_runtime_menu_capture_count": 1,
+  "all_dimensions_exact": true,
+  "all_cameras_identical_within_case": true,
+  "all_geometry_counts_identical_within_case": true,
+  "all_capture_results_zero": true,
+  "all_missing_assets_empty": true,
+  "selected_floor_all_channel_clipping_max": 0.0,
+  "selected_floor_any_channel_clipping_max": 0.0,
+  "selected_floor_median_channel_max": 223.5,
+  "selected_primary_text_contrast_min": 15.06,
+  "selected_muted_text_contrast_min": 8.09,
+  "performance_conditions": "Godot 4.7.2 GLCompatibility, llvmpipe, 1440x900, MSAA4x, 2048 shadows. After root reported 204-case run finished. Each main theme level 45: baseline/daylight/baseline/daylight, 8 warmup + 30 sampled frames per capture. Other shared-host workloads may still introduce transient noise. Not hardware GPU performance.",
+  "performance_pairs": [
+    {
+      "world": "heaven",
+      "repeat": 1,
+      "baseline_frame_median_ms": 349.643,
+      "daylight_frame_median_ms": 330.392,
+      "change_percent": -5.506,
+      "draw_calls": 312.0,
+      "primitives": 160637.0,
+      "geometry_identical": true
+    },
+    {
+      "world": "heaven",
+      "repeat": 2,
+      "baseline_frame_median_ms": 286.354,
+      "daylight_frame_median_ms": 282.686,
+      "change_percent": -1.281,
+      "draw_calls": 312.0,
+      "primitives": 160637.0,
+      "geometry_identical": true
+    },
+    {
+      "world": "inferno",
+      "repeat": 1,
+      "baseline_frame_median_ms": 225.296,
+      "daylight_frame_median_ms": 250.95,
+      "change_percent": 11.387,
+      "draw_calls": 244.0,
+      "primitives": 96026.0,
+      "geometry_identical": true
+    },
+    {
+      "world": "inferno",
+      "repeat": 2,
+      "baseline_frame_median_ms": 207.085,
+      "daylight_frame_median_ms": 192.728,
+      "change_percent": -6.933,
+      "draw_calls": 244.0,
+      "primitives": 96026.0,
+      "geometry_identical": true
+    },
+    {
+      "world": "rainforest",
+      "repeat": 1,
+      "baseline_frame_median_ms": 200.717,
+      "daylight_frame_median_ms": 189.651,
+      "change_percent": -5.513,
+      "draw_calls": 280.0,
+      "primitives": 139416.0,
+      "geometry_identical": true
+    },
+    {
+      "world": "rainforest",
+      "repeat": 2,
+      "baseline_frame_median_ms": 195.049,
+      "daylight_frame_median_ms": 213.281,
+      "change_percent": 9.347,
+      "draw_calls": 280.0,
+      "primitives": 139416.0,
+      "geometry_identical": true
+    },
+    {
+      "world": "city",
+      "repeat": 1,
+      "baseline_frame_median_ms": 242.339,
+      "daylight_frame_median_ms": 243.686,
+      "change_percent": 0.556,
+      "draw_calls": 410.0,
+      "primitives": 208026.0,
+      "geometry_identical": true
+    },
+    {
+      "world": "city",
+      "repeat": 2,
+      "baseline_frame_median_ms": 228.227,
+      "daylight_frame_median_ms": 257.816,
+      "change_percent": 12.965,
+      "draw_calls": 410.0,
+      "primitives": 208026.0,
+      "geometry_identical": true
+    }
+  ],
+  "performance_max_change_percent": 12.965,
+  "performance_guardrail_pass": true,
+  "limitations": [
+    "Only render-only improvement; no new models/materials.",
+    "Level 10 and 45 in each main theme plus hub/confluence 1, not all 204 boards.",
+    "Not tested on physical GPU/macOS/Retina.",
+    "Paving sample correction documented in plan; images not retouched.",
+    "Broad flat lawn/base and residual repeated peripheral props remain modeling/composition work."
+  ],
+  "integration_note": "Applied after root approval; see docs/render_daylight.md and tests/results/daylight_pixel_parity.json. Original isolated metrics preserved."
+}

@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)
+
+QUALITY high adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+QUALITY high adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+PRODUCTION_PARAMETERS heaven matches=true
+LOOKDEV_CAPTURE heaven daylight median_ms=301.452 draw_calls=312.0 output=/workspace/scratch/e4cad742399c/fourfold_atelier/screenshots/daylight/heaven_daylight.png
+PRODUCTION_PARAMETERS inferno matches=true
+LOOKDEV_CAPTURE inferno daylight median_ms=188.989 draw_calls=244.0 output=/workspace/scratch/e4cad742399c/fourfold_atelier/screenshots/daylight/inferno_daylight.png
+PRODUCTION_PARAMETERS rainforest matches=true
+LOOKDEV_CAPTURE rainforest daylight median_ms=195.937 draw_calls=280.0 output=/workspace/scratch/e4cad742399c/fourfold_atelier/screenshots/daylight/rainforest_daylight.png
+PRODUCTION_PARAMETERS city matches=true
+LOOKDEV_CAPTURE city daylight median_ms=209.785 draw_calls=410.0 output=/workspace/scratch/e4cad742399c/fourfold_atelier/screenshots/daylight/city_daylight.png
+LOOKDEV_COMPLETE captures=4 errors=[]

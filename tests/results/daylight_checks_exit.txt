@@ -1,0 +1,2 @@
+camera_exit=0
+hint_layout_exit=0
