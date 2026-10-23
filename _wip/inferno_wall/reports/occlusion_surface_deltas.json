@@ -1,0 +1,83 @@
+{
+  "key": "level + sample type + world-space surface point rounded 1e-5",
+  "sampling": "Imported mesh triangle vertices, midpoints and centroids, shading-normal facing filter, own-asset triangle test excludes self-hidden candidate hits. Finite samples, not all pixels; portal sampled at initial pose.",
+  "regions": "Tolerance-aware geometry classification: top Y>=.11999; upper bevel Y>.10001; otherwise side/lower incl bevel boundary. This corrects initial raw-float labels without changing hit counts or sets.",
+  "variants": {
+    "original": {
+      "report_path": "wall_review/occlusion_surfaces_original.json",
+      "report_sha256": "3b0f2e1253371ba45bed0c13f86cd4655e731a5dfabf3285b6c02bcb82abcbd0",
+      "hits": 711,
+      "surface_regions": {
+        "tooth_side_or_lower": 711
+      },
+      "added_vs_original": 0,
+      "added_vs_original_regions": {},
+      "removed_vs_original": 0,
+      "added_vs_a": 297,
+      "removed_vs_a": 0,
+      "ring_hits": 0,
+      "portal_hits": 0,
+      "center_hits": 0
+    },
+    "a_063": {
+      "report_path": "wall_review/occlusion_surfaces_a.json",
+      "report_sha256": "59a6f9f7bd61a84157af24ea9930ee16fb341de0ccb24ad4dfe64d58c68453e8",
+      "hits": 414,
+      "surface_regions": {
+        "tooth_side_or_lower": 414
+      },
+      "added_vs_original": 0,
+      "added_vs_original_regions": {},
+      "removed_vs_original": 297,
+      "added_vs_a": 0,
+      "removed_vs_a": 0,
+      "ring_hits": 0,
+      "portal_hits": 0,
+      "center_hits": 0
+    },
+    "c_080": {
+      "report_path": "wall_review/height_variant_c80/wall_review/occlusion_surfaces.json",
+      "report_sha256": "093895793db5040df6d04dd01ac974135e801748637d319acacdd05faa82c200",
+      "hits": 4119,
+      "surface_regions": {
+        "tooth_upper_bevel": 1991,
+        "tooth_side_or_lower": 2033,
+        "tooth_top": 95
+      },
+      "added_vs_original": 3408,
+      "added_vs_original_regions": {
+        "tooth_upper_bevel": 1991,
+        "tooth_side_or_lower": 1322,
+        "tooth_top": 95
+      },
+      "removed_vs_original": 0,
+      "added_vs_a": 3705,
+      "removed_vs_a": 0,
+      "ring_hits": 0,
+      "portal_hits": 0,
+      "center_hits": 0
+    },
+    "c_078": {
+      "report_path": "wall_review/height_variant_c/wall_review/occlusion_surfaces.json",
+      "report_sha256": "fd3085a6cb3ec15730aaf715e2b9f1438783f628d1928e5b1e5e9172c4cf4d17",
+      "hits": 3721,
+      "surface_regions": {
+        "tooth_upper_bevel": 1695,
+        "tooth_side_or_lower": 1941,
+        "tooth_top": 85
+      },
+      "added_vs_original": 3010,
+      "added_vs_original_regions": {
+        "tooth_upper_bevel": 1695,
+        "tooth_side_or_lower": 1230,
+        "tooth_top": 85
+      },
+      "removed_vs_original": 0,
+      "added_vs_a": 3307,
+      "removed_vs_a": 0,
+      "ring_hits": 0,
+      "portal_hits": 0,
+      "center_hits": 0
+    }
+  }
+}

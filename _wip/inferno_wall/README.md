@@ -11,3 +11,11 @@ Patch SHA256: `68a0e1caac46a3d8929fa197689df5e932cd6c56b2e8b7d07798a42a51b6b859`
 Author status SHA256: `f2141682c540674c4ecd8752a24c0021e2cc2f80a4f55bb76a8bc9eb49c43b87`.
 
 Python syntax was checked again while freezing this backup, without executing Blender. This directory is not a self-contained build; no GLB, .blend, image, audio, cache or user data is uploaded. Existing binary-upload restrictions and the inherited incomplete checkout remain unchanged.
+
+## QA source/results preservation — 2026-10-23 17:00 UTC
+
+The 18 exact text paths in `qa_checkpoint_manifest.json` are now preserved, including portable capture, surface/portal sampling and semantic comparison tools and the candidate's validation/core hashes. Original manifest paths document the author's freeze location; here its file paths map relative to this directory.
+
+`reports/FINAL_C80_VALIDATION.json` reports the revised candidate gate, not zero all-surface occlusion. Cosmetic locator-tooth binning is tolerance-aware; sample totals/hit sets are unchanged, and sample counts are not pixel area. Final independent review and integration manifest have not yet been included in this checkpoint. The earlier `STATUS.md` is retained as its original dated stage record, not rewritten as final evidence.
+
+These are text backups, not a self-contained successful rerun from this checkout. The QA tools require complete project binaries and referenced final images/manifests, which are not present in this partial branch. No binary upload, production integration or main promotion occurs here.

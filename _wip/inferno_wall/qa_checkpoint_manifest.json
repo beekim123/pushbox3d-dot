@@ -1,0 +1,78 @@
+{
+  "status": "Stable C0.80 QA source and result text backup; final independent report/integration manifest to follow. Cosmetic tooth tradeoff accepted by root; no zero-occlusion claim, sample counts are not pixel area.",
+  "root": "/workspace/scratch/e4cad742399c/fourfold_next/inferno_wall/wall_review/final_delivery",
+  "files": {
+    "qa/audit_final_c80.py": {
+      "sha256": "610f7d7b373a3cc61743f7aa87984db5b60efcc05cd08181c51b56652e1c7f4b",
+      "bytes": 6065
+    },
+    "qa/native_capture.gd": {
+      "sha256": "35701847b9f94689add9b26178d5e9c806ba5f643c44ec446abb8715c1de1b1c",
+      "bytes": 4390
+    },
+    "qa/native_capture_23.gd": {
+      "sha256": "3d6dbaba42fd6840cac81dce951bda78cffcf926e2862fb7438a2f8c7d5034fd",
+      "bytes": 4358
+    },
+    "qa/render_wall_compare.py": {
+      "sha256": "6a1763501699aef53a9e10d1f90b2fdf6fae606e91457042ab3dbc37bd8da6dd",
+      "bytes": 1128
+    },
+    "qa/run_native_capture.sh": {
+      "sha256": "2dbedd0b10b93638862ac124088b5681e95929f3633cf012400e7d2fbb1bbce5",
+      "bytes": 1002
+    },
+    "qa/semantic_glb_compare.py": {
+      "sha256": "44cf872bc7c985bd467f9b3657a361482cefa2be909992b73e1d4c1e3c8a149a",
+      "bytes": 2534
+    },
+    "qa/wall_occlusion_refined.gd": {
+      "sha256": "efb7ce9d57160c325b77314c8ce66eef0c0f2b01077dd4e5a27484f0710fa6f5",
+      "bytes": 4783
+    },
+    "qa/wall_occlusion_surfaces.gd": {
+      "sha256": "0ac98cc7d2aa78374d306fe9b1657a50d55579f50afdfbd85cd2577e9ea867b9",
+      "bytes": 6540
+    },
+    "qa/wall_portal_sweep.gd": {
+      "sha256": "a0c39ba7bc6b84bec2dab3b42bf6f587949369b897dbd43641e7dd989b4af2c4",
+      "bytes": 5207
+    },
+    "reports/FINAL_C80_VALIDATION.json": {
+      "sha256": "7174ac68c7a8242c96673675e1543243cae59dd239faa981051934c8d1378d93",
+      "bytes": 7375
+    },
+    "reports/c80_plan_comparison.json": {
+      "sha256": "a085fc8ff0826cf14fab623aa7a0691426d00ce65bd97fe6119f943d96fa2c26",
+      "bytes": 345
+    },
+    "reports/occlusion_surface_deltas.json": {
+      "sha256": "c4fcc74c7d3a28a3d8dce67adf8865508a45708cae0e6806170e556ba6d94195",
+      "bytes": 2882
+    },
+    "reports/final_semantic_wall.json": {
+      "sha256": "14bbb5081b2f43b35343eba9f3a56217c79dbfb8b8417e03877e703498acb6ca",
+      "bytes": 691
+    },
+    "reports/final_semantic_wall_b.json": {
+      "sha256": "002f0166554931caa56264c682c5f58bb28a97cbb26baa172b55db665adbcce8",
+      "bytes": 693
+    },
+    "reports/c80_camera_fit.log": {
+      "sha256": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+      "bytes": 108
+    },
+    "reports/c80_asset_audit.json": {
+      "sha256": "f76fa52fe701a927c1d02bd0c79d862fe4c66416ce252b74e2a77c0b6ae1ebef",
+      "bytes": 18529
+    },
+    "reports/frozen_core_hashes.json": {
+      "sha256": "f4841659917c833c6f0641a1908f28cdba2c7fdd7c692288ec97294418f21c34",
+      "bytes": 954
+    },
+    "reports/baseline_asset_runtime_hashes.json": {
+      "sha256": "cb80c56ca6c628723d86e667619f4b149fef8a40f500dfc16ef03b27bec5ca94",
+      "bytes": 8900
+    }
+  }
+}

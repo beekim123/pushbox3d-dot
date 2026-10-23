@@ -1,0 +1,10 @@
+{
+  "inferno_wall.glb": {
+    "xz_triangle_plan_and_materials_equal_to_A": true,
+    "plan_sha256": "8960b86cf2279e35655793398a060afb1b609f9885c8fc27eb878720e3e9ec4a"
+  },
+  "inferno_wall_b.glb": {
+    "xz_triangle_plan_and_materials_equal_to_A": true,
+    "plan_sha256": "1727c89bc88783d1a11069a2b2a31c81e7e0eead0c8ca9def44461ff2b2ffbb0"
+  }
+}
