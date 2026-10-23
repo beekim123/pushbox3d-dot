@@ -1,0 +1,19 @@
+{
+  "assertions": 156,
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "operations": [
+    "close",
+    "toggle",
+    "escape",
+    "move",
+    "undo",
+    "reset",
+    "same_level",
+    "new_level",
+    "help",
+    "immediate_replacement"
+  ],
+  "passed": true,
+  "scope": "All interruption cases begin while actual inferno44 search has allocated nodes and is still running; cleanup uses real production _process."
+}

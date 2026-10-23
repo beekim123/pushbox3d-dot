@@ -1,0 +1,7 @@
+{
+  "assertions": 53,
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "passed": true,
+  "scope": "Input.parse_input_event mouse motion/buttons and physical arrows/WASD/H/J/Escape through actual UI propagation, not direct handler calls."
+}

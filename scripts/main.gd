@@ -2,6 +2,8 @@ extends Node3D
 
 const UI = preload("res://scripts/ui_kit.gd")
 const RULES = preload("res://scripts/puzzle_rules.gd")
+const HINTS = preload("res://scripts/hint_solver.gd")
+const HINT_OVERLAY = preload("res://scripts/hint_overlay.gd")
 const VIEW = preload("res://scripts/world_view.gd")
 const SAVE_PATH := "user://fourfold_progress.json"
 const WORLD_ORDER := ["heaven","inferno","rainforest","city","confluence"]
@@ -12,6 +14,15 @@ const WORLD_INFO := {
 	"city":{"name":"层桥山城","en":"THE TERRACED CITY","tag":"右 · 压住通途","rule":"箱子压住金色踏板时，所有吊桥开启。最后一块踏板不能让桥上的人或箱悬空。","short":"箱子压板开桥。撤走最后一箱前，桥上必须没有人和箱。","story":"送货员熟悉每一段阶梯。城市的门，往往在另一层打开。"},
 	"confluence":{"name":"四隅交织","en":"THE FINAL WEAVE","tag":"中 · 把远方织在一起","rule":"四种法则开始交织。观察风纹、焰环、叶箭与踏板，逐一建立通路。","short":"混合规则沿用四个世界的法则，没有隐藏的第五种规则。","story":"四根线并不是四条路。把它们织在一起，家才会亮起来。"}
 }
+var hints = HINTS.new()
+var hint_request: int = -1
+var hint_active := false
+var hint_tier := 0
+var hint_answer: Dictionary = {}
+var hint_status := "idle"
+var hint_panel: PanelContainer
+var hint_overlay: Control
+var hint_capture_expanded := false
 var world: AtelierWorld
 var canvas: CanvasLayer
 var ui: Control
@@ -80,6 +91,9 @@ func _ready() -> void:
 		if levels_by_world.has(w) and index < levels_by_world[w].size(): start_level(levels_by_world[w][index])
 	elif args.get("capture-menu","") == "hub": show_hub()
 	elif args.has("capture-menu") and WORLD_ORDER.has(args["capture-menu"]): show_world_menu(str(args["capture-menu"]),int(args.get("capture-chapter",1))-1)
+	if args.has("capture-hint") and mode=="level":
+		toggle_hint()
+		if int(args["capture-hint"])>=2: advance_hint()
 	capture_pending = args.has("capture-path")
 	if args.has("test-integration"): integration_test.call_deferred()
 
@@ -209,6 +223,7 @@ func sfx(name: String) -> void:
 	player.play()
 
 func clear_ui(w: String) -> void:
+	invalidate_hint()
 	for child in ui.get_children():
 		ui.remove_child(child)
 		child.queue_free()
@@ -405,6 +420,7 @@ func start_level(entry: Dictionary) -> void:
 	chapter_pages[active_world]=levels_by_world[active_world].find(level)/5
 	mode="level"
 	state=RULES.initial(level)
+	hints.configure(level)
 	history.clear()
 	win_shown=false
 	world.setup_level(level,state)
@@ -434,7 +450,8 @@ func build_game_hud() -> void:
 	copy.add_child(UI.label(info.short,18))
 	status_label=UI.label("方向键 / WASD 移动 · 所有行动与重置都可以撤销",15,UI.MUTED)
 	copy.add_child(status_label)
-	row.add_child(UI.button("↶  撤销 Z",undo_move,Vector2(124,46)))
+	row.add_child(hint_button("线索 H",toggle_hint,"toggle",Vector2(98,46)))
+	row.add_child(UI.button("撤销 Z",undo_move,Vector2(124,46)))
 	row.add_child(UI.button("重置 R",reset_level,Vector2(112,46)))
 	row.add_child(UI.button("选关",func(): show_world_menu(active_world),Vector2(90,46)))
 	update_hud()
@@ -443,6 +460,7 @@ func update_hud() -> void:
 	if stat_label: stat_label.text="%d 步   ·   %d 推"%[state.get("moves",0),state.get("pushes",0)]
 
 func cancel_motion() -> void:
+	invalidate_hint()
 	if move_tween and move_tween.is_valid(): move_tween.kill()
 	moving=false
 	pending_direction=""
@@ -455,6 +473,7 @@ func attempt_move(direction: String) -> void:
 		sfx("blocked")
 		if status_label: status_label.text="这一步被挡住了。换个方向，或按 Z 回到上一步。"
 		return
+	invalidate_hint()
 	history.append(state.duplicate(true))
 	var old:=state
 	state=next
@@ -543,6 +562,7 @@ func open_modal(title: String, subtitle: String) -> VBoxContainer:
 	return v
 
 func close_modal() -> void:
+	invalidate_hint()
 	if modal:
 		ui.remove_child(modal)
 		modal.queue_free()
@@ -550,7 +570,7 @@ func close_modal() -> void:
 
 func show_help() -> void:
 	var v:=open_modal("一步一步，把世界织好","没有倒计时，没有生命损耗。每个错误都可以撤销。")
-	v.add_child(wrapped("方向键 / WASD：移动与推动\nZ / Backspace：无限撤销\nR：重置本关（重置本身也可撤销）\nEsc：关闭弹窗 / 返回选关\nM：切换声音\nF2：精细 / 轻量画质（软件渲染器自动轻量）\n\n只有铺路格可以移动，草地与边缘园景不是可走的格子。\n把所有箱子推到发光目标上，即可完成谜题。只能推，不能拉；一次只能推动一只箱子。",510,20))
+	v.add_child(wrapped("方向键 / WASD：移动与推动\nZ / Backspace：无限撤销\nR：重置本关（重置本身也可撤销）\nEsc：关闭弹窗 / 返回选关\nM：切换声音\nH：线索开关；J：主动展开下一层\nF2：精细 / 轻量画质（软件渲染器自动轻量）\n\n只有铺路格可以移动，草地与边缘园景不是可走的格子。\n把所有箱子推到发光目标上，即可完成谜题。只能推，不能拉；一次只能推动一只箱子。",510,20))
 	v.add_child(UI.button("明白了",close_modal,Vector2(510,54)))
 
 func show_ending() -> void:
@@ -570,6 +590,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	match event.keycode:
 		KEY_F1: show_help()
 		KEY_M: toggle_mute()
+		KEY_H: toggle_hint()
+		KEY_J: advance_hint()
 		KEY_F2:
 			low_quality=not low_quality
 			apply_quality()
@@ -578,6 +600,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		KEY_R: reset_level()
 		KEY_ESCAPE:
 			if modal: close_modal()
+			elif is_instance_valid(hint_panel): invalidate_hint()
 			elif mode=="level": show_world_menu(active_world)
 			elif mode=="world": show_hub()
 			elif mode=="hub": show_title()
@@ -596,10 +619,11 @@ func request_direction(direction: String) -> void:
 		attempt_move(direction)
 
 func _process(delta: float) -> void:
+	pump_hints()
 	frame_count+=1
 	if frame_count==10: frame_sample_start=Time.get_ticks_usec()
 	elif frame_count>10: frame_sample_count+=1
-	if capture_pending and frame_count>=int(args.get("capture-frame",8)):
+	if capture_pending and not hint_active and frame_count>=int(args.get("capture-frame",8)):
 		capture_pending=false
 		capture.call_deferred()
 	hold_timer-=delta
@@ -816,6 +840,8 @@ func finish_exit(code: int) -> void:
 	mode="exiting"
 	cancel_motion()
 	stop_audio()
+	while hints.has_pending_cleanup():
+		await get_tree().process_frame
 	Engine.time_scale=1.0
 	# Let the audio mixer release stream playbacks before ResourceCache teardown.
 	await get_tree().create_timer(0.30,true,false,true).timeout
@@ -834,3 +860,114 @@ func apply_quality() -> void:
 	get_viewport().scaling_3d_scale=0.6 if low_quality else 1.0
 	RenderingServer.directional_shadow_atlas_set_size(512 if low_quality else 2048,true)
 	print("QUALITY ","low" if low_quality else "high"," adapter=",RenderingServer.get_video_adapter_name())
+
+func invalidate_hint() -> void:
+	hints.cancel()
+	hint_active=false
+	hint_request=-1
+	hint_tier=0
+	hint_status="idle"
+	hint_answer.clear()
+	if is_instance_valid(hint_panel):
+		hint_panel.get_parent().remove_child(hint_panel)
+		hint_panel.queue_free()
+	hint_panel=null
+	if is_instance_valid(hint_overlay):
+		hint_overlay.get_parent().remove_child(hint_overlay)
+		hint_overlay.queue_free()
+	hint_overlay=null
+
+func toggle_hint() -> void:
+	if mode!="level" or moving or modal: return
+	if is_instance_valid(hint_panel):
+		invalidate_hint()
+		return
+	hint_tier=1
+	hint_status="already_solved" if RULES.won(level,state) else "clue"
+	build_hint_panel()
+
+func advance_hint() -> void:
+	if mode!="level" or moving or modal or not is_instance_valid(hint_panel): return
+	if hint_active: return
+	if hint_status=="clue":
+		hint_request=hints.start(state)
+		hint_active=true
+		hint_status="running"
+		build_hint_panel()
+	elif hint_status=="solved" and hint_tier==2 and hints.is_current(hint_request,state):
+		hint_tier=3
+		build_hint_panel()
+		refresh_hint_overlay()
+
+func pump_hints() -> void:
+	if not hint_active and not hints.has_pending_cleanup(): return
+	var result: Dictionary=hints.step_budget(2.0,hint_request if hint_active else -1)
+	if not hint_active or str(result.status)=="running": return
+	hint_active=false
+	if mode!="level" or not is_instance_valid(hint_panel) or not hints.is_current(hint_request,state):
+		invalidate_hint()
+		return
+	hint_status=str(result.status)
+	if hint_status in ["cancelled","stale"]:
+		invalidate_hint()
+		return
+	if hint_status=="solved":
+		hint_answer=result.duplicate(true)
+		hint_answer.player=state.player
+		hint_tier=2
+	build_hint_panel()
+	refresh_hint_overlay()
+	if args.has("capture-hint") and int(args["capture-hint"])>=3 and not hint_capture_expanded and hint_status=="solved":
+		hint_capture_expanded=true
+		advance_hint()
+
+func hint_message(status: String) -> String:
+	match status:
+		"clue": return str(WORLD_INFO[active_world].short)+"\n先想好箱子的停点，再绕到它的另一侧。"
+		"running": return "正在寻找下一小步……\n你仍可移动或随时关闭，线索会立即取消。"
+		"already_solved": return "这一局面已经完成。无需再推箱子。"
+		"budget_exhausted": return "这次提示搜索达到上限。\n这不代表无解；可以先试走几步，再重新请求。"
+		"unsolvable": return "当前局面已确认无法全部归位。\n可以按 Z 撤销几步，再试另一种走法。"
+		"invalid": return "暂时无法分析这个局面。你可以继续游玩或关闭线索。"
+		"solved":
+			var direction: String={"U":"上 ↑","D":"下 ↓","L":"左 ←","R":"右 →"}.get(str(hint_answer.direction),"")
+			if hint_tier==3:
+				return "薄荷色路线只通往推箱站位，不包含推动。\n走到圆环处，再把金圈箱子向"+direction+"推一次。"
+			return "观察金色圆环标出的箱子。\n下一次推动：向"+direction+"。\n这里只提示一步，不会替你操作。"
+	return ""
+
+func build_hint_panel() -> void:
+	if is_instance_valid(hint_panel):
+		hint_panel.get_parent().remove_child(hint_panel)
+		hint_panel.queue_free()
+	hint_panel=panel_at(Vector2(28,106),Vector2(300,0))
+	hint_panel.set_meta("hint_panel",true)
+	var column:=VBoxContainer.new()
+	column.add_theme_constant_override("separation",12)
+	hint_panel.add_child(column)
+	column.add_child(UI.label("一小段线索  ·  %d / 3" % hint_tier,20,VIEW.THEMES[active_world].accent))
+	var message:=wrapped(hint_message(hint_status),260,17)
+	message.set_meta("hint_message",true)
+	column.add_child(message)
+	if hint_status=="clue": column.add_child(hint_button("看看下一推  J",advance_hint,"advance",Vector2(260,42)))
+	elif hint_status=="solved" and hint_tier==2: column.add_child(hint_button("显示到位路线  J",advance_hint,"advance",Vector2(260,42)))
+	column.add_child(hint_button("收起线索  H / Esc",invalidate_hint,"close",Vector2(260,40)))
+
+func refresh_hint_overlay() -> void:
+	if is_instance_valid(hint_overlay):
+		hint_overlay.get_parent().remove_child(hint_overlay)
+		hint_overlay.queue_free()
+	hint_overlay=null
+	if hint_status!="solved" or hint_tier<2 or not hints.is_current(hint_request,state): return
+	hint_overlay=HINT_OVERLAY.new()
+	hint_overlay.view=world
+	hint_overlay.answer=hint_answer.duplicate(true)
+	hint_overlay.tier=hint_tier
+	ui.add_child(hint_overlay)
+	ui.move_child(hint_overlay,0)
+	hint_overlay.queue_redraw()
+
+func hint_button(text: String, callback: Callable, action: String, dimensions: Vector2) -> Button:
+	var button:=UI.button(text,callback,dimensions)
+	button.set_meta("hint_action",action)
+	return button

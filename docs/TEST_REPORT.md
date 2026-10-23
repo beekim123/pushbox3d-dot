@@ -20,10 +20,23 @@
 - 自动构图对204关检查，HUD裁切为0；保留格点可读性。云端图形日志仍有驱动不支持切换V-Sync的警告，不把这写成完全没有任何警告。
 - 候选ZIP在全新目录解压后首次导入、30帧启动、带混音完整204关实际处理器7852项检查均通过，退出0，正常headless日志无错误/警告/泄漏。结果见 tests/results/package_*_v2.log。
 - 仓库迁入分批进行，只有通过远端读回与资源清单核验的commit才标记已同步；不会把已上传但未挂到分支的blob算成完整备份。
-- 下一阶段为可选的渐进提示，原型在生产工程外独立验证，尚未混入此V2规则回归结果。
+- 上述 7,852 项完整规则回归属于提示接入前的 V2 检查点。提示接入后的增量实测单列如下，不将旧全量结果冒充新版全量重跑。
 
 ## 已知限制
 
 CPU软件渲染器的结果不等于Mac/GPU性能；未做真人谜题盲测、听感盲测、Retina或手柄测试。参考作品只用于研究，不复用资产。报告中的“通过”仅对所列实际测试成立，不意味着用户已认可新美术。
 
 详见 tests/acceptance_audit_v2.md、docs/levels_validation.md 和 tests/results/*v2*。
+
+## 渐进提示接入后的增量实测（2026-10-23）
+
+- 生产求解器与冻结原型 SHA256 `f266da3bb93226cbb68c3077d8481d637411ea0da81d508016ec431c443ddbe9` 一致；只读当前棋局，不加载预存答案。
+- 编辑器 headless 导入通过；最终源码与最新章节文案下，正常 headless 标题启动 30 帧退出 0，无错误、警告或资源泄漏（`tests/results/hints_boot.log`）；既有真实解锁按钮测试 17 项通过，说明 QA/截图模式没有重新引入解锁旁路。
+- 最终章节文案下字体扫描：506 个不同汉字及 `↑↓←→…✓·` 7 个符号均有字形。原有撤销装饰符缺字，已改为纯文字「撤销」。证据：`tests/font_coverage.json`、`tests/results/hints_font.log`。仅验证 Linux 实际 SystemFont 回退链。
+- 布局检查：204 关 × 8 种面板状态（机制提醒、搜索中、已完成、额度耗尽、无解、无效、已求解第二层、第三层）共 1,632 场景，合法格与面板投影包围盒交叠为 0。每格按四角投影验证；状态使用专门布局 fixture，不是 1,632 次真实求解。证据：`tests/hint_layout_checks.gd`、`tests/results/hint_layout_checks.log`。
+- 五张真实 GUI 截图已生成并实际查看：`screenshots/v2/hints_tier1.png`、`hints_tier2.png`、`hints_tier3.png`、`hints_city_45.png`、`hints_rainforest_45.png`。前三张同一开局均为 0 步 0 推，后两张检查后期密集场景的面板和路线可读性。
+- 章节文案修订后，山城第 2 章实际 GUI 截图 `screenshots/v2/chapter_city_02_text.png` 已查看：长说明正常换行、无裁切/重叠，0 进度下第 6–10 关均锁定。
+- 原生窗口手动 H→J→J 确认不会自动走棋；Left 后计数才变 1 步，面板、金圈和路线立即清除；再次 H/Esc 只关闭提示，不离开棋盘。桌面正常关闭游戏，日志无 ERROR/资源泄漏；软件驱动仍报告不支持更改 VSync。`fourfold_qa/hints-manual.log` 为工作区证据，不作为工程内文件路径。
+- 独立最终冻结审计：2,610 断言通过（767 行为、53 真实 Input.parse_input_event 事件分发、156 已分配搜索节点的在途中断/替换、1,634 布局断言）。9 类取消动作与未回收完立即重请求均无旧结果残留；8 个生产源/数据资源跑前后 hash 完全一致。0 SCRIPT ERROR/ERROR。独立布局额外覆盖 8,624 个潜在箱子/站位标记采样，重叠 0。证据：`tests/hint_ui_audit_summary.json`、`tests/hint_ui_audit_suite.log`、`tests/hint_ui_audit_report.md`。
+
+补充：2026-10-23 12:38 UTC 前完成提示接入与教学文案修订后的全 204 关真实处理器回归，带混音、隔离存档，7,852 项检查全部通过，完成 204，退出码 0；日志无 ERROR / WARNING / 资源泄漏。源文件指纹与独立提示审计一致。证据：`tests/results/hints_full_handlers.log` 及对应 JSON。没有将 12 帧截图的冷启动指标当作性能基准。macOS、Retina、真实 GPU、手柄仍未验证；2ms 是分帧软预算，不保证硬实时。

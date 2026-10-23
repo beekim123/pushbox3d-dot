@@ -1,0 +1,37 @@
+{
+  "screenshots/v2/hints_city_45.png": {
+    "size": [
+      1180,
+      737
+    ],
+    "sha256": "39b29f2c65b26eb8fd2245313033614f26d47b15a7b9e4303e807559bf1a0ec0"
+  },
+  "screenshots/v2/hints_rainforest_45.png": {
+    "size": [
+      1180,
+      737
+    ],
+    "sha256": "b6bf360ed79b7bc04d902debc79fe11b985a432b2d9a45e7ec2cf21528560c9c"
+  },
+  "screenshots/v2/hints_tier1.png": {
+    "size": [
+      1180,
+      737
+    ],
+    "sha256": "a667ea975fe5d2867324d6160aeb39bbf1ef5c8fdce523e31b154d13f276fa5c"
+  },
+  "screenshots/v2/hints_tier2.png": {
+    "size": [
+      1180,
+      737
+    ],
+    "sha256": "9d7b4e36057cd6757f11f31911e84a431c2178466706941abd6ad60057da2f54"
+  },
+  "screenshots/v2/hints_tier3.png": {
+    "size": [
+      1180,
+      737
+    ],
+    "sha256": "deb0ca19a3a87c19efc74a3c68c383d1940ea52a90d858fad8149a20234b54ff"
+  }
+}

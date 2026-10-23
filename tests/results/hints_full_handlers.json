@@ -1,0 +1,20 @@
+{
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "exit_code": 0,
+  "checks": 7852,
+  "failures": 0,
+  "completed": 204,
+  "audio_mixer_enabled": true,
+  "isolated_user_data": true,
+  "source_sha256": {
+    "scripts/main.gd": "417544c6b1f43914bc8f83524d9037e073a7c84cb5ea9ac04cc7971dd0534e41",
+    "scripts/hint_solver.gd": "f266da3bb93226cbb68c3077d8481d637411ea0da81d508016ec431c443ddbe9",
+    "scripts/hint_overlay.gd": "9e5c58a95617444feb0d2c6475fb9490b0c855bb7e45f20919f2a5e42b11bd7a",
+    "scripts/puzzle_rules.gd": "260130edbe5978fc610a5e8fcc2f84ff19e8fc8beb16d3a2971790f1cc68df64",
+    "scripts/world_view.gd": "da7cacb34f8fc3d75bb0355bc07352664ed8781ee09ac46319c16e7837caebe7",
+    "scripts/ui_kit.gd": "5338959aea6f222952feedf8f3f53c4eaabb2be87d52e3c9c95f359057291be6",
+    "assets/levels.json": "3658774f0015b859ff27e13b0ef48c6e5071df921d0d155be797565de302fcda",
+    "project.godot": "a0bca2ccbcdcc25b15b0f8ff59b84307e39c369f851b48f308568f607159850a"
+  },
+  "log_sha256": "470b513fc4658b0422a3272ab4bf2a49b1ff5a8e326ad368f06a4544d49bf4d0"
+}

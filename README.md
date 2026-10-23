@@ -1,6 +1,6 @@
 # 四隅织途 · Loom of Four Horizons
 
-> **仓库资源迁入尚未完成：47/62 GLB，音频及 Blender 源文件尚缺；此检查点不是完整可运行包。详见 [迁入状态](docs/REPOSITORY_STATUS.md)。**
+> **仓库资源迁入尚未完成：47/62 GLB，音频及 Blender 源文件尚缺；提示源码已保存，但此检查点不是完整可运行包。详见 [迁入状态](docs/REPOSITORY_STATUS.md)。**
 
 原创 Godot 4.7.2 三维推箱解谜游戏。主仓库：https://github.com/beekim123/pushbox3d-dot
 
@@ -34,7 +34,8 @@
 - 方向键 / WASD：移动与推动；只能推一个箱子，不能拉。
 - Z / Backspace：无限撤销。
 - R：重置，**重置本身也可撤销**。
-- F1：帮助；Esc：关闭弹窗或返回；M：声音；F2：高/轻画质。
+- F1：帮助；Esc：优先收起线索、关闭弹窗或返回；M：声音；F2：高/轻画质。
+- H：打开/收起可选线索；J：主动展开下一层。先给机制提醒，再提示下一只箱子的一个推动，最后才可选择显示到位路线；从不自动移动。
 - 单次按键有立即响应，动画中允许缓冲一个动作，不积压长串输入。
 - 自动保存进度和最佳成绩。V1 存档在验证归档成功后才开启 V2 新旅程，保留声音设置；不覆盖未知未来版本或备份失败的旧档。
 
@@ -52,6 +53,7 @@
 - `docs/campaign_chapters.md`：40 章目标、全部 200 主线的设计说明与推/步指标。
 - `docs/levels_validation.md`：204 关求解、对称去重、机制旁路检查与限制。
 - `tests/acceptance_audit_v2.md`：独立验收。
+- `docs/progressive_hints.md`：三级提示、生命周期与性能边界。
 - `docs/TEST_REPORT.md`：当前阶段实际测试及尚未验证部分。
 - `docs/decisions.md`：取舍与修正。
 

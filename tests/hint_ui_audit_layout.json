@@ -1,0 +1,12 @@
+{
+  "assertions": 1634,
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "levels": 204,
+  "overlaps": [],
+  "passed": true,
+  "potential_box_stand_samples": 8624,
+  "projected_legal_cells": 34496,
+  "scope": "Actual production camera and panel geometry at1440x900; eight text-template fixtures, not204 solved-gameplay results. Includes floor AABBs and conservative ring/arrow extents on all legal cells.",
+  "templates": 1632
+}

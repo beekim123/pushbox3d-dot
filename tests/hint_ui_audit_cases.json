@@ -1,0 +1,61 @@
+[
+  {
+    "case_id": "middle_heaven_20_1",
+    "level_id": "heaven_20",
+    "state": {
+      "player": [
+        6,
+        2
+      ],
+      "crates": [
+        [
+          2,
+          2
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    "expected_status": "unsolvable"
+  },
+  {
+    "case_id": "middle_inferno_04_1",
+    "level_id": "inferno_04",
+    "state": {
+      "player": [
+        2,
+        1
+      ],
+      "crates": [
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "expected_status": "unsolvable"
+  },
+  {
+    "case_id": "middle_heaven_09_1",
+    "level_id": "heaven_09",
+    "state": {
+      "player": [
+        3,
+        4
+      ],
+      "crates": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    "expected_status": "already_solved"
+  }
+]

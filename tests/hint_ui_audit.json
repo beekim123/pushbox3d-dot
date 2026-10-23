@@ -1,0 +1,43 @@
+{
+  "assertions": 767,
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "observations": [
+    {
+      "level": "heaven_03",
+      "status": "solved",
+      "tier": 3,
+      "walk_length": 1
+    },
+    {
+      "level": "inferno_03",
+      "status": "solved",
+      "tier": 3,
+      "walk_length": 2
+    },
+    {
+      "level": "rainforest_03",
+      "status": "solved",
+      "tier": 3,
+      "walk_length": 3
+    },
+    {
+      "level": "city_03",
+      "status": "solved",
+      "tier": 3,
+      "walk_length": 4
+    },
+    {
+      "level": "confluence_01",
+      "status": "solved",
+      "tier": 3,
+      "walk_length": 4
+    },
+    {
+      "menu_cleanup_frames": 1
+    }
+  ],
+  "passed": true,
+  "scope": "Production scene, real hint button signals/key handlers/process frames and original rules; budget cap overwritten only in the test to exercise its real UI branch.",
+  "search_frames": 30
+}
