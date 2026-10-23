@@ -18,3 +18,16 @@ is used. The inherited remote game still has incomplete runtime media.
 - `blender/generate_orchard.py`: `fb97d93a4080d513a243e830bab4ac3ecbc8f3eaf5039a124d3436ce82f361be`
 - `canopy_review/orchard_canopy_source.patch`: `a38f1d2cea58c9d8c565d08381da37feefe9f2a11a7117820d43de69cbab0259`
 - `canopy_review/generate_orchard.baseline.py`: `92a8cac84bd6aa8d58f1bb0ce252a9c5e8f6f4b6b2d28e7e5f4e532a2fdec747`
+
+## Solid-fan candidate source — 2026-10-23 15:59 UTC
+
+Current generator is copied from the author's explicit final frozen source, SHA-256
+`9a76c92be8caa087569d0f9e4b3ae37b8713649a91b7f694121add4b36d631ad`.
+The new final patch (SHA `f3f8db3a266e0a86d98fcf9593b8f70024777b377999c3a52493c0cb5614f328`)
+applies against the retained baseline; Python syntax and patch dry-run were checked.
+The earlier v1 source and patch remain in Git history.
+
+Author reports all three AABBs within baseline, with 30,824 / 41,204 / 15,412 triangles
+and 12 batches each. Those figures are author-reported at this source checkpoint,
+not a new independent art acceptance. Same-camera native high/low review is still
+in progress. GLBs, .blend and images stay local; production is unchanged.
