@@ -51,3 +51,14 @@ The parent has additionally requested a native CUA held-key probe. That new prob
 still pending at this checkpoint, so this backup is not a final main-promotion claim.
 Author README is retained as AUTHOR_README.md without replacing this scope note.
 Large layout.json is raw textual test evidence, not a screenshot or binary asset.
+
+## Final native input evidence — 2026-10-23 15:28 UTC
+
+The reviewer has frozen the final text manifest and added the requested real X11
+held-key probe. Native WASD A was held for 1,273 ms; the help-close guard required
+release/repress as intended. The native Left probe reported physical_keycode=0,
+and no OS echo events were seen: this is NOT a claim that OS autorepeat was tested.
+See native_input_review.json, REPORT.md, and FROZEN_TEXT_MANIFEST.json for boundaries.
+All 12 production input hashes remain unchanged. This is a focused UI/lifecycle
+audit, not a new complete gameplay regression. Main promotion still needs parent
+authorization; no binary or screenshot upload was attempted.

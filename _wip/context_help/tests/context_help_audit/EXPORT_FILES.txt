@@ -4,6 +4,7 @@ screenshots/context_help_audit/confluence_01.png
 screenshots/context_help_audit/heaven_13.png
 screenshots/context_help_audit/title_generic.png
 screenshots/context_help_audit/world_stale_level.png
+tests/context_help_audit/EXPORT_FILES.txt
 tests/context_help_audit/FINAL_SUMMARY.json
 tests/context_help_audit/REPORT.md
 tests/context_help_audit/behavior.gd
@@ -16,6 +17,17 @@ tests/context_help_audit/layout.gd
 tests/context_help_audit/layout.json
 tests/context_help_audit/layout.log
 tests/context_help_audit/native_capture.sh
+tests/context_help_audit/native_hold.gd
+tests/context_help_audit/native_hold.json
+tests/context_help_audit/native_hold.log
+tests/context_help_audit/native_hold.sh
+tests/context_help_audit/native_hold_ready.json
+tests/context_help_audit/native_hold_wasd.gd
+tests/context_help_audit/native_hold_wasd.json
+tests/context_help_audit/native_hold_wasd.log
+tests/context_help_audit/native_hold_wasd.sh
+tests/context_help_audit/native_hold_wasd_ready.json
+tests/context_help_audit/native_input_review.json
 tests/context_help_audit/native_manifest.json
 tests/context_help_audit/native_source_before.json
 tests/context_help_audit/run.sh

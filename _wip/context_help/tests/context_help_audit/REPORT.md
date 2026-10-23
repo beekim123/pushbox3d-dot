@@ -24,6 +24,14 @@
 
 这里的输入是 Godot `Input.parse_input_event` 的真实传播，包括 physical keycode 和鼠标事件，**不是只直接调用移动 handler**。存档 round trip 本轮为同进程新控制器，不冒充跨进程重启专项。
 
+## 原生按住键补测（与引擎事件统计分开）
+
+又通过已公开的 CUA `App.pressKey(key, {durationMs})` 操作真实 X11 游戏窗口；专属 observer **没有调用 `Input.parse_input_event`**：
+
+- `a+Escape` 持有：Godot 实际收到 A 的 `physical_keycode=65`，先 A 按下、后 Esc 关闭帮助，A 在 **1273 ms** 后释放。关闭后的 **21 个采样**均显示 A 仍按住、help guard 有效、步数仍为 0；松开后新按 a 恰好走 1 步。`native_hold_wasd.json` 通过。
+- 原生 Left 组合的 CUA 注入却给出 `physical_keycode=0`，`is_physical_key_pressed(Left)` 一直为 false。它只证明帮助可关闭及新单按可移动，**不能验证箭头物理长按防护**。`native_hold.json` 保留探针未满足前置条件的原始失败，不将它误解释为生产代码出现漏步；分类说明见 `native_input_review.json`。
+- 两次都没有 echo 事件，因此 **OS autorepeat 尚未验证**；也不称真人硬件键盘长按验收。完整 8 键和同帧 release/repress 的证据仍是前述 352 个引擎真实分派事件，不混入原生统计。
+
 ## 布局与原生视觉
 
 布局调用真实 `start_level` 和 `show_help`，检查 **204 关 + 4 个非关卡状态 = 208 行布局**。所有 Label/按钮在 1440×900 viewport 与弹窗内；每个弹窗仍只有原有一个关闭按钮。最大 `city_04` 为 **560×741，y=79**，无需新按钮或滚动容器。
@@ -61,6 +69,7 @@ GODOT=/path/to/godot-4.7.2 tests/context_help_audit/native_capture.sh
 - `capture.json/.log`、`native_source_before.json`、`native_manifest.json`：原生显示服务器、实际分辨率、最终源码和每张 PNG SHA。
 - `visual_review.json`：独立像素查看记录；与原生 capture 成功区分。
 - `runner_rejects_wrong_version.log`：实际 Godot 4.6.3 被 runner 拒绝，未冒充 4.7.2 测试。
+- `native_hold.gd/.json/.log`、`native_hold_wasd.gd/.json/.log`、`native_input_review.json`：原生箭头工具边界与 WASD A 持有证据；原始不通过前置条件的探针也保留。
 - `FINAL_SUMMARY.json`：本阶段独审总览；只汇总本次新结果，不混入提案原型、旧 hint 或 resume 阶段统计。
 
 这是一项 UI/生命周期专项通过，不是 204 关真人趣味验证、新最优解证明或全仓库回归通过。求解规则、200+4 关数据、live hint solver 与持久化格式均未由本审查修改。

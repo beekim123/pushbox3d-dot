@@ -27,10 +27,14 @@
     "project.godot": "a0bca2ccbcdcc25b15b0f8ff59b84307e39c369f851b48f308568f607159850a"
   },
   "audit_source_sha256": {
+    "tests/context_help_audit/native_hold_wasd.sh": "840defda3e968e8143f8536908a8331ac780e6e8263744f213a44d1c44465ff6",
     "tests/context_help_audit/capture.gd": "ef033cd3587d5a207d4e5a8bb513fa8aaaee40306494fbf7e9f82c9d75e0b6dc",
+    "tests/context_help_audit/native_hold_wasd.gd": "4b45b4ab1f12a04a2382c58222a66e65d1d45bcd9fb117f9ca675cb0f937999f",
     "tests/context_help_audit/native_capture.sh": "b19dd09252112ffde40a7e3a97956a0fe2c41b597ea23df0858cda75655f6259",
+    "tests/context_help_audit/native_hold.gd": "73bff78382ad6dec57b9b6818e7e3de7deb8a6d40fdf88e8ac2d58581b4b3e68",
     "tests/context_help_audit/behavior.gd": "9ba2053084d89736d293017309b7518175c0783325786278b91930db3f1fd73e",
     "tests/context_help_audit/layout.gd": "51c844aed1ef78781db9ded380d7965f0c2b5fd93169e0ce401d3fa7796d030a",
+    "tests/context_help_audit/native_hold.sh": "3ac328179afa90ad0accdc5d47481b1d9ca86dc4bdfbbe3a2c631f24051a2e54",
     "tests/context_help_audit/run.sh": "ac2338d9743821b2899de66fa94103c328557cfdef60aa1ba0b20ace74abc4cb"
   },
   "limits": [
@@ -38,6 +42,11 @@
     "Actual Input.parse_input_event, not manual hardware keyboard testing",
     "Same-process resume controller reload, not cross-process restart audit",
     "1440x900 viewport; smaller screens/Retina/macOS fonts not verified",
-    "No full repository regression or new puzzle proof claimed"
-  ]
+    "No full repository regression or new puzzle proof claimed",
+    "Native CUA Left has physical_keycode=0; native arrow hold and OS autorepeat remain unverified. Native WASD A hold verified separately."
+  ],
+  "native_wasd_a_hold_passed": true,
+  "native_wasd_a_hold_ms": 1273,
+  "native_arrow_hold_verified": false,
+  "native_os_autorepeat_verified": false
 }

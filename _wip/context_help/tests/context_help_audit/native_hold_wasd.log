@@ -1,0 +1,8 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)
+
+QUALITY low adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+NATIVE_HOLD_READY: use CUA A+Escape held 1200ms, then fresh A, then F12
+NATIVE_HOLD_RESULT {"blocked_samples":21,"failures":[],"final_moves":1,"first_hold_ms":1273,"native_echo_events":0,"passed":true}
