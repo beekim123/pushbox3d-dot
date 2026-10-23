@@ -40,3 +40,18 @@ checked when frozen; evidence is retained under tests/results/.
 Independent review is still running. Author documentation is not frozen yet and is
 intentionally omitted from this increment. No final acceptance/main promotion is
 implied; these are new scoped results, not reused context-help counts.
+
+## Final independent evidence frozen — 2026-10-23 15:53 UTC
+
+The final corrected runner was completely rerun, exit 0. Frozen independent results:
+3,187 assertions = 298 completion-focused + 193 help behavior + 2,696 help layout;
+920 engine key events are counted separately. Four final native 1440×900 images
+were viewed by the reviewer, recorded in visual_review.json; PNG bytes remain local.
+The original native capture manifest retains its capture-time Pending wording,
+closed by the later visual review rather than silently rewritten.
+
+FROZEN_TEXT_MANIFEST.json locks the 24 result/source text files and all 12 runtime
+inputs. Its own SHA-256 is 3de2f62bec53c1004fa30cbc0404fb3e2348cef3ad63659699ab6d1acc90768c.
+The previously captured run.sh had an aggregation-index typo; this checkpoint
+replaces it with the corrected, rerun version. Main promotion still requires the
+parent's final authorization. No old result or screenshot upload is implied.

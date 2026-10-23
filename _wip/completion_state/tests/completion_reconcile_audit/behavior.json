@@ -1,0 +1,21 @@
+{
+  "assertions": 298,
+  "effect_counts": {
+    "celebrate_starts": 24,
+    "save_calls": 11,
+    "win_sfx_calls": 24
+  },
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "mouse_events": 12,
+  "observations": [
+    {
+      "animation": "actual AnimationPlayer.animation_started signals",
+      "disk_scope": "real isolated resume sidecar; QA skips primary progress file writes, spy counts save invocation rather than durable commit",
+      "native": false,
+      "spy": "production scene script replaced by subclass that counts save_progress/sfx then calls super; no handler logic substituted"
+    }
+  ],
+  "passed": true,
+  "physical_key_events": 568
+}

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "inspected_all_pixels": true,
+  "stage": "subsequent independent pixel inspection after raw native capture",
+  "source_main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+  "rows": [
+    {
+      "path": "res://screenshots/completion_reconcile_audit/pending_win_reset_undo.png",
+      "sha256": "5e1ad4d525d1e22f6a7b781ce2e834d9838ccd576c1e35876a75b6bafd430d68",
+      "review": "No clipped title/body/action text; correct Next or Hub action, or intentionally dismissed modal state."
+    },
+    {
+      "path": "res://screenshots/completion_reconcile_audit/help_returns_next.png",
+      "sha256": "71f6667d7fbc87080dda058937e2026762959f2bb16a14eee4e2210463261638",
+      "review": "No clipped title/body/action text; correct Next or Hub action, or intentionally dismissed modal state."
+    },
+    {
+      "path": "res://screenshots/completion_reconcile_audit/dismissed_result_exploration.png",
+      "sha256": "065828605b135d23fd4493fa2dd9a2b5734d78791732e6299f251910dda1d212",
+      "review": "No clipped title/body/action text; correct Next or Hub action, or intentionally dismissed modal state."
+    },
+    {
+      "path": "res://screenshots/completion_reconcile_audit/final_world_help_returns_hub.png",
+      "sha256": "53b1e63dd8a1bfbc5780441911340d4ed48c4e61c94818d75f2c9372d31b3f15",
+      "review": "No clipped title/body/action text; correct Next or Hub action, or intentionally dismissed modal state."
+    }
+  ],
+  "limits": [
+    "X11 llvmpipe high quality 1440x900 viewport",
+    "Engine-generated input; not hardware key press coverage",
+    "Desktop-window/small-screen fit not asserted"
+  ]
+}

@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)
+
+QUALITY high adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+COMPLETION_NATIVE_CAPTURE {"buttons":["声音  开","帮助  F1","织机中庭","线索 H","撤销 Z","重置 R","选关","前往下一道谜题  →","撤销最后一步  Z","回到世界选关"],"id":"pending_win_reset_undo","image_size":[1440,900],"level":"heaven_01","moves":1,"path":"res://screenshots/completion_reconcile_audit/pending_win_reset_undo.png","pushes":1,"result":true,"save_error":0,"won":true}
+COMPLETION_NATIVE_CAPTURE {"buttons":["声音  开","帮助  F1","织机中庭","线索 H","撤销 Z","重置 R","选关","前往下一道谜题  →","撤销最后一步  Z","回到世界选关"],"id":"help_returns_next","image_size":[1440,900],"level":"heaven_01","moves":1,"path":"res://screenshots/completion_reconcile_audit/help_returns_next.png","pushes":1,"result":true,"save_error":0,"won":true}
+COMPLETION_NATIVE_CAPTURE {"buttons":["声音  开","帮助  F1","织机中庭","线索 H","撤销 Z","重置 R","选关"],"id":"dismissed_result_exploration","image_size":[1440,900],"level":"heaven_01","moves":2,"path":"res://screenshots/completion_reconcile_audit/dismissed_result_exploration.png","pushes":1,"result":false,"save_error":0,"won":true}
+COMPLETION_NATIVE_CAPTURE {"buttons":["声音  开","帮助  F1","织机中庭","线索 H","撤销 Z","重置 R","选关","把线带回中庭  →","撤销最后一步  Z","回到世界选关"],"id":"final_world_help_returns_hub","image_size":[1440,900],"level":"heaven_50","moves":47,"path":"res://screenshots/completion_reconcile_audit/final_world_help_returns_hub.png","pushes":14,"result":true,"save_error":0,"won":true}
