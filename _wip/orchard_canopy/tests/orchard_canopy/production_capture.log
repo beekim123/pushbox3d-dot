@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)
+
+QUALITY high adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+QUALITY high adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+CANOPY_NATIVE heaven_03_high camera={ "position": [6.70067071914673, 27.4558067321777, 22.8316459655762], "rotation": [-0.80852496623993, 0.32811987400055, 0.0], "size": 25.5944309234619, "fit_bounds": "[P: (313.3877, 126.0), S: (813.2246, 639.0)]" } captured=/workspace/scratch/e4cad742399c/fourfold_next/orchard_canopy/canopy_review/production_native
+CANOPY_NATIVE heaven_10_high camera={ "position": [8.50089740753174, 26.1382789611816, 23.6764888763428], "rotation": [-0.80852496623993, 0.32811987400055, 0.0], "size": 21.7402820587158, "fit_bounds": "[P: (227.7481, 126.0001), S: (984.5037, 638.9999)]" } captured=/workspace/scratch/e4cad742399c/fourfold_next/orchard_canopy/canopy_review/production_native
+CANOPY_NATIVE heaven_45_high camera={ "position": [7.94691038131714, 26.1966934204102, 23.8004531860352], "rotation": [-0.80852496623993, 0.32811987400055, 0.0], "size": 26.5, "fit_bounds": "[P: (181.6471, 149.2274), S: (1076.706, 592.5453)]" } captured=/workspace/scratch/e4cad742399c/fourfold_next/orchard_canopy/canopy_review/production_native
+CANOPY_NATIVE hub_high camera={ "position": [8.0, 30.0, 27.0], "rotation": [-0.81701993942261, 0.28805547952652, 0.0], "size": 31.0, "fit_bounds": "[P: (181.6471, 149.2274), S: (1076.706, 592.5453)]" } captured=/workspace/scratch/e4cad742399c/fourfold_next/orchard_canopy/canopy_review/production_native
+CANOPY_NATIVE_COMPLETE {"captures":4,"failures":[],"output":"/workspace/scratch/e4cad742399c/fourfold_next/orchard_canopy/canopy_review/production_native"}

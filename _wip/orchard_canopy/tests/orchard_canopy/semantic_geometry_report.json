@@ -1,0 +1,47 @@
+{
+  "heaven_landmark.glb": {
+    "post_sort_attempt": {
+      "semantic_sha256_rounded_1e_6": "91110bf96070d7e984988a34dd8307bd1261b2a4444decfb0121c1828e553f74",
+      "triangles": 30184,
+      "materials": 12,
+      "file_sha256": "d7a1518775c1b8f9ab37c2ba4689d888b04caca3a8759958fe2e70e9ad0c56e1"
+    },
+    "accepted_source_rebuild": {
+      "semantic_sha256_rounded_1e_6": "91110bf96070d7e984988a34dd8307bd1261b2a4444decfb0121c1828e553f74",
+      "triangles": 30184,
+      "materials": 12,
+      "file_sha256": "ac00b6c3c5ab947afa91d4b2652f278cde6c3b552640aa2dffd5751d30ba6ac4"
+    },
+    "semantic_equal": true
+  },
+  "heaven_landmark_b.glb": {
+    "post_sort_attempt": {
+      "semantic_sha256_rounded_1e_6": "4988cda93f5a64dd078a9d3234e20c1c3bc7a7f272e07a8583550de1051dd81c",
+      "triangles": 41204,
+      "materials": 12,
+      "file_sha256": "3f499981324ab37934cb5883f206cedd7e8cef18751136bf0fb8080032bc16a7"
+    },
+    "accepted_source_rebuild": {
+      "semantic_sha256_rounded_1e_6": "4988cda93f5a64dd078a9d3234e20c1c3bc7a7f272e07a8583550de1051dd81c",
+      "triangles": 41204,
+      "materials": 12,
+      "file_sha256": "e578928aa5288d0d393d0538c186279deab410c21fc9edfe55a4e658a814c5a7"
+    },
+    "semantic_equal": true
+  },
+  "heaven_decor_a.glb": {
+    "post_sort_attempt": {
+      "semantic_sha256_rounded_1e_6": "52060c2d49399e8a05b2e6d0d483ce5b63551e425f55267cb32b9469558ef07b",
+      "triangles": 15412,
+      "materials": 12,
+      "file_sha256": "064d47436fa91af573a81f838f91f7a502d1b9c65d744910e227d4351e49a88e"
+    },
+    "accepted_source_rebuild": {
+      "semantic_sha256_rounded_1e_6": "52060c2d49399e8a05b2e6d0d483ce5b63551e425f55267cb32b9469558ef07b",
+      "triangles": 15412,
+      "materials": 12,
+      "file_sha256": "1f1eca183a35e1840c1d4809b4d356cabb94c5fe2f36602cf7cefa23a2b0dfa3"
+    },
+    "semantic_equal": true
+  }
+}

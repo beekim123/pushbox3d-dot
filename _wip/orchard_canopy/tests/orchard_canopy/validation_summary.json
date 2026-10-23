@@ -1,0 +1,203 @@
+{
+  "all_unrelated_helpers_ast_equal": true,
+  "unrelated_helpers": {
+    "tiny": true,
+    "branch": true,
+    "blossom": true,
+    "fruit": true,
+    "rock": true,
+    "shrub": true,
+    "lotus": true,
+    "terrace": true,
+    "rounded_outline": true,
+    "smooth_outline": true,
+    "scholar_rock": true,
+    "landscape": true,
+    "export_merged": true,
+    "inst": true,
+    "main": true
+  },
+  "runtime_matches_current_production": false,
+  "native_before": {
+    "display": "X11",
+    "engine": "4.7.2-stable (official)",
+    "viewport": [
+      1440,
+      900
+    ],
+    "failures": []
+  },
+  "native_after": {
+    "display": "X11",
+    "engine": "4.7.2-stable (official)",
+    "viewport": [
+      1440,
+      900
+    ],
+    "failures": []
+  },
+  "camera_comparison": [
+    {
+      "id": "heaven_03_high",
+      "matched_camera_equal": {
+        "position": true,
+        "rotation": true,
+        "size": true
+      },
+      "matched_markers_equal": true,
+      "lighting_equal": true,
+      "draw_calls_before": 280.0,
+      "draw_calls_after": 280.0,
+      "primitives_before": 146563.0,
+      "primitives_after": 121897.0,
+      "auto_fit_size_delta": 0.05720901489259944,
+      "auto_fit_position_delta": 0.020023250112885034
+    },
+    {
+      "id": "heaven_10_high",
+      "matched_camera_equal": {
+        "position": true,
+        "rotation": true,
+        "size": true
+      },
+      "matched_markers_equal": true,
+      "lighting_equal": true,
+      "draw_calls_before": 296.0,
+      "draw_calls_after": 296.0,
+      "primitives_before": 158313.0,
+      "primitives_after": 131603.0,
+      "auto_fit_size_delta": 0.0,
+      "auto_fit_position_delta": 0.01400136251773349
+    },
+    {
+      "id": "heaven_45_high",
+      "matched_camera_equal": {
+        "position": true,
+        "rotation": true,
+        "size": true
+      },
+      "matched_markers_equal": true,
+      "lighting_equal": true,
+      "draw_calls_before": 312.0,
+      "draw_calls_after": 312.0,
+      "primitives_before": 160637.0,
+      "primitives_after": 136211.0,
+      "auto_fit_size_delta": 0.0,
+      "auto_fit_position_delta": 0.015053743805555908
+    },
+    {
+      "id": "hub_high",
+      "matched_camera_equal": {
+        "position": true,
+        "rotation": true,
+        "size": true
+      },
+      "matched_markers_equal": true,
+      "lighting_equal": true,
+      "draw_calls_before": 531.0,
+      "draw_calls_after": 531.0,
+      "primitives_before": 327756.0,
+      "primitives_after": 319150.0,
+      "auto_fit_size_delta": 0.0,
+      "auto_fit_position_delta": 0.0
+    },
+    {
+      "id": "heaven_03_low",
+      "matched_camera_equal": {
+        "position": true,
+        "rotation": true,
+        "size": true
+      },
+      "matched_markers_equal": true,
+      "lighting_equal": true,
+      "draw_calls_before": 280.0,
+      "draw_calls_after": 280.0,
+      "primitives_before": 146563.0,
+      "primitives_after": 121897.0,
+      "auto_fit_size_delta": 0.05720901489259944,
+      "auto_fit_position_delta": 0.020023250112885034
+    },
+    {
+      "id": "heaven_10_low",
+      "matched_camera_equal": {
+        "position": true,
+        "rotation": true,
+        "size": true
+      },
+      "matched_markers_equal": true,
+      "lighting_equal": true,
+      "draw_calls_before": 296.0,
+      "draw_calls_after": 296.0,
+      "primitives_before": 158313.0,
+      "primitives_after": 131603.0,
+      "auto_fit_size_delta": 0.0,
+      "auto_fit_position_delta": 0.01400136251773349
+    },
+    {
+      "id": "heaven_45_low",
+      "matched_camera_equal": {
+        "position": true,
+        "rotation": true,
+        "size": true
+      },
+      "matched_markers_equal": true,
+      "lighting_equal": true,
+      "draw_calls_before": 312.0,
+      "draw_calls_after": 312.0,
+      "primitives_before": 160637.0,
+      "primitives_after": 136211.0,
+      "auto_fit_size_delta": 0.0,
+      "auto_fit_position_delta": 0.015053743805555908
+    },
+    {
+      "id": "hub_low",
+      "matched_camera_equal": {
+        "position": true,
+        "rotation": true,
+        "size": true
+      },
+      "matched_markers_equal": true,
+      "lighting_equal": true,
+      "draw_calls_before": 531.0,
+      "draw_calls_after": 531.0,
+      "primitives_before": 327756.0,
+      "primitives_after": 319150.0,
+      "auto_fit_size_delta": 0.0,
+      "auto_fit_position_delta": 0.0
+    }
+  ],
+  "runtime_unchanged_since_initial_copy": true,
+  "runtime_differences_from_current_production": [
+    "scripts/main.gd"
+  ],
+  "runtime_note": "Root independently advanced production main.gd during this isolated art task. Before and after captures use identical initial snapshot scripts; world_view.gd, assets/levels.json and all non-tree GLBs remain unchanged. Integrate only the explicit tree source/assets, never copy the whole prototype over current production.",
+  "baseline_clone_runtime_matches_candidate": true,
+  "final_source_sha256": "4077183a1854e81c594557adc6938baecb97c97de1fc9d523ef458a6a0dc9c11",
+  "native_final": {
+    "display": "X11",
+    "engine": "4.7.2-stable (official)",
+    "viewport": [
+      1440,
+      900
+    ],
+    "failures": [],
+    "path": "native_final"
+  },
+  "full_campaign_camera_fit": {
+    "checked": 204,
+    "hud_clips": 0,
+    "log": "camera_fit_final.log"
+  },
+  "asset_audit": {
+    "passed": true,
+    "models": 62,
+    "sources": 6,
+    "errors": []
+  },
+  "only_changed_glbs": [
+    "heaven_decor_a.glb",
+    "heaven_landmark.glb",
+    "heaven_landmark_b.glb"
+  ],
+  "byte_reproducibility": "Not supported; attempted sorting did not produce stable byte hashes and was reverted. Per-delivery hashes pin final exact bytes."
+}

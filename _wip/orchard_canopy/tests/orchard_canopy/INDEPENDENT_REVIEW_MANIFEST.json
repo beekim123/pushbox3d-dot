@@ -1,0 +1,74 @@
+{
+  "reviewer": "review_orchard_visual_polish",
+  "review_utc": "2026-10-23T16:16:00Z",
+  "final_byte_visual_acceptance": true,
+  "byte_reproducibility_established": false,
+  "binary_publication_authorized_by_this_review": false,
+  "files": {
+    "blender/generate_orchard.py": "4077183a1854e81c594557adc6938baecb97c97de1fc9d523ef458a6a0dc9c11",
+    "blender/heaven_orchard.blend": "4083136429ce77c57bd75ad4c92ce820362cad995e51f3f2e3add9e594c2b021",
+    "assets/models/heaven_landmark.glb": "ac00b6c3c5ab947afa91d4b2652f278cde6c3b552640aa2dffd5751d30ba6ac4",
+    "assets/models/heaven_landmark_b.glb": "e578928aa5288d0d393d0538c186279deab410c21fc9edfe55a4e658a814c5a7",
+    "assets/models/heaven_decor_a.glb": "1f1eca183a35e1840c1d4809b4d356cabb94c5fe2f36602cf7cefa23a2b0dfa3"
+  },
+  "actually_inspected_final_images": {
+    "canopy_review/native_final/heaven_03_high.png": "aea696a60366eac72d5363aff16a6bf3fa7cee19b72eb7d7556960fd2fd58da9",
+    "canopy_review/native_final/heaven_03_low.png": "082bcbf96d1189ef38978022ff974feb0b20e1f83e4f9203616b0901650be4d5",
+    "canopy_review/native_final/heaven_10_high.png": "14b79261f9b92a1c9f28b3cf95c24690873a6d261d374812594b0430f8bba27f",
+    "canopy_review/native_final/heaven_10_low.png": "0194804bcec50b2646d2354d6a16d89a4bbb5977f6d8c8af065fcccd09674424",
+    "canopy_review/native_final/heaven_45_high.png": "7b4d8f499270db9ac83001d0922a055295e87804652e6290865f8c747df251b1",
+    "canopy_review/native_final/heaven_45_low.png": "c1481ca9d89a96726662428da6c53b90d865210b174b9f914c89689927cf7afd",
+    "canopy_review/native_final/hub_high.png": "50032991c849a5026073f6d6267bd83c845d2bb335a9cad5deda6bc9e4ff0338",
+    "canopy_review/native_final/hub_low.png": "858a78b6e08997b4aad556fd598f6dde90ed31e13726e8ed0828f7662bda6d29",
+    "canopy_review/garden_after_accepted.png": "31501890ac76aad12c84a059c7a63e2f0f704b8d4190a1448166c14459055712",
+    "canopy_review/lineup_after_accepted.png": "73d440b72d84365c41c461ca4998bb29752ae1f3274b4b1a610c872720d4affe"
+  },
+  "evidence_files": {
+    "canopy_review/native_final/capture_manifest.json": "f42af15e3b6e427a62f11dcf5036e8fb57e5fa4f10ac4d49280cc5ddf7d4370d",
+    "canopy_review/semantic_geometry_report.json": "d779d3a8e455dd95ea25ca438f56f44f46f4094decdba2113ac9cb2f7373ce71",
+    "canopy_review/geometry_metrics.json": "d2844909ef803249025e9868705e8ddfa18804c118ec3cbd73fb04d8972d46c6",
+    "canopy_review/camera_fit_final.log": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+    "canopy_review/INDEPENDENT_VISUAL_REVIEW.md": "b8fd42299ff36a21907d8e8272edccca93f81b574f8bdb78198a7575b0cba764",
+    "canopy_review/production_native/production_verification.json": "1472d3a06513ae9485e90e255f7c068ba01e6e0c1fc96b6e4f70a50f9c691b44",
+    "canopy_review/production_native/capture_manifest.json": "5666429263ff86746d353c9380c1c6964820ffdb197d006ed03f7b1cf8cde1c4"
+  },
+  "independently_checked_scene_node_transforms_hierarchy_mesh_bindings_and_attribute_modes_equal_to_retained_post_sort_build": true,
+  "limitations": [
+    "Not user aesthetic approval",
+    "Not full gameplay regression or hardware performance validation",
+    "Not binary upload authorization",
+    "Initially viewed pre-sort GLB bytes were not retained; final accepted-source build has fresh native visual evidence"
+  ],
+  "production_integration": {
+    "verified_utc": "2026-10-23T16:26:00Z",
+    "status": "PASS",
+    "production_project": "/workspace/scratch/e4cad742399c/fourfold_atelier",
+    "production_main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+    "world_view_sha256": "b73a8cad67115445cf9c9bdb0c6312dd5280a0fe43c1c2ddc0ec11b021893a6d",
+    "five_production_files_independently_rehashed_and_equal": true,
+    "four_high_quality_capture_rows_independently_compared_and_equal": true,
+    "eight_pngs_independently_compared_byte_identical": true,
+    "production_image_sha256": {
+      "heaven_03_high.png": "aea696a60366eac72d5363aff16a6bf3fa7cee19b72eb7d7556960fd2fd58da9",
+      "native_heaven_03_high.png": "adbad072c10d722dc98119f0436519b7fb09f204f8ca850e2da63283c5278c13",
+      "heaven_10_high.png": "14b79261f9b92a1c9f28b3cf95c24690873a6d261d374812594b0430f8bba27f",
+      "native_heaven_10_high.png": "8c3bb26470e15f5d74fc34bd4ee579a9e18f1837ae111d5d8c6420578bfba3b3",
+      "heaven_45_high.png": "7b4d8f499270db9ac83001d0922a055295e87804652e6290865f8c747df251b1",
+      "native_heaven_45_high.png": "02e8a97c3421bee3d4b17b1307281334509fb347a7b9fb648998641c0cdf1efe",
+      "hub_high.png": "50032991c849a5026073f6d6267bd83c845d2bb335a9cad5deda6bc9e4ff0338",
+      "native_hub_high.png": "bd8cbbdb9ef8d975c61f4fd34458dfa8c0553f33c07ea8831faeaefebfc60b28"
+    },
+    "root_run_logs_read": {
+      "recovery/orchard_canopy/import.log": "6e0484262f9440024e48fc4da2070b7ae3cf7229d5100099986a924da29df3a5",
+      "recovery/orchard_canopy/boot.log": "721c99edd5271f49bce2266ebf18837b590437480186d781cdb183e60f922331",
+      "recovery/orchard_canopy/camera.log": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+      "recovery/orchard_canopy/assets.log": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf"
+    },
+    "limits": [
+      "No fresh low-quality production capture claimed",
+      "Root executed production import/boot/204-camera/62-asset checks; reviewer read logs",
+      "ZIP verification still separate",
+      "Binary upload restriction unchanged"
+    ]
+  }
+}

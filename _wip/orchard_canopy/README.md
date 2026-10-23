@@ -50,3 +50,18 @@ ordering varies. The recorded delivery hashes identify exact reviewed assets;
 semantic geometry checks are a different claim. GLBs, .blend and images remain
 local under the unresolved binary upload restriction. No production Git paths
 are changed by this isolated WIP checkpoint.
+
+## Production integration evidence — 2026-10-23 16:30 UTC
+
+The final 31-file export and exact SHA-256 map are preserved. The independent
+production addendum confirms all five local art files, four high-quality production
+capture rows and eight PNG bytes match the accepted candidate. Root's actual local
+import/boot/204-camera/62-asset checks passed. No new low-quality production capture
+or gameplay regression is claimed by this art-only milestone.
+
+These reports target the full local production game at main.gd SHA b529ffb5…, not
+the older runtime inherited by this isolated branch. AUTHOR_README.md is the frozen
+local-project document, not a claim that GitHub has the new tree models. GLB/blend/PNG
+remain unuploaded; the main text publication will explicitly retain old binary trees.
+Internal review is not user aesthetic acceptance. Full-ZIP verification/delivery is
+a separate later step.
