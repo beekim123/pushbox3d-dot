@@ -19,3 +19,13 @@ All binary-upload restrictions remain in effect; no binaries or private userdata
 are backed up by this checkpoint.
 
 Source SHA-256: `9e42102d54ba591985c1d0b728ebc3f503aeaf5095779adb306ea07d3a911874`.
+
+## Dismiss-aware correction — 2026-10-23 15:42 UTC
+
+Review of the first draft found ordinary movement could reopen a completion panel
+after Esc dismissed it. The next candidate preserves ordinary dismissal through a
+tween and reopens only on explicit restore operations. Author reports 11 focused
+assertions passing; final independent verification remains pending.
+
+Current main.gd SHA-256: `b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e`.
+The initial 9e42102d draft remains historical and is not the current candidate.

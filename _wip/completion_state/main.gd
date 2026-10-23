@@ -557,6 +557,8 @@ func reset_level() -> void:
 
 func complete_level(feedback: bool=true) -> void:
 	if mode!="level" or not RULES.won(level,state): return
+	# Ordinary movement respects a dismissed result; explicit restores reopen it.
+	var show_result:=not win_shown or not feedback
 	# Register a genuine endpoint even when its animation was interrupted.
 	# Reopening an already-recorded result must not replay its side effects.
 	var changed:=false
@@ -572,7 +574,7 @@ func complete_level(feedback: bool=true) -> void:
 		world.play_animation("celebrate")
 		sfx("win")
 	win_shown=true
-	show_completion_panel()
+	if show_result: show_completion_panel()
 
 func show_completion_panel() -> void:
 	if mode!="level" or exit_pending or shutting_down or not RULES.won(level,state): return
