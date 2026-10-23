@@ -6,6 +6,7 @@ const OBSERVATIONS := {
 }
 static func text_for(mode: String, entry: Dictionary) -> String:
  if mode!="level" or entry.is_empty(): return ""
+ if not entry.get("chapter_name") is String or not entry.get("learning_goal") is String: return ""
  var chapter:=str(entry.get("chapter_name","")).strip_edges()
  var goal:=str(entry.get("learning_goal","")).strip_edges()
  if chapter.is_empty() or goal.is_empty(): return ""

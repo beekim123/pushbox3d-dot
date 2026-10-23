@@ -30,3 +30,11 @@ source/result, and updated decisions/test report. Independent review remains pen
 These checks do not promote the feature to main or imply player acceptance. The four
 PNG captures were not uploaded while binary confirmation is unresolved. Production
 source hashes still match the first WIP snapshot.
+
+## Metadata type guard — 2026-10-23 15:14 UTC
+
+`context_help.gd` now requires both chapter/goal metadata fields to be Strings;
+missing/null/numeric/array values are omitted rather than displayed. Author-reported
+SHA-256: `0b43d5dedeffa7a305c87a897b103766097c72387ce601ba7a342488fbfd32f4`.
+`main.gd` remains `15a68661146db4cc1e47c11ea2a60ca2be0115099d529d0e54a1b46a11a6650e`.
+The independent final rerun is in progress. No main promotion is implied.
