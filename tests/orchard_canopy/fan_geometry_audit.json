@@ -1,0 +1,464 @@
+[
+  {
+    "mesh": "Sculpted scalloped blossom fan",
+    "signed_volume": 0.24215377291872228,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.001",
+    "signed_volume": 0.2416678534540043,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.002",
+    "signed_volume": 0.24117953329962943,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.003",
+    "signed_volume": 0.29004885334046615,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.004",
+    "signed_volume": 0.2892720475215888,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.005",
+    "signed_volume": 0.2899638869479307,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.006",
+    "signed_volume": 0.21228972962567935,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.007",
+    "signed_volume": 0.2126367359468222,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.008",
+    "signed_volume": 0.2131383823146289,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.009",
+    "signed_volume": 0.1509115499444154,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.010",
+    "signed_volume": 0.15060234091724942,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.011",
+    "signed_volume": 0.12985811488142018,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.012",
+    "signed_volume": 0.12970000375355784,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.013",
+    "signed_volume": 0.08638729687883247,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.014",
+    "signed_volume": 0.08621395151770933,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.015",
+    "signed_volume": 0.08603973670577349,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.016",
+    "signed_volume": 0.0959630516335281,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.017",
+    "signed_volume": 0.09570605475675874,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.018",
+    "signed_volume": 0.09593495623070224,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.019",
+    "signed_volume": 0.0585425980244367,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.020",
+    "signed_volume": 0.05863830457051645,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.021",
+    "signed_volume": 0.058776626280786046,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.022",
+    "signed_volume": 0.05639185005020402,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.023",
+    "signed_volume": 0.05627630049255642,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.024",
+    "signed_volume": 0.004803646559125192,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.025",
+    "signed_volume": 0.004794007569496326,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.026",
+    "signed_volume": 0.00478432010770477,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.027",
+    "signed_volume": 0.003976559866545824,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.028",
+    "signed_volume": 0.003965909475156684,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.029",
+    "signed_volume": 0.003975394287804494,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.030",
+    "signed_volume": 0.002477733676070007,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.031",
+    "signed_volume": 0.0024817844746360842,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.032",
+    "signed_volume": 0.0024876387827594197,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.033",
+    "signed_volume": 0.009116605968416971,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.034",
+    "signed_volume": 0.009098312726024797,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.035",
+    "signed_volume": 0.009079928006978337,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.036",
+    "signed_volume": 0.007546916750276558,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.037",
+    "signed_volume": 0.007526704813217387,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.038",
+    "signed_volume": 0.007544706998910799,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.039",
+    "signed_volume": 0.004702370928067915,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Coral blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.040",
+    "signed_volume": 0.004710058131301735,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  },
+  {
+    "mesh": "Sculpted scalloped blossom fan.041",
+    "signed_volume": 0.004721169742396085,
+    "nonmanifold_edges": 0,
+    "top_downward_faces": 0,
+    "underside_upward_faces": 0,
+    "materials": [
+      "Light blush blossom",
+      "Deep rose blossom"
+    ]
+  }
+]

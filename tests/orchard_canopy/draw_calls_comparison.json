@@ -1,0 +1,130 @@
+[
+  {
+    "id": "heaven_03_high",
+    "matched_camera_equal": {
+      "position": true,
+      "rotation": true,
+      "size": true
+    },
+    "matched_markers_equal": true,
+    "lighting_equal": true,
+    "draw_calls_before": 280.0,
+    "draw_calls_after": 280.0,
+    "primitives_before": 146563.0,
+    "primitives_after": 121897.0,
+    "auto_fit_size_delta": 0.05720901489259944,
+    "auto_fit_position_delta": 0.020023250112885034
+  },
+  {
+    "id": "heaven_10_high",
+    "matched_camera_equal": {
+      "position": true,
+      "rotation": true,
+      "size": true
+    },
+    "matched_markers_equal": true,
+    "lighting_equal": true,
+    "draw_calls_before": 296.0,
+    "draw_calls_after": 296.0,
+    "primitives_before": 158313.0,
+    "primitives_after": 131603.0,
+    "auto_fit_size_delta": 0.0,
+    "auto_fit_position_delta": 0.01400136251773349
+  },
+  {
+    "id": "heaven_45_high",
+    "matched_camera_equal": {
+      "position": true,
+      "rotation": true,
+      "size": true
+    },
+    "matched_markers_equal": true,
+    "lighting_equal": true,
+    "draw_calls_before": 312.0,
+    "draw_calls_after": 312.0,
+    "primitives_before": 160637.0,
+    "primitives_after": 136211.0,
+    "auto_fit_size_delta": 0.0,
+    "auto_fit_position_delta": 0.015053743805555908
+  },
+  {
+    "id": "hub_high",
+    "matched_camera_equal": {
+      "position": true,
+      "rotation": true,
+      "size": true
+    },
+    "matched_markers_equal": true,
+    "lighting_equal": true,
+    "draw_calls_before": 531.0,
+    "draw_calls_after": 531.0,
+    "primitives_before": 327756.0,
+    "primitives_after": 319150.0,
+    "auto_fit_size_delta": 0.0,
+    "auto_fit_position_delta": 0.0
+  },
+  {
+    "id": "heaven_03_low",
+    "matched_camera_equal": {
+      "position": true,
+      "rotation": true,
+      "size": true
+    },
+    "matched_markers_equal": true,
+    "lighting_equal": true,
+    "draw_calls_before": 280.0,
+    "draw_calls_after": 280.0,
+    "primitives_before": 146563.0,
+    "primitives_after": 121897.0,
+    "auto_fit_size_delta": 0.05720901489259944,
+    "auto_fit_position_delta": 0.020023250112885034
+  },
+  {
+    "id": "heaven_10_low",
+    "matched_camera_equal": {
+      "position": true,
+      "rotation": true,
+      "size": true
+    },
+    "matched_markers_equal": true,
+    "lighting_equal": true,
+    "draw_calls_before": 296.0,
+    "draw_calls_after": 296.0,
+    "primitives_before": 158313.0,
+    "primitives_after": 131603.0,
+    "auto_fit_size_delta": 0.0,
+    "auto_fit_position_delta": 0.01400136251773349
+  },
+  {
+    "id": "heaven_45_low",
+    "matched_camera_equal": {
+      "position": true,
+      "rotation": true,
+      "size": true
+    },
+    "matched_markers_equal": true,
+    "lighting_equal": true,
+    "draw_calls_before": 312.0,
+    "draw_calls_after": 312.0,
+    "primitives_before": 160637.0,
+    "primitives_after": 136211.0,
+    "auto_fit_size_delta": 0.0,
+    "auto_fit_position_delta": 0.015053743805555908
+  },
+  {
+    "id": "hub_low",
+    "matched_camera_equal": {
+      "position": true,
+      "rotation": true,
+      "size": true
+    },
+    "matched_markers_equal": true,
+    "lighting_equal": true,
+    "draw_calls_before": 531.0,
+    "draw_calls_after": 531.0,
+    "primitives_before": 327756.0,
+    "primitives_after": 319150.0,
+    "auto_fit_size_delta": 0.0,
+    "auto_fit_position_delta": 0.0
+  }
+]

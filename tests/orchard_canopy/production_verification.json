@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "target_project": "/workspace/scratch/e4cad742399c/fourfold_atelier",
+  "engine": "4.7.2-stable (official)",
+  "display": "X11",
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "renderer": "gl_compatibility",
+  "viewport": [
+    1440,
+    900
+  ],
+  "qa": true,
+  "failures": [],
+  "production_main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+  "world_view_sha256": "b73a8cad67115445cf9c9bdb0c6312dd5280a0fe43c1c2ddc0ec11b021893a6d",
+  "five_frozen_inputs": [
+    {
+      "path": "blender/generate_orchard.py",
+      "sha256": "4077183a1854e81c594557adc6938baecb97c97de1fc9d523ef458a6a0dc9c11",
+      "matches_accepted_manifest": true
+    },
+    {
+      "path": "blender/heaven_orchard.blend",
+      "sha256": "4083136429ce77c57bd75ad4c92ce820362cad995e51f3f2e3add9e594c2b021",
+      "matches_accepted_manifest": true
+    },
+    {
+      "path": "assets/models/heaven_landmark.glb",
+      "sha256": "ac00b6c3c5ab947afa91d4b2652f278cde6c3b552640aa2dffd5751d30ba6ac4",
+      "matches_accepted_manifest": true
+    },
+    {
+      "path": "assets/models/heaven_landmark_b.glb",
+      "sha256": "e578928aa5288d0d393d0538c186279deab410c21fc9edfe55a4e658a814c5a7",
+      "matches_accepted_manifest": true
+    },
+    {
+      "path": "assets/models/heaven_decor_a.glb",
+      "sha256": "1f1eca183a35e1840c1d4809b4d356cabb94c5fe2f36602cf7cefa23a2b0dfa3",
+      "matches_accepted_manifest": true
+    }
+  ],
+  "rows": [
+    {
+      "id": "heaven_03_high",
+      "capture_row_exactly_matches_accepted": true,
+      "draw_calls": 280.0,
+      "primitives": 121897.0,
+      "images": [
+        {
+          "path": "heaven_03_high.png",
+          "sha256": "aea696a60366eac72d5363aff16a6bf3fa7cee19b72eb7d7556960fd2fd58da9",
+          "byte_identical_to_accepted_candidate": true
+        },
+        {
+          "path": "native_heaven_03_high.png",
+          "sha256": "adbad072c10d722dc98119f0436519b7fb09f204f8ca850e2da63283c5278c13",
+          "byte_identical_to_accepted_candidate": true
+        }
+      ]
+    },
+    {
+      "id": "heaven_10_high",
+      "capture_row_exactly_matches_accepted": true,
+      "draw_calls": 296.0,
+      "primitives": 131603.0,
+      "images": [
+        {
+          "path": "heaven_10_high.png",
+          "sha256": "14b79261f9b92a1c9f28b3cf95c24690873a6d261d374812594b0430f8bba27f",
+          "byte_identical_to_accepted_candidate": true
+        },
+        {
+          "path": "native_heaven_10_high.png",
+          "sha256": "8c3bb26470e15f5d74fc34bd4ee579a9e18f1837ae111d5d8c6420578bfba3b3",
+          "byte_identical_to_accepted_candidate": true
+        }
+      ]
+    },
+    {
+      "id": "heaven_45_high",
+      "capture_row_exactly_matches_accepted": true,
+      "draw_calls": 312.0,
+      "primitives": 136211.0,
+      "images": [
+        {
+          "path": "heaven_45_high.png",
+          "sha256": "7b4d8f499270db9ac83001d0922a055295e87804652e6290865f8c747df251b1",
+          "byte_identical_to_accepted_candidate": true
+        },
+        {
+          "path": "native_heaven_45_high.png",
+          "sha256": "02e8a97c3421bee3d4b17b1307281334509fb347a7b9fb648998641c0cdf1efe",
+          "byte_identical_to_accepted_candidate": true
+        }
+      ]
+    },
+    {
+      "id": "hub_high",
+      "capture_row_exactly_matches_accepted": true,
+      "draw_calls": 531.0,
+      "primitives": 319150.0,
+      "images": [
+        {
+          "path": "hub_high.png",
+          "sha256": "50032991c849a5026073f6d6267bd83c845d2bb335a9cad5deda6bc9e4ff0338",
+          "byte_identical_to_accepted_candidate": true
+        },
+        {
+          "path": "native_hub_high.png",
+          "sha256": "bd8cbbdb9ef8d975c61f4fd34458dfa8c0553f33c07ea8831faeaefebfc60b28",
+          "byte_identical_to_accepted_candidate": true
+        }
+      ]
+    }
+  ],
+  "visual_review": "Author inspected all four actual matched production images; right-facing dark underside blocker remains resolved; tiles, goals, crates, lanes and HUD clear. All matched and native-auto-fit images byte-identical to approved isolated candidate.",
+  "logs": "capture.log",
+  "warning": "One same-environment V-Sync driver limitation warning; no script errors or resource leaks.",
+  "write_boundary": "External QA script loaded production scene, only outputs and isolated XDG written under isolated canopy_review/production_native. No production script or asset edits."
+}

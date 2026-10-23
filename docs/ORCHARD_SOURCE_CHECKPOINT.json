@@ -1,0 +1,313 @@
+{
+  "stage": "orchard-canopy source and local integration evidence only",
+  "created_utc": "2026-10-23T16:36:00Z",
+  "main_parent": "eb923f5ab5d8ea6b73f7b0aa447d7c84e7a47a5d",
+  "wip_evidence_commit": "00ffdf6e9e3304ca9106c3b56e474b95cc88b5aa",
+  "runtime_main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+  "source_frozen_sha256": {
+    "blender/generate_orchard.py": "4077183a1854e81c594557adc6938baecb97c97de1fc9d523ef458a6a0dc9c11",
+    "README.md": "b6855ad0e52239f1b43f55f005de7a2dbc73b3948c91667569f8ffffb929e784",
+    "docs/decisions.md": "0d3c3832d3785ba48e4ed750ec3592bd145d545db2c32e3dab569da220fc0d59",
+    "docs/TEST_REPORT.md": "6ed933485015e991abc997f08923b32ddf13e38a0cfa9e094065f6b6bbee0a76",
+    "docs/orchard_canopy.md": "d373a4c8b4351da298a3bb1ce059a03d990aba3a9551cb4ece2770e5e62a5b57",
+    "tests/orchard_canopy/INDEPENDENT_REVIEW_MANIFEST.json": "073443795ae694c9b137469d9cc099323275edd817dba608bf9ed67ded0ade10",
+    "tests/orchard_canopy/INDEPENDENT_VISUAL_REVIEW.md": "b8fd42299ff36a21907d8e8272edccca93f81b574f8bdb78198a7575b0cba764",
+    "tests/orchard_canopy/README.md": "279243a3cf6952aa0ef90a4b5d4e3d54dc01c01f0dbfb9c25f1ed74cea9d90f5",
+    "tests/orchard_canopy/asset_audit_result.json": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf",
+    "tests/orchard_canopy/draw_calls_comparison.json": "07cbfa1f5964c92aa5150ab05097d74f80d43a25672b80faece76640684bf83c",
+    "tests/orchard_canopy/fan_geometry_audit.json": "7fc63f3c969df06bdb30721af8c31b8454a49b3fee1f92e3d308784dbb3adb40",
+    "tests/orchard_canopy/final_evidence_manifest.json": "a7846c33d78c1f917536e0b73f89ad94d14a8cf3f7911cddfc281ab6e2749c92",
+    "tests/orchard_canopy/geometry_metrics.json": "d2844909ef803249025e9868705e8ddfa18804c118ec3cbd73fb04d8972d46c6",
+    "tests/orchard_canopy/integration_manifest.json": "5a93a5a29e7259a47491042a9a47199e236953da89f061218bc8b4340abbc172",
+    "tests/orchard_canopy/native_before_capture_manifest.json": "7b3a15d5a647d892eab30e043041ca2baa7189849f20b032c2803e32d4cf93c6",
+    "tests/orchard_canopy/native_capture_portable.gd": "8c1a8c9bc76bd2e5506dd105c4189fdf9ebcd23284fcbd58c8cf4c0d5fc54888",
+    "tests/orchard_canopy/native_final_capture_manifest.json": "f42af15e3b6e427a62f11dcf5036e8fb57e5fa4f10ac4d49280cc5ddf7d4370d",
+    "tests/orchard_canopy/production_capture.log": "0d150bf4d659e58d392ba294d0f0562791d281edffc85f3a6135496c98c07f2f",
+    "tests/orchard_canopy/production_capture_manifest.json": "5666429263ff86746d353c9380c1c6964820ffdb197d006ed03f7b1cf8cde1c4",
+    "tests/orchard_canopy/production_verification.json": "1472d3a06513ae9485e90e255f7c068ba01e6e0c1fc96b6e4f70a50f9c691b44",
+    "tests/orchard_canopy/render_comparison_final.py": "f265feb863c97fa1671c28c26560a889d8e24be73e4cfc11771e2bd35e08cfa3",
+    "tests/orchard_canopy/run_native_capture.sh": "486bad6e281112bc11bc858e96e3de0f86d51c68541c2bbd01f53a73cb5871eb",
+    "tests/orchard_canopy/semantic_geometry_report.json": "d779d3a8e455dd95ea25ca438f56f44f46f4094decdba2113ac9cb2f7373ce71",
+    "tests/orchard_canopy/semantic_glb_compare.py": "44cf872bc7c985bd467f9b3657a361482cefa2be909992b73e1d4c1e3c8a149a",
+    "tests/orchard_canopy/validation_summary.json": "512eafc0f8ff729ca93f8235a2f7d90ce3040db97a0bb0cbd271464d41e95ea7",
+    "tests/results/orchard_canopy_assets.log": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf",
+    "tests/results/orchard_canopy_boot.log": "721c99edd5271f49bce2266ebf18837b590437480186d781cdb183e60f922331",
+    "tests/results/orchard_canopy_camera.log": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+    "tests/results/orchard_canopy_import.log": "6e0484262f9440024e48fc4da2070b7ae3cf7229d5100099986a924da29df3a5",
+    "tests/results/orchard_canopy_integration.json": "7e06fefce682d488af884899a889cd778509bfbbc565a6cb522a177a18c8c2f5",
+    "tests/orchard_canopy/EXPORT_FILES.txt": "0be7e531529c089d7c00659a0e511af0c817767721d2a35b9fb6def1c0b74689"
+  },
+  "repository_files_before_this_manifest": [
+    {
+      "path": "blender/generate_orchard.py",
+      "mode": "100644",
+      "bytes": 26195,
+      "sha256": "4077183a1854e81c594557adc6938baecb97c97de1fc9d523ef458a6a0dc9c11",
+      "git_sha": "406ffca201cb69f2c1b9714720b2f605f565e2af"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "bytes": 6215,
+      "sha256": "73c1779819eb524d6de39e4f258c7a6629534ba3e19d959be4680b472623caf0",
+      "git_sha": "2396176cc2a0a787df266b1956d4113f7f14671b"
+    },
+    {
+      "path": "docs/decisions.md",
+      "mode": "100644",
+      "bytes": 8770,
+      "sha256": "0d3c3832d3785ba48e4ed750ec3592bd145d545db2c32e3dab569da220fc0d59",
+      "git_sha": "d2d154be104f6d4211a7a5c72d0ff6d806ea30c4"
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "mode": "100644",
+      "bytes": 17205,
+      "sha256": "6ed933485015e991abc997f08923b32ddf13e38a0cfa9e094065f6b6bbee0a76",
+      "git_sha": "8df6f566dff1e3e24bd25b7d440aac6429ef9ab7"
+    },
+    {
+      "path": "docs/orchard_canopy.md",
+      "mode": "100644",
+      "bytes": 3314,
+      "sha256": "d373a4c8b4351da298a3bb1ce059a03d990aba3a9551cb4ece2770e5e62a5b57",
+      "git_sha": "946187f15422cc474b929bc0151799505239b08a"
+    },
+    {
+      "path": "tests/orchard_canopy/INDEPENDENT_REVIEW_MANIFEST.json",
+      "mode": "100644",
+      "bytes": 5442,
+      "sha256": "073443795ae694c9b137469d9cc099323275edd817dba608bf9ed67ded0ade10",
+      "git_sha": "57751a967300759f8f4ca12ba6fc9e07613ee2fa"
+    },
+    {
+      "path": "tests/orchard_canopy/INDEPENDENT_VISUAL_REVIEW.md",
+      "mode": "100644",
+      "bytes": 9311,
+      "sha256": "b8fd42299ff36a21907d8e8272edccca93f81b574f8bdb78198a7575b0cba764",
+      "git_sha": "a86207954675d27b39fdf57f87d6f78f4651bddc"
+    },
+    {
+      "path": "tests/orchard_canopy/README.md",
+      "mode": "100644",
+      "bytes": 2763,
+      "sha256": "279243a3cf6952aa0ef90a4b5d4e3d54dc01c01f0dbfb9c25f1ed74cea9d90f5",
+      "git_sha": "3f1d062635326f858816c936fc6f91a8ef24eea5"
+    },
+    {
+      "path": "tests/orchard_canopy/asset_audit_result.json",
+      "mode": "100644",
+      "bytes": 59,
+      "sha256": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf",
+      "git_sha": "bd6fbd09dd4ebc6d10f1292d88cb38287a0116db"
+    },
+    {
+      "path": "tests/orchard_canopy/draw_calls_comparison.json",
+      "mode": "100644",
+      "bytes": 3342,
+      "sha256": "07cbfa1f5964c92aa5150ab05097d74f80d43a25672b80faece76640684bf83c",
+      "git_sha": "04e9384e553813f3733e21bd95efb487ef8b3be2"
+    },
+    {
+      "path": "tests/orchard_canopy/fan_geometry_audit.json",
+      "mode": "100644",
+      "bytes": 11392,
+      "sha256": "7fc63f3c969df06bdb30721af8c31b8454a49b3fee1f92e3d308784dbb3adb40",
+      "git_sha": "adfee78e97b6e652a3e168c9696f894d61674dce"
+    },
+    {
+      "path": "tests/orchard_canopy/final_evidence_manifest.json",
+      "mode": "100644",
+      "bytes": 4271,
+      "sha256": "a7846c33d78c1f917536e0b73f89ad94d14a8cf3f7911cddfc281ab6e2749c92",
+      "git_sha": "c32539059b2191ed924d6c882b89f41466cc44bb"
+    },
+    {
+      "path": "tests/orchard_canopy/geometry_metrics.json",
+      "mode": "100644",
+      "bytes": 3460,
+      "sha256": "d2844909ef803249025e9868705e8ddfa18804c118ec3cbd73fb04d8972d46c6",
+      "git_sha": "b38f028ebe4af949942a28e99e6de8663b92b000"
+    },
+    {
+      "path": "tests/orchard_canopy/integration_manifest.json",
+      "mode": "100644",
+      "bytes": 2473,
+      "sha256": "5a93a5a29e7259a47491042a9a47199e236953da89f061218bc8b4340abbc172",
+      "git_sha": "7d4f3e8496072fbb8b6d4ea769b3ff435cc4b5db"
+    },
+    {
+      "path": "tests/orchard_canopy/native_before_capture_manifest.json",
+      "mode": "100644",
+      "bytes": 12159,
+      "sha256": "7b3a15d5a647d892eab30e043041ca2baa7189849f20b032c2803e32d4cf93c6",
+      "git_sha": "40459c7af443b7eac26948b66fd6ac999f6b6763"
+    },
+    {
+      "path": "tests/orchard_canopy/native_capture_portable.gd",
+      "mode": "100644",
+      "bytes": 4350,
+      "sha256": "8c1a8c9bc76bd2e5506dd105c4189fdf9ebcd23284fcbd58c8cf4c0d5fc54888",
+      "git_sha": "3f168b28133dc7a6bf9254659ab1fba38e649189"
+    },
+    {
+      "path": "tests/orchard_canopy/native_final_capture_manifest.json",
+      "mode": "100644",
+      "bytes": 12221,
+      "sha256": "f42af15e3b6e427a62f11dcf5036e8fb57e5fa4f10ac4d49280cc5ddf7d4370d",
+      "git_sha": "18d157362b762cf9ef7e865fbef53138d05fe808"
+    },
+    {
+      "path": "tests/orchard_canopy/production_capture.log",
+      "mode": "100644",
+      "bytes": 1995,
+      "sha256": "0d150bf4d659e58d392ba294d0f0562791d281edffc85f3a6135496c98c07f2f",
+      "git_sha": "cd204fadc27dac86697013a4b985702226b3a268"
+    },
+    {
+      "path": "tests/orchard_canopy/production_capture_manifest.json",
+      "mode": "100644",
+      "bytes": 6206,
+      "sha256": "5666429263ff86746d353c9380c1c6964820ffdb197d006ed03f7b1cf8cde1c4",
+      "git_sha": "d9393f52d3c400c0fbf2932738e0bcf89268c2c1"
+    },
+    {
+      "path": "tests/orchard_canopy/production_verification.json",
+      "mode": "100644",
+      "bytes": 4408,
+      "sha256": "1472d3a06513ae9485e90e255f7c068ba01e6e0c1fc96b6e4f70a50f9c691b44",
+      "git_sha": "a5f0c7b9b1e1f05fcb49052ffe1e6dccbea7e846"
+    },
+    {
+      "path": "tests/orchard_canopy/render_comparison_final.py",
+      "mode": "100644",
+      "bytes": 1178,
+      "sha256": "f265feb863c97fa1671c28c26560a889d8e24be73e4cfc11771e2bd35e08cfa3",
+      "git_sha": "b350bcba03836555370f62c415529724d3daf01c"
+    },
+    {
+      "path": "tests/orchard_canopy/run_native_capture.sh",
+      "mode": "100644",
+      "bytes": 992,
+      "sha256": "486bad6e281112bc11bc858e96e3de0f86d51c68541c2bbd01f53a73cb5871eb",
+      "git_sha": "95e5eb0d12533bc7f7c92445cb9dd9c9216ce802"
+    },
+    {
+      "path": "tests/orchard_canopy/semantic_geometry_report.json",
+      "mode": "100644",
+      "bytes": 1860,
+      "sha256": "d779d3a8e455dd95ea25ca438f56f44f46f4094decdba2113ac9cb2f7373ce71",
+      "git_sha": "8a2827965b1cacfdbf19deba9ad21be9143cde9c"
+    },
+    {
+      "path": "tests/orchard_canopy/semantic_glb_compare.py",
+      "mode": "100644",
+      "bytes": 2534,
+      "sha256": "44cf872bc7c985bd467f9b3657a361482cefa2be909992b73e1d4c1e3c8a149a",
+      "git_sha": "88f2157a7d5b7931714f9e17aa6d4743f9ab950d"
+    },
+    {
+      "path": "tests/orchard_canopy/validation_summary.json",
+      "mode": "100644",
+      "bytes": 5652,
+      "sha256": "512eafc0f8ff729ca93f8235a2f7d90ce3040db97a0bb0cbd271464d41e95ea7",
+      "git_sha": "9068da142f5e98ca6ddb75c4f6643c75e20b3d4c"
+    },
+    {
+      "path": "tests/results/orchard_canopy_assets.log",
+      "mode": "100644",
+      "bytes": 59,
+      "sha256": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf",
+      "git_sha": "bd6fbd09dd4ebc6d10f1292d88cb38287a0116db"
+    },
+    {
+      "path": "tests/results/orchard_canopy_boot.log",
+      "mode": "100644",
+      "bytes": 95,
+      "sha256": "721c99edd5271f49bce2266ebf18837b590437480186d781cdb183e60f922331",
+      "git_sha": "401657e9175eec0088a1a8e20be841cced534e6c"
+    },
+    {
+      "path": "tests/results/orchard_canopy_camera.log",
+      "mode": "100644",
+      "bytes": 108,
+      "sha256": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+      "git_sha": "689c17c184b61811b7ebed8999a774cddbe56183"
+    },
+    {
+      "path": "tests/results/orchard_canopy_import.log",
+      "mode": "100644",
+      "bytes": 4048,
+      "sha256": "6e0484262f9440024e48fc4da2070b7ae3cf7229d5100099986a924da29df3a5",
+      "git_sha": "419389964cc0ab8712576d8f53aa1dc7b144b42a"
+    },
+    {
+      "path": "tests/results/orchard_canopy_integration.json",
+      "mode": "100644",
+      "bytes": 12953,
+      "sha256": "7e06fefce682d488af884899a889cd778509bfbbc565a6cb522a177a18c8c2f5",
+      "git_sha": "320ab7cd2e23c7be41ecd9b7b18653788062b2ed"
+    },
+    {
+      "path": "tests/orchard_canopy/EXPORT_FILES.txt",
+      "mode": "100644",
+      "bytes": 1295,
+      "sha256": "0be7e531529c089d7c00659a0e511af0c817767721d2a35b9fb6def1c0b74689",
+      "git_sha": "fcac63f2cb9bcd44a3f76a35e84f6034e682e61c"
+    },
+    {
+      "path": "tests/orchard_canopy/FROZEN_TEXT_SHA256.json",
+      "mode": "100644",
+      "bytes": 3560,
+      "sha256": "82187dfa73c6973e20a01c0ba04de07fb96ab94bcaec60e11d356d00184a6465",
+      "git_sha": "aab2dce75553bbd1662460eb8983735786358449"
+    },
+    {
+      "path": "docs/CHECKPOINTS.md",
+      "mode": "100644",
+      "bytes": 6878,
+      "sha256": "f96eb1d03f9f421462d0c2da51e48d884bcb26734c86b3e1d10ccf50306f3ae3",
+      "git_sha": "24f8becb5f423fa63daaa52abac13a70579c68ee"
+    },
+    {
+      "path": "docs/RECOVERY_STATUS.md",
+      "mode": "100644",
+      "bytes": 13050,
+      "sha256": "bda968a0cc34f1611a4cfeaa3420c1df822e3c41284f204f29aeb46c71281eae",
+      "git_sha": "8c450f10f8f7e1c9837a0b36841d81f57a0f5a32"
+    },
+    {
+      "path": "docs/REPOSITORY_STATUS.md",
+      "mode": "100644",
+      "bytes": 4836,
+      "sha256": "ded9eff5944678eaab5c0a9c0b323d850426e5ef957df3def9088b5218bc8fb5",
+      "git_sha": "0efa82e9da212b7db79f4c2478447741ae2f2a74"
+    }
+  ],
+  "packaging_transform_paths": [
+    "README.md",
+    "docs/CHECKPOINTS.md",
+    "docs/RECOVERY_STATUS.md",
+    "docs/REPOSITORY_STATUS.md"
+  ],
+  "remote_assets": {
+    "glb_present": 47,
+    "glb_expected": 62,
+    "audio_present": 0,
+    "audio_expected": 18,
+    "blend_present": 0,
+    "blend_expected": 6,
+    "all_existing_binary_blobs_unchanged": true,
+    "new_orchard_glbs_published": false,
+    "existing_orchard_blobs": []
+  },
+  "scope_limits": [
+    "Local integration and internal independent visual review, not user aesthetic acceptance.",
+    "Only four production high-quality cases/eight PNG compared; candidate high/low evidence is separate.",
+    "No fresh full gameplay or production low-quality/performance claim in this art-only stage.",
+    "GLB byte-reproducibility unsupported; exact accepted file hashes and semantic geometry evidence are retained.",
+    "New orchard complete ZIP not yet claimed delivered.",
+    "All new binary uploads remain paused.",
+    "No WIP, userdata, private runtime clone, cache, PNG, GLB or blend included."
+  ]
+}

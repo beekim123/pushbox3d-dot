@@ -1,0 +1,117 @@
+{
+  "images": [
+    {
+      "file": "garden_before.png",
+      "sha256": "2717bbaa2b7500d92d6f4db2157346abe5fea0c900597a93627884c7cbe4ed6d"
+    },
+    {
+      "file": "garden_after_accepted.png",
+      "sha256": "31501890ac76aad12c84a059c7a63e2f0f704b8d4190a1448166c14459055712"
+    },
+    {
+      "file": "lineup_before_final.png",
+      "sha256": "2a208903409b7182252806bcb82b15261bdc38512b1496e7e78cd574b74a2934"
+    },
+    {
+      "file": "lineup_after_accepted.png",
+      "sha256": "73d440b72d84365c41c461ca4998bb29752ae1f3274b4b1a610c872720d4affe"
+    },
+    {
+      "file": "native_before/heaven_03_high.png",
+      "sha256": "a542d48856375e228d32270cca095b28bb5a8142877c1b649d4915fd53c201c5"
+    },
+    {
+      "file": "native_before/heaven_03_low.png",
+      "sha256": "d5ca3654fba4fb000b37e286a3223c132e9eafbaa17687c8e8a33f56a72779a0"
+    },
+    {
+      "file": "native_before/heaven_10_high.png",
+      "sha256": "0afeff8347d5510da6c493f9c15cb25ab897facbb7efdd00f8e701f81eaa55d9"
+    },
+    {
+      "file": "native_before/heaven_10_low.png",
+      "sha256": "1b8a341be9177c32b6e42e11fe87411a9c6960be3ed8756f5fbb6f8695862b63"
+    },
+    {
+      "file": "native_before/heaven_45_high.png",
+      "sha256": "3c8253efe00ff20e96aa1b8f0ffea1fb3a5ae73e1bb79f4c1e93b68f195c14e3"
+    },
+    {
+      "file": "native_before/heaven_45_low.png",
+      "sha256": "7a3e8f5d931593417d49035f306c429cec2c04a407ee6d728fe60fc6a802c009"
+    },
+    {
+      "file": "native_before/hub_high.png",
+      "sha256": "897bd468b27a969378378ba52a756e7327add2d1bd556394e7bc1d371fb2e9e9"
+    },
+    {
+      "file": "native_before/hub_low.png",
+      "sha256": "cdc3d5316a5fd4c6517d6086e96ad95d85ce4c54a64a3cd08f4674b566781817"
+    },
+    {
+      "file": "native_final/heaven_03_high.png",
+      "sha256": "aea696a60366eac72d5363aff16a6bf3fa7cee19b72eb7d7556960fd2fd58da9"
+    },
+    {
+      "file": "native_final/heaven_03_low.png",
+      "sha256": "082bcbf96d1189ef38978022ff974feb0b20e1f83e4f9203616b0901650be4d5"
+    },
+    {
+      "file": "native_final/heaven_10_high.png",
+      "sha256": "14b79261f9b92a1c9f28b3cf95c24690873a6d261d374812594b0430f8bba27f"
+    },
+    {
+      "file": "native_final/heaven_10_low.png",
+      "sha256": "0194804bcec50b2646d2354d6a16d89a4bbb5977f6d8c8af065fcccd09674424"
+    },
+    {
+      "file": "native_final/heaven_45_high.png",
+      "sha256": "7b4d8f499270db9ac83001d0922a055295e87804652e6290865f8c747df251b1"
+    },
+    {
+      "file": "native_final/heaven_45_low.png",
+      "sha256": "c1481ca9d89a96726662428da6c53b90d865210b174b9f914c89689927cf7afd"
+    },
+    {
+      "file": "native_final/hub_high.png",
+      "sha256": "50032991c849a5026073f6d6267bd83c845d2bb335a9cad5deda6bc9e4ff0338"
+    },
+    {
+      "file": "native_final/hub_low.png",
+      "sha256": "858a78b6e08997b4aad556fd598f6dde90ed31e13726e8ed0828f7662bda6d29"
+    },
+    {
+      "file": "native_final/native_heaven_03_high.png",
+      "sha256": "adbad072c10d722dc98119f0436519b7fb09f204f8ca850e2da63283c5278c13"
+    },
+    {
+      "file": "native_final/native_heaven_03_low.png",
+      "sha256": "41ccba94558e32835d4a50ed7831141f53a77a845d1bcbc8d7060d39a8cdb9c5"
+    },
+    {
+      "file": "native_final/native_heaven_10_high.png",
+      "sha256": "8c3bb26470e15f5d74fc34bd4ee579a9e18f1837ae111d5d8c6420578bfba3b3"
+    },
+    {
+      "file": "native_final/native_heaven_10_low.png",
+      "sha256": "61cff2a73a7646bd7b8f2601f493c5acfd221e084e1a5ac72b7bd1ba5ae982c3"
+    },
+    {
+      "file": "native_final/native_heaven_45_high.png",
+      "sha256": "02e8a97c3421bee3d4b17b1307281334509fb347a7b9fb648998641c0cdf1efe"
+    },
+    {
+      "file": "native_final/native_heaven_45_low.png",
+      "sha256": "7438c7cc15aab6773d5d81ee972b90a48a3d3d6abc20328233cf261a2b138855"
+    },
+    {
+      "file": "native_final/native_hub_high.png",
+      "sha256": "bd8cbbdb9ef8d975c61f4fd34458dfa8c0553f33c07ea8831faeaefebfc60b28"
+    },
+    {
+      "file": "native_final/native_hub_low.png",
+      "sha256": "cbc8156968f7dadb3e6e73b95a2827bb782d01a9aed7ea5529193f15bfa0f804"
+    }
+  ],
+  "note": "Actual Blender Cycles and Godot X11 captures, no generated/composited imagery. native_final ordinary filenames use exact baseline QA camera; native_ filenames retain actual runtime automatic fit."
+}

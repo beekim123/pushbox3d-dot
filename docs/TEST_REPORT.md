@@ -76,3 +76,11 @@ CPU软件渲染器的结果不等于Mac/GPU性能；未做真人谜题盲测、�
 - 独审确认：首次pending赢局R→Z登记一次；已记胜局恢复、帮助重开无额外save调用/win声音/celebrate动画；真实更优重玩仍更新best；直接Esc后普通走动不重弹；提前关闭help后旧tween不重换面板；末关回中庭、真实resume磁盘往返、退出返回均通过。保存spy统计实际handler调用，但QA不写主进度；这不冒充多平台磁盘写入测量。
 - 最终真实X11高画质1440×900四图已独立亲看无裁切：`screenshots/completion_reconcile_audit/` 下 pending_win_reset_undo、help_returns_next、dismissed_result_exploration、final_world_help_returns_hub。输入为真实图形窗口内Input.parse_input_event，不宣称硬件键盘操作；像素查看与capture成功分开记在visual_review及FINAL_SUMMARY。
 - 本阶段最终源码字体扫描仍为532汉字＋7符号，missing=[]，见 `tests/results/completion_state_font.log`。Mac/Retina、小窗口与普通全通庆典帮助返回未在此阶段扩展验证。
+
+## 蟠桃园三树花冠：生产合入有界验证
+- 五文件允许清单已合入；main仍b529ffb5、world_view及关卡等运行输入未改。生产编辑器导入、30帧QA启动均exit0；204关相机/HUD审计0裁切；62模型/6Blend源审计errors=[]。import/boot/camera日志无ERROR/WARNING/泄漏。证据 `tests/results/orchard_canopy_{integration.json,import.log,boot.log,camera.log,assets.log}`。这是艺术替换回归，不冒称重新执行8056条玩法检查。
+- 隔离最终字节已独立亲看8张Godot 4.7.2、X11、1440×900第3/10/45关与中庭高/低图及2张Blender预览。明确淘汰过初稿深色花冠衬底；最终通过版本局部修几何/材质，没有改全局光照或关闭阴影。历史审查原文/指纹保留在 `tests/orchard_canopy/INDEPENDENT_VISUAL_REVIEW.md` 与对应manifest，不改成新执行时间。
+- 三树三角形30184/41204/15412，均12材质网格、AABB在旧包络内；匹配相机高/低绘制调用分别为第3关280、第10关296、第45关312、中庭531，与基线相同。几何语义比较及层级检查通过，但Blender导出SHA不保证字节级复现，使用本次构建固定SHA。
+- 便携复拍/Blender预览脚本放 `tests/orchard_canopy/`；仅复制报告、脚本及约定前后PNG，不包含baseline_project、旧克隆docs、.qa_env或私人存档。shell语法与Python AST已检查；真正图形运行另列，不把语法检查当实机通过。截图位于 `screenshots/orchard_canopy/`，被拒绝的native_after未复制。
+- 合入后生产main b529ffb最终实拍通过：第3/10/45关与中庭高质量，4张匹配视角＋4张真实自动取景图（native_前缀），全部1440×900/X11/llvmpipe，与已接受候选对应PNG逐字相同、行指标一致，五美术输入hash吻合且无missing assets。证据 `tests/orchard_canopy/production_verification.json`、`production_capture_manifest.json`、`production_capture.log`；图在 `screenshots/orchard_canopy/production/`。图形日志仅有驱动不支持VSync的警告，不冒称原生日志零警告；音频Dummy，仅图形检查，不声称试听或硬件键盘验收。
+- Git二进制限制仍存在；纯源码提交不代表新模型已在远程，完整ZIP由主任务另行核实交付。
