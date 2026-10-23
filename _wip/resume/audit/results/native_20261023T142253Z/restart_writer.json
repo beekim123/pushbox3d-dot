@@ -1,0 +1,12 @@
+{
+  "checks": 7,
+  "display": "headless",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "mode": "writer",
+  "observations": [],
+  "passed": true,
+  "pid": 43,
+  "recovery_run": true,
+  "userdata": "/tmp/fourfold-native-restart-j4yiii71/data/godot/app_userdata/四隅织途 · Loom of Four Horizons"
+}

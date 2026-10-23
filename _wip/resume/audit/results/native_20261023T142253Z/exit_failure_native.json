@@ -1,0 +1,14 @@
+{
+  "checks": 23,
+  "display": "X11",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "mode": "native_failure",
+  "native_input": true,
+  "observations": [],
+  "passed": true,
+  "pid": 136,
+  "recovery_run": true,
+  "requires_postprocess_file_check": true,
+  "userdata": "/tmp/fourfold-native-failure-gy0hwkfs/data/godot/app_userdata/四隅织途 · Loom of Four Horizons"
+}

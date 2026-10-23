@@ -15,7 +15,7 @@
 
 - **2026-10-23 14:19:49–14:19:54 UTC**：独立 codec/store 原型重新执行，7,368 断言、0失败，源码前后哈希不变。证据见 `TEST_REPORT.md`、`results/fresh_run_manifest.json` 和 `BACKUP_MANIFEST.json`。
 - 本次使用204条ID+solution的12KB最小夹具，源于完整solver报告；派生脚本与provenance一并保存，不依赖远程缺失的大报告。
-- 以上仅为模块级验证。`audit/`、UI integration/capture脚本的独立审查与生产完整回归必须按后续新结果分别记录，不能使用旧环境中断的测试冒充通过。
+- 以上仅为模块级验证。独立审查新结果见下方；生产完整回归和 main 提升仍需另行确认，不能使用旧环境中断的测试冒充通过。
 - 旧恢复说明 `RECOVERY.md` 保留为时间线；当前模块状态以上述新run为准。
 
 ## 布局与复验
@@ -29,3 +29,10 @@ GODOT=/path/to/godot-4.7.2 python3 tests/run_tests.py
 这条命令只运行模块测试，不把备份的UI main/controller变成已连接场景；它们的生产preload路径尚未按本目录布局连接。不要直接覆盖已测试生产版本。
 
 分支：`work/resume-rebuild`。远程资源仍不完整：47/62 GLB，Ogg/WAV与Blender源未齐；此阶段无二进制写入。
+
+## 新增独审证据（2026-10-23）
+
+- 14:27:52–14:28:47 UTC：新 headless 独审 13,114 检查、9进程退出0；源码锁定一致。见 `audit/results/20261023T142752.177145Z/manifest.json`。
+- 14:22–14:25 UTC：原生桌面续玩/撤销与失败退出流程 50检查、3进程退出0。见 `audit/results/native_20261023T142253Z/manifest.json`。6张PNG仍未上传。
+- 14:27:37–14:27:41 UTC：按提交 `6accd40a` 的42个WIP文件真实布局另跑模块测试，7,368检查通过；见 `results/layout_replay_6accd40a.json`。
+- 审查 runner 保留原工作区路径，尚非可直接从本WIP目录运行的完整UI测试包。详细范围、缺失截图和路径限制见 `audit/REPOSITORY_BACKUP.md`。这些证据不代表 main 已合入续玩或远程工程资源完整。

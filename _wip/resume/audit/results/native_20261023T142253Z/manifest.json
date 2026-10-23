@@ -1,0 +1,80 @@
+{
+  "recovery_run": true,
+  "native_cloud_desktop": true,
+  "results": "/workspace/scratch/e4cad742399c/fourfold_next/resume_audit_rebuild/results/native_20261023T142253Z",
+  "stage": "/workspace/scratch/e4cad742399c/fourfold_next/resume_audit_rebuild/_runtime/20261023T142231.394591Z",
+  "runs": [
+    {
+      "mode": "writer",
+      "pid": 43,
+      "returncode": 0,
+      "command": [
+        "/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot",
+        "--audio-driver",
+        "Dummy",
+        "--path",
+        "/workspace/scratch/e4cad742399c/fourfold_next/resume_audit_rebuild/_runtime/20261023T142231.394591Z",
+        "--script",
+        "res://audit_tests/restart.gd",
+        "--headless",
+        "--",
+        "--qa",
+        "--audit-mode=writer"
+      ],
+      "report": "/workspace/scratch/e4cad742399c/fourfold_next/resume_audit_rebuild/results/native_20261023T142253Z/restart_writer.json",
+      "passed": true
+    },
+    {
+      "mode": "native_restart",
+      "pid": 57,
+      "returncode": 0,
+      "command": [
+        "/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot",
+        "--audio-driver",
+        "Dummy",
+        "--path",
+        "/workspace/scratch/e4cad742399c/fourfold_next/resume_audit_rebuild/_runtime/20261023T142231.394591Z",
+        "--script",
+        "res://audit_tests/restart.gd",
+        "--",
+        "--qa",
+        "--audit-mode=native_restart"
+      ],
+      "report": "/workspace/scratch/e4cad742399c/fourfold_next/resume_audit_rebuild/results/native_20261023T142253Z/restart_native.json",
+      "passed": true
+    },
+    {
+      "mode": "native_failure",
+      "pid": 136,
+      "returncode": 0,
+      "command": [
+        "/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot",
+        "--audio-driver",
+        "Dummy",
+        "--path",
+        "/workspace/scratch/e4cad742399c/fourfold_next/resume_audit_rebuild/_runtime/20261023T142231.394591Z",
+        "--script",
+        "res://audit_tests/restart.gd",
+        "--",
+        "--qa",
+        "--audit-mode=native_failure"
+      ],
+      "report": "/workspace/scratch/e4cad742399c/fourfold_next/resume_audit_rebuild/results/native_20261023T142253Z/exit_failure_native.json",
+      "passed": true,
+      "external_bytes_preserved": true
+    }
+  ],
+  "hashes": {
+    "scripts/puzzle_rules.gd": "260130edbe5978fc610a5e8fcc2f84ff19e8fc8beb16d3a2971790f1cc68df64",
+    "scripts/hint_solver.gd": "f266da3bb93226cbb68c3077d8481d637411ea0da81d508016ec431c443ddbe9",
+    "scripts/world_view.gd": "b73a8cad67115445cf9c9bdb0c6312dd5280a0fe43c1c2ddc0ec11b021893a6d",
+    "scripts/ui_kit.gd": "5338959aea6f222952feedf8f3f53c4eaabb2be87d52e3c9c95f359057291be6",
+    "scripts/resume_controller.gd": "fecc26a2c27bbe3bdf569efb4e22b4084b167dfa08b8effe93b7ec07a9bda862",
+    "scripts/hint_overlay.gd": "9e5c58a95617444feb0d2c6475fb9490b0c855bb7e45f20919f2a5e42b11bd7a",
+    "scripts/main.gd": "f4768bae8bedcae981afa1c25051acd23b16d31c7af741b1a7ff15415372c93f",
+    "scripts/resume/resume_store.gd": "a90ec821acca7ca32e28e9700a63cdf023d94bc9b9d0b18c6352f2fdca2430b3",
+    "scripts/resume/resume_codec.gd": "5bbb79cbaffab0fd70ec310c9914b10bba9259ca58515ac65c0a83c97d102305"
+  },
+  "passed": true,
+  "finished_utc": "2026-10-23T14:25:45.674769+00:00"
+}

@@ -83,13 +83,21 @@ func failure(native:bool) -> void:
  game.initialize_resume(SLOT);game.start_level(level("heaven_01"))
  game.resume_session.tick(game.level,game.state,game.history,8,true)
  await until(func():return not game.resume_session.dirty,"baseline committed before foreign lock")
- var original:=FileAccess.get_file_as_bytes(SLOT+"/resume.json");write("user://audit_original.bin",original)
- ck(DirAccess.make_dir_absolute(ProjectSettings.globalize_path(SLOT+"/resume.lock"))==OK,"actual foreign lock")
+ var original:=FileAccess.get_file_as_bytes(SLOT+"/resume.json")
+ if native:
+  original='{ "version":999, "external":"native audit replacement; preserve exact" }'.to_utf8_buffer()
+  write(SLOT+"/resume.json",original)
+ else:
+  ck(DirAccess.make_dir_absolute(ProjectSettings.globalize_path(SLOT+"/resume.lock"))==OK,"actual foreign lock")
+ write("user://audit_original.bin",original)
  if native:
   print("AUDIT_FAILURE_UP");await until(func():return game.state.moves==1,"native unsaved move",120000)
  else:await key(KEY_UP)
  await motion();var current:=snap()
  await until(func():return game.resume_session.paused,"actual disk refusal pauses")
+ if native:
+  ck(game.resume_session.candidate.is_empty(),"external replacement invalidates stale in-memory candidate")
+  ck("仅供参考" in game.resume_session.checkpoint_summary(),"summary explicitly reference only")
  if native:
   await capture("native_paused_footer.png");print("AUDIT_FAILURE_CLOSE")
  else:game.request_exit()
