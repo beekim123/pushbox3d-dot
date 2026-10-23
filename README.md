@@ -1,5 +1,7 @@
 # 四隅织途 · Loom of Four Horizons
 
+> **仓库资源迁入尚未完成：47/62 GLB，音频及 Blender 源文件尚缺；此检查点不是完整可运行包。详见 [迁入状态](docs/REPOSITORY_STATUS.md)。**
+
 原创 Godot 4.7.2 三维推箱解谜游戏。主仓库：https://github.com/beekim123/pushbox3d-dot
 
 ## 当前状态：V2 美术迭代与持续开发

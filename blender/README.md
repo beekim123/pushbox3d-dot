@@ -9,14 +9,14 @@
 ```sh
 blender --background --python blender/generate_courier_hub.py
 blender --background --python blender/generate_orchard.py
-blender --background --python blender/rebuild_worlds_v2.py
+blender --background -t 4 --python blender/rebuild_worlds_v2.py -- inferno rainforest city
 blender --background --python blender/generate_hub_garden.py
 python blender/audit_glb.py
 ```
 
 - `generate_courier_hub.py` 现在默认只生成原创建模和骨骼动画的邮差。`--legacy-hub` 是旧版归档重建选项，不应在 V2 交付中使用。
 - `generate_orchard.py` 生成蟠桃园树木、花、果实、岩石、草地、月牙仙池、箱子、目标与完整庭园。设 `FOURFOLD_SKIP_RENDER=1` 可跳过 Cycles 预览渲染。
-- `rebuild_worlds_v2.py` 负责其余三界的重新制作。
+- `rebuild_worlds_v2.py` 负责其余三界的重新制作；不加 `--` 参数也默认生成三界。支持 `FOURFOLD_SKIP_RENDER=1`、`FOURFOLD_RES=65`、`FOURFOLD_SAMPLES=64`；默认 1500×1150、64 samples。
 - `generate_hub_garden.py` 生成四叶形中庭、旧石铺地、木织机与园景。
 - `model_helpers.py` 是基础几何工具；`generate_assets.py` 保留部分原始通用辅助接口，不是 V2 的总重建入口。不要直接运行它覆盖新版世界。
 

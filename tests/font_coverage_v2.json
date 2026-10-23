@@ -1,0 +1,15 @@
+{
+  "engine": "4.7.2-stable (official)",
+  "font_families": [
+    "Noto Sans CJK JP"
+  ],
+  "missing": [],
+  "passed": true,
+  "platform": "Linux",
+  "scope": "Cloud font coverage only; macOS font fallback not tested.",
+  "source_files": [
+    "scripts/main.gd",
+    "assets/levels.json"
+  ],
+  "unique_cjk_characters": 485
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "rainforest path readability only",
+  "changed_glbs": [
+    "assets/models/rainforest_tile.glb"
+  ],
+  "other_glbs_unchanged": 61,
+  "tile_sha256_before": "cebc3497b85b47ac748555b6f83216658d04dc6664d8d764d15587066fecc905",
+  "tile_sha256_after": "ba8963f5f7aa5631b1bd9fcb1fb1f511b790afdca7f26708467f3cd589e3a719",
+  "materials": {
+    "warm_worn_path": [
+      0.58,
+      0.5,
+      0.32
+    ],
+    "pale_old_path_stone": [
+      0.72,
+      0.66,
+      0.46
+    ],
+    "deep_earth_joint": [
+      0.17,
+      0.16,
+      0.095
+    ]
+  },
+  "geometry_change": "Only the path-face outline was inset 4 percent to expose a fine dark earth seam; tile footprint/height and mechanics unchanged.",
+  "source_updated": "blender/rainforest_v2.blend",
+  "generator_updated": "blender/rebuild_worlds_v2.py",
+  "cycles_preview": "screenshots/v2/blender_rainforest_path_readability.png",
+  "visual_review": "Opened and inspected actual 1200x1000 Cycles preview: legal path is visibly lighter/warmer than the unchanged outer moss; thin earth joints separate cells. No metallic frame. Runtime reimport requested.",
+  "godot_reimport_verified": true,
+  "godot_source_md5": "d597bee87ab853e948b4f5b796075e10",
+  "godot_preview": "screenshots/v2/godot_rainforest_9.png",
+  "godot_visual_review": "Opened the updated same-level game screenshot: individual legal cells are now clearly warm/light against green moss; dark fine joints remain readable. Box, arrow, hero and goals stay distinguishable."
+}

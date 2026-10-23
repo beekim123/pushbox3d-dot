@@ -1,0 +1,237 @@
+[
+  {
+    "path": "assets/models/heaven_glide.glb",
+    "sha": "619b5596a657ea697831ebdd240aa432d4fc7ecb",
+    "size": 18060
+  },
+  {
+    "path": "assets/models/city_tile.glb",
+    "sha": "9df58e612124a4fbfc0a0509a7e5545172ce9031",
+    "size": 27136
+  },
+  {
+    "path": "assets/models/rainforest_edge.glb",
+    "sha": "251e4223ee55467bf6986ee2b305e2f288744e5d",
+    "size": 13896
+  },
+  {
+    "path": "assets/models/rainforest_arrow.glb",
+    "sha": "bf1a78c53ffb1740fb4a6bfb996e33bf5575e723",
+    "size": 32536
+  },
+  {
+    "path": "assets/models/inferno_edge.glb",
+    "sha": "be87c96906194d2569a26fb4fb985ec81c1ef996",
+    "size": 22808
+  },
+  {
+    "path": "assets/models/heaven_creature.glb",
+    "sha": "f2274501380ba81fbe6bac09c3a50f27ba9b2616",
+    "size": 39900
+  },
+  {
+    "path": "assets/models/city_plate.glb",
+    "sha": "d1286f126e7f129d48ab4bdbb997a057925c891e",
+    "size": 40124
+  },
+  {
+    "path": "assets/models/heaven_edge.glb",
+    "sha": "08145d15cb907420155c840d448141efbdcd946a",
+    "size": 31716
+  },
+  {
+    "path": "assets/models/heaven_tile.glb",
+    "sha": "cbf42a26aef58c35c8b285b10c7bf5018c39349e",
+    "size": 43492
+  },
+  {
+    "path": "assets/models/rainforest_wall.glb",
+    "sha": "4b3069170f7e8f0812b33676c1c884ae20ded412",
+    "size": 52868
+  },
+  {
+    "path": "assets/models/hub_tile.glb",
+    "sha": "cb984e3abfa7064acd3055df1c0ea701013e37b2",
+    "size": 43496
+  },
+  {
+    "path": "assets/models/inferno_wall.glb",
+    "sha": "dd3cd7b7ec175a475e8de0e10ad06e18075548e0",
+    "size": 53776
+  },
+  {
+    "path": "assets/models/inferno_tile.glb",
+    "sha": "801f9b5913561c5f922c82def02b110003c52f9b",
+    "size": 55480
+  },
+  {
+    "path": "assets/models/heaven_goal.glb",
+    "sha": "da4f665c81dffe966c8657b885be405ed8becd0e",
+    "size": 56976
+  },
+  {
+    "path": "assets/models/city_goal.glb",
+    "sha": "846cfb38a723b5b21b860ef44690cb5ea254c72a",
+    "size": 55696
+  },
+  {
+    "path": "assets/models/hub_decor_a.glb",
+    "sha": "5281e26bfb03b8351ea6ecaa62b25cab42370c01",
+    "size": 62208
+  },
+  {
+    "path": "assets/models/rainforest_goal.glb",
+    "sha": "19141d07f538cb6730183eb4aae5b30b46201093",
+    "size": 64556
+  },
+  {
+    "path": "assets/models/rainforest_tile.glb",
+    "sha": "bfa981d9269d902b1cefa00fb9468174933f9c86",
+    "size": 66524
+  },
+  {
+    "path": "assets/models/rainforest_creature.glb",
+    "sha": "0ecd6e6c9597f3091e4b38f7d220ccf361dc8b2c",
+    "size": 68220
+  },
+  {
+    "path": "assets/models/city_edge.glb",
+    "sha": "a953c37dff43802b2fa3a2b621044ac975ff25b8",
+    "size": 75952
+  },
+  {
+    "path": "assets/models/rainforest_wall_b.glb",
+    "sha": "a67b256f61a0ac12eb43e735c499d98e7b4f390b",
+    "size": 82904
+  },
+  {
+    "path": "assets/models/heaven_wall.glb",
+    "sha": "54ca295ee8d4144c29819310a32e558edaa8caf3",
+    "size": 83540
+  },
+  {
+    "path": "assets/models/inferno_goal.glb",
+    "sha": "2c313802ba0d126c570ce43cf60c38307368a431",
+    "size": 85052
+  },
+  {
+    "path": "assets/models/city_crate.glb",
+    "sha": "261b469fda38e24c27bad52c4279e84031b4e5bf",
+    "size": 85716
+  },
+  {
+    "path": "assets/models/inferno_decor_b.glb",
+    "sha": "993d00feb40b0e7d52ca234bc71fda2a9628c2ac",
+    "size": 85344
+  },
+  {
+    "path": "assets/models/rainforest_decor_b.glb",
+    "sha": "839f1ada31f4fded042cef50dc79324573cc2e99",
+    "size": 92236
+  },
+  {
+    "path": "assets/models/inferno_creature.glb",
+    "sha": "6fdeb603589c61f74e5635b80a2187f86afbc785",
+    "size": 105744
+  },
+  {
+    "path": "assets/models/hub_decor_b.glb",
+    "sha": "cacdb3433f8815809a6b7104318e3fb251a3ee56",
+    "size": 103160
+  },
+  {
+    "path": "assets/models/city_wall.glb",
+    "sha": "592e7a361d90c3be0001005d2f7d2b43ff8b856d",
+    "size": 108572
+  },
+  {
+    "path": "assets/models/inferno_wall_b.glb",
+    "sha": "e2df1fe1b580e43f3cf7adbb4035445a97c09b01",
+    "size": 108764
+  },
+  {
+    "path": "assets/models/city_gate.glb",
+    "sha": "4a059fcfae6d06368230427591c54ca53ebac902",
+    "size": 117532
+  },
+  {
+    "path": "assets/models/city_wall_b.glb",
+    "sha": "29744e54f3fe600c140b7f14289d49c1dc51d97c",
+    "size": 123488
+  },
+  {
+    "path": "assets/models/rainforest_crate.glb",
+    "sha": "b327e8aa6b8eac3cb9903dfea185511494b1f68a",
+    "size": 127760
+  },
+  {
+    "path": "assets/models/heaven_decor_c.glb",
+    "sha": "f56e893f30280ed749b3117a4ad365ff99a1b77b",
+    "size": 130508
+  },
+  {
+    "path": "assets/models/city_creature.glb",
+    "sha": "2f0702a6b7a8eedcf7149f539e6e197adfd0f6eb",
+    "size": 130680
+  },
+  {
+    "path": "assets/models/inferno_crate.glb",
+    "sha": "0a53ff4d0f9432e819e20314f717dd21ba565530",
+    "size": 130896
+  },
+  {
+    "path": "assets/models/inferno_decor_c.glb",
+    "sha": "cdb4b0daf810d1ad681fcb81a5ad210f00337db4",
+    "size": 135980
+  },
+  {
+    "path": "assets/models/heaven_decor_b.glb",
+    "sha": "8eac401aab9f700ee9d81440eac30cd00f2d184a",
+    "size": 221924
+  },
+  {
+    "path": "assets/models/inferno_portal.glb",
+    "sha": "4739432364ff58c2bfb20ac8e9f907baa82486b8",
+    "size": 207820
+  },
+  {
+    "path": "assets/models/city_decor_b.glb",
+    "sha": "6d99cbc8f174bdf974bee2b7c67fe9ffa2ac16af",
+    "size": 241896
+  },
+  {
+    "path": "assets/models/city_decor_c.glb",
+    "sha": "b8d65b0ae1bd7d5955a1b5b22cec9c13c08d5da7",
+    "size": 251136
+  },
+  {
+    "path": "assets/models/rainforest_decor_c.glb",
+    "sha": "bb592e6ea80b91c3589a073824efda736ac7317f",
+    "size": 275344
+  },
+  {
+    "path": "assets/models/hub_center.glb",
+    "sha": "9727aa4cc12ef62abfde4fd63ddbfc54a839b559",
+    "size": 336732
+  },
+  {
+    "path": "assets/models/heaven_crate.glb",
+    "sha": "cf14500fdd4b7a242ae405ac5c40f6da5f1dbe1c",
+    "size": 282292
+  },
+  {
+    "path": "assets/models/inferno_decor_a.glb",
+    "sha": "b3866a779e607ce6a069a90a10dfac490599f679",
+    "size": 347592
+  },
+  {
+    "path": "assets/models/inferno_landmark_b.glb",
+    "sha": "cd2ba4562c357ed2355093b86d8ba70c18e8cac6",
+    "size": 347596
+  },
+  {
+    "path": "assets/models/hub_landscape.glb",
+    "sha": "5de7fa11a6486a121466d800de1ab9f3859eb386",
+    "size": 435220
+  }
+]

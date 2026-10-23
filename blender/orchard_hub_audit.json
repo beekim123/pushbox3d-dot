@@ -1,0 +1,148 @@
+[
+  {
+    "file": "heaven_crate.glb",
+    "meshes": 8,
+    "triangles": 5920,
+    "bytes": 282292,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_creature.glb",
+    "meshes": 7,
+    "triangles": 1300,
+    "bytes": 39900,
+    "animations": [
+      "idle"
+    ],
+    "images": 0
+  },
+  {
+    "file": "heaven_decor_a.glb",
+    "meshes": 12,
+    "triangles": 38260,
+    "bytes": 762388,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_decor_b.glb",
+    "meshes": 8,
+    "triangles": 5368,
+    "bytes": 221924,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_decor_c.glb",
+    "meshes": 7,
+    "triangles": 4824,
+    "bytes": 130508,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_edge.glb",
+    "meshes": 4,
+    "triangles": 636,
+    "bytes": 31716,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_glide.glb",
+    "meshes": 2,
+    "triangles": 476,
+    "bytes": 18060,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_goal.glb",
+    "meshes": 4,
+    "triangles": 1652,
+    "bytes": 56976,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_landmark.glb",
+    "meshes": 12,
+    "triangles": 39100,
+    "bytes": 777704,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_landmark_b.glb",
+    "meshes": 12,
+    "triangles": 62664,
+    "bytes": 1241072,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_landscape.glb",
+    "meshes": 13,
+    "triangles": 32340,
+    "bytes": 998448,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_tile.glb",
+    "meshes": 2,
+    "triangles": 752,
+    "bytes": 43492,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "heaven_wall.glb",
+    "meshes": 8,
+    "triangles": 2244,
+    "bytes": 83540,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "hub_center.glb",
+    "meshes": 11,
+    "triangles": 12132,
+    "bytes": 336732,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "hub_decor_a.glb",
+    "meshes": 10,
+    "triangles": 1896,
+    "bytes": 62208,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "hub_decor_b.glb",
+    "meshes": 9,
+    "triangles": 3312,
+    "bytes": 103160,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "hub_landscape.glb",
+    "meshes": 8,
+    "triangles": 11028,
+    "bytes": 435220,
+    "animations": [],
+    "images": 0
+  },
+  {
+    "file": "hub_tile.glb",
+    "meshes": 2,
+    "triangles": 752,
+    "bytes": 43496,
+    "animations": [],
+    "images": 0
+  }
+]

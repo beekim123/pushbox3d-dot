@@ -1,0 +1,842 @@
+{
+  "asset_count": 43,
+  "original_texture_free": true,
+  "assets": [
+    {
+      "asset": "city_crate.glb",
+      "bytes": 85716,
+      "mesh_batches": 5,
+      "materials": 5,
+      "triangles": 2592,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.5575,
+        0.02,
+        -0.5633
+      ],
+      "bounds_max": [
+        0.5575,
+        1.0775,
+        0.5633
+      ]
+    },
+    {
+      "asset": "city_creature.glb",
+      "bytes": 130680,
+      "mesh_batches": 10,
+      "materials": 6,
+      "triangles": 4112,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "asset": "city_decor_a.glb",
+      "bytes": 629828,
+      "mesh_batches": 16,
+      "materials": 16,
+      "triangles": 14636,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.5925,
+        0.0,
+        -1.3414
+      ],
+      "bounds_max": [
+        1.6429,
+        3.555,
+        1.3
+      ]
+    },
+    {
+      "asset": "city_decor_b.glb",
+      "bytes": 241896,
+      "mesh_batches": 9,
+      "materials": 9,
+      "triangles": 6444,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.0926,
+        0.0,
+        -0.9952
+      ],
+      "bounds_max": [
+        0.9984,
+        1.6,
+        1.0
+      ]
+    },
+    {
+      "asset": "city_decor_c.glb",
+      "bytes": 251136,
+      "mesh_batches": 14,
+      "materials": 14,
+      "triangles": 6548,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.3921,
+        0.0,
+        -1.2661
+      ],
+      "bounds_max": [
+        1.4455,
+        1.9419,
+        1.15
+      ]
+    },
+    {
+      "asset": "city_edge.glb",
+      "bytes": 75952,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 1332,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.0,
+        -0.92,
+        -1.0
+      ],
+      "bounds_max": [
+        1.0,
+        0.03,
+        1.07
+      ]
+    },
+    {
+      "asset": "city_gate.glb",
+      "bytes": 117532,
+      "mesh_batches": 19,
+      "materials": 4,
+      "triangles": 2700,
+      "animations": [
+        "open",
+        "close"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "asset": "city_goal.glb",
+      "bytes": 55696,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 1608,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.68,
+        0.0,
+        -0.68
+      ],
+      "bounds_max": [
+        0.68,
+        0.1328,
+        0.68
+      ]
+    },
+    {
+      "asset": "city_landmark.glb",
+      "bytes": 2258552,
+      "mesh_batches": 18,
+      "materials": 18,
+      "triangles": 48020,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -5.3325,
+        0.0,
+        -2.8
+      ],
+      "bounds_max": [
+        1.0766,
+        6.055,
+        1.5
+      ]
+    },
+    {
+      "asset": "city_landmark_b.glb",
+      "bytes": 817456,
+      "mesh_batches": 18,
+      "materials": 18,
+      "triangles": 17764,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -2.2,
+        0.0,
+        -1.7864
+      ],
+      "bounds_max": [
+        2.2912,
+        4.255,
+        1.3209
+      ]
+    },
+    {
+      "asset": "city_landscape.glb",
+      "bytes": 2787152,
+      "mesh_batches": 20,
+      "materials": 20,
+      "triangles": 71460,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -11.7,
+        -1.65,
+        -10.5
+      ],
+      "bounds_max": [
+        11.4,
+        5.005,
+        9.9
+      ],
+      "playable_clearance_violating_vertices": 0,
+      "clearance_pass": true
+    },
+    {
+      "asset": "city_plate.glb",
+      "bytes": 40124,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 676,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.76,
+        0.0,
+        -0.76
+      ],
+      "bounds_max": [
+        0.76,
+        0.165,
+        0.76
+      ]
+    },
+    {
+      "asset": "city_tile.glb",
+      "bytes": 27136,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 416,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.99,
+        -0.36,
+        -0.99
+      ],
+      "bounds_max": [
+        0.99,
+        0.009,
+        0.99
+      ],
+      "tile_height_pass": true
+    },
+    {
+      "asset": "city_wall.glb",
+      "bytes": 108572,
+      "mesh_batches": 5,
+      "materials": 5,
+      "triangles": 3372,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.93,
+        0.0,
+        -0.855
+      ],
+      "bounds_max": [
+        0.93,
+        0.79,
+        0.855
+      ],
+      "wall_height_pass": true
+    },
+    {
+      "asset": "city_wall_b.glb",
+      "bytes": 123488,
+      "mesh_batches": 7,
+      "materials": 7,
+      "triangles": 3612,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.93,
+        0.0,
+        -0.855
+      ],
+      "bounds_max": [
+        0.93,
+        0.79,
+        0.855
+      ],
+      "wall_height_pass": true
+    },
+    {
+      "asset": "inferno_crate.glb",
+      "bytes": 130896,
+      "mesh_batches": 5,
+      "materials": 5,
+      "triangles": 2704,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.54,
+        0.0,
+        -0.5922
+      ],
+      "bounds_max": [
+        0.54,
+        1.405,
+        0.5922
+      ]
+    },
+    {
+      "asset": "inferno_creature.glb",
+      "bytes": 105744,
+      "mesh_batches": 14,
+      "materials": 5,
+      "triangles": 3436,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "asset": "inferno_decor_a.glb",
+      "bytes": 347592,
+      "mesh_batches": 5,
+      "materials": 5,
+      "triangles": 8596,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.9828,
+        -0.01,
+        -0.933
+      ],
+      "bounds_max": [
+        1.075,
+        3.2174,
+        0.65
+      ]
+    },
+    {
+      "asset": "inferno_decor_b.glb",
+      "bytes": 85344,
+      "mesh_batches": 3,
+      "materials": 3,
+      "triangles": 2916,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.63,
+        -0.035,
+        -0.63
+      ],
+      "bounds_max": [
+        0.63,
+        1.0314,
+        0.63
+      ]
+    },
+    {
+      "asset": "inferno_decor_c.glb",
+      "bytes": 135980,
+      "mesh_batches": 5,
+      "materials": 5,
+      "triangles": 6890,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.8528,
+        -0.1552,
+        -0.5093
+      ],
+      "bounds_max": [
+        0.7317,
+        1.2745,
+        0.4977
+      ]
+    },
+    {
+      "asset": "inferno_edge.glb",
+      "bytes": 22808,
+      "mesh_batches": 2,
+      "materials": 2,
+      "triangles": 1146,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.1298,
+        -0.9903,
+        -0.9454
+      ],
+      "bounds_max": [
+        1.1046,
+        0.0103,
+        0.9067
+      ]
+    },
+    {
+      "asset": "inferno_goal.glb",
+      "bytes": 85052,
+      "mesh_batches": 3,
+      "materials": 3,
+      "triangles": 1836,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.725,
+        0.0025,
+        -0.725
+      ],
+      "bounds_max": [
+        0.725,
+        0.12,
+        0.725
+      ]
+    },
+    {
+      "asset": "inferno_landmark.glb",
+      "bytes": 545108,
+      "mesh_batches": 7,
+      "materials": 7,
+      "triangles": 19228,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -3.5434,
+        -0.18,
+        -2.4453
+      ],
+      "bounds_max": [
+        0.7804,
+        3.7186,
+        0.6973
+      ]
+    },
+    {
+      "asset": "inferno_landmark_b.glb",
+      "bytes": 347596,
+      "mesh_batches": 5,
+      "materials": 5,
+      "triangles": 8596,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.9828,
+        -0.01,
+        -0.933
+      ],
+      "bounds_max": [
+        1.075,
+        3.2174,
+        0.65
+      ]
+    },
+    {
+      "asset": "inferno_landscape.glb",
+      "bytes": 842132,
+      "mesh_batches": 6,
+      "materials": 6,
+      "triangles": 29084,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -10.0448,
+        -1.4741,
+        -9.1646
+      ],
+      "bounds_max": [
+        10.0333,
+        3.4956,
+        9.3854
+      ],
+      "playable_clearance_violating_vertices": 0,
+      "clearance_pass": true
+    },
+    {
+      "asset": "inferno_portal.glb",
+      "bytes": 207820,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 7096,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "asset": "inferno_tile.glb",
+      "bytes": 55480,
+      "mesh_batches": 3,
+      "materials": 3,
+      "triangles": 956,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.9897,
+        -0.35,
+        -0.9897
+      ],
+      "bounds_max": [
+        0.9897,
+        0.0205,
+        0.99
+      ],
+      "tile_height_pass": true
+    },
+    {
+      "asset": "inferno_wall.glb",
+      "bytes": 53776,
+      "mesh_batches": 2,
+      "materials": 2,
+      "triangles": 940,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.86,
+        0.01,
+        -0.76
+      ],
+      "bounds_max": [
+        0.86,
+        0.63,
+        0.76
+      ],
+      "wall_height_pass": true
+    },
+    {
+      "asset": "inferno_wall_b.glb",
+      "bytes": 108764,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 3884,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.86,
+        0.01,
+        -0.76
+      ],
+      "bounds_max": [
+        0.86,
+        0.63,
+        0.845
+      ],
+      "wall_height_pass": true
+    },
+    {
+      "asset": "rainforest_arrow.glb",
+      "bytes": 32536,
+      "mesh_batches": 3,
+      "materials": 3,
+      "triangles": 889,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.85,
+        0.0,
+        -0.85
+      ],
+      "bounds_max": [
+        0.85,
+        0.135,
+        0.85
+      ]
+    },
+    {
+      "asset": "rainforest_crate.glb",
+      "bytes": 127760,
+      "mesh_batches": 6,
+      "materials": 6,
+      "triangles": 2828,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.575,
+        0.0,
+        -0.595
+      ],
+      "bounds_max": [
+        0.575,
+        1.234,
+        0.655
+      ]
+    },
+    {
+      "asset": "rainforest_creature.glb",
+      "bytes": 68220,
+      "mesh_batches": 9,
+      "materials": 6,
+      "triangles": 2416,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "asset": "rainforest_decor_a.glb",
+      "bytes": 634188,
+      "mesh_batches": 8,
+      "materials": 8,
+      "triangles": 31928,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.8814,
+        -0.0342,
+        -1.5782
+      ],
+      "bounds_max": [
+        1.5352,
+        3.2141,
+        1.1283
+      ]
+    },
+    {
+      "asset": "rainforest_decor_b.glb",
+      "bytes": 92236,
+      "mesh_batches": 6,
+      "materials": 6,
+      "triangles": 4704,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.7278,
+        -0.023,
+        -0.5841
+      ],
+      "bounds_max": [
+        0.736,
+        0.5796,
+        0.7412
+      ]
+    },
+    {
+      "asset": "rainforest_decor_c.glb",
+      "bytes": 275344,
+      "mesh_batches": 6,
+      "materials": 6,
+      "triangles": 14642,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.7953,
+        -0.0683,
+        -0.6651
+      ],
+      "bounds_max": [
+        0.78,
+        0.701,
+        0.585
+      ]
+    },
+    {
+      "asset": "rainforest_edge.glb",
+      "bytes": 13896,
+      "mesh_batches": 3,
+      "materials": 3,
+      "triangles": 600,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -1.0853,
+        -0.9633,
+        -0.9809
+      ],
+      "bounds_max": [
+        1.1234,
+        0.0781,
+        0.9969
+      ]
+    },
+    {
+      "asset": "rainforest_goal.glb",
+      "bytes": 64556,
+      "mesh_batches": 3,
+      "materials": 3,
+      "triangles": 2236,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.71,
+        0.002,
+        -0.71
+      ],
+      "bounds_max": [
+        0.71,
+        0.125,
+        0.71
+      ]
+    },
+    {
+      "asset": "rainforest_landmark.glb",
+      "bytes": 903832,
+      "mesh_batches": 11,
+      "materials": 11,
+      "triangles": 46426,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -4.4239,
+        -0.1694,
+        -3.3097
+      ],
+      "bounds_max": [
+        0.4621,
+        4.719,
+        0.8283
+      ]
+    },
+    {
+      "asset": "rainforest_landmark_b.glb",
+      "bytes": 634196,
+      "mesh_batches": 8,
+      "materials": 8,
+      "triangles": 31928,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -2.1907,
+        -0.0398,
+        -1.813
+      ],
+      "bounds_max": [
+        1.7876,
+        3.7424,
+        1.3385
+      ]
+    },
+    {
+      "asset": "rainforest_landscape.glb",
+      "bytes": 2453956,
+      "mesh_batches": 14,
+      "materials": 14,
+      "triangles": 126332,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -10.0448,
+        -1.4741,
+        -10.2326
+      ],
+      "bounds_max": [
+        10.0333,
+        3.0726,
+        9.3854
+      ],
+      "playable_clearance_violating_vertices": 0,
+      "clearance_pass": true
+    },
+    {
+      "asset": "rainforest_tile.glb",
+      "bytes": 66572,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 1576,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.9794,
+        -0.33,
+        -0.9894
+      ],
+      "bounds_max": [
+        0.9894,
+        0.16,
+        0.99
+      ],
+      "tile_height_pass": true
+    },
+    {
+      "asset": "rainforest_wall.glb",
+      "bytes": 52868,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 2164,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.8197,
+        -0.0967,
+        -0.7829
+      ],
+      "bounds_max": [
+        0.8046,
+        0.8693,
+        0.7322
+      ],
+      "wall_height_pass": true
+    },
+    {
+      "asset": "rainforest_wall_b.glb",
+      "bytes": 82904,
+      "mesh_batches": 4,
+      "materials": 4,
+      "triangles": 3200,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0,
+      "bounds_min": [
+        -0.8067,
+        -0.0967,
+        -0.7829
+      ],
+      "bounds_max": [
+        0.7552,
+        0.7778,
+        0.5291
+      ],
+      "wall_height_pass": true
+    }
+  ]
+}

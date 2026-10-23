@@ -51,6 +51,10 @@ def pal(t):
     p['flower_pale']=material('V2 '+t+' pale petal',(.99,.62,.47),roughness=.48)
     p['foam']=material('V2 '+t+' water glint',(.57,.82,.72),roughness=.28)
     p['soil']=material('V2 '+t+' warm ochre soil',(.32,.23,.12),roughness=.92)
+    if t=='rainforest':
+      p['path_paving']=material('V2 rainforest warm worn path',(.58,.50,.32),roughness=.86)
+      p['path_stone']=material('V2 rainforest pale old path stone',(.72,.66,.46),roughness=.82)
+      p['path_seam']=material('V2 rainforest deep earth joint',(.17,.16,.095),roughness=.95)
     return p
 
 
@@ -341,11 +345,11 @@ def seed_sprite(p):
 
 def rainforest_build(kind,p):
     if kind=='tile':
-      polygon_slab('Warm earthen clearing tile',[(-.98,-.97),(.10,-.99),(.99,-.94),(.97,.97),(-.96,.99)],-.03,.30,p['soil'],.06)
-      polygon_slab('Soft moss-covered forest floor',[(-.96,-.94),(.89,-.96),(.97,.61),(.83,.95),(-.92,.96)],.005,.06,p['ground'],.055)
-      # Widely spaced worn stones sit within moss, not a bathroom-like tiled sheet.
+      polygon_slab('Warm earthen clearing tile',[(-.98,-.97),(.10,-.99),(.99,-.94),(.97,.97),(-.96,.99)],-.03,.30,p['path_seam'],.06)
+      polygon_slab('Warm worn clearing path',[(x*.96,y*.96) for x,y in [(-.96,-.94),(.89,-.96),(.97,.61),(.83,.95),(-.92,.96)]],.005,.06,p['path_paving'],.055)
+      # Warm worn path contrasts with outer moss soil; a thin earth joint keeps legal cells clear.
       for pts in [[(-.74,-.70),(-.10,-.79),(.20,-.42),(.08,.08),(-.63,.16),(-.83,-.25)],[(.28,.24),(.80,.14),(.88,.60),(.55,.84),(.17,.68)]]:
-        polygon_slab('Old path stone swallowed by moss',pts,.023,.045,p['stone_light'],.07)
+        polygon_slab('Old path stone swallowed by moss',pts,.023,.045,p['path_stone'],.07)
       for a in range(3):
         angle=a*2.0;leaf('Tiny clearing grass blade',(-.80,.72,.03),(-.80+math.cos(angle)*.17,.72+math.sin(angle)*.17,.16),.035,p['leaf_light'])
     elif kind in ['wall','wall_b']:
@@ -534,7 +538,7 @@ def preview(t,p):
     bpy.ops.object.light_add(type='AREA',location=(7,5,13));o=bpy.context.object;o.name='Cool canopy fill';o.data.energy=1900;o.data.size=9;o.data.color=(.70,.85,1)
     if t=='inferno':
       bpy.ops.object.light_add(type='AREA',location=(-7.7,4.7,3));o=bpy.context.object;o.data.energy=100;o.data.color=(1,.36,.10);o.data.size=2
-    bpy.ops.object.camera_add(location=(20,-29,27));c=bpy.context.object;c.rotation_euler=(Vector((0,.7,1.3 if t=='city' else .9 if t=='rainforest' else .5))-c.location).to_track_quat('-Z','Y').to_euler();c.data.type='ORTHO';c.data.ortho_scale=30.5 if t=='city' else 29.5 if t=='rainforest' else 27.5
+    bpy.ops.object.camera_add(location=(20,-29,27));c=bpy.context.object;c.rotation_euler=(Vector((0,.7,1.3 if t=='city' else 1.0 if t=='rainforest' else .5))-c.location).to_track_quat('-Z','Y').to_euler();c.data.type='ORTHO';c.data.ortho_scale=30.5 if t=='city' else 29.7 if t=='rainforest' else 27.5
     sc=bpy.context.scene;sc.camera=c;sc.render.engine='CYCLES';sc.cycles.samples=int(os.environ.get('FOURFOLD_SAMPLES','64'));sc.cycles.use_adaptive_sampling=True;sc.cycles.adaptive_threshold=.025;sc.cycles.use_denoising=False
     sc.render.resolution_x=1500;sc.render.resolution_y=1150;sc.render.resolution_percentage=int(os.environ.get('FOURFOLD_RES','100'));sc.world.color=(.30,.30,.30);sc.view_settings.view_transform='AgX'
     sc.render.filepath=SHOTS+'/blender_'+t+'_v2.png'

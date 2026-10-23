@@ -293,7 +293,7 @@ func show_hub() -> void:
 	clear_ui("hub")
 	play_music("hub")
 	common_top("四隅织机 · 中庭","THE COMPASS LOOM  /  从四个方向出发，把线带回家", "hub")
-	var positions := {"heaven":Vector2(630,104),"inferno":Vector2(510,720),"rainforest":Vector2(44,300),"city":Vector2(1154,350)}
+	var positions := {"heaven":Vector2(940,128),"inferno":Vector2(510,720),"rainforest":Vector2(44,300),"city":Vector2(1154,350)}
 	var symbols:={"heaven":"↑", "inferno":"↓", "rainforest":"←", "city":"→"}
 	for w in ["heaven","inferno","rainforest","city"]:
 		var info: Dictionary = WORLD_INFO[w]
@@ -308,7 +308,8 @@ func show_hub() -> void:
 	status.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 	row.add_child(status)
 	var finale := UI.button("四隅交织  →" if main_solved()>=main_total() else "集齐四束线，开启交织",func(): show_world_menu("confluence"),Vector2(300,44))
-	finale.disabled=main_solved()<main_total() and not qa_mode
+	finale.set_meta("campaign_finale",true)
+	finale.disabled=main_solved()<main_total()
 	row.add_child(finale)
 	if progress.solved.size()>=levels.size() and levels.size()>0:
 		show_ending()
@@ -374,12 +375,13 @@ func show_world_menu(w: String, page: int = -1) -> void:
 	for i in range(first,mini(first+5,list.size())):
 		var entry: Dictionary=list[i]
 		var solved: bool=entry.id in progress.solved
-		var unlocked: bool=i==0 or list[i-1].id in progress.solved or qa_mode
+		var unlocked: bool=i==0 or list[i-1].id in progress.solved
 		var card:=VBoxContainer.new()
 		card.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 		journey.add_child(card)
 		var number:="✓ %02d" % (i+1) if solved else "%02d" % (i+1)
 		var b:=UI.button(number+"  "+("已织回" if solved else ("出发" if unlocked else "未抵达")),func(): start_level(entry),Vector2(170,46))
+		b.set_meta("level_id",str(entry.id))
 		b.disabled=not unlocked
 		card.add_child(b)
 		var name_label:=UI.label(str(entry.name),17)
@@ -548,7 +550,7 @@ func close_modal() -> void:
 
 func show_help() -> void:
 	var v:=open_modal("一步一步，把世界织好","没有倒计时，没有生命损耗。每个错误都可以撤销。")
-	v.add_child(wrapped("方向键 / WASD：移动与推动\nZ / Backspace：无限撤销\nR：重置本关（重置本身也可撤销）\nEsc：关闭弹窗 / 返回选关\nM：切换声音\nF2：精细 / 轻量画质（软件渲染器自动轻量）\n\n把所有箱子推到发光目标上，即可完成谜题。只能推，不能拉；一次只能推动一只箱子。",510,20))
+	v.add_child(wrapped("方向键 / WASD：移动与推动\nZ / Backspace：无限撤销\nR：重置本关（重置本身也可撤销）\nEsc：关闭弹窗 / 返回选关\nM：切换声音\nF2：精细 / 轻量画质（软件渲染器自动轻量）\n\n只有铺路格可以移动，草地与边缘园景不是可走的格子。\n把所有箱子推到发光目标上，即可完成谜题。只能推，不能拉；一次只能推动一只箱子。",510,20))
 	v.add_child(UI.button("明白了",close_modal,Vector2(510,54)))
 
 func show_ending() -> void:

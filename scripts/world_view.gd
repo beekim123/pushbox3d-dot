@@ -111,7 +111,7 @@ func setup_hub() -> void:
 	if ResourceLoader.exists("res://assets/models/hub_landscape.glb"): model("hub_landscape",set_root)
 	for x in range(-5,6):
 		for z in range(-5,6):
-			if abs(x)<=1 or abs(z)<=1 or (abs(x)<=2 and abs(z)<=2):
+			if x==0 or z==0 or (abs(x)<=1 and abs(z)<=1):
 				model("hub_tile",set_root,Vector3(x*2,0,z*2))
 	model("hub_center",set_root,Vector3(0,0,-0.5))
 	var worlds := ["heaven","inferno","rainforest","city"]
@@ -156,12 +156,19 @@ func setup_level(level: Dictionary, state: Dictionary) -> void:
 		for x in range(width):
 			var p := Vector2i(x,y)
 			var pos := grid_pos(p)
-			if p not in walls or not has_landscape: model(asset_world+"_tile",set_root,pos)
-			if p in walls:
+			if p not in walls or not has_landscape:
+				var tile:=model(asset_world+"_tile",set_root,pos)
+				if tile: tile.rotation.y=float((x*7+y*3)%4)*PI/2
+			var boundary:=x==0 or y==0 or x==width-1 or y==height-1
+			var corner:=(x==0 or x==width-1) and (y==0 or y==height-1)
+			var draw_wall:=p in walls and (not has_landscape or not boundary or corner or (x+y)%3==0)
+			if draw_wall:
 				var wall_asset:=asset_world+"_wall"
 				if (x+y)%3==0 and ResourceLoader.exists("res://assets/models/"+wall_asset+"_b.glb"): wall_asset+="_b"
 				var wall:=model(wall_asset,set_root,pos)
-				if wall: wall.rotation.y=float((x*3+y*7)%4)*PI/2
+				if wall:
+					wall.rotation.y=float((x*3+y*7)%4)*PI/2
+					if has_landscape and boundary: wall.scale.y=0.48
 			if y==height-1 and not has_landscape:
 				model(asset_world+"_edge",set_root,pos+Vector3(0,-0.25,0.9))
 	for g in PuzzleRules.cells(level.goals): model(asset_world+"_goal",set_root,grid_pos(g)+Vector3(0,0.02,0))
@@ -190,7 +197,7 @@ func setup_level(level: Dictionary, state: Dictionary) -> void:
 	var arrangements:=[[-1.0,0.6,0.88,0.68],[1.0,1.3,0.80,0.62],[-1.0,-0.2,0.94,0.54],[1.0,0.4,0.86,0.72],[-1.0,1.4,0.82,0.78]]
 	var arrangement: Array=arrangements[vignette]
 	var main_side:=float(arrangement[0])
-	var landmark:=model(asset_world+"_landmark",set_root,Vector3(main_side*(half_w+1.0),-0.03,-half_h+float(arrangement[1])),float(arrangement[2])*(0.85 if asset_world=="city" else 1.0))
+	var landmark:=model(asset_world+"_landmark",set_root,Vector3(main_side*(half_w+(1.65 if asset_world=="heaven" else 1.0)),-0.03,-half_h+float(arrangement[1])+(2.5 if asset_world=="city" else 0.0)),float(arrangement[2])*(0.85 if asset_world=="city" else (1.27 if asset_world=="heaven" else 1.0)))
 	if landmark: landmark.rotation.y=(PI if main_side>0 else 0.0)-0.2*main_side
 	var alternate:=asset_world+"_landmark_b"
 	if not ResourceLoader.exists("res://assets/models/"+alternate+".glb"): alternate=asset_world+"_decor_a"
@@ -218,10 +225,11 @@ func setup_level(level: Dictionary, state: Dictionary) -> void:
 	connect_animation()
 	play_animation("idle")
 	update_gates(state,true)
-	camera.size = maxf(width*2.0+12.5,height*2.0+9.0)
+	camera.size = maxf(width*2.0+8.5,height*2.0+6.0)
 	camera.position = Vector3(8,26,24)
-	camera.look_at(Vector3(0,0,-2.1))
+	camera.look_at(Vector3(0,0,0.5))
 	batch_static_geometry()
+	fit_level_camera()
 
 func connect_animation() -> void:
 	animation = find_animation(hero)
@@ -337,3 +345,40 @@ func batch_static_geometry() -> void:
 			var n: MeshInstance3D=group[i]
 			multimesh.set_instance_transform(i,set_root.global_transform.affine_inverse()*n.global_transform)
 			n.visible=false
+
+func fit_level_camera() -> void:
+	# Fit imported geometry once after assembly; never zoom continuously during play.
+	# Individual MultiMesh bounds avoid the empty corners of a giant combined AABB.
+	var points: PackedVector3Array=[]
+	for node in find_children("","GeometryInstance3D",true,false):
+		if not node.is_visible_in_tree(): continue
+		if node is MeshInstance3D and node.mesh:
+			append_bounds(points,node.mesh.get_aabb(),node.global_transform)
+		elif node is MultiMeshInstance3D and node.multimesh and node.multimesh.mesh:
+			for i in range(node.multimesh.instance_count):
+				append_bounds(points,node.multimesh.mesh.get_aabb(),node.global_transform*node.multimesh.get_instance_transform(i))
+	if points.is_empty(): return
+	var screen:=get_viewport().get_visible_rect().size
+	if screen.x<2 or screen.y<2: return
+	# HUD ends at 88/900 and begins at 802/900. Reserve another 4% breathing room.
+	var safe:=Rect2(Vector2(screen.x*0.06,screen.y*0.14),Vector2(screen.x*0.88,screen.y*0.71))
+	var bounds:=projected_bounds(points)
+	var ratio:=maxf(bounds.size.x/safe.size.x,bounds.size.y/safe.size.y)
+	# The landscape may not reduce playable cells to postage stamps.
+	# Extreme props are moved/scaled in the authored perimeter instead.
+	camera.size*=clampf(ratio,1.0,1.29)
+	camera.force_update_transform()
+	bounds=projected_bounds(points)
+	var shift:=camera.project_position(bounds.get_center(),10.0)-camera.project_position(safe.get_center(),10.0)
+	camera.global_position+=shift
+	camera.force_update_transform()
+	camera.set_meta("fit_bounds",projected_bounds(points))
+	camera.set_meta("fit_safe",safe)
+
+func append_bounds(points: PackedVector3Array, box: AABB, transform: Transform3D) -> void:
+	for i in range(8): points.append(transform*box.get_endpoint(i))
+
+func projected_bounds(points: PackedVector3Array) -> Rect2:
+	var rect:=Rect2(camera.unproject_position(points[0]),Vector2.ZERO)
+	for point in points: rect=rect.expand(camera.unproject_position(point))
+	return rect

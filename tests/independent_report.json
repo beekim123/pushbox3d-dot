@@ -1,0 +1,91 @@
+{
+  "levels_sha256": "cb422d5cf03d7b22e88849dbfbfe8bf40a6c00c7dd9d8d57907b9d8348c18d5e",
+  "invariant_states": 33610,
+  "invariant_transitions": 88588,
+  "bypass": [
+    {
+      "id": "heaven_02",
+      "mechanic": "glide",
+      "optimal_without_use": [
+        11,
+        28
+      ]
+    },
+    {
+      "id": "heaven_03",
+      "mechanic": "glide",
+      "optimal_without_use": null
+    },
+    {
+      "id": "inferno_02",
+      "mechanic": "portals",
+      "optimal_without_use": null
+    },
+    {
+      "id": "inferno_03",
+      "mechanic": "portals",
+      "optimal_without_use": null
+    },
+    {
+      "id": "rainforest_02",
+      "mechanic": "arrows",
+      "optimal_without_use": null
+    },
+    {
+      "id": "rainforest_03",
+      "mechanic": "arrows",
+      "optimal_without_use": null
+    },
+    {
+      "id": "city_02",
+      "mechanic": "gates",
+      "optimal_without_use": null
+    },
+    {
+      "id": "city_03",
+      "mechanic": "gates",
+      "optimal_without_use": null
+    },
+    {
+      "id": "confluence_01",
+      "mechanic": "glide",
+      "optimal_without_use": null
+    },
+    {
+      "id": "confluence_01",
+      "mechanic": "portals",
+      "optimal_without_use": null
+    },
+    {
+      "id": "confluence_02",
+      "mechanic": "portals",
+      "optimal_without_use": null
+    },
+    {
+      "id": "confluence_02",
+      "mechanic": "arrows",
+      "optimal_without_use": null
+    },
+    {
+      "id": "confluence_03",
+      "mechanic": "arrows",
+      "optimal_without_use": null
+    },
+    {
+      "id": "confluence_03",
+      "mechanic": "gates",
+      "optimal_without_use": null
+    },
+    {
+      "id": "confluence_04",
+      "mechanic": "glide",
+      "optimal_without_use": null
+    },
+    {
+      "id": "confluence_04",
+      "mechanic": "gates",
+      "optimal_without_use": null
+    }
+  ],
+  "parity_cases": 5120
+}

@@ -1,0 +1,70 @@
+{
+  "inferno_tile": {
+    "material_batches": 3,
+    "vertices": 488,
+    "triangles": 956
+  },
+  "inferno_wall": {
+    "material_batches": 2,
+    "vertices": 480,
+    "triangles": 940
+  },
+  "inferno_wall_b": {
+    "material_batches": 4,
+    "vertices": 1960,
+    "triangles": 3884
+  },
+  "inferno_edge": {
+    "material_batches": 2,
+    "vertices": 579,
+    "triangles": 1146
+  },
+  "inferno_crate": {
+    "material_batches": 5,
+    "vertices": 1376,
+    "triangles": 2704
+  },
+  "inferno_goal": {
+    "material_batches": 3,
+    "vertices": 928,
+    "triangles": 1836
+  },
+  "inferno_decor_a": {
+    "material_batches": 5,
+    "vertices": 4360,
+    "triangles": 8596
+  },
+  "inferno_decor_b": {
+    "material_batches": 3,
+    "vertices": 1486,
+    "triangles": 2916
+  },
+  "inferno_decor_c": {
+    "material_batches": 5,
+    "vertices": 3489,
+    "triangles": 6890
+  },
+  "inferno_creature": {
+    "animated": true,
+    "source_objects": 16
+  },
+  "inferno_landmark": {
+    "material_batches": 7,
+    "vertices": 9750,
+    "triangles": 19228
+  },
+  "inferno_landmark_b": {
+    "material_batches": 5,
+    "vertices": 4360,
+    "triangles": 8596
+  },
+  "inferno_landscape": {
+    "material_batches": 6,
+    "vertices": 14730,
+    "triangles": 29084
+  },
+  "inferno_portal": {
+    "animated": true,
+    "source_objects": 6
+  }
+}

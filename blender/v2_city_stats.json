@@ -1,0 +1,75 @@
+{
+  "city_tile": {
+    "material_batches": 4,
+    "vertices": 224,
+    "triangles": 416
+  },
+  "city_wall": {
+    "material_batches": 5,
+    "vertices": 1710,
+    "triangles": 3372
+  },
+  "city_wall_b": {
+    "material_batches": 7,
+    "vertices": 1838,
+    "triangles": 3612
+  },
+  "city_edge": {
+    "material_batches": 4,
+    "vertices": 688,
+    "triangles": 1332
+  },
+  "city_crate": {
+    "material_batches": 5,
+    "vertices": 1320,
+    "triangles": 2592
+  },
+  "city_goal": {
+    "material_batches": 4,
+    "vertices": 816,
+    "triangles": 1608
+  },
+  "city_decor_a": {
+    "material_batches": 16,
+    "vertices": 7586,
+    "triangles": 14636
+  },
+  "city_decor_b": {
+    "material_batches": 9,
+    "vertices": 3308,
+    "triangles": 6444
+  },
+  "city_decor_c": {
+    "material_batches": 14,
+    "vertices": 3376,
+    "triangles": 6548
+  },
+  "city_creature": {
+    "animated": true,
+    "source_objects": 12
+  },
+  "city_landmark": {
+    "material_batches": 18,
+    "vertices": 25016,
+    "triangles": 48020
+  },
+  "city_landmark_b": {
+    "material_batches": 18,
+    "vertices": 9252,
+    "triangles": 17764
+  },
+  "city_landscape": {
+    "material_batches": 20,
+    "vertices": 37074,
+    "triangles": 71460
+  },
+  "city_plate": {
+    "material_batches": 4,
+    "vertices": 352,
+    "triangles": 676
+  },
+  "city_gate": {
+    "animated": true,
+    "source_objects": 21
+  }
+}

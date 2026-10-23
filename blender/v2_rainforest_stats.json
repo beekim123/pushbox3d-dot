@@ -1,0 +1,71 @@
+{
+  "rainforest_tile": {
+    "material_batches": 4,
+    "vertices": 802,
+    "triangles": 1576
+  },
+  "rainforest_wall": {
+    "material_batches": 4,
+    "vertices": 1100,
+    "triangles": 2164
+  },
+  "rainforest_wall_b": {
+    "material_batches": 4,
+    "vertices": 1612,
+    "triangles": 3200
+  },
+  "rainforest_edge": {
+    "material_batches": 3,
+    "vertices": 306,
+    "triangles": 600
+  },
+  "rainforest_crate": {
+    "material_batches": 6,
+    "vertices": 1448,
+    "triangles": 2828
+  },
+  "rainforest_goal": {
+    "material_batches": 3,
+    "vertices": 1128,
+    "triangles": 2236
+  },
+  "rainforest_decor_a": {
+    "material_batches": 8,
+    "vertices": 16610,
+    "triangles": 31928
+  },
+  "rainforest_decor_b": {
+    "material_batches": 6,
+    "vertices": 2424,
+    "triangles": 4704
+  },
+  "rainforest_decor_c": {
+    "material_batches": 6,
+    "vertices": 7569,
+    "triangles": 14642
+  },
+  "rainforest_creature": {
+    "animated": true,
+    "source_objects": 11
+  },
+  "rainforest_landmark": {
+    "material_batches": 11,
+    "vertices": 24105,
+    "triangles": 46426
+  },
+  "rainforest_landmark_b": {
+    "material_batches": 8,
+    "vertices": 16610,
+    "triangles": 31928
+  },
+  "rainforest_landscape": {
+    "material_batches": 14,
+    "vertices": 65292,
+    "triangles": 126332
+  },
+  "rainforest_arrow": {
+    "material_batches": 3,
+    "vertices": 467,
+    "triangles": 889
+  }
+}
