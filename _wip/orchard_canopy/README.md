@@ -31,3 +31,22 @@ Author reports all three AABBs within baseline, with 30,824 / 41,204 / 15,412 tr
 and 12 batches each. Those figures are author-reported at this source checkpoint,
 not a new independent art acceptance. Same-camera native high/low review is still
 in progress. GLBs, .blend and images stay local; production is unchanged.
+
+## Shadow-fixed reviewed source — 2026-10-23 16:17 UTC
+
+The current generator comes from the explicitly frozen reviewed source, SHA-256
+`4077183a1854e81c594557adc6938baecb97c97de1fc9d523ef458a6a0dc9c11`.
+The exporter-sort experiment was reverted; the new accepted patch is retained
+separately from earlier iterations. Syntax and baseline patch dry-run passed here.
+
+The author reports internal independent visual review, eight native capture cases,
+204 camera checks without clipping, and a 62-asset audit. This is not user art
+acceptance or a claim that this Git branch has the reviewed binary assets. The
+five-file local integration allowlist and exact source/asset hashes are preserved
+in canopy_review/integration_manifest.json; only its textual record is uploaded.
+
+Byte-for-byte exporter reproducibility is explicitly unsupported: GLB exporter
+ordering varies. The recorded delivery hashes identify exact reviewed assets;
+semantic geometry checks are a different claim. GLBs, .blend and images remain
+local under the unresolved binary upload restriction. No production Git paths
+are changed by this isolated WIP checkpoint.

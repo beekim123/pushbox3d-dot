@@ -1,0 +1,50 @@
+{
+  "status": "Frozen accepted tree-only candidate; pending root asset-only integration",
+  "source_project": "/workspace/scratch/e4cad742399c/fourfold_next/orchard_canopy",
+  "integration_allowlist": [
+    {
+      "path": "blender/generate_orchard.py",
+      "before_sha256": "92a8cac84bd6aa8d58f1bb0ce252a9c5e8f6f4b6b2d28e7e5f4e532a2fdec747",
+      "after_sha256": "4077183a1854e81c594557adc6938baecb97c97de1fc9d523ef458a6a0dc9c11",
+      "bytes": 26195
+    },
+    {
+      "path": "blender/heaven_orchard.blend",
+      "before_sha256": "ef76e85057125fa6ed32c4b0c6ba8f3299be440d2da6cc28c03cb3a490599b69",
+      "after_sha256": "4083136429ce77c57bd75ad4c92ce820362cad995e51f3f2e3add9e594c2b021",
+      "bytes": 9324848
+    },
+    {
+      "path": "assets/models/heaven_landmark.glb",
+      "before_sha256": "b4c25e9fecc663e6154466f30349f0bff0b58bdf1200fc0777a6302cb8bba861",
+      "after_sha256": "ac00b6c3c5ab947afa91d4b2652f278cde6c3b552640aa2dffd5751d30ba6ac4",
+      "bytes": 625592
+    },
+    {
+      "path": "assets/models/heaven_landmark_b.glb",
+      "before_sha256": "2cf3d6746b03e922a24f79ad5ef6ea3879e622ff1b607cb09da2c5581040bd0b",
+      "after_sha256": "e578928aa5288d0d393d0538c186279deab410c21fc9edfe55a4e658a814c5a7",
+      "bytes": 851180
+    },
+    {
+      "path": "assets/models/heaven_decor_a.glb",
+      "before_sha256": "79a016268c4f68c5f376a1e7cb6fe7b002278038f53a8f25bb81d078fdda21a2",
+      "after_sha256": "1f1eca183a35e1840c1d4809b4d356cabb94c5fe2f36602cf7cefa23a2b0dfa3",
+      "bytes": 326524
+    }
+  ],
+  "do_not_copy": [
+    "scripts/",
+    "scenes/",
+    "project.godot",
+    "assets/levels.json",
+    "canopy_review/baseline_project/",
+    ".godot/",
+    "old cloned docs/README"
+  ],
+  "native_final_directory": "canopy_review/native_final",
+  "geometry_report": "canopy_review/geometry_metrics.json",
+  "rebuild_command": "FOURFOLD_SKIP_RENDER=1 FOURFOLD_ORCHARD_EXPORT_ONLY=landmark,landmark_b,decor_a blender --background -t 4 --python blender/generate_orchard.py",
+  "byte_reproducibility": "Unsupported: Blender GLB exporter ordering varies. Delivery SHA256 pins these exact bytes. Semantic geometry/material comparison passed across sorted/unsorted exports; attempted sorting was reverted to independently accepted source 4077183a\u2026.",
+  "production_main_boundary": "Only main.gd advanced separately during task; snapshot source untouched, world_view.gd exactly matches current production. Root integrates allowlisted art only."
+}

@@ -139,11 +139,11 @@ def blossom_fan_volume(center,axis,length,width,depth,phase,shade):
  top_count=len(faces)
  # Lower ring is broader than a stem, but visibly flattened compared with a ball.
  lower=len(verts)
- for i in range(n):verts.append(tuple(point(.67,i*math.tau/n,-depth*.66)))
+ for i in range(n):verts.append(tuple(point(.57,i*math.tau/n,-depth*.66)))
  bottom=len(verts);verts.append(tuple(center+Vector((0,0,-depth*.73))))
  edge=1+2*n
  for i in range(n):faces.append((edge+i,lower+i,lower+(i+1)%n,edge+(i+1)%n));faces.append((bottom,lower+(i+1)%n,lower+i))
- ob=mesh('Sculpted scalloped blossom fan',verts,faces,P['pink'] if shade==0 else P['blush']);ob.data.materials.append(P['rose'])
+ ob=mesh('Sculpted scalloped blossom fan',verts,faces,P['pink'] if shade==0 else P['blush']);ob.data.materials.append(P['pink'])
  for f in ob.data.polygons:f.use_smooth=True;f.material_index=0 if f.index<top_count else 1
  return ob
 
@@ -192,8 +192,8 @@ def peach_tree(loc=(0,0,0),scale=1,variant=0):
    limb('Connected flowering fan branchlet',[tr(start),tr(mid),tr(end)],[.030*scale*spread,.018*scale*spread,.005*scale],P['bark'])
    volume_scale=spread*(.80 if variant==2 else 1)
    # Upper forks have one open lobe; lower fans carry the broad blossom body.
-   if not ((fi==3 and ti==0) or (fi==4 and ti==2)):
-    blossom_fan_volume(tr(end+Vector((0,0,-.04))),flat,.465*scale*volume_scale,.42*scale*volume_scale,.23*scale*volume_scale,fi*.75+ti*.9,0 if ti==0 else 1)
+   if not ((fi==3 and ti==0) or fi==4):
+    blossom_fan_volume(tr(end+Vector((0,0,-.075))),flat,.465*scale*volume_scale,.42*scale*volume_scale,.18*scale*volume_scale,fi*.75+ti*.9,0 if ti==0 else 1)
    # Broad fans have a dark inner/lower lobe, blush body, ivory upper lip.
    # The palette is assigned by lobe, never alternating random confetti.
    for bi in range(count):

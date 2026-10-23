@@ -1,0 +1,198 @@
+--- canopy_review/generate_orchard.baseline.py	2026-10-23 07:06:25.283615245 -0700
++++ blender/generate_orchard.py	2026-10-23 09:11:32.365174124 -0700
+@@ -94,44 +94,137 @@
+   tiny('Low clipped moss',(x+math.cos(a)*r,y+math.sin(a)*r,z+.16*s),(.36*s,.28*s,.19*s),P['moss'] if k%2 else P['grass'])
+   if flowers:blossom((x+math.cos(a)*r,y+math.sin(a)*r,z+.34*s),.095*s,a,k%2)
+ 
++# Tree flowers deliberately do not use the shared gameplay/goal blossom mesh.
++_TREE_FLOWER_MESHES={}
++def tree_blossom(loc,s=.18,angle=0,shade=0,tilt=(0,0)):
++ shade=shade%4
++ if shade not in _TREE_FLOWER_MESHES:
++  verts=[];faces=[]
++  for pet in range(5):
++   a=pet*math.tau/5;radial=Vector((math.cos(a),math.sin(a),0));tangent=Vector((-math.sin(a),math.cos(a),0));base=len(verts)
++   verts.extend([tuple(radial*.46+Vector((0,0,.10))),tuple(radial*.46+Vector((0,0,.045)))])
++   for k in range(8):
++    b=k*math.tau/8;rr=.46+math.cos(b)*.57
++    # Raised scalloped rim, low inner throat, and a little thickness make a real cup.
++    h=.055+.19*max(0,rr)**1.7+.075*abs(math.sin(b))
++    if k==0:h-=.035
++    verts.append(tuple(radial*rr+tangent*(math.sin(b)*.37)+Vector((0,0,h))))
++   for k in range(8):faces.extend([(base,base+2+k,base+2+(k+1)%8),(base+1,base+2+(k+1)%8,base+2+k)])
++  base=len(verts);verts.extend([(0,0,.20),(0,0,.04),(.16,0,.105),(0,.16,.105),(-.16,0,.105),(0,-.16,.105)])
++  for k in range(4):faces.extend([(base,base+2+k,base+2+(k+1)%4),(base+1,base+2+(k+1)%4,base+2+k)])
++  me=bpy.data.meshes.new('Orchard-only cupped five-petal flower');me.from_pydata(verts,[],faces);me.update();me.materials.append([P['rose'],P['pink'],P['blush'],P['petal']][shade]);me.materials.append(P['gold'])
++  for f in me.polygons:f.use_smooth=True;f.material_index=1 if f.index>=80 else 0
++  _TREE_FLOWER_MESHES[shade]=me
++ o=bpy.data.objects.new('Tilted orchard blossom cup',_TREE_FLOWER_MESHES[shade]);bpy.context.collection.objects.link(o);o.location=loc;o.scale=(s,s,s);o.rotation_euler=(tilt[0],tilt[1],angle)
++ return o
++
++def blossom_fan_volume(center,axis,length,width,depth,phase,shade):
++ """A scalloped, asymmetrical shallow blossom cushion, never a sphere crown.
++ The continuous blush surface is a readable group of flowers at gameplay scale;
++ a rose underside and rolling lobes give thickness under selective detailed cups.
++ """
++ center=Vector(center);axis=Vector(axis).normalized();side=Vector((-axis.y,axis.x,0));n=40;verts=[];faces=[]
++ def point(r,a,h):
++  scallop=1+.13*math.cos(5*a+phase)+.065*math.sin(3*a-phase)
++  u=math.cos(a)*r*length*scallop;v=math.sin(a)*r*width*scallop
++  return center+axis*u+side*v+Vector((0,0,h+u*(.10+.06*math.cos(phase))+v*(.13+.10*math.sin(phase))))
++ verts.append(tuple(center+Vector((0,0,depth*.65))))
++ for r,h in [(.43,.72),(.78,.42),(1,.0)]:
++  for i in range(n):
++   a=i*math.tau/n;verts.append(tuple(point(r,a,depth*(h+(.28 if r>.9 else .12)*math.sin(a*3+phase)*r))))
++ for i in range(n):faces.append((0,1+i,1+(i+1)%n))
++ for ring in range(2):
++  lo=1+ring*n;hi=lo+n
++  for i in range(n):faces.append((lo+i,hi+i,hi+(i+1)%n,lo+(i+1)%n))
++ top_count=len(faces)
++ # Lower ring is broader than a stem, but visibly flattened compared with a ball.
++ lower=len(verts)
++ for i in range(n):verts.append(tuple(point(.57,i*math.tau/n,-depth*.66)))
++ bottom=len(verts);verts.append(tuple(center+Vector((0,0,-depth*.73))))
++ edge=1+2*n
++ for i in range(n):faces.append((edge+i,lower+i,lower+(i+1)%n,edge+(i+1)%n));faces.append((bottom,lower+(i+1)%n,lower+i))
++ ob=mesh('Sculpted scalloped blossom fan',verts,faces,P['pink'] if shade==0 else P['blush']);ob.data.materials.append(P['pink'])
++ for f in ob.data.polygons:f.use_smooth=True;f.material_index=0 if f.index<top_count else 1
++ return ob
++
+ def peach_tree(loc=(0,0,0),scale=1,variant=0):
++ """Three authored silhouettes: spreading elder, windswept companion, open sapling.
++ Every fork starts on a trunk control point and every floral fan grows on a twig.
++ No random scatter, geometry crowns, or changes to the shared goal blossom.
++ """
+  x,y,z=loc
+  def tr(co):return (x+co[0]*scale,y+co[1]*scale,z+co[2]*scale)
+- # Low serpentine trunk and asymmetrical primary forks keep negative spaces visible.
+- trunk=[(0,0,0),(-.26,.04,.65),(-.13,.08,1.35),(.25,.10,2.0),(.13,.15,2.65)]
+- 
+- if variant==1:trunk=[(0,0,0),(.28,-.1,.55),(.65,-.05,1.13),(.60,.10,1.8),(.92,.15,2.30)]
+- if variant==2:trunk=[(0,0,0),(-.13,.2,.60),(-.55,.4,1.05),(-.8,.5,1.7),(-.7,.7,2.15)]
+- branch('Twisted peach trunk',[tr(v) for v in trunk],[.27*scale,.23*scale,.19*scale,.13*scale,.055*scale],P['bark'])
+- for a in [-2.5,-.7,1.1,2.4]:branch('Flared peach root',[tr((math.cos(a)*.72,math.sin(a)*.60,.04)),tr((math.cos(a)*.27,math.sin(a)*.23,.24)),tr((-.20,.02,.66))],[.10*scale,.16*scale,.15*scale],P['bark'])
+- forks=[([(-.12,.07,1.15),(-.70,.02,1.80),(-1.35,.14,2.12),(-2.0,.15,2.40)],.15),
+- ([(.05,.10,1.65),(.65,-.12,2.0),(1.42,-.17,2.40),(1.95,-.1,2.65)],.14),
+- ([(.12,.12,2.05),(-.15,.62,2.70),(-.55,1.0,3.25),(-1.15,1.15,3.45)],.12),
+- ([(.08,.1,2.40),(.65,.55,3.03),(1.15,.9,3.35),(1.60,1.05,3.47)],.10),
+- ([(-.22,.06,1.45),(-.40,-.65,2.20),(-.8,-1.0,2.65),(-1.25,-1.10,2.8)],.10)]
+- for fi,(pts,r) in enumerate(forks):
+-  if variant==1:
+-   if fi==2:continue
+-   pts=[(a*.82+.35+c*.10,b*1.25-.20,c*(.82 if fi%2 else .94)) for a,b,c in pts]
+-  elif variant==2:
+-   if fi==3:continue
+-   pts=[(-a*.88-.30,b*.8+.25,c*(.74 if fi%2 else .86)+.12*math.sin(a)) for a,b,c in pts]
+-  branch('Tapered orchard fork',[tr(v) for v in pts],[r*scale,r*.78*scale,r*.42*scale,.025*scale],P['bark'])
+-  # Golden brown bark seam follows inner fork, no procedural texture.
+-  branch('Subtle bark ridge',[tr((a+.045,b-.025,c)) for a,b,c in pts],[r*.13*scale,r*.1*scale,.012*scale,.003],P['bark_light'])
+-  for ti in range(2,7):
+-   q=ti/7;p0=Vector(pts[1]).lerp(Vector(pts[-1]),q);sgn=-1 if ti%2 else 1
+-   tip=p0+Vector((sgn*.24,.35*sgn,.30+ti*.035));mid=p0.lerp(tip,.55)
+-   branch('Flower bearing lateral twig',[tr(p0),tr(mid),tr(tip)],[.035*scale,.020*scale,.006],P['bark'])
+-   # Unequal group sizes, flowers placed along wood rather than sphere crowns.
+-   for bi in range(6+(ti%3)):
+-    t=bi/max(1,6+(ti%3)-1);pos=p0.lerp(tip,t)+Vector((math.sin(bi*2.2)*.22,math.cos(bi*1.7)*.20,.065+.06*(bi%2)))
+-    blossom(tr(pos),(.18+.040*((bi+fi)%3))*scale,fi+bi,(bi+fi+ti)%4)
+-   if ti%2==0:leaf('Sparse peach lanceolate leaf',tr(mid),tr(mid+Vector((.35,-.15,.04))),.09*scale,P['leaf'])
+-  fruit(tr(Vector(pts[2])+Vector((.12,-.13,-.20))),.22*scale)
+- # Flowers grow along the upper central twig too.
+- for k in range(8):blossom(tr((.10+math.sin(k)*.17,.12+math.cos(k)*.14,2.35+k*.095)),.14*scale,k,k%3)
+- shrub(tr((-.3,.25,.05)),.65*scale)
++ def limb(name,pts,radii,mat):
++  o=branch(name,pts,radii,mat);o.data.use_fill_caps=True;return o
++ if variant==0:
++  trunk=[(0,0,0),(-.21,.06,.55),(-.22,.04,1.12),(.08,.15,1.82),(-.10,.20,2.48),(.20,.45,3.15),(.57,.55,3.52)]
++  radii=[.26,.24,.21,.16,.11,.066,.018]
++  forks=[(2,[(-.65,-.02,1.65),(-1.25,.10,2.04),(-1.87,.22,2.40)],.16,.96),
++         (3,[(.65,-.28,2.00),(1.30,-.34,2.28),(1.88,-.20,2.57)],.13,1.02),
++         (4,[(-.58,.65,2.86),(-1.10,.90,3.22),(-1.46,1.03,3.48)],.105,.92),
++         (5,[(.70,.60,3.45),(1.16,.79,3.54),(1.58,.90,3.50)],.075,.82),
++         (2,[(-.30,-.55,1.73),(-.64,-.93,2.18),(-1.02,-1.08,2.59)],.105,.78)]
++ elif variant==1:
++  trunk=[(0,0,0),(.15,-.08,.48),(.39,-.06,1.00),(.64,.02,1.51),(.89,.12,2.12),(1.17,.18,2.62)]
++  radii=[.24,.21,.17,.12,.073,.019]
++  forks=[(2,[(-.16,-.15,1.45),(-.60,-.21,1.77),(-.90,-.18,2.08)],.135,.83),
++         (3,[(1.04,-.42,1.80),(1.62,-.62,2.13),(2.08,-.55,2.36)],.11,.86),
++         (4,[(.40,.65,2.46),(.08,.93,2.74),(-.20,1.14,2.91)],.083,.73),
++         (5,[(1.46,.44,2.85),(1.80,.70,2.97),(2.10,.82,2.94)],.06,.72)]
++ else:
++  trunk=[(0,0,0),(-.06,.06,.48),(-.27,.10,1.06),(-.45,.14,1.77),(-.32,.20,2.35),(-.42,.24,2.87)]
++  radii=[.14,.12,.095,.068,.037,.008]
++  forks=[(2,[(-.65,-.06,1.36),(-.96,-.18,1.64),(-1.17,-.18,1.95)],.075,.66),
++         (3,[(-.03,.39,2.02),(.37,.51,2.26),(.63,.54,2.44)],.055,.62),
++         (4,[(-.65,.44,2.56),(-.88,.60,2.77),(-.99,.67,3.01)],.038,.53)]
++ limb('Connected twisting peach trunk',[tr(p) for p in trunk],[r*scale for r in radii],P['bark'])
++ # Roots enter the same low trunk; the sapling has lighter buttresses.
++ root_scale=.66 if variant==2 else 1
++ for a in [-2.55,-.7,1.15,2.45]:
++  limb('Flared connected peach root',[tr((math.cos(a)*.64*root_scale,math.sin(a)*.54*root_scale,.035)),tr((math.cos(a)*.24*root_scale,math.sin(a)*.20*root_scale,.19)),tr(trunk[1])],[.065*scale*root_scale,.12*scale*root_scale,radii[1]*scale*.72],P['bark'])
++ def fan(pts,fi,spread):
++  # Three interleaving branchlets spread inward and sideways along distal wood.
++  # Their different heights retain volume without upright tip-only bouquets.
++  a=Vector(pts[1]);b=Vector(pts[2]);c=Vector(pts[3]);direction=(c-a).normalized();flat=Vector((direction.x,direction.y,0)).normalized();side=Vector((-flat.y,flat.x,0))
++  for ti,(q,sgn,height,count) in enumerate([(.12,-1,.08,8),(.45,1,.21,10),(.78,-.45,.13,7)]):
++   if variant==2:count-=3
++   start=a.lerp(b,q);end=b.lerp(c,.06+ti*.43)+side*(sgn*.39*spread)+Vector((0,0,height*spread));mid=start.lerp(end,.52)+Vector((0,0,-.035))
++   limb('Connected flowering fan branchlet',[tr(start),tr(mid),tr(end)],[.030*scale*spread,.018*scale*spread,.005*scale],P['bark'])
++   volume_scale=spread*(.80 if variant==2 else 1)
++   # Upper forks have one open lobe; lower fans carry the broad blossom body.
++   if not ((fi==3 and ti==0) or fi==4):
++    blossom_fan_volume(tr(end+Vector((0,0,-.075))),flat,.465*scale*volume_scale,.42*scale*volume_scale,.18*scale*volume_scale,fi*.75+ti*.9,0 if ti==0 else 1)
++   # Broad fans have a dark inner/lower lobe, blush body, ivory upper lip.
++   # The palette is assigned by lobe, never alternating random confetti.
++   for bi in range(count):
++    row=bi//3;col=bi%3-1;rows=max(1,(count-1)//3);t=row/rows
++    # Rounded lateral fans grow across a branch plane, not up a vertical pole.
++    center=end+flat*((t-.52)*.61*spread)
++    width=(.23 if row<rows else .14)*spread
++    pos=center+side*(col*width)+flat*(.035*math.sin(bi*2.1))+Vector((0,0,(.095*col+.065*math.sin(bi*1.7)+.08*math.sin(t*math.pi)+.12)*spread))
++    shade=(0 if ti==0 else 2) if row<2 else (1 if ti==0 else (3 if ti==2 else 2))
++    size=(.215+.027*math.sin(bi*1.65+fi)+(.012 if ti==1 else 0))*(.88+.12*spread)
++    # Coherent tilted normals reveal scalloped edges and thick flower cups.
++    tree_blossom(tr(pos),size*scale,fi*.77+bi*1.31,shade,(.18+.14*col+.12*math.sin(fi),-.12+sgn*.18+.08*row))
++   # Sparse distal blossom and exposed twig separate neighboring floral masses.
++   tip=end+direction*.18*spread+Vector((0,0,.12*spread))
++   limb('Bare tapering flower tip',[tr(end),tr(tip)],[.010*scale,.003*scale],P['bark'])
++   if ti!=1:tree_blossom(tr(tip),.12*spread*scale,fi+ti,2,(.55,-.35))
++   if ti==0:leaf('Sparse fan leaf',tr(mid),tr(mid+side*.31*spread+Vector((0,0,.07))),.065*scale*spread,P['leaf'])
++ for fi,(attach,tail,r,spread) in enumerate(forks):
++  pts=[trunk[attach]]+tail
++  limb('Connected asymmetrical orchard fork',[tr(p) for p in pts],[r*scale,r*.76*scale,r*.40*scale,.012*scale],P['bark'])
++  limb('Fine warm bark ridge',[tr((a+.025,b-.020,c)) for a,b,c in pts],[r*.105*scale,r*.085*scale,.007*scale,.002*scale],P['bark_light'])
++  fan(pts,fi,spread)
++  if fi<3 and not (variant==2 and fi>0):
++   p=Vector(pts[2]);hanging=p+Vector((.04,-.15,-.35))
++   limb('Visible fruit pendant',[tr(p),tr(hanging+Vector((0,0,.13)))],[.018*scale,.010*scale],P['bark']);fruit(tr(hanging),(.22 if variant!=2 else .18)*scale)
++ # A slender, sparsely flowering leader keeps each crown open at its apex.
++ top=Vector(trunk[-1]);previous=Vector(trunk[-2])
++ for i in range(4 if variant==2 else 5):
++  p=previous.lerp(top,.34+i*.15)+Vector((.07*math.sin(i*2),-.08,.04))
++  tree_blossom(tr(p),(.115+.015*(i%2))*scale,i*.9,2 if i<3 else 3,(.55,.28))
++ shrub(tr((-.26,.22,.03)),(.46 if variant==2 else .60)*scale)
+ 
+ def lotus(loc,s=1):
+  x,y,z=loc
+@@ -237,7 +330,7 @@
+  if kind=='landscape':landscape()
+  elif kind=='landmark':peach_tree(scale=1.28)
+  elif kind=='landmark_b':peach_tree(scale=1.05,variant=1);peach_tree((1.7,1.1,0),.63,2)
+- elif kind=='decor_a':peach_tree(scale=.78)
++ elif kind=='decor_a':peach_tree(scale=.78,variant=2)
+  elif kind=='decor_b':
+   scholar_rock((-.20,.16,0),.80);rock((.40,.22,.15),.56,6);shrub((0,-.15,.1),.85)
+  elif kind=='decor_c':
+@@ -271,8 +364,11 @@
+  objs=list(set(bpy.data.objects)-before);root=parent_all(objs,'heaven_'+kind);objs.append(root)
+  if kind=='creature':animate_asset('creature',root,objs)
+  
+- if kind=='creature':export_asset(OUT+'/heaven_'+kind+'.glb',objs)
+- else:export_merged(OUT+'/heaven_'+kind+'.glb',objs)
++ # Bounded canopy review: rebuild editable scene but export only the three trees.
++ selected=os.environ.get('FOURFOLD_ORCHARD_EXPORT_ONLY','')
++ if not selected or kind in selected.split(','):
++  if kind=='creature':export_asset(OUT+'/heaven_'+kind+'.glb',objs)
++  else:export_merged(OUT+'/heaven_'+kind+'.glb',objs)
+  AS[kind]=objs;return root
+ 
+ def inst(kind,loc,scale=1,rot=0):
