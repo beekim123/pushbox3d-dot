@@ -132,10 +132,10 @@ func run():
  game.start_level(entry("heaven_03"));before=snapshot();await create_timer(.27).timeout
  unchanged(before,"held key from old help cannot move new level")
  event(KEY_LEFT,false)
- # A non-help modal dismissal must not create this new help-specific guard.
+ # Keyboard navigation extends the same release latch to every modal dismissal.
  game.open_modal("Independent generic modal fixture","No help metadata")
  event(KEY_A,true);game.close_modal()
- check(game.help_release_keys.is_empty(),"generic modal close does not acquire help guard")
+ check(game.help_release_keys.has(KEY_A),"generic modal close also preserves held-direction release guard")
  event(KEY_A,false)
  # Pointer close has same guard; all old keys must release, not just one.
  await clean_level("heaven_03");await open_help()

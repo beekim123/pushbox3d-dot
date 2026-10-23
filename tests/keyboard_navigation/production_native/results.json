@@ -1,0 +1,29 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "display": "X11",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "project": "[workspace]/fourfold_atelier/",
+  "rows": [
+    {
+      "focus_action": "hub",
+      "image_error": 0,
+      "name": "title",
+      "size": "(1440, 900)"
+    },
+    {
+      "focus_action": "help:close",
+      "image_error": 0,
+      "name": "help",
+      "size": "(1440, 900)"
+    },
+    {
+      "focus_action": "exit:return",
+      "image_error": 0,
+      "name": "failed_exit",
+      "size": "(1440, 900)"
+    }
+  ],
+  "scope": "Actual integrated production project. External test-only script/direct failure setup; injected keys for Help/Return. No runtime/test source writes to production.",
+  "source_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8"
+}

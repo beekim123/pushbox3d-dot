@@ -1,0 +1,13 @@
+{
+  "checks": 138,
+  "display": "headless",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "mode": "storage",
+  "observations": [],
+  "passed": true,
+  "pid": 443,
+  "recovery_run": true,
+  "scope": "Fresh bounded codec/store and real file tests; no claim of authentication or physical power-loss durability.",
+  "userdata": "/tmp/fourfold-recovery-audit-48lg38ub/storage/data/godot/app_userdata/四隅织途 · Loom of Four Horizons"
+}

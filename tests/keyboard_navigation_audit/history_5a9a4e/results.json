@@ -1,0 +1,134 @@
+{
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "independent_checks": 237,
+  "main_sha256": "5a9a4e3569883e0e0d33693b23f416f157bf3b3c501e316c5d0e642c518e5337",
+  "native_actions": [
+    {
+      "action": "world:inferno",
+      "activation": 32,
+      "mode": "hub"
+    },
+    {
+      "action": "world:rainforest",
+      "activation": 32,
+      "mode": "hub"
+    },
+    {
+      "action": "world:city",
+      "activation": 32,
+      "mode": "hub"
+    },
+    {
+      "action": "help",
+      "activation": 4194309,
+      "mode": "hub"
+    },
+    {
+      "action": "world:city",
+      "activation": 4194309,
+      "mode": "hub"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:next",
+      "activation": 32,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "chapter:previous",
+      "activation": 4194310,
+      "mode": "world"
+    },
+    {
+      "action": "continue",
+      "activation": 32,
+      "mode": "title"
+    },
+    {
+      "action": "world:confluence",
+      "activation": 4194310,
+      "mode": "hub"
+    }
+  ],
+  "scope": "Independent injected-key audit. Initial title→hub→four worlds→levels uses native keyboard only; later race/resume/finale scenarios use explicit setup. No author assertions counted. Headless, QA-isolated user saves; GUI visibility and actual unsaved exit are separate pending checks."
+}

@@ -1,0 +1,50 @@
+{
+  "status": "Frozen selective text handoff; final runtime accepted independently and integrated by root; portable event-output rerun and production-native verification finishing separately",
+  "base_main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+  "candidate_main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "text_files": {
+    "scripts/main.gd": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+    "tests/keyboard_navigation.gd": "c3de7ec8853a74ec5d1d4253838a2f1f8f51fda7b413c1d5abc4adaed1773fbd",
+    "tests/keyboard_transition_guards.gd": "28971e6d72b852d1f3bac455643218a137c3a519188a7beef12baad0a69abe9f",
+    "tests/keyboard_mouse_races.gd": "2fbebfeb814fc0c1bf66a98b8ca0c652274ad360c4d7622191e73a1b4a824156",
+    "tests/keyboard_exit_process.gd": "055f76103a280984bca697719ed6edba74cc88ddf41bc3b92a02713fe41b40e0",
+    "tests/keyboard_focus_capture.gd": "190a1e0a9db42b89f0c89a4d124b4d69bc35c6768ceb5e51adf9a0d38c119f36",
+    "tests/keyboard_navigation/run.sh": "10e40949455ed178d2ffea5e925945da422640cd6e408022b4eaa61db423688d",
+    "tests/keyboard_navigation/run_regressions.sh": "037723f92b8453361d099354f52cb5c37fc2e3878b37ccc205118a2448851bc4",
+    "tests/keyboard_navigation/run_native_capture.sh": "761f3e6e8491f7494937ee12ad0c1128e8ca30ef9b941061cdb679537f85c736",
+    "tests/context_help_audit/behavior.gd": "25824c68b826b15e2340e80312f551ff24fa59a517b22ac3be9921174654addc",
+    "docs/keyboard_navigation.md": "5fa0dc44b39e7e79e3633180706a505f8e856c20e8864104839dd44afb17a60b",
+    "qa/docs_append_proposals.md": "1c6acc565de99ebdee95648a8678660eb5733e3cd0207f701a9202bc7e303e90",
+    "qa/keyboard_navigation.patch": "4582451e138478f1448fea1490c4b02bdfe0fda1e215ba020a7ad19d928d9f93",
+    "qa/title_copy_only.patch": "fb2d8afb7421b53964f969f3d4314cc29d1c52786fbf3888de29843cda9e0659"
+  },
+  "already_integrated_by_root": [
+    "scripts/main.gd"
+  ],
+  "copy_test_docs_only": [
+    "tests/keyboard_navigation.gd",
+    "tests/keyboard_transition_guards.gd",
+    "tests/keyboard_mouse_races.gd",
+    "tests/keyboard_exit_process.gd",
+    "tests/keyboard_focus_capture.gd",
+    "tests/keyboard_navigation/run.sh",
+    "tests/keyboard_navigation/run_regressions.sh",
+    "tests/keyboard_navigation/run_native_capture.sh",
+    "tests/context_help_audit/behavior.gd",
+    "docs/keyboard_navigation.md"
+  ],
+  "append_proposals": "qa/docs_append_proposals.md",
+  "do_not_copy": [
+    "assets/",
+    "scripts/ except explicitly listed main.gd",
+    "qa/ whole directory",
+    "qa/xdg/",
+    "qa/regression_xdg/",
+    ".godot/",
+    "old generated tests results"
+  ],
+  "platform_scope": "Linux cloud verified; GODOT/PATH shell configurability does not establish macOS XDG userdata isolation",
+  "runtime_changes": [
+    "scripts/main.gd"
+  ]
+}

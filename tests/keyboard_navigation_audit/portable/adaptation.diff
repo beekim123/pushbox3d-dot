@@ -1,0 +1,63 @@
+--- original/independent_keyboard.gd
++++ portable/independent_keyboard.gd
+@@ -291,7 +291,7 @@
+ 	await press(KEY_SPACE)
+ 	require(app.modal==null and app.mode=="hub" and selected()!="","ending native Return restores hub scope")
+ 	var report={"engine":Engine.get_version_info().string,"main_sha256":FileAccess.get_file_as_string("res://scripts/main.gd").sha256_text(),"independent_checks":checks,"failures":failures,"native_actions":actions,"scope":"Independent injected-key audit using actual Godot Button dispatch, not desktop/hardware keyboard proof. Initial title→hub→four worlds→levels uses injected keys only; later race/resume/finale scenarios use explicit setup. No author assertions counted. Headless, QA-isolated user saves; GUI visibility and actual unsaved exit have separate evidence."}
+-	var file:=FileAccess.open("res://../results.json",FileAccess.WRITE)
++	var file:=FileAccess.open(OS.get_environment("KEYBOARD_AUDIT_OUT")+"/results.json",FileAccess.WRITE)
+ 	file.store_string(JSON.stringify(report,"  "))
+ 	file.close()
+ 	print("INDEPENDENT_KEYBOARD ",JSON.stringify({"checks":checks,"failures":failures}))
+--- original/independent_fallback.gd
++++ portable/independent_fallback.gd
+@@ -1,4 +1,4 @@
+-extends "res://independent_keyboard.gd"
++extends "./independent_keyboard.gd"
+ 
+ func audit():
+ 	root.size=Vector2i(1440,900)
+@@ -69,7 +69,7 @@
+ 		await press(k)
+ 		require(app.mode=="world","activation works after missing-keyup recovery "+str(k))
+ 	var report:={"main_sha256":FileAccess.get_file_as_string("res://scripts/main.gd").sha256_text(),"checks":checks,"failures":failures,"scope":"Independent real QA sidecar token invalidation, focused control fallback, and missed-keyup recovery. For the latter main._input is temporarily disabled only while key-up reaches the engine, then reenabled before process fallback. This is an engine simulation, not a hardware focus-loss claim."}
+-	f=FileAccess.open("res://../fallback_results.json",FileAccess.WRITE)
++	f=FileAccess.open(OS.get_environment("KEYBOARD_AUDIT_OUT")+"/fallback_results.json",FileAccess.WRITE)
+ 	f.store_string(JSON.stringify(report,"  "))
+ 	f.close()
+ 	print("INDEPENDENT_FALLBACK ",JSON.stringify(report))
+--- original/independent_unsaved_exit.gd
++++ portable/independent_unsaved_exit.gd
+@@ -42,7 +42,7 @@
+ 	await key({"enter":KEY_ENTER,"space":KEY_SPACE,"keypad":KEY_KP_ENTER}[variant])
+ 	check(app.shutting_down and app.mode=="exiting","chosen activation starts real orderly exit")
+ 	check(app.state==before.state and app.history==before.history,"exit activation does not add a game action")
+-	var f:=FileAccess.open("res://../exit_"+variant+".json",FileAccess.WRITE)
++	var f:=FileAccess.open(OS.get_environment("KEYBOARD_AUDIT_OUT")+"/exit_"+variant+".json",FileAccess.WRITE)
+ 	f.store_string(JSON.stringify({"main_sha256":FileAccess.get_file_as_string("res://scripts/main.gd").sha256_text(),"checks":checks,"failures":failures,"activation":variant,"actual_finish_exit_started":app.shutting_down,"scope":"Independent explicit unsaved-exit selection in a separate QA-isolated process; launcher also checks real process exit code."},"  "))
+ 	f.close()
+ 	print("INDEPENDENT_EXIT ",variant," ",JSON.stringify({"checks":checks,"failures":failures}))
+--- original/desktop_observer.gd
++++ portable/desktop_observer.gd
+@@ -5,8 +5,8 @@
+ 	var serial:=0
+ 	var key_log: FileAccess
+ 	func _ready():
+-		DirAccess.make_dir_recursive_absolute("res://../desktop")
+-		key_log=FileAccess.open("res://../desktop/events.jsonl",FileAccess.WRITE)
++		DirAccess.make_dir_recursive_absolute(OS.get_environment("KEYBOARD_AUDIT_OUT")+"/desktop")
++		key_log=FileAccess.open(OS.get_environment("KEYBOARD_AUDIT_OUT")+"/desktop/events.jsonl",FileAccess.WRITE)
+ 		capture.call_deferred("launch")
+ 	func _input(event: InputEvent):
+ 		if event is InputEventKey:
+@@ -30,8 +30,8 @@
+ 		var stem:="%03d_%s"%[serial,label.replace("/","_")]
+ 		var b:=get_viewport().gui_get_focus_owner()
+ 		var info:={"label":label,"mode":app.mode,"world":app.active_world,"level":app.level.get("id",""),"moves":app.state.get("moves",0),"history_size":app.history.size(),"focus":str(b.get_meta("focus_action","")) if b!=null else "","modal":app.modal!=null,"exit_pending":app.exit_pending,"exit_waiting":app.exit_waiting,"display":DisplayServer.get_name(),"adapter":RenderingServer.get_video_adapter_name()}
+-		get_viewport().get_texture().get_image().save_png("res://../desktop/"+stem+".png")
+-		var f:=FileAccess.open("res://../desktop/"+stem+".json",FileAccess.WRITE)
++		get_viewport().get_texture().get_image().save_png(OS.get_environment("KEYBOARD_AUDIT_OUT")+"/desktop/"+stem+".png")
++		var f:=FileAccess.open(OS.get_environment("KEYBOARD_AUDIT_OUT")+"/desktop/"+stem+".json",FileAccess.WRITE)
+ 		f.store_string(JSON.stringify(info,"  "))
+ 		f.close()
+ 		print("DESKTOP_OBSERVATION ",JSON.stringify(info))

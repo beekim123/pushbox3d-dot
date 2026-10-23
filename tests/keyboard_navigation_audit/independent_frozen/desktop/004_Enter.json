@@ -1,0 +1,14 @@
+{
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "display": "X11",
+  "exit_pending": false,
+  "exit_waiting": false,
+  "focus": "",
+  "history_size": 0,
+  "label": "Enter",
+  "level": "heaven_01",
+  "modal": false,
+  "mode": "level",
+  "moves": 0,
+  "world": "heaven"
+}

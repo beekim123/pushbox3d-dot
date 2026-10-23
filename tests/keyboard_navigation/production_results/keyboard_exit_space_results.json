@@ -1,0 +1,7 @@
+{
+  "activation": "32",
+  "checks": 6,
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "scope": "Separate terminating process; native focused unsaved Exit; process exit code verified by shell runner."
+}

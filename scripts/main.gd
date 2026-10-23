@@ -28,6 +28,19 @@ var exit_status: Label
 var shutting_down:=false
 var require_direction_release:=false
 var help_release_keys: Dictionary={}
+# Only menus and the top modal own GUI focus. Puzzle HUD remains pointer-only.
+var focus_scope: Control
+var focus_generation := 0
+var focus_candidates: Array[Button] = []
+var focus_preferred := ""
+var focus_last := ""
+var focus_pending := false
+var modal_return_focus := ""
+var last_world_focus := "heaven"
+var last_level_focus: Dictionary = {}
+var activation_down: Dictionary = {}
+var activation_release_keys: Dictionary = {}
+const ACTIVATION_KEYS := [KEY_ENTER,KEY_KP_ENTER,KEY_SPACE]
 const DIRECTION_KEYS := [KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_W,KEY_A,KEY_S,KEY_D]
 var hints = HINTS.new()
 var hint_request: int = -1
@@ -239,7 +252,9 @@ func sfx(name: String) -> void:
 	player.play()
 
 func clear_ui(w: String) -> void:
-	guard_help_dismissal()
+	guard_direction_transition()
+	set_focus_scope(null)
+	modal_return_focus=""
 	invalidate_hint()
 	for child in ui.get_children():
 		ui.remove_child(child)
@@ -285,9 +300,9 @@ func common_top(title: String, subtitle: String, w: String) -> void:
 	row.add_child(labels)
 	labels.add_child(UI.label(title,24))
 	labels.add_child(UI.label(subtitle,13,VIEW.THEMES.get(w,VIEW.THEMES.hub).accent))
-	row.add_child(UI.button("声音  " + ("关" if progress.muted else "开"),toggle_mute,Vector2(100,44)))
-	row.add_child(UI.button("帮助  F1",show_help,Vector2(110,44)))
-	if mode not in ["title","hub"]: row.add_child(UI.button("织机中庭",show_hub,Vector2(130,44)))
+	row.add_child(menu_button("声音  " + ("关" if progress.muted else "开"),toggle_mute,"sound",Vector2(100,44)))
+	row.add_child(menu_button("帮助  F1",show_help,"help",Vector2(110,44)))
+	if mode not in ["title","hub"]: row.add_child(menu_button("织机中庭",show_hub,"hub",Vector2(130,44)))
 
 func show_title() -> void:
 	cancel_motion()
@@ -307,24 +322,26 @@ func show_title() -> void:
 	v.add_child(UI.label("四隅织途",52))
 	v.add_child(UI.label("LOOM OF FOUR HORIZONS",16,UI.MUTED))
 	v.add_child(wrapped("青丝断在云上，红丝落入地底。\n沿着四条路，把世界重新织回家。",390,21))
-	v.add_child(UI.button("走进织机中庭  →",show_hub,Vector2(390,62)))
+	v.add_child(menu_button("走进织机中庭  →",show_hub,"hub",Vector2(390,62)))
 	if resume_session:
-		resume_button=UI.button("继续此前保存",continue_checkpoint,Vector2(390,52))
+		resume_button=menu_button("继续此前保存",continue_checkpoint,"continue",Vector2(390,52))
 		resume_button.set_meta("resume_action","continue")
 		v.add_child(resume_button)
 		resume_label=wrapped("",390,16)
 		v.add_child(resume_label)
 		refresh_resume_ui()
-	v.add_child(UI.button("操作与法则",show_help,Vector2(390,50)))
+	v.add_child(menu_button("操作与法则",show_help,"help",Vector2(390,50)))
 	v.add_child(UI.label("原创 3D 推箱解谜 · %d 道旅途谜题" % levels.size(),16,UI.MUTED))
 	if not progress_writable: v.add_child(wrapped("原存档已保护，本次进度暂不写入。",390,16))
 	var bottom := panel_at(Vector2(70,790),Vector2(1300,60))
 	var row := HBoxContainer.new()
 	bottom.add_child(row)
-	var l := UI.label("方向键 / WASD 移动     Z 撤销     R 重置     Esc 返回",18)
+	var l := UI.label("菜单：Tab / 方向键选择 · Enter / Space 确认 · Esc 返回",18)
 	l.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 	row.add_child(l)
 	row.add_child(UI.label("已织回  %d / %d" % [progress.solved.size(),levels.size()],18,Color("dfbd83")))
+
+	set_focus_scope(ui,"continue" if is_instance_valid(resume_button) and not resume_button.disabled else "hub")
 
 func show_hub() -> void:
 	cancel_motion()
@@ -338,7 +355,7 @@ func show_hub() -> void:
 	var symbols:={"heaven":"↑", "inferno":"↓", "rainforest":"←", "city":"→"}
 	for w in ["heaven","inferno","rainforest","city"]:
 		var info: Dictionary = WORLD_INFO[w]
-		var b:=UI.button(symbols[w]+"  "+info.name+"  %d/%d" % [solved_in_world(w),levels_by_world[w].size()],func(): show_world_menu(w),Vector2(242,58))
+		var b:=menu_button(symbols[w]+"  "+info.name+"  %d/%d" % [solved_in_world(w),levels_by_world[w].size()],func(): show_world_menu(w),"world:"+w,Vector2(242,58))
 		ui.add_child(b)
 		b.position=positions[w]
 		b.add_theme_color_override("font_color",VIEW.THEMES[w].accent)
@@ -348,10 +365,11 @@ func show_hub() -> void:
 	var status := UI.label("四方线束  %d / %d" % [main_solved(),main_total()],20)
 	status.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 	row.add_child(status)
-	var finale := UI.button("四隅交织  →" if main_solved()>=main_total() else "集齐四束线，开启交织",func(): show_world_menu("confluence"),Vector2(300,44))
+	var finale := menu_button("四隅交织  →" if main_solved()>=main_total() else "集齐四束线，开启交织",func(): show_world_menu("confluence"),"world:confluence",Vector2(300,44))
 	finale.set_meta("campaign_finale",true)
 	finale.disabled=main_solved()<main_total()
 	row.add_child(finale)
+	set_focus_scope(ui,"world:"+last_world_focus)
 	if progress.solved.size()>=levels.size() and levels.size()>0:
 		show_ending()
 
@@ -370,6 +388,10 @@ func main_total() -> int:
 	return levels.size()-levels_by_world.get("confluence",[]).size()
 
 func show_world_menu(w: String, page: int = -1) -> void:
+	var preferred:="level:"+str(last_level_focus.get(w,""))
+	if mode=="world" and active_world==w and page>=0 and focused_action().begins_with("chapter:"):
+		preferred=focused_action()
+	last_world_focus=w
 	cancel_motion()
 	mode="world"
 	active_world=w
@@ -401,10 +423,10 @@ func show_world_menu(w: String, page: int = -1) -> void:
 	v.add_child(UI.label("本章  %d / %d" % [chapter_solved(list,first),mini(5,list.size()-first)],18,VIEW.THEMES[w].accent))
 	var nav:=HBoxContainer.new()
 	v.add_child(nav)
-	var previous:=UI.button("← 上一章",func(): show_world_menu(w,page-1),Vector2(148,48))
+	var previous:=menu_button("← 上一章",func(): show_world_menu(w,page-1),"chapter:previous",Vector2(148,48))
 	previous.disabled=page==0
 	nav.add_child(previous)
-	var next:=UI.button("下一章 →",func(): show_world_menu(w,page+1),Vector2(148,48))
+	var next:=menu_button("下一章 →",func(): show_world_menu(w,page+1),"chapter:next",Vector2(148,48))
 	next.disabled=page==page_count-1
 	nav.add_child(next)
 	v.add_child(wrapped("可以预览所有章节；完成前一关后，下一站会亮起。已完成的关卡随时可重玩。",310,15))
@@ -421,7 +443,7 @@ func show_world_menu(w: String, page: int = -1) -> void:
 		card.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 		journey.add_child(card)
 		var number:="✓ %02d" % (i+1) if solved else "%02d" % (i+1)
-		var b:=UI.button(number+"  "+("已织回" if solved else ("出发" if unlocked else "未抵达")),func(): start_level(entry),Vector2(170,46))
+		var b:=menu_button(number+"  "+("已织回" if solved else ("出发" if unlocked else "未抵达")),func(): start_level(entry),"level:"+str(entry.id),Vector2(170,46))
 		b.set_meta("level_id",str(entry.id))
 		b.disabled=not unlocked
 		card.add_child(b)
@@ -433,6 +455,16 @@ func show_world_menu(w: String, page: int = -1) -> void:
 		var record: Dictionary=progress.best.get(entry.id,{})
 		card.add_child(UI.label("%d 推 · %d 步" % [record.get("pushes",0),record.get("moves",0)] if solved else "第 %d 站" % (i-first+1),14,UI.MUTED))
 
+	# Prefer a returning level, then the first unlocked stop, then chapter paging.
+	var preferred_button:=find_focus_action(ui,preferred)
+	if not is_instance_valid(preferred_button) or preferred_button.disabled:
+		preferred="chapter:next" if not next.disabled else "chapter:previous"
+		for button in ui.find_children("*","Button",true,false):
+			if button.has_meta("level_id") and not button.disabled:
+				preferred=str(button.get_meta("focus_action"))
+				break
+	set_focus_scope(ui,preferred)
+
 func chapter_solved(list: Array, first: int) -> int:
 	var count:=0
 	for i in range(first,mini(first+5,list.size())):
@@ -440,6 +472,8 @@ func chapter_solved(list: Array, first: int) -> int:
 	return count
 
 func start_level(entry: Dictionary) -> void:
+	guard_direction_transition()
+	last_level_focus[str(entry.world)]=str(entry.id)
 	cancel_motion()
 	level=entry
 	active_world=level.world
@@ -583,13 +617,19 @@ func show_completion_panel() -> void:
 	v.add_child(wrapped("这段路已经记在织机里。你可以继续前行，也可以撤销最后一步，再试一种走法。",510,20))
 	var list: Array=levels_by_world[active_world]
 	var idx:=list.find(level)
-	if idx+1<list.size(): v.add_child(UI.button("前往下一道谜题  →",func(): start_level(list[idx+1]),Vector2(510,56)))
-	else: v.add_child(UI.button("把线带回中庭  →",show_hub,Vector2(510,56)))
-	v.add_child(UI.button("撤销最后一步  Z",undo_move,Vector2(510,48)))
-	v.add_child(UI.button("回到世界选关",func(): show_world_menu(active_world),Vector2(510,48)))
+	if idx+1<list.size(): v.add_child(menu_button("前往下一道谜题  →",func(): start_level(list[idx+1]),"completion:next",Vector2(510,56)))
+	else: v.add_child(menu_button("把线带回中庭  →",show_hub,"completion:next",Vector2(510,56)))
+	v.add_child(menu_button("撤销最后一步  Z",undo_move,"completion:undo",Vector2(510,48)))
+	v.add_child(menu_button("回到世界选关",func(): show_world_menu(active_world),"completion:world",Vector2(510,48)))
+	set_focus_scope(modal,"completion:next")
 
 func open_modal(title: String, subtitle: String) -> VBoxContainer:
-	close_modal()
+	if not is_instance_valid(modal):
+		modal_return_focus=focused_action()
+		if modal_return_focus.is_empty(): modal_return_focus=focus_last
+	close_modal(false)
+	guard_direction_transition()
+	set_focus_scope(null)
 	modal=Control.new()
 	modal.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	ui.add_child(modal)
@@ -610,13 +650,15 @@ func open_modal(title: String, subtitle: String) -> VBoxContainer:
 	v.add_child(wrapped(subtitle,510,18))
 	return v
 
-func close_modal() -> void:
-	guard_help_dismissal()
+func close_modal(restore_focus: bool=true) -> void:
+	if is_instance_valid(modal): guard_direction_transition()
 	invalidate_hint()
 	if modal:
 		ui.remove_child(modal)
 		modal.queue_free()
 		modal=null
+	if restore_focus:
+		set_focus_scope(ui if mode in ["title","hub","world"] else null,modal_return_focus)
 
 func show_help() -> void:
 	if exit_pending or shutting_down: return
@@ -628,7 +670,8 @@ func show_help() -> void:
 		exercise.set_meta("chapter_exercise",true)
 		v.add_child(exercise)
 	v.add_child(wrapped("方向键 / WASD：移动与推动\nZ / Backspace：无限撤销\nR：重置本关（重置本身也可撤销）\nEsc：关闭弹窗 / 返回选关\nM：切换声音\nH：线索开关；J：主动展开下一层\nF2：精细 / 轻量画质（软件渲染器自动轻量）\n\n只有铺路格可以移动，草地与边缘园景不是可走的格子。\n把所有箱子推到发光目标上，即可完成谜题。只能推，不能拉；一次只能推动一只箱子。",510,20))
-	v.add_child(UI.button("明白了",dismiss_help,Vector2(510,54)))
+	v.add_child(menu_button("明白了",dismiss_help,"help:close",Vector2(510,54)))
+	set_focus_scope(modal,"help:close")
 
 func dismiss_help() -> void:
 	if not is_instance_valid(modal) or not modal.get_meta("contextual_help",false): return
@@ -638,7 +681,8 @@ func dismiss_help() -> void:
 func show_ending() -> void:
 	var v:=open_modal("远方，都成了家的颜色","四束线穿过云、焰、叶与桥，终于在中庭相遇。")
 	v.add_child(wrapped("小小的线轴送货员没有拯救一个破碎的宇宙。它只是让四群很久没见面的邻居，再次找到了彼此。\n\n%d 道谜题全部完成。谢谢你走完这段路。" % levels.size(),510,22))
-	v.add_child(UI.button("回到中庭，重访四方",close_modal,Vector2(510,54)))
+	v.add_child(menu_button("回到中庭，重访四方",close_modal,"ending:close",Vector2(510,54)))
+	set_focus_scope(modal,"ending:close")
 
 func toggle_mute() -> void:
 	progress.muted=not progress.muted
@@ -647,22 +691,102 @@ func toggle_mute() -> void:
 	for n in find_children("","Button",true,false):
 		if n.text.begins_with("声音"): n.text="声音  "+("关" if progress.muted else "开")
 
-func guard_help_dismissal() -> void:
-	if not is_instance_valid(modal) or not modal.get_meta("contextual_help",false): return
+func menu_button(text: String, callback: Callable, action: String, dimensions: Vector2) -> Button:
+	var button:=UI.button(text,callback,dimensions)
+	button.set_meta("focus_action",action)
+	return button
+
+func focused_action() -> String:
+	var owner:=get_viewport().gui_get_focus_owner()
+	return str(owner.get_meta("focus_action","")) if is_instance_valid(owner) else ""
+
+func find_focus_action(scope: Control, action: String) -> Button:
+	if not is_instance_valid(scope): return null
+	for button in scope.find_children("*","Button",true,false):
+		if str(button.get_meta("focus_action",""))==action: return button
+	return null
+
+func set_focus_scope(scope: Control, preferred: String="") -> void:
+	# Changing screens never inherits a held native activation into the next one.
+	for key in ACTIVATION_KEYS:
+		if activation_down.has(key) or Input.is_physical_key_pressed(key): activation_release_keys[key]=true
+	focus_generation+=1
+	focus_pending=false
+	focus_scope=scope
+	focus_preferred=preferred
+	focus_last=preferred
+	focus_candidates.clear()
+	for button in ui.find_children("*","Button",true,false): button.focus_mode=Control.FOCUS_NONE
+	refresh_focus_scope()
+
+func refresh_focus_scope() -> void:
+	if not is_instance_valid(focus_scope): return
+	var eligible: Array[Button]=[]
+	for button in focus_scope.find_children("*","Button",true,false):
+		var available: bool=button.is_visible_in_tree() and not button.disabled
+		button.focus_mode=Control.FOCUS_ALL if available else Control.FOCUS_NONE
+		if available: eligible.append(button)
+	if eligible!=focus_candidates:
+		focus_candidates=eligible
+		for i in range(eligible.size()):
+			var button:=eligible[i]
+			button.focus_next=button.get_path_to(eligible[(i+1)%eligible.size()])
+			button.focus_previous=button.get_path_to(eligible[(i+eligible.size()-1)%eligible.size()])
+	var owner:=get_viewport().gui_get_focus_owner()
+	if owner in focus_candidates:
+		focus_last=str(owner.get_meta("focus_action",""))
+	elif not focus_candidates.is_empty() and not focus_pending:
+		focus_pending=true
+		grab_scope_focus.call_deferred(focus_generation)
+
+func grab_scope_focus(generation: int) -> void:
+	# A rebuilt menu or a newer modal owns focus; stale deferred work does not.
+	if generation!=focus_generation: return
+	focus_pending=false
+	if not is_instance_valid(focus_scope): return
+	var owner:=get_viewport().gui_get_focus_owner()
+	if owner in focus_candidates: return # Mouse/native navigation wins over setup.
+	var target:=find_focus_action(focus_scope,focus_last)
+	if target not in focus_candidates: target=find_focus_action(focus_scope,focus_preferred)
+	if target not in focus_candidates:
+		target=focus_candidates[0] if not focus_candidates.is_empty() else null
+	if is_instance_valid(target) and target.is_visible_in_tree() and not target.disabled:
+		target.grab_focus()
+
+func guard_direction_transition() -> void:
 	pending_direction=""
-	help_release_keys.clear()
+	hold_timer=0.0
+	# Add to (do not reset) the release latch across nested modal/screen rebuilds.
 	for key in DIRECTION_KEYS:
 		if Input.is_physical_key_pressed(key): help_release_keys[key]=true
 
+func guard_help_dismissal() -> void:
+	if is_instance_valid(modal) and modal.get_meta("contextual_help",false): guard_direction_transition()
+
 func _input(event: InputEvent) -> void:
-	# Key releases are observed before UI consumption, including release/repress
-	# within one rendered frame. Do not consume the event or mutate game state.
-	if event is InputEventKey and not event.pressed:
-		var key: int=event.physical_keycode if event.physical_keycode!=0 else event.keycode
+	if not event is InputEventKey: return
+	var key: int=event.physical_keycode if event.physical_keycode!=0 else event.keycode
+	# Observe releases before GUI consumption, including same-frame release/repress.
+	if not event.pressed:
 		help_release_keys.erase(key)
+		if key in DIRECTION_KEYS and require_direction_release:
+			require_direction_release=DIRECTION_KEYS.any(func(code): return Input.is_physical_key_pressed(code))
+		activation_down.erase(key)
+		if activation_release_keys.has(key):
+			activation_release_keys.erase(key)
+			get_viewport().set_input_as_handled()
+	elif key in ACTIVATION_KEYS:
+		if event.echo or activation_down.has(key) or activation_release_keys.has(key):
+			get_viewport().set_input_as_handled()
+		else: activation_down[key]=true
 
 func _unhandled_key_input(event: InputEvent) -> void:
-	if exit_pending: return
+	if exit_pending:
+		# Only the failed-save choice can be cancelled; never bypass an active save.
+		if exit_waiting and event is InputEventKey and event.pressed and not event.echo and event.keycode==KEY_ESCAPE:
+			cancel_exit()
+			get_viewport().set_input_as_handled()
+		return
 	if not event is InputEventKey or not event.pressed or event.echo: return
 	if require_direction_release and event.keycode in [KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_W,KEY_A,KEY_S,KEY_D]: return
 	match event.keycode:
@@ -699,6 +823,12 @@ func request_direction(direction: String) -> void:
 		attempt_move(direction)
 
 func _process(delta: float) -> void:
+	refresh_focus_scope()
+	# Losing window focus may clear physical state without delivering a release.
+	for key in activation_down.keys():
+		if not Input.is_physical_key_pressed(key): activation_down.erase(key)
+	for key in activation_release_keys.keys():
+		if not Input.is_physical_key_pressed(key): activation_release_keys.erase(key)
 	var frame_budget_start:=Time.get_ticks_usec()
 	pump_hints()
 	if resume_session and not shutting_down and not exit_waiting:
@@ -1132,12 +1262,13 @@ func poll_resume_exit() -> void:
 	refresh_resume_ui()
 	var content:=open_modal("本次局面尚未保存",resume_session.message())
 	content.add_child(wrapped("此前保存："+resume_session.checkpoint_summary()+"\n这不是当前最新局面。上次核对记录仅供参考，不保证仍可恢复。未保存变化在退出后会丢失；本次完整撤销仍保留在当前游戏里。",510,19))
-	var back:=UI.button("返回游戏，不丢掉当前局面",cancel_exit,Vector2(510,54))
+	var back:=menu_button("返回游戏，不丢掉当前局面",cancel_exit,"exit:return",Vector2(510,54))
 	back.set_meta("resume_action","cancel_exit")
 	content.add_child(back)
-	var leave:=UI.button("仍然退出（本次未保存）",func(): finish_exit(0),Vector2(510,50))
+	var leave:=menu_button("仍然退出（本次未保存）",func(): finish_exit(0),"exit:unsaved",Vector2(510,50))
 	leave.set_meta("resume_action","exit_unsaved")
 	content.add_child(leave)
+	set_focus_scope(modal,"exit:return")
 
 func cancel_exit() -> void:
 	require_direction_release=true

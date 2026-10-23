@@ -1,0 +1,6 @@
+{
+  "checks": 44,
+  "failures": [],
+  "main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "scope": "Independent real QA sidecar token invalidation, focused control fallback, and missed-keyup recovery. For the latter main._input is temporarily disabled only while key-up reaches the engine, then reenabled before process fallback. This is an engine simulation, not a hardware focus-loss claim."
+}

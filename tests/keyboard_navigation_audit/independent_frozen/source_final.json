@@ -1,0 +1,86 @@
+{
+  "candidate_main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "production_main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+  "runtime_sources": {
+    "scripts/context_help.gd": {
+      "sha256": "0b43d5dedeffa7a305c87a897b103766097c72387ce601ba7a342488fbfd32f4",
+      "fixture_matches": true
+    },
+    "scripts/context_help.gd.uid": {
+      "sha256": "b42951d6ee7c0c4cb19947d766060e93b53f426b045422630927d425544b3fa5",
+      "fixture_matches": true
+    },
+    "scripts/hint_overlay.gd": {
+      "sha256": "9e5c58a95617444feb0d2c6475fb9490b0c855bb7e45f20919f2a5e42b11bd7a",
+      "fixture_matches": true
+    },
+    "scripts/hint_overlay.gd.uid": {
+      "sha256": "685651d31344152d6c71263c87e0cf54fc228548d5840e01a365244d361bd3f5",
+      "fixture_matches": true
+    },
+    "scripts/hint_solver.gd": {
+      "sha256": "f266da3bb93226cbb68c3077d8481d637411ea0da81d508016ec431c443ddbe9",
+      "fixture_matches": true
+    },
+    "scripts/hint_solver.gd.uid": {
+      "sha256": "79406ad5c59fcb132a0ffddb27d75e72966ad43280090e66d4e5fae1a880d233",
+      "fixture_matches": true
+    },
+    "scripts/main.gd": {
+      "sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+      "fixture_matches": true
+    },
+    "scripts/main.gd.uid": {
+      "sha256": "abcafb008acc0c644f562ce1f66548628dbfbcda3fd7e1d3b03bb2eb58f974ca",
+      "fixture_matches": true
+    },
+    "scripts/puzzle_rules.gd": {
+      "sha256": "260130edbe5978fc610a5e8fcc2f84ff19e8fc8beb16d3a2971790f1cc68df64",
+      "fixture_matches": true
+    },
+    "scripts/puzzle_rules.gd.uid": {
+      "sha256": "a22829d45a0df6c070b78d4f70b7a0458bb8d61a97ee82cc96c009a9ac3e75e6",
+      "fixture_matches": true
+    },
+    "scripts/resume/resume_codec.gd": {
+      "sha256": "5bbb79cbaffab0fd70ec310c9914b10bba9259ca58515ac65c0a83c97d102305",
+      "fixture_matches": true
+    },
+    "scripts/resume/resume_codec.gd.uid": {
+      "sha256": "f901c6bb643f709b67613cfd464ffcea3ee62abfd48b0d6e936d8ec143d9eddd",
+      "fixture_matches": true
+    },
+    "scripts/resume/resume_store.gd": {
+      "sha256": "a90ec821acca7ca32e28e9700a63cdf023d94bc9b9d0b18c6352f2fdca2430b3",
+      "fixture_matches": true
+    },
+    "scripts/resume/resume_store.gd.uid": {
+      "sha256": "ccd79a0a8994d941b02bd513fe4228a58a48503374920977d7ae0fd4dd5a11c0",
+      "fixture_matches": true
+    },
+    "scripts/resume_controller.gd": {
+      "sha256": "fecc26a2c27bbe3bdf569efb4e22b4084b167dfa08b8effe93b7ec07a9bda862",
+      "fixture_matches": true
+    },
+    "scripts/resume_controller.gd.uid": {
+      "sha256": "73b7ecbc2a85b9bcebdcb6743cda1a4856eb57d6ae4fc80f1e3d24d165050c93",
+      "fixture_matches": true
+    },
+    "scripts/ui_kit.gd": {
+      "sha256": "5338959aea6f222952feedf8f3f53c4eaabb2be87d52e3c9c95f359057291be6",
+      "fixture_matches": true
+    },
+    "scripts/ui_kit.gd.uid": {
+      "sha256": "eb08872e0db40a3da744bce015423e65aaca8c2d8532a17857d662ddaa30c60a",
+      "fixture_matches": true
+    },
+    "scripts/world_view.gd": {
+      "sha256": "b73a8cad67115445cf9c9bdb0c6312dd5280a0fe43c1c2ddc0ec11b021893a6d",
+      "fixture_matches": true
+    },
+    "scripts/world_view.gd.uid": {
+      "sha256": "08cf59227f02e2d2353105049ba1af94a27d6d755a8537ee8b037b42075eeac6",
+      "fixture_matches": true
+    }
+  }
+}

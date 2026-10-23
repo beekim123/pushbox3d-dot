@@ -1,0 +1,18 @@
+{
+  "checks": 57,
+  "display": "headless",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "mode": "lifecycle",
+  "observations": [
+    {
+      "message": "续玩保存已暂停；原文件已保留。游玩与撤销不受影响。",
+      "reader_cancel_status": "paused"
+    }
+  ],
+  "passed": true,
+  "pid": 457,
+  "recovery_run": true,
+  "scope": "Fresh recovered main/controller; actual Input.parse_input_event mouse and key propagation, not native desktop input.",
+  "userdata": "/tmp/fourfold-recovery-audit-48lg38ub/lifecycle/data/godot/app_userdata/四隅织途 · Loom of Four Horizons"
+}

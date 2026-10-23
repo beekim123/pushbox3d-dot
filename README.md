@@ -22,6 +22,8 @@
 - `.blend` 源目录有 `.gdignore`；Godot 直接导入已提供的 GLB，无需设置 Blender 路径。
 - 源文件与生成脚本保留，重建美术需要 Blender 4.3.2 或兼容版本；重建音频需要脚本声明的 Python 依赖及 FFmpeg。这些不是游玩的前置步骤。
 
+菜单与弹窗支持Tab / Shift+Tab、方向键选按钮，Enter / Space确认；棋局HUD不抢移动键，跨菜单后原来按住的方向键需松开再按，保存失败默认安全返回。详见 [键盘导航与验证范围](docs/keyboard_navigation.md)。这是本地生产新阶段，Git审批未完，不宣称远端checkout已有该功能。
+
 ## 游戏
 
 你扮演线轴邮差，从中心织机庭院连接四方：

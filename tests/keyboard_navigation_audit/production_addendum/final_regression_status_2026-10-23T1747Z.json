@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-10-23T17:49:05.701340+00:00",
+  "supersedes": "review_manifest.json full204_gate pending at first visual review",
+  "production_main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "root_run_full_campaign": {
+    "runner": "root; independent auditor read terminal evidence only",
+    "checks": 8056,
+    "levels_completed": 204,
+    "failures": 0,
+    "exit_code": 0,
+    "pinned_files": 74,
+    "source_changes": [],
+    "report_path": "fourfold_atelier/tests/results/keyboard_navigation_handlers.json",
+    "report_sha256": "90bad9016bbad5390d8dae242cf89b8e48c0774ba907c1c1079b7f4a1ebf98c0",
+    "log_path": "fourfold_atelier/tests/results/keyboard_navigation_handlers.log",
+    "log_sha256": "f5e88a3751307aa44483e374bc6fb05ed5ca35d38e1ce85d90030cf037ccd442"
+  },
+  "build_run_author_production_suite": {
+    "runner": "build_fourfold_runtime; author-authored tests, independent execution",
+    "checks": 637,
+    "passed": true,
+    "process_exit_code": 0,
+    "report_path": "fourfold_atelier/tests/keyboard_navigation/production_results/SUMMARY.json",
+    "report_sha256": "87cdb4f0de570e5dffc9170ddc3dc283aad82f4d3dd72bf9b47cd1101e45d5ef"
+  },
+  "independent_original293": "Unmodified original audit; counts/results not merged or relabeled.",
+  "state": "full campaign and build author production gates passed; production native three-frame visual review passed separately"
+}

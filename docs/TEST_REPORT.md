@@ -95,3 +95,14 @@ CPU软件渲染器的结果不等于Mac/GPU性能；未做真人谜题盲测、�
 - 未复制旧工程、缓存、.qa_env、用户存档/锁或.blend1。脚本源与可编辑Blend保留，GLB逐构建hash固定，不承诺Blender导出字节可复现。Linux/X11结果不证明macOS/Retina；截图与QA输入不冒充人工解题。Git二进制限制仍在，旧已发桃冠包保持历史不改，新资源包由主任务另行验证发布。
 
 - 打包前发现旧A候选delivery_manifest被误放入证据根目录，已原样移至 `tests/inferno_wall/historical/A063_delivery_manifest.json`并加历史标签；不删除原始记录，也不当当前权威。当前核心清单仅FINAL_C80（fc31becb…），生产补记和实拍指纹保持不变。未发现混入旧validation_summary.json。此为文档/包清单修正，不改变任何模型或测试运行源。
+
+## 菜单/弹窗键盘导航：本地生产新阶段
+- 本地main已选择性整合为50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8，其余95保护输入检查仅main变化，地牢墙/桃冠/关卡不变。生产导入与30帧QA启动exit0，无ERROR/WARNING/泄漏，证据`tests/results/keyboard_navigation_{integration.json,import.log,boot.log}`。Git仍最后核实51e68且create_tree审批未完，不声称已发布到main。
+- 新生产全204真实handler回归8056检查、0失败、completed204、exit0；74运行/关卡/全部模型SHA稳定，无ERROR/WARNING/泄漏。证据`tests/results/keyboard_navigation_handlers.json/.log`。带混音、QA续玩sidecar关闭，不替代存档专项，也不是复用键盘候选或前阶段8056。
+- 生产便携作者事件套件新跑637/637，exit0且main前后SHA吻合：363菜单/焦点、245方向释放转场、17鼠标/竞争、两个独立退出进程各6。结果在`tests/keyboard_navigation/production_results/`，与作者候选637分别记，不累计为1274。
+- 最终候选作者回归原证据按53文件SHA选择性导出`tests/keyboard_navigation/author_final/`：637键盘、8056/204、20Python、帮助2889、线索2610、续玩13114、完成14、续玩集成13、迁移保护15。迁移测试有故意注入的归档复制ERROR，必须单列，不泛称所有负向日志零ERROR。原16张5a作者截图不是最终50ff截图。
+- 独立最终293＝237核心＋12终止进程＋44失效/释放fallback；通过范围包括原生Button事件、异步/失效Continue、作用域与重复激活、安全退出。原报告和93文件导出清单在`tests/keyboard_navigation_audit/`，旧5a证据明确historical不改标。最终CUA/Sky生成的X11键盘旅程不是物理键盘认证；箭头physical_keycode=0限制与引擎注入的held-key测试分开。
+- 最终生产1440×900三图（标题/帮助/失败退出安全Return）已独立亲看焦点圈和文案完整，safe_return断言通过；生产图为真实X11渲染＋引擎事件注入，不称CUA手动路径。生产元数据在`tests/keyboard_navigation/production_native/`及独审补记，PNG在`screenshots/keyboard_navigation/`。图形日志保留llvmpipe不支持切换VSync的已知警告。
+- 生产完整语料字体重扫534汉字＋7符号，无缺字，`tests/results/keyboard_navigation_font.log`；候选旧522因语料范围不同保留原值。未验证macOS/Retina/硬件GPU/手柄或完整无障碍认证。
+- 旧帮助行为测试的普通modal“不锁存”断言被获批的全菜单/modal释放契约替代；原脚本存historical，旧已发布测试日志/JSON不覆盖。运行器支持独立输出/XDG；不复制clone/assets/.godot/qa整目录或私人存档。
+- 独审驱动仅extends/output/runner路径适配后，另在实际生产50ff新跑293/293、exit0、75源码/模型/关卡hash不变、无warning/error；证据`tests/keyboard_navigation_audit/portable_smoke_results_final/ADAPTED_SMOKE_SUMMARY.json`。这次是适配烟测，不累计成586独立检查，也不覆盖原冻结293。portable桌面observer只做路径适配，未重跑GUI；生产图形证据仍来自上面明确列明的三图与原CUA旅程。

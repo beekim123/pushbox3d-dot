@@ -1,0 +1,766 @@
+{
+  "created_utc": "2026-10-23T17:45:13Z",
+  "scope": "Read-only export allowlist; no file copying performed by auditor. All source paths relative to workspace. Original evidence remains frozen.",
+  "candidate_and_production_main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "exclusions": [
+    "fixture/scripts/**",
+    "fixture/assets/**",
+    "fixture/.godot/**",
+    "xdg/**",
+    "snapshot_5a9a4e/main.gd",
+    "user save records"
+  ],
+  "portability_notes": [
+    "Adapt independent_fallback.gd extends res://independent_keyboard.gd to its new helper location.",
+    "Keep scene/runtime loads rooted at production res://scenes/main.tscn.",
+    "Redirect res://../*.json outputs and desktop logs/screenshots to an explicit QA evidence directory; do not overwrite frozen evidence.",
+    "Adapt original runner ROOT/fixture/GODOT paths and preserve XDG isolation.",
+    "Do not call an adapted smoke run the original293 checks; bind fresh results to its own tested source/hash."
+  ],
+  "files": [
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/README.md",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/README.md",
+      "sha256": "f379097a67a4279c1399d73af5556822663c9170ed10e4b5c7091bc9161e2fa4",
+      "bytes": 6127,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/SUMMARY.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/SUMMARY.json",
+      "sha256": "8a9333466ef223f97de881f5a6a730f9874220262ba5bd4e1cd56907cec12cd2",
+      "bytes": 970,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/results.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/results.json",
+      "sha256": "53c5aa372e3a6a5ba3fb9cb6835bb2e624848300b6a2921f2cdf1a41589f0fc3",
+      "bytes": 2919,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/fallback_results.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/fallback_results.json",
+      "sha256": "2e5db97c5cdd072da63b6cd42c49b6b626069754f06aa227210d6584a37b3372",
+      "bytes": 428,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/source_final.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/source_final.json",
+      "sha256": "1bc16e65931bdd1b7dc45fcab46f63c8bf8e1ec52c308f15fa60c991a6cdb924",
+      "bytes": 3345,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/title_copy_delta.diff",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/title_copy_delta.diff",
+      "sha256": "6f40ec0628d9331d7a949300ae1a0d68b93ae68d713c99b70cac5dfea2d15c6a",
+      "bytes": 539,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/run.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/run.log",
+      "sha256": "80e197b2aa04d3f74f7eff26e04c55e1ec4d4bf4a2f690e126ecd403efee7a7d",
+      "bytes": 145,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/fallback.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/fallback.log",
+      "sha256": "87db2a2b2f0dc9c952966365e907215dbc4c1e3e4bab67ee8250d753a7f67174",
+      "bytes": 528,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/exit_enter.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/exit_enter.json",
+      "sha256": "b80bd07d876529e73e37bb841c7e4b2fb318f961457d26da8a9b677660370cd5",
+      "bytes": 321,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/exit_enter.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/exit_enter.log",
+      "sha256": "c5a39adc650c1ca52f93f81e6a64763e10eb865a36b0f7897216b7650c23c2e2",
+      "bytes": 145,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/exit_space.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/exit_space.json",
+      "sha256": "4a68559086f7e284403f8be710577a0032cfeed066a9c818c40e9701e85912e4",
+      "bytes": 321,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/exit_space.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/exit_space.log",
+      "sha256": "72ae8cfa0877d1a8a404aafdf7e73a6c17625f10b1da81edfe62ae00525a5267",
+      "bytes": 145,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/exit_keypad.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/exit_keypad.json",
+      "sha256": "fc0c9574a9cdcc589ce904baf049c04cc7380b9630581464658438cc9fabf99a",
+      "bytes": 322,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/exit_keypad.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/exit_keypad.log",
+      "sha256": "a5cdc609e89cde196616ed5e5d213a21dfb1d2b6954cdd517f51119eafd7b15c",
+      "bytes": 146,
+      "kind": "frozen_50ff_independent_evidence",
+      "notes": "Preserve content and historical b529 production status at audit time; production addendum supersedes that status only."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/fixture/independent_keyboard.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/original_driver_sources/independent_keyboard.gd",
+      "sha256": "04e4e003f45941949753548d0b69c03e1fe9ac46b2cbede3e531d3a2d02d054a",
+      "bytes": 13652,
+      "kind": "original_test_driver",
+      "notes": "Any portability edits are a new adapted harness; keep these originals to reproduce provenance. Never import fixture runtime/scripts or assets."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/fixture/independent_fallback.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/original_driver_sources/independent_fallback.gd",
+      "sha256": "e4430559c8396f1d7d822d28adb2876cbf7b166bef5ce63ede1f24befae51152",
+      "bytes": 3864,
+      "kind": "original_test_driver",
+      "notes": "Any portability edits are a new adapted harness; keep these originals to reproduce provenance. Never import fixture runtime/scripts or assets."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/fixture/independent_unsaved_exit.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/original_driver_sources/independent_unsaved_exit.gd",
+      "sha256": "51401c8c21b22d7add1d2dfe94cc479817428bdc6cc4588773626b61eb9dfa87",
+      "bytes": 2517,
+      "kind": "original_test_driver",
+      "notes": "Any portability edits are a new adapted harness; keep these originals to reproduce provenance. Never import fixture runtime/scripts or assets."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/fixture/desktop_observer.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/original_driver_sources/desktop_observer.gd",
+      "sha256": "411db5736b4984d0f994250a51b7069cd90451a9232bb41ff4d91dc2b6ae1ca0",
+      "bytes": 2265,
+      "kind": "original_test_driver",
+      "notes": "Any portability edits are a new adapted harness; keep these originals to reproduce provenance. Never import fixture runtime/scripts or assets."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/run_all.sh",
+      "suggested_destination": "tests/keyboard_navigation_audit/original_driver_sources/run_all.sh",
+      "sha256": "9da208ee4559eba56c090750ba64c8d13ca125f066fb58cfe8e2962ed8294e2d",
+      "bytes": 802,
+      "kind": "original_runner",
+      "notes": "Contains original workspace/fixture paths; preserve as historical source, or separately adapt and label new smoke test."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/run_independent.sh",
+      "suggested_destination": "tests/keyboard_navigation_audit/original_driver_sources/run_independent.sh",
+      "sha256": "ff491554bea1d511b1e91908cdd0a483c6f8f848e8f197b67a085b02fcd2183d",
+      "bytes": 614,
+      "kind": "original_runner",
+      "notes": "Contains original workspace/fixture paths; preserve as historical source, or separately adapt and label new smoke test."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/run_desktop.sh",
+      "suggested_destination": "tests/keyboard_navigation_audit/original_driver_sources/run_desktop.sh",
+      "sha256": "53ca718158b58c120f62eb260fe3de199068f8ded8132170a6d6c6cfa58c83ef",
+      "bytes": 360,
+      "kind": "original_runner",
+      "notes": "Contains original workspace/fixture paths; preserve as historical source, or separately adapt and label new smoke test."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/001_launch.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/001_launch.json",
+      "sha256": "091b1affa82d8ed97aedef13f747bb34958287cbd2121f459474346840d31712",
+      "bytes": 265,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/001_launch.png",
+      "suggested_destination": "screenshots/keyboard_navigation/independent_final_50ff/001_launch.png",
+      "sha256": "addbdd952f16de1f9fbeb47247b143a426b06bc6d17121c036fe3395a89fbb9f",
+      "bytes": 345559,
+      "kind": "final_50ff_cua_x11_png",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/002_Enter.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/002_Enter.json",
+      "sha256": "9877a9898acfab411fe8f762874d6fc9aad40997a650a7df4ccec7ca9c63371d",
+      "bytes": 271,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/002_Enter.png",
+      "suggested_destination": "screenshots/keyboard_navigation/independent_final_50ff/002_Enter.png",
+      "sha256": "3539396597972aaaee0aa95898511afe1a41a3f286f67eaab99fe8f812ed2608",
+      "bytes": 385440,
+      "kind": "final_50ff_cua_x11_png",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/003_Space.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/003_Space.json",
+      "sha256": "ec0c1ab12ded7b338d982ac18e087b58698870ebe1a12b74a93aaf03d772f682",
+      "bytes": 279,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/003_Space.png",
+      "suggested_destination": "screenshots/keyboard_navigation/independent_final_50ff/003_Space.png",
+      "sha256": "bd3413605abee18725e8638860a755b88484ffa1384598e31a1ca9ea01960a8e",
+      "bytes": 317601,
+      "kind": "final_50ff_cua_x11_png",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/004_Enter.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/004_Enter.json",
+      "sha256": "e81b7a2154ec875b1a756e54d2ee0b9bcada9e927a58debd53a8f36c65c94d85",
+      "bytes": 273,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/004_Enter.png",
+      "suggested_destination": "screenshots/keyboard_navigation/independent_final_50ff/004_Enter.png",
+      "sha256": "ba67e3f836ca4a92e03912acebeffd630060ce45e3288fae7b5507d6e5390428",
+      "bytes": 324527,
+      "kind": "final_50ff_cua_x11_png",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/005_F1.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/005_F1.json",
+      "sha256": "32f515a233e8e8eb07128cf7d5b856d21c62758b73f781f62a2d6b187264375c",
+      "bytes": 279,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/005_F1.png",
+      "suggested_destination": "screenshots/keyboard_navigation/independent_final_50ff/005_F1.png",
+      "sha256": "fd7b493f12877dce657d9b5ea111916694f160dddac22e516d2e192a6f57bb22",
+      "bytes": 254355,
+      "kind": "final_50ff_cua_x11_png",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/006_Escape.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/006_Escape.json",
+      "sha256": "0c6a13e52437e5c1929dc44f364d1f37a5b7d5938f943e0d161bade93c711892",
+      "bytes": 274,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/006_Escape.png",
+      "suggested_destination": "screenshots/keyboard_navigation/independent_final_50ff/006_Escape.png",
+      "sha256": "f2a300f0eb7f2ee5f909bdb9530649562beda114a2318a93795a43033a1ec861",
+      "bytes": 324563,
+      "kind": "final_50ff_cua_x11_png",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/007_F9.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/007_F9.json",
+      "sha256": "7dd415be154d4772afbd8c110eef64dfd23a43665efd8957cdb9c9a9bc5e3fe0",
+      "bytes": 278,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/007_F9.png",
+      "suggested_destination": "screenshots/keyboard_navigation/independent_final_50ff/007_F9.png",
+      "sha256": "01a73bd5bd6908b402916cb9ef29761ba97189eb3245b82ee431eb93a0530341",
+      "bytes": 233659,
+      "kind": "final_50ff_cua_x11_png",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/008_Enter.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/008_Enter.json",
+      "sha256": "e81b7a2154ec875b1a756e54d2ee0b9bcada9e927a58debd53a8f36c65c94d85",
+      "bytes": 273,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/008_Enter.png",
+      "suggested_destination": "screenshots/keyboard_navigation/independent_final_50ff/008_Enter.png",
+      "sha256": "b54e6168178cb7f2b482edc119628c9b8b57903dda4c06398b2f444bb5f5c063",
+      "bytes": 324555,
+      "kind": "final_50ff_cua_x11_png",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop/events.jsonl",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop/events.jsonl",
+      "sha256": "095dd595d155adc1333ebbb97daedbefa4d813694459d40cfcee3e22d3a2464a",
+      "bytes": 1412,
+      "kind": "final_50ff_cua_x11_observer",
+      "notes": "CUA-generated X11 desktop input, not physical-keyboard proof; F9 is explicit test-only failed-save setup."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/desktop.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/independent_frozen/desktop.log",
+      "sha256": "2383d05f126ce89693ddcbdbeab6bc16dbf46d5c7be800c29a0fd7980803a314",
+      "bytes": 2389,
+      "kind": "final_50ff_cua_x11_log",
+      "notes": ""
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/001_launch.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/001_launch.json",
+      "sha256": "091b1affa82d8ed97aedef13f747bb34958287cbd2121f459474346840d31712",
+      "bytes": 265,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/001_launch.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/001_launch.png",
+      "sha256": "ab0d14d7f92f61cad78ff18570640563c250c3df187acedc6e055c268870ae98",
+      "bytes": 345049,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/002_Enter.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/002_Enter.json",
+      "sha256": "9877a9898acfab411fe8f762874d6fc9aad40997a650a7df4ccec7ca9c63371d",
+      "bytes": 271,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/002_Enter.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/002_Enter.png",
+      "sha256": "f30fbc7330e3bca8776998e8fcda7dd281cb70447020a49dbf06641debe4c5a6",
+      "bytes": 385438,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/003_Right.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/003_Right.json",
+      "sha256": "b43f3680bdc2b063dcb2c6ebb0da399cd13491684990049dabc4386487dd8220",
+      "bytes": 264,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/003_Right.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/003_Right.png",
+      "sha256": "8e58b025081eda615d169075b333285d0931ae27bc976d16b8e458a595bf11cb",
+      "bytes": 386028,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/004_Tab.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/004_Tab.json",
+      "sha256": "0a0d8e5951b6f22f31688ef5ba433f9c1d8410c2d654b6051a38c79fe80e6723",
+      "bytes": 261,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/004_Tab.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/004_Tab.png",
+      "sha256": "5a1dc29e5fe98315c4047c60d95f784a617f3024427b2df4b21a391092d018c1",
+      "bytes": 386042,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/005_Tab.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/005_Tab.json",
+      "sha256": "b2ee923ed4da8abb537018e390c87c7d7277aec5644daea95b9dfebbe7dd3c12",
+      "bytes": 269,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/005_Tab.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/005_Tab.png",
+      "sha256": "2b7f04341febe69cb5f1da30202a0ceff3634ad50f663e6ee03e559e403138f8",
+      "bytes": 385340,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/006_Space.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/006_Space.json",
+      "sha256": "ec0c1ab12ded7b338d982ac18e087b58698870ebe1a12b74a93aaf03d772f682",
+      "bytes": 279,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/006_Space.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/006_Space.png",
+      "sha256": "9d029a75dc3ba24b90218a4810e5ce5bf5093789ff3b53cbce7c9aa810149eb3",
+      "bytes": 317593,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/007_Enter.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/007_Enter.json",
+      "sha256": "e81b7a2154ec875b1a756e54d2ee0b9bcada9e927a58debd53a8f36c65c94d85",
+      "bytes": 273,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/007_Enter.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/007_Enter.png",
+      "sha256": "73b59c972ad3b31a0dd37fc57a7a3442228ab01a1c2e2cb071f70ca8dfe8efb0",
+      "bytes": 324525,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/008_F1.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/008_F1.json",
+      "sha256": "32f515a233e8e8eb07128cf7d5b856d21c62758b73f781f62a2d6b187264375c",
+      "bytes": 279,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/008_F1.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/008_F1.png",
+      "sha256": "80048c48aad3deab469871c1e0996ed7209b8774e7ee12d576400d43eaef997a",
+      "bytes": 254359,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/009_Tab.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/009_Tab.json",
+      "sha256": "1aa3f621aaf95ea54ef25c598ed94548d868ea711547b535688c8bb73430b023",
+      "bytes": 280,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/009_Tab.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/009_Tab.png",
+      "sha256": "b87fd28c250206c947375d6886c3839197daa415e94441fc2895ba8af3bcaf18",
+      "bytes": 254403,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/010_Tab.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/010_Tab.json",
+      "sha256": "1aa3f621aaf95ea54ef25c598ed94548d868ea711547b535688c8bb73430b023",
+      "bytes": 280,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/010_Tab.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/010_Tab.png",
+      "sha256": "8657650d245a32164a6231397ae14433c1560254b1871cedf4be5864511aa578",
+      "bytes": 254334,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/011_Shift.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/011_Shift.json",
+      "sha256": "7bd3e833d0db4dea8c2a9b3b7795635e95a62115e21700a70c26de4c747a953a",
+      "bytes": 282,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/011_Shift.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/011_Shift.png",
+      "sha256": "d8fa81b5350bad51a68d970d4364e4be44ceaf7e0bfbbbec2d0d1c42eb60da72",
+      "bytes": 254325,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/012_Escape.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/012_Escape.json",
+      "sha256": "0c6a13e52437e5c1929dc44f364d1f37a5b7d5938f943e0d161bade93c711892",
+      "bytes": 274,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/012_Escape.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/012_Escape.png",
+      "sha256": "f1ac49d74ec79e077e5bbd085d702f0186f9c84c821b92270de2c5583b4f7a6e",
+      "bytes": 324587,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/013_Right.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/013_Right.json",
+      "sha256": "7a63deb4ade7f1582fada7855e3bceba9170852190d1368f44abd445be20a523",
+      "bytes": 273,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/013_Right.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/013_Right.png",
+      "sha256": "f2d533499cf0707e4ea0d3ba617805429c8cffc2a7c205687463d5a1e3505e88",
+      "bytes": 322604,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/014_Space.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/014_Space.json",
+      "sha256": "f3f7820ed6e658359921e582f7d5667a6f1c9cd4257416728b2124500e6c1631",
+      "bytes": 273,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/014_Space.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/014_Space.png",
+      "sha256": "a93776b229cf7d2e2c20b88e0a27fde4b6937b07b25e26f08bdcd48740ccb29d",
+      "bytes": 313133,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/015_F9.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/015_F9.json",
+      "sha256": "0debe08ecd53d888256695b0959c61ba1a8004ae2928cc9991e067ba9985e2ea",
+      "bytes": 278,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/015_F9.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/015_F9.png",
+      "sha256": "e856c47065dd4d40451cff5d272d60fbe4e370cd0b4fc402a2a603963bdcd2d3",
+      "bytes": 221712,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/016_Enter.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/016_Enter.json",
+      "sha256": "31b876581714e5993778051841e2853db2766db27b97389aa9ee6ea56424dea8",
+      "bytes": 273,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/016_Enter.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/016_Enter.png",
+      "sha256": "fd65eb4e2b134a0419cba95214deceb42f252ee0e1770391b9533687e2520759",
+      "bytes": 313112,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/017_Escape.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/017_Escape.json",
+      "sha256": "16f3da95da6cf1945cb36d7c3ba49ef02b2c23be66cff644195757fa6f1f79d0",
+      "bytes": 289,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/017_Escape.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/017_Escape.png",
+      "sha256": "cda0ec0f7281f721cb125dbdc4d3aa32c8afd3cd028dff1f6db20d5537810fd9",
+      "bytes": 320822,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/018_Tab.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/018_Tab.json",
+      "sha256": "2437960660eb5d85c3f8ba5933580d98b5645d2c6b91641a5e65d3dcfe9631ce",
+      "bytes": 286,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/018_Tab.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/018_Tab.png",
+      "sha256": "9b8b8f7d4c24e8eba328fe4edf656f8b2754d3d87bbdfb0eb7fbecaea26d60f0",
+      "bytes": 320914,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/019_Alt.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/019_Alt.json",
+      "sha256": "8ba8f5c7b0c106ebb43cff6a627b13da22671d1bf38c36d0f57f245a6f3c600d",
+      "bytes": 286,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/019_Alt.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/019_Alt.png",
+      "sha256": "dbfae567a9b42a3a74edc6475e7c08f7b62a9d14b50e15c8e6deb37b8bbe136e",
+      "bytes": 320906,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/020_Tab.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/020_Tab.json",
+      "sha256": "2437960660eb5d85c3f8ba5933580d98b5645d2c6b91641a5e65d3dcfe9631ce",
+      "bytes": 286,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/020_Tab.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/020_Tab.png",
+      "sha256": "5fef1edb7d39b33c634c552121ac1f437f6d0a29262efd93b684fbfdf965ec72",
+      "bytes": 320933,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/021_Alt.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/021_Alt.json",
+      "sha256": "8ba8f5c7b0c106ebb43cff6a627b13da22671d1bf38c36d0f57f245a6f3c600d",
+      "bytes": 286,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/021_Alt.png",
+      "suggested_destination": "screenshots/keyboard_navigation/history_5a9a4e/021_Alt.png",
+      "sha256": "62cdcce3827c20a57f20c0429f4b0e30d8a8199986009558e03a2abc4ad67737",
+      "bytes": 320899,
+      "kind": "historical_5a9a4e_cua_x11_png",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop/events.jsonl",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop/events.jsonl",
+      "sha256": "b3b1ede1921770f1aeb5ed18c65e25b7649877aaafe3c36ea5192589aeec332f",
+      "bytes": 3797,
+      "kind": "historical_5a9a4e_observer",
+      "notes": "Pre-title-copy candidate only, not final50ff. Keep historical label."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/results.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/results.json",
+      "sha256": "7f7b4c6d824f2243f7229e139e9250a2c84f444882fdb1a14b3fc4df25a1ae97",
+      "bytes": 2854,
+      "kind": "historical_5a9a4e_text",
+      "notes": ""
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/run.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/run.log",
+      "sha256": "80e197b2aa04d3f74f7eff26e04c55e1ec4d4bf4a2f690e126ecd403efee7a7d",
+      "bytes": 145,
+      "kind": "historical_5a9a4e_text",
+      "notes": ""
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/implementation_audit/snapshot_5a9a4e/desktop.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/history_5a9a4e/desktop.log",
+      "sha256": "df59bf3e9376ecdb5c07359933b56396a5779d726e03be5ae5562f44f271764f",
+      "bytes": 5640,
+      "kind": "historical_5a9a4e_text",
+      "notes": ""
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation/qa/production_native/results.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_native/results.json",
+      "sha256": "9afeabe54a4a560fbe4c53af7cc9b3081dfd14fde7449684a354ef64ef2cb69c",
+      "bytes": 844,
+      "kind": "production_50ff_rendered_evidence",
+      "notes": "Author executed on actual production; independent auditor inspected results/code/images. Injected engine keys, not CUA desktop keys."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation/qa/production_native/run.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_native/run.log",
+      "sha256": "7879fa59fd36833c6c441c23e4b8f29aec55bc34501d00522ad3dce84a081079",
+      "bytes": 1132,
+      "kind": "production_50ff_rendered_evidence",
+      "notes": "Author executed on actual production; independent auditor inspected results/code/images. Injected engine keys, not CUA desktop keys."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation/qa/production_native/source_before.txt",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_native/source_before.txt",
+      "sha256": "fc45e7f9eea74679e191ff3ce471dea7898bc8bc2f41389dca78c249aa28e94a",
+      "bytes": 131,
+      "kind": "production_50ff_rendered_evidence",
+      "notes": "Author executed on actual production; independent auditor inspected results/code/images. Injected engine keys, not CUA desktop keys."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation/qa/production_native/capture.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_native/capture.gd",
+      "sha256": "536206c8e63c35214abf7ff1d72cbd1cbc9d5917b85b82abb272684ec284fd4d",
+      "bytes": 2364,
+      "kind": "production_50ff_rendered_evidence",
+      "notes": "Author executed on actual production; independent auditor inspected results/code/images. Injected engine keys, not CUA desktop keys."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation/qa/production_native/run.sh",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_native/run.sh",
+      "sha256": "f13364f702d8396b0efb9ebac164921286d2009d8cf7b1a58b7df0cfc08700e9",
+      "bytes": 779,
+      "kind": "production_50ff_rendered_evidence",
+      "notes": "Author executed on actual production; independent auditor inspected results/code/images. Injected engine keys, not CUA desktop keys."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation/qa/production_native/title.png",
+      "suggested_destination": "screenshots/keyboard_navigation/production_50ff/title.png",
+      "sha256": "27e1a86ba231205e4193f26143ba9af7a4856d288dc7d98f70a2c01561a59384",
+      "bytes": 334806,
+      "kind": "production_50ff_rendered_png",
+      "notes": "1440x900 X11 llvmpipe high quality; compared semantically, no pixel-identity claim."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation/qa/production_native/help.png",
+      "suggested_destination": "screenshots/keyboard_navigation/production_50ff/help.png",
+      "sha256": "46f3d803a1d4cef9004c787368ac820640f7ca826d47d0b7f2f05c9fdb9e783f",
+      "bytes": 258034,
+      "kind": "production_50ff_rendered_png",
+      "notes": "1440x900 X11 llvmpipe high quality; compared semantically, no pixel-identity claim."
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation/qa/production_native/failed_exit.png",
+      "suggested_destination": "screenshots/keyboard_navigation/production_50ff/failed_exit.png",
+      "sha256": "f24cda71f9f3016bcc80d191a58e1d98f5bb7fb4800f7c6e739f94c5753036fd",
+      "bytes": 229614,
+      "kind": "production_50ff_rendered_png",
+      "notes": "1440x900 X11 llvmpipe high quality; compared semantically, no pixel-identity claim."
+    }
+  ]
+}

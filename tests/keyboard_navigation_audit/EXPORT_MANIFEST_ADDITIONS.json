@@ -1,0 +1,169 @@
+{
+  "created_utc": "2026-10-23T17:50:35.967269+00:00",
+  "additive_to": "export_manifest.json (original93 unchanged)",
+  "scope": "Additional dated production closure and portable path-only adaptation with NEW293 smoke. No cache/assets/runtime clones/userdata.",
+  "original_93_manifest_sha256": "5ec4558f63dc599409bd4c3339d25bcdbe76758fe2b113463241585925c2a842",
+  "files": [
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/README.md",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_addendum/README.md",
+      "sha256": "be3a3d33b71d620210c0dc18a60ffcc9a60870ed183c9f476217e1a818171476",
+      "bytes": 5243,
+      "kind": "dated_production_addendum"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/review_manifest.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_addendum/review_manifest.json",
+      "sha256": "99c282c65f82f3f930b3843b830e4c94f1e651afed722075c950e99fd8d0adc6",
+      "bytes": 1098,
+      "kind": "dated_production_addendum"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/final_regression_status_2026-10-23T1747Z.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_addendum/final_regression_status_2026-10-23T1747Z.json",
+      "sha256": "007068bed2e29a6f387e60f51cada1c19bdcddd02dd29a71f9c487b6f89c43a4",
+      "bytes": 1440,
+      "kind": "dated_production_addendum"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/export_manifest.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/production_addendum/export_manifest.json",
+      "sha256": "5ec4558f63dc599409bd4c3339d25bcdbe76758fe2b113463241585925c2a842",
+      "bytes": 45922,
+      "kind": "dated_production_addendum"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable/README.md",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable/README.md",
+      "sha256": "014a74c1c8a1d6913bd0258edfa37c8c2ddcf557bcdb992ea55e7a3a413d7899",
+      "bytes": 1183,
+      "kind": "portable_path_only_adaptation"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable/adaptation.diff",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable/adaptation.diff",
+      "sha256": "f471088c84c2d863284142e59a9b439c3d7550ded4f9417403a11192454c72c5",
+      "bytes": 4845,
+      "kind": "portable_path_only_adaptation"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable/desktop_observer.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable/desktop_observer.gd",
+      "sha256": "a9c52fd61da17c8361b0283c9e5b8b8ecd6fe00fa21bb3fff4c5d23b4407aff5",
+      "bytes": 2397,
+      "kind": "portable_path_only_adaptation"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable/independent_fallback.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable/independent_fallback.gd",
+      "sha256": "09f0365b2a1fcf8eaaa9cf03c776efaa1c7f9d208be779ce0f8462203130fccb",
+      "bytes": 3893,
+      "kind": "portable_path_only_adaptation"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable/independent_keyboard.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable/independent_keyboard.gd",
+      "sha256": "3e201700fb20d21794d742923811a9e0819e9412f5e913c3110a1cba3705204d",
+      "bytes": 13685,
+      "kind": "portable_path_only_adaptation"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable/independent_unsaved_exit.gd",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable/independent_unsaved_exit.gd",
+      "sha256": "9e48f72ab789353f648ee65113a3cc618be5acf896c4ae9444f54e991f95567a",
+      "bytes": 2550,
+      "kind": "portable_path_only_adaptation"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable/run_portable.sh",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable/run_portable.sh",
+      "sha256": "ef2c8789f02990db6fe7f1b5a72c7572e84ecc4f97e182b160239cd98f37a2cb",
+      "bytes": 3240,
+      "kind": "portable_path_only_adaptation"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/ADAPTED_SMOKE_SUMMARY.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/ADAPTED_SMOKE_SUMMARY.json",
+      "sha256": "0ab17088b43c24e88caba985050dd63b2531f50c256e619c5a3d4eb31840b6c2",
+      "bytes": 614,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/exit_enter.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/exit_enter.json",
+      "sha256": "b80bd07d876529e73e37bb841c7e4b2fb318f961457d26da8a9b677660370cd5",
+      "bytes": 321,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/exit_enter.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/exit_enter.log",
+      "sha256": "c5a39adc650c1ca52f93f81e6a64763e10eb865a36b0f7897216b7650c23c2e2",
+      "bytes": 145,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/exit_keypad.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/exit_keypad.json",
+      "sha256": "fc0c9574a9cdcc589ce904baf049c04cc7380b9630581464658438cc9fabf99a",
+      "bytes": 322,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/exit_keypad.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/exit_keypad.log",
+      "sha256": "a5cdc609e89cde196616ed5e5d213a21dfb1d2b6954cdd517f51119eafd7b15c",
+      "bytes": 146,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/exit_space.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/exit_space.json",
+      "sha256": "4a68559086f7e284403f8be710577a0032cfeed066a9c818c40e9701e85912e4",
+      "bytes": 321,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/exit_space.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/exit_space.log",
+      "sha256": "72ae8cfa0877d1a8a404aafdf7e73a6c17625f10b1da81edfe62ae00525a5267",
+      "bytes": 145,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/fallback.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/fallback.log",
+      "sha256": "87db2a2b2f0dc9c952966365e907215dbc4c1e3e4bab67ee8250d753a7f67174",
+      "bytes": 528,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/fallback_results.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/fallback_results.json",
+      "sha256": "2e5db97c5cdd072da63b6cd42c49b6b626069754f06aa227210d6584a37b3372",
+      "bytes": 428,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/results.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/results.json",
+      "sha256": "53c5aa372e3a6a5ba3fb9cb6835bb2e624848300b6a2921f2cdf1a41589f0fc3",
+      "bytes": 2919,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/run.log",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/run.log",
+      "sha256": "80e197b2aa04d3f74f7eff26e04c55e1ec4d4bf4a2f690e126ecd403efee7a7d",
+      "bytes": 145,
+      "kind": "new_production_portable_smoke_not_original293"
+    },
+    {
+      "source_path": "fourfold_next/keyboard_navigation_review/production_addendum/portable_smoke_results_final/source_before.json",
+      "suggested_destination": "tests/keyboard_navigation_audit/portable_smoke_results/source_before.json",
+      "sha256": "5aed088b95e12e20affcf4e3250ff2e941223ae6b0c5eeebeded33b03ff917c6",
+      "bytes": 7791,
+      "kind": "new_production_portable_smoke_not_original293"
+    }
+  ]
+}

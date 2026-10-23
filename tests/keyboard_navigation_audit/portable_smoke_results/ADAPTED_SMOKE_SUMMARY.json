@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": 293,
+  "failures": [],
+  "process_exit_code": 0,
+  "project": "[workspace]/fourfold_atelier",
+  "runtime_main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "protected_files": 75,
+  "source_changes": [],
+  "completed_utc": "2026-10-23T17:49:43.846855+00:00",
+  "scope": "Fresh portable-adaptation smoke against specified production project; only extends/output/runner paths adapted. Separate new293 evidence, NOT a relabeling of frozen original independent293. Headless injected-engine events; temporary XDG removed after run."
+}

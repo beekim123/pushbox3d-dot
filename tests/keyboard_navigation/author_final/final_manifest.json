@@ -1,0 +1,126 @@
+{
+  "status": "Author implementation and final-runtime regression complete; independently passed; root owns production regression/repository publication",
+  "created_utc": "2026-10-23T17:43:39.992763+00:00",
+  "engine": "Godot 4.7.2.stable.official",
+  "main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "baseline_main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+  "code_patch_sha256": "4582451e138478f1448fea1490c4b02bdfe0fda1e215ba020a7ad19d928d9f93",
+  "selective_handoff_manifest": {
+    "path": "fourfold_next/keyboard_navigation/qa/candidate_manifest.json",
+    "sha256": "1e6fe07752b323f699f9b9f165c5b2d8efc5e990eff83318882bdc5bc3ed77e2"
+  },
+  "author_events": {
+    "keyboard_navigation": {
+      "checks": 363,
+      "failures": [],
+      "result": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_navigation_results.json",
+      "sha256": "c529b708b6fd8e27699fe2e58b63c0ec15ec64d011819b5004a73dab450943e2",
+      "log": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_navigation.log"
+    },
+    "keyboard_transition_guards": {
+      "checks": 245,
+      "failures": [],
+      "result": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_transition_guards_results.json",
+      "sha256": "fe26ed13f852fd4a5a3ebbe8b2a694b4c76a05f640e1fe3dad073a90b5b01d49",
+      "log": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_transition_guards.log"
+    },
+    "keyboard_mouse_races": {
+      "checks": 17,
+      "failures": [],
+      "result": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_mouse_races_results.json",
+      "sha256": "88a37ce3ec1675915de4c0cb3115545fc6e4eac21a55991158be3843f3a13da1",
+      "log": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_mouse_races.log"
+    },
+    "keyboard_exit_enter": {
+      "checks": 6,
+      "failures": [],
+      "result": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_exit_enter_results.json",
+      "sha256": "0edf16cbe62ffd8f23d815fee7cf7e87bc6147aaa0a74c4da29c13ec559da278",
+      "log": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_exit_enter.log"
+    },
+    "keyboard_exit_space": {
+      "checks": 6,
+      "failures": [],
+      "result": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_exit_space_results.json",
+      "sha256": "cda3bfc1ab1ef26ce312f3361fc9c74d2f4b72a1178114452a052e82799044ad",
+      "log": "fourfold_next/keyboard_navigation/qa/final_events/keyboard_exit_space.log"
+    }
+  },
+  "author_event_checks": 637,
+  "regressions": {
+    "full_204_handlers": 8056,
+    "python_unittests": 20,
+    "completion_reconciliation": 14,
+    "resume_integration": 13,
+    "save_migration": 15,
+    "context_help": 2889,
+    "hint_ui": 2610,
+    "resume_storage_lifecycle_cap_layout": 13114,
+    "font_corpus_cjk": 522,
+    "font_missing": 0
+  },
+  "resume_raw_manifest": {
+    "path": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/manifest.json",
+    "sha256": "b14f992d0510c83e85912e9e70d2e78b4a726e9554705096003ba3b8447952d3"
+  },
+  "independent_audit": {
+    "checks": 293,
+    "report": "fourfold_next/keyboard_navigation_review/implementation_audit/README.md",
+    "report_sha256": "f379097a67a4279c1399d73af5556822663c9170ed10e4b5c7091bc9161e2fa4",
+    "summary": "fourfold_next/keyboard_navigation_review/implementation_audit/SUMMARY.json",
+    "summary_sha256": "8a9333466ef223f97de881f5a6a730f9874220262ba5bd4e1cd56907cec12cd2",
+    "source_final": "fourfold_next/keyboard_navigation_review/implementation_audit/source_final.json",
+    "source_final_sha256": "1bc16e65931bdd1b7dc45fcab46f63c8bf8e1ec52c308f15fa60c991a6cdb924"
+  },
+  "production_native": {
+    "project": "[workspace]/fourfold_atelier/",
+    "runtime_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+    "display": "X11",
+    "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "viewport": "1440x900",
+    "focus_actions": [
+      "hub",
+      "help:close",
+      "exit:return"
+    ],
+    "safe_return_passed": true,
+    "gui_closed_verified": true,
+    "image_sha256": {
+      "title.png": "27e1a86ba231205e4193f26143ba9af7a4856d288dc7d98f70a2c01561a59384",
+      "help.png": "46f3d803a1d4cef9004c787368ac820640f7ca826d47d0b7f2f05c9fdb9e783f",
+      "failed_exit.png": "f24cda71f9f3016bcc80d191a58e1d98f5bb7fb4800f7c6e739f94c5753036fd"
+    },
+    "scope": "Actual integrated production project. External test-only script/direct failure setup; injected keys for Help/Return. No runtime/test source writes to production."
+  },
+  "evidence_sha256": {
+    "qa/candidate_manifest.json": "1e6fe07752b323f699f9b9f165c5b2d8efc5e990eff83318882bdc5bc3ed77e2",
+    "qa/keyboard_navigation.patch": "4582451e138478f1448fea1490c4b02bdfe0fda1e215ba020a7ad19d928d9f93",
+    "qa/title_copy_only.patch": "fb2d8afb7421b53964f969f3d4314cc29d1c52786fbf3888de29843cda9e0659",
+    "qa/full_handlers.log": "f5e88a3751307aa44483e374bc6fb05ed5ca35d38e1ce85d90030cf037ccd442",
+    "qa/python_tests.log": "f232b80b1dabb072eac7d548fac1868baa726cdd876797568189803ad84b427b",
+    "qa/context_help_regression.log": "38bfd1329d2ec5783f94f732ebccbde58b10c798389b0c04d762bf0e5083a4fd",
+    "qa/hint_ui_regression.log": "63ea3ec496911702de104a162455c301ec39393bda9a2e7d0dbe7266ac829998",
+    "qa/resume_audit.log": "6bb230e30e847e6d839ab6fc91f72da09d458c374a4d4aaac71cae716ac1ab50",
+    "qa/completion_reconcile.log": "4b189086dacc5ed0ff8d5ad136c9cff98c718369f612bfbe44690b3fbe7a80c2",
+    "qa/resume_integration.log": "5ed5f26b7b6169d48c60fc9cc2ef2f7f65b3c372e87e26732b98199d59a3350d",
+    "qa/save_migration_v2.log": "b5537ca3fafbf85fd024e99acc540d27d7c873c87e3a3c12ba815d4e54a62d22",
+    "qa/font_coverage_final.log": "d37c82ddf0416a9c5ffb8939fcfc6bd15913fd05c3bee96efdede8a676ab250b",
+    "qa/final_events_runner.log": "150d495a59919bd2b9646ea58d4cb1952e9ecbbd0147aa941df114306038aee3",
+    "tests/context_help_audit/summary.json": "3a85297a77a2e283703ffe78d1cde5424501b58fedfaefc808b2630d693dc014",
+    "tests/hint_ui_audit_summary.json": "d778d5499406daeb258c89c97e20f7e8c3dd9f21f9eb7decbab989d01e2b64f8",
+    "qa/production_native/results.json": "9afeabe54a4a560fbe4c53af7cc9b3081dfd14fde7449684a354ef64ef2cb69c",
+    "qa/production_native/run.log": "7879fa59fd36833c6c441c23e4b8f29aec55bc34501d00522ad3dce84a081079",
+    "qa/production_native/capture.gd": "536206c8e63c35214abf7ff1d72cbd1cbc9d5917b85b82abb272684ec284fd4d",
+    "qa/production_native/run.sh": "f13364f702d8396b0efb9ebac164921286d2009d8cf7b1a58b7df0cfc08700e9"
+  },
+  "boundaries": [
+    "No Git write, upload, or publication by implementer. Root integrated only main.gd after independent acceptance.",
+    "Author 16-themed native captures remain bound to old 5a9a4e; final title/desktop audit and three production captures bind to 50ff777.",
+    "Runtime final full regressions completed before shell-only portability/output-directory edits; final portable event runner was fully rerun (637). Portable regression wrapper received bash -n, invalid-version rejection, and exact injected-error validation; root owns fresh production rerun.",
+    "The save migration fixture intentionally emits exactly one archive-copy failure ERROR; normal final event logs are clean.",
+    "Native X11 llvmpipe emits its known unsupported-VSync warning. No hardware GPU, physical keyboard, macOS, Windows, gamepad or broad accessibility claim.",
+    "Temporary XDG isolation and output locations verified on Linux cloud only.",
+    "522 CJK counts only main.gd plus levels.json; root broader font corpus must be reported separately.",
+    "No qa cache/userdata directory or whole isolated project should be copied into production."
+  ]
+}

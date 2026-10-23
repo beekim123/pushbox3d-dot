@@ -1,0 +1,11 @@
+--- before-title-copy/scripts/main.gd
++++ after-title-copy/scripts/main.gd
+@@ -336,7 +336,7 @@
+ 	var bottom := panel_at(Vector2(70,790),Vector2(1300,60))
+ 	var row := HBoxContainer.new()
+ 	bottom.add_child(row)
+-	var l := UI.label("方向键 / WASD 移动     Z 撤销     R 重置     Esc 返回",18)
++	var l := UI.label("菜单：Tab / 方向键选择 · Enter / Space 确认 · Esc 返回",18)
+ 	l.size_flags_horizontal=Control.SIZE_EXPAND_FILL
+ 	row.add_child(l)
+ 	row.add_child(UI.label("已织回  %d / %d" % [progress.solved.size(),levels.size()],18,Color("dfbd83")))

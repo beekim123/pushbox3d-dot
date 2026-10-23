@@ -1,0 +1,272 @@
+{
+  "destination_root": "tests/keyboard_navigation/author_final",
+  "source_main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "files": [
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_manifest.json",
+      "destination": "final_manifest.json",
+      "sha256": "b482b0eb771febc7cf609d460f9a3f7d69c3f4f8c5d62c815e3276f6f24d4d99"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/candidate_manifest.json",
+      "destination": "candidate_manifest.json",
+      "sha256": "1e6fe07752b323f699f9b9f165c5b2d8efc5e990eff83318882bdc5bc3ed77e2"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/keyboard_navigation.patch",
+      "destination": "keyboard_navigation.patch",
+      "sha256": "4582451e138478f1448fea1490c4b02bdfe0fda1e215ba020a7ad19d928d9f93"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/title_copy_only.patch",
+      "destination": "title_copy_only.patch",
+      "sha256": "fb2d8afb7421b53964f969f3d4314cc29d1c52786fbf3888de29843cda9e0659"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/regression_suite_final.log",
+      "destination": "regression_suite_final.log",
+      "sha256": "a22402c4e68a5b73ea05f991f41215948291c50414b89f9e1082118f1e1fbb69"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/full_handlers.log",
+      "destination": "full_handlers.log",
+      "sha256": "f5e88a3751307aa44483e374bc6fb05ed5ca35d38e1ce85d90030cf037ccd442"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/python_tests.log",
+      "destination": "python_tests.log",
+      "sha256": "f232b80b1dabb072eac7d548fac1868baa726cdd876797568189803ad84b427b"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/context_help_regression.log",
+      "destination": "context_help_regression.log",
+      "sha256": "38bfd1329d2ec5783f94f732ebccbde58b10c798389b0c04d762bf0e5083a4fd"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/hint_ui_regression.log",
+      "destination": "hint_ui_regression.log",
+      "sha256": "63ea3ec496911702de104a162455c301ec39393bda9a2e7d0dbe7266ac829998"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit.log",
+      "destination": "resume_audit.log",
+      "sha256": "6bb230e30e847e6d839ab6fc91f72da09d458c374a4d4aaac71cae716ac1ab50"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/completion_reconcile.log",
+      "destination": "completion_reconcile.log",
+      "sha256": "4b189086dacc5ed0ff8d5ad136c9cff98c718369f612bfbe44690b3fbe7a80c2"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_integration.log",
+      "destination": "resume_integration.log",
+      "sha256": "5ed5f26b7b6169d48c60fc9cc2ef2f7f65b3c372e87e26732b98199d59a3350d"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/save_migration_v2.log",
+      "destination": "save_migration_v2.log",
+      "sha256": "b5537ca3fafbf85fd024e99acc540d27d7c873c87e3a3c12ba815d4e54a62d22"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/font_coverage_final.log",
+      "destination": "font_coverage_final.log",
+      "sha256": "d37c82ddf0416a9c5ffb8939fcfc6bd15913fd05c3bee96efdede8a676ab250b"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events_runner.log",
+      "destination": "final_events_runner.log",
+      "sha256": "150d495a59919bd2b9646ea58d4cb1952e9ecbbd0147aa941df114306038aee3"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/runner_invalid_engine_final.log",
+      "destination": "runner_invalid_engine_final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_exit_enter.log",
+      "destination": "events/keyboard_exit_enter.log",
+      "sha256": "ef5fcb05c569b0cf6074b7be9480a2fa555e4458281adac453f2512bd5e1f779"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_exit_enter_results.json",
+      "destination": "events/keyboard_exit_enter_results.json",
+      "sha256": "0edf16cbe62ffd8f23d815fee7cf7e87bc6147aaa0a74c4da29c13ec559da278"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_exit_space.log",
+      "destination": "events/keyboard_exit_space.log",
+      "sha256": "e4d33acdfd2b1bb0c1f6f594b2acd250b91478ab1d30f7bd997a1bdfcbdfec72"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_exit_space_results.json",
+      "destination": "events/keyboard_exit_space_results.json",
+      "sha256": "cda3bfc1ab1ef26ce312f3361fc9c74d2f4b72a1178114452a052e82799044ad"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_import.log",
+      "destination": "events/keyboard_import.log",
+      "sha256": "6017d7bc69803405e012af88dd1700f1c4d923cb6bd140aac8dfed8af013c16b"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_mouse_races.log",
+      "destination": "events/keyboard_mouse_races.log",
+      "sha256": "71b1b210123d0fd0ec1437acc60392b478afc6b76f2065f0a976e3dcb5373a1f"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_mouse_races_results.json",
+      "destination": "events/keyboard_mouse_races_results.json",
+      "sha256": "88a37ce3ec1675915de4c0cb3115545fc6e4eac21a55991158be3843f3a13da1"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_navigation.log",
+      "destination": "events/keyboard_navigation.log",
+      "sha256": "ba00fd743f235926f3a306dc85bc0d64573d71699669ef995b9863350fbef993"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_navigation_results.json",
+      "destination": "events/keyboard_navigation_results.json",
+      "sha256": "c529b708b6fd8e27699fe2e58b63c0ec15ec64d011819b5004a73dab450943e2"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_source_before.txt",
+      "destination": "events/keyboard_source_before.txt",
+      "sha256": "9cbcdc6ab67ccfa57c79fc831f1e96a42046cf3f570a41b209d9abcada679c9b"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_transition_guards.log",
+      "destination": "events/keyboard_transition_guards.log",
+      "sha256": "63500898ad7b4ff784badc9b8bf06772a0478d1abbdbf46b1ac80c85c77e7e03"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/final_events/keyboard_transition_guards_results.json",
+      "destination": "events/keyboard_transition_guards_results.json",
+      "sha256": "fe26ed13f852fd4a5a3ebbe8b2a694b4c76a05f640e1fe3dad073a90b5b01d49"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/tests/context_help_audit/summary.json",
+      "destination": "context_help_summary.json",
+      "sha256": "3a85297a77a2e283703ffe78d1cde5424501b58fedfaefc808b2630d693dc014"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/tests/context_help_audit/behavior.json",
+      "destination": "context_help_behavior.json",
+      "sha256": "bc58903c2321ef520de5ccf9ce7ef96a1c82d3e6a895d6071f37939154187fd0"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/tests/context_help_audit/layout.json",
+      "destination": "context_help_layout.json",
+      "sha256": "5940d87691ba2fde7d358c48d2541706c28ff696a005af070a76a4a333ce268d"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/tests/hint_ui_audit_summary.json",
+      "destination": "hint_ui_summary.json",
+      "sha256": "d778d5499406daeb258c89c97e20f7e8c3dd9f21f9eb7decbab989d01e2b64f8"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/tests/font_coverage_v2.json",
+      "destination": "font_coverage_v2.json",
+      "sha256": "d56f249de5050c199811ffd38801fd90053a7041ea1ffc23efd524c5cf69f9ec"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/tests/save_migration_v2.json",
+      "destination": "save_migration_v2.json",
+      "sha256": "60cd8fd28a8ff59a952731caf8245a4d1b6e3097a70c7db860a1229fa9c01c6a"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/manifest.json",
+      "destination": "resume/manifest.json",
+      "sha256": "b14f992d0510c83e85912e9e70d2e78b4a726e9554705096003ba3b8447952d3"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/cap.json",
+      "destination": "resume/cap.json",
+      "sha256": "8da6a596163ac6e44f1cd5da69fab5e98bbad180cb27526401e19f080388a011"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/cap.log",
+      "destination": "resume/cap.log",
+      "sha256": "1ef7572d303a823fed17a52b45f53cacd11a54957eaebd056fede82d1d77aa75"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/storage.json",
+      "destination": "resume/storage.json",
+      "sha256": "e9882b44baf97b0f9f08421e0fb667452c027243fde0661f1abb407e9c4cebd1"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/storage.log",
+      "destination": "resume/storage.log",
+      "sha256": "2835691cad9492a6747ec51a9f880c8b63120cc6a93cbd838282d3f42ab0ec83"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/lifecycle.json",
+      "destination": "resume/lifecycle.json",
+      "sha256": "f354da04c84f67256a72d76edab1ec9441dc65c08ce869cc908fe94690737cfa"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/lifecycle.log",
+      "destination": "resume/lifecycle.log",
+      "sha256": "1f23d1cb74b9901303731bef78d564c24548b95fee199b9886879672f5a8732d"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/restart_writer.json",
+      "destination": "resume/restart_writer.json",
+      "sha256": "5cfc21e005fc793a978f8f3bb778681c057159a547b286991e77827d96c65f25"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/restart_writer.log",
+      "destination": "resume/restart_writer.log",
+      "sha256": "86b6dd8b895325784ce58364a41fd444de33b9ba859e5422b3d7be6c2a4e5680"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/restart_reader.json",
+      "destination": "resume/restart_reader.json",
+      "sha256": "2675071df5039270083e76dbcbc0ae00e1f6bc216ef19fe1f8df713fabf303ae"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/restart_reader.log",
+      "destination": "resume/restart_reader.log",
+      "sha256": "4602711fbce8dfacaa12ea68635687bf92181692cdeecd4bbe8f8c6aad468a87"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/future_progress.json",
+      "destination": "resume/future_progress.json",
+      "sha256": "0ed4221738dddab23e86e7202f74601b11cb2eda9bcefef35ca9cebfa98bea52"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/future_progress.log",
+      "destination": "resume/future_progress.log",
+      "sha256": "2f91ba73c93af91a8242dca5d92c596022e6e7b2888a74aefb539bc80adf1265"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/exit_failure_dispatch.json",
+      "destination": "resume/exit_failure_dispatch.json",
+      "sha256": "cfe402d7b7d0f755dde5ae4f833bba6769caa45f3f1d10c4e501e45b3c7bbb40"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/exit_failure.log",
+      "destination": "resume/exit_failure.log",
+      "sha256": "aeb8eff19439a81c74475b9e6f586fb1038cf22d77548b40817d457394244ffb"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/schedule.json",
+      "destination": "resume/schedule.json",
+      "sha256": "b68e32a9a9a10fd9a69a2cb12104b9d38c7e936f9ce41a25ac85b757fc7c3b53"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/schedule.log",
+      "destination": "resume/schedule.log",
+      "sha256": "7f9fa681064667db0f2644265c736c34c19c1d33792895540324c203f18df4f7"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/layout.json",
+      "destination": "resume/layout.json",
+      "sha256": "228fa0ab6610a79b1d8cf08dd25d3b1642216837ac468cc9fe86057a43cd450e"
+    },
+    {
+      "source": "[workspace]/fourfold_next/keyboard_navigation/qa/resume_audit/20261023T173030.335831Z/layout.log",
+      "destination": "resume/layout.log",
+      "sha256": "46432d02a9f50f5deff2d373e35eaef755d79c3b18d821c2f77107883d7f7e91"
+    }
+  ],
+  "scope": "Explicit final-author text evidence only. Do not copy qa or fixture trees, userdata, caches, wip snapshots. Production-native PNGs/results live separately at qa/production_native and independent report remains separately attributed."
+}

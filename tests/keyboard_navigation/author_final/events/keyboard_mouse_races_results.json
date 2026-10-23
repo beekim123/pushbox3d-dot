@@ -1,0 +1,6 @@
+{
+  "checks": 17,
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "scope": "Injected mouse motion/button and keyboard events; one explicit grab_focus fixture tests deferred owner precedence, not a claimed mouse event."
+}

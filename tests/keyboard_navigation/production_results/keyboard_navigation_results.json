@@ -1,0 +1,6 @@
+{
+  "checks": 363,
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "scope": "Real Input.parse_input_event key down/up/echo in isolated QA XDG; direct setup explicitly used for locked/unlocked and exceptional state fixtures. Native GUI inspection not included."
+}

@@ -1,0 +1,25 @@
+test_campaign_first_twenty (test_macro_independent_v2.MacroDifferentialV2.test_campaign_first_twenty) ... ok
+test_seeded_mixed_mechanics (test_macro_independent_v2.MacroDifferentialV2.test_seeded_mixed_mechanics) ... ok
+test_all_shipped_levels_exact_optimal_replay (test_solver.SolverTests.test_all_shipped_levels_exact_optimal_replay) ... ok
+test_arrow_restricts_player_and_box_entry (test_solver.SolverTests.test_arrow_restricts_player_and_box_entry) ... ok
+test_budget_not_unsolvable (test_solver.SolverTests.test_budget_not_unsolvable) ... ok
+test_glide_stops_at_first_ordinary_cell (test_solver.SolverTests.test_glide_stops_at_first_ordinary_cell) ... ok
+test_glide_stops_before_obstacle (test_solver.SolverTests.test_glide_stops_before_obstacle) ... ok
+test_illegal_replay (test_solver.SolverTests.test_illegal_replay) ... ok
+test_macro_matches_full_step_reference (test_solver.SolverTests.test_macro_matches_full_step_reference) ... ok
+test_overlap_rejected (test_solver.SolverTests.test_overlap_rejected) ... ok
+test_player_does_not_glide (test_solver.SolverTests.test_player_does_not_glide) ... ok
+test_portal_occupied_exit_rejects_whole_push (test_solver.SolverTests.test_portal_occupied_exit_rejects_whole_push) ... ok
+test_portal_resolves_once (test_solver.SolverTests.test_portal_resolves_once) ... ok
+test_pressure_pre_state_and_final_closure (test_solver.SolverTests.test_pressure_pre_state_and_final_closure) ... ok
+test_single_push (test_solver.SolverTests.test_single_push) ... ok
+test_terrain_disables_unsound_static_deadlock_pruning (test_solver.SolverTests.test_terrain_disables_unsound_static_deadlock_pruning) ... ok
+test_two_crates_and_pruning_equivalence (test_solver.SolverTests.test_two_crates_and_pruning_equivalence) ... ok
+test_unsolvable_corner (test_solver.SolverTests.test_unsolvable_corner) ... ok
+test_unsupported_rule_rejected (test_solver.SolverTests.test_unsupported_rule_rejected) ... ok
+test_won_initially (test_solver.SolverTests.test_won_initially) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 5.903s
+
+OK

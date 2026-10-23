@@ -1,0 +1,8 @@
+{
+  "activation": "space",
+  "actual_finish_exit_started": true,
+  "checks": 4,
+  "failures": [],
+  "main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "scope": "Independent explicit unsaved-exit selection in a separate QA-isolated process; launcher also checks real process exit code."
+}

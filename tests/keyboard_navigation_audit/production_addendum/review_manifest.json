@@ -1,0 +1,15 @@
+{
+  "reviewed_utc": "2026-10-23T17:45:13Z",
+  "production_main_sha256": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+  "frozen_audit_sha256": "f379097a67a4279c1399d73af5556822663c9170ed10e4b5c7091bc9161e2fa4",
+  "production_results_sha256": "9afeabe54a4a560fbe4c53af7cc9b3081dfd14fde7449684a354ef64ef2cb69c",
+  "inspected_pngs": {
+    "title.png": "27e1a86ba231205e4193f26143ba9af7a4856d288dc7d98f70a2c01561a59384",
+    "help.png": "46f3d803a1d4cef9004c787368ac820640f7ca826d47d0b7f2f05c9fdb9e783f",
+    "failed_exit.png": "f24cda71f9f3016bcc80d191a58e1d98f5bb7fb4800f7c6e739f94c5753036fd"
+  },
+  "visual_review": "pass: visible/unclipped focus rings and final title menu-key copy; semantic comparison only",
+  "safe_return": "author production capture asserts exit_pending=false, modal=null, unchanged state, focus=null; failures empty",
+  "input_provenance": "production capture uses Input.parse_input_event in rendered X11 project; not desktop CUA or physical keyboard",
+  "full204_gate": "pending root-run result at this addendum; not inferred from screenshot success"
+}
