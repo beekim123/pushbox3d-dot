@@ -540,6 +540,7 @@ func undo_move() -> void:
 	sfx("undo")
 	update_hud()
 	if status_label: status_label.text="已撤销。你可以一直回到这道谜题的最初。"
+	if RULES.won(level,state): complete_level(false)
 
 func reset_level() -> void:
 	if exit_pending or mode!="level": return
@@ -554,16 +555,30 @@ func reset_level() -> void:
 	update_hud()
 	if status_label: status_label.text="已重置。按 Z 可撤销这次重置，恢复刚才的局面。"
 
-func complete_level() -> void:
-	if win_shown: return
-	win_shown=true
-	world.play_animation("celebrate")
-	sfx("win")
-	if level.id not in progress.solved: progress.solved.append(level.id)
+func complete_level(feedback: bool=true) -> void:
+	if mode!="level" or not RULES.won(level,state): return
+	# Ordinary movement respects a dismissed result; explicit restores reopen it.
+	var show_result:=not win_shown or not feedback
+	# Register a genuine endpoint even when its animation was interrupted.
+	# Reopening an already-recorded result must not replay its side effects.
+	var changed:=false
+	if level.id not in progress.solved:
+		progress.solved.append(level.id)
+		changed=true
 	var old_best: Dictionary=progress.best.get(level.id,{})
 	if old_best.is_empty() or state.pushes<int(old_best.get("pushes",99999)) or (state.pushes==int(old_best.get("pushes",99999)) and state.moves<int(old_best.get("moves",99999))):
 		progress.best[level.id]={"moves":state.moves,"pushes":state.pushes}
-	save_progress()
+		changed=true
+	if changed: save_progress()
+	if not win_shown and (feedback or changed):
+		world.play_animation("celebrate")
+		sfx("win")
+	win_shown=true
+	if show_result: show_completion_panel()
+
+func show_completion_panel() -> void:
+	if mode!="level" or exit_pending or shutting_down or not RULES.won(level,state): return
+
 	var v:=open_modal("线头接上了",str(level.name)+" · %d 步 / %d 推"%[state.moves,state.pushes])
 	v.add_child(wrapped("这段路已经记在织机里。你可以继续前行，也可以撤销最后一步，再试一种走法。",510,20))
 	var list: Array=levels_by_world[active_world]
@@ -613,7 +628,12 @@ func show_help() -> void:
 		exercise.set_meta("chapter_exercise",true)
 		v.add_child(exercise)
 	v.add_child(wrapped("方向键 / WASD：移动与推动\nZ / Backspace：无限撤销\nR：重置本关（重置本身也可撤销）\nEsc：关闭弹窗 / 返回选关\nM：切换声音\nH：线索开关；J：主动展开下一层\nF2：精细 / 轻量画质（软件渲染器自动轻量）\n\n只有铺路格可以移动，草地与边缘园景不是可走的格子。\n把所有箱子推到发光目标上，即可完成谜题。只能推，不能拉；一次只能推动一只箱子。",510,20))
-	v.add_child(UI.button("明白了",close_modal,Vector2(510,54)))
+	v.add_child(UI.button("明白了",dismiss_help,Vector2(510,54)))
+
+func dismiss_help() -> void:
+	if not is_instance_valid(modal) or not modal.get_meta("contextual_help",false): return
+	close_modal()
+	if mode=="level" and RULES.won(level,state): complete_level(false)
 
 func show_ending() -> void:
 	var v:=open_modal("远方，都成了家的颜色","四束线穿过云、焰、叶与桥，终于在中庭相遇。")
@@ -657,7 +677,9 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		KEY_Z,KEY_BACKSPACE: undo_move()
 		KEY_R: reset_level()
 		KEY_ESCAPE:
-			if modal: close_modal()
+			if modal:
+				if modal.get_meta("contextual_help",false): dismiss_help()
+				else: close_modal()
 			elif is_instance_valid(hint_panel): invalidate_hint()
 			elif mode=="level": show_world_menu(active_world)
 			elif mode=="world": show_hub()
@@ -869,7 +891,8 @@ func integration_test() -> void:
 				undo_move()
 				checks+=1
 				if state!=before_reset or history.size()!=before_history: failures+=1
-				if RULES.won(level,state): complete_level()
+				checks+=1
+				if RULES.won(level,state) and (not win_shown or modal==null): failures+=1
 		checks+=3
 		if not RULES.won(level,state): failures+=1
 		if entry.id not in progress.solved: failures+=1
@@ -1081,7 +1104,7 @@ func continue_checkpoint() -> void:
 	resume_session.dirty=false
 	resume_session.status="available"
 	refresh_resume_ui()
-	if RULES.won(level,state): complete_level()
+	if RULES.won(level,state): complete_level(false)
 
 func request_exit() -> void:
 	if shutting_down: return
@@ -1123,5 +1146,5 @@ func cancel_exit() -> void:
 	close_modal()
 	mode=exit_previous_mode
 	# A stopped win tween must still reconcile its committed logical endpoint.
-	if mode=="level" and RULES.won(level,state) and not win_shown: complete_level()
+	if mode=="level" and RULES.won(level,state): complete_level(false)
 	refresh_resume_ui()

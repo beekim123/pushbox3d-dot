@@ -1,4 +1,4 @@
-# 仓库迁入状态 · F1 情境帮助生产源码检查点
+# 仓库迁入状态 · 完成态呈现修复源码检查点
 
 **V2 WIP；本提交不是完整可运行发行包，也不表示美术已获用户验收。**
 
@@ -21,3 +21,11 @@
 - 原生WASD持有与6图像素查看结果已保存文本；physical-arrow/OS autorepeat限制详见 `tests/context_help_audit/REPORT.md`，图片仍未入库。
 - 运行源和证据冻结清单见 `CONTEXT_HELP_SOURCE_CHECKPOINT.json`；完整原始布局与原生输入文本记录已保存。
 - 上方47/62、0/18、0/6的远程资源缺口仍未解决。新14:57续玩完整包是独立恢复档，不代表GitHub补齐资产，也不含本阶段F1。
+
+
+## 当前新增：完成态呈现修复（2026-10-23 15:55 UTC）
+
+- 完成登记与呈现分离；Undo胜局恢复、帮助/退出返回协调，不重复反馈或成绩登记，常规移动不重开Esc已关闭面板。运行仅main.gd变化。
+- 独审3,187断言、另计920键＋12鼠标事件，4图本地查看；新全204处理器8,056/0、exit0，源hash稳定。证据 `tests/completion_reconcile_audit/` 与 `tests/results/completion_state_handlers.json`。
+- 前述47/62、0/18、0/6缺口未变，PNG未上传。完整续玩归档不含此修复；本提交仍不能当作完整可运行发行包。
+- 生产清单/包装说明见 `COMPLETION_SOURCE_CHECKPOINT.json`；保留独立WIP和所有前阶段证据，不把旧报告覆盖成新结果。

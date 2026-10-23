@@ -67,3 +67,12 @@ CPU软件渲染器的结果不等于Mac/GPU性能；未做真人谜题盲测、�
 - 独审在最终类型守卫源码上另行真实X11高画质重拍并亲看6图：`screenshots/context_help_audit/`，包括city_04、heaven_13、city_06、confluence_01、title_generic、world_stale_level，全部1440×900。选关保留旧level对象时exercise_count仍为0，六图无裁切。证据 `tests/context_help_audit/native_manifest.json`；保留作者首版4图但不混称最终hash截图。
 - 本阶段最终源码另行新跑全204关真实处理器：7852检查、204完成、0失败、退出0，无ERROR/WARNING/泄漏；全部运行源码、关卡与project前后SHA一致。证据 `tests/results/context_help_handlers.json`、`.log`，JSON含源指纹。该回归带混音、QA关闭续玩sidecar，因此证明原玩法无回归，不能替代续玩/帮助生命周期专项；不是复用上一阶段7852。Linux/X11与当前1440×900目标以外的平台、Retina、小窗口尚未验证。
 - 额外原生窗口输入探针：WASD A产生真实physical_keycode=65，跨关闭帮助按住1273ms、21个held/guard/moves=0采样；释放后新a只走1步。独立证据 `tests/context_help_audit/native_hold_wasd.json`。原生Left由CUA产生physical_keycode=0，不能据此验证原生箭头held状态；两次探针无echo，不声称OS自动重复已测。方向键与echo覆盖来自上面的Input.parse_input_event行为测试，不能混称原生硬件验收；此额外探针不重复计入2889断言。
+
+## 完成态协调：最终增量验证
+- 首版编辑器导入无ERROR。作者实际Input.parse_input_event小回归14检查通过：首次赢局tween未结束时同帧R→Z恢复并真正登记、已登记胜局R→Z、F1→Esc恢复Next、状态/历史/进度不变、未赢/非关卡呈现守卫，以及主动Esc收起后普通行走不重弹（显式Undo恢复胜局仍重开）。证据 `tests/completion_reconcile.gd`、`tests/results/completion_reconcile.log`。
+- 原全量harness中undo后手动调用complete_level的修补已删除，改为断言undo实际handler已经协调；未用测试代码代替游戏修复。最终候选main b529ffb5版本新全量真实处理器已完成：8056检查、204关、0失败、退出0，日志无ERROR/WARNING/泄漏，全部运行源前后SHA一致。较前阶段多204个真实协调断言；证据 `tests/results/completion_state_handlers.json`、`.log`。带混音、QA关闭续玩sidecar，因此不替代续玩功能测试。独立副作用/恢复边界及图形审查结果如下。
+
+- 最终独审：298完成专项＋193帮助行为＋2696布局＝3187断言，0失败；920个引擎键事件、12个完成专项鼠标事件（不重复计入断言），全204关加非棋局共208布局状态。证据 `tests/completion_reconcile_audit/REPORT.md`、`FINAL_SUMMARY.json`、各分项JSON/日志；源码前后锁定main b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e。
+- 独审确认：首次pending赢局R→Z登记一次；已记胜局恢复、帮助重开无额外save调用/win声音/celebrate动画；真实更优重玩仍更新best；直接Esc后普通走动不重弹；提前关闭help后旧tween不重换面板；末关回中庭、真实resume磁盘往返、退出返回均通过。保存spy统计实际handler调用，但QA不写主进度；这不冒充多平台磁盘写入测量。
+- 最终真实X11高画质1440×900四图已独立亲看无裁切：`screenshots/completion_reconcile_audit/` 下 pending_win_reset_undo、help_returns_next、dismissed_result_exploration、final_world_help_returns_hub。输入为真实图形窗口内Input.parse_input_event，不宣称硬件键盘操作；像素查看与capture成功分开记在visual_review及FINAL_SUMMARY。
+- 本阶段最终源码字体扫描仍为532汉字＋7符号，missing=[]，见 `tests/results/completion_state_font.log`。Mac/Retina、小窗口与普通全通庆典帮助返回未在此阶段扩展验证。

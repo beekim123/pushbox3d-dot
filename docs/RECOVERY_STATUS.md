@@ -1,5 +1,35 @@
 # Cloud interruption and recovery record
 
+## Completion-state repair source checkpoint — 2026-10-23 15:55 UTC
+
+This main checkpoint now repairs completion presentation after winning Reset/Undo,
+help dismissal, resume and exit-return transitions. Registration and presentation
+are separate; repeated feedback/score registration is avoided, and ordinary
+movement respects an Esc-dismissed panel. Only runtime main.gd changed from the
+F1 checkpoint `ccaac85ccd811297176b52c69dca127963835732`. Its final SHA-256 is
+`b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e`.
+
+Fresh evidence: 3,187 independent assertions (298 completion + 193 help behavior +
+2,696 help layout), with 920 engine key events and 12 mouse events counted separately;
+four final native 1440×900 images were viewed locally. The corrected audit runner
+was fully rerun. The new original-handler regression completed all 204 levels with
+8,056 checks, zero failures, exit 0; author focused checks passed 14. These are scoped
+new results, not previous stage totals relabeled. Full source/test locks and limits
+are under `tests/completion_reconcile_audit/`.
+
+WIP history is preserved through `a2063ffd584acdff1cfac6932f94f3a95383e1bd`. Neither
+WIP nor the separate orchard prototype is merged into this production tree. The
+14:57 resume archives listed below remain useful recovery fallbacks but do not
+contain F1 or this completion repair. No new complete archive is claimed here.
+
+Remote binary migration remains 47/62 GLB, 0/18 audio, 0/6 Blender sources; these
+new screenshots also remain unuploaded. The unresolved binary confirmation was not
+retried or bypassed. This is not a complete runnable remote release or user art
+approval. Repository-only documentation additions after author freeze are recorded
+in `COMPLETION_SOURCE_CHECKPOINT.json`; all previous incident history is retained.
+
+---
+
 ## Latest source checkpoint and newer recovery archives — 2026-10-23 15:32 UTC
 
 The F1 contextual-help integration is now in this main source checkpoint: chapter
