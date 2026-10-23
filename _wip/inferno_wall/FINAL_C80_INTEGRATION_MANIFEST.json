@@ -1,0 +1,282 @@
+{
+  "milestone": "FINAL C0.80 inferno wall kit \u2014 never use earlier A delivery_manifest.json",
+  "candidate_root": "/workspace/scratch/e4cad742399c/fourfold_next/inferno_wall/wall_review/height_variant_c80",
+  "production_modified_by_author": false,
+  "status": "Root-selected C0.80; final independent report binds this manifest separately before integration.",
+  "core_allowlist": [
+    {
+      "source": "/workspace/scratch/e4cad742399c/fourfold_next/inferno_wall/wall_review/height_variant_c80/blender/rebuild_worlds_v2.py",
+      "production_relative_path": "blender/rebuild_worlds_v2.py",
+      "before_sha256": "32d94d5b5ad3d9c85145cabd608632ed91834bcd29adeb6fa456709ecef8ee4c",
+      "after_sha256": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+      "bytes": 38601
+    },
+    {
+      "source": "/workspace/scratch/e4cad742399c/fourfold_next/inferno_wall/wall_review/height_variant_c80/blender/inferno_v2.blend",
+      "production_relative_path": "blender/inferno_v2.blend",
+      "before_sha256": "6e380b66cbf4933d5753e76ab6107e5c9a531545d34d0a2ad36dee812cd79e2b",
+      "after_sha256": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+      "bytes": 374077
+    },
+    {
+      "source": "/workspace/scratch/e4cad742399c/fourfold_next/inferno_wall/wall_review/height_variant_c80/assets/models/inferno_wall.glb",
+      "production_relative_path": "assets/models/inferno_wall.glb",
+      "before_sha256": "65d4d3d4f3181a39e02cba369cd2977a1ba8b8e45c0223adaa8b483bbb7ca6df",
+      "after_sha256": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+      "bytes": 22696
+    },
+    {
+      "source": "/workspace/scratch/e4cad742399c/fourfold_next/inferno_wall/wall_review/height_variant_c80/assets/models/inferno_wall_b.glb",
+      "production_relative_path": "assets/models/inferno_wall_b.glb",
+      "before_sha256": "cb8e4817a79281a1c861cb498d2f8ebb1f4edf2aaf1d3c1cd797c0884913add7",
+      "after_sha256": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7",
+      "bytes": 77684
+    }
+  ],
+  "recommended_metadata_allowlist": [
+    {
+      "source": "/workspace/scratch/e4cad742399c/fourfold_next/inferno_wall/wall_review/height_variant_c80/blender/v2_inferno_stats.json",
+      "production_relative_path": "blender/v2_inferno_stats.json",
+      "before_sha256": "0f73451716febc57806235e40fb2b2f2e22bafb8923e58a3f4541c60df37bdf1",
+      "after_sha256": "f2ad48875a81f1bff075bc39df2913482287d1f22cdad3733d02febaa65e12a8",
+      "bytes": 1327
+    }
+  ],
+  "capture_build_pin": {
+    "method": "Exact C0.80 source/blend/two-GLB SHA observed before final captures and reverified afterward. Final capture project never rebuilt after freeze; semantic rebuild only in final_rebuild_probe. Blender final previews opened source read-only without saving.",
+    "before": {
+      "blender/rebuild_worlds_v2.py": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+      "blender/inferno_v2.blend": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+      "assets/models/inferno_wall.glb": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+      "assets/models/inferno_wall_b.glb": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7"
+    },
+    "after": {
+      "blender/rebuild_worlds_v2.py": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+      "blender/inferno_v2.blend": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+      "assets/models/inferno_wall.glb": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+      "assets/models/inferno_wall_b.glb": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7"
+    }
+  },
+  "scope_decision": "Root deliberately relaxed original0.63 height and full-decorative-symbol visibility gates; selected0.80 preserves original X/Z footprint and A plan/materials, increases lower-course thickness only. B0.88 rejected for core ring blockage. User did not require old height or every decorative surface visible.",
+  "accepted_tradeoff": "No sampled gold-ring/portal/legal-center blockage; additional partial ivory locator-tooth clipping is accepted cosmetic cost. Not zero occlusion; finite samples are not pixel area.",
+  "qa_bundle_root": "/workspace/scratch/e4cad742399c/fourfold_next/inferno_wall/wall_review/final_delivery",
+  "qa_bundle_files": {
+    "README.md": {
+      "sha256": "2119e1cda5fe83b997aac67df786962c4ab3c1d166ab6f222db73f57a8ecb7c0",
+      "bytes": 5881
+    },
+    "evidence/blender/blender_before_lineup.png": {
+      "sha256": "6809d38fde7752a4b85d42ad479d15fa5b397b99ba02a70cc1d21102f38e0f1f",
+      "bytes": 1325871
+    },
+    "evidence/blender/blender_before_scene.png": {
+      "sha256": "8ff8b362b3a85b44cb6782224869a1a62ed50c1b1e9c14fde5d2d40766333ba2",
+      "bytes": 1462202
+    },
+    "evidence/blender/blender_final_lineup.png": {
+      "sha256": "ea456c510f23787f18f852c9221f07cff65f339595e295af508431467fdd6819",
+      "bytes": 1338071
+    },
+    "evidence/blender/blender_final_scene.png": {
+      "sha256": "45b1ab4e7a7e7a6f81fe4274062b67ff8afe98cdcc09b4aff1675046438e5a66",
+      "bytes": 1466900
+    },
+    "evidence/native_after/capture_manifest.json": {
+      "sha256": "7ec51b1b69556e37b7d3a4fff0798fca715945b9aa076ce219051b50f3a07dc6",
+      "bytes": 10455
+    },
+    "evidence/native_after/inferno_10_high.png": {
+      "sha256": "32b5fb37c0c44e1928588193b872f9ec26a6de4ea8ee2676bd4b8e762c1ba0d1",
+      "bytes": 338394
+    },
+    "evidence/native_after/inferno_10_low.png": {
+      "sha256": "0ab27e16ea92ae8316e9c3bbe55a5a3d7f6429ad10a31003e1703c9479ef7d4d",
+      "bytes": 340866
+    },
+    "evidence/native_after/inferno_23_high.png": {
+      "sha256": "2875eb3de87f3bad53cd997a42cde9e10e43a51ac7b766f373f7ac63646d7224",
+      "bytes": 368270
+    },
+    "evidence/native_after/inferno_23_low.png": {
+      "sha256": "a4a016c9c354b33a64d9f0f8d047b9cb7305a971acfffbd1f18f80443b9ddd09",
+      "bytes": 373770
+    },
+    "evidence/native_after/inferno_45_high.png": {
+      "sha256": "1714117215e94c2b8f5e214abda1944f91097df229c7a5dc749cd835145a33a5",
+      "bytes": 386669
+    },
+    "evidence/native_after/inferno_45_low.png": {
+      "sha256": "6795bdab65c42a05514a945f19d64153c48bf34bad8d8e289e5856acbb1e846f",
+      "bytes": 390688
+    },
+    "evidence/native_before/capture_manifest.json": {
+      "sha256": "c606bfaffb52072907db7a4d4c809a72533e2d6064cef3d74251d7808824872e",
+      "bytes": 10457
+    },
+    "evidence/native_before/inferno_10_high.png": {
+      "sha256": "b7ab7c55c3cc37dfbb491977c878abc6bcc7beea4949ca9bc3c3e12971e01bca",
+      "bytes": 333783
+    },
+    "evidence/native_before/inferno_10_low.png": {
+      "sha256": "6d6200f6c1ff941a2d6d669b523439e2d271fa6638fb899f959bc9c5100a6bf5",
+      "bytes": 342530
+    },
+    "evidence/native_before/inferno_23_high.png": {
+      "sha256": "7cdeba05207b2330a69863adf4bcac50977a2997a2e7d1d4e9ac60c32f39b17c",
+      "bytes": 362970
+    },
+    "evidence/native_before/inferno_23_low.png": {
+      "sha256": "a6d84cf6a7f13e94022a696c46130685906ae7302bc195cdb6ce417468f00b9a",
+      "bytes": 374000
+    },
+    "evidence/native_before/inferno_45_high.png": {
+      "sha256": "fffef2a81f7b84a8e9225fd3e58cb92178ce7f13697d2b3433fbdd1811253c68",
+      "bytes": 379666
+    },
+    "evidence/native_before/inferno_45_low.png": {
+      "sha256": "7931971337d4113ad52a8e9d23809ac97d9b034d80cada4deb41f0ff4153fd63",
+      "bytes": 392241
+    },
+    "qa/audit_final_c80.py": {
+      "sha256": "610f7d7b373a3cc61743f7aa87984db5b60efcc05cd08181c51b56652e1c7f4b",
+      "bytes": 6065
+    },
+    "qa/native_capture.gd": {
+      "sha256": "35701847b9f94689add9b26178d5e9c806ba5f643c44ec446abb8715c1de1b1c",
+      "bytes": 4390
+    },
+    "qa/native_capture_23.gd": {
+      "sha256": "3d6dbaba42fd6840cac81dce951bda78cffcf926e2862fb7438a2f8c7d5034fd",
+      "bytes": 4358
+    },
+    "qa/render_wall_compare.py": {
+      "sha256": "6a1763501699aef53a9e10d1f90b2fdf6fae606e91457042ab3dbc37bd8da6dd",
+      "bytes": 1128
+    },
+    "qa/run_native_capture.sh": {
+      "sha256": "2dbedd0b10b93638862ac124088b5681e95929f3633cf012400e7d2fbb1bbce5",
+      "bytes": 1002
+    },
+    "qa/semantic_glb_compare.py": {
+      "sha256": "44cf872bc7c985bd467f9b3657a361482cefa2be909992b73e1d4c1e3c8a149a",
+      "bytes": 2534
+    },
+    "qa/wall_occlusion_refined.gd": {
+      "sha256": "efb7ce9d57160c325b77314c8ce66eef0c0f2b01077dd4e5a27484f0710fa6f5",
+      "bytes": 4783
+    },
+    "qa/wall_occlusion_surfaces.gd": {
+      "sha256": "0ac98cc7d2aa78374d306fe9b1657a50d55579f50afdfbd85cd2577e9ea867b9",
+      "bytes": 6540
+    },
+    "qa/wall_portal_sweep.gd": {
+      "sha256": "a0c39ba7bc6b84bec2dab3b42bf6f587949369b897dbd43641e7dd989b4af2c4",
+      "bytes": 5207
+    },
+    "reports/FINAL_C80_VALIDATION.json": {
+      "sha256": "7174ac68c7a8242c96673675e1543243cae59dd239faa981051934c8d1378d93",
+      "bytes": 7375
+    },
+    "reports/baseline_asset_runtime_hashes.json": {
+      "sha256": "cb80c56ca6c628723d86e667619f4b149fef8a40f500dfc16ef03b27bec5ca94",
+      "bytes": 8900
+    },
+    "reports/c80_asset_audit.json": {
+      "sha256": "f76fa52fe701a927c1d02bd0c79d862fe4c66416ce252b74e2a77c0b6ae1ebef",
+      "bytes": 18529
+    },
+    "reports/c80_asset_audit.log": {
+      "sha256": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf",
+      "bytes": 59
+    },
+    "reports/c80_camera_fit.log": {
+      "sha256": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+      "bytes": 108
+    },
+    "reports/c80_glb_audit.json": {
+      "sha256": "8a0f1bffe10adbf38cc4fe9169d7495c88a2610f2d9efa602dce600662f4eb1f",
+      "bytes": 12212
+    },
+    "reports/c80_glb_audit.log": {
+      "sha256": "2890dc2c03fb267c36a6d3c882928e0218faf1aa8419251de4b356bd674c73dc",
+      "bytes": 300
+    },
+    "reports/c80_occlusion_refined.json": {
+      "sha256": "92829479e6f714054aef812c76c3c89b397d7664980f3246147c2de935105713",
+      "bytes": 17539
+    },
+    "reports/c80_occlusion_surfaces.json": {
+      "sha256": "093895793db5040df6d04dd01ac974135e801748637d319acacdd05faa82c200",
+      "bytes": 1241574
+    },
+    "reports/c80_plan_comparison.json": {
+      "sha256": "a085fc8ff0826cf14fab623aa7a0691426d00ce65bd97fe6119f943d96fa2c26",
+      "bytes": 345
+    },
+    "reports/final_portal_sweep.json": {
+      "sha256": "b7df38eb82070bc02953087d7cb9311bef40aead4043da20eec69bd83c880611",
+      "bytes": 17263
+    },
+    "reports/final_portal_sweep.log": {
+      "sha256": "ed75449ea07e6b3609f9b4d9ad13dd413af9fc95f0bee66236733a4724db1610",
+      "bytes": 311
+    },
+    "reports/final_semantic_wall.json": {
+      "sha256": "14bbb5081b2f43b35343eba9f3a56217c79dbfb8b8417e03877e703498acb6ca",
+      "bytes": 691
+    },
+    "reports/final_semantic_wall_b.json": {
+      "sha256": "002f0166554931caa56264c682c5f58bb28a97cbb26baa172b55db665adbcce8",
+      "bytes": 693
+    },
+    "reports/frozen_core_hashes.json": {
+      "sha256": "f4841659917c833c6f0641a1908f28cdba2c7fdd7c692288ec97294418f21c34",
+      "bytes": 954
+    },
+    "reports/native_before_23_capture_manifest.json": {
+      "sha256": "dd4abc745bf8a6da664eb12afb3d8956c0ac11bb7c80f9ccf7a7df36411ee0f1",
+      "bytes": 3463
+    },
+    "reports/native_before_capture_manifest.json": {
+      "sha256": "4997ab7938a0bf67b914fa4da485f846b27a7f26b3e4b495ca6223c690713c45",
+      "bytes": 6995
+    },
+    "reports/native_final_23_capture_manifest.json": {
+      "sha256": "db2dd6b0d531006b8ff22bf9ea0f841cd7e156cd37023595dba6f370901dbf78",
+      "bytes": 3463
+    },
+    "reports/native_final_capture_manifest.json": {
+      "sha256": "475d4256d50290be4d483b421998c2ed7da5e6a25adab2e232165bc2539a7c00",
+      "bytes": 6995
+    },
+    "reports/occlusion_refined_a.json": {
+      "sha256": "99fe90f3f209f007cfac7c9d407074264abfc0ddb7671666b66479e06a04a806",
+      "bytes": 5527
+    },
+    "reports/occlusion_refined_b.json": {
+      "sha256": "7e57037c379ea88f11ee4892adc2aa90dec0d465a116e50186f218305bc104e5",
+      "bytes": 47229
+    },
+    "reports/occlusion_refined_original.json": {
+      "sha256": "113d9aab5e6ebfb9aa5f6507577f30f6d5704354e5c480e99ebf1559ac881823",
+      "bytes": 5528
+    },
+    "reports/occlusion_surface_deltas.json": {
+      "sha256": "c4fcc74c7d3a28a3d8dce67adf8865508a45708cae0e6806170e556ba6d94195",
+      "bytes": 2882
+    },
+    "reports/occlusion_surfaces_a.json": {
+      "sha256": "59a6f9f7bd61a84157af24ea9930ee16fb341de0ccb24ad4dfe64d58c68453e8",
+      "bytes": 130059
+    },
+    "reports/occlusion_surfaces_original.json": {
+      "sha256": "3b0f2e1253371ba45bed0c13f86cd4655e731a5dfabf3285b6c02bcb82abcbd0",
+      "bytes": 219241
+    },
+    "reports/original_wall_geometry.json": {
+      "sha256": "721c1eb5d136f6bc8011e32b5d3f56d4b656432bfeefc8fd18a2c9c9f9045d37",
+      "bytes": 809
+    }
+  },
+  "integration_restrictions": "Root copies only explicitly approved allowlist; preserve all production orchard/runtime/completion changes. No author production writes. No binary Git upload under current constraint. Do not copy the milestone project, variants, baseline project, probes, caches or QA saves."
+}
