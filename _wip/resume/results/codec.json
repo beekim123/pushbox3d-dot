@@ -1,0 +1,6139 @@
+{
+  "checks": 7098,
+  "failures": [],
+  "godot": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "passed": true,
+  "records": [
+    {
+      "actions": 1,
+      "bytes": 335,
+      "decode_ms": 0.249,
+      "decode_slice_max_ms": 0.249,
+      "encode_ms": 0.097,
+      "encode_slice_max_ms": 0.097,
+      "kind": "middle",
+      "level": "heaven_01"
+    },
+    {
+      "actions": 1,
+      "bytes": 335,
+      "decode_ms": 0.222,
+      "decode_slice_max_ms": 0.222,
+      "encode_ms": 0.075,
+      "encode_slice_max_ms": 0.075,
+      "kind": "won",
+      "level": "heaven_01"
+    },
+    {
+      "actions": 2,
+      "bytes": 336,
+      "decode_ms": 0.21,
+      "decode_slice_max_ms": 0.21,
+      "encode_ms": 0.079,
+      "encode_slice_max_ms": 0.079,
+      "kind": "reset_after_win",
+      "level": "heaven_01"
+    },
+    {
+      "actions": 3,
+      "bytes": 337,
+      "decode_ms": 0.236,
+      "decode_slice_max_ms": 0.236,
+      "encode_ms": 0.157,
+      "encode_slice_max_ms": 0.157,
+      "kind": "middle",
+      "level": "heaven_02"
+    },
+    {
+      "actions": 4,
+      "bytes": 338,
+      "decode_ms": 0.407,
+      "decode_slice_max_ms": 0.407,
+      "encode_ms": 0.21,
+      "encode_slice_max_ms": 0.21,
+      "kind": "won",
+      "level": "heaven_02"
+    },
+    {
+      "actions": 5,
+      "bytes": 339,
+      "decode_ms": 0.251,
+      "decode_slice_max_ms": 0.251,
+      "encode_ms": 0.193,
+      "encode_slice_max_ms": 0.193,
+      "kind": "reset_after_win",
+      "level": "heaven_02"
+    },
+    {
+      "actions": 3,
+      "bytes": 337,
+      "decode_ms": 0.285,
+      "decode_slice_max_ms": 0.285,
+      "encode_ms": 0.114,
+      "encode_slice_max_ms": 0.114,
+      "kind": "middle",
+      "level": "heaven_03"
+    },
+    {
+      "actions": 5,
+      "bytes": 339,
+      "decode_ms": 0.311,
+      "decode_slice_max_ms": 0.311,
+      "encode_ms": 0.156,
+      "encode_slice_max_ms": 0.156,
+      "kind": "won",
+      "level": "heaven_03"
+    },
+    {
+      "actions": 6,
+      "bytes": 340,
+      "decode_ms": 0.277,
+      "decode_slice_max_ms": 0.277,
+      "encode_ms": 0.343,
+      "encode_slice_max_ms": 0.343,
+      "kind": "reset_after_win",
+      "level": "heaven_03"
+    },
+    {
+      "actions": 4,
+      "bytes": 338,
+      "decode_ms": 0.284,
+      "decode_slice_max_ms": 0.284,
+      "encode_ms": 0.186,
+      "encode_slice_max_ms": 0.186,
+      "kind": "middle",
+      "level": "heaven_04"
+    },
+    {
+      "actions": 6,
+      "bytes": 340,
+      "decode_ms": 0.292,
+      "decode_slice_max_ms": 0.292,
+      "encode_ms": 0.229,
+      "encode_slice_max_ms": 0.229,
+      "kind": "won",
+      "level": "heaven_04"
+    },
+    {
+      "actions": 7,
+      "bytes": 341,
+      "decode_ms": 0.287,
+      "decode_slice_max_ms": 0.287,
+      "encode_ms": 0.219,
+      "encode_slice_max_ms": 0.219,
+      "kind": "reset_after_win",
+      "level": "heaven_04"
+    },
+    {
+      "actions": 5,
+      "bytes": 339,
+      "decode_ms": 0.294,
+      "decode_slice_max_ms": 0.294,
+      "encode_ms": 0.163,
+      "encode_slice_max_ms": 0.163,
+      "kind": "middle",
+      "level": "heaven_05"
+    },
+    {
+      "actions": 8,
+      "bytes": 342,
+      "decode_ms": 0.389,
+      "decode_slice_max_ms": 0.389,
+      "encode_ms": 0.255,
+      "encode_slice_max_ms": 0.255,
+      "kind": "won",
+      "level": "heaven_05"
+    },
+    {
+      "actions": 9,
+      "bytes": 343,
+      "decode_ms": 0.348,
+      "decode_slice_max_ms": 0.348,
+      "encode_ms": 0.234,
+      "encode_slice_max_ms": 0.234,
+      "kind": "reset_after_win",
+      "level": "heaven_05"
+    },
+    {
+      "actions": 4,
+      "bytes": 344,
+      "decode_ms": 0.296,
+      "decode_slice_max_ms": 0.296,
+      "encode_ms": 0.151,
+      "encode_slice_max_ms": 0.151,
+      "kind": "middle",
+      "level": "heaven_06"
+    },
+    {
+      "actions": 6,
+      "bytes": 346,
+      "decode_ms": 0.327,
+      "decode_slice_max_ms": 0.327,
+      "encode_ms": 0.207,
+      "encode_slice_max_ms": 0.207,
+      "kind": "won",
+      "level": "heaven_06"
+    },
+    {
+      "actions": 7,
+      "bytes": 347,
+      "decode_ms": 0.316,
+      "decode_slice_max_ms": 0.316,
+      "encode_ms": 0.226,
+      "encode_slice_max_ms": 0.226,
+      "kind": "reset_after_win",
+      "level": "heaven_06"
+    },
+    {
+      "actions": 6,
+      "bytes": 346,
+      "decode_ms": 0.327,
+      "decode_slice_max_ms": 0.327,
+      "encode_ms": 0.191,
+      "encode_slice_max_ms": 0.191,
+      "kind": "middle",
+      "level": "heaven_07"
+    },
+    {
+      "actions": 11,
+      "bytes": 352,
+      "decode_ms": 0.401,
+      "decode_slice_max_ms": 0.401,
+      "encode_ms": 0.311,
+      "encode_slice_max_ms": 0.311,
+      "kind": "won",
+      "level": "heaven_07"
+    },
+    {
+      "actions": 12,
+      "bytes": 352,
+      "decode_ms": 0.392,
+      "decode_slice_max_ms": 0.392,
+      "encode_ms": 0.332,
+      "encode_slice_max_ms": 0.332,
+      "kind": "reset_after_win",
+      "level": "heaven_07"
+    },
+    {
+      "actions": 10,
+      "bytes": 351,
+      "decode_ms": 0.405,
+      "decode_slice_max_ms": 0.405,
+      "encode_ms": 0.288,
+      "encode_slice_max_ms": 0.288,
+      "kind": "middle",
+      "level": "heaven_08"
+    },
+    {
+      "actions": 19,
+      "bytes": 360,
+      "decode_ms": 0.503,
+      "decode_slice_max_ms": 0.503,
+      "encode_ms": 0.537,
+      "encode_slice_max_ms": 0.537,
+      "kind": "won",
+      "level": "heaven_08"
+    },
+    {
+      "actions": 20,
+      "bytes": 360,
+      "decode_ms": 0.458,
+      "decode_slice_max_ms": 0.458,
+      "encode_ms": 0.528,
+      "encode_slice_max_ms": 0.528,
+      "kind": "reset_after_win",
+      "level": "heaven_08"
+    },
+    {
+      "actions": 12,
+      "bytes": 353,
+      "decode_ms": 0.387,
+      "decode_slice_max_ms": 0.387,
+      "encode_ms": 0.34,
+      "encode_slice_max_ms": 0.34,
+      "kind": "middle",
+      "level": "heaven_09"
+    },
+    {
+      "actions": 22,
+      "bytes": 363,
+      "decode_ms": 0.537,
+      "decode_slice_max_ms": 0.537,
+      "encode_ms": 0.626,
+      "encode_slice_max_ms": 0.626,
+      "kind": "won",
+      "level": "heaven_09"
+    },
+    {
+      "actions": 23,
+      "bytes": 363,
+      "decode_ms": 0.724,
+      "decode_slice_max_ms": 0.724,
+      "encode_ms": 1.238,
+      "encode_slice_max_ms": 1.238,
+      "kind": "reset_after_win",
+      "level": "heaven_09"
+    },
+    {
+      "actions": 7,
+      "bytes": 347,
+      "decode_ms": 0.49,
+      "decode_slice_max_ms": 0.49,
+      "encode_ms": 0.271,
+      "encode_slice_max_ms": 0.271,
+      "kind": "middle",
+      "level": "heaven_10"
+    },
+    {
+      "actions": 13,
+      "bytes": 354,
+      "decode_ms": 1.21,
+      "decode_slice_max_ms": 1.21,
+      "encode_ms": 0.496,
+      "encode_slice_max_ms": 0.496,
+      "kind": "won",
+      "level": "heaven_10"
+    },
+    {
+      "actions": 14,
+      "bytes": 354,
+      "decode_ms": 0.617,
+      "decode_slice_max_ms": 0.617,
+      "encode_ms": 0.438,
+      "encode_slice_max_ms": 0.438,
+      "kind": "reset_after_win",
+      "level": "heaven_10"
+    },
+    {
+      "actions": 7,
+      "bytes": 347,
+      "decode_ms": 0.513,
+      "decode_slice_max_ms": 0.513,
+      "encode_ms": 0.284,
+      "encode_slice_max_ms": 0.284,
+      "kind": "middle",
+      "level": "heaven_11"
+    },
+    {
+      "actions": 13,
+      "bytes": 354,
+      "decode_ms": 0.481,
+      "decode_slice_max_ms": 0.481,
+      "encode_ms": 0.548,
+      "encode_slice_max_ms": 0.548,
+      "kind": "won",
+      "level": "heaven_11"
+    },
+    {
+      "actions": 14,
+      "bytes": 354,
+      "decode_ms": 0.452,
+      "decode_slice_max_ms": 0.452,
+      "encode_ms": 0.481,
+      "encode_slice_max_ms": 0.481,
+      "kind": "reset_after_win",
+      "level": "heaven_11"
+    },
+    {
+      "actions": 11,
+      "bytes": 352,
+      "decode_ms": 0.387,
+      "decode_slice_max_ms": 0.387,
+      "encode_ms": 0.33,
+      "encode_slice_max_ms": 0.33,
+      "kind": "middle",
+      "level": "heaven_12"
+    },
+    {
+      "actions": 20,
+      "bytes": 361,
+      "decode_ms": 0.485,
+      "decode_slice_max_ms": 0.485,
+      "encode_ms": 0.537,
+      "encode_slice_max_ms": 0.537,
+      "kind": "won",
+      "level": "heaven_12"
+    },
+    {
+      "actions": 21,
+      "bytes": 361,
+      "decode_ms": 0.543,
+      "decode_slice_max_ms": 0.543,
+      "encode_ms": 0.53,
+      "encode_slice_max_ms": 0.53,
+      "kind": "reset_after_win",
+      "level": "heaven_12"
+    },
+    {
+      "actions": 8,
+      "bytes": 348,
+      "decode_ms": 0.397,
+      "decode_slice_max_ms": 0.397,
+      "encode_ms": 0.295,
+      "encode_slice_max_ms": 0.295,
+      "kind": "middle",
+      "level": "heaven_13"
+    },
+    {
+      "actions": 15,
+      "bytes": 356,
+      "decode_ms": 0.542,
+      "decode_slice_max_ms": 0.542,
+      "encode_ms": 0.448,
+      "encode_slice_max_ms": 0.448,
+      "kind": "won",
+      "level": "heaven_13"
+    },
+    {
+      "actions": 16,
+      "bytes": 356,
+      "decode_ms": 0.551,
+      "decode_slice_max_ms": 0.551,
+      "encode_ms": 0.627,
+      "encode_slice_max_ms": 0.627,
+      "kind": "reset_after_win",
+      "level": "heaven_13"
+    },
+    {
+      "actions": 10,
+      "bytes": 351,
+      "decode_ms": 0.412,
+      "decode_slice_max_ms": 0.412,
+      "encode_ms": 0.285,
+      "encode_slice_max_ms": 0.285,
+      "kind": "middle",
+      "level": "heaven_14"
+    },
+    {
+      "actions": 18,
+      "bytes": 359,
+      "decode_ms": 0.497,
+      "decode_slice_max_ms": 0.497,
+      "encode_ms": 0.689,
+      "encode_slice_max_ms": 0.689,
+      "kind": "won",
+      "level": "heaven_14"
+    },
+    {
+      "actions": 19,
+      "bytes": 359,
+      "decode_ms": 0.633,
+      "decode_slice_max_ms": 0.633,
+      "encode_ms": 0.718,
+      "encode_slice_max_ms": 0.718,
+      "kind": "reset_after_win",
+      "level": "heaven_14"
+    },
+    {
+      "actions": 15,
+      "bytes": 356,
+      "decode_ms": 0.693,
+      "decode_slice_max_ms": 0.693,
+      "encode_ms": 0.387,
+      "encode_slice_max_ms": 0.387,
+      "kind": "middle",
+      "level": "heaven_15"
+    },
+    {
+      "actions": 29,
+      "bytes": 370,
+      "decode_ms": 0.67,
+      "decode_slice_max_ms": 0.67,
+      "encode_ms": 0.756,
+      "encode_slice_max_ms": 0.756,
+      "kind": "won",
+      "level": "heaven_15"
+    },
+    {
+      "actions": 30,
+      "bytes": 370,
+      "decode_ms": 0.729,
+      "decode_slice_max_ms": 0.729,
+      "encode_ms": 0.963,
+      "encode_slice_max_ms": 0.963,
+      "kind": "reset_after_win",
+      "level": "heaven_15"
+    },
+    {
+      "actions": 12,
+      "bytes": 353,
+      "decode_ms": 0.46,
+      "decode_slice_max_ms": 0.46,
+      "encode_ms": 0.477,
+      "encode_slice_max_ms": 0.477,
+      "kind": "middle",
+      "level": "heaven_16"
+    },
+    {
+      "actions": 23,
+      "bytes": 364,
+      "decode_ms": 0.675,
+      "decode_slice_max_ms": 0.675,
+      "encode_ms": 0.781,
+      "encode_slice_max_ms": 0.781,
+      "kind": "won",
+      "level": "heaven_16"
+    },
+    {
+      "actions": 24,
+      "bytes": 364,
+      "decode_ms": 0.569,
+      "decode_slice_max_ms": 0.569,
+      "encode_ms": 0.677,
+      "encode_slice_max_ms": 0.677,
+      "kind": "reset_after_win",
+      "level": "heaven_16"
+    },
+    {
+      "actions": 11,
+      "bytes": 352,
+      "decode_ms": 0.436,
+      "decode_slice_max_ms": 0.436,
+      "encode_ms": 0.314,
+      "encode_slice_max_ms": 0.314,
+      "kind": "middle",
+      "level": "heaven_17"
+    },
+    {
+      "actions": 20,
+      "bytes": 361,
+      "decode_ms": 0.62,
+      "decode_slice_max_ms": 0.62,
+      "encode_ms": 0.734,
+      "encode_slice_max_ms": 0.734,
+      "kind": "won",
+      "level": "heaven_17"
+    },
+    {
+      "actions": 21,
+      "bytes": 361,
+      "decode_ms": 0.629,
+      "decode_slice_max_ms": 0.629,
+      "encode_ms": 0.666,
+      "encode_slice_max_ms": 0.666,
+      "kind": "reset_after_win",
+      "level": "heaven_17"
+    },
+    {
+      "actions": 13,
+      "bytes": 354,
+      "decode_ms": 0.552,
+      "decode_slice_max_ms": 0.552,
+      "encode_ms": 0.497,
+      "encode_slice_max_ms": 0.497,
+      "kind": "middle",
+      "level": "heaven_18"
+    },
+    {
+      "actions": 24,
+      "bytes": 365,
+      "decode_ms": 0.865,
+      "decode_slice_max_ms": 0.865,
+      "encode_ms": 0.813,
+      "encode_slice_max_ms": 0.813,
+      "kind": "won",
+      "level": "heaven_18"
+    },
+    {
+      "actions": 25,
+      "bytes": 365,
+      "decode_ms": 0.77,
+      "decode_slice_max_ms": 0.77,
+      "encode_ms": 0.713,
+      "encode_slice_max_ms": 0.713,
+      "kind": "reset_after_win",
+      "level": "heaven_18"
+    },
+    {
+      "actions": 15,
+      "bytes": 356,
+      "decode_ms": 0.514,
+      "decode_slice_max_ms": 0.514,
+      "encode_ms": 0.472,
+      "encode_slice_max_ms": 0.472,
+      "kind": "middle",
+      "level": "heaven_19"
+    },
+    {
+      "actions": 29,
+      "bytes": 371,
+      "decode_ms": 0.966,
+      "decode_slice_max_ms": 0.966,
+      "encode_ms": 0.8,
+      "encode_slice_max_ms": 0.8,
+      "kind": "won",
+      "level": "heaven_19"
+    },
+    {
+      "actions": 30,
+      "bytes": 370,
+      "decode_ms": 0.737,
+      "decode_slice_max_ms": 0.737,
+      "encode_ms": 1.008,
+      "encode_slice_max_ms": 1.008,
+      "kind": "reset_after_win",
+      "level": "heaven_19"
+    },
+    {
+      "actions": 15,
+      "bytes": 356,
+      "decode_ms": 0.504,
+      "decode_slice_max_ms": 0.504,
+      "encode_ms": 0.512,
+      "encode_slice_max_ms": 0.512,
+      "kind": "middle",
+      "level": "heaven_20"
+    },
+    {
+      "actions": 29,
+      "bytes": 371,
+      "decode_ms": 0.796,
+      "decode_slice_max_ms": 0.796,
+      "encode_ms": 1.009,
+      "encode_slice_max_ms": 1.009,
+      "kind": "won",
+      "level": "heaven_20"
+    },
+    {
+      "actions": 30,
+      "bytes": 370,
+      "decode_ms": 0.749,
+      "decode_slice_max_ms": 0.749,
+      "encode_ms": 0.995,
+      "encode_slice_max_ms": 0.995,
+      "kind": "reset_after_win",
+      "level": "heaven_20"
+    },
+    {
+      "actions": 10,
+      "bytes": 351,
+      "decode_ms": 0.626,
+      "decode_slice_max_ms": 0.626,
+      "encode_ms": 0.455,
+      "encode_slice_max_ms": 0.455,
+      "kind": "middle",
+      "level": "heaven_21"
+    },
+    {
+      "actions": 19,
+      "bytes": 360,
+      "decode_ms": 0.661,
+      "decode_slice_max_ms": 0.661,
+      "encode_ms": 0.538,
+      "encode_slice_max_ms": 0.538,
+      "kind": "won",
+      "level": "heaven_21"
+    },
+    {
+      "actions": 20,
+      "bytes": 360,
+      "decode_ms": 0.554,
+      "decode_slice_max_ms": 0.554,
+      "encode_ms": 0.543,
+      "encode_slice_max_ms": 0.543,
+      "kind": "reset_after_win",
+      "level": "heaven_21"
+    },
+    {
+      "actions": 10,
+      "bytes": 351,
+      "decode_ms": 0.411,
+      "decode_slice_max_ms": 0.411,
+      "encode_ms": 0.326,
+      "encode_slice_max_ms": 0.326,
+      "kind": "middle",
+      "level": "heaven_22"
+    },
+    {
+      "actions": 18,
+      "bytes": 359,
+      "decode_ms": 0.775,
+      "decode_slice_max_ms": 0.775,
+      "encode_ms": 0.545,
+      "encode_slice_max_ms": 0.545,
+      "kind": "won",
+      "level": "heaven_22"
+    },
+    {
+      "actions": 19,
+      "bytes": 359,
+      "decode_ms": 0.555,
+      "decode_slice_max_ms": 0.555,
+      "encode_ms": 0.658,
+      "encode_slice_max_ms": 0.658,
+      "kind": "reset_after_win",
+      "level": "heaven_22"
+    },
+    {
+      "actions": 11,
+      "bytes": 352,
+      "decode_ms": 0.803,
+      "decode_slice_max_ms": 0.803,
+      "encode_ms": 0.504,
+      "encode_slice_max_ms": 0.504,
+      "kind": "middle",
+      "level": "heaven_23"
+    },
+    {
+      "actions": 21,
+      "bytes": 362,
+      "decode_ms": 0.835,
+      "decode_slice_max_ms": 0.835,
+      "encode_ms": 1.055,
+      "encode_slice_max_ms": 1.055,
+      "kind": "won",
+      "level": "heaven_23"
+    },
+    {
+      "actions": 22,
+      "bytes": 362,
+      "decode_ms": 0.596,
+      "decode_slice_max_ms": 0.596,
+      "encode_ms": 0.619,
+      "encode_slice_max_ms": 0.619,
+      "kind": "reset_after_win",
+      "level": "heaven_23"
+    },
+    {
+      "actions": 10,
+      "bytes": 351,
+      "decode_ms": 0.457,
+      "decode_slice_max_ms": 0.457,
+      "encode_ms": 0.37,
+      "encode_slice_max_ms": 0.37,
+      "kind": "middle",
+      "level": "heaven_24"
+    },
+    {
+      "actions": 19,
+      "bytes": 360,
+      "decode_ms": 0.71,
+      "decode_slice_max_ms": 0.71,
+      "encode_ms": 0.861,
+      "encode_slice_max_ms": 0.861,
+      "kind": "won",
+      "level": "heaven_24"
+    },
+    {
+      "actions": 20,
+      "bytes": 360,
+      "decode_ms": 0.599,
+      "decode_slice_max_ms": 0.599,
+      "encode_ms": 0.753,
+      "encode_slice_max_ms": 0.753,
+      "kind": "reset_after_win",
+      "level": "heaven_24"
+    },
+    {
+      "actions": 12,
+      "bytes": 353,
+      "decode_ms": 0.63,
+      "decode_slice_max_ms": 0.63,
+      "encode_ms": 0.384,
+      "encode_slice_max_ms": 0.384,
+      "kind": "middle",
+      "level": "heaven_25"
+    },
+    {
+      "actions": 23,
+      "bytes": 364,
+      "decode_ms": 0.661,
+      "decode_slice_max_ms": 0.661,
+      "encode_ms": 0.778,
+      "encode_slice_max_ms": 0.778,
+      "kind": "won",
+      "level": "heaven_25"
+    },
+    {
+      "actions": 24,
+      "bytes": 364,
+      "decode_ms": 0.763,
+      "decode_slice_max_ms": 0.763,
+      "encode_ms": 0.765,
+      "encode_slice_max_ms": 0.765,
+      "kind": "reset_after_win",
+      "level": "heaven_25"
+    },
+    {
+      "actions": 7,
+      "bytes": 347,
+      "decode_ms": 0.377,
+      "decode_slice_max_ms": 0.377,
+      "encode_ms": 0.251,
+      "encode_slice_max_ms": 0.251,
+      "kind": "middle",
+      "level": "heaven_26"
+    },
+    {
+      "actions": 13,
+      "bytes": 354,
+      "decode_ms": 0.584,
+      "decode_slice_max_ms": 0.584,
+      "encode_ms": 0.407,
+      "encode_slice_max_ms": 0.407,
+      "kind": "won",
+      "level": "heaven_26"
+    },
+    {
+      "actions": 14,
+      "bytes": 354,
+      "decode_ms": 1.747,
+      "decode_slice_max_ms": 1.747,
+      "encode_ms": 0.78,
+      "encode_slice_max_ms": 0.78,
+      "kind": "reset_after_win",
+      "level": "heaven_26"
+    },
+    {
+      "actions": 11,
+      "bytes": 352,
+      "decode_ms": 0.81,
+      "decode_slice_max_ms": 0.81,
+      "encode_ms": 1.037,
+      "encode_slice_max_ms": 1.037,
+      "kind": "middle",
+      "level": "heaven_27"
+    },
+    {
+      "actions": 21,
+      "bytes": 362,
+      "decode_ms": 0.571,
+      "decode_slice_max_ms": 0.571,
+      "encode_ms": 0.676,
+      "encode_slice_max_ms": 0.676,
+      "kind": "won",
+      "level": "heaven_27"
+    },
+    {
+      "actions": 22,
+      "bytes": 362,
+      "decode_ms": 1.356,
+      "decode_slice_max_ms": 1.356,
+      "encode_ms": 1.109,
+      "encode_slice_max_ms": 1.109,
+      "kind": "reset_after_win",
+      "level": "heaven_27"
+    },
+    {
+      "actions": 11,
+      "bytes": 352,
+      "decode_ms": 0.547,
+      "decode_slice_max_ms": 0.547,
+      "encode_ms": 0.356,
+      "encode_slice_max_ms": 0.356,
+      "kind": "middle",
+      "level": "heaven_28"
+    },
+    {
+      "actions": 20,
+      "bytes": 361,
+      "decode_ms": 0.59,
+      "decode_slice_max_ms": 0.59,
+      "encode_ms": 0.627,
+      "encode_slice_max_ms": 0.627,
+      "kind": "won",
+      "level": "heaven_28"
+    },
+    {
+      "actions": 21,
+      "bytes": 361,
+      "decode_ms": 0.634,
+      "decode_slice_max_ms": 0.634,
+      "encode_ms": 0.726,
+      "encode_slice_max_ms": 0.726,
+      "kind": "reset_after_win",
+      "level": "heaven_28"
+    },
+    {
+      "actions": 12,
+      "bytes": 353,
+      "decode_ms": 0.45,
+      "decode_slice_max_ms": 0.45,
+      "encode_ms": 0.378,
+      "encode_slice_max_ms": 0.378,
+      "kind": "middle",
+      "level": "heaven_29"
+    },
+    {
+      "actions": 23,
+      "bytes": 364,
+      "decode_ms": 0.898,
+      "decode_slice_max_ms": 0.898,
+      "encode_ms": 0.729,
+      "encode_slice_max_ms": 0.729,
+      "kind": "won",
+      "level": "heaven_29"
+    },
+    {
+      "actions": 24,
+      "bytes": 364,
+      "decode_ms": 0.604,
+      "decode_slice_max_ms": 0.604,
+      "encode_ms": 0.737,
+      "encode_slice_max_ms": 0.737,
+      "kind": "reset_after_win",
+      "level": "heaven_29"
+    },
+    {
+      "actions": 15,
+      "bytes": 356,
+      "decode_ms": 0.458,
+      "decode_slice_max_ms": 0.458,
+      "encode_ms": 0.446,
+      "encode_slice_max_ms": 0.446,
+      "kind": "middle",
+      "level": "heaven_30"
+    },
+    {
+      "actions": 28,
+      "bytes": 369,
+      "decode_ms": 0.978,
+      "decode_slice_max_ms": 0.978,
+      "encode_ms": 0.886,
+      "encode_slice_max_ms": 0.886,
+      "kind": "won",
+      "level": "heaven_30"
+    },
+    {
+      "actions": 29,
+      "bytes": 369,
+      "decode_ms": 0.923,
+      "decode_slice_max_ms": 0.923,
+      "encode_ms": 0.908,
+      "encode_slice_max_ms": 0.908,
+      "kind": "reset_after_win",
+      "level": "heaven_30"
+    },
+    {
+      "actions": 10,
+      "bytes": 357,
+      "decode_ms": 0.544,
+      "decode_slice_max_ms": 0.544,
+      "encode_ms": 0.404,
+      "encode_slice_max_ms": 0.404,
+      "kind": "middle",
+      "level": "heaven_31"
+    },
+    {
+      "actions": 18,
+      "bytes": 365,
+      "decode_ms": 0.814,
+      "decode_slice_max_ms": 0.814,
+      "encode_ms": 0.628,
+      "encode_slice_max_ms": 0.628,
+      "kind": "won",
+      "level": "heaven_31"
+    },
+    {
+      "actions": 19,
+      "bytes": 365,
+      "decode_ms": 0.693,
+      "decode_slice_max_ms": 0.693,
+      "encode_ms": 0.673,
+      "encode_slice_max_ms": 0.673,
+      "kind": "reset_after_win",
+      "level": "heaven_31"
+    },
+    {
+      "actions": 12,
+      "bytes": 359,
+      "decode_ms": 0.733,
+      "decode_slice_max_ms": 0.733,
+      "encode_ms": 1.057,
+      "encode_slice_max_ms": 1.057,
+      "kind": "middle",
+      "level": "heaven_32"
+    },
+    {
+      "actions": 23,
+      "bytes": 370,
+      "decode_ms": 0.771,
+      "decode_slice_max_ms": 0.771,
+      "encode_ms": 1.024,
+      "encode_slice_max_ms": 1.024,
+      "kind": "won",
+      "level": "heaven_32"
+    },
+    {
+      "actions": 24,
+      "bytes": 370,
+      "decode_ms": 0.8,
+      "decode_slice_max_ms": 0.8,
+      "encode_ms": 0.822,
+      "encode_slice_max_ms": 0.822,
+      "kind": "reset_after_win",
+      "level": "heaven_32"
+    },
+    {
+      "actions": 15,
+      "bytes": 362,
+      "decode_ms": 0.784,
+      "decode_slice_max_ms": 0.784,
+      "encode_ms": 0.524,
+      "encode_slice_max_ms": 0.524,
+      "kind": "middle",
+      "level": "heaven_33"
+    },
+    {
+      "actions": 28,
+      "bytes": 376,
+      "decode_ms": 0.827,
+      "decode_slice_max_ms": 0.827,
+      "encode_ms": 1.301,
+      "encode_slice_max_ms": 1.301,
+      "kind": "won",
+      "level": "heaven_33"
+    },
+    {
+      "actions": 29,
+      "bytes": 375,
+      "decode_ms": 1.055,
+      "decode_slice_max_ms": 1.055,
+      "encode_ms": 0.966,
+      "encode_slice_max_ms": 0.966,
+      "kind": "reset_after_win",
+      "level": "heaven_33"
+    },
+    {
+      "actions": 15,
+      "bytes": 362,
+      "decode_ms": 0.623,
+      "decode_slice_max_ms": 0.623,
+      "encode_ms": 0.601,
+      "encode_slice_max_ms": 0.601,
+      "kind": "middle",
+      "level": "heaven_34"
+    },
+    {
+      "actions": 28,
+      "bytes": 376,
+      "decode_ms": 1.111,
+      "decode_slice_max_ms": 1.111,
+      "encode_ms": 1.123,
+      "encode_slice_max_ms": 1.123,
+      "kind": "won",
+      "level": "heaven_34"
+    },
+    {
+      "actions": 29,
+      "bytes": 375,
+      "decode_ms": 1.095,
+      "decode_slice_max_ms": 1.095,
+      "encode_ms": 1.092,
+      "encode_slice_max_ms": 1.092,
+      "kind": "reset_after_win",
+      "level": "heaven_34"
+    },
+    {
+      "actions": 16,
+      "bytes": 363,
+      "decode_ms": 0.903,
+      "decode_slice_max_ms": 0.903,
+      "encode_ms": 0.733,
+      "encode_slice_max_ms": 0.733,
+      "kind": "middle",
+      "level": "heaven_35"
+    },
+    {
+      "actions": 31,
+      "bytes": 379,
+      "decode_ms": 2.703,
+      "decode_slice_max_ms": 2.265,
+      "encode_ms": 2.213,
+      "encode_slice_max_ms": 2.041,
+      "kind": "won",
+      "level": "heaven_35"
+    },
+    {
+      "actions": 32,
+      "bytes": 378,
+      "decode_ms": 1.002,
+      "decode_slice_max_ms": 1.002,
+      "encode_ms": 1.101,
+      "encode_slice_max_ms": 1.101,
+      "kind": "reset_after_win",
+      "level": "heaven_35"
+    },
+    {
+      "actions": 12,
+      "bytes": 359,
+      "decode_ms": 0.476,
+      "decode_slice_max_ms": 0.476,
+      "encode_ms": 0.381,
+      "encode_slice_max_ms": 0.381,
+      "kind": "middle",
+      "level": "heaven_36"
+    },
+    {
+      "actions": 22,
+      "bytes": 369,
+      "decode_ms": 0.744,
+      "decode_slice_max_ms": 0.744,
+      "encode_ms": 1.047,
+      "encode_slice_max_ms": 1.047,
+      "kind": "won",
+      "level": "heaven_36"
+    },
+    {
+      "actions": 23,
+      "bytes": 369,
+      "decode_ms": 0.658,
+      "decode_slice_max_ms": 0.658,
+      "encode_ms": 0.721,
+      "encode_slice_max_ms": 0.721,
+      "kind": "reset_after_win",
+      "level": "heaven_36"
+    },
+    {
+      "actions": 11,
+      "bytes": 358,
+      "decode_ms": 0.603,
+      "decode_slice_max_ms": 0.603,
+      "encode_ms": 0.627,
+      "encode_slice_max_ms": 0.627,
+      "kind": "middle",
+      "level": "heaven_37"
+    },
+    {
+      "actions": 20,
+      "bytes": 368,
+      "decode_ms": 1.032,
+      "decode_slice_max_ms": 1.032,
+      "encode_ms": 0.691,
+      "encode_slice_max_ms": 0.691,
+      "kind": "won",
+      "level": "heaven_37"
+    },
+    {
+      "actions": 21,
+      "bytes": 367,
+      "decode_ms": 1.463,
+      "decode_slice_max_ms": 1.463,
+      "encode_ms": 1.019,
+      "encode_slice_max_ms": 1.019,
+      "kind": "reset_after_win",
+      "level": "heaven_37"
+    },
+    {
+      "actions": 22,
+      "bytes": 369,
+      "decode_ms": 1.534,
+      "decode_slice_max_ms": 1.534,
+      "encode_ms": 1.222,
+      "encode_slice_max_ms": 1.222,
+      "kind": "middle",
+      "level": "heaven_38"
+    },
+    {
+      "actions": 42,
+      "bytes": 390,
+      "decode_ms": 1.035,
+      "decode_slice_max_ms": 1.035,
+      "encode_ms": 1.668,
+      "encode_slice_max_ms": 1.668,
+      "kind": "won",
+      "level": "heaven_38"
+    },
+    {
+      "actions": 43,
+      "bytes": 389,
+      "decode_ms": 1.173,
+      "decode_slice_max_ms": 1.173,
+      "encode_ms": 1.345,
+      "encode_slice_max_ms": 1.345,
+      "kind": "reset_after_win",
+      "level": "heaven_38"
+    },
+    {
+      "actions": 16,
+      "bytes": 363,
+      "decode_ms": 0.518,
+      "decode_slice_max_ms": 0.518,
+      "encode_ms": 0.492,
+      "encode_slice_max_ms": 0.492,
+      "kind": "middle",
+      "level": "heaven_39"
+    },
+    {
+      "actions": 31,
+      "bytes": 379,
+      "decode_ms": 0.773,
+      "decode_slice_max_ms": 0.773,
+      "encode_ms": 0.959,
+      "encode_slice_max_ms": 0.959,
+      "kind": "won",
+      "level": "heaven_39"
+    },
+    {
+      "actions": 32,
+      "bytes": 378,
+      "decode_ms": 1.051,
+      "decode_slice_max_ms": 1.051,
+      "encode_ms": 0.959,
+      "encode_slice_max_ms": 0.959,
+      "kind": "reset_after_win",
+      "level": "heaven_39"
+    },
+    {
+      "actions": 27,
+      "bytes": 374,
+      "decode_ms": 0.878,
+      "decode_slice_max_ms": 0.878,
+      "encode_ms": 0.961,
+      "encode_slice_max_ms": 0.961,
+      "kind": "middle",
+      "level": "heaven_40"
+    },
+    {
+      "actions": 52,
+      "bytes": 400,
+      "decode_ms": 1.505,
+      "decode_slice_max_ms": 1.505,
+      "encode_ms": 1.896,
+      "encode_slice_max_ms": 1.896,
+      "kind": "won",
+      "level": "heaven_40"
+    },
+    {
+      "actions": 53,
+      "bytes": 399,
+      "decode_ms": 1.131,
+      "decode_slice_max_ms": 1.131,
+      "encode_ms": 1.66,
+      "encode_slice_max_ms": 1.66,
+      "kind": "reset_after_win",
+      "level": "heaven_40"
+    },
+    {
+      "actions": 16,
+      "bytes": 363,
+      "decode_ms": 0.542,
+      "decode_slice_max_ms": 0.542,
+      "encode_ms": 0.527,
+      "encode_slice_max_ms": 0.527,
+      "kind": "middle",
+      "level": "heaven_41"
+    },
+    {
+      "actions": 31,
+      "bytes": 379,
+      "decode_ms": 1.176,
+      "decode_slice_max_ms": 1.176,
+      "encode_ms": 0.981,
+      "encode_slice_max_ms": 0.981,
+      "kind": "won",
+      "level": "heaven_41"
+    },
+    {
+      "actions": 32,
+      "bytes": 378,
+      "decode_ms": 0.89,
+      "decode_slice_max_ms": 0.89,
+      "encode_ms": 1.109,
+      "encode_slice_max_ms": 1.109,
+      "kind": "reset_after_win",
+      "level": "heaven_41"
+    },
+    {
+      "actions": 19,
+      "bytes": 366,
+      "decode_ms": 1.139,
+      "decode_slice_max_ms": 1.139,
+      "encode_ms": 2.197,
+      "encode_slice_max_ms": 2.093,
+      "kind": "middle",
+      "level": "heaven_42"
+    },
+    {
+      "actions": 37,
+      "bytes": 385,
+      "decode_ms": 1.458,
+      "decode_slice_max_ms": 1.458,
+      "encode_ms": 5.161,
+      "encode_slice_max_ms": 2.443,
+      "kind": "won",
+      "level": "heaven_42"
+    },
+    {
+      "actions": 38,
+      "bytes": 384,
+      "decode_ms": 0.997,
+      "decode_slice_max_ms": 0.997,
+      "encode_ms": 1.155,
+      "encode_slice_max_ms": 1.155,
+      "kind": "reset_after_win",
+      "level": "heaven_42"
+    },
+    {
+      "actions": 17,
+      "bytes": 364,
+      "decode_ms": 0.649,
+      "decode_slice_max_ms": 0.649,
+      "encode_ms": 0.886,
+      "encode_slice_max_ms": 0.886,
+      "kind": "middle",
+      "level": "heaven_43"
+    },
+    {
+      "actions": 33,
+      "bytes": 381,
+      "decode_ms": 2.166,
+      "decode_slice_max_ms": 2.028,
+      "encode_ms": 3.188,
+      "encode_slice_max_ms": 2.186,
+      "kind": "won",
+      "level": "heaven_43"
+    },
+    {
+      "actions": 34,
+      "bytes": 380,
+      "decode_ms": 4.727,
+      "decode_slice_max_ms": 2.238,
+      "encode_ms": 2.849,
+      "encode_slice_max_ms": 2.183,
+      "kind": "reset_after_win",
+      "level": "heaven_43"
+    },
+    {
+      "actions": 19,
+      "bytes": 366,
+      "decode_ms": 0.647,
+      "decode_slice_max_ms": 0.647,
+      "encode_ms": 0.614,
+      "encode_slice_max_ms": 0.614,
+      "kind": "middle",
+      "level": "heaven_44"
+    },
+    {
+      "actions": 37,
+      "bytes": 385,
+      "decode_ms": 0.883,
+      "decode_slice_max_ms": 0.883,
+      "encode_ms": 1.201,
+      "encode_slice_max_ms": 1.201,
+      "kind": "won",
+      "level": "heaven_44"
+    },
+    {
+      "actions": 38,
+      "bytes": 384,
+      "decode_ms": 1.217,
+      "decode_slice_max_ms": 1.217,
+      "encode_ms": 1.265,
+      "encode_slice_max_ms": 1.265,
+      "kind": "reset_after_win",
+      "level": "heaven_44"
+    },
+    {
+      "actions": 21,
+      "bytes": 368,
+      "decode_ms": 0.607,
+      "decode_slice_max_ms": 0.607,
+      "encode_ms": 0.808,
+      "encode_slice_max_ms": 0.808,
+      "kind": "middle",
+      "level": "heaven_45"
+    },
+    {
+      "actions": 41,
+      "bytes": 389,
+      "decode_ms": 0.948,
+      "decode_slice_max_ms": 0.948,
+      "encode_ms": 1.59,
+      "encode_slice_max_ms": 1.59,
+      "kind": "won",
+      "level": "heaven_45"
+    },
+    {
+      "actions": 42,
+      "bytes": 388,
+      "decode_ms": 1.214,
+      "decode_slice_max_ms": 1.214,
+      "encode_ms": 1.327,
+      "encode_slice_max_ms": 1.327,
+      "kind": "reset_after_win",
+      "level": "heaven_45"
+    },
+    {
+      "actions": 19,
+      "bytes": 366,
+      "decode_ms": 0.587,
+      "decode_slice_max_ms": 0.587,
+      "encode_ms": 0.584,
+      "encode_slice_max_ms": 0.584,
+      "kind": "middle",
+      "level": "heaven_46"
+    },
+    {
+      "actions": 36,
+      "bytes": 384,
+      "decode_ms": 0.832,
+      "decode_slice_max_ms": 0.832,
+      "encode_ms": 1.101,
+      "encode_slice_max_ms": 1.101,
+      "kind": "won",
+      "level": "heaven_46"
+    },
+    {
+      "actions": 37,
+      "bytes": 383,
+      "decode_ms": 1.106,
+      "decode_slice_max_ms": 1.106,
+      "encode_ms": 1.088,
+      "encode_slice_max_ms": 1.088,
+      "kind": "reset_after_win",
+      "level": "heaven_46"
+    },
+    {
+      "actions": 19,
+      "bytes": 367,
+      "decode_ms": 0.595,
+      "decode_slice_max_ms": 0.595,
+      "encode_ms": 0.623,
+      "encode_slice_max_ms": 0.623,
+      "kind": "middle",
+      "level": "heaven_47"
+    },
+    {
+      "actions": 37,
+      "bytes": 385,
+      "decode_ms": 0.888,
+      "decode_slice_max_ms": 0.888,
+      "encode_ms": 1.267,
+      "encode_slice_max_ms": 1.267,
+      "kind": "won",
+      "level": "heaven_47"
+    },
+    {
+      "actions": 38,
+      "bytes": 384,
+      "decode_ms": 0.941,
+      "decode_slice_max_ms": 0.941,
+      "encode_ms": 1.642,
+      "encode_slice_max_ms": 1.642,
+      "kind": "reset_after_win",
+      "level": "heaven_47"
+    },
+    {
+      "actions": 27,
+      "bytes": 374,
+      "decode_ms": 0.704,
+      "decode_slice_max_ms": 0.704,
+      "encode_ms": 0.784,
+      "encode_slice_max_ms": 0.784,
+      "kind": "middle",
+      "level": "heaven_48"
+    },
+    {
+      "actions": 53,
+      "bytes": 401,
+      "decode_ms": 1.303,
+      "decode_slice_max_ms": 1.303,
+      "encode_ms": 1.6,
+      "encode_slice_max_ms": 1.6,
+      "kind": "won",
+      "level": "heaven_48"
+    },
+    {
+      "actions": 54,
+      "bytes": 400,
+      "decode_ms": 1.062,
+      "decode_slice_max_ms": 1.062,
+      "encode_ms": 1.631,
+      "encode_slice_max_ms": 1.631,
+      "kind": "reset_after_win",
+      "level": "heaven_48"
+    },
+    {
+      "actions": 22,
+      "bytes": 369,
+      "decode_ms": 0.682,
+      "decode_slice_max_ms": 0.682,
+      "encode_ms": 0.693,
+      "encode_slice_max_ms": 0.693,
+      "kind": "middle",
+      "level": "heaven_49"
+    },
+    {
+      "actions": 43,
+      "bytes": 391,
+      "decode_ms": 1.022,
+      "decode_slice_max_ms": 1.022,
+      "encode_ms": 1.371,
+      "encode_slice_max_ms": 1.371,
+      "kind": "won",
+      "level": "heaven_49"
+    },
+    {
+      "actions": 44,
+      "bytes": 390,
+      "decode_ms": 1.025,
+      "decode_slice_max_ms": 1.025,
+      "encode_ms": 1.428,
+      "encode_slice_max_ms": 1.428,
+      "kind": "reset_after_win",
+      "level": "heaven_49"
+    },
+    {
+      "actions": 24,
+      "bytes": 371,
+      "decode_ms": 0.731,
+      "decode_slice_max_ms": 0.731,
+      "encode_ms": 0.856,
+      "encode_slice_max_ms": 0.856,
+      "kind": "middle",
+      "level": "heaven_50"
+    },
+    {
+      "actions": 47,
+      "bytes": 395,
+      "decode_ms": 1.198,
+      "decode_slice_max_ms": 1.198,
+      "encode_ms": 1.504,
+      "encode_slice_max_ms": 1.504,
+      "kind": "won",
+      "level": "heaven_50"
+    },
+    {
+      "actions": 48,
+      "bytes": 394,
+      "decode_ms": 1.461,
+      "decode_slice_max_ms": 1.461,
+      "encode_ms": 1.751,
+      "encode_slice_max_ms": 1.751,
+      "kind": "reset_after_win",
+      "level": "heaven_50"
+    },
+    {
+      "actions": 4,
+      "bytes": 339,
+      "decode_ms": 0.253,
+      "decode_slice_max_ms": 0.253,
+      "encode_ms": 0.17,
+      "encode_slice_max_ms": 0.17,
+      "kind": "middle",
+      "level": "inferno_01"
+    },
+    {
+      "actions": 6,
+      "bytes": 341,
+      "decode_ms": 0.286,
+      "decode_slice_max_ms": 0.286,
+      "encode_ms": 0.172,
+      "encode_slice_max_ms": 0.172,
+      "kind": "won",
+      "level": "inferno_01"
+    },
+    {
+      "actions": 7,
+      "bytes": 342,
+      "decode_ms": 0.332,
+      "decode_slice_max_ms": 0.332,
+      "encode_ms": 0.175,
+      "encode_slice_max_ms": 0.175,
+      "kind": "reset_after_win",
+      "level": "inferno_01"
+    },
+    {
+      "actions": 3,
+      "bytes": 338,
+      "decode_ms": 0.281,
+      "decode_slice_max_ms": 0.281,
+      "encode_ms": 0.112,
+      "encode_slice_max_ms": 0.112,
+      "kind": "middle",
+      "level": "inferno_02"
+    },
+    {
+      "actions": 5,
+      "bytes": 340,
+      "decode_ms": 0.255,
+      "decode_slice_max_ms": 0.255,
+      "encode_ms": 0.147,
+      "encode_slice_max_ms": 0.147,
+      "kind": "won",
+      "level": "inferno_02"
+    },
+    {
+      "actions": 6,
+      "bytes": 341,
+      "decode_ms": 0.362,
+      "decode_slice_max_ms": 0.362,
+      "encode_ms": 0.152,
+      "encode_slice_max_ms": 0.152,
+      "kind": "reset_after_win",
+      "level": "inferno_02"
+    },
+    {
+      "actions": 4,
+      "bytes": 339,
+      "decode_ms": 0.296,
+      "decode_slice_max_ms": 0.296,
+      "encode_ms": 0.191,
+      "encode_slice_max_ms": 0.191,
+      "kind": "middle",
+      "level": "inferno_03"
+    },
+    {
+      "actions": 7,
+      "bytes": 342,
+      "decode_ms": 0.303,
+      "decode_slice_max_ms": 0.303,
+      "encode_ms": 0.196,
+      "encode_slice_max_ms": 0.196,
+      "kind": "won",
+      "level": "inferno_03"
+    },
+    {
+      "actions": 8,
+      "bytes": 343,
+      "decode_ms": 0.286,
+      "decode_slice_max_ms": 0.286,
+      "encode_ms": 0.207,
+      "encode_slice_max_ms": 0.207,
+      "kind": "reset_after_win",
+      "level": "inferno_03"
+    },
+    {
+      "actions": 6,
+      "bytes": 341,
+      "decode_ms": 0.318,
+      "decode_slice_max_ms": 0.318,
+      "encode_ms": 0.18,
+      "encode_slice_max_ms": 0.18,
+      "kind": "middle",
+      "level": "inferno_04"
+    },
+    {
+      "actions": 11,
+      "bytes": 347,
+      "decode_ms": 0.385,
+      "decode_slice_max_ms": 0.385,
+      "encode_ms": 0.328,
+      "encode_slice_max_ms": 0.328,
+      "kind": "won",
+      "level": "inferno_04"
+    },
+    {
+      "actions": 12,
+      "bytes": 347,
+      "decode_ms": 0.357,
+      "decode_slice_max_ms": 0.357,
+      "encode_ms": 0.282,
+      "encode_slice_max_ms": 0.282,
+      "kind": "reset_after_win",
+      "level": "inferno_04"
+    },
+    {
+      "actions": 8,
+      "bytes": 343,
+      "decode_ms": 0.34,
+      "decode_slice_max_ms": 0.34,
+      "encode_ms": 0.306,
+      "encode_slice_max_ms": 0.306,
+      "kind": "middle",
+      "level": "inferno_05"
+    },
+    {
+      "actions": 14,
+      "bytes": 350,
+      "decode_ms": 0.405,
+      "decode_slice_max_ms": 0.405,
+      "encode_ms": 1.5,
+      "encode_slice_max_ms": 1.5,
+      "kind": "won",
+      "level": "inferno_05"
+    },
+    {
+      "actions": 15,
+      "bytes": 350,
+      "decode_ms": 0.479,
+      "decode_slice_max_ms": 0.479,
+      "encode_ms": 0.385,
+      "encode_slice_max_ms": 0.385,
+      "kind": "reset_after_win",
+      "level": "inferno_05"
+    },
+    {
+      "actions": 5,
+      "bytes": 346,
+      "decode_ms": 0.333,
+      "decode_slice_max_ms": 0.333,
+      "encode_ms": 0.17,
+      "encode_slice_max_ms": 0.17,
+      "kind": "middle",
+      "level": "inferno_06"
+    },
+    {
+      "actions": 9,
+      "bytes": 350,
+      "decode_ms": 0.373,
+      "decode_slice_max_ms": 0.373,
+      "encode_ms": 0.27,
+      "encode_slice_max_ms": 0.27,
+      "kind": "won",
+      "level": "inferno_06"
+    },
+    {
+      "actions": 10,
+      "bytes": 351,
+      "decode_ms": 0.389,
+      "decode_slice_max_ms": 0.389,
+      "encode_ms": 0.359,
+      "encode_slice_max_ms": 0.359,
+      "kind": "reset_after_win",
+      "level": "inferno_06"
+    },
+    {
+      "actions": 9,
+      "bytes": 350,
+      "decode_ms": 0.474,
+      "decode_slice_max_ms": 0.474,
+      "encode_ms": 0.252,
+      "encode_slice_max_ms": 0.252,
+      "kind": "middle",
+      "level": "inferno_07"
+    },
+    {
+      "actions": 17,
+      "bytes": 359,
+      "decode_ms": 0.445,
+      "decode_slice_max_ms": 0.445,
+      "encode_ms": 0.47,
+      "encode_slice_max_ms": 0.47,
+      "kind": "won",
+      "level": "inferno_07"
+    },
+    {
+      "actions": 18,
+      "bytes": 359,
+      "decode_ms": 0.571,
+      "decode_slice_max_ms": 0.571,
+      "encode_ms": 0.539,
+      "encode_slice_max_ms": 0.539,
+      "kind": "reset_after_win",
+      "level": "inferno_07"
+    },
+    {
+      "actions": 8,
+      "bytes": 349,
+      "decode_ms": 0.361,
+      "decode_slice_max_ms": 0.361,
+      "encode_ms": 0.247,
+      "encode_slice_max_ms": 0.247,
+      "kind": "middle",
+      "level": "inferno_08"
+    },
+    {
+      "actions": 15,
+      "bytes": 357,
+      "decode_ms": 0.509,
+      "decode_slice_max_ms": 0.509,
+      "encode_ms": 0.398,
+      "encode_slice_max_ms": 0.398,
+      "kind": "won",
+      "level": "inferno_08"
+    },
+    {
+      "actions": 16,
+      "bytes": 357,
+      "decode_ms": 0.512,
+      "decode_slice_max_ms": 0.512,
+      "encode_ms": 0.418,
+      "encode_slice_max_ms": 0.418,
+      "kind": "reset_after_win",
+      "level": "inferno_08"
+    },
+    {
+      "actions": 10,
+      "bytes": 352,
+      "decode_ms": 0.351,
+      "decode_slice_max_ms": 0.351,
+      "encode_ms": 0.274,
+      "encode_slice_max_ms": 0.274,
+      "kind": "middle",
+      "level": "inferno_09"
+    },
+    {
+      "actions": 18,
+      "bytes": 360,
+      "decode_ms": 0.47,
+      "decode_slice_max_ms": 0.47,
+      "encode_ms": 0.611,
+      "encode_slice_max_ms": 0.611,
+      "kind": "won",
+      "level": "inferno_09"
+    },
+    {
+      "actions": 19,
+      "bytes": 360,
+      "decode_ms": 0.457,
+      "decode_slice_max_ms": 0.457,
+      "encode_ms": 0.62,
+      "encode_slice_max_ms": 0.62,
+      "kind": "reset_after_win",
+      "level": "inferno_09"
+    },
+    {
+      "actions": 11,
+      "bytes": 353,
+      "decode_ms": 0.405,
+      "decode_slice_max_ms": 0.405,
+      "encode_ms": 0.295,
+      "encode_slice_max_ms": 0.295,
+      "kind": "middle",
+      "level": "inferno_10"
+    },
+    {
+      "actions": 21,
+      "bytes": 363,
+      "decode_ms": 0.513,
+      "decode_slice_max_ms": 0.513,
+      "encode_ms": 0.546,
+      "encode_slice_max_ms": 0.546,
+      "kind": "won",
+      "level": "inferno_10"
+    },
+    {
+      "actions": 22,
+      "bytes": 363,
+      "decode_ms": 0.53,
+      "decode_slice_max_ms": 0.53,
+      "encode_ms": 0.556,
+      "encode_slice_max_ms": 0.556,
+      "kind": "reset_after_win",
+      "level": "inferno_10"
+    },
+    {
+      "actions": 8,
+      "bytes": 349,
+      "decode_ms": 0.342,
+      "decode_slice_max_ms": 0.342,
+      "encode_ms": 0.243,
+      "encode_slice_max_ms": 0.243,
+      "kind": "middle",
+      "level": "inferno_11"
+    },
+    {
+      "actions": 14,
+      "bytes": 356,
+      "decode_ms": 0.424,
+      "decode_slice_max_ms": 0.424,
+      "encode_ms": 0.389,
+      "encode_slice_max_ms": 0.389,
+      "kind": "won",
+      "level": "inferno_11"
+    },
+    {
+      "actions": 15,
+      "bytes": 356,
+      "decode_ms": 0.436,
+      "decode_slice_max_ms": 0.436,
+      "encode_ms": 0.392,
+      "encode_slice_max_ms": 0.392,
+      "kind": "reset_after_win",
+      "level": "inferno_11"
+    },
+    {
+      "actions": 12,
+      "bytes": 354,
+      "decode_ms": 0.419,
+      "decode_slice_max_ms": 0.419,
+      "encode_ms": 0.347,
+      "encode_slice_max_ms": 0.347,
+      "kind": "middle",
+      "level": "inferno_12"
+    },
+    {
+      "actions": 23,
+      "bytes": 365,
+      "decode_ms": 0.824,
+      "decode_slice_max_ms": 0.824,
+      "encode_ms": 0.765,
+      "encode_slice_max_ms": 0.765,
+      "kind": "won",
+      "level": "inferno_12"
+    },
+    {
+      "actions": 24,
+      "bytes": 365,
+      "decode_ms": 0.591,
+      "decode_slice_max_ms": 0.591,
+      "encode_ms": 0.747,
+      "encode_slice_max_ms": 0.747,
+      "kind": "reset_after_win",
+      "level": "inferno_12"
+    },
+    {
+      "actions": 14,
+      "bytes": 356,
+      "decode_ms": 0.43,
+      "decode_slice_max_ms": 0.43,
+      "encode_ms": 0.405,
+      "encode_slice_max_ms": 0.405,
+      "kind": "middle",
+      "level": "inferno_13"
+    },
+    {
+      "actions": 26,
+      "bytes": 368,
+      "decode_ms": 0.576,
+      "decode_slice_max_ms": 0.576,
+      "encode_ms": 0.659,
+      "encode_slice_max_ms": 0.659,
+      "kind": "won",
+      "level": "inferno_13"
+    },
+    {
+      "actions": 27,
+      "bytes": 368,
+      "decode_ms": 0.891,
+      "decode_slice_max_ms": 0.891,
+      "encode_ms": 0.701,
+      "encode_slice_max_ms": 0.701,
+      "kind": "reset_after_win",
+      "level": "inferno_13"
+    },
+    {
+      "actions": 12,
+      "bytes": 354,
+      "decode_ms": 0.485,
+      "decode_slice_max_ms": 0.485,
+      "encode_ms": 0.43,
+      "encode_slice_max_ms": 0.43,
+      "kind": "middle",
+      "level": "inferno_14"
+    },
+    {
+      "actions": 23,
+      "bytes": 365,
+      "decode_ms": 0.566,
+      "decode_slice_max_ms": 0.566,
+      "encode_ms": 0.594,
+      "encode_slice_max_ms": 0.594,
+      "kind": "won",
+      "level": "inferno_14"
+    },
+    {
+      "actions": 24,
+      "bytes": 365,
+      "decode_ms": 0.814,
+      "decode_slice_max_ms": 0.814,
+      "encode_ms": 0.627,
+      "encode_slice_max_ms": 0.627,
+      "kind": "reset_after_win",
+      "level": "inferno_14"
+    },
+    {
+      "actions": 16,
+      "bytes": 358,
+      "decode_ms": 0.43,
+      "decode_slice_max_ms": 0.43,
+      "encode_ms": 0.438,
+      "encode_slice_max_ms": 0.438,
+      "kind": "middle",
+      "level": "inferno_15"
+    },
+    {
+      "actions": 30,
+      "bytes": 372,
+      "decode_ms": 0.651,
+      "decode_slice_max_ms": 0.651,
+      "encode_ms": 0.757,
+      "encode_slice_max_ms": 0.757,
+      "kind": "won",
+      "level": "inferno_15"
+    },
+    {
+      "actions": 31,
+      "bytes": 372,
+      "decode_ms": 0.724,
+      "decode_slice_max_ms": 0.724,
+      "encode_ms": 0.895,
+      "encode_slice_max_ms": 0.895,
+      "kind": "reset_after_win",
+      "level": "inferno_15"
+    },
+    {
+      "actions": 10,
+      "bytes": 352,
+      "decode_ms": 0.409,
+      "decode_slice_max_ms": 0.409,
+      "encode_ms": 0.292,
+      "encode_slice_max_ms": 0.292,
+      "kind": "middle",
+      "level": "inferno_16"
+    },
+    {
+      "actions": 18,
+      "bytes": 360,
+      "decode_ms": 0.538,
+      "decode_slice_max_ms": 0.538,
+      "encode_ms": 0.508,
+      "encode_slice_max_ms": 0.508,
+      "kind": "won",
+      "level": "inferno_16"
+    },
+    {
+      "actions": 19,
+      "bytes": 360,
+      "decode_ms": 0.521,
+      "decode_slice_max_ms": 0.521,
+      "encode_ms": 0.496,
+      "encode_slice_max_ms": 0.496,
+      "kind": "reset_after_win",
+      "level": "inferno_16"
+    },
+    {
+      "actions": 8,
+      "bytes": 349,
+      "decode_ms": 0.407,
+      "decode_slice_max_ms": 0.407,
+      "encode_ms": 0.253,
+      "encode_slice_max_ms": 0.253,
+      "kind": "middle",
+      "level": "inferno_17"
+    },
+    {
+      "actions": 14,
+      "bytes": 356,
+      "decode_ms": 0.469,
+      "decode_slice_max_ms": 0.469,
+      "encode_ms": 0.429,
+      "encode_slice_max_ms": 0.429,
+      "kind": "won",
+      "level": "inferno_17"
+    },
+    {
+      "actions": 15,
+      "bytes": 356,
+      "decode_ms": 0.46,
+      "decode_slice_max_ms": 0.46,
+      "encode_ms": 0.434,
+      "encode_slice_max_ms": 0.434,
+      "kind": "reset_after_win",
+      "level": "inferno_17"
+    },
+    {
+      "actions": 9,
+      "bytes": 350,
+      "decode_ms": 0.436,
+      "decode_slice_max_ms": 0.436,
+      "encode_ms": 0.289,
+      "encode_slice_max_ms": 0.289,
+      "kind": "middle",
+      "level": "inferno_18"
+    },
+    {
+      "actions": 17,
+      "bytes": 359,
+      "decode_ms": 0.505,
+      "decode_slice_max_ms": 0.505,
+      "encode_ms": 0.679,
+      "encode_slice_max_ms": 0.679,
+      "kind": "won",
+      "level": "inferno_18"
+    },
+    {
+      "actions": 18,
+      "bytes": 359,
+      "decode_ms": 0.67,
+      "decode_slice_max_ms": 0.67,
+      "encode_ms": 0.549,
+      "encode_slice_max_ms": 0.549,
+      "kind": "reset_after_win",
+      "level": "inferno_18"
+    },
+    {
+      "actions": 12,
+      "bytes": 354,
+      "decode_ms": 0.422,
+      "decode_slice_max_ms": 0.422,
+      "encode_ms": 0.336,
+      "encode_slice_max_ms": 0.336,
+      "kind": "middle",
+      "level": "inferno_19"
+    },
+    {
+      "actions": 23,
+      "bytes": 365,
+      "decode_ms": 0.579,
+      "decode_slice_max_ms": 0.579,
+      "encode_ms": 0.714,
+      "encode_slice_max_ms": 0.714,
+      "kind": "won",
+      "level": "inferno_19"
+    },
+    {
+      "actions": 24,
+      "bytes": 365,
+      "decode_ms": 0.79,
+      "decode_slice_max_ms": 0.79,
+      "encode_ms": 0.623,
+      "encode_slice_max_ms": 0.623,
+      "kind": "reset_after_win",
+      "level": "inferno_19"
+    },
+    {
+      "actions": 11,
+      "bytes": 353,
+      "decode_ms": 0.649,
+      "decode_slice_max_ms": 0.649,
+      "encode_ms": 0.341,
+      "encode_slice_max_ms": 0.341,
+      "kind": "middle",
+      "level": "inferno_20"
+    },
+    {
+      "actions": 21,
+      "bytes": 363,
+      "decode_ms": 0.81,
+      "decode_slice_max_ms": 0.81,
+      "encode_ms": 0.622,
+      "encode_slice_max_ms": 0.622,
+      "kind": "won",
+      "level": "inferno_20"
+    },
+    {
+      "actions": 22,
+      "bytes": 363,
+      "decode_ms": 3.465,
+      "decode_slice_max_ms": 3.452,
+      "encode_ms": 0.834,
+      "encode_slice_max_ms": 0.834,
+      "kind": "reset_after_win",
+      "level": "inferno_20"
+    },
+    {
+      "actions": 8,
+      "bytes": 349,
+      "decode_ms": 0.395,
+      "decode_slice_max_ms": 0.395,
+      "encode_ms": 0.325,
+      "encode_slice_max_ms": 0.325,
+      "kind": "middle",
+      "level": "inferno_21"
+    },
+    {
+      "actions": 15,
+      "bytes": 357,
+      "decode_ms": 0.74,
+      "decode_slice_max_ms": 0.74,
+      "encode_ms": 0.646,
+      "encode_slice_max_ms": 0.646,
+      "kind": "won",
+      "level": "inferno_21"
+    },
+    {
+      "actions": 16,
+      "bytes": 357,
+      "decode_ms": 0.501,
+      "decode_slice_max_ms": 0.501,
+      "encode_ms": 0.495,
+      "encode_slice_max_ms": 0.495,
+      "kind": "reset_after_win",
+      "level": "inferno_21"
+    },
+    {
+      "actions": 10,
+      "bytes": 352,
+      "decode_ms": 0.488,
+      "decode_slice_max_ms": 0.488,
+      "encode_ms": 0.316,
+      "encode_slice_max_ms": 0.316,
+      "kind": "middle",
+      "level": "inferno_22"
+    },
+    {
+      "actions": 19,
+      "bytes": 361,
+      "decode_ms": 0.545,
+      "decode_slice_max_ms": 0.545,
+      "encode_ms": 0.544,
+      "encode_slice_max_ms": 0.544,
+      "kind": "won",
+      "level": "inferno_22"
+    },
+    {
+      "actions": 20,
+      "bytes": 361,
+      "decode_ms": 0.545,
+      "decode_slice_max_ms": 0.545,
+      "encode_ms": 0.583,
+      "encode_slice_max_ms": 0.583,
+      "kind": "reset_after_win",
+      "level": "inferno_22"
+    },
+    {
+      "actions": 11,
+      "bytes": 353,
+      "decode_ms": 0.435,
+      "decode_slice_max_ms": 0.435,
+      "encode_ms": 0.377,
+      "encode_slice_max_ms": 0.377,
+      "kind": "middle",
+      "level": "inferno_23"
+    },
+    {
+      "actions": 20,
+      "bytes": 362,
+      "decode_ms": 0.6,
+      "decode_slice_max_ms": 0.6,
+      "encode_ms": 0.578,
+      "encode_slice_max_ms": 0.578,
+      "kind": "won",
+      "level": "inferno_23"
+    },
+    {
+      "actions": 21,
+      "bytes": 362,
+      "decode_ms": 0.557,
+      "decode_slice_max_ms": 0.557,
+      "encode_ms": 0.596,
+      "encode_slice_max_ms": 0.596,
+      "kind": "reset_after_win",
+      "level": "inferno_23"
+    },
+    {
+      "actions": 11,
+      "bytes": 353,
+      "decode_ms": 0.714,
+      "decode_slice_max_ms": 0.714,
+      "encode_ms": 0.354,
+      "encode_slice_max_ms": 0.354,
+      "kind": "middle",
+      "level": "inferno_24"
+    },
+    {
+      "actions": 20,
+      "bytes": 362,
+      "decode_ms": 1.02,
+      "decode_slice_max_ms": 1.02,
+      "encode_ms": 0.981,
+      "encode_slice_max_ms": 0.981,
+      "kind": "won",
+      "level": "inferno_24"
+    },
+    {
+      "actions": 21,
+      "bytes": 362,
+      "decode_ms": 0.95,
+      "decode_slice_max_ms": 0.95,
+      "encode_ms": 0.985,
+      "encode_slice_max_ms": 0.985,
+      "kind": "reset_after_win",
+      "level": "inferno_24"
+    },
+    {
+      "actions": 15,
+      "bytes": 357,
+      "decode_ms": 0.78,
+      "decode_slice_max_ms": 0.78,
+      "encode_ms": 0.737,
+      "encode_slice_max_ms": 0.737,
+      "kind": "middle",
+      "level": "inferno_25"
+    },
+    {
+      "actions": 29,
+      "bytes": 372,
+      "decode_ms": 1.131,
+      "decode_slice_max_ms": 1.131,
+      "encode_ms": 1.366,
+      "encode_slice_max_ms": 1.366,
+      "kind": "won",
+      "level": "inferno_25"
+    },
+    {
+      "actions": 30,
+      "bytes": 371,
+      "decode_ms": 1.164,
+      "decode_slice_max_ms": 1.164,
+      "encode_ms": 1.377,
+      "encode_slice_max_ms": 1.377,
+      "kind": "reset_after_win",
+      "level": "inferno_25"
+    },
+    {
+      "actions": 10,
+      "bytes": 352,
+      "decode_ms": 0.636,
+      "decode_slice_max_ms": 0.636,
+      "encode_ms": 0.523,
+      "encode_slice_max_ms": 0.523,
+      "kind": "middle",
+      "level": "inferno_26"
+    },
+    {
+      "actions": 18,
+      "bytes": 360,
+      "decode_ms": 0.905,
+      "decode_slice_max_ms": 0.905,
+      "encode_ms": 0.857,
+      "encode_slice_max_ms": 0.857,
+      "kind": "won",
+      "level": "inferno_26"
+    },
+    {
+      "actions": 19,
+      "bytes": 360,
+      "decode_ms": 0.891,
+      "decode_slice_max_ms": 0.891,
+      "encode_ms": 0.912,
+      "encode_slice_max_ms": 0.912,
+      "kind": "reset_after_win",
+      "level": "inferno_26"
+    },
+    {
+      "actions": 12,
+      "bytes": 354,
+      "decode_ms": 0.751,
+      "decode_slice_max_ms": 0.751,
+      "encode_ms": 0.609,
+      "encode_slice_max_ms": 0.609,
+      "kind": "middle",
+      "level": "inferno_27"
+    },
+    {
+      "actions": 23,
+      "bytes": 365,
+      "decode_ms": 0.999,
+      "decode_slice_max_ms": 0.999,
+      "encode_ms": 1.14,
+      "encode_slice_max_ms": 1.14,
+      "kind": "won",
+      "level": "inferno_27"
+    },
+    {
+      "actions": 24,
+      "bytes": 365,
+      "decode_ms": 0.995,
+      "decode_slice_max_ms": 0.995,
+      "encode_ms": 1.089,
+      "encode_slice_max_ms": 1.089,
+      "kind": "reset_after_win",
+      "level": "inferno_27"
+    },
+    {
+      "actions": 19,
+      "bytes": 361,
+      "decode_ms": 0.781,
+      "decode_slice_max_ms": 0.781,
+      "encode_ms": 0.803,
+      "encode_slice_max_ms": 0.803,
+      "kind": "middle",
+      "level": "inferno_28"
+    },
+    {
+      "actions": 36,
+      "bytes": 378,
+      "decode_ms": 1.237,
+      "decode_slice_max_ms": 1.237,
+      "encode_ms": 1.603,
+      "encode_slice_max_ms": 1.603,
+      "kind": "won",
+      "level": "inferno_28"
+    },
+    {
+      "actions": 37,
+      "bytes": 378,
+      "decode_ms": 1.232,
+      "decode_slice_max_ms": 1.232,
+      "encode_ms": 1.617,
+      "encode_slice_max_ms": 1.617,
+      "kind": "reset_after_win",
+      "level": "inferno_28"
+    },
+    {
+      "actions": 15,
+      "bytes": 357,
+      "decode_ms": 0.775,
+      "decode_slice_max_ms": 0.775,
+      "encode_ms": 0.936,
+      "encode_slice_max_ms": 0.936,
+      "kind": "middle",
+      "level": "inferno_29"
+    },
+    {
+      "actions": 29,
+      "bytes": 372,
+      "decode_ms": 1.148,
+      "decode_slice_max_ms": 1.148,
+      "encode_ms": 1.307,
+      "encode_slice_max_ms": 1.307,
+      "kind": "won",
+      "level": "inferno_29"
+    },
+    {
+      "actions": 30,
+      "bytes": 371,
+      "decode_ms": 1.109,
+      "decode_slice_max_ms": 1.109,
+      "encode_ms": 1.322,
+      "encode_slice_max_ms": 1.322,
+      "kind": "reset_after_win",
+      "level": "inferno_29"
+    },
+    {
+      "actions": 15,
+      "bytes": 357,
+      "decode_ms": 0.766,
+      "decode_slice_max_ms": 0.766,
+      "encode_ms": 0.735,
+      "encode_slice_max_ms": 0.735,
+      "kind": "middle",
+      "level": "inferno_30"
+    },
+    {
+      "actions": 28,
+      "bytes": 371,
+      "decode_ms": 1.141,
+      "decode_slice_max_ms": 1.141,
+      "encode_ms": 1.391,
+      "encode_slice_max_ms": 1.391,
+      "kind": "won",
+      "level": "inferno_30"
+    },
+    {
+      "actions": 29,
+      "bytes": 370,
+      "decode_ms": 1.165,
+      "decode_slice_max_ms": 1.165,
+      "encode_ms": 1.33,
+      "encode_slice_max_ms": 1.33,
+      "kind": "reset_after_win",
+      "level": "inferno_30"
+    },
+    {
+      "actions": 8,
+      "bytes": 355,
+      "decode_ms": 0.822,
+      "decode_slice_max_ms": 0.822,
+      "encode_ms": 0.515,
+      "encode_slice_max_ms": 0.515,
+      "kind": "middle",
+      "level": "inferno_31"
+    },
+    {
+      "actions": 15,
+      "bytes": 363,
+      "decode_ms": 1.019,
+      "decode_slice_max_ms": 1.019,
+      "encode_ms": 0.894,
+      "encode_slice_max_ms": 0.894,
+      "kind": "won",
+      "level": "inferno_31"
+    },
+    {
+      "actions": 16,
+      "bytes": 363,
+      "decode_ms": 0.965,
+      "decode_slice_max_ms": 0.965,
+      "encode_ms": 0.876,
+      "encode_slice_max_ms": 0.876,
+      "kind": "reset_after_win",
+      "level": "inferno_31"
+    },
+    {
+      "actions": 9,
+      "bytes": 356,
+      "decode_ms": 0.732,
+      "decode_slice_max_ms": 0.732,
+      "encode_ms": 0.515,
+      "encode_slice_max_ms": 0.515,
+      "kind": "middle",
+      "level": "inferno_32"
+    },
+    {
+      "actions": 16,
+      "bytes": 364,
+      "decode_ms": 0.976,
+      "decode_slice_max_ms": 0.976,
+      "encode_ms": 0.942,
+      "encode_slice_max_ms": 0.942,
+      "kind": "won",
+      "level": "inferno_32"
+    },
+    {
+      "actions": 17,
+      "bytes": 364,
+      "decode_ms": 0.966,
+      "decode_slice_max_ms": 0.966,
+      "encode_ms": 0.951,
+      "encode_slice_max_ms": 0.951,
+      "kind": "reset_after_win",
+      "level": "inferno_32"
+    },
+    {
+      "actions": 10,
+      "bytes": 358,
+      "decode_ms": 0.638,
+      "decode_slice_max_ms": 0.638,
+      "encode_ms": 0.514,
+      "encode_slice_max_ms": 0.514,
+      "kind": "middle",
+      "level": "inferno_33"
+    },
+    {
+      "actions": 18,
+      "bytes": 366,
+      "decode_ms": 0.997,
+      "decode_slice_max_ms": 0.997,
+      "encode_ms": 0.883,
+      "encode_slice_max_ms": 0.883,
+      "kind": "won",
+      "level": "inferno_33"
+    },
+    {
+      "actions": 19,
+      "bytes": 366,
+      "decode_ms": 0.954,
+      "decode_slice_max_ms": 0.954,
+      "encode_ms": 1.015,
+      "encode_slice_max_ms": 1.015,
+      "kind": "reset_after_win",
+      "level": "inferno_33"
+    },
+    {
+      "actions": 13,
+      "bytes": 361,
+      "decode_ms": 0.563,
+      "decode_slice_max_ms": 0.563,
+      "encode_ms": 0.456,
+      "encode_slice_max_ms": 0.456,
+      "kind": "middle",
+      "level": "inferno_34"
+    },
+    {
+      "actions": 24,
+      "bytes": 373,
+      "decode_ms": 0.712,
+      "decode_slice_max_ms": 0.712,
+      "encode_ms": 0.784,
+      "encode_slice_max_ms": 0.784,
+      "kind": "won",
+      "level": "inferno_34"
+    },
+    {
+      "actions": 25,
+      "bytes": 372,
+      "decode_ms": 0.763,
+      "decode_slice_max_ms": 0.763,
+      "encode_ms": 0.847,
+      "encode_slice_max_ms": 0.847,
+      "kind": "reset_after_win",
+      "level": "inferno_34"
+    },
+    {
+      "actions": 18,
+      "bytes": 366,
+      "decode_ms": 0.594,
+      "decode_slice_max_ms": 0.594,
+      "encode_ms": 0.551,
+      "encode_slice_max_ms": 0.551,
+      "kind": "middle",
+      "level": "inferno_35"
+    },
+    {
+      "actions": 35,
+      "bytes": 384,
+      "decode_ms": 0.87,
+      "decode_slice_max_ms": 0.87,
+      "encode_ms": 1.083,
+      "encode_slice_max_ms": 1.083,
+      "kind": "won",
+      "level": "inferno_35"
+    },
+    {
+      "actions": 36,
+      "bytes": 383,
+      "decode_ms": 1.13,
+      "decode_slice_max_ms": 1.13,
+      "encode_ms": 1.099,
+      "encode_slice_max_ms": 1.099,
+      "kind": "reset_after_win",
+      "level": "inferno_35"
+    },
+    {
+      "actions": 17,
+      "bytes": 365,
+      "decode_ms": 0.531,
+      "decode_slice_max_ms": 0.531,
+      "encode_ms": 0.534,
+      "encode_slice_max_ms": 0.534,
+      "kind": "middle",
+      "level": "inferno_36"
+    },
+    {
+      "actions": 33,
+      "bytes": 381,
+      "decode_ms": 0.792,
+      "decode_slice_max_ms": 0.792,
+      "encode_ms": 1.141,
+      "encode_slice_max_ms": 1.141,
+      "kind": "won",
+      "level": "inferno_36"
+    },
+    {
+      "actions": 34,
+      "bytes": 381,
+      "decode_ms": 1.07,
+      "decode_slice_max_ms": 1.07,
+      "encode_ms": 1.006,
+      "encode_slice_max_ms": 1.006,
+      "kind": "reset_after_win",
+      "level": "inferno_36"
+    },
+    {
+      "actions": 34,
+      "bytes": 382,
+      "decode_ms": 0.781,
+      "decode_slice_max_ms": 0.781,
+      "encode_ms": 1.137,
+      "encode_slice_max_ms": 1.137,
+      "kind": "middle",
+      "level": "inferno_37"
+    },
+    {
+      "actions": 66,
+      "bytes": 415,
+      "decode_ms": 1.415,
+      "decode_slice_max_ms": 1.415,
+      "encode_ms": 1.868,
+      "encode_slice_max_ms": 1.868,
+      "kind": "won",
+      "level": "inferno_37"
+    },
+    {
+      "actions": 67,
+      "bytes": 414,
+      "decode_ms": 1.205,
+      "decode_slice_max_ms": 1.205,
+      "encode_ms": 1.884,
+      "encode_slice_max_ms": 1.884,
+      "kind": "reset_after_win",
+      "level": "inferno_37"
+    },
+    {
+      "actions": 15,
+      "bytes": 363,
+      "decode_ms": 0.576,
+      "decode_slice_max_ms": 0.576,
+      "encode_ms": 0.493,
+      "encode_slice_max_ms": 0.493,
+      "kind": "middle",
+      "level": "inferno_38"
+    },
+    {
+      "actions": 29,
+      "bytes": 378,
+      "decode_ms": 0.825,
+      "decode_slice_max_ms": 0.825,
+      "encode_ms": 1.23,
+      "encode_slice_max_ms": 1.23,
+      "kind": "won",
+      "level": "inferno_38"
+    },
+    {
+      "actions": 30,
+      "bytes": 377,
+      "decode_ms": 0.826,
+      "decode_slice_max_ms": 0.826,
+      "encode_ms": 1.009,
+      "encode_slice_max_ms": 1.009,
+      "kind": "reset_after_win",
+      "level": "inferno_38"
+    },
+    {
+      "actions": 23,
+      "bytes": 371,
+      "decode_ms": 0.765,
+      "decode_slice_max_ms": 0.765,
+      "encode_ms": 0.739,
+      "encode_slice_max_ms": 0.739,
+      "kind": "middle",
+      "level": "inferno_39"
+    },
+    {
+      "actions": 45,
+      "bytes": 394,
+      "decode_ms": 1.021,
+      "decode_slice_max_ms": 1.021,
+      "encode_ms": 1.385,
+      "encode_slice_max_ms": 1.385,
+      "kind": "won",
+      "level": "inferno_39"
+    },
+    {
+      "actions": 46,
+      "bytes": 393,
+      "decode_ms": 1.083,
+      "decode_slice_max_ms": 1.083,
+      "encode_ms": 1.431,
+      "encode_slice_max_ms": 1.431,
+      "kind": "reset_after_win",
+      "level": "inferno_39"
+    },
+    {
+      "actions": 28,
+      "bytes": 376,
+      "decode_ms": 0.673,
+      "decode_slice_max_ms": 0.673,
+      "encode_ms": 0.865,
+      "encode_slice_max_ms": 0.865,
+      "kind": "middle",
+      "level": "inferno_40"
+    },
+    {
+      "actions": 54,
+      "bytes": 403,
+      "decode_ms": 1.134,
+      "decode_slice_max_ms": 1.134,
+      "encode_ms": 1.557,
+      "encode_slice_max_ms": 1.557,
+      "kind": "won",
+      "level": "inferno_40"
+    },
+    {
+      "actions": 55,
+      "bytes": 402,
+      "decode_ms": 1.093,
+      "decode_slice_max_ms": 1.093,
+      "encode_ms": 1.805,
+      "encode_slice_max_ms": 1.805,
+      "kind": "reset_after_win",
+      "level": "inferno_40"
+    },
+    {
+      "actions": 15,
+      "bytes": 363,
+      "decode_ms": 0.501,
+      "decode_slice_max_ms": 0.501,
+      "encode_ms": 0.501,
+      "encode_slice_max_ms": 0.501,
+      "kind": "middle",
+      "level": "inferno_41"
+    },
+    {
+      "actions": 29,
+      "bytes": 378,
+      "decode_ms": 0.726,
+      "decode_slice_max_ms": 0.726,
+      "encode_ms": 0.862,
+      "encode_slice_max_ms": 0.862,
+      "kind": "won",
+      "level": "inferno_41"
+    },
+    {
+      "actions": 30,
+      "bytes": 377,
+      "decode_ms": 0.71,
+      "decode_slice_max_ms": 0.71,
+      "encode_ms": 1.153,
+      "encode_slice_max_ms": 1.153,
+      "kind": "reset_after_win",
+      "level": "inferno_41"
+    },
+    {
+      "actions": 15,
+      "bytes": 363,
+      "decode_ms": 0.484,
+      "decode_slice_max_ms": 0.484,
+      "encode_ms": 0.492,
+      "encode_slice_max_ms": 0.492,
+      "kind": "middle",
+      "level": "inferno_42"
+    },
+    {
+      "actions": 29,
+      "bytes": 378,
+      "decode_ms": 0.71,
+      "decode_slice_max_ms": 0.71,
+      "encode_ms": 0.88,
+      "encode_slice_max_ms": 0.88,
+      "kind": "won",
+      "level": "inferno_42"
+    },
+    {
+      "actions": 30,
+      "bytes": 377,
+      "decode_ms": 1.004,
+      "decode_slice_max_ms": 1.004,
+      "encode_ms": 0.888,
+      "encode_slice_max_ms": 0.888,
+      "kind": "reset_after_win",
+      "level": "inferno_42"
+    },
+    {
+      "actions": 17,
+      "bytes": 365,
+      "decode_ms": 0.554,
+      "decode_slice_max_ms": 0.554,
+      "encode_ms": 0.553,
+      "encode_slice_max_ms": 0.553,
+      "kind": "middle",
+      "level": "inferno_43"
+    },
+    {
+      "actions": 33,
+      "bytes": 382,
+      "decode_ms": 0.844,
+      "decode_slice_max_ms": 0.844,
+      "encode_ms": 0.978,
+      "encode_slice_max_ms": 0.978,
+      "kind": "won",
+      "level": "inferno_43"
+    },
+    {
+      "actions": 34,
+      "bytes": 381,
+      "decode_ms": 0.996,
+      "decode_slice_max_ms": 0.996,
+      "encode_ms": 0.996,
+      "encode_slice_max_ms": 0.996,
+      "kind": "reset_after_win",
+      "level": "inferno_43"
+    },
+    {
+      "actions": 23,
+      "bytes": 371,
+      "decode_ms": 0.978,
+      "decode_slice_max_ms": 0.978,
+      "encode_ms": 0.776,
+      "encode_slice_max_ms": 0.776,
+      "kind": "middle",
+      "level": "inferno_44"
+    },
+    {
+      "actions": 45,
+      "bytes": 394,
+      "decode_ms": 1.084,
+      "decode_slice_max_ms": 1.084,
+      "encode_ms": 1.396,
+      "encode_slice_max_ms": 1.396,
+      "kind": "won",
+      "level": "inferno_44"
+    },
+    {
+      "actions": 46,
+      "bytes": 393,
+      "decode_ms": 0.969,
+      "decode_slice_max_ms": 0.969,
+      "encode_ms": 1.611,
+      "encode_slice_max_ms": 1.611,
+      "kind": "reset_after_win",
+      "level": "inferno_44"
+    },
+    {
+      "actions": 38,
+      "bytes": 386,
+      "decode_ms": 0.968,
+      "decode_slice_max_ms": 0.968,
+      "encode_ms": 1.112,
+      "encode_slice_max_ms": 1.112,
+      "kind": "middle",
+      "level": "inferno_45"
+    },
+    {
+      "actions": 75,
+      "bytes": 424,
+      "decode_ms": 2.323,
+      "decode_slice_max_ms": 2.002,
+      "encode_ms": 3.389,
+      "encode_slice_max_ms": 2.029,
+      "kind": "won",
+      "level": "inferno_45"
+    },
+    {
+      "actions": 76,
+      "bytes": 423,
+      "decode_ms": 2.475,
+      "decode_slice_max_ms": 2.015,
+      "encode_ms": 3.746,
+      "encode_slice_max_ms": 2.025,
+      "kind": "reset_after_win",
+      "level": "inferno_45"
+    },
+    {
+      "actions": 28,
+      "bytes": 376,
+      "decode_ms": 1.096,
+      "decode_slice_max_ms": 1.096,
+      "encode_ms": 1.364,
+      "encode_slice_max_ms": 1.364,
+      "kind": "middle",
+      "level": "inferno_46"
+    },
+    {
+      "actions": 54,
+      "bytes": 403,
+      "decode_ms": 1.859,
+      "decode_slice_max_ms": 1.859,
+      "encode_ms": 2.589,
+      "encode_slice_max_ms": 2.037,
+      "kind": "won",
+      "level": "inferno_46"
+    },
+    {
+      "actions": 55,
+      "bytes": 402,
+      "decode_ms": 1.787,
+      "decode_slice_max_ms": 1.787,
+      "encode_ms": 2.583,
+      "encode_slice_max_ms": 2.031,
+      "kind": "reset_after_win",
+      "level": "inferno_46"
+    },
+    {
+      "actions": 22,
+      "bytes": 370,
+      "decode_ms": 0.985,
+      "decode_slice_max_ms": 0.985,
+      "encode_ms": 1.05,
+      "encode_slice_max_ms": 1.05,
+      "kind": "middle",
+      "level": "inferno_47"
+    },
+    {
+      "actions": 42,
+      "bytes": 391,
+      "decode_ms": 1.613,
+      "decode_slice_max_ms": 1.613,
+      "encode_ms": 2.057,
+      "encode_slice_max_ms": 2.0,
+      "kind": "won",
+      "level": "inferno_47"
+    },
+    {
+      "actions": 43,
+      "bytes": 390,
+      "decode_ms": 1.605,
+      "decode_slice_max_ms": 1.605,
+      "encode_ms": 2.085,
+      "encode_slice_max_ms": 2.016,
+      "kind": "reset_after_win",
+      "level": "inferno_47"
+    },
+    {
+      "actions": 24,
+      "bytes": 372,
+      "decode_ms": 1.104,
+      "decode_slice_max_ms": 1.104,
+      "encode_ms": 1.208,
+      "encode_slice_max_ms": 1.208,
+      "kind": "middle",
+      "level": "inferno_48"
+    },
+    {
+      "actions": 46,
+      "bytes": 395,
+      "decode_ms": 1.824,
+      "decode_slice_max_ms": 1.824,
+      "encode_ms": 2.275,
+      "encode_slice_max_ms": 2.036,
+      "kind": "won",
+      "level": "inferno_48"
+    },
+    {
+      "actions": 47,
+      "bytes": 394,
+      "decode_ms": 1.689,
+      "decode_slice_max_ms": 1.689,
+      "encode_ms": 2.306,
+      "encode_slice_max_ms": 2.023,
+      "kind": "reset_after_win",
+      "level": "inferno_48"
+    },
+    {
+      "actions": 24,
+      "bytes": 372,
+      "decode_ms": 1.099,
+      "decode_slice_max_ms": 1.099,
+      "encode_ms": 1.257,
+      "encode_slice_max_ms": 1.257,
+      "kind": "middle",
+      "level": "inferno_49"
+    },
+    {
+      "actions": 47,
+      "bytes": 396,
+      "decode_ms": 1.663,
+      "decode_slice_max_ms": 1.663,
+      "encode_ms": 2.305,
+      "encode_slice_max_ms": 2.023,
+      "kind": "won",
+      "level": "inferno_49"
+    },
+    {
+      "actions": 48,
+      "bytes": 395,
+      "decode_ms": 1.211,
+      "decode_slice_max_ms": 1.211,
+      "encode_ms": 2.401,
+      "encode_slice_max_ms": 2.002,
+      "kind": "reset_after_win",
+      "level": "inferno_49"
+    },
+    {
+      "actions": 27,
+      "bytes": 376,
+      "decode_ms": 0.926,
+      "decode_slice_max_ms": 0.926,
+      "encode_ms": 0.912,
+      "encode_slice_max_ms": 0.912,
+      "kind": "middle",
+      "level": "inferno_50"
+    },
+    {
+      "actions": 52,
+      "bytes": 401,
+      "decode_ms": 1.164,
+      "decode_slice_max_ms": 1.164,
+      "encode_ms": 1.611,
+      "encode_slice_max_ms": 1.611,
+      "kind": "won",
+      "level": "inferno_50"
+    },
+    {
+      "actions": 53,
+      "bytes": 400,
+      "decode_ms": 1.318,
+      "decode_slice_max_ms": 1.318,
+      "encode_ms": 1.668,
+      "encode_slice_max_ms": 1.668,
+      "kind": "reset_after_win",
+      "level": "inferno_50"
+    },
+    {
+      "actions": 4,
+      "bytes": 342,
+      "decode_ms": 0.228,
+      "decode_slice_max_ms": 0.228,
+      "encode_ms": 0.119,
+      "encode_slice_max_ms": 0.119,
+      "kind": "middle",
+      "level": "rainforest_01"
+    },
+    {
+      "actions": 6,
+      "bytes": 344,
+      "decode_ms": 0.262,
+      "decode_slice_max_ms": 0.262,
+      "encode_ms": 0.44,
+      "encode_slice_max_ms": 0.44,
+      "kind": "won",
+      "level": "rainforest_01"
+    },
+    {
+      "actions": 7,
+      "bytes": 345,
+      "decode_ms": 0.255,
+      "decode_slice_max_ms": 0.255,
+      "encode_ms": 0.195,
+      "encode_slice_max_ms": 0.195,
+      "kind": "reset_after_win",
+      "level": "rainforest_01"
+    },
+    {
+      "actions": 4,
+      "bytes": 342,
+      "decode_ms": 0.233,
+      "decode_slice_max_ms": 0.233,
+      "encode_ms": 0.114,
+      "encode_slice_max_ms": 0.114,
+      "kind": "middle",
+      "level": "rainforest_02"
+    },
+    {
+      "actions": 6,
+      "bytes": 344,
+      "decode_ms": 0.348,
+      "decode_slice_max_ms": 0.348,
+      "encode_ms": 0.154,
+      "encode_slice_max_ms": 0.154,
+      "kind": "won",
+      "level": "rainforest_02"
+    },
+    {
+      "actions": 7,
+      "bytes": 345,
+      "decode_ms": 0.255,
+      "decode_slice_max_ms": 0.255,
+      "encode_ms": 0.171,
+      "encode_slice_max_ms": 0.171,
+      "kind": "reset_after_win",
+      "level": "rainforest_02"
+    },
+    {
+      "actions": 4,
+      "bytes": 342,
+      "decode_ms": 0.262,
+      "decode_slice_max_ms": 0.262,
+      "encode_ms": 0.217,
+      "encode_slice_max_ms": 0.217,
+      "kind": "middle",
+      "level": "rainforest_03"
+    },
+    {
+      "actions": 6,
+      "bytes": 344,
+      "decode_ms": 0.279,
+      "decode_slice_max_ms": 0.279,
+      "encode_ms": 0.2,
+      "encode_slice_max_ms": 0.2,
+      "kind": "won",
+      "level": "rainforest_03"
+    },
+    {
+      "actions": 7,
+      "bytes": 345,
+      "decode_ms": 0.311,
+      "decode_slice_max_ms": 0.311,
+      "encode_ms": 0.235,
+      "encode_slice_max_ms": 0.235,
+      "kind": "reset_after_win",
+      "level": "rainforest_03"
+    },
+    {
+      "actions": 6,
+      "bytes": 344,
+      "decode_ms": 0.262,
+      "decode_slice_max_ms": 0.262,
+      "encode_ms": 0.166,
+      "encode_slice_max_ms": 0.166,
+      "kind": "middle",
+      "level": "rainforest_04"
+    },
+    {
+      "actions": 11,
+      "bytes": 350,
+      "decode_ms": 0.318,
+      "decode_slice_max_ms": 0.318,
+      "encode_ms": 0.286,
+      "encode_slice_max_ms": 0.286,
+      "kind": "won",
+      "level": "rainforest_04"
+    },
+    {
+      "actions": 12,
+      "bytes": 350,
+      "decode_ms": 0.335,
+      "decode_slice_max_ms": 0.335,
+      "encode_ms": 0.272,
+      "encode_slice_max_ms": 0.272,
+      "kind": "reset_after_win",
+      "level": "rainforest_04"
+    },
+    {
+      "actions": 5,
+      "bytes": 343,
+      "decode_ms": 0.267,
+      "decode_slice_max_ms": 0.267,
+      "encode_ms": 0.151,
+      "encode_slice_max_ms": 0.151,
+      "kind": "middle",
+      "level": "rainforest_05"
+    },
+    {
+      "actions": 8,
+      "bytes": 346,
+      "decode_ms": 0.306,
+      "decode_slice_max_ms": 0.306,
+      "encode_ms": 0.217,
+      "encode_slice_max_ms": 0.217,
+      "kind": "won",
+      "level": "rainforest_05"
+    },
+    {
+      "actions": 9,
+      "bytes": 347,
+      "decode_ms": 0.326,
+      "decode_slice_max_ms": 0.326,
+      "encode_ms": 0.226,
+      "encode_slice_max_ms": 0.226,
+      "kind": "reset_after_win",
+      "level": "rainforest_05"
+    },
+    {
+      "actions": 7,
+      "bytes": 351,
+      "decode_ms": 0.318,
+      "decode_slice_max_ms": 0.318,
+      "encode_ms": 0.211,
+      "encode_slice_max_ms": 0.211,
+      "kind": "middle",
+      "level": "rainforest_06"
+    },
+    {
+      "actions": 12,
+      "bytes": 357,
+      "decode_ms": 0.375,
+      "decode_slice_max_ms": 0.375,
+      "encode_ms": 0.348,
+      "encode_slice_max_ms": 0.348,
+      "kind": "won",
+      "level": "rainforest_06"
+    },
+    {
+      "actions": 13,
+      "bytes": 357,
+      "decode_ms": 0.375,
+      "decode_slice_max_ms": 0.375,
+      "encode_ms": 0.358,
+      "encode_slice_max_ms": 0.358,
+      "kind": "reset_after_win",
+      "level": "rainforest_06"
+    },
+    {
+      "actions": 8,
+      "bytes": 352,
+      "decode_ms": 0.337,
+      "decode_slice_max_ms": 0.337,
+      "encode_ms": 0.233,
+      "encode_slice_max_ms": 0.233,
+      "kind": "middle",
+      "level": "rainforest_07"
+    },
+    {
+      "actions": 15,
+      "bytes": 360,
+      "decode_ms": 0.416,
+      "decode_slice_max_ms": 0.416,
+      "encode_ms": 0.394,
+      "encode_slice_max_ms": 0.394,
+      "kind": "won",
+      "level": "rainforest_07"
+    },
+    {
+      "actions": 16,
+      "bytes": 360,
+      "decode_ms": 0.414,
+      "decode_slice_max_ms": 0.414,
+      "encode_ms": 0.411,
+      "encode_slice_max_ms": 0.411,
+      "kind": "reset_after_win",
+      "level": "rainforest_07"
+    },
+    {
+      "actions": 6,
+      "bytes": 350,
+      "decode_ms": 0.495,
+      "decode_slice_max_ms": 0.495,
+      "encode_ms": 0.371,
+      "encode_slice_max_ms": 0.371,
+      "kind": "middle",
+      "level": "rainforest_08"
+    },
+    {
+      "actions": 10,
+      "bytes": 355,
+      "decode_ms": 0.414,
+      "decode_slice_max_ms": 0.414,
+      "encode_ms": 0.375,
+      "encode_slice_max_ms": 0.375,
+      "kind": "won",
+      "level": "rainforest_08"
+    },
+    {
+      "actions": 11,
+      "bytes": 355,
+      "decode_ms": 0.656,
+      "decode_slice_max_ms": 0.656,
+      "encode_ms": 0.303,
+      "encode_slice_max_ms": 0.303,
+      "kind": "reset_after_win",
+      "level": "rainforest_08"
+    },
+    {
+      "actions": 9,
+      "bytes": 353,
+      "decode_ms": 0.356,
+      "decode_slice_max_ms": 0.356,
+      "encode_ms": 0.316,
+      "encode_slice_max_ms": 0.316,
+      "kind": "middle",
+      "level": "rainforest_09"
+    },
+    {
+      "actions": 17,
+      "bytes": 362,
+      "decode_ms": 0.487,
+      "decode_slice_max_ms": 0.487,
+      "encode_ms": 0.694,
+      "encode_slice_max_ms": 0.694,
+      "kind": "won",
+      "level": "rainforest_09"
+    },
+    {
+      "actions": 18,
+      "bytes": 362,
+      "decode_ms": 0.49,
+      "decode_slice_max_ms": 0.49,
+      "encode_ms": 0.455,
+      "encode_slice_max_ms": 0.455,
+      "kind": "reset_after_win",
+      "level": "rainforest_09"
+    },
+    {
+      "actions": 10,
+      "bytes": 355,
+      "decode_ms": 0.375,
+      "decode_slice_max_ms": 0.375,
+      "encode_ms": 0.304,
+      "encode_slice_max_ms": 0.304,
+      "kind": "middle",
+      "level": "rainforest_10"
+    },
+    {
+      "actions": 19,
+      "bytes": 364,
+      "decode_ms": 0.486,
+      "decode_slice_max_ms": 0.486,
+      "encode_ms": 0.695,
+      "encode_slice_max_ms": 0.695,
+      "kind": "won",
+      "level": "rainforest_10"
+    },
+    {
+      "actions": 20,
+      "bytes": 364,
+      "decode_ms": 0.726,
+      "decode_slice_max_ms": 0.726,
+      "encode_ms": 0.585,
+      "encode_slice_max_ms": 0.585,
+      "kind": "reset_after_win",
+      "level": "rainforest_10"
+    },
+    {
+      "actions": 5,
+      "bytes": 349,
+      "decode_ms": 0.33,
+      "decode_slice_max_ms": 0.33,
+      "encode_ms": 0.202,
+      "encode_slice_max_ms": 0.202,
+      "kind": "middle",
+      "level": "rainforest_11"
+    },
+    {
+      "actions": 8,
+      "bytes": 352,
+      "decode_ms": 0.348,
+      "decode_slice_max_ms": 0.348,
+      "encode_ms": 0.252,
+      "encode_slice_max_ms": 0.252,
+      "kind": "won",
+      "level": "rainforest_11"
+    },
+    {
+      "actions": 9,
+      "bytes": 353,
+      "decode_ms": 0.407,
+      "decode_slice_max_ms": 0.407,
+      "encode_ms": 0.261,
+      "encode_slice_max_ms": 0.261,
+      "kind": "reset_after_win",
+      "level": "rainforest_11"
+    },
+    {
+      "actions": 12,
+      "bytes": 357,
+      "decode_ms": 0.488,
+      "decode_slice_max_ms": 0.488,
+      "encode_ms": 0.327,
+      "encode_slice_max_ms": 0.327,
+      "kind": "middle",
+      "level": "rainforest_12"
+    },
+    {
+      "actions": 22,
+      "bytes": 367,
+      "decode_ms": 0.511,
+      "decode_slice_max_ms": 0.511,
+      "encode_ms": 0.604,
+      "encode_slice_max_ms": 0.604,
+      "kind": "won",
+      "level": "rainforest_12"
+    },
+    {
+      "actions": 23,
+      "bytes": 367,
+      "decode_ms": 0.712,
+      "decode_slice_max_ms": 0.712,
+      "encode_ms": 0.568,
+      "encode_slice_max_ms": 0.568,
+      "kind": "reset_after_win",
+      "level": "rainforest_12"
+    },
+    {
+      "actions": 13,
+      "bytes": 358,
+      "decode_ms": 0.447,
+      "decode_slice_max_ms": 0.447,
+      "encode_ms": 0.351,
+      "encode_slice_max_ms": 0.351,
+      "kind": "middle",
+      "level": "rainforest_13"
+    },
+    {
+      "actions": 24,
+      "bytes": 369,
+      "decode_ms": 0.528,
+      "decode_slice_max_ms": 0.528,
+      "encode_ms": 0.61,
+      "encode_slice_max_ms": 0.61,
+      "kind": "won",
+      "level": "rainforest_13"
+    },
+    {
+      "actions": 25,
+      "bytes": 369,
+      "decode_ms": 0.533,
+      "decode_slice_max_ms": 0.533,
+      "encode_ms": 0.597,
+      "encode_slice_max_ms": 0.597,
+      "kind": "reset_after_win",
+      "level": "rainforest_13"
+    },
+    {
+      "actions": 8,
+      "bytes": 352,
+      "decode_ms": 0.464,
+      "decode_slice_max_ms": 0.464,
+      "encode_ms": 0.247,
+      "encode_slice_max_ms": 0.247,
+      "kind": "middle",
+      "level": "rainforest_14"
+    },
+    {
+      "actions": 14,
+      "bytes": 359,
+      "decode_ms": 0.806,
+      "decode_slice_max_ms": 0.806,
+      "encode_ms": 0.522,
+      "encode_slice_max_ms": 0.522,
+      "kind": "won",
+      "level": "rainforest_14"
+    },
+    {
+      "actions": 15,
+      "bytes": 359,
+      "decode_ms": 0.437,
+      "decode_slice_max_ms": 0.437,
+      "encode_ms": 0.414,
+      "encode_slice_max_ms": 0.414,
+      "kind": "reset_after_win",
+      "level": "rainforest_14"
+    },
+    {
+      "actions": 17,
+      "bytes": 362,
+      "decode_ms": 0.459,
+      "decode_slice_max_ms": 0.459,
+      "encode_ms": 0.425,
+      "encode_slice_max_ms": 0.425,
+      "kind": "middle",
+      "level": "rainforest_15"
+    },
+    {
+      "actions": 33,
+      "bytes": 378,
+      "decode_ms": 0.724,
+      "decode_slice_max_ms": 0.724,
+      "encode_ms": 0.829,
+      "encode_slice_max_ms": 0.829,
+      "kind": "won",
+      "level": "rainforest_15"
+    },
+    {
+      "actions": 34,
+      "bytes": 378,
+      "decode_ms": 0.659,
+      "decode_slice_max_ms": 0.659,
+      "encode_ms": 0.91,
+      "encode_slice_max_ms": 0.91,
+      "kind": "reset_after_win",
+      "level": "rainforest_15"
+    },
+    {
+      "actions": 8,
+      "bytes": 352,
+      "decode_ms": 0.355,
+      "decode_slice_max_ms": 0.355,
+      "encode_ms": 0.242,
+      "encode_slice_max_ms": 0.242,
+      "kind": "middle",
+      "level": "rainforest_16"
+    },
+    {
+      "actions": 14,
+      "bytes": 359,
+      "decode_ms": 0.449,
+      "decode_slice_max_ms": 0.449,
+      "encode_ms": 0.403,
+      "encode_slice_max_ms": 0.403,
+      "kind": "won",
+      "level": "rainforest_16"
+    },
+    {
+      "actions": 15,
+      "bytes": 359,
+      "decode_ms": 0.457,
+      "decode_slice_max_ms": 0.457,
+      "encode_ms": 0.404,
+      "encode_slice_max_ms": 0.404,
+      "kind": "reset_after_win",
+      "level": "rainforest_16"
+    },
+    {
+      "actions": 17,
+      "bytes": 362,
+      "decode_ms": 0.562,
+      "decode_slice_max_ms": 0.562,
+      "encode_ms": 0.511,
+      "encode_slice_max_ms": 0.511,
+      "kind": "middle",
+      "level": "rainforest_17"
+    },
+    {
+      "actions": 32,
+      "bytes": 377,
+      "decode_ms": 0.711,
+      "decode_slice_max_ms": 0.711,
+      "encode_ms": 0.849,
+      "encode_slice_max_ms": 0.849,
+      "kind": "won",
+      "level": "rainforest_17"
+    },
+    {
+      "actions": 33,
+      "bytes": 377,
+      "decode_ms": 0.771,
+      "decode_slice_max_ms": 0.771,
+      "encode_ms": 0.85,
+      "encode_slice_max_ms": 0.85,
+      "kind": "reset_after_win",
+      "level": "rainforest_17"
+    },
+    {
+      "actions": 15,
+      "bytes": 360,
+      "decode_ms": 0.468,
+      "decode_slice_max_ms": 0.468,
+      "encode_ms": 0.452,
+      "encode_slice_max_ms": 0.452,
+      "kind": "middle",
+      "level": "rainforest_18"
+    },
+    {
+      "actions": 28,
+      "bytes": 373,
+      "decode_ms": 0.653,
+      "decode_slice_max_ms": 0.653,
+      "encode_ms": 0.839,
+      "encode_slice_max_ms": 0.839,
+      "kind": "won",
+      "level": "rainforest_18"
+    },
+    {
+      "actions": 29,
+      "bytes": 373,
+      "decode_ms": 0.666,
+      "decode_slice_max_ms": 0.666,
+      "encode_ms": 0.754,
+      "encode_slice_max_ms": 0.754,
+      "kind": "reset_after_win",
+      "level": "rainforest_18"
+    },
+    {
+      "actions": 13,
+      "bytes": 358,
+      "decode_ms": 0.447,
+      "decode_slice_max_ms": 0.447,
+      "encode_ms": 0.409,
+      "encode_slice_max_ms": 0.409,
+      "kind": "middle",
+      "level": "rainforest_19"
+    },
+    {
+      "actions": 24,
+      "bytes": 370,
+      "decode_ms": 0.697,
+      "decode_slice_max_ms": 0.697,
+      "encode_ms": 0.658,
+      "encode_slice_max_ms": 0.658,
+      "kind": "won",
+      "level": "rainforest_19"
+    },
+    {
+      "actions": 25,
+      "bytes": 369,
+      "decode_ms": 0.628,
+      "decode_slice_max_ms": 0.628,
+      "encode_ms": 0.74,
+      "encode_slice_max_ms": 0.74,
+      "kind": "reset_after_win",
+      "level": "rainforest_19"
+    },
+    {
+      "actions": 16,
+      "bytes": 361,
+      "decode_ms": 0.476,
+      "decode_slice_max_ms": 0.476,
+      "encode_ms": 0.54,
+      "encode_slice_max_ms": 0.54,
+      "kind": "middle",
+      "level": "rainforest_20"
+    },
+    {
+      "actions": 31,
+      "bytes": 377,
+      "decode_ms": 0.692,
+      "decode_slice_max_ms": 0.692,
+      "encode_ms": 0.842,
+      "encode_slice_max_ms": 0.842,
+      "kind": "won",
+      "level": "rainforest_20"
+    },
+    {
+      "actions": 32,
+      "bytes": 376,
+      "decode_ms": 0.703,
+      "decode_slice_max_ms": 0.703,
+      "encode_ms": 0.994,
+      "encode_slice_max_ms": 0.994,
+      "kind": "reset_after_win",
+      "level": "rainforest_20"
+    },
+    {
+      "actions": 8,
+      "bytes": 352,
+      "decode_ms": 0.408,
+      "decode_slice_max_ms": 0.408,
+      "encode_ms": 0.258,
+      "encode_slice_max_ms": 0.258,
+      "kind": "middle",
+      "level": "rainforest_21"
+    },
+    {
+      "actions": 15,
+      "bytes": 360,
+      "decode_ms": 0.506,
+      "decode_slice_max_ms": 0.506,
+      "encode_ms": 0.547,
+      "encode_slice_max_ms": 0.547,
+      "kind": "won",
+      "level": "rainforest_21"
+    },
+    {
+      "actions": 16,
+      "bytes": 360,
+      "decode_ms": 0.527,
+      "decode_slice_max_ms": 0.527,
+      "encode_ms": 0.474,
+      "encode_slice_max_ms": 0.474,
+      "kind": "reset_after_win",
+      "level": "rainforest_21"
+    },
+    {
+      "actions": 9,
+      "bytes": 353,
+      "decode_ms": 0.456,
+      "decode_slice_max_ms": 0.456,
+      "encode_ms": 0.297,
+      "encode_slice_max_ms": 0.297,
+      "kind": "middle",
+      "level": "rainforest_22"
+    },
+    {
+      "actions": 17,
+      "bytes": 362,
+      "decode_ms": 0.587,
+      "decode_slice_max_ms": 0.587,
+      "encode_ms": 0.552,
+      "encode_slice_max_ms": 0.552,
+      "kind": "won",
+      "level": "rainforest_22"
+    },
+    {
+      "actions": 18,
+      "bytes": 362,
+      "decode_ms": 0.552,
+      "decode_slice_max_ms": 0.552,
+      "encode_ms": 0.518,
+      "encode_slice_max_ms": 0.518,
+      "kind": "reset_after_win",
+      "level": "rainforest_22"
+    },
+    {
+      "actions": 11,
+      "bytes": 356,
+      "decode_ms": 0.472,
+      "decode_slice_max_ms": 0.472,
+      "encode_ms": 0.353,
+      "encode_slice_max_ms": 0.353,
+      "kind": "middle",
+      "level": "rainforest_23"
+    },
+    {
+      "actions": 21,
+      "bytes": 366,
+      "decode_ms": 0.626,
+      "decode_slice_max_ms": 0.626,
+      "encode_ms": 0.652,
+      "encode_slice_max_ms": 0.652,
+      "kind": "won",
+      "level": "rainforest_23"
+    },
+    {
+      "actions": 22,
+      "bytes": 366,
+      "decode_ms": 0.602,
+      "decode_slice_max_ms": 0.602,
+      "encode_ms": 0.884,
+      "encode_slice_max_ms": 0.884,
+      "kind": "reset_after_win",
+      "level": "rainforest_23"
+    },
+    {
+      "actions": 12,
+      "bytes": 357,
+      "decode_ms": 0.505,
+      "decode_slice_max_ms": 0.505,
+      "encode_ms": 0.376,
+      "encode_slice_max_ms": 0.376,
+      "kind": "middle",
+      "level": "rainforest_24"
+    },
+    {
+      "actions": 23,
+      "bytes": 368,
+      "decode_ms": 0.628,
+      "decode_slice_max_ms": 0.628,
+      "encode_ms": 0.683,
+      "encode_slice_max_ms": 0.683,
+      "kind": "won",
+      "level": "rainforest_24"
+    },
+    {
+      "actions": 24,
+      "bytes": 368,
+      "decode_ms": 0.624,
+      "decode_slice_max_ms": 0.624,
+      "encode_ms": 0.658,
+      "encode_slice_max_ms": 0.658,
+      "kind": "reset_after_win",
+      "level": "rainforest_24"
+    },
+    {
+      "actions": 14,
+      "bytes": 359,
+      "decode_ms": 0.471,
+      "decode_slice_max_ms": 0.471,
+      "encode_ms": 0.446,
+      "encode_slice_max_ms": 0.446,
+      "kind": "middle",
+      "level": "rainforest_25"
+    },
+    {
+      "actions": 26,
+      "bytes": 371,
+      "decode_ms": 0.665,
+      "decode_slice_max_ms": 0.665,
+      "encode_ms": 0.746,
+      "encode_slice_max_ms": 0.746,
+      "kind": "won",
+      "level": "rainforest_25"
+    },
+    {
+      "actions": 27,
+      "bytes": 371,
+      "decode_ms": 0.752,
+      "decode_slice_max_ms": 0.752,
+      "encode_ms": 0.749,
+      "encode_slice_max_ms": 0.749,
+      "kind": "reset_after_win",
+      "level": "rainforest_25"
+    },
+    {
+      "actions": 9,
+      "bytes": 353,
+      "decode_ms": 0.395,
+      "decode_slice_max_ms": 0.395,
+      "encode_ms": 0.296,
+      "encode_slice_max_ms": 0.296,
+      "kind": "middle",
+      "level": "rainforest_26"
+    },
+    {
+      "actions": 17,
+      "bytes": 362,
+      "decode_ms": 0.562,
+      "decode_slice_max_ms": 0.562,
+      "encode_ms": 0.573,
+      "encode_slice_max_ms": 0.573,
+      "kind": "won",
+      "level": "rainforest_26"
+    },
+    {
+      "actions": 18,
+      "bytes": 362,
+      "decode_ms": 0.52,
+      "decode_slice_max_ms": 0.52,
+      "encode_ms": 0.594,
+      "encode_slice_max_ms": 0.594,
+      "kind": "reset_after_win",
+      "level": "rainforest_26"
+    },
+    {
+      "actions": 10,
+      "bytes": 355,
+      "decode_ms": 0.401,
+      "decode_slice_max_ms": 0.401,
+      "encode_ms": 0.335,
+      "encode_slice_max_ms": 0.335,
+      "kind": "middle",
+      "level": "rainforest_27"
+    },
+    {
+      "actions": 19,
+      "bytes": 364,
+      "decode_ms": 0.555,
+      "decode_slice_max_ms": 0.555,
+      "encode_ms": 0.544,
+      "encode_slice_max_ms": 0.544,
+      "kind": "won",
+      "level": "rainforest_27"
+    },
+    {
+      "actions": 20,
+      "bytes": 364,
+      "decode_ms": 0.534,
+      "decode_slice_max_ms": 0.534,
+      "encode_ms": 0.565,
+      "encode_slice_max_ms": 0.565,
+      "kind": "reset_after_win",
+      "level": "rainforest_27"
+    },
+    {
+      "actions": 16,
+      "bytes": 361,
+      "decode_ms": 0.518,
+      "decode_slice_max_ms": 0.518,
+      "encode_ms": 0.456,
+      "encode_slice_max_ms": 0.456,
+      "kind": "middle",
+      "level": "rainforest_28"
+    },
+    {
+      "actions": 30,
+      "bytes": 375,
+      "decode_ms": 0.711,
+      "decode_slice_max_ms": 0.711,
+      "encode_ms": 0.84,
+      "encode_slice_max_ms": 0.84,
+      "kind": "won",
+      "level": "rainforest_28"
+    },
+    {
+      "actions": 31,
+      "bytes": 375,
+      "decode_ms": 0.73,
+      "decode_slice_max_ms": 0.73,
+      "encode_ms": 0.833,
+      "encode_slice_max_ms": 0.833,
+      "kind": "reset_after_win",
+      "level": "rainforest_28"
+    },
+    {
+      "actions": 20,
+      "bytes": 365,
+      "decode_ms": 0.573,
+      "decode_slice_max_ms": 0.573,
+      "encode_ms": 0.574,
+      "encode_slice_max_ms": 0.574,
+      "kind": "middle",
+      "level": "rainforest_29"
+    },
+    {
+      "actions": 39,
+      "bytes": 384,
+      "decode_ms": 0.833,
+      "decode_slice_max_ms": 0.833,
+      "encode_ms": 1.106,
+      "encode_slice_max_ms": 1.106,
+      "kind": "won",
+      "level": "rainforest_29"
+    },
+    {
+      "actions": 40,
+      "bytes": 384,
+      "decode_ms": 1.109,
+      "decode_slice_max_ms": 1.109,
+      "encode_ms": 1.055,
+      "encode_slice_max_ms": 1.055,
+      "kind": "reset_after_win",
+      "level": "rainforest_29"
+    },
+    {
+      "actions": 15,
+      "bytes": 360,
+      "decode_ms": 0.516,
+      "decode_slice_max_ms": 0.516,
+      "encode_ms": 0.456,
+      "encode_slice_max_ms": 0.456,
+      "kind": "middle",
+      "level": "rainforest_30"
+    },
+    {
+      "actions": 28,
+      "bytes": 374,
+      "decode_ms": 0.782,
+      "decode_slice_max_ms": 0.782,
+      "encode_ms": 0.807,
+      "encode_slice_max_ms": 0.807,
+      "kind": "won",
+      "level": "rainforest_30"
+    },
+    {
+      "actions": 29,
+      "bytes": 373,
+      "decode_ms": 0.688,
+      "decode_slice_max_ms": 0.688,
+      "encode_ms": 0.81,
+      "encode_slice_max_ms": 0.81,
+      "kind": "reset_after_win",
+      "level": "rainforest_30"
+    },
+    {
+      "actions": 12,
+      "bytes": 363,
+      "decode_ms": 0.491,
+      "decode_slice_max_ms": 0.491,
+      "encode_ms": 0.493,
+      "encode_slice_max_ms": 0.493,
+      "kind": "middle",
+      "level": "rainforest_31"
+    },
+    {
+      "actions": 23,
+      "bytes": 374,
+      "decode_ms": 0.686,
+      "decode_slice_max_ms": 0.686,
+      "encode_ms": 0.735,
+      "encode_slice_max_ms": 0.735,
+      "kind": "won",
+      "level": "rainforest_31"
+    },
+    {
+      "actions": 24,
+      "bytes": 374,
+      "decode_ms": 0.76,
+      "decode_slice_max_ms": 0.76,
+      "encode_ms": 0.75,
+      "encode_slice_max_ms": 0.75,
+      "kind": "reset_after_win",
+      "level": "rainforest_31"
+    },
+    {
+      "actions": 13,
+      "bytes": 364,
+      "decode_ms": 0.519,
+      "decode_slice_max_ms": 0.519,
+      "encode_ms": 0.461,
+      "encode_slice_max_ms": 0.461,
+      "kind": "middle",
+      "level": "rainforest_32"
+    },
+    {
+      "actions": 24,
+      "bytes": 375,
+      "decode_ms": 0.725,
+      "decode_slice_max_ms": 0.725,
+      "encode_ms": 0.759,
+      "encode_slice_max_ms": 0.759,
+      "kind": "won",
+      "level": "rainforest_32"
+    },
+    {
+      "actions": 25,
+      "bytes": 375,
+      "decode_ms": 0.722,
+      "decode_slice_max_ms": 0.722,
+      "encode_ms": 0.805,
+      "encode_slice_max_ms": 0.805,
+      "kind": "reset_after_win",
+      "level": "rainforest_32"
+    },
+    {
+      "actions": 16,
+      "bytes": 367,
+      "decode_ms": 0.54,
+      "decode_slice_max_ms": 0.54,
+      "encode_ms": 0.528,
+      "encode_slice_max_ms": 0.528,
+      "kind": "middle",
+      "level": "rainforest_33"
+    },
+    {
+      "actions": 30,
+      "bytes": 381,
+      "decode_ms": 0.79,
+      "decode_slice_max_ms": 0.79,
+      "encode_ms": 1.018,
+      "encode_slice_max_ms": 1.018,
+      "kind": "won",
+      "level": "rainforest_33"
+    },
+    {
+      "actions": 31,
+      "bytes": 381,
+      "decode_ms": 0.995,
+      "decode_slice_max_ms": 0.995,
+      "encode_ms": 0.936,
+      "encode_slice_max_ms": 0.936,
+      "kind": "reset_after_win",
+      "level": "rainforest_33"
+    },
+    {
+      "actions": 21,
+      "bytes": 372,
+      "decode_ms": 0.739,
+      "decode_slice_max_ms": 0.739,
+      "encode_ms": 0.668,
+      "encode_slice_max_ms": 0.668,
+      "kind": "middle",
+      "level": "rainforest_34"
+    },
+    {
+      "actions": 40,
+      "bytes": 392,
+      "decode_ms": 1.148,
+      "decode_slice_max_ms": 1.148,
+      "encode_ms": 1.356,
+      "encode_slice_max_ms": 1.356,
+      "kind": "won",
+      "level": "rainforest_34"
+    },
+    {
+      "actions": 41,
+      "bytes": 391,
+      "decode_ms": 1.045,
+      "decode_slice_max_ms": 1.045,
+      "encode_ms": 1.527,
+      "encode_slice_max_ms": 1.527,
+      "kind": "reset_after_win",
+      "level": "rainforest_34"
+    },
+    {
+      "actions": 18,
+      "bytes": 369,
+      "decode_ms": 0.638,
+      "decode_slice_max_ms": 0.638,
+      "encode_ms": 0.615,
+      "encode_slice_max_ms": 0.615,
+      "kind": "middle",
+      "level": "rainforest_35"
+    },
+    {
+      "actions": 35,
+      "bytes": 387,
+      "decode_ms": 1.136,
+      "decode_slice_max_ms": 1.136,
+      "encode_ms": 1.212,
+      "encode_slice_max_ms": 1.212,
+      "kind": "won",
+      "level": "rainforest_35"
+    },
+    {
+      "actions": 36,
+      "bytes": 386,
+      "decode_ms": 1.021,
+      "decode_slice_max_ms": 1.021,
+      "encode_ms": 1.429,
+      "encode_slice_max_ms": 1.429,
+      "kind": "reset_after_win",
+      "level": "rainforest_35"
+    },
+    {
+      "actions": 24,
+      "bytes": 375,
+      "decode_ms": 0.743,
+      "decode_slice_max_ms": 0.743,
+      "encode_ms": 0.735,
+      "encode_slice_max_ms": 0.735,
+      "kind": "middle",
+      "level": "rainforest_36"
+    },
+    {
+      "actions": 47,
+      "bytes": 399,
+      "decode_ms": 1.004,
+      "decode_slice_max_ms": 1.004,
+      "encode_ms": 1.631,
+      "encode_slice_max_ms": 1.631,
+      "kind": "won",
+      "level": "rainforest_36"
+    },
+    {
+      "actions": 48,
+      "bytes": 398,
+      "decode_ms": 1.024,
+      "decode_slice_max_ms": 1.024,
+      "encode_ms": 1.542,
+      "encode_slice_max_ms": 1.542,
+      "kind": "reset_after_win",
+      "level": "rainforest_36"
+    },
+    {
+      "actions": 10,
+      "bytes": 361,
+      "decode_ms": 0.809,
+      "decode_slice_max_ms": 0.809,
+      "encode_ms": 0.5,
+      "encode_slice_max_ms": 0.5,
+      "kind": "middle",
+      "level": "rainforest_37"
+    },
+    {
+      "actions": 19,
+      "bytes": 371,
+      "decode_ms": 0.632,
+      "decode_slice_max_ms": 0.632,
+      "encode_ms": 0.622,
+      "encode_slice_max_ms": 0.622,
+      "kind": "won",
+      "level": "rainforest_37"
+    },
+    {
+      "actions": 20,
+      "bytes": 370,
+      "decode_ms": 0.713,
+      "decode_slice_max_ms": 0.713,
+      "encode_ms": 0.672,
+      "encode_slice_max_ms": 0.672,
+      "kind": "reset_after_win",
+      "level": "rainforest_37"
+    },
+    {
+      "actions": 16,
+      "bytes": 367,
+      "decode_ms": 0.561,
+      "decode_slice_max_ms": 0.561,
+      "encode_ms": 0.782,
+      "encode_slice_max_ms": 0.782,
+      "kind": "middle",
+      "level": "rainforest_38"
+    },
+    {
+      "actions": 30,
+      "bytes": 382,
+      "decode_ms": 0.847,
+      "decode_slice_max_ms": 0.847,
+      "encode_ms": 1.332,
+      "encode_slice_max_ms": 1.332,
+      "kind": "won",
+      "level": "rainforest_38"
+    },
+    {
+      "actions": 31,
+      "bytes": 381,
+      "decode_ms": 0.788,
+      "decode_slice_max_ms": 0.788,
+      "encode_ms": 0.929,
+      "encode_slice_max_ms": 0.929,
+      "kind": "reset_after_win",
+      "level": "rainforest_38"
+    },
+    {
+      "actions": 18,
+      "bytes": 369,
+      "decode_ms": 0.634,
+      "decode_slice_max_ms": 0.634,
+      "encode_ms": 0.657,
+      "encode_slice_max_ms": 0.657,
+      "kind": "middle",
+      "level": "rainforest_39"
+    },
+    {
+      "actions": 34,
+      "bytes": 386,
+      "decode_ms": 0.856,
+      "decode_slice_max_ms": 0.856,
+      "encode_ms": 1.134,
+      "encode_slice_max_ms": 1.134,
+      "kind": "won",
+      "level": "rainforest_39"
+    },
+    {
+      "actions": 35,
+      "bytes": 385,
+      "decode_ms": 0.876,
+      "decode_slice_max_ms": 0.876,
+      "encode_ms": 1.08,
+      "encode_slice_max_ms": 1.08,
+      "kind": "reset_after_win",
+      "level": "rainforest_39"
+    },
+    {
+      "actions": 20,
+      "bytes": 371,
+      "decode_ms": 0.651,
+      "decode_slice_max_ms": 0.651,
+      "encode_ms": 0.663,
+      "encode_slice_max_ms": 0.663,
+      "kind": "middle",
+      "level": "rainforest_40"
+    },
+    {
+      "actions": 38,
+      "bytes": 390,
+      "decode_ms": 1.242,
+      "decode_slice_max_ms": 1.242,
+      "encode_ms": 1.363,
+      "encode_slice_max_ms": 1.363,
+      "kind": "won",
+      "level": "rainforest_40"
+    },
+    {
+      "actions": 39,
+      "bytes": 389,
+      "decode_ms": 1.11,
+      "decode_slice_max_ms": 1.11,
+      "encode_ms": 1.551,
+      "encode_slice_max_ms": 1.551,
+      "kind": "reset_after_win",
+      "level": "rainforest_40"
+    },
+    {
+      "actions": 18,
+      "bytes": 369,
+      "decode_ms": 0.606,
+      "decode_slice_max_ms": 0.606,
+      "encode_ms": 0.555,
+      "encode_slice_max_ms": 0.555,
+      "kind": "middle",
+      "level": "rainforest_41"
+    },
+    {
+      "actions": 35,
+      "bytes": 387,
+      "decode_ms": 1.029,
+      "decode_slice_max_ms": 1.029,
+      "encode_ms": 1.396,
+      "encode_slice_max_ms": 1.396,
+      "kind": "won",
+      "level": "rainforest_41"
+    },
+    {
+      "actions": 36,
+      "bytes": 386,
+      "decode_ms": 0.859,
+      "decode_slice_max_ms": 0.859,
+      "encode_ms": 1.135,
+      "encode_slice_max_ms": 1.135,
+      "kind": "reset_after_win",
+      "level": "rainforest_41"
+    },
+    {
+      "actions": 16,
+      "bytes": 367,
+      "decode_ms": 0.544,
+      "decode_slice_max_ms": 0.544,
+      "encode_ms": 0.499,
+      "encode_slice_max_ms": 0.499,
+      "kind": "middle",
+      "level": "rainforest_42"
+    },
+    {
+      "actions": 30,
+      "bytes": 382,
+      "decode_ms": 1.054,
+      "decode_slice_max_ms": 1.054,
+      "encode_ms": 0.972,
+      "encode_slice_max_ms": 0.972,
+      "kind": "won",
+      "level": "rainforest_42"
+    },
+    {
+      "actions": 31,
+      "bytes": 381,
+      "decode_ms": 0.782,
+      "decode_slice_max_ms": 0.782,
+      "encode_ms": 0.934,
+      "encode_slice_max_ms": 0.934,
+      "kind": "reset_after_win",
+      "level": "rainforest_42"
+    },
+    {
+      "actions": 17,
+      "bytes": 368,
+      "decode_ms": 0.515,
+      "decode_slice_max_ms": 0.515,
+      "encode_ms": 0.493,
+      "encode_slice_max_ms": 0.493,
+      "kind": "middle",
+      "level": "rainforest_43"
+    },
+    {
+      "actions": 32,
+      "bytes": 384,
+      "decode_ms": 1.091,
+      "decode_slice_max_ms": 1.091,
+      "encode_ms": 0.983,
+      "encode_slice_max_ms": 0.983,
+      "kind": "won",
+      "level": "rainforest_43"
+    },
+    {
+      "actions": 33,
+      "bytes": 383,
+      "decode_ms": 0.79,
+      "decode_slice_max_ms": 0.79,
+      "encode_ms": 1.127,
+      "encode_slice_max_ms": 1.127,
+      "kind": "reset_after_win",
+      "level": "rainforest_43"
+    },
+    {
+      "actions": 22,
+      "bytes": 373,
+      "decode_ms": 0.612,
+      "decode_slice_max_ms": 0.612,
+      "encode_ms": 0.681,
+      "encode_slice_max_ms": 0.681,
+      "kind": "middle",
+      "level": "rainforest_44"
+    },
+    {
+      "actions": 43,
+      "bytes": 395,
+      "decode_ms": 0.946,
+      "decode_slice_max_ms": 0.946,
+      "encode_ms": 1.536,
+      "encode_slice_max_ms": 1.536,
+      "kind": "won",
+      "level": "rainforest_44"
+    },
+    {
+      "actions": 44,
+      "bytes": 394,
+      "decode_ms": 1.248,
+      "decode_slice_max_ms": 1.248,
+      "encode_ms": 1.288,
+      "encode_slice_max_ms": 1.288,
+      "kind": "reset_after_win",
+      "level": "rainforest_44"
+    },
+    {
+      "actions": 16,
+      "bytes": 367,
+      "decode_ms": 0.704,
+      "decode_slice_max_ms": 0.704,
+      "encode_ms": 0.87,
+      "encode_slice_max_ms": 0.87,
+      "kind": "middle",
+      "level": "rainforest_45"
+    },
+    {
+      "actions": 30,
+      "bytes": 382,
+      "decode_ms": 0.801,
+      "decode_slice_max_ms": 0.801,
+      "encode_ms": 1.061,
+      "encode_slice_max_ms": 1.061,
+      "kind": "won",
+      "level": "rainforest_45"
+    },
+    {
+      "actions": 31,
+      "bytes": 381,
+      "decode_ms": 0.891,
+      "decode_slice_max_ms": 0.891,
+      "encode_ms": 1.253,
+      "encode_slice_max_ms": 1.253,
+      "kind": "reset_after_win",
+      "level": "rainforest_45"
+    },
+    {
+      "actions": 21,
+      "bytes": 372,
+      "decode_ms": 0.74,
+      "decode_slice_max_ms": 0.74,
+      "encode_ms": 0.832,
+      "encode_slice_max_ms": 0.832,
+      "kind": "middle",
+      "level": "rainforest_46"
+    },
+    {
+      "actions": 40,
+      "bytes": 392,
+      "decode_ms": 1.273,
+      "decode_slice_max_ms": 1.273,
+      "encode_ms": 1.478,
+      "encode_slice_max_ms": 1.478,
+      "kind": "won",
+      "level": "rainforest_46"
+    },
+    {
+      "actions": 41,
+      "bytes": 391,
+      "decode_ms": 1.532,
+      "decode_slice_max_ms": 1.532,
+      "encode_ms": 1.295,
+      "encode_slice_max_ms": 1.295,
+      "kind": "reset_after_win",
+      "level": "rainforest_46"
+    },
+    {
+      "actions": 17,
+      "bytes": 368,
+      "decode_ms": 0.628,
+      "decode_slice_max_ms": 0.628,
+      "encode_ms": 0.571,
+      "encode_slice_max_ms": 0.571,
+      "kind": "middle",
+      "level": "rainforest_47"
+    },
+    {
+      "actions": 33,
+      "bytes": 385,
+      "decode_ms": 1.073,
+      "decode_slice_max_ms": 1.073,
+      "encode_ms": 1.586,
+      "encode_slice_max_ms": 1.586,
+      "kind": "won",
+      "level": "rainforest_47"
+    },
+    {
+      "actions": 34,
+      "bytes": 384,
+      "decode_ms": 0.838,
+      "decode_slice_max_ms": 0.838,
+      "encode_ms": 1.1,
+      "encode_slice_max_ms": 1.1,
+      "kind": "reset_after_win",
+      "level": "rainforest_47"
+    },
+    {
+      "actions": 30,
+      "bytes": 381,
+      "decode_ms": 0.75,
+      "decode_slice_max_ms": 0.75,
+      "encode_ms": 0.896,
+      "encode_slice_max_ms": 0.896,
+      "kind": "middle",
+      "level": "rainforest_48"
+    },
+    {
+      "actions": 58,
+      "bytes": 410,
+      "decode_ms": 1.46,
+      "decode_slice_max_ms": 1.46,
+      "encode_ms": 1.681,
+      "encode_slice_max_ms": 1.681,
+      "kind": "won",
+      "level": "rainforest_48"
+    },
+    {
+      "actions": 59,
+      "bytes": 409,
+      "decode_ms": 1.213,
+      "decode_slice_max_ms": 1.213,
+      "encode_ms": 2.283,
+      "encode_slice_max_ms": 2.057,
+      "kind": "reset_after_win",
+      "level": "rainforest_48"
+    },
+    {
+      "actions": 25,
+      "bytes": 376,
+      "decode_ms": 0.677,
+      "decode_slice_max_ms": 0.677,
+      "encode_ms": 0.917,
+      "encode_slice_max_ms": 0.917,
+      "kind": "middle",
+      "level": "rainforest_49"
+    },
+    {
+      "actions": 49,
+      "bytes": 401,
+      "decode_ms": 1.39,
+      "decode_slice_max_ms": 1.39,
+      "encode_ms": 1.815,
+      "encode_slice_max_ms": 1.815,
+      "kind": "won",
+      "level": "rainforest_49"
+    },
+    {
+      "actions": 50,
+      "bytes": 400,
+      "decode_ms": 1.29,
+      "decode_slice_max_ms": 1.29,
+      "encode_ms": 1.596,
+      "encode_slice_max_ms": 1.596,
+      "kind": "reset_after_win",
+      "level": "rainforest_49"
+    },
+    {
+      "actions": 15,
+      "bytes": 366,
+      "decode_ms": 0.763,
+      "decode_slice_max_ms": 0.763,
+      "encode_ms": 0.65,
+      "encode_slice_max_ms": 0.65,
+      "kind": "middle",
+      "level": "rainforest_50"
+    },
+    {
+      "actions": 29,
+      "bytes": 381,
+      "decode_ms": 1.095,
+      "decode_slice_max_ms": 1.095,
+      "encode_ms": 1.017,
+      "encode_slice_max_ms": 1.017,
+      "kind": "won",
+      "level": "rainforest_50"
+    },
+    {
+      "actions": 30,
+      "bytes": 380,
+      "decode_ms": 1.495,
+      "decode_slice_max_ms": 1.495,
+      "encode_ms": 1.459,
+      "encode_slice_max_ms": 1.459,
+      "kind": "reset_after_win",
+      "level": "rainforest_50"
+    },
+    {
+      "actions": 3,
+      "bytes": 341,
+      "decode_ms": 0.283,
+      "decode_slice_max_ms": 0.283,
+      "encode_ms": 0.181,
+      "encode_slice_max_ms": 0.181,
+      "kind": "middle",
+      "level": "city_01"
+    },
+    {
+      "actions": 4,
+      "bytes": 342,
+      "decode_ms": 0.384,
+      "decode_slice_max_ms": 0.384,
+      "encode_ms": 0.145,
+      "encode_slice_max_ms": 0.145,
+      "kind": "won",
+      "level": "city_01"
+    },
+    {
+      "actions": 5,
+      "bytes": 343,
+      "decode_ms": 0.346,
+      "decode_slice_max_ms": 0.346,
+      "encode_ms": 0.161,
+      "encode_slice_max_ms": 0.161,
+      "kind": "reset_after_win",
+      "level": "city_01"
+    },
+    {
+      "actions": 10,
+      "bytes": 349,
+      "decode_ms": 0.482,
+      "decode_slice_max_ms": 0.482,
+      "encode_ms": 0.262,
+      "encode_slice_max_ms": 0.262,
+      "kind": "middle",
+      "level": "city_02"
+    },
+    {
+      "actions": 19,
+      "bytes": 358,
+      "decode_ms": 0.431,
+      "decode_slice_max_ms": 0.431,
+      "encode_ms": 0.494,
+      "encode_slice_max_ms": 0.494,
+      "kind": "won",
+      "level": "city_02"
+    },
+    {
+      "actions": 20,
+      "bytes": 358,
+      "decode_ms": 0.489,
+      "decode_slice_max_ms": 0.489,
+      "encode_ms": 0.552,
+      "encode_slice_max_ms": 0.552,
+      "kind": "reset_after_win",
+      "level": "city_02"
+    },
+    {
+      "actions": 7,
+      "bytes": 345,
+      "decode_ms": 0.474,
+      "decode_slice_max_ms": 0.474,
+      "encode_ms": 0.38,
+      "encode_slice_max_ms": 0.38,
+      "kind": "middle",
+      "level": "city_03"
+    },
+    {
+      "actions": 13,
+      "bytes": 352,
+      "decode_ms": 0.418,
+      "decode_slice_max_ms": 0.418,
+      "encode_ms": 0.356,
+      "encode_slice_max_ms": 0.356,
+      "kind": "won",
+      "level": "city_03"
+    },
+    {
+      "actions": 14,
+      "bytes": 352,
+      "decode_ms": 0.519,
+      "decode_slice_max_ms": 0.519,
+      "encode_ms": 0.548,
+      "encode_slice_max_ms": 0.548,
+      "kind": "reset_after_win",
+      "level": "city_03"
+    },
+    {
+      "actions": 9,
+      "bytes": 347,
+      "decode_ms": 0.346,
+      "decode_slice_max_ms": 0.346,
+      "encode_ms": 0.301,
+      "encode_slice_max_ms": 0.301,
+      "kind": "middle",
+      "level": "city_04"
+    },
+    {
+      "actions": 17,
+      "bytes": 356,
+      "decode_ms": 0.472,
+      "decode_slice_max_ms": 0.472,
+      "encode_ms": 0.667,
+      "encode_slice_max_ms": 0.667,
+      "kind": "won",
+      "level": "city_04"
+    },
+    {
+      "actions": 18,
+      "bytes": 356,
+      "decode_ms": 0.452,
+      "decode_slice_max_ms": 0.452,
+      "encode_ms": 0.45,
+      "encode_slice_max_ms": 0.45,
+      "kind": "reset_after_win",
+      "level": "city_04"
+    },
+    {
+      "actions": 10,
+      "bytes": 349,
+      "decode_ms": 0.401,
+      "decode_slice_max_ms": 0.401,
+      "encode_ms": 0.3,
+      "encode_slice_max_ms": 0.3,
+      "kind": "middle",
+      "level": "city_05"
+    },
+    {
+      "actions": 19,
+      "bytes": 358,
+      "decode_ms": 0.94,
+      "decode_slice_max_ms": 0.94,
+      "encode_ms": 0.859,
+      "encode_slice_max_ms": 0.859,
+      "kind": "won",
+      "level": "city_05"
+    },
+    {
+      "actions": 20,
+      "bytes": 358,
+      "decode_ms": 0.642,
+      "decode_slice_max_ms": 0.642,
+      "encode_ms": 1.054,
+      "encode_slice_max_ms": 1.054,
+      "kind": "reset_after_win",
+      "level": "city_05"
+    },
+    {
+      "actions": 5,
+      "bytes": 343,
+      "decode_ms": 0.343,
+      "decode_slice_max_ms": 0.343,
+      "encode_ms": 0.185,
+      "encode_slice_max_ms": 0.185,
+      "kind": "middle",
+      "level": "city_06"
+    },
+    {
+      "actions": 9,
+      "bytes": 347,
+      "decode_ms": 0.392,
+      "decode_slice_max_ms": 0.392,
+      "encode_ms": 0.256,
+      "encode_slice_max_ms": 0.256,
+      "kind": "won",
+      "level": "city_06"
+    },
+    {
+      "actions": 10,
+      "bytes": 348,
+      "decode_ms": 1.645,
+      "decode_slice_max_ms": 1.645,
+      "encode_ms": 0.275,
+      "encode_slice_max_ms": 0.275,
+      "kind": "reset_after_win",
+      "level": "city_06"
+    },
+    {
+      "actions": 10,
+      "bytes": 349,
+      "decode_ms": 0.539,
+      "decode_slice_max_ms": 0.539,
+      "encode_ms": 0.371,
+      "encode_slice_max_ms": 0.371,
+      "kind": "middle",
+      "level": "city_07"
+    },
+    {
+      "actions": 19,
+      "bytes": 358,
+      "decode_ms": 0.687,
+      "decode_slice_max_ms": 0.687,
+      "encode_ms": 0.75,
+      "encode_slice_max_ms": 0.75,
+      "kind": "won",
+      "level": "city_07"
+    },
+    {
+      "actions": 20,
+      "bytes": 358,
+      "decode_ms": 0.621,
+      "decode_slice_max_ms": 0.621,
+      "encode_ms": 0.831,
+      "encode_slice_max_ms": 0.831,
+      "kind": "reset_after_win",
+      "level": "city_07"
+    },
+    {
+      "actions": 7,
+      "bytes": 345,
+      "decode_ms": 0.421,
+      "decode_slice_max_ms": 0.421,
+      "encode_ms": 0.217,
+      "encode_slice_max_ms": 0.217,
+      "kind": "middle",
+      "level": "city_08"
+    },
+    {
+      "actions": 12,
+      "bytes": 351,
+      "decode_ms": 0.427,
+      "decode_slice_max_ms": 0.427,
+      "encode_ms": 0.618,
+      "encode_slice_max_ms": 0.618,
+      "kind": "won",
+      "level": "city_08"
+    },
+    {
+      "actions": 13,
+      "bytes": 351,
+      "decode_ms": 0.505,
+      "decode_slice_max_ms": 0.505,
+      "encode_ms": 0.485,
+      "encode_slice_max_ms": 0.485,
+      "kind": "reset_after_win",
+      "level": "city_08"
+    },
+    {
+      "actions": 8,
+      "bytes": 346,
+      "decode_ms": 0.347,
+      "decode_slice_max_ms": 0.347,
+      "encode_ms": 0.446,
+      "encode_slice_max_ms": 0.446,
+      "kind": "middle",
+      "level": "city_09"
+    },
+    {
+      "actions": 15,
+      "bytes": 354,
+      "decode_ms": 0.492,
+      "decode_slice_max_ms": 0.492,
+      "encode_ms": 0.455,
+      "encode_slice_max_ms": 0.455,
+      "kind": "won",
+      "level": "city_09"
+    },
+    {
+      "actions": 16,
+      "bytes": 354,
+      "decode_ms": 0.434,
+      "decode_slice_max_ms": 0.434,
+      "encode_ms": 0.463,
+      "encode_slice_max_ms": 0.463,
+      "kind": "reset_after_win",
+      "level": "city_09"
+    },
+    {
+      "actions": 10,
+      "bytes": 349,
+      "decode_ms": 0.524,
+      "decode_slice_max_ms": 0.524,
+      "encode_ms": 0.384,
+      "encode_slice_max_ms": 0.384,
+      "kind": "middle",
+      "level": "city_10"
+    },
+    {
+      "actions": 18,
+      "bytes": 357,
+      "decode_ms": 0.511,
+      "decode_slice_max_ms": 0.511,
+      "encode_ms": 0.516,
+      "encode_slice_max_ms": 0.516,
+      "kind": "won",
+      "level": "city_10"
+    },
+    {
+      "actions": 19,
+      "bytes": 357,
+      "decode_ms": 1.261,
+      "decode_slice_max_ms": 1.261,
+      "encode_ms": 0.625,
+      "encode_slice_max_ms": 0.625,
+      "kind": "reset_after_win",
+      "level": "city_10"
+    },
+    {
+      "actions": 11,
+      "bytes": 350,
+      "decode_ms": 0.406,
+      "decode_slice_max_ms": 0.406,
+      "encode_ms": 0.423,
+      "encode_slice_max_ms": 0.423,
+      "kind": "middle",
+      "level": "city_11"
+    },
+    {
+      "actions": 20,
+      "bytes": 359,
+      "decode_ms": 0.501,
+      "decode_slice_max_ms": 0.501,
+      "encode_ms": 0.638,
+      "encode_slice_max_ms": 0.638,
+      "kind": "won",
+      "level": "city_11"
+    },
+    {
+      "actions": 21,
+      "bytes": 359,
+      "decode_ms": 0.612,
+      "decode_slice_max_ms": 0.612,
+      "encode_ms": 0.573,
+      "encode_slice_max_ms": 0.573,
+      "kind": "reset_after_win",
+      "level": "city_11"
+    },
+    {
+      "actions": 7,
+      "bytes": 345,
+      "decode_ms": 0.383,
+      "decode_slice_max_ms": 0.383,
+      "encode_ms": 0.242,
+      "encode_slice_max_ms": 0.242,
+      "kind": "middle",
+      "level": "city_12"
+    },
+    {
+      "actions": 12,
+      "bytes": 351,
+      "decode_ms": 0.463,
+      "decode_slice_max_ms": 0.463,
+      "encode_ms": 0.453,
+      "encode_slice_max_ms": 0.453,
+      "kind": "won",
+      "level": "city_12"
+    },
+    {
+      "actions": 13,
+      "bytes": 351,
+      "decode_ms": 0.457,
+      "decode_slice_max_ms": 0.457,
+      "encode_ms": 0.457,
+      "encode_slice_max_ms": 0.457,
+      "kind": "reset_after_win",
+      "level": "city_12"
+    },
+    {
+      "actions": 11,
+      "bytes": 350,
+      "decode_ms": 0.385,
+      "decode_slice_max_ms": 0.385,
+      "encode_ms": 0.341,
+      "encode_slice_max_ms": 0.341,
+      "kind": "middle",
+      "level": "city_13"
+    },
+    {
+      "actions": 21,
+      "bytes": 360,
+      "decode_ms": 0.841,
+      "decode_slice_max_ms": 0.841,
+      "encode_ms": 0.776,
+      "encode_slice_max_ms": 0.776,
+      "kind": "won",
+      "level": "city_13"
+    },
+    {
+      "actions": 22,
+      "bytes": 360,
+      "decode_ms": 0.547,
+      "decode_slice_max_ms": 0.547,
+      "encode_ms": 0.725,
+      "encode_slice_max_ms": 0.725,
+      "kind": "reset_after_win",
+      "level": "city_13"
+    },
+    {
+      "actions": 13,
+      "bytes": 352,
+      "decode_ms": 0.619,
+      "decode_slice_max_ms": 0.619,
+      "encode_ms": 0.464,
+      "encode_slice_max_ms": 0.464,
+      "kind": "middle",
+      "level": "city_14"
+    },
+    {
+      "actions": 24,
+      "bytes": 363,
+      "decode_ms": 0.591,
+      "decode_slice_max_ms": 0.591,
+      "encode_ms": 0.835,
+      "encode_slice_max_ms": 0.835,
+      "kind": "won",
+      "level": "city_14"
+    },
+    {
+      "actions": 25,
+      "bytes": 363,
+      "decode_ms": 0.624,
+      "decode_slice_max_ms": 0.624,
+      "encode_ms": 0.695,
+      "encode_slice_max_ms": 0.695,
+      "kind": "reset_after_win",
+      "level": "city_14"
+    },
+    {
+      "actions": 13,
+      "bytes": 352,
+      "decode_ms": 0.436,
+      "decode_slice_max_ms": 0.436,
+      "encode_ms": 0.431,
+      "encode_slice_max_ms": 0.431,
+      "kind": "middle",
+      "level": "city_15"
+    },
+    {
+      "actions": 25,
+      "bytes": 364,
+      "decode_ms": 0.577,
+      "decode_slice_max_ms": 0.577,
+      "encode_ms": 0.791,
+      "encode_slice_max_ms": 0.791,
+      "kind": "won",
+      "level": "city_15"
+    },
+    {
+      "actions": 26,
+      "bytes": 364,
+      "decode_ms": 0.617,
+      "decode_slice_max_ms": 0.617,
+      "encode_ms": 1.092,
+      "encode_slice_max_ms": 1.092,
+      "kind": "reset_after_win",
+      "level": "city_15"
+    },
+    {
+      "actions": 9,
+      "bytes": 347,
+      "decode_ms": 0.558,
+      "decode_slice_max_ms": 0.558,
+      "encode_ms": 0.494,
+      "encode_slice_max_ms": 0.494,
+      "kind": "middle",
+      "level": "city_16"
+    },
+    {
+      "actions": 17,
+      "bytes": 356,
+      "decode_ms": 0.562,
+      "decode_slice_max_ms": 0.562,
+      "encode_ms": 0.585,
+      "encode_slice_max_ms": 0.585,
+      "kind": "won",
+      "level": "city_16"
+    },
+    {
+      "actions": 18,
+      "bytes": 356,
+      "decode_ms": 0.736,
+      "decode_slice_max_ms": 0.736,
+      "encode_ms": 0.591,
+      "encode_slice_max_ms": 0.591,
+      "kind": "reset_after_win",
+      "level": "city_16"
+    },
+    {
+      "actions": 9,
+      "bytes": 347,
+      "decode_ms": 0.413,
+      "decode_slice_max_ms": 0.413,
+      "encode_ms": 0.381,
+      "encode_slice_max_ms": 0.381,
+      "kind": "middle",
+      "level": "city_17"
+    },
+    {
+      "actions": 17,
+      "bytes": 356,
+      "decode_ms": 0.722,
+      "decode_slice_max_ms": 0.722,
+      "encode_ms": 0.518,
+      "encode_slice_max_ms": 0.518,
+      "kind": "won",
+      "level": "city_17"
+    },
+    {
+      "actions": 18,
+      "bytes": 356,
+      "decode_ms": 0.628,
+      "decode_slice_max_ms": 0.628,
+      "encode_ms": 0.787,
+      "encode_slice_max_ms": 0.787,
+      "kind": "reset_after_win",
+      "level": "city_17"
+    },
+    {
+      "actions": 13,
+      "bytes": 352,
+      "decode_ms": 0.66,
+      "decode_slice_max_ms": 0.66,
+      "encode_ms": 0.39,
+      "encode_slice_max_ms": 0.39,
+      "kind": "middle",
+      "level": "city_18"
+    },
+    {
+      "actions": 25,
+      "bytes": 364,
+      "decode_ms": 0.655,
+      "decode_slice_max_ms": 0.655,
+      "encode_ms": 0.777,
+      "encode_slice_max_ms": 0.777,
+      "kind": "won",
+      "level": "city_18"
+    },
+    {
+      "actions": 26,
+      "bytes": 364,
+      "decode_ms": 0.635,
+      "decode_slice_max_ms": 0.635,
+      "encode_ms": 0.727,
+      "encode_slice_max_ms": 0.727,
+      "kind": "reset_after_win",
+      "level": "city_18"
+    },
+    {
+      "actions": 10,
+      "bytes": 349,
+      "decode_ms": 0.538,
+      "decode_slice_max_ms": 0.538,
+      "encode_ms": 0.359,
+      "encode_slice_max_ms": 0.359,
+      "kind": "middle",
+      "level": "city_19"
+    },
+    {
+      "actions": 18,
+      "bytes": 357,
+      "decode_ms": 0.585,
+      "decode_slice_max_ms": 0.585,
+      "encode_ms": 0.648,
+      "encode_slice_max_ms": 0.648,
+      "kind": "won",
+      "level": "city_19"
+    },
+    {
+      "actions": 19,
+      "bytes": 357,
+      "decode_ms": 0.558,
+      "decode_slice_max_ms": 0.558,
+      "encode_ms": 0.535,
+      "encode_slice_max_ms": 0.535,
+      "kind": "reset_after_win",
+      "level": "city_19"
+    },
+    {
+      "actions": 13,
+      "bytes": 352,
+      "decode_ms": 0.481,
+      "decode_slice_max_ms": 0.481,
+      "encode_ms": 0.474,
+      "encode_slice_max_ms": 0.474,
+      "kind": "middle",
+      "level": "city_20"
+    },
+    {
+      "actions": 25,
+      "bytes": 365,
+      "decode_ms": 0.651,
+      "decode_slice_max_ms": 0.651,
+      "encode_ms": 0.845,
+      "encode_slice_max_ms": 0.845,
+      "kind": "won",
+      "level": "city_20"
+    },
+    {
+      "actions": 26,
+      "bytes": 364,
+      "decode_ms": 0.629,
+      "decode_slice_max_ms": 0.629,
+      "encode_ms": 0.714,
+      "encode_slice_max_ms": 0.714,
+      "kind": "reset_after_win",
+      "level": "city_20"
+    },
+    {
+      "actions": 9,
+      "bytes": 347,
+      "decode_ms": 0.524,
+      "decode_slice_max_ms": 0.524,
+      "encode_ms": 0.309,
+      "encode_slice_max_ms": 0.309,
+      "kind": "middle",
+      "level": "city_21"
+    },
+    {
+      "actions": 16,
+      "bytes": 355,
+      "decode_ms": 0.521,
+      "decode_slice_max_ms": 0.521,
+      "encode_ms": 0.573,
+      "encode_slice_max_ms": 0.573,
+      "kind": "won",
+      "level": "city_21"
+    },
+    {
+      "actions": 17,
+      "bytes": 355,
+      "decode_ms": 0.51,
+      "decode_slice_max_ms": 0.51,
+      "encode_ms": 0.521,
+      "encode_slice_max_ms": 0.521,
+      "kind": "reset_after_win",
+      "level": "city_21"
+    },
+    {
+      "actions": 12,
+      "bytes": 351,
+      "decode_ms": 0.461,
+      "decode_slice_max_ms": 0.461,
+      "encode_ms": 0.368,
+      "encode_slice_max_ms": 0.368,
+      "kind": "middle",
+      "level": "city_22"
+    },
+    {
+      "actions": 23,
+      "bytes": 362,
+      "decode_ms": 0.608,
+      "decode_slice_max_ms": 0.608,
+      "encode_ms": 0.694,
+      "encode_slice_max_ms": 0.694,
+      "kind": "won",
+      "level": "city_22"
+    },
+    {
+      "actions": 24,
+      "bytes": 362,
+      "decode_ms": 0.743,
+      "decode_slice_max_ms": 0.743,
+      "encode_ms": 0.667,
+      "encode_slice_max_ms": 0.667,
+      "kind": "reset_after_win",
+      "level": "city_22"
+    },
+    {
+      "actions": 12,
+      "bytes": 351,
+      "decode_ms": 0.486,
+      "decode_slice_max_ms": 0.486,
+      "encode_ms": 0.371,
+      "encode_slice_max_ms": 0.371,
+      "kind": "middle",
+      "level": "city_23"
+    },
+    {
+      "actions": 22,
+      "bytes": 361,
+      "decode_ms": 0.603,
+      "decode_slice_max_ms": 0.603,
+      "encode_ms": 0.661,
+      "encode_slice_max_ms": 0.661,
+      "kind": "won",
+      "level": "city_23"
+    },
+    {
+      "actions": 23,
+      "bytes": 361,
+      "decode_ms": 0.636,
+      "decode_slice_max_ms": 0.636,
+      "encode_ms": 0.647,
+      "encode_slice_max_ms": 0.647,
+      "kind": "reset_after_win",
+      "level": "city_23"
+    },
+    {
+      "actions": 14,
+      "bytes": 353,
+      "decode_ms": 0.489,
+      "decode_slice_max_ms": 0.489,
+      "encode_ms": 0.456,
+      "encode_slice_max_ms": 0.456,
+      "kind": "middle",
+      "level": "city_24"
+    },
+    {
+      "actions": 26,
+      "bytes": 365,
+      "decode_ms": 0.665,
+      "decode_slice_max_ms": 0.665,
+      "encode_ms": 0.825,
+      "encode_slice_max_ms": 0.825,
+      "kind": "won",
+      "level": "city_24"
+    },
+    {
+      "actions": 27,
+      "bytes": 365,
+      "decode_ms": 0.77,
+      "decode_slice_max_ms": 0.77,
+      "encode_ms": 1.027,
+      "encode_slice_max_ms": 1.027,
+      "kind": "reset_after_win",
+      "level": "city_24"
+    },
+    {
+      "actions": 18,
+      "bytes": 357,
+      "decode_ms": 0.637,
+      "decode_slice_max_ms": 0.637,
+      "encode_ms": 0.552,
+      "encode_slice_max_ms": 0.552,
+      "kind": "middle",
+      "level": "city_25"
+    },
+    {
+      "actions": 35,
+      "bytes": 375,
+      "decode_ms": 0.823,
+      "decode_slice_max_ms": 0.823,
+      "encode_ms": 0.984,
+      "encode_slice_max_ms": 0.984,
+      "kind": "won",
+      "level": "city_25"
+    },
+    {
+      "actions": 36,
+      "bytes": 374,
+      "decode_ms": 0.795,
+      "decode_slice_max_ms": 0.795,
+      "encode_ms": 1.116,
+      "encode_slice_max_ms": 1.116,
+      "kind": "reset_after_win",
+      "level": "city_25"
+    },
+    {
+      "actions": 15,
+      "bytes": 354,
+      "decode_ms": 0.459,
+      "decode_slice_max_ms": 0.459,
+      "encode_ms": 0.462,
+      "encode_slice_max_ms": 0.462,
+      "kind": "middle",
+      "level": "city_26"
+    },
+    {
+      "actions": 28,
+      "bytes": 367,
+      "decode_ms": 0.671,
+      "decode_slice_max_ms": 0.671,
+      "encode_ms": 0.767,
+      "encode_slice_max_ms": 0.767,
+      "kind": "won",
+      "level": "city_26"
+    },
+    {
+      "actions": 29,
+      "bytes": 367,
+      "decode_ms": 0.69,
+      "decode_slice_max_ms": 0.69,
+      "encode_ms": 0.771,
+      "encode_slice_max_ms": 0.771,
+      "kind": "reset_after_win",
+      "level": "city_26"
+    },
+    {
+      "actions": 13,
+      "bytes": 352,
+      "decode_ms": 0.447,
+      "decode_slice_max_ms": 0.447,
+      "encode_ms": 0.419,
+      "encode_slice_max_ms": 0.419,
+      "kind": "middle",
+      "level": "city_27"
+    },
+    {
+      "actions": 25,
+      "bytes": 364,
+      "decode_ms": 0.741,
+      "decode_slice_max_ms": 0.741,
+      "encode_ms": 0.729,
+      "encode_slice_max_ms": 0.729,
+      "kind": "won",
+      "level": "city_27"
+    },
+    {
+      "actions": 26,
+      "bytes": 364,
+      "decode_ms": 0.685,
+      "decode_slice_max_ms": 0.685,
+      "encode_ms": 0.856,
+      "encode_slice_max_ms": 0.856,
+      "kind": "reset_after_win",
+      "level": "city_27"
+    },
+    {
+      "actions": 16,
+      "bytes": 355,
+      "decode_ms": 0.645,
+      "decode_slice_max_ms": 0.645,
+      "encode_ms": 0.519,
+      "encode_slice_max_ms": 0.519,
+      "kind": "middle",
+      "level": "city_28"
+    },
+    {
+      "actions": 31,
+      "bytes": 371,
+      "decode_ms": 0.809,
+      "decode_slice_max_ms": 0.809,
+      "encode_ms": 0.942,
+      "encode_slice_max_ms": 0.942,
+      "kind": "won",
+      "level": "city_28"
+    },
+    {
+      "actions": 32,
+      "bytes": 370,
+      "decode_ms": 0.832,
+      "decode_slice_max_ms": 0.832,
+      "encode_ms": 1.063,
+      "encode_slice_max_ms": 1.063,
+      "kind": "reset_after_win",
+      "level": "city_28"
+    },
+    {
+      "actions": 22,
+      "bytes": 361,
+      "decode_ms": 0.578,
+      "decode_slice_max_ms": 0.578,
+      "encode_ms": 0.622,
+      "encode_slice_max_ms": 0.622,
+      "kind": "middle",
+      "level": "city_29"
+    },
+    {
+      "actions": 42,
+      "bytes": 382,
+      "decode_ms": 0.936,
+      "decode_slice_max_ms": 0.936,
+      "encode_ms": 1.144,
+      "encode_slice_max_ms": 1.144,
+      "kind": "won",
+      "level": "city_29"
+    },
+    {
+      "actions": 43,
+      "bytes": 381,
+      "decode_ms": 1.197,
+      "decode_slice_max_ms": 1.197,
+      "encode_ms": 1.34,
+      "encode_slice_max_ms": 1.34,
+      "kind": "reset_after_win",
+      "level": "city_29"
+    },
+    {
+      "actions": 24,
+      "bytes": 363,
+      "decode_ms": 0.599,
+      "decode_slice_max_ms": 0.599,
+      "encode_ms": 0.677,
+      "encode_slice_max_ms": 0.677,
+      "kind": "middle",
+      "level": "city_30"
+    },
+    {
+      "actions": 46,
+      "bytes": 386,
+      "decode_ms": 1.003,
+      "decode_slice_max_ms": 1.003,
+      "encode_ms": 1.332,
+      "encode_slice_max_ms": 1.332,
+      "kind": "won",
+      "level": "city_30"
+    },
+    {
+      "actions": 47,
+      "bytes": 385,
+      "decode_ms": 0.936,
+      "decode_slice_max_ms": 0.936,
+      "encode_ms": 1.25,
+      "encode_slice_max_ms": 1.25,
+      "kind": "reset_after_win",
+      "level": "city_30"
+    },
+    {
+      "actions": 14,
+      "bytes": 359,
+      "decode_ms": 0.831,
+      "decode_slice_max_ms": 0.831,
+      "encode_ms": 0.533,
+      "encode_slice_max_ms": 0.533,
+      "kind": "middle",
+      "level": "city_31"
+    },
+    {
+      "actions": 26,
+      "bytes": 371,
+      "decode_ms": 0.823,
+      "decode_slice_max_ms": 0.823,
+      "encode_ms": 0.816,
+      "encode_slice_max_ms": 0.816,
+      "kind": "won",
+      "level": "city_31"
+    },
+    {
+      "actions": 27,
+      "bytes": 371,
+      "decode_ms": 0.989,
+      "decode_slice_max_ms": 0.989,
+      "encode_ms": 0.919,
+      "encode_slice_max_ms": 0.919,
+      "kind": "reset_after_win",
+      "level": "city_31"
+    },
+    {
+      "actions": 12,
+      "bytes": 357,
+      "decode_ms": 0.551,
+      "decode_slice_max_ms": 0.551,
+      "encode_ms": 0.455,
+      "encode_slice_max_ms": 0.455,
+      "kind": "middle",
+      "level": "city_32"
+    },
+    {
+      "actions": 23,
+      "bytes": 368,
+      "decode_ms": 0.716,
+      "decode_slice_max_ms": 0.716,
+      "encode_ms": 0.761,
+      "encode_slice_max_ms": 0.761,
+      "kind": "won",
+      "level": "city_32"
+    },
+    {
+      "actions": 24,
+      "bytes": 368,
+      "decode_ms": 0.877,
+      "decode_slice_max_ms": 0.877,
+      "encode_ms": 0.93,
+      "encode_slice_max_ms": 0.93,
+      "kind": "reset_after_win",
+      "level": "city_32"
+    },
+    {
+      "actions": 13,
+      "bytes": 358,
+      "decode_ms": 0.527,
+      "decode_slice_max_ms": 0.527,
+      "encode_ms": 0.472,
+      "encode_slice_max_ms": 0.472,
+      "kind": "middle",
+      "level": "city_33"
+    },
+    {
+      "actions": 24,
+      "bytes": 369,
+      "decode_ms": 0.717,
+      "decode_slice_max_ms": 0.717,
+      "encode_ms": 0.796,
+      "encode_slice_max_ms": 0.796,
+      "kind": "won",
+      "level": "city_33"
+    },
+    {
+      "actions": 25,
+      "bytes": 369,
+      "decode_ms": 0.718,
+      "decode_slice_max_ms": 0.718,
+      "encode_ms": 0.966,
+      "encode_slice_max_ms": 0.966,
+      "kind": "reset_after_win",
+      "level": "city_33"
+    },
+    {
+      "actions": 15,
+      "bytes": 360,
+      "decode_ms": 0.593,
+      "decode_slice_max_ms": 0.593,
+      "encode_ms": 0.525,
+      "encode_slice_max_ms": 0.525,
+      "kind": "middle",
+      "level": "city_34"
+    },
+    {
+      "actions": 29,
+      "bytes": 375,
+      "decode_ms": 0.849,
+      "decode_slice_max_ms": 0.849,
+      "encode_ms": 1.189,
+      "encode_slice_max_ms": 1.189,
+      "kind": "won",
+      "level": "city_34"
+    },
+    {
+      "actions": 30,
+      "bytes": 374,
+      "decode_ms": 0.983,
+      "decode_slice_max_ms": 0.983,
+      "encode_ms": 0.967,
+      "encode_slice_max_ms": 0.967,
+      "kind": "reset_after_win",
+      "level": "city_34"
+    },
+    {
+      "actions": 16,
+      "bytes": 361,
+      "decode_ms": 0.574,
+      "decode_slice_max_ms": 0.574,
+      "encode_ms": 0.61,
+      "encode_slice_max_ms": 0.61,
+      "kind": "middle",
+      "level": "city_35"
+    },
+    {
+      "actions": 30,
+      "bytes": 376,
+      "decode_ms": 0.878,
+      "decode_slice_max_ms": 0.878,
+      "encode_ms": 1.05,
+      "encode_slice_max_ms": 1.05,
+      "kind": "won",
+      "level": "city_35"
+    },
+    {
+      "actions": 31,
+      "bytes": 375,
+      "decode_ms": 0.97,
+      "decode_slice_max_ms": 0.97,
+      "encode_ms": 1.025,
+      "encode_slice_max_ms": 1.025,
+      "kind": "reset_after_win",
+      "level": "city_35"
+    },
+    {
+      "actions": 12,
+      "bytes": 357,
+      "decode_ms": 0.567,
+      "decode_slice_max_ms": 0.567,
+      "encode_ms": 0.4,
+      "encode_slice_max_ms": 0.4,
+      "kind": "middle",
+      "level": "city_36"
+    },
+    {
+      "actions": 23,
+      "bytes": 369,
+      "decode_ms": 0.693,
+      "decode_slice_max_ms": 0.693,
+      "encode_ms": 0.848,
+      "encode_slice_max_ms": 0.848,
+      "kind": "won",
+      "level": "city_36"
+    },
+    {
+      "actions": 24,
+      "bytes": 368,
+      "decode_ms": 0.89,
+      "decode_slice_max_ms": 0.89,
+      "encode_ms": 0.874,
+      "encode_slice_max_ms": 0.874,
+      "kind": "reset_after_win",
+      "level": "city_36"
+    },
+    {
+      "actions": 20,
+      "bytes": 365,
+      "decode_ms": 0.706,
+      "decode_slice_max_ms": 0.706,
+      "encode_ms": 0.681,
+      "encode_slice_max_ms": 0.681,
+      "kind": "middle",
+      "level": "city_37"
+    },
+    {
+      "actions": 39,
+      "bytes": 385,
+      "decode_ms": 1.034,
+      "decode_slice_max_ms": 1.034,
+      "encode_ms": 1.448,
+      "encode_slice_max_ms": 1.448,
+      "kind": "won",
+      "level": "city_37"
+    },
+    {
+      "actions": 40,
+      "bytes": 384,
+      "decode_ms": 0.904,
+      "decode_slice_max_ms": 0.904,
+      "encode_ms": 1.2,
+      "encode_slice_max_ms": 1.2,
+      "kind": "reset_after_win",
+      "level": "city_37"
+    },
+    {
+      "actions": 20,
+      "bytes": 365,
+      "decode_ms": 0.74,
+      "decode_slice_max_ms": 0.74,
+      "encode_ms": 0.661,
+      "encode_slice_max_ms": 0.661,
+      "kind": "middle",
+      "level": "city_38"
+    },
+    {
+      "actions": 39,
+      "bytes": 385,
+      "decode_ms": 1.06,
+      "decode_slice_max_ms": 1.06,
+      "encode_ms": 1.215,
+      "encode_slice_max_ms": 1.215,
+      "kind": "won",
+      "level": "city_38"
+    },
+    {
+      "actions": 40,
+      "bytes": 384,
+      "decode_ms": 1.137,
+      "decode_slice_max_ms": 1.137,
+      "encode_ms": 1.222,
+      "encode_slice_max_ms": 1.222,
+      "kind": "reset_after_win",
+      "level": "city_38"
+    },
+    {
+      "actions": 20,
+      "bytes": 365,
+      "decode_ms": 0.629,
+      "decode_slice_max_ms": 0.629,
+      "encode_ms": 0.767,
+      "encode_slice_max_ms": 0.767,
+      "kind": "middle",
+      "level": "city_39"
+    },
+    {
+      "actions": 39,
+      "bytes": 385,
+      "decode_ms": 0.976,
+      "decode_slice_max_ms": 0.976,
+      "encode_ms": 1.205,
+      "encode_slice_max_ms": 1.205,
+      "kind": "won",
+      "level": "city_39"
+    },
+    {
+      "actions": 40,
+      "bytes": 384,
+      "decode_ms": 0.9,
+      "decode_slice_max_ms": 0.9,
+      "encode_ms": 1.202,
+      "encode_slice_max_ms": 1.202,
+      "kind": "reset_after_win",
+      "level": "city_39"
+    },
+    {
+      "actions": 21,
+      "bytes": 366,
+      "decode_ms": 0.646,
+      "decode_slice_max_ms": 0.646,
+      "encode_ms": 0.69,
+      "encode_slice_max_ms": 0.69,
+      "kind": "middle",
+      "level": "city_40"
+    },
+    {
+      "actions": 40,
+      "bytes": 386,
+      "decode_ms": 0.937,
+      "decode_slice_max_ms": 0.937,
+      "encode_ms": 1.235,
+      "encode_slice_max_ms": 1.235,
+      "kind": "won",
+      "level": "city_40"
+    },
+    {
+      "actions": 41,
+      "bytes": 385,
+      "decode_ms": 0.935,
+      "decode_slice_max_ms": 0.935,
+      "encode_ms": 1.223,
+      "encode_slice_max_ms": 1.223,
+      "kind": "reset_after_win",
+      "level": "city_40"
+    },
+    {
+      "actions": 16,
+      "bytes": 361,
+      "decode_ms": 0.54,
+      "decode_slice_max_ms": 0.54,
+      "encode_ms": 0.5,
+      "encode_slice_max_ms": 0.5,
+      "kind": "middle",
+      "level": "city_41"
+    },
+    {
+      "actions": 30,
+      "bytes": 376,
+      "decode_ms": 0.77,
+      "decode_slice_max_ms": 0.77,
+      "encode_ms": 0.926,
+      "encode_slice_max_ms": 0.926,
+      "kind": "won",
+      "level": "city_41"
+    },
+    {
+      "actions": 31,
+      "bytes": 375,
+      "decode_ms": 0.962,
+      "decode_slice_max_ms": 0.962,
+      "encode_ms": 0.948,
+      "encode_slice_max_ms": 0.948,
+      "kind": "reset_after_win",
+      "level": "city_41"
+    },
+    {
+      "actions": 20,
+      "bytes": 365,
+      "decode_ms": 0.628,
+      "decode_slice_max_ms": 0.628,
+      "encode_ms": 0.754,
+      "encode_slice_max_ms": 0.754,
+      "kind": "middle",
+      "level": "city_42"
+    },
+    {
+      "actions": 38,
+      "bytes": 384,
+      "decode_ms": 1.114,
+      "decode_slice_max_ms": 1.114,
+      "encode_ms": 1.345,
+      "encode_slice_max_ms": 1.345,
+      "kind": "won",
+      "level": "city_42"
+    },
+    {
+      "actions": 39,
+      "bytes": 383,
+      "decode_ms": 0.871,
+      "decode_slice_max_ms": 0.871,
+      "encode_ms": 1.335,
+      "encode_slice_max_ms": 1.335,
+      "kind": "reset_after_win",
+      "level": "city_42"
+    },
+    {
+      "actions": 28,
+      "bytes": 373,
+      "decode_ms": 0.867,
+      "decode_slice_max_ms": 0.867,
+      "encode_ms": 0.87,
+      "encode_slice_max_ms": 0.87,
+      "kind": "middle",
+      "level": "city_43"
+    },
+    {
+      "actions": 55,
+      "bytes": 401,
+      "decode_ms": 1.174,
+      "decode_slice_max_ms": 1.174,
+      "encode_ms": 1.655,
+      "encode_slice_max_ms": 1.655,
+      "kind": "won",
+      "level": "city_43"
+    },
+    {
+      "actions": 56,
+      "bytes": 400,
+      "decode_ms": 1.275,
+      "decode_slice_max_ms": 1.275,
+      "encode_ms": 1.785,
+      "encode_slice_max_ms": 1.785,
+      "kind": "reset_after_win",
+      "level": "city_43"
+    },
+    {
+      "actions": 23,
+      "bytes": 368,
+      "decode_ms": 0.74,
+      "decode_slice_max_ms": 0.74,
+      "encode_ms": 0.713,
+      "encode_slice_max_ms": 0.713,
+      "kind": "middle",
+      "level": "city_44"
+    },
+    {
+      "actions": 44,
+      "bytes": 390,
+      "decode_ms": 0.992,
+      "decode_slice_max_ms": 0.992,
+      "encode_ms": 1.693,
+      "encode_slice_max_ms": 1.693,
+      "kind": "won",
+      "level": "city_44"
+    },
+    {
+      "actions": 45,
+      "bytes": 389,
+      "decode_ms": 1.035,
+      "decode_slice_max_ms": 1.035,
+      "encode_ms": 1.57,
+      "encode_slice_max_ms": 1.57,
+      "kind": "reset_after_win",
+      "level": "city_44"
+    },
+    {
+      "actions": 25,
+      "bytes": 370,
+      "decode_ms": 0.72,
+      "decode_slice_max_ms": 0.72,
+      "encode_ms": 0.781,
+      "encode_slice_max_ms": 0.781,
+      "kind": "middle",
+      "level": "city_45"
+    },
+    {
+      "actions": 48,
+      "bytes": 394,
+      "decode_ms": 1.242,
+      "decode_slice_max_ms": 1.242,
+      "encode_ms": 1.435,
+      "encode_slice_max_ms": 1.435,
+      "kind": "won",
+      "level": "city_45"
+    },
+    {
+      "actions": 49,
+      "bytes": 393,
+      "decode_ms": 1.049,
+      "decode_slice_max_ms": 1.049,
+      "encode_ms": 1.818,
+      "encode_slice_max_ms": 1.818,
+      "kind": "reset_after_win",
+      "level": "city_45"
+    },
+    {
+      "actions": 20,
+      "bytes": 365,
+      "decode_ms": 0.88,
+      "decode_slice_max_ms": 0.88,
+      "encode_ms": 0.667,
+      "encode_slice_max_ms": 0.667,
+      "kind": "middle",
+      "level": "city_46"
+    },
+    {
+      "actions": 39,
+      "bytes": 385,
+      "decode_ms": 1.251,
+      "decode_slice_max_ms": 1.251,
+      "encode_ms": 1.343,
+      "encode_slice_max_ms": 1.343,
+      "kind": "won",
+      "level": "city_46"
+    },
+    {
+      "actions": 40,
+      "bytes": 384,
+      "decode_ms": 1.383,
+      "decode_slice_max_ms": 1.383,
+      "encode_ms": 1.367,
+      "encode_slice_max_ms": 1.367,
+      "kind": "reset_after_win",
+      "level": "city_46"
+    },
+    {
+      "actions": 15,
+      "bytes": 360,
+      "decode_ms": 0.604,
+      "decode_slice_max_ms": 0.604,
+      "encode_ms": 0.507,
+      "encode_slice_max_ms": 0.507,
+      "kind": "middle",
+      "level": "city_47"
+    },
+    {
+      "actions": 29,
+      "bytes": 375,
+      "decode_ms": 0.978,
+      "decode_slice_max_ms": 0.978,
+      "encode_ms": 1.095,
+      "encode_slice_max_ms": 1.095,
+      "kind": "won",
+      "level": "city_47"
+    },
+    {
+      "actions": 30,
+      "bytes": 374,
+      "decode_ms": 0.901,
+      "decode_slice_max_ms": 0.901,
+      "encode_ms": 0.986,
+      "encode_slice_max_ms": 0.986,
+      "kind": "reset_after_win",
+      "level": "city_47"
+    },
+    {
+      "actions": 18,
+      "bytes": 363,
+      "decode_ms": 0.801,
+      "decode_slice_max_ms": 0.801,
+      "encode_ms": 0.725,
+      "encode_slice_max_ms": 0.725,
+      "kind": "middle",
+      "level": "city_48"
+    },
+    {
+      "actions": 34,
+      "bytes": 380,
+      "decode_ms": 1.164,
+      "decode_slice_max_ms": 1.164,
+      "encode_ms": 1.493,
+      "encode_slice_max_ms": 1.493,
+      "kind": "won",
+      "level": "city_48"
+    },
+    {
+      "actions": 35,
+      "bytes": 379,
+      "decode_ms": 1.02,
+      "decode_slice_max_ms": 1.02,
+      "encode_ms": 1.393,
+      "encode_slice_max_ms": 1.393,
+      "kind": "reset_after_win",
+      "level": "city_48"
+    },
+    {
+      "actions": 24,
+      "bytes": 369,
+      "decode_ms": 0.711,
+      "decode_slice_max_ms": 0.711,
+      "encode_ms": 0.793,
+      "encode_slice_max_ms": 0.793,
+      "kind": "middle",
+      "level": "city_49"
+    },
+    {
+      "actions": 47,
+      "bytes": 393,
+      "decode_ms": 1.106,
+      "decode_slice_max_ms": 1.106,
+      "encode_ms": 1.583,
+      "encode_slice_max_ms": 1.583,
+      "kind": "won",
+      "level": "city_49"
+    },
+    {
+      "actions": 48,
+      "bytes": 392,
+      "decode_ms": 1.09,
+      "decode_slice_max_ms": 1.09,
+      "encode_ms": 1.66,
+      "encode_slice_max_ms": 1.66,
+      "kind": "reset_after_win",
+      "level": "city_49"
+    },
+    {
+      "actions": 23,
+      "bytes": 368,
+      "decode_ms": 0.751,
+      "decode_slice_max_ms": 0.751,
+      "encode_ms": 0.785,
+      "encode_slice_max_ms": 0.785,
+      "kind": "middle",
+      "level": "city_50"
+    },
+    {
+      "actions": 45,
+      "bytes": 391,
+      "decode_ms": 1.426,
+      "decode_slice_max_ms": 1.426,
+      "encode_ms": 1.525,
+      "encode_slice_max_ms": 1.525,
+      "kind": "won",
+      "level": "city_50"
+    },
+    {
+      "actions": 46,
+      "bytes": 390,
+      "decode_ms": 1.117,
+      "decode_slice_max_ms": 1.117,
+      "encode_ms": 1.567,
+      "encode_slice_max_ms": 1.567,
+      "kind": "reset_after_win",
+      "level": "city_50"
+    },
+    {
+      "actions": 21,
+      "bytes": 366,
+      "decode_ms": 0.615,
+      "decode_slice_max_ms": 0.615,
+      "encode_ms": 0.605,
+      "encode_slice_max_ms": 0.605,
+      "kind": "middle",
+      "level": "confluence_01"
+    },
+    {
+      "actions": 41,
+      "bytes": 387,
+      "decode_ms": 0.973,
+      "decode_slice_max_ms": 0.973,
+      "encode_ms": 1.147,
+      "encode_slice_max_ms": 1.147,
+      "kind": "won",
+      "level": "confluence_01"
+    },
+    {
+      "actions": 42,
+      "bytes": 386,
+      "decode_ms": 0.897,
+      "decode_slice_max_ms": 0.897,
+      "encode_ms": 1.154,
+      "encode_slice_max_ms": 1.154,
+      "kind": "reset_after_win",
+      "level": "confluence_01"
+    },
+    {
+      "actions": 28,
+      "bytes": 373,
+      "decode_ms": 0.753,
+      "decode_slice_max_ms": 0.753,
+      "encode_ms": 0.829,
+      "encode_slice_max_ms": 0.829,
+      "kind": "middle",
+      "level": "confluence_02"
+    },
+    {
+      "actions": 55,
+      "bytes": 401,
+      "decode_ms": 1.125,
+      "decode_slice_max_ms": 1.125,
+      "encode_ms": 1.676,
+      "encode_slice_max_ms": 1.676,
+      "kind": "won",
+      "level": "confluence_02"
+    },
+    {
+      "actions": 56,
+      "bytes": 400,
+      "decode_ms": 1.133,
+      "decode_slice_max_ms": 1.133,
+      "encode_ms": 1.464,
+      "encode_slice_max_ms": 1.464,
+      "kind": "reset_after_win",
+      "level": "confluence_02"
+    },
+    {
+      "actions": 15,
+      "bytes": 360,
+      "decode_ms": 0.685,
+      "decode_slice_max_ms": 0.685,
+      "encode_ms": 0.526,
+      "encode_slice_max_ms": 0.526,
+      "kind": "middle",
+      "level": "confluence_03"
+    },
+    {
+      "actions": 29,
+      "bytes": 374,
+      "decode_ms": 1.143,
+      "decode_slice_max_ms": 1.143,
+      "encode_ms": 0.951,
+      "encode_slice_max_ms": 0.951,
+      "kind": "won",
+      "level": "confluence_03"
+    },
+    {
+      "actions": 30,
+      "bytes": 374,
+      "decode_ms": 0.7,
+      "decode_slice_max_ms": 0.7,
+      "encode_ms": 0.805,
+      "encode_slice_max_ms": 0.805,
+      "kind": "reset_after_win",
+      "level": "confluence_03"
+    },
+    {
+      "actions": 14,
+      "bytes": 359,
+      "decode_ms": 0.483,
+      "decode_slice_max_ms": 0.483,
+      "encode_ms": 0.475,
+      "encode_slice_max_ms": 0.475,
+      "kind": "middle",
+      "level": "confluence_04"
+    },
+    {
+      "actions": 26,
+      "bytes": 371,
+      "decode_ms": 0.663,
+      "decode_slice_max_ms": 0.663,
+      "encode_ms": 0.769,
+      "encode_slice_max_ms": 0.769,
+      "kind": "won",
+      "level": "confluence_04"
+    },
+    {
+      "actions": 27,
+      "bytes": 371,
+      "decode_ms": 0.673,
+      "decode_slice_max_ms": 0.673,
+      "encode_ms": 0.759,
+      "encode_slice_max_ms": 0.759,
+      "kind": "reset_after_win",
+      "level": "confluence_04"
+    }
+  ],
+  "roundtrips": 612
+}

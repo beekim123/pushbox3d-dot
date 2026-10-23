@@ -1,8 +1,8 @@
 # 续玩源码恢复 · WIP
 
-本目录是恢复后的源码保全检查点，不是已经接入 `main` 或完成新环境回归的可玩功能。
+本分支用于源码保全和分层验证；**不表示生产UI、完整204关或完整远程运行资产已验收。main仍保持已保存基线。**
 
-## 已保存源码
+## 已保全的四份原始源码
 
 | 文件 | SHA-256 |
 |---|---|
@@ -11,10 +11,21 @@
 | resume_controller.gd | fecc26a2c27bbe3bdf569efb4e22b4084b167dfa08b8effe93b7ec07a9bda862 |
 | main.gd | f4768bae8bedcae981afa1c25051acd23b16d31c7af741b1a7ff15415372c93f |
 
-四份源码已重建并对稳定读取字节核验，哈希与先前冻结值一致。`rebuild_main.py` 和 `RECOVERY.md` 记录恢复过程；相同源码哈希不等于测试已经重跑通过。
+## 恢复后实际验证
 
-**此检查点只证明源码已备份；恢复后的解析、独立模块/UI审查和完整204关回归结果须以后续新证据为准。旧环境中断的回归不得记作通过。**
+- **2026-10-23 14:19:49–14:19:54 UTC**：独立 codec/store 原型重新执行，7,368 断言、0失败，源码前后哈希不变。证据见 `TEST_REPORT.md`、`results/fresh_run_manifest.json` 和 `BACKUP_MANIFEST.json`。
+- 本次使用204条ID+solution的12KB最小夹具，源于完整solver报告；派生脚本与provenance一并保存，不依赖远程缺失的大报告。
+- 以上仅为模块级验证。`audit/`、UI integration/capture脚本的独立审查与生产完整回归必须按后续新结果分别记录，不能使用旧环境中断的测试冒充通过。
+- 旧恢复说明 `RECOVERY.md` 保留为时间线；当前模块状态以上述新run为准。
 
-目录通过 `.gdignore` 隔离，内部 `res://scripts/...` 依赖路径尚未按此备份布局连接。不得直接把本目录当成可运行工程或覆盖已测试版本。
+## 布局与复验
 
-分支为 `work/resume-rebuild`；`main` 保持基线 `f421db6716fbac6ae1de326b02758e9376ac48a4`。远程资源仍不完整（47/62 GLB，Ogg/WAV与Blender源尚未迁入）；本阶段无二进制写入。
+`.gdignore`让本目录不影响仓库根项目的资源导入。原型说明见 `PROTOTYPE_README.md`。从本目录运行：
+
+```sh
+GODOT=/path/to/godot-4.7.2 python3 tests/run_tests.py
+```
+
+这条命令只运行模块测试，不把备份的UI main/controller变成已连接场景；它们的生产preload路径尚未按本目录布局连接。不要直接覆盖已测试生产版本。
+
+分支：`work/resume-rebuild`。远程资源仍不完整：47/62 GLB，Ogg/WAV与Blender源未齐；此阶段无二进制写入。

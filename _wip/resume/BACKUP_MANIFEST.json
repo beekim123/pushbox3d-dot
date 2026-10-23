@@ -1,0 +1,195 @@
+{
+  "frozen": true,
+  "purpose": "WIP source + genuinely rerun evidence; no production UI pass claim",
+  "fresh_run_manifest_sha256": "9744d2a9f6f47880725f8b098511ae80758d446d7a6ed5c0c47522e79366498a",
+  "files": [
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/resume_codec.gd",
+      "relative_path": "resume_codec.gd",
+      "repository_path": "_wip/resume/resume_codec.gd",
+      "sha256": "5bbb79cbaffab0fd70ec310c9914b10bba9259ca58515ac65c0a83c97d102305",
+      "bytes": 17426
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/resume_store.gd",
+      "relative_path": "resume_store.gd",
+      "repository_path": "_wip/resume/resume_store.gd",
+      "sha256": "c3840e3fabd873c6fc0dcfb494252bdb0f5fa6331951e9c0afed4f11e8828566",
+      "bytes": 6016
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/project.godot",
+      "relative_path": "project.godot",
+      "repository_path": "_wip/resume/project.godot",
+      "sha256": "b469323df24d876b68fa8f9797061c9b056b4d2c933460012f0109762c84a88d",
+      "bytes": 203
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/README.md",
+      "relative_path": "README.md",
+      "repository_path": "_wip/resume/PROTOTYPE_README.md",
+      "sha256": "963d93b2aa200ed15c9ee197ecd83206a3cc54729c0540509c65f61eef56fd69",
+      "bytes": 8772
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/TEST_REPORT.md",
+      "relative_path": "TEST_REPORT.md",
+      "repository_path": "_wip/resume/TEST_REPORT.md",
+      "sha256": "9ef4b7370e38c38323a8016892684a92f224e8d6301f3d4723590d1abb19f52c",
+      "bytes": 3922
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/tests/derive_solutions.py",
+      "relative_path": "tests/derive_solutions.py",
+      "repository_path": "_wip/resume/tests/derive_solutions.py",
+      "sha256": "55ca02d75d9df38d98c4d57e1a083cff859b22db89ce6ccecf618ecd005672b2",
+      "bytes": 1375
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/tests/run_tests.py",
+      "relative_path": "tests/run_tests.py",
+      "repository_path": "_wip/resume/tests/run_tests.py",
+      "sha256": "d1f3b750852d164aa4f77a3b24535b035b268e4a3719679bda11993bcc74f586",
+      "bytes": 3060
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/tests/test_codec.gd",
+      "relative_path": "tests/test_codec.gd",
+      "repository_path": "_wip/resume/tests/test_codec.gd",
+      "sha256": "500d21e8af48cc38e54b30575123521bf7f98ba56c8c99b323b232e2c103a732",
+      "bytes": 8895
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/tests/test_limits.gd",
+      "relative_path": "tests/test_limits.gd",
+      "repository_path": "_wip/resume/tests/test_limits.gd",
+      "sha256": "14203924c2e523093783178baae589d5903d85a5b2115c13e51774f5fcac768b",
+      "bytes": 3923
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/tests/test_relaunch.gd",
+      "relative_path": "tests/test_relaunch.gd",
+      "repository_path": "_wip/resume/tests/test_relaunch.gd",
+      "sha256": "36c50cb52bfa39d8b4bb366d707b96433b189df9607437b59c91c36b3fd6d63b",
+      "bytes": 3991
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/tests/test_store.gd",
+      "relative_path": "tests/test_store.gd",
+      "repository_path": "_wip/resume/tests/test_store.gd",
+      "sha256": "ed4e4b7d702c4fb691a61bee72bac64f5c8981ca4146915eb384f6dc73a0bbf0",
+      "bytes": 7724
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/snapshot/puzzle_rules.gd",
+      "relative_path": "snapshot/puzzle_rules.gd",
+      "repository_path": "_wip/resume/snapshot/puzzle_rules.gd",
+      "sha256": "260130edbe5978fc610a5e8fcc2f84ff19e8fc8beb16d3a2971790f1cc68df64",
+      "bytes": 3249
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/snapshot/levels.json",
+      "relative_path": "snapshot/levels.json",
+      "repository_path": "_wip/resume/snapshot/levels.json",
+      "sha256": "3658774f0015b859ff27e13b0ef48c6e5071df921d0d155be797565de302fcda",
+      "bytes": 501053
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/snapshot/resume_solutions.json",
+      "relative_path": "snapshot/resume_solutions.json",
+      "repository_path": "_wip/resume/snapshot/resume_solutions.json",
+      "sha256": "0f80ca6c52e42e52de917dfdaab30cd51a2c7dd97617ff7bd057ac58001be986",
+      "bytes": 12266
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/snapshot/solutions_provenance.json",
+      "relative_path": "snapshot/solutions_provenance.json",
+      "repository_path": "_wip/resume/snapshot/solutions_provenance.json",
+      "sha256": "a6fc8f67bcd05446961c27e26fb0cb015cbd0e94dc63e18d033696676dd372b6",
+      "bytes": 538
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/codec.json",
+      "relative_path": "results/codec.json",
+      "repository_path": "_wip/resume/results/codec.json",
+      "sha256": "51216d7ad060f1674abe2c9f28345f82743b7213931e034f6e67859646e283c8",
+      "bytes": 141864
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/codec.log",
+      "relative_path": "results/codec.log",
+      "repository_path": "_wip/resume/results/codec.log",
+      "sha256": "045424ccede2d9f600029b6ee81a244d0c021f34fc71689182a01f4247727387",
+      "bytes": 1075
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/fresh_run_manifest.json",
+      "relative_path": "results/fresh_run_manifest.json",
+      "repository_path": "_wip/resume/results/fresh_run_manifest.json",
+      "sha256": "9744d2a9f6f47880725f8b098511ae80758d446d7a6ed5c0c47522e79366498a",
+      "bytes": 4071
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/limits.json",
+      "relative_path": "results/limits.json",
+      "repository_path": "_wip/resume/results/limits.json",
+      "sha256": "b44a6856ee8d68d4a966ca98f0aaef6dd83a7aceafe734297d897548faba5ab8",
+      "bytes": 1555
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/limits.log",
+      "relative_path": "results/limits.log",
+      "repository_path": "_wip/resume/results/limits.log",
+      "sha256": "fdae59fce9980bac2d26e53e54a4da1ecb9f16570628fcfff4e20f882b52eb12",
+      "bytes": 1205
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/relaunch_read.json",
+      "relative_path": "results/relaunch_read.json",
+      "repository_path": "_wip/resume/results/relaunch_read.json",
+      "sha256": "8f6ed647aa4840ed85952500d742235ca960f72c4937df554d7ac28b01bb15cf",
+      "bytes": 336
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/relaunch_read.log",
+      "relative_path": "results/relaunch_read.log",
+      "repository_path": "_wip/resume/results/relaunch_read.log",
+      "sha256": "bea9a59e2aa7796d0ec7e73cb1d350da5482d7c67309a2bfb69c02c7c92a0e2f",
+      "bytes": 344
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/relaunch_write.json",
+      "relative_path": "results/relaunch_write.json",
+      "repository_path": "_wip/resume/results/relaunch_write.json",
+      "sha256": "3655e8a3430c2a02098c2939a1b0ec5049a3dd441a91b520c0ac7b119388e327",
+      "bytes": 336
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/relaunch_write.log",
+      "relative_path": "results/relaunch_write.log",
+      "repository_path": "_wip/resume/results/relaunch_write.log",
+      "sha256": "14bb919212df1010097d922a0caef59f6db2efb7a8b96d4e3de52efec3b2dec2",
+      "bytes": 344
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/store.json",
+      "relative_path": "results/store.json",
+      "repository_path": "_wip/resume/results/store.json",
+      "sha256": "0844b4519024931a99f653570dcc017601f360a1e6accd54a71132bc8d466fa7",
+      "bytes": 448
+    },
+    {
+      "local_path": "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild/results/store.log",
+      "relative_path": "results/store.log",
+      "repository_path": "_wip/resume/results/store.log",
+      "sha256": "22690f4fc58678ca64a6b0d3d277814d5d725be684c980c400b78c1893f32873",
+      "bytes": 457
+    }
+  ],
+  "exclude": [
+    ".godot/",
+    "reference/",
+    "results/history_141247/",
+    "snapshot/save_migration_v2.gd.txt"
+  ]
+}

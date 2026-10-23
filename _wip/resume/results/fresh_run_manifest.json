@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "checks": 7368,
+  "started_utc": "2026-10-23T14:19:49.823338+00:00",
+  "completed_utc": "2026-10-23T14:19:54.395465+00:00",
+  "runs": [
+    {
+      "name": "codec",
+      "command": [
+        "/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild",
+        "--script",
+        "tests/test_codec.gd"
+      ],
+      "started_utc": "2026-10-23T14:19:50.177052+00:00",
+      "returncode": 0,
+      "passed": true,
+      "checks": 7098
+    },
+    {
+      "name": "store",
+      "command": [
+        "/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild",
+        "--script",
+        "tests/test_store.gd"
+      ],
+      "started_utc": "2026-10-23T14:19:51.916287+00:00",
+      "returncode": 0,
+      "passed": true,
+      "checks": 82
+    },
+    {
+      "name": "limits",
+      "command": [
+        "/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild",
+        "--script",
+        "tests/test_limits.gd"
+      ],
+      "started_utc": "2026-10-23T14:19:52.161162+00:00",
+      "returncode": 0,
+      "passed": true,
+      "checks": 14
+    },
+    {
+      "name": "relaunch_write",
+      "command": [
+        "/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild",
+        "--script",
+        "tests/test_relaunch.gd",
+        "--",
+        "write"
+      ],
+      "started_utc": "2026-10-23T14:19:53.898682+00:00",
+      "returncode": 0,
+      "passed": true,
+      "checks": 47
+    },
+    {
+      "name": "relaunch_read",
+      "command": [
+        "/workspace/scratch/e4cad742399c/tools/godot-4.7.2/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/e4cad742399c/fourfold_next/resume_rebuild",
+        "--script",
+        "tests/test_relaunch.gd",
+        "--",
+        "read"
+      ],
+      "started_utc": "2026-10-23T14:19:54.147276+00:00",
+      "returncode": 0,
+      "passed": true,
+      "checks": 127
+    }
+  ],
+  "godot_version": "4.7.2.stable.official.ed1daf0bf",
+  "godot_sha256": "8d106cbe6144c2dc7e881d61d2429c1a8a76e6b22ef48bd5e48dcf934953f71e",
+  "source_sha256": {
+    "resume_codec.gd": "5bbb79cbaffab0fd70ec310c9914b10bba9259ca58515ac65c0a83c97d102305",
+    "resume_store.gd": "c3840e3fabd873c6fc0dcfb494252bdb0f5fa6331951e9c0afed4f11e8828566",
+    "project.godot": "b469323df24d876b68fa8f9797061c9b056b4d2c933460012f0109762c84a88d",
+    "tests/test_codec.gd": "500d21e8af48cc38e54b30575123521bf7f98ba56c8c99b323b232e2c103a732",
+    "tests/test_limits.gd": "14203924c2e523093783178baae589d5903d85a5b2115c13e51774f5fcac768b",
+    "tests/test_relaunch.gd": "36c50cb52bfa39d8b4bb366d707b96433b189df9607437b59c91c36b3fd6d63b",
+    "tests/test_store.gd": "ed4e4b7d702c4fb691a61bee72bac64f5c8981ca4146915eb384f6dc73a0bbf0",
+    "tests/derive_solutions.py": "55ca02d75d9df38d98c4d57e1a083cff859b22db89ce6ccecf618ecd005672b2",
+    "tests/run_tests.py": "d1f3b750852d164aa4f77a3b24535b035b268e4a3719679bda11993bcc74f586",
+    "snapshot/levels.json": "3658774f0015b859ff27e13b0ef48c6e5071df921d0d155be797565de302fcda",
+    "snapshot/puzzle_rules.gd": "260130edbe5978fc610a5e8fcc2f84ff19e8fc8beb16d3a2971790f1cc68df64",
+    "snapshot/resume_solutions.json": "0f80ca6c52e42e52de917dfdaab30cd51a2c7dd97617ff7bd057ac58001be986",
+    "snapshot/save_migration_v2.gd.txt": "8bcac07b4a204aff58c9a3775d62845e8a701a73426feda6143a9cb13cb79d55",
+    "snapshot/solutions_provenance.json": "a6fc8f67bcd05446961c27e26fb0cb015cbd0e94dc63e18d033696676dd372b6"
+  },
+  "source_unchanged": true,
+  "userdata": "/tmp/fourfold-resume-rebuild-s26drb6d",
+  "note": "Fresh post-recovery run. Source modules exactly match originals; tests and evidence rebuilt. No production UI claim."
+}

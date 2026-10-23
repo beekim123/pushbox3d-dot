@@ -1,0 +1,11 @@
+{
+  "purpose": "Only id and solution are read by resume tests; all 204 original entries and order preserved. No claims about discarded full report fields.",
+  "source_name": "solver_report.json",
+  "source_sha256": "8aca00614377e857023e16db0949b164b5e9087e960e028e377561dcc6f1279b",
+  "source_bytes": 1682706,
+  "entries": 204,
+  "derived_name": "resume_solutions.json",
+  "derived_sha256": "0f80ca6c52e42e52de917dfdaab30cd51a2c7dd97617ff7bd057ac58001be986",
+  "derived_bytes": 12266,
+  "derivation_script": "tests/derive_solutions.py"
+}

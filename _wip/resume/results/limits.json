@@ -1,0 +1,66 @@
+{
+  "checks": 14,
+  "failures": [],
+  "godot": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "passed": true,
+  "records": {
+    "begin_decode_ms": 0.129,
+    "begin_encode_ms": 0.106,
+    "cancel_full_ready_ms": 7.181,
+    "compacted": {
+      "compute_ms": 140.679,
+      "fallback": "none",
+      "frames": 70,
+      "kind": "encode",
+      "max_public_call_ms": 2.924,
+      "max_slice_ms": 2.916,
+      "processed_actions": 7993,
+      "reason": "",
+      "request_id": 3,
+      "source_revision": 101,
+      "status": "encoded",
+      "total_actions": 7993
+    },
+    "decode": {
+      "compute_ms": 59.884,
+      "fallback": "none",
+      "frames": 28,
+      "kind": "decode",
+      "max_public_call_ms": 3.775,
+      "max_slice_ms": 3.767,
+      "processed_actions": 8192,
+      "reason": "",
+      "request_id": 2,
+      "source_revision": 0,
+      "status": "restored",
+      "total_actions": 8192
+    },
+    "encode": {
+      "compute_ms": 139.515,
+      "fallback": "none",
+      "frames": 70,
+      "kind": "encode",
+      "max_public_call_ms": 2.118,
+      "max_slice_ms": 2.111,
+      "processed_actions": 8192,
+      "reason": "",
+      "request_id": 1,
+      "source_revision": 100,
+      "status": "encoded",
+      "total_actions": 8192
+    },
+    "encoded_bytes": 8533,
+    "replace_after_cancel_ms": 0.177,
+    "take_encoded_ms": 0.004
+  }
+}

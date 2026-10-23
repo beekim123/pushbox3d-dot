@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RESUME_CODEC {"checks":7098,"failures":[],"passed":true,"roundtrips":612}
+WARNING: Exponent too high
+     at: built_in_strtod (core/string/ustring.cpp:2553)
+     GDScript backtrace (most recent call first):
+         [0] _parse_tick (res://resume_codec.gd:247)
+         [1] step_budget (res://resume_codec.gd:109)
+         [2] drain (res://tests/test_codec.gd:23)
+         [3] expect_protected (res://tests/test_codec.gd:109)
+         [4] adversarial (res://tests/test_codec.gd:125)
+         [5] run (res://tests/test_codec.gd:53)
+WARNING: `NaN` ("Not a Number") found in argument passed to JSON.stringify(). `NaN` cannot be represented in JSON, so the value has been replaced with `null`. This warning will not be printed for any later NaN occurrences.
+     at: _stringify (core/io/json.cpp:86)
+     GDScript backtrace (most recent call first):
+         [0] signed (res://tests/test_codec.gd:103)
+         [1] adversarial (res://tests/test_codec.gd:125)
+         [2] run (res://tests/test_codec.gd:53)
