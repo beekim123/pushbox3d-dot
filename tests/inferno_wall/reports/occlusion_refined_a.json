@@ -1,0 +1,272 @@
+{
+  "counts": {
+    "goal_ring_samples": 8424,
+    "goal_tooth_samples": 1872,
+    "legal_cell_centers": 1070,
+    "neighbor_legal_cell_centers": 908,
+    "portal_glyph_samples": 13158,
+    "wall_mesh_triangle_tests": 9840
+  },
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "levels": 51,
+  "passed": true,
+  "records": [
+    {
+      "level": "inferno_01",
+      "occluded_samples": 0,
+      "wall_meshes": 32
+    },
+    {
+      "level": "inferno_02",
+      "occluded_samples": 0,
+      "wall_meshes": 28
+    },
+    {
+      "level": "inferno_03",
+      "occluded_samples": 0,
+      "wall_meshes": 28
+    },
+    {
+      "level": "inferno_04",
+      "occluded_samples": 0,
+      "wall_meshes": 32
+    },
+    {
+      "level": "inferno_05",
+      "occluded_samples": 0,
+      "wall_meshes": 32
+    },
+    {
+      "level": "inferno_06",
+      "occluded_samples": 0,
+      "wall_meshes": 36
+    },
+    {
+      "level": "inferno_07",
+      "occluded_samples": 0,
+      "wall_meshes": 38
+    },
+    {
+      "level": "inferno_08",
+      "occluded_samples": 0,
+      "wall_meshes": 38
+    },
+    {
+      "level": "inferno_09",
+      "occluded_samples": 0,
+      "wall_meshes": 36
+    },
+    {
+      "level": "inferno_10",
+      "occluded_samples": 0,
+      "wall_meshes": 38
+    },
+    {
+      "level": "inferno_11",
+      "occluded_samples": 0,
+      "wall_meshes": 34
+    },
+    {
+      "level": "inferno_12",
+      "occluded_samples": 0,
+      "wall_meshes": 34
+    },
+    {
+      "level": "inferno_13",
+      "occluded_samples": 0,
+      "wall_meshes": 40
+    },
+    {
+      "level": "inferno_14",
+      "occluded_samples": 0,
+      "wall_meshes": 40
+    },
+    {
+      "level": "inferno_15",
+      "occluded_samples": 0,
+      "wall_meshes": 34
+    },
+    {
+      "level": "inferno_16",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_17",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_18",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_19",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_20",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_21",
+      "occluded_samples": 0,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_22",
+      "occluded_samples": 0,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_23",
+      "occluded_samples": 0,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_24",
+      "occluded_samples": 0,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_25",
+      "occluded_samples": 0,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_26",
+      "occluded_samples": 0,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_27",
+      "occluded_samples": 0,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_28",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_29",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_30",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_31",
+      "occluded_samples": 0,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_32",
+      "occluded_samples": 0,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_33",
+      "occluded_samples": 0,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_34",
+      "occluded_samples": 0,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_35",
+      "occluded_samples": 0,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_36",
+      "occluded_samples": 0,
+      "wall_meshes": 52
+    },
+    {
+      "level": "inferno_37",
+      "occluded_samples": 0,
+      "wall_meshes": 52
+    },
+    {
+      "level": "inferno_38",
+      "occluded_samples": 0,
+      "wall_meshes": 56
+    },
+    {
+      "level": "inferno_39",
+      "occluded_samples": 0,
+      "wall_meshes": 56
+    },
+    {
+      "level": "inferno_40",
+      "occluded_samples": 0,
+      "wall_meshes": 52
+    },
+    {
+      "level": "inferno_41",
+      "occluded_samples": 0,
+      "wall_meshes": 44
+    },
+    {
+      "level": "inferno_42",
+      "occluded_samples": 0,
+      "wall_meshes": 44
+    },
+    {
+      "level": "inferno_43",
+      "occluded_samples": 0,
+      "wall_meshes": 44
+    },
+    {
+      "level": "inferno_44",
+      "occluded_samples": 0,
+      "wall_meshes": 44
+    },
+    {
+      "level": "inferno_45",
+      "occluded_samples": 0,
+      "wall_meshes": 52
+    },
+    {
+      "level": "inferno_46",
+      "occluded_samples": 0,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_47",
+      "occluded_samples": 0,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_48",
+      "occluded_samples": 0,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_49",
+      "occluded_samples": 0,
+      "wall_meshes": 58
+    },
+    {
+      "level": "inferno_50",
+      "occluded_samples": 0,
+      "wall_meshes": 58
+    },
+    {
+      "level": "confluence_02",
+      "occluded_samples": 0,
+      "wall_meshes": 36
+    }
+  ],
+  "scope": "All inferno and inferno-skinned confluence levels at production 1440x900 camera. Rays from legal-cell centers and conservative goal ring/tooth and portal spiral samples toward orthographic camera against exact transformed wall triangles. Glyph sampling is not a whole-pixel proof; matched native frames independently reviewed."
+}

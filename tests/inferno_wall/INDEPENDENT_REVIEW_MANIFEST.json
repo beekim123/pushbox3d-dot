@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "reviewer": "independent-reviewer",
+  "date_utc": "2026-10-23",
+  "decision": "PASS_WITH_DOCUMENTED_COSMETIC_TOOTH_OCCLUSION",
+  "candidate": "C0.80",
+  "candidate_directory": "wall_review/height_variant_c80",
+  "input_sha256": {
+    "blender/rebuild_worlds_v2.py": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+    "blender/inferno_v2.blend": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+    "blender/v2_inferno_stats.json": "f2ad48875a81f1bff075bc39df2913482287d1f22cdad3733d02febaa65e12a8",
+    "assets/models/inferno_wall.glb": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+    "assets/models/inferno_wall_b.glb": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7"
+  },
+  "report_sha256": "9b0ab234bb75469a03ecd6f85a2dcb1aec129a482650138e7ba268a2955f08c7",
+  "models": {
+    "inferno_wall.glb": {
+      "triangles": 552,
+      "material_batches": 2,
+      "bounds_min": [
+        -0.8600000143051147,
+        0.009999999776482582,
+        -0.7599999904632568
+      ],
+      "bounds_max": [
+        0.8600000143051147,
+        0.800000011920929,
+        0.7599999904632568
+      ],
+      "node_transforms": "identity"
+    },
+    "inferno_wall_b.glb": {
+      "triangles": 3496,
+      "material_batches": 4,
+      "bounds_min": [
+        -0.8600000143051147,
+        0.009999999776482582,
+        -0.7599999904632568
+      ],
+      "bounds_max": [
+        0.8600000143051147,
+        0.800000011920929,
+        0.8449979424476624
+      ],
+      "node_transforms": "identity"
+    }
+  },
+  "changed_glbs": [
+    "inferno_wall.glb",
+    "inferno_wall_b.glb"
+  ],
+  "unchanged_glbs": 60,
+  "runtime_and_level_files_unchanged": [
+    "scripts/puzzle_rules.gd",
+    "scripts/hint_solver.gd",
+    "scripts/world_view.gd",
+    "scripts/ui_kit.gd",
+    "scripts/ui_kit.gd.uid",
+    "scripts/resume_controller.gd",
+    "scripts/hint_overlay.gd.uid",
+    "scripts/hint_solver.gd.uid",
+    "scripts/puzzle_rules.gd.uid",
+    "scripts/resume_controller.gd.uid",
+    "scripts/world_view.gd.uid",
+    "scripts/context_help.gd.uid",
+    "scripts/hint_overlay.gd",
+    "scripts/context_help.gd",
+    "scripts/main.gd.uid",
+    "scripts/main.gd",
+    "project.godot",
+    "assets/levels.json"
+  ],
+  "native_pairs": [
+    {
+      "id": "inferno_10_high",
+      "before": "native_before/inferno_10_high.png",
+      "after": "native_final/inferno_10_high.png",
+      "matched_fields": {
+        "camera": true,
+        "markers": true,
+        "lighting": true,
+        "draw_calls": true,
+        "quality": true
+      },
+      "draw_calls": 234.0,
+      "render_scale": 1.0,
+      "msaa": 2
+    },
+    {
+      "id": "inferno_45_high",
+      "before": "native_before/inferno_45_high.png",
+      "after": "native_final/inferno_45_high.png",
+      "matched_fields": {
+        "camera": true,
+        "markers": true,
+        "lighting": true,
+        "draw_calls": true,
+        "quality": true
+      },
+      "draw_calls": 244.0,
+      "render_scale": 1.0,
+      "msaa": 2
+    },
+    {
+      "id": "inferno_10_low",
+      "before": "native_before/inferno_10_low.png",
+      "after": "native_final/inferno_10_low.png",
+      "matched_fields": {
+        "camera": true,
+        "markers": true,
+        "lighting": true,
+        "draw_calls": true,
+        "quality": true
+      },
+      "draw_calls": 234.0,
+      "render_scale": 0.600000023841858,
+      "msaa": 0
+    },
+    {
+      "id": "inferno_45_low",
+      "before": "native_before/inferno_45_low.png",
+      "after": "native_final/inferno_45_low.png",
+      "matched_fields": {
+        "camera": true,
+        "markers": true,
+        "lighting": true,
+        "draw_calls": true,
+        "quality": true
+      },
+      "draw_calls": 244.0,
+      "render_scale": 0.600000023841858,
+      "msaa": 0
+    },
+    {
+      "id": "inferno_23_high",
+      "before": "native_before_23/inferno_23_high.png",
+      "after": "native_final_23/inferno_23_high.png",
+      "matched_fields": {
+        "camera": true,
+        "markers": true,
+        "lighting": true,
+        "draw_calls": true,
+        "quality": true
+      },
+      "draw_calls": 234.0,
+      "render_scale": 1.0,
+      "msaa": 2
+    },
+    {
+      "id": "inferno_23_low",
+      "before": "native_before_23/inferno_23_low.png",
+      "after": "native_final_23/inferno_23_low.png",
+      "matched_fields": {
+        "camera": true,
+        "markers": true,
+        "lighting": true,
+        "draw_calls": true,
+        "quality": true
+      },
+      "draw_calls": 234.0,
+      "render_scale": 0.600000023841858,
+      "msaa": 0
+    }
+  ],
+  "evidence_sha256": {
+    "native_before/capture_manifest.json": "4997ab7938a0bf67b914fa4da485f846b27a7f26b3e4b495ca6223c690713c45",
+    "native_before_23/capture_manifest.json": "dd4abc745bf8a6da664eb12afb3d8956c0ac11bb7c80f9ccf7a7df36411ee0f1",
+    "native_final/capture_manifest.json": "475d4256d50290be4d483b421998c2ed7da5e6a25adab2e232165bc2539a7c00",
+    "native_final_23/capture_manifest.json": "db2dd6b0d531006b8ff22bf9ea0f841cd7e156cd37023595dba6f370901dbf78",
+    "blender_before_lineup.png": "6809d38fde7752a4b85d42ad479d15fa5b397b99ba02a70cc1d21102f38e0f1f",
+    "blender_before_scene.png": "8ff8b362b3a85b44cb6782224869a1a62ed50c1b1e9c14fde5d2d40766333ba2",
+    "blender_final_lineup.png": "ea456c510f23787f18f852c9221f07cff65f339595e295af508431467fdd6819",
+    "blender_final_scene.png": "45b1ab4e7a7e7a6f81fe4274062b67ff8afe98cdcc09b4aff1675046438e5a66",
+    "wall_occlusion_surfaces.gd": "0ac98cc7d2aa78374d306fe9b1657a50d55579f50afdfbd85cd2577e9ea867b9",
+    "wall_occlusion_refined.gd": "efb7ce9d57160c325b77314c8ce66eef0c0f2b01077dd4e5a27484f0710fa6f5",
+    "occlusion_surfaces_original.json": "3b0f2e1253371ba45bed0c13f86cd4655e731a5dfabf3285b6c02bcb82abcbd0",
+    "occlusion_surfaces_a.json": "59a6f9f7bd61a84157af24ea9930ee16fb341de0ccb24ad4dfe64d58c68453e8",
+    "occlusion_surface_deltas.json": "c4fcc74c7d3a28a3d8dce67adf8865508a45708cae0e6806170e556ba6d94195",
+    "height_variant_c80/wall_review/occlusion_surfaces.json": "093895793db5040df6d04dd01ac974135e801748637d319acacdd05faa82c200",
+    "height_variant_c80/wall_review/camera_fit.log": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+    "height_variant_c80/wall_review/asset_audit.log": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf",
+    "height_variant_c80/wall_review/glb_audit.log": "2890dc2c03fb267c36a6d3c882928e0218faf1aa8419251de4b356bd674c73dc",
+    "final_semantic_wall.json": "14bbb5081b2f43b35343eba9f3a56217c79dbfb8b8417e03877e703498acb6ca",
+    "final_semantic_wall_b.json": "002f0166554931caa56264c682c5f58bb28a97cbb26baa172b55db665adbcce8",
+    "native_before/inferno_10_high.png": "b7ab7c55c3cc37dfbb491977c878abc6bcc7beea4949ca9bc3c3e12971e01bca",
+    "native_final/inferno_10_high.png": "32b5fb37c0c44e1928588193b872f9ec26a6de4ea8ee2676bd4b8e762c1ba0d1",
+    "native_before/inferno_45_high.png": "fffef2a81f7b84a8e9225fd3e58cb92178ce7f13697d2b3433fbdd1811253c68",
+    "native_final/inferno_45_high.png": "1714117215e94c2b8f5e214abda1944f91097df229c7a5dc749cd835145a33a5",
+    "native_before/inferno_10_low.png": "6d6200f6c1ff941a2d6d669b523439e2d271fa6638fb899f959bc9c5100a6bf5",
+    "native_final/inferno_10_low.png": "0ab27e16ea92ae8316e9c3bbe55a5a3d7f6429ad10a31003e1703c9479ef7d4d",
+    "native_before/inferno_45_low.png": "7931971337d4113ad52a8e9d23809ac97d9b034d80cada4deb41f0ff4153fd63",
+    "native_final/inferno_45_low.png": "6795bdab65c42a05514a945f19d64153c48bf34bad8d8e289e5856acbb1e846f",
+    "native_before_23/inferno_23_high.png": "7cdeba05207b2330a69863adf4bcac50977a2997a2e7d1d4e9ac60c32f39b17c",
+    "native_final_23/inferno_23_high.png": "2875eb3de87f3bad53cd997a42cde9e10e43a51ac7b766f373f7ac63646d7224",
+    "native_before_23/inferno_23_low.png": "a6d84cf6a7f13e94022a696c46130685906ae7302bc195cdb6ce417468f00b9a",
+    "native_final_23/inferno_23_low.png": "a4a016c9c354b33a64d9f0f8d047b9cb7305a971acfffbd1f18f80443b9ddd09",
+    "FINAL_C80_INTEGRATION_MANIFEST.json": "fc31becb014cccdfcc3bcd9aa7e58102a4ff36735e0bfe8c7f2f91a548832cd9",
+    "final_portal_sweep.json": "b7df38eb82070bc02953087d7cb9311bef40aead4043da20eec69bd83c880611",
+    "wall_portal_sweep.gd": "a0c39ba7bc6b84bec2dab3b42bf6f587949369b897dbd43641e7dd989b4af2c4",
+    "final_delivery/reports/FINAL_C80_VALIDATION.json": "7174ac68c7a8242c96673675e1543243cae59dd239faa981051934c8d1378d93"
+  },
+  "occlusion": {
+    "levels": 51,
+    "whole_symbol_zero_occlusion": false,
+    "sampled_core_ring_portal_center_hits": 0,
+    "original_tooth_hits": 711,
+    "a063_tooth_hits": 414,
+    "c080_tooth_hits": 4119,
+    "c078_tooth_hits": 3721,
+    "c080_new_vs_original": 3408,
+    "c080_new_regions": {
+      "top": 95,
+      "upper_bevel": 1991,
+      "side_lower_boundary": 1322
+    },
+    "limitations": [
+      "finite non-area-weighted surface samples, not pixels",
+      "camera-facing shading-normal filter",
+      "initial layout and portal pose only",
+      "six native frames, not all states, resolutions or hardware"
+    ],
+    "supplementary_portal_envelope": {
+      "samples": 73440,
+      "levels": 51,
+      "hits": 0,
+      "radius": 0.546277582645416,
+      "lowest_world_y": 0.159999996423721,
+      "sampling": "144 angles x5 radii; finite low disk, not complete animation rendering"
+    }
+  },
+  "production_integration_verified": false,
+  "binary_upload_authorized_by_review": false,
+  "integration_manifest_binding": {
+    "path": "FINAL_C80_INTEGRATION_MANIFEST.json",
+    "sha256": "fc31becb014cccdfcc3bcd9aa7e58102a4ff36735e0bfe8c7f2f91a548832cd9",
+    "five_input_hashes_verified": true,
+    "capture_build_pins_equal": true,
+    "qa_bundle_files_verified": 54,
+    "qa_bundle_hash_failures": []
+  }
+}

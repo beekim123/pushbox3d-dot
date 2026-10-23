@@ -1,0 +1,8 @@
+GLB assets: 62 No image textures or external buffers. Animation clips:
+city_creature.glb ['idle']
+city_gate.glb ['open', 'close']
+courier.glb ['idle', 'walk', 'push', 'celebrate']
+heaven_creature.glb ['idle']
+inferno_creature.glb ['idle']
+inferno_portal.glb ['idle']
+rainforest_creature.glb ['idle']

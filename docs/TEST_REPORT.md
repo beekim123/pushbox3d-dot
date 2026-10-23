@@ -84,3 +84,14 @@ CPU软件渲染器的结果不等于Mac/GPU性能；未做真人谜题盲测、�
 - 便携复拍/Blender预览脚本放 `tests/orchard_canopy/`；仅复制报告、脚本及约定前后PNG，不包含baseline_project、旧克隆docs、.qa_env或私人存档。shell语法与Python AST已检查；真正图形运行另列，不把语法检查当实机通过。截图位于 `screenshots/orchard_canopy/`，被拒绝的native_after未复制。
 - 合入后生产main b529ffb最终实拍通过：第3/10/45关与中庭高质量，4张匹配视角＋4张真实自动取景图（native_前缀），全部1440×900/X11/llvmpipe，与已接受候选对应PNG逐字相同、行指标一致，五美术输入hash吻合且无missing assets。证据 `tests/orchard_canopy/production_verification.json`、`production_capture_manifest.json`、`production_capture.log`；图在 `screenshots/orchard_canopy/production/`。图形日志仅有驱动不支持VSync的警告，不冒称原生日志零警告；音频Dummy，仅图形检查，不声称试听或硬件键盘验收。
 - Git二进制限制仍存在；纯源码提交不代表新模型已在远程，完整ZIP由主任务另行核实交付。
+
+## 地牢障碍墙 C0.80：最终生产有界验证
+- 仅五文件（两墙GLB、Blend、生成脚本、统计JSON）合入；main仍b529ffb，桃冠等其它60GLB及运行逻辑不变。生产导入、30帧QA启动、204关相机/HUD审计0裁切、62模型/6Blend源审计均exit0；import/boot/camera无ERROR/WARNING/泄漏。证据 `tests/results/inferno_wall_{integration.json,import.log,boot.log,camera.log,assets.log}`。
+- 新全204真实handler回归8056检查、0失败、completed204、exit0；74个运行/关卡/全部模型SHA前后一致，无ERROR/WARNING/泄漏。证据 `tests/results/inferno_wall_handlers.json`、`.log`。这是当前新模型实跑，不借用前阶段8056；带混音但QA关闭续玩sidecar，不代替存档功能专项。
+- 最终C0.80独审六张1440×900/X11第10/23/45关高低图通过，冻结54文件及16张前后图片hash已核对。生产另拍三张高图，逐字等于已接受候选、行指标一致，89保护文件前后不变；独立生产补记重查5输入、3PNG、89文件及root执行的8056证据。报告在`tests/inferno_wall/INDEPENDENT_*`，生产元数据在`production_native/`；图片在`screenshots/inferno_wall/`。原生仅既有llvmpipe VSync警告，不声称图形日志零警告。
+- 两墙三角形940→552、3884→3496，材质批次保持2/4；高度有意0.63→0.80，水平包络不变。B0.88因核心金环遮挡拒绝；接受C0.80定位齿局部遮挡这一明确取舍，而非偷偷放宽后仍称零遮挡。
+- 51地牢皮肤关卡、1070合法中心（908邻墙）、86580金环表面点、910350初始泉涡表面点命中0。定位齿原711/A414/C80 4119，C新增3408（顶95、上斜1991、侧下1322）；是有限非面积归一样本，不是像素面积。全表面测试仍失败；保守全旋转最低高度盘另测73440点0命中也不是完整动画像素保证。
+- 集成适配portable auditor已在生产实跑通过接受门槛，明确输出`zero_occlusion:false`、`decorative_tooth_hits:4119`；证据 `tests/results/inferno_wall_portable_validation.json/.log`。只加图片分包路径与显式输出参数，原54文件manifest与失败原始报告保留不篡改。
+- 未复制旧工程、缓存、.qa_env、用户存档/锁或.blend1。脚本源与可编辑Blend保留，GLB逐构建hash固定，不承诺Blender导出字节可复现。Linux/X11结果不证明macOS/Retina；截图与QA输入不冒充人工解题。Git二进制限制仍在，旧已发桃冠包保持历史不改，新资源包由主任务另行验证发布。
+
+- 打包前发现旧A候选delivery_manifest被误放入证据根目录，已原样移至 `tests/inferno_wall/historical/A063_delivery_manifest.json`并加历史标签；不删除原始记录，也不当当前权威。当前核心清单仅FINAL_C80（fc31becb…），生产补记和实拍指纹保持不变。未发现混入旧validation_summary.json。此为文档/包清单修正，不改变任何模型或测试运行源。

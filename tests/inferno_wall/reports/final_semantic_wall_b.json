@@ -1,0 +1,16 @@
+{
+  "before": {
+    "semantic_sha256_rounded_1e_6": "75911290cf860285c209747e92b3fcba2571f85773dad85aaacd0139edafb812",
+    "triangles": 3496,
+    "materials": 4,
+    "file_sha256": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7"
+  },
+  "after": {
+    "semantic_sha256_rounded_1e_6": "75911290cf860285c209747e92b3fcba2571f85773dad85aaacd0139edafb812",
+    "triangles": 3496,
+    "materials": 4,
+    "file_sha256": "86029ff5d1246d742d9c1d9ec38ad7d0dab48189c4b60fff374fe44a061a6160"
+  },
+  "semantic_equal": true,
+  "coverage": "Orientation-preserving triangles with POSITION/NORMAL rounded 1e-6 plus full named material JSON; excludes node transforms and scene hierarchy."
+}

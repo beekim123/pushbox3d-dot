@@ -1,0 +1,102 @@
+{
+  "status": "candidate frozen; visual pass reported; not integrated into production",
+  "core_allowlist": {
+    "blender/rebuild_worlds_v2.py": {
+      "before_sha256": "32d94d5b5ad3d9c85145cabd608632ed91834bcd29adeb6fa456709ecef8ee4c",
+      "after_sha256": "5abe7353d687c347505e6d2cb97754d3efc61645b314c2e1cf79aee96a9643c0",
+      "bytes": 38451
+    },
+    "blender/inferno_v2.blend": {
+      "before_sha256": "6e380b66cbf4933d5753e76ab6107e5c9a531545d34d0a2ad36dee812cd79e2b",
+      "after_sha256": "5fc826a01e6ddec7f65f13c6397b996f047dcecd474565718b357813c8038322",
+      "bytes": 375714
+    },
+    "assets/models/inferno_wall.glb": {
+      "before_sha256": "65d4d3d4f3181a39e02cba369cd2977a1ba8b8e45c0223adaa8b483bbb7ca6df",
+      "after_sha256": "54724bd9f986b9cc72fcaabd2ace9e2b2d339599ede71625ae7db736f6b5f6d8",
+      "bytes": 22700
+    },
+    "assets/models/inferno_wall_b.glb": {
+      "before_sha256": "cb8e4817a79281a1c861cb498d2f8ebb1f4edf2aaf1d3c1cd797c0884913add7",
+      "after_sha256": "99c49a8771b4cfafe802bb1b6cd6294092041ef5765578e4559885598408392a",
+      "bytes": 77684
+    }
+  },
+  "recommended_metadata_allowlist": {
+    "path": "blender/v2_inferno_stats.json",
+    "before_sha256": "0f73451716febc57806235e40fb2b2f2e22bafb8923e58a3f4541c60df37bdf1",
+    "after_sha256": "f2ad48875a81f1bff075bc39df2913482287d1f22cdad3733d02febaa65e12a8"
+  },
+  "build_source": {
+    "blender/rebuild_worlds_v2.py": "5abe7353d687c347505e6d2cb97754d3efc61645b314c2e1cf79aee96a9643c0",
+    "blender/model_helpers.py": "147cfcbbd9b16c1f0abae9aa16b75bae2c2f415bec75e6057bd3f6a9e79c2793",
+    "blender/city_meshes_v2.py": "abb02a3f766fbc22bff2f58339d84a1914a876d44cf4230dc2d85cffb59d2d2c"
+  },
+  "evidence": {
+    "wall_review/blender_after_lineup.png": {
+      "sha256": "10417d9753d87f44214194bc2876c21cae6e819c00ad60c9571febcb05ee7b0c",
+      "bytes": 1327512
+    },
+    "wall_review/blender_before_lineup.png": {
+      "sha256": "6809d38fde7752a4b85d42ad479d15fa5b397b99ba02a70cc1d21102f38e0f1f",
+      "bytes": 1325871
+    },
+    "wall_review/blender_after_scene.png": {
+      "sha256": "b6eb685cf6d70a6ea3233e51c4d27acff52d4c10fa7466beacbce43895f5b614",
+      "bytes": 1465449
+    },
+    "wall_review/blender_before_scene.png": {
+      "sha256": "8ff8b362b3a85b44cb6782224869a1a62ed50c1b1e9c14fde5d2d40766333ba2",
+      "bytes": 1462202
+    },
+    "wall_review/native_before/inferno_10_high.png": {
+      "sha256": "b7ab7c55c3cc37dfbb491977c878abc6bcc7beea4949ca9bc3c3e12971e01bca",
+      "bytes": 333783
+    },
+    "wall_review/native_before/inferno_10_low.png": {
+      "sha256": "6d6200f6c1ff941a2d6d669b523439e2d271fa6638fb899f959bc9c5100a6bf5",
+      "bytes": 342530
+    },
+    "wall_review/native_before/inferno_45_high.png": {
+      "sha256": "fffef2a81f7b84a8e9225fd3e58cb92178ce7f13697d2b3433fbdd1811253c68",
+      "bytes": 379666
+    },
+    "wall_review/native_before/inferno_45_low.png": {
+      "sha256": "7931971337d4113ad52a8e9d23809ac97d9b034d80cada4deb41f0ff4153fd63",
+      "bytes": 392241
+    },
+    "wall_review/native_after/inferno_10_high.png": {
+      "sha256": "7aa698023dad99265bb1fc81a288b36ce881109d8efd526545f7ab5faa90e318",
+      "bytes": 336332
+    },
+    "wall_review/native_after/inferno_10_low.png": {
+      "sha256": "4df19cfe37317ff4355abd66fea4d530f8fdf8b9fd4968bda66dc604f29352c8",
+      "bytes": 337805
+    },
+    "wall_review/native_after/inferno_45_high.png": {
+      "sha256": "b979c8f0fdf907297a89a97bfff36dab625d6062fe11d818f46a2fcb79fac079",
+      "bytes": 385476
+    },
+    "wall_review/native_after/inferno_45_low.png": {
+      "sha256": "f7ec8a195298f2689fede269e236aa95ad152d6eb5329c43ee8c87be3c639ed6",
+      "bytes": 387305
+    }
+  },
+  "qa": {
+    "native_before/capture_manifest.json": "4997ab7938a0bf67b914fa4da485f846b27a7f26b3e4b495ca6223c690713c45",
+    "native_after/capture_manifest.json": "e7c28297609627ddeb59974feb0d58f2220012880ff1850c838820caa0ab446a",
+    "validation_summary.json": "6ecee83ce84aab126b69da0a11ee16581963cd7e7b3d7c20bfb0c5a3c9426c60",
+    "semantic_wall.json": "876a7689cdbc18a6a8ae92549b92b155d08089ecd14c933fee41f6b1c5b701ed",
+    "semantic_wall_b.json": "adc746293eb335fed80ef321e0207b155ba3bd8eab59956c0bb3198bbd4476ef",
+    "camera_fit.log": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+    "native_capture.gd": "35701847b9f94689add9b26178d5e9c806ba5f643c44ec446abb8715c1de1b1c",
+    "run_native_capture.sh": "0fced01c7f2b0f48694d3eb50c12afda5a55fcc08a48f360cce33cf42f48eea1",
+    "native_pair.sh": "0fe9066c1311050143f3be2be0a84b931d99666b636accadf905884a41015ebc",
+    "validate_walls.py": "28f61159218cbe74b0f2e8a4bf68d1c03120e1cfe6eaeff0a51efabc79f36504",
+    "semantic_glb_compare.py": "44cf872bc7c985bd467f9b3657a361482cefa2be909992b73e1d4c1e3c8a149a",
+    "render_wall_compare.py": "6a1763501699aef53a9e10d1f90b2fdf6fae606e91457042ab3dbc37bd8da6dd"
+  },
+  "restrictions": "Do not ship baseline_project, rebuild probes, .qa_env, .godot or generated .blend1 backups.",
+  "rebuild": "FOURFOLD_EXPORT_ONLY=inferno_wall,inferno_wall_b FOURFOLD_RES=70 FOURFOLD_SAMPLES=32 blender --background -t 4 --python blender/rebuild_worlds_v2.py -- inferno",
+  "byte_reproducibility": "These are frozen reviewed delivery bytes. Blender GLB object/index ordering is not guaranteed; separate clean rebuild has matching POSITION/NORMAL/material semantics. Keep reviewed exports, do not replace them with probe outputs."
+}

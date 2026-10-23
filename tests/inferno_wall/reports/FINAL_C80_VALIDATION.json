@@ -1,0 +1,232 @@
+{
+  "passed_under_revised_gate": true,
+  "not_a_zero_occlusion_claim": true,
+  "scope": "C0.80 original Blender masonry; root-authorized height-only increase0.17m beyond A; no runtime/camera/lighting/terrain/gameplay changes.",
+  "frozen_core": {
+    "blender/rebuild_worlds_v2.py": {
+      "before_sha256": "32d94d5b5ad3d9c85145cabd608632ed91834bcd29adeb6fa456709ecef8ee4c",
+      "after_sha256": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+      "bytes": 38601
+    },
+    "blender/inferno_v2.blend": {
+      "before_sha256": "6e380b66cbf4933d5753e76ab6107e5c9a531545d34d0a2ad36dee812cd79e2b",
+      "after_sha256": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+      "bytes": 374077
+    },
+    "assets/models/inferno_wall.glb": {
+      "before_sha256": "65d4d3d4f3181a39e02cba369cd2977a1ba8b8e45c0223adaa8b483bbb7ca6df",
+      "after_sha256": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+      "bytes": 22696
+    },
+    "assets/models/inferno_wall_b.glb": {
+      "before_sha256": "cb8e4817a79281a1c861cb498d2f8ebb1f4edf2aaf1d3c1cd797c0884913add7",
+      "after_sha256": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7",
+      "bytes": 77684
+    }
+  },
+  "walls": {
+    "inferno_wall.glb": {
+      "original": {
+        "sha256": "65d4d3d4f3181a39e02cba369cd2977a1ba8b8e45c0223adaa8b483bbb7ca6df",
+        "bytes": 53776,
+        "triangles": 940,
+        "batches": 2,
+        "materials": 2,
+        "bounds_min": [
+          -0.8600000143051147,
+          0.01000000536441803,
+          -0.7599999904632568
+        ],
+        "bounds_max": [
+          0.8600000143051147,
+          0.6299999952316284,
+          0.7599999904632568
+        ]
+      },
+      "final": {
+        "sha256": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+        "bytes": 22696,
+        "triangles": 552,
+        "batches": 2,
+        "materials": 2,
+        "bounds_min": [
+          -0.8600000143051147,
+          0.009999999776482582,
+          -0.7599999904632568
+        ],
+        "bounds_max": [
+          0.8600000143051147,
+          0.800000011920929,
+          0.7599999904632568
+        ]
+      },
+      "max_horizontal_bounds_delta": 0.0,
+      "deliberate_top_increase": 0.17000001668930054
+    },
+    "inferno_wall_b.glb": {
+      "original": {
+        "sha256": "cb8e4817a79281a1c861cb498d2f8ebb1f4edf2aaf1d3c1cd797c0884913add7",
+        "bytes": 108764,
+        "triangles": 3884,
+        "batches": 4,
+        "materials": 4,
+        "bounds_min": [
+          -0.8600000143051147,
+          0.01000000536441803,
+          -0.7599999904632568
+        ],
+        "bounds_max": [
+          0.8600000143051147,
+          0.6299999952316284,
+          0.8449979424476624
+        ]
+      },
+      "final": {
+        "sha256": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7",
+        "bytes": 77684,
+        "triangles": 3496,
+        "batches": 4,
+        "materials": 4,
+        "bounds_min": [
+          -0.8600000143051147,
+          0.009999999776482582,
+          -0.7599999904632568
+        ],
+        "bounds_max": [
+          0.8600000143051147,
+          0.800000011920929,
+          0.8449979424476624
+        ]
+      },
+      "max_horizontal_bounds_delta": 0.0,
+      "deliberate_top_increase": 0.17000001668930054
+    }
+  },
+  "unchanged_glbs": 60,
+  "all_glb_count": 62,
+  "runtime_files_unchanged": 24,
+  "camera_fit_levels": 204,
+  "camera_fit_clips": 0,
+  "native_pairs": [
+    {
+      "id": "inferno_10_high",
+      "draw_calls_before_after": [
+        234.0,
+        234.0
+      ],
+      "primitives_before_after": [
+        93258.0,
+        93038.0
+      ],
+      "before_sha256": "b7ab7c55c3cc37dfbb491977c878abc6bcc7beea4949ca9bc3c3e12971e01bca",
+      "after_sha256": "32b5fb37c0c44e1928588193b872f9ec26a6de4ea8ee2676bd4b8e762c1ba0d1"
+    },
+    {
+      "id": "inferno_45_high",
+      "draw_calls_before_after": [
+        244.0,
+        244.0
+      ],
+      "primitives_before_after": [
+        96026.0,
+        95796.0
+      ],
+      "before_sha256": "fffef2a81f7b84a8e9225fd3e58cb92178ce7f13697d2b3433fbdd1811253c68",
+      "after_sha256": "1714117215e94c2b8f5e214abda1944f91097df229c7a5dc749cd835145a33a5"
+    },
+    {
+      "id": "inferno_10_low",
+      "draw_calls_before_after": [
+        234.0,
+        234.0
+      ],
+      "primitives_before_after": [
+        93258.0,
+        93038.0
+      ],
+      "before_sha256": "6d6200f6c1ff941a2d6d669b523439e2d271fa6638fb899f959bc9c5100a6bf5",
+      "after_sha256": "0ab27e16ea92ae8316e9c3bbe55a5a3d7f6429ad10a31003e1703c9479ef7d4d"
+    },
+    {
+      "id": "inferno_45_low",
+      "draw_calls_before_after": [
+        244.0,
+        244.0
+      ],
+      "primitives_before_after": [
+        96026.0,
+        95796.0
+      ],
+      "before_sha256": "7931971337d4113ad52a8e9d23809ac97d9b034d80cada4deb41f0ff4153fd63",
+      "after_sha256": "6795bdab65c42a05514a945f19d64153c48bf34bad8d8e289e5856acbb1e846f"
+    },
+    {
+      "id": "inferno_23_high",
+      "draw_calls_before_after": [
+        234.0,
+        234.0
+      ],
+      "primitives_before_after": [
+        91516.0,
+        91286.0
+      ],
+      "before_sha256": "7cdeba05207b2330a69863adf4bcac50977a2997a2e7d1d4e9ac60c32f39b17c",
+      "after_sha256": "2875eb3de87f3bad53cd997a42cde9e10e43a51ac7b766f373f7ac63646d7224"
+    },
+    {
+      "id": "inferno_23_low",
+      "draw_calls_before_after": [
+        234.0,
+        234.0
+      ],
+      "primitives_before_after": [
+        91516.0,
+        91286.0
+      ],
+      "before_sha256": "a6d84cf6a7f13e94022a696c46130685906ae7302bc195cdb6ce417468f00b9a",
+      "after_sha256": "a4a016c9c354b33a64d9f0f8d047b9cb7305a971acfffbd1f18f80443b9ddd09"
+    }
+  ],
+  "native_engine": "4.7.2-stable (official)",
+  "native_display": "X11",
+  "native_adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "native_renderer": "gl_compatibility",
+  "native_camera_lighting_markers_equal": true,
+  "asset_audit_passed": true,
+  "semantic_rebuild_equal": true,
+  "core_visibility_surface_samples": {
+    "levels": 51,
+    "legal_centers": 1070,
+    "neighbor_legal_centers": 908,
+    "goal_ring_samples": 86580,
+    "portal_samples": 910350,
+    "core_hits": 0
+  },
+  "decorative_tooth_tradeoff": {
+    "report_path": "wall_review/height_variant_c80/wall_review/occlusion_surfaces.json",
+    "report_sha256": "093895793db5040df6d04dd01ac974135e801748637d319acacdd05faa82c200",
+    "hits": 4119,
+    "surface_regions": {
+      "tooth_upper_bevel": 1991,
+      "tooth_side_or_lower": 2033,
+      "tooth_top": 95
+    },
+    "added_vs_original": 3408,
+    "added_vs_original_regions": {
+      "tooth_upper_bevel": 1991,
+      "tooth_side_or_lower": 1322,
+      "tooth_top": 95
+    },
+    "removed_vs_original": 0,
+    "added_vs_a": 3705,
+    "removed_vs_a": 0,
+    "ring_hits": 0,
+    "portal_hits": 0,
+    "center_hits": 0
+  },
+  "full_surface_occlusion_test_passed": false,
+  "portal_swept_envelope_passed": true,
+  "portal_swept_samples": 73440,
+  "sampling_limits": "Actual-surface samples are finite and not area-normalized; exact imported portal mesh sampled at initial pose, supplemented with a conservative full-rotation lowest-height disk at144 angles/5radii. Not a pixel-complete animation proof.",
+  "known_warning": "Native llvmpipe cannot change VSync mode; captures and import passed."
+}

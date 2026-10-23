@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:372)
+OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)
+
+QUALITY high adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+QUALITY high adapter=llvmpipe (LLVM 19.1.7, 256 bits)
+INFERNO_WALL_NATIVE inferno_10_high camera={ "position": [7.9645471572876, 26.6160278320312, 23.3305072784424], "rotation": [-0.80852496623993, 0.32811987400055, 0.0], "size": 25.5369243621826, "fit_bounds": "[P: (343.7119, 126.0), S: (752.5762, 638.9999)]" } captured=[workspace]/fourfold_next/inferno_wall/wall_review/production_native
+INFERNO_WALL_NATIVE inferno_23_high camera={ "position": [7.89935398101807, 26.6092090606689, 23.3602428436279], "rotation": [-0.80852496623993, 0.32811987400055, 0.0], "size": 27.3704833984375, "fit_bounds": "[P: (281.9284, 125.9999), S: (876.143, 639.0001)]" } captured=[workspace]/fourfold_next/inferno_wall/wall_review/production_native
+INFERNO_WALL_NATIVE inferno_45_high camera={ "position": [7.8997631072998, 26.6058025360107, 23.3638744354248], "rotation": [-0.80852496623993, 0.32811987400055, 0.0], "size": 28.2872638702393, "fit_bounds": "[P: (252.9309, 126.0), S: (934.1382, 638.9999)]" } captured=[workspace]/fourfold_next/inferno_wall/wall_review/production_native
+INFERNO_WALL_NATIVE_COMPLETE {"captures":3,"failures":[],"output":"[workspace]/fourfold_next/inferno_wall/wall_review/production_native"}

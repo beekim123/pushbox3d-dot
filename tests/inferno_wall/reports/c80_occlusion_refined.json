@@ -1,0 +1,847 @@
+{
+  "counts": {
+    "goal_ring_samples": 8424,
+    "goal_tooth_samples": 1872,
+    "legal_cell_centers": 1070,
+    "neighbor_legal_cell_centers": 908,
+    "portal_glyph_samples": 13158,
+    "wall_mesh_triangle_tests": 65853
+  },
+  "engine": "4.7.2-stable (official)",
+  "failures": [
+    {
+      "level": "inferno_06",
+      "point": [
+        3.94000005722046,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        4.11532020568848,
+        0.689788818359375,
+        1.23999786376953
+      ]
+    },
+    {
+      "level": "inferno_07",
+      "point": [
+        -3.05999994277954,
+        0.119999997317791,
+        -0.274999976158142
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -2.88467979431152,
+        0.689788818359375,
+        0.239997863769531
+      ]
+    },
+    {
+      "level": "inferno_13",
+      "point": [
+        1.05999994277954,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        1.23531723022461,
+        0.689788818359375,
+        -0.760002136230469
+      ]
+    },
+    {
+      "level": "inferno_13",
+      "point": [
+        0.939999997615814,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        1.11531639099121,
+        0.689781188964844,
+        -0.760009765625
+      ]
+    },
+    {
+      "level": "inferno_14",
+      "point": [
+        -0.939999997615814,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -0.798723220825195,
+        0.579154968261719,
+        -0.860000610351562
+      ]
+    },
+    {
+      "level": "inferno_14",
+      "point": [
+        -1.05999994277954,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -0.916400909423828,
+        0.586700439453125,
+        -0.853179931640625
+      ]
+    },
+    {
+      "level": "inferno_21",
+      "point": [
+        5.05999994277954,
+        0.119999997317791,
+        -0.274999976158142
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        5.2012767791748,
+        0.579154968261719,
+        0.139999389648438
+      ]
+    },
+    {
+      "level": "inferno_21",
+      "point": [
+        4.94000005722046,
+        0.119999997317791,
+        -0.274999976158142
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        5.08359718322754,
+        0.586692810058594,
+        0.146812438964844
+      ]
+    },
+    {
+      "level": "inferno_23",
+      "point": [
+        -4.94000005722046,
+        0.119999997317791,
+        -2.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -4.79872512817383,
+        0.579147338867188,
+        -1.86000823974609
+      ]
+    },
+    {
+      "level": "inferno_23",
+      "point": [
+        -5.05999994277954,
+        0.119999997317791,
+        -2.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -4.91083908081055,
+        0.604774475097656,
+        -1.83684539794922
+      ]
+    },
+    {
+      "level": "inferno_23",
+      "point": [
+        3.05999994277954,
+        0.119999997317791,
+        1.72500002384186
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        3.2012767791748,
+        0.579154968261719,
+        2.13999938964844
+      ]
+    },
+    {
+      "level": "inferno_23",
+      "point": [
+        2.94000005722046,
+        0.119999997317791,
+        1.72500002384186
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        3.08359527587891,
+        0.586685180664062,
+        2.14680480957031
+      ]
+    },
+    {
+      "level": "inferno_25",
+      "point": [
+        -3.05999994277954,
+        0.119999997317791,
+        -2.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -2.88467979431152,
+        0.689788818359375,
+        -1.76000213623047
+      ]
+    },
+    {
+      "level": "inferno_28",
+      "point": [
+        -2.05999994277954,
+        0.119999997317791,
+        -3.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -1.88467979431152,
+        0.689796447753906,
+        -2.75999450683594
+      ]
+    },
+    {
+      "level": "inferno_31",
+      "point": [
+        -2.94000005722046,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -2.76468086242676,
+        0.689788818359375,
+        1.23999786376953
+      ]
+    },
+    {
+      "level": "inferno_31",
+      "point": [
+        -3.05999994277954,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -2.88467979431152,
+        0.689788818359375,
+        1.23999786376953
+      ]
+    },
+    {
+      "level": "inferno_32",
+      "point": [
+        -5.05999994277954,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -4.88468170166016,
+        0.689788818359375,
+        -0.760002136230469
+      ]
+    },
+    {
+      "level": "inferno_34",
+      "point": [
+        -5.05999994277954,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -4.88468170166016,
+        0.689788818359375,
+        -0.760002136230469
+      ]
+    },
+    {
+      "level": "inferno_34",
+      "point": [
+        -2.94000005722046,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -2.76468086242676,
+        0.689788818359375,
+        1.23999786376953
+      ]
+    },
+    {
+      "level": "inferno_34",
+      "point": [
+        -3.05999994277954,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -2.88467979431152,
+        0.689788818359375,
+        1.23999786376953
+      ]
+    },
+    {
+      "level": "inferno_36",
+      "point": [
+        1.05999994277954,
+        0.119999997317791,
+        2.72499990463257
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        1.2012767791748,
+        0.579154968261719,
+        3.13999938964844
+      ]
+    },
+    {
+      "level": "inferno_36",
+      "point": [
+        0.939999997615814,
+        0.119999997317791,
+        2.72499990463257
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        1.08359527587891,
+        0.586685180664062,
+        3.14681243896484
+      ]
+    },
+    {
+      "level": "inferno_36",
+      "point": [
+        -0.939999997615814,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -0.764684677124023,
+        0.689781188964844,
+        -0.760009765625
+      ]
+    },
+    {
+      "level": "inferno_36",
+      "point": [
+        -1.05999994277954,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -0.884683609008789,
+        0.689781188964844,
+        -0.760009765625
+      ]
+    },
+    {
+      "level": "inferno_38",
+      "point": [
+        6.05999994277954,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        6.20127487182617,
+        0.579147338867188,
+        1.13999176025391
+      ]
+    },
+    {
+      "level": "inferno_38",
+      "point": [
+        5.94000005722046,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        6.08916091918945,
+        0.604774475097656,
+        1.16315460205078
+      ]
+    },
+    {
+      "level": "inferno_39",
+      "point": [
+        6.05999994277954,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        6.20127487182617,
+        0.579147338867188,
+        1.13999176025391
+      ]
+    },
+    {
+      "level": "inferno_39",
+      "point": [
+        5.94000005722046,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        6.08916091918945,
+        0.604774475097656,
+        1.16315460205078
+      ]
+    },
+    {
+      "level": "inferno_40",
+      "point": [
+        -0.939999997615814,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -0.764684677124023,
+        0.689781188964844,
+        -0.760009765625
+      ]
+    },
+    {
+      "level": "inferno_40",
+      "point": [
+        -1.05999994277954,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -0.884683609008789,
+        0.689781188964844,
+        -0.760009765625
+      ]
+    },
+    {
+      "level": "inferno_41",
+      "point": [
+        -0.939999997615814,
+        0.119999997317791,
+        -3.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -0.798723220825195,
+        0.579154968261719,
+        -2.86000061035156
+      ]
+    },
+    {
+      "level": "inferno_41",
+      "point": [
+        -1.05999994277954,
+        0.119999997317791,
+        -3.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -0.916404724121094,
+        0.586685180664062,
+        -2.85318756103516
+      ]
+    },
+    {
+      "level": "inferno_43",
+      "point": [
+        0.939999997615814,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        1.11532020568848,
+        0.689788818359375,
+        1.23999786376953
+      ]
+    },
+    {
+      "level": "inferno_45",
+      "point": [
+        3.94000005722046,
+        0.119999997317791,
+        -2.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        4.11532020568848,
+        0.689788818359375,
+        -1.76000213623047
+      ]
+    },
+    {
+      "level": "inferno_46",
+      "point": [
+        -3.05999994277954,
+        0.119999997317791,
+        -3.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        -2.88467979431152,
+        0.689788818359375,
+        -2.76000213623047
+      ]
+    },
+    {
+      "level": "inferno_46",
+      "point": [
+        3.05999994277954,
+        0.119999997317791,
+        -3.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        3.2012767791748,
+        0.579154968261719,
+        -2.86000061035156
+      ]
+    },
+    {
+      "level": "inferno_46",
+      "point": [
+        2.94000005722046,
+        0.119999997317791,
+        -3.27500009536743
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        3.08916091918945,
+        0.604774475097656,
+        -2.83684539794922
+      ]
+    },
+    {
+      "level": "inferno_47",
+      "point": [
+        0.939999997615814,
+        0.119999997317791,
+        0.725000023841858
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        1.11532020568848,
+        0.689788818359375,
+        1.23999786376953
+      ]
+    },
+    {
+      "level": "inferno_49",
+      "point": [
+        0.0599999986588955,
+        0.119999997317791,
+        2.72499990463257
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        0.201276779174805,
+        0.579154968261719,
+        3.13999938964844
+      ]
+    },
+    {
+      "level": "inferno_49",
+      "point": [
+        -0.0599999986588955,
+        0.119999997317791,
+        2.72499990463257
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        0.0835952758789062,
+        0.586685180664062,
+        3.14681243896484
+      ]
+    },
+    {
+      "level": "inferno_50",
+      "point": [
+        6.05999994277954,
+        0.119999997317791,
+        -1.27499997615814
+      ],
+      "sample": "goal_tooth_samples",
+      "wall_hit": [
+        6.24653053283691,
+        0.726226806640625,
+        -0.727066040039062
+      ]
+    }
+  ],
+  "levels": 51,
+  "passed": false,
+  "records": [
+    {
+      "level": "inferno_01",
+      "occluded_samples": 0,
+      "wall_meshes": 32
+    },
+    {
+      "level": "inferno_02",
+      "occluded_samples": 0,
+      "wall_meshes": 28
+    },
+    {
+      "level": "inferno_03",
+      "occluded_samples": 0,
+      "wall_meshes": 28
+    },
+    {
+      "level": "inferno_04",
+      "occluded_samples": 0,
+      "wall_meshes": 32
+    },
+    {
+      "level": "inferno_05",
+      "occluded_samples": 0,
+      "wall_meshes": 32
+    },
+    {
+      "level": "inferno_06",
+      "occluded_samples": 1,
+      "wall_meshes": 36
+    },
+    {
+      "level": "inferno_07",
+      "occluded_samples": 1,
+      "wall_meshes": 38
+    },
+    {
+      "level": "inferno_08",
+      "occluded_samples": 0,
+      "wall_meshes": 38
+    },
+    {
+      "level": "inferno_09",
+      "occluded_samples": 0,
+      "wall_meshes": 36
+    },
+    {
+      "level": "inferno_10",
+      "occluded_samples": 0,
+      "wall_meshes": 38
+    },
+    {
+      "level": "inferno_11",
+      "occluded_samples": 0,
+      "wall_meshes": 34
+    },
+    {
+      "level": "inferno_12",
+      "occluded_samples": 0,
+      "wall_meshes": 34
+    },
+    {
+      "level": "inferno_13",
+      "occluded_samples": 2,
+      "wall_meshes": 40
+    },
+    {
+      "level": "inferno_14",
+      "occluded_samples": 2,
+      "wall_meshes": 40
+    },
+    {
+      "level": "inferno_15",
+      "occluded_samples": 0,
+      "wall_meshes": 34
+    },
+    {
+      "level": "inferno_16",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_17",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_18",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_19",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_20",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_21",
+      "occluded_samples": 2,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_22",
+      "occluded_samples": 0,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_23",
+      "occluded_samples": 4,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_24",
+      "occluded_samples": 0,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_25",
+      "occluded_samples": 1,
+      "wall_meshes": 50
+    },
+    {
+      "level": "inferno_26",
+      "occluded_samples": 0,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_27",
+      "occluded_samples": 0,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_28",
+      "occluded_samples": 1,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_29",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_30",
+      "occluded_samples": 0,
+      "wall_meshes": 42
+    },
+    {
+      "level": "inferno_31",
+      "occluded_samples": 2,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_32",
+      "occluded_samples": 1,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_33",
+      "occluded_samples": 0,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_34",
+      "occluded_samples": 3,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_35",
+      "occluded_samples": 0,
+      "wall_meshes": 60
+    },
+    {
+      "level": "inferno_36",
+      "occluded_samples": 4,
+      "wall_meshes": 52
+    },
+    {
+      "level": "inferno_37",
+      "occluded_samples": 0,
+      "wall_meshes": 52
+    },
+    {
+      "level": "inferno_38",
+      "occluded_samples": 2,
+      "wall_meshes": 56
+    },
+    {
+      "level": "inferno_39",
+      "occluded_samples": 2,
+      "wall_meshes": 56
+    },
+    {
+      "level": "inferno_40",
+      "occluded_samples": 2,
+      "wall_meshes": 52
+    },
+    {
+      "level": "inferno_41",
+      "occluded_samples": 2,
+      "wall_meshes": 44
+    },
+    {
+      "level": "inferno_42",
+      "occluded_samples": 0,
+      "wall_meshes": 44
+    },
+    {
+      "level": "inferno_43",
+      "occluded_samples": 1,
+      "wall_meshes": 44
+    },
+    {
+      "level": "inferno_44",
+      "occluded_samples": 0,
+      "wall_meshes": 44
+    },
+    {
+      "level": "inferno_45",
+      "occluded_samples": 1,
+      "wall_meshes": 52
+    },
+    {
+      "level": "inferno_46",
+      "occluded_samples": 3,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_47",
+      "occluded_samples": 1,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_48",
+      "occluded_samples": 0,
+      "wall_meshes": 48
+    },
+    {
+      "level": "inferno_49",
+      "occluded_samples": 2,
+      "wall_meshes": 58
+    },
+    {
+      "level": "inferno_50",
+      "occluded_samples": 1,
+      "wall_meshes": 58
+    },
+    {
+      "level": "confluence_02",
+      "occluded_samples": 0,
+      "wall_meshes": 36
+    }
+  ],
+  "scope": "All inferno and inferno-skinned confluence levels at production 1440x900 camera. Rays from legal-cell centers and conservative goal ring/tooth and portal spiral samples toward orthographic camera against exact transformed wall triangles. Glyph sampling is not a whole-pixel proof; matched native frames independently reviewed."
+}

@@ -1,0 +1,3 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+INFERNO_WALL_OCCLUSION {"counts":{"goal_ring_samples":0,"goal_tooth_samples":0,"legal_cell_centers":1070,"neighbor_legal_cell_centers":908,"portal_glyph_samples":73440,"wall_mesh_triangle_tests":0},"failures":0,"levels":51,"passed":true}

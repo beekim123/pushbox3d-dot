@@ -1,0 +1,581 @@
+{
+  "asset_count": 62,
+  "assets": [
+    {
+      "file": "city_crate.glb",
+      "bytes": 85716,
+      "meshes": 5,
+      "materials": 5,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_creature.glb",
+      "bytes": 130680,
+      "meshes": 10,
+      "materials": 6,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_decor_a.glb",
+      "bytes": 629828,
+      "meshes": 16,
+      "materials": 16,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_decor_b.glb",
+      "bytes": 241896,
+      "meshes": 9,
+      "materials": 9,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_decor_c.glb",
+      "bytes": 251136,
+      "meshes": 14,
+      "materials": 14,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_edge.glb",
+      "bytes": 75952,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_gate.glb",
+      "bytes": 117532,
+      "meshes": 19,
+      "materials": 4,
+      "animations": [
+        "open",
+        "close"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_goal.glb",
+      "bytes": 55696,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_landmark.glb",
+      "bytes": 2258552,
+      "meshes": 18,
+      "materials": 18,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_landmark_b.glb",
+      "bytes": 817456,
+      "meshes": 18,
+      "materials": 18,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_landscape.glb",
+      "bytes": 2787152,
+      "meshes": 20,
+      "materials": 20,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_plate.glb",
+      "bytes": 40124,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_tile.glb",
+      "bytes": 27136,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_wall.glb",
+      "bytes": 108572,
+      "meshes": 5,
+      "materials": 5,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "city_wall_b.glb",
+      "bytes": 123488,
+      "meshes": 7,
+      "materials": 7,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "courier.glb",
+      "bytes": 872852,
+      "meshes": 31,
+      "materials": 7,
+      "animations": [
+        "idle",
+        "walk",
+        "push",
+        "celebrate"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_crate.glb",
+      "bytes": 282292,
+      "meshes": 8,
+      "materials": 8,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_creature.glb",
+      "bytes": 39900,
+      "meshes": 7,
+      "materials": 7,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_decor_a.glb",
+      "bytes": 326524,
+      "meshes": 12,
+      "materials": 12,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_decor_b.glb",
+      "bytes": 221924,
+      "meshes": 8,
+      "materials": 8,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_decor_c.glb",
+      "bytes": 130508,
+      "meshes": 7,
+      "materials": 7,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_edge.glb",
+      "bytes": 31716,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_glide.glb",
+      "bytes": 18060,
+      "meshes": 2,
+      "materials": 2,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_goal.glb",
+      "bytes": 56976,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_landmark.glb",
+      "bytes": 625592,
+      "meshes": 12,
+      "materials": 12,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_landmark_b.glb",
+      "bytes": 851180,
+      "meshes": 12,
+      "materials": 12,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_landscape.glb",
+      "bytes": 998448,
+      "meshes": 13,
+      "materials": 13,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_tile.glb",
+      "bytes": 43492,
+      "meshes": 2,
+      "materials": 2,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "heaven_wall.glb",
+      "bytes": 83540,
+      "meshes": 8,
+      "materials": 8,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "hub_center.glb",
+      "bytes": 336732,
+      "meshes": 11,
+      "materials": 11,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "hub_decor_a.glb",
+      "bytes": 62208,
+      "meshes": 10,
+      "materials": 10,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "hub_decor_b.glb",
+      "bytes": 103160,
+      "meshes": 9,
+      "materials": 9,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "hub_landscape.glb",
+      "bytes": 435220,
+      "meshes": 8,
+      "materials": 8,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "hub_tile.glb",
+      "bytes": 43496,
+      "meshes": 2,
+      "materials": 2,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_crate.glb",
+      "bytes": 130896,
+      "meshes": 5,
+      "materials": 5,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_creature.glb",
+      "bytes": 105744,
+      "meshes": 14,
+      "materials": 5,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_decor_a.glb",
+      "bytes": 347592,
+      "meshes": 5,
+      "materials": 5,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_decor_b.glb",
+      "bytes": 85344,
+      "meshes": 3,
+      "materials": 3,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_decor_c.glb",
+      "bytes": 135980,
+      "meshes": 5,
+      "materials": 5,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_edge.glb",
+      "bytes": 22808,
+      "meshes": 2,
+      "materials": 2,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_goal.glb",
+      "bytes": 85052,
+      "meshes": 3,
+      "materials": 3,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_landmark.glb",
+      "bytes": 545108,
+      "meshes": 7,
+      "materials": 7,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_landmark_b.glb",
+      "bytes": 347596,
+      "meshes": 5,
+      "materials": 5,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_landscape.glb",
+      "bytes": 842132,
+      "meshes": 6,
+      "materials": 6,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_portal.glb",
+      "bytes": 207820,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_tile.glb",
+      "bytes": 55480,
+      "meshes": 3,
+      "materials": 3,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_wall.glb",
+      "bytes": 22696,
+      "meshes": 2,
+      "materials": 2,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "inferno_wall_b.glb",
+      "bytes": 77684,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_arrow.glb",
+      "bytes": 32536,
+      "meshes": 3,
+      "materials": 3,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_crate.glb",
+      "bytes": 127760,
+      "meshes": 6,
+      "materials": 6,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_creature.glb",
+      "bytes": 68220,
+      "meshes": 9,
+      "materials": 6,
+      "animations": [
+        "idle"
+      ],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_decor_a.glb",
+      "bytes": 634188,
+      "meshes": 8,
+      "materials": 8,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_decor_b.glb",
+      "bytes": 92236,
+      "meshes": 6,
+      "materials": 6,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_decor_c.glb",
+      "bytes": 275344,
+      "meshes": 6,
+      "materials": 6,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_edge.glb",
+      "bytes": 13896,
+      "meshes": 3,
+      "materials": 3,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_goal.glb",
+      "bytes": 64556,
+      "meshes": 3,
+      "materials": 3,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_landmark.glb",
+      "bytes": 903832,
+      "meshes": 11,
+      "materials": 11,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_landmark_b.glb",
+      "bytes": 634196,
+      "meshes": 8,
+      "materials": 8,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_landscape.glb",
+      "bytes": 2453956,
+      "meshes": 14,
+      "materials": 14,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_tile.glb",
+      "bytes": 66572,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_wall.glb",
+      "bytes": 52868,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    },
+    {
+      "file": "rainforest_wall_b.glb",
+      "bytes": 82904,
+      "meshes": 4,
+      "materials": 4,
+      "animations": [],
+      "embedded_images": 0,
+      "external_buffers": 0
+    }
+  ]
+}

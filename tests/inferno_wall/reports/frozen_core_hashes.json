@@ -1,0 +1,22 @@
+{
+  "blender/rebuild_worlds_v2.py": {
+    "before_sha256": "32d94d5b5ad3d9c85145cabd608632ed91834bcd29adeb6fa456709ecef8ee4c",
+    "after_sha256": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+    "bytes": 38601
+  },
+  "blender/inferno_v2.blend": {
+    "before_sha256": "6e380b66cbf4933d5753e76ab6107e5c9a531545d34d0a2ad36dee812cd79e2b",
+    "after_sha256": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+    "bytes": 374077
+  },
+  "assets/models/inferno_wall.glb": {
+    "before_sha256": "65d4d3d4f3181a39e02cba369cd2977a1ba8b8e45c0223adaa8b483bbb7ca6df",
+    "after_sha256": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+    "bytes": 22696
+  },
+  "assets/models/inferno_wall_b.glb": {
+    "before_sha256": "cb8e4817a79281a1c861cb498d2f8ebb1f4edf2aaf1d3c1cd797c0884913add7",
+    "after_sha256": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7",
+    "bytes": 77684
+  }
+}

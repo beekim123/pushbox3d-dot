@@ -6,13 +6,13 @@
   },
   "inferno_wall": {
     "material_batches": 2,
-    "vertices": 480,
-    "triangles": 940
+    "vertices": 576,
+    "triangles": 552
   },
   "inferno_wall_b": {
     "material_batches": 4,
-    "vertices": 1960,
-    "triangles": 3884
+    "vertices": 2056,
+    "triangles": 3496
   },
   "inferno_edge": {
     "material_batches": 2,

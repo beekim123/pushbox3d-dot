@@ -1,0 +1,388 @@
+{
+  "status": "five-file C80 integration; production QA pending",
+  "manifest_sha256": "fc31becb014cccdfcc3bcd9aa7e58102a4ff36735e0bfe8c7f2f91a548832cd9",
+  "manifest": {
+    "milestone": "FINAL C0.80 inferno wall kit \u2014 never use earlier A delivery_manifest.json",
+    "candidate_root": "[workspace]/fourfold_next/inferno_wall/wall_review/height_variant_c80",
+    "production_modified_by_author": false,
+    "status": "Root-selected C0.80; final independent report binds this manifest separately before integration.",
+    "core_allowlist": [
+      {
+        "source": "[workspace]/fourfold_next/inferno_wall/wall_review/height_variant_c80/blender/rebuild_worlds_v2.py",
+        "production_relative_path": "blender/rebuild_worlds_v2.py",
+        "before_sha256": "32d94d5b5ad3d9c85145cabd608632ed91834bcd29adeb6fa456709ecef8ee4c",
+        "after_sha256": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+        "bytes": 38601
+      },
+      {
+        "source": "[workspace]/fourfold_next/inferno_wall/wall_review/height_variant_c80/blender/inferno_v2.blend",
+        "production_relative_path": "blender/inferno_v2.blend",
+        "before_sha256": "6e380b66cbf4933d5753e76ab6107e5c9a531545d34d0a2ad36dee812cd79e2b",
+        "after_sha256": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+        "bytes": 374077
+      },
+      {
+        "source": "[workspace]/fourfold_next/inferno_wall/wall_review/height_variant_c80/assets/models/inferno_wall.glb",
+        "production_relative_path": "assets/models/inferno_wall.glb",
+        "before_sha256": "65d4d3d4f3181a39e02cba369cd2977a1ba8b8e45c0223adaa8b483bbb7ca6df",
+        "after_sha256": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+        "bytes": 22696
+      },
+      {
+        "source": "[workspace]/fourfold_next/inferno_wall/wall_review/height_variant_c80/assets/models/inferno_wall_b.glb",
+        "production_relative_path": "assets/models/inferno_wall_b.glb",
+        "before_sha256": "cb8e4817a79281a1c861cb498d2f8ebb1f4edf2aaf1d3c1cd797c0884913add7",
+        "after_sha256": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7",
+        "bytes": 77684
+      }
+    ],
+    "recommended_metadata_allowlist": [
+      {
+        "source": "[workspace]/fourfold_next/inferno_wall/wall_review/height_variant_c80/blender/v2_inferno_stats.json",
+        "production_relative_path": "blender/v2_inferno_stats.json",
+        "before_sha256": "0f73451716febc57806235e40fb2b2f2e22bafb8923e58a3f4541c60df37bdf1",
+        "after_sha256": "f2ad48875a81f1bff075bc39df2913482287d1f22cdad3733d02febaa65e12a8",
+        "bytes": 1327
+      }
+    ],
+    "capture_build_pin": {
+      "method": "Exact C0.80 source/blend/two-GLB SHA observed before final captures and reverified afterward. Final capture project never rebuilt after freeze; semantic rebuild only in final_rebuild_probe. Blender final previews opened source read-only without saving.",
+      "before": {
+        "blender/rebuild_worlds_v2.py": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+        "blender/inferno_v2.blend": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+        "assets/models/inferno_wall.glb": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+        "assets/models/inferno_wall_b.glb": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7"
+      },
+      "after": {
+        "blender/rebuild_worlds_v2.py": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+        "blender/inferno_v2.blend": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+        "assets/models/inferno_wall.glb": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+        "assets/models/inferno_wall_b.glb": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7"
+      }
+    },
+    "scope_decision": "Root deliberately relaxed original0.63 height and full-decorative-symbol visibility gates; selected0.80 preserves original X/Z footprint and A plan/materials, increases lower-course thickness only. B0.88 rejected for core ring blockage. User did not require old height or every decorative surface visible.",
+    "accepted_tradeoff": "No sampled gold-ring/portal/legal-center blockage; additional partial ivory locator-tooth clipping is accepted cosmetic cost. Not zero occlusion; finite samples are not pixel area.",
+    "qa_bundle_root": "[workspace]/fourfold_next/inferno_wall/wall_review/final_delivery",
+    "qa_bundle_files": {
+      "README.md": {
+        "sha256": "2119e1cda5fe83b997aac67df786962c4ab3c1d166ab6f222db73f57a8ecb7c0",
+        "bytes": 5881
+      },
+      "evidence/blender/blender_before_lineup.png": {
+        "sha256": "6809d38fde7752a4b85d42ad479d15fa5b397b99ba02a70cc1d21102f38e0f1f",
+        "bytes": 1325871
+      },
+      "evidence/blender/blender_before_scene.png": {
+        "sha256": "8ff8b362b3a85b44cb6782224869a1a62ed50c1b1e9c14fde5d2d40766333ba2",
+        "bytes": 1462202
+      },
+      "evidence/blender/blender_final_lineup.png": {
+        "sha256": "ea456c510f23787f18f852c9221f07cff65f339595e295af508431467fdd6819",
+        "bytes": 1338071
+      },
+      "evidence/blender/blender_final_scene.png": {
+        "sha256": "45b1ab4e7a7e7a6f81fe4274062b67ff8afe98cdcc09b4aff1675046438e5a66",
+        "bytes": 1466900
+      },
+      "evidence/native_after/capture_manifest.json": {
+        "sha256": "7ec51b1b69556e37b7d3a4fff0798fca715945b9aa076ce219051b50f3a07dc6",
+        "bytes": 10455
+      },
+      "evidence/native_after/inferno_10_high.png": {
+        "sha256": "32b5fb37c0c44e1928588193b872f9ec26a6de4ea8ee2676bd4b8e762c1ba0d1",
+        "bytes": 338394
+      },
+      "evidence/native_after/inferno_10_low.png": {
+        "sha256": "0ab27e16ea92ae8316e9c3bbe55a5a3d7f6429ad10a31003e1703c9479ef7d4d",
+        "bytes": 340866
+      },
+      "evidence/native_after/inferno_23_high.png": {
+        "sha256": "2875eb3de87f3bad53cd997a42cde9e10e43a51ac7b766f373f7ac63646d7224",
+        "bytes": 368270
+      },
+      "evidence/native_after/inferno_23_low.png": {
+        "sha256": "a4a016c9c354b33a64d9f0f8d047b9cb7305a971acfffbd1f18f80443b9ddd09",
+        "bytes": 373770
+      },
+      "evidence/native_after/inferno_45_high.png": {
+        "sha256": "1714117215e94c2b8f5e214abda1944f91097df229c7a5dc749cd835145a33a5",
+        "bytes": 386669
+      },
+      "evidence/native_after/inferno_45_low.png": {
+        "sha256": "6795bdab65c42a05514a945f19d64153c48bf34bad8d8e289e5856acbb1e846f",
+        "bytes": 390688
+      },
+      "evidence/native_before/capture_manifest.json": {
+        "sha256": "c606bfaffb52072907db7a4d4c809a72533e2d6064cef3d74251d7808824872e",
+        "bytes": 10457
+      },
+      "evidence/native_before/inferno_10_high.png": {
+        "sha256": "b7ab7c55c3cc37dfbb491977c878abc6bcc7beea4949ca9bc3c3e12971e01bca",
+        "bytes": 333783
+      },
+      "evidence/native_before/inferno_10_low.png": {
+        "sha256": "6d6200f6c1ff941a2d6d669b523439e2d271fa6638fb899f959bc9c5100a6bf5",
+        "bytes": 342530
+      },
+      "evidence/native_before/inferno_23_high.png": {
+        "sha256": "7cdeba05207b2330a69863adf4bcac50977a2997a2e7d1d4e9ac60c32f39b17c",
+        "bytes": 362970
+      },
+      "evidence/native_before/inferno_23_low.png": {
+        "sha256": "a6d84cf6a7f13e94022a696c46130685906ae7302bc195cdb6ce417468f00b9a",
+        "bytes": 374000
+      },
+      "evidence/native_before/inferno_45_high.png": {
+        "sha256": "fffef2a81f7b84a8e9225fd3e58cb92178ce7f13697d2b3433fbdd1811253c68",
+        "bytes": 379666
+      },
+      "evidence/native_before/inferno_45_low.png": {
+        "sha256": "7931971337d4113ad52a8e9d23809ac97d9b034d80cada4deb41f0ff4153fd63",
+        "bytes": 392241
+      },
+      "qa/audit_final_c80.py": {
+        "sha256": "610f7d7b373a3cc61743f7aa87984db5b60efcc05cd08181c51b56652e1c7f4b",
+        "bytes": 6065
+      },
+      "qa/native_capture.gd": {
+        "sha256": "35701847b9f94689add9b26178d5e9c806ba5f643c44ec446abb8715c1de1b1c",
+        "bytes": 4390
+      },
+      "qa/native_capture_23.gd": {
+        "sha256": "3d6dbaba42fd6840cac81dce951bda78cffcf926e2862fb7438a2f8c7d5034fd",
+        "bytes": 4358
+      },
+      "qa/render_wall_compare.py": {
+        "sha256": "6a1763501699aef53a9e10d1f90b2fdf6fae606e91457042ab3dbc37bd8da6dd",
+        "bytes": 1128
+      },
+      "qa/run_native_capture.sh": {
+        "sha256": "2dbedd0b10b93638862ac124088b5681e95929f3633cf012400e7d2fbb1bbce5",
+        "bytes": 1002
+      },
+      "qa/semantic_glb_compare.py": {
+        "sha256": "44cf872bc7c985bd467f9b3657a361482cefa2be909992b73e1d4c1e3c8a149a",
+        "bytes": 2534
+      },
+      "qa/wall_occlusion_refined.gd": {
+        "sha256": "efb7ce9d57160c325b77314c8ce66eef0c0f2b01077dd4e5a27484f0710fa6f5",
+        "bytes": 4783
+      },
+      "qa/wall_occlusion_surfaces.gd": {
+        "sha256": "0ac98cc7d2aa78374d306fe9b1657a50d55579f50afdfbd85cd2577e9ea867b9",
+        "bytes": 6540
+      },
+      "qa/wall_portal_sweep.gd": {
+        "sha256": "a0c39ba7bc6b84bec2dab3b42bf6f587949369b897dbd43641e7dd989b4af2c4",
+        "bytes": 5207
+      },
+      "reports/FINAL_C80_VALIDATION.json": {
+        "sha256": "7174ac68c7a8242c96673675e1543243cae59dd239faa981051934c8d1378d93",
+        "bytes": 7375
+      },
+      "reports/baseline_asset_runtime_hashes.json": {
+        "sha256": "cb80c56ca6c628723d86e667619f4b149fef8a40f500dfc16ef03b27bec5ca94",
+        "bytes": 8900
+      },
+      "reports/c80_asset_audit.json": {
+        "sha256": "f76fa52fe701a927c1d02bd0c79d862fe4c66416ce252b74e2a77c0b6ae1ebef",
+        "bytes": 18529
+      },
+      "reports/c80_asset_audit.log": {
+        "sha256": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf",
+        "bytes": 59
+      },
+      "reports/c80_camera_fit.log": {
+        "sha256": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+        "bytes": 108
+      },
+      "reports/c80_glb_audit.json": {
+        "sha256": "8a0f1bffe10adbf38cc4fe9169d7495c88a2610f2d9efa602dce600662f4eb1f",
+        "bytes": 12212
+      },
+      "reports/c80_glb_audit.log": {
+        "sha256": "2890dc2c03fb267c36a6d3c882928e0218faf1aa8419251de4b356bd674c73dc",
+        "bytes": 300
+      },
+      "reports/c80_occlusion_refined.json": {
+        "sha256": "92829479e6f714054aef812c76c3c89b397d7664980f3246147c2de935105713",
+        "bytes": 17539
+      },
+      "reports/c80_occlusion_surfaces.json": {
+        "sha256": "093895793db5040df6d04dd01ac974135e801748637d319acacdd05faa82c200",
+        "bytes": 1241574
+      },
+      "reports/c80_plan_comparison.json": {
+        "sha256": "a085fc8ff0826cf14fab623aa7a0691426d00ce65bd97fe6119f943d96fa2c26",
+        "bytes": 345
+      },
+      "reports/final_portal_sweep.json": {
+        "sha256": "b7df38eb82070bc02953087d7cb9311bef40aead4043da20eec69bd83c880611",
+        "bytes": 17263
+      },
+      "reports/final_portal_sweep.log": {
+        "sha256": "ed75449ea07e6b3609f9b4d9ad13dd413af9fc95f0bee66236733a4724db1610",
+        "bytes": 311
+      },
+      "reports/final_semantic_wall.json": {
+        "sha256": "14bbb5081b2f43b35343eba9f3a56217c79dbfb8b8417e03877e703498acb6ca",
+        "bytes": 691
+      },
+      "reports/final_semantic_wall_b.json": {
+        "sha256": "002f0166554931caa56264c682c5f58bb28a97cbb26baa172b55db665adbcce8",
+        "bytes": 693
+      },
+      "reports/frozen_core_hashes.json": {
+        "sha256": "f4841659917c833c6f0641a1908f28cdba2c7fdd7c692288ec97294418f21c34",
+        "bytes": 954
+      },
+      "reports/native_before_23_capture_manifest.json": {
+        "sha256": "dd4abc745bf8a6da664eb12afb3d8956c0ac11bb7c80f9ccf7a7df36411ee0f1",
+        "bytes": 3463
+      },
+      "reports/native_before_capture_manifest.json": {
+        "sha256": "4997ab7938a0bf67b914fa4da485f846b27a7f26b3e4b495ca6223c690713c45",
+        "bytes": 6995
+      },
+      "reports/native_final_23_capture_manifest.json": {
+        "sha256": "db2dd6b0d531006b8ff22bf9ea0f841cd7e156cd37023595dba6f370901dbf78",
+        "bytes": 3463
+      },
+      "reports/native_final_capture_manifest.json": {
+        "sha256": "475d4256d50290be4d483b421998c2ed7da5e6a25adab2e232165bc2539a7c00",
+        "bytes": 6995
+      },
+      "reports/occlusion_refined_a.json": {
+        "sha256": "99fe90f3f209f007cfac7c9d407074264abfc0ddb7671666b66479e06a04a806",
+        "bytes": 5527
+      },
+      "reports/occlusion_refined_b.json": {
+        "sha256": "7e57037c379ea88f11ee4892adc2aa90dec0d465a116e50186f218305bc104e5",
+        "bytes": 47229
+      },
+      "reports/occlusion_refined_original.json": {
+        "sha256": "113d9aab5e6ebfb9aa5f6507577f30f6d5704354e5c480e99ebf1559ac881823",
+        "bytes": 5528
+      },
+      "reports/occlusion_surface_deltas.json": {
+        "sha256": "c4fcc74c7d3a28a3d8dce67adf8865508a45708cae0e6806170e556ba6d94195",
+        "bytes": 2882
+      },
+      "reports/occlusion_surfaces_a.json": {
+        "sha256": "59a6f9f7bd61a84157af24ea9930ee16fb341de0ccb24ad4dfe64d58c68453e8",
+        "bytes": 130059
+      },
+      "reports/occlusion_surfaces_original.json": {
+        "sha256": "3b0f2e1253371ba45bed0c13f86cd4655e731a5dfabf3285b6c02bcb82abcbd0",
+        "bytes": 219241
+      },
+      "reports/original_wall_geometry.json": {
+        "sha256": "721c1eb5d136f6bc8011e32b5d3f56d4b656432bfeefc8fd18a2c9c9f9045d37",
+        "bytes": 809
+      }
+    },
+    "integration_restrictions": "Root copies only explicitly approved allowlist; preserve all production orchard/runtime/completion changes. No author production writes. No binary Git upload under current constraint. Do not copy the milestone project, variants, baseline project, probes, caches or QA saves."
+  },
+  "protected_before_sha256": {
+    "scripts/puzzle_rules.gd": "260130edbe5978fc610a5e8fcc2f84ff19e8fc8beb16d3a2971790f1cc68df64",
+    "scripts/hint_solver.gd": "f266da3bb93226cbb68c3077d8481d637411ea0da81d508016ec431c443ddbe9",
+    "scripts/world_view.gd": "b73a8cad67115445cf9c9bdb0c6312dd5280a0fe43c1c2ddc0ec11b021893a6d",
+    "scripts/ui_kit.gd": "5338959aea6f222952feedf8f3f53c4eaabb2be87d52e3c9c95f359057291be6",
+    "scripts/resume_controller.gd": "fecc26a2c27bbe3bdf569efb4e22b4084b167dfa08b8effe93b7ec07a9bda862",
+    "scripts/hint_overlay.gd": "9e5c58a95617444feb0d2c6475fb9490b0c855bb7e45f20919f2a5e42b11bd7a",
+    "scripts/context_help.gd": "0b43d5dedeffa7a305c87a897b103766097c72387ce601ba7a342488fbfd32f4",
+    "scripts/main.gd": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+    "scripts/resume/resume_store.gd": "a90ec821acca7ca32e28e9700a63cdf023d94bc9b9d0b18c6352f2fdca2430b3",
+    "scripts/resume/resume_codec.gd": "5bbb79cbaffab0fd70ec310c9914b10bba9259ca58515ac65c0a83c97d102305",
+    "assets/levels.json": "3658774f0015b859ff27e13b0ef48c6e5071df921d0d155be797565de302fcda",
+    "assets/campaign_preview.json": "d64dd749dcd361bf25155fd86da6e8a1f4c04b6a80cc790a6152ad5ba385e710",
+    "assets/models/heaven_landscape.glb": "da869bc47fcf4fcdc09482f7fa872529619d37facb74b29a367c64af4e48add9",
+    "assets/models/city_decor_a.glb": "9b1b083337b4bb7259a946120bb14aa4434736fb0aca9d3659b9a079235edbac",
+    "assets/models/hub_tile.glb": "b87898df28299e90ec3dd7729418660c91152f2a433c306880a1c19954282233",
+    "assets/models/inferno_decor_c.glb": "f4db2cc5b1b5ef86404df294d9c78a7a9aff3859987cd6b821afeb19726b4ca3",
+    "assets/models/inferno_crate.glb": "aafb9e0f6f479b1a223d2f460f9a1c2aa2ff545ac45d8d8877b3467dd8886545",
+    "assets/models/inferno_edge.glb": "ed76a82578f3e108b6fd98c286940e1b2aa2b0f8209b2fead9fbd399f1f8078c",
+    "assets/models/city_landmark.glb": "1219e2f26514e36ef588392ad6e54e81c18eaf2fc5f7a25dbf87dc385d71e120",
+    "assets/models/hub_decor_a.glb": "3fd3d7478ae90b169f169d16ed0eb4065197daf11f3ea06a9f5ba397562a5686",
+    "assets/models/rainforest_landmark_b.glb": "9e75122bf4fc3f339bcb1648be4539815632480d970b84616604427d1ff8cdd4",
+    "assets/models/city_creature.glb": "d721944fc12121625840c585c3493ce9b54925df804db46bf427251b7d674448",
+    "assets/models/rainforest_crate.glb": "fa2c66e4c2e7a7d27169a10abbe873b7cafc690847d20646df78a0b9d48059ea",
+    "assets/models/inferno_landmark.glb": "c2f36f70dde8e0066c2242887f9663b70a8b0faf86073088474e51711c07dd6c",
+    "assets/models/heaven_decor_c.glb": "d3fd0d43e428321f22a6e0e47c1dc06f1b5fa01de15421feb3150d556d3d7a06",
+    "assets/models/city_landmark_b.glb": "20e87a8f3964d5b6db727bbe8f39bb495ab365d8ea2edf1ec620c2e2ac4bd1d4",
+    "assets/models/heaven_wall.glb": "a4c1db325eda50812baaa72115b95c01fadf891b16e707b413938d6aedc6cdbb",
+    "assets/models/inferno_decor_a.glb": "4a39aa3c496386a9f19cd67c6d4c2bd4c6230bf4d582ae220eeb9e4012771e3c",
+    "assets/models/city_landscape.glb": "64067c7edf2341c5745d06bacb0a6a95c96e810e0dce9ae58c02dfe7af348332",
+    "assets/models/hub_decor_b.glb": "e3859fd1e62c281b47740338e2e374a43623c4768ae80b1d744c081880d04638",
+    "assets/models/inferno_landmark_b.glb": "d17f4416961dd0b74491d17026c7627950d6aa53ef683010e0dff0d7ab2bff8e",
+    "assets/models/heaven_decor_b.glb": "e94879a80db451607a0ab4c9bde069031c15282737da3eae324577fac51f16b8",
+    "assets/models/inferno_wall.glb": "65d4d3d4f3181a39e02cba369cd2977a1ba8b8e45c0223adaa8b483bbb7ca6df",
+    "assets/models/city_edge.glb": "a9f1a14baea0c655da49875cb0de350a6c0f1a11906371bb21233ed518377f77",
+    "assets/models/heaven_landmark.glb": "ac00b6c3c5ab947afa91d4b2652f278cde6c3b552640aa2dffd5751d30ba6ac4",
+    "assets/models/rainforest_tile.glb": "ba8963f5f7aa5631b1bd9fcb1fb1f511b790afdca7f26708467f3cd589e3a719",
+    "assets/models/rainforest_wall.glb": "67bcf277483fd7a207b05f5e3aa2f488b8f0670ae5133d931e17ae8a97c58cf5",
+    "assets/models/rainforest_goal.glb": "654a5f5078eba5e5823f930cb60fe06010d1093e6744aae928d9702fd643d48b",
+    "assets/models/heaven_decor_a.glb": "1f1eca183a35e1840c1d4809b4d356cabb94c5fe2f36602cf7cefa23a2b0dfa3",
+    "assets/models/inferno_decor_b.glb": "182934b706e759202720abe10b915072c5163aa759a62cc413adf3f5f786a32f",
+    "assets/models/city_decor_b.glb": "738794f74c6b61786a89ab7e74e1f5dba1a635fe37e62b105983ecefd2abed2e",
+    "assets/models/heaven_crate.glb": "f581ebe91b63dc7e4cd9ed1a5a61b587519660c48d37a7119b698da10ba2f27d",
+    "assets/models/rainforest_edge.glb": "9f80a6ddacff4e7c69d7d755463f825f42f276728b095f05b8b78b01320d266d",
+    "assets/models/heaven_landmark_b.glb": "e578928aa5288d0d393d0538c186279deab410c21fc9edfe55a4e658a814c5a7",
+    "assets/models/inferno_portal.glb": "1b07be71f3fbbc63c06f954fa6fc21aa148ae9ec05e92c522842a49d1b180d03",
+    "assets/models/city_plate.glb": "79e44f4bf46f70c8508738128e713a24361732f662381e7361631a6da51abb4e",
+    "assets/models/city_goal.glb": "9154a20149d49c3c3fe2eed9d2aae06f42483f32fc51c9caac225e7973fd328c",
+    "assets/models/heaven_creature.glb": "ad45a7869707036045b4e0f5832748be1be3a4e27be6de76be026ac7fefc05cf",
+    "assets/models/inferno_creature.glb": "74595f09229e426cf51a9475a2339c9f18bf2ce0b17c98a5c36cd0be3397b1e5",
+    "assets/models/inferno_goal.glb": "c72d954aea435b62fa5594450731a3593327974d26e62008816943f379965adf",
+    "assets/models/city_gate.glb": "559560477d33c19edd00f38674e7b216b0b416fc8dfe05b4fb897040297b3759",
+    "assets/models/city_wall_b.glb": "fb0fbe27b61a0922e702a607e322a7e2f2054057c08dbe17af6905ccd094955e",
+    "assets/models/inferno_landscape.glb": "cebfc8cfe08e55a936936237abd74d2db18fc271b5442f6c56d247c81f91131b",
+    "assets/models/rainforest_landmark.glb": "50e5f7c038763cbf910c70d10fb9728df87e5759061b769b6b1e8cd75b9e902e",
+    "assets/models/heaven_glide.glb": "bc631b48686edb0e95b972bba67573d649871451174e47dcafd105197f399751",
+    "assets/models/rainforest_creature.glb": "fbe4136026b4e3115253b2918c907c2176f43c1ecb2c8b95aade644cf2bd9847",
+    "assets/models/heaven_tile.glb": "7d4d38c2a251b833364a18b4d15aee2515381e5d98f851a71474b00f771276aa",
+    "assets/models/heaven_edge.glb": "cdd0139b5cc7c40d8fea422fd93dc0b7d534a3b2e21d4c6a96f97d0255c80630",
+    "assets/models/city_tile.glb": "260bb03f262b1b18f413f22f23721ee3f39be96549e7cd5d41a89fa85e469f8b",
+    "assets/models/heaven_goal.glb": "3695251e911603c482aaef31c2b60688bd344aac26aca582967b549ae6bc7c2c",
+    "assets/models/rainforest_wall_b.glb": "caf632092f5fc0c18ad64b0b34be48373fc3b3424ea92c48a69fcd9406ba8b74",
+    "assets/models/rainforest_decor_b.glb": "39c813fcc425284a11b949c34717919c2c4fa7d8194734be2ffedda02e2e289f",
+    "assets/models/courier.glb": "a158de35fb5088208f384b82393c302dcc11ae82d8c47413d8d2b45c6f04fac4",
+    "assets/models/city_crate.glb": "e0cd7e91c8172ad168da47dc552eb57d25b51f09cd3deeac3757cee5ae3e1f8f",
+    "assets/models/rainforest_decor_c.glb": "cfdcaa47e0625d7a2d62ad6e8039b24aff505fb05518ab3ef6383337d03d3c39",
+    "assets/models/hub_landscape.glb": "e604e3c6477ddbb8cedf9c0b84090878339fa91d8d59aa76699da8e39fdec7c3",
+    "assets/models/city_wall.glb": "8580cf5f640a475651593d75ee2e4abb1c9eb02870c070921275b4bda48b71b6",
+    "assets/models/inferno_tile.glb": "ac01faa4c13d94770711e255281ad7e47ebee1bcdca17573b66cb956154676b0",
+    "assets/models/inferno_wall_b.glb": "cb8e4817a79281a1c861cb498d2f8ebb1f4edf2aaf1d3c1cd797c0884913add7",
+    "assets/models/rainforest_landscape.glb": "ba6fac3a7f290824846aca09b4327417d0462451f56faabc6bc7e9145681b023",
+    "assets/models/rainforest_arrow.glb": "b8c6e44ca945b8277ca64bab7b0a7057f8bf4b8b81c8c306e24c60dd469f823e",
+    "assets/models/rainforest_decor_a.glb": "ad96e9c35217903bbe6bf9fbcdc61f362a447f412860c28d843c4b5fd996fffd",
+    "assets/models/hub_center.glb": "6ea176c9146ce49a4e2a8dd94611f65baa3cc1683090232de10b0003b2b22a2f",
+    "assets/models/city_decor_c.glb": "fd46f956ada55b6825d25a43e8dd444772ec144516fca23f4b7f3d7c63f7708f",
+    "assets/audio/hub.ogg": "f60ba4a4c52483e6623af67b4b0b6b35d6e1506a19fb8b2efaa271316a6e0143",
+    "assets/audio/heaven.ogg": "b048cdf6785d00f55a668ed7da9906be138f33f105fdce983c50ab2d5e33b072",
+    "assets/audio/city.ogg": "9b6ebde17f77bb19527e3bcc227dfef3d7942f14c133ede5ff084d5fc2fcb89d",
+    "assets/audio/reset.wav": "a95ed741cdbc66577ff37cbff9c61d401b1e6de4c3ed7972a41468f10db35c21",
+    "assets/audio/heaven_ambient.ogg": "29e5389b97570c7a6b6e76b8dca067b32f4c1f2d5ee65613a7dd5611b89f7a3b",
+    "assets/audio/push.wav": "3c358e4d07cd7b2b5305a813fb4b74562d0ce9732c9dd69fcdf73472b2dcb9c9",
+    "assets/audio/rainforest.ogg": "3787a136cdcd3963f89611817426da1a2cf47473a81264139ecfe49eedd2a61f",
+    "assets/audio/confluence.ogg": "c2a08d4561bd21d7c821ee9bff370ad5f98c7212942f57270d934f4ebdbc62f8",
+    "assets/audio/rainforest_ambient.ogg": "dedcd86f179dd8109e33ec7b37a852fcd20fd70fa7e0cbffe7ec42d20f69be52",
+    "assets/audio/README.txt": "0f7c4c1af9e29383f61586c9dfdd0cbfb79023b6d2af58474ccfcaf84161983d",
+    "assets/audio/inferno_ambient.ogg": "7daf939e61f63143e9fdf908c3f0b1dd922461f77c90f8e3565535a6a86657b3",
+    "assets/audio/goal.wav": "5c6cf413a4585161cbc03242bb9dc825360737cf2c3db24506b27c5762f0280f",
+    "assets/audio/step.wav": "c34da8389ee496c1325bdecc9b436246ac86e3d9ed338a17abfa24e2f8c0f87b",
+    "assets/audio/win.wav": "c4b5cdc96d29aed417211a66292b25683d29930ad8f1ccf007be67216219665f",
+    "assets/audio/city_ambient.ogg": "9e2a339a0a8091f4c282a9ab08278e8c3480c237042d0fa4576b2bb04003b03d",
+    "assets/audio/audio_validation.json": "7a439b9d58d791040d343886166106d730bc3ad897dd1a9b808ff20767e0c13d",
+    "assets/audio/undo.wav": "c2e9461cccf3c650ad7877ff22bc653ae8c07458dfb1bce16de85e8e66476d59",
+    "assets/audio/portal.wav": "2a2ef1bfceb44c3264c3ab91768f4eb4dea66e31713b953df8578cb787f06c9a",
+    "assets/audio/blocked.wav": "40b0d68ce22889d5a3ba6420ee1a817ff944fb8cd9bf1638f82f927bf2a9c217",
+    "assets/audio/inferno.ogg": "6a5a26a3b3732a0d418115ff594e87d65e6c555edf90b52ca8a361058c98d01d",
+    "project.godot": "a0bca2ccbcdcc25b15b0f8ff59b84307e39c369f851b48f308568f607159850a"
+  },
+  "changed_protected_files": [
+    "assets/models/inferno_wall.glb",
+    "assets/models/inferno_wall_b.glb"
+  ],
+  "main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e"
+}
