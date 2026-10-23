@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "reviewer": "/root/review_orchard_visual_polish",
+  "date_utc": "2026-10-23",
+  "decision": "PRODUCTION_MATCHES_ACCEPTED_C080_FOR_THREE_HIGH_QUALITY_SCENES",
+  "production_project": "/workspace/scratch/e4cad742399c/fourfold_atelier",
+  "report_sha256": "525e6cc19fe91379a47228d1ced54daf8f526dc819f86b72a790a06f39429f0a",
+  "candidate_review_sha256": "9b0ab234bb75469a03ecd6f85a2dcb1aec129a482650138e7ba268a2955f08c7",
+  "candidate_manifest_sha256": "92615782d3c9aedf1b7481da923c5525584c5b3655c31e55a8af78bffd72c223",
+  "integration_manifest_sha256": "fc31becb014cccdfcc3bcd9aa7e58102a4ff36735e0bfe8c7f2f91a548832cd9",
+  "five_input_sha256": {
+    "blender/rebuild_worlds_v2.py": "d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021",
+    "blender/inferno_v2.blend": "9f69bed78bfc0d069ff5d2a34665da3709bfd7acaf956ccbb5cf21e3ef44641d",
+    "assets/models/inferno_wall.glb": "9c5d82799ec4fd831e6a6317b8a8d0216e055098dcea8c0541acb197d231265e",
+    "assets/models/inferno_wall_b.glb": "bff53007b2e01e76caeeb4030d7069b5e82a4f13213a9d28589297266f6afba7",
+    "blender/v2_inferno_stats.json": "f2ad48875a81f1bff075bc39df2913482287d1f22cdad3733d02febaa65e12a8"
+  },
+  "main_sha256": "b529ffb595d043cf74216a3f603efe20bc0ba69572b8d70d432bbdfe6a9a586e",
+  "protected_files": 89,
+  "protected_snapshots_and_current_files_match": true,
+  "captures": [
+    {
+      "id": "inferno_10_high",
+      "image": "inferno_10_high.png",
+      "sha256": "32b5fb37c0c44e1928588193b872f9ec26a6de4ea8ee2676bd4b8e762c1ba0d1",
+      "candidate_png_byte_identical": true,
+      "entire_row_metadata_identical": true
+    },
+    {
+      "id": "inferno_23_high",
+      "image": "inferno_23_high.png",
+      "sha256": "2875eb3de87f3bad53cd997a42cde9e10e43a51ac7b766f373f7ac63646d7224",
+      "candidate_png_byte_identical": true,
+      "entire_row_metadata_identical": true
+    },
+    {
+      "id": "inferno_45_high",
+      "image": "inferno_45_high.png",
+      "sha256": "1714117215e94c2b8f5e214abda1944f91097df229c7a5dc749cd835145a33a5",
+      "candidate_png_byte_identical": true,
+      "entire_row_metadata_identical": true
+    }
+  ],
+  "production_evidence_sha256": {
+    "production_native/inferno_23_high.png": "2875eb3de87f3bad53cd997a42cde9e10e43a51ac7b766f373f7ac63646d7224",
+    "production_native/inferno_45_high.png": "1714117215e94c2b8f5e214abda1944f91097df229c7a5dc749cd835145a33a5",
+    "production_native/source_after.json": "1e3c3669cd0fd7c5f9b6fb88ee081bd414b46e3074a52bde15ada7f26cd07c23",
+    "production_native/source_before.json": "1e3c3669cd0fd7c5f9b6fb88ee081bd414b46e3074a52bde15ada7f26cd07c23",
+    "production_native/capture_manifest.json": "d11873d6224b965f780a6f06ed0c14d206a1b498e9c39f5a41ab8bdf0eae1e89",
+    "production_native/PRODUCTION_NATIVE_VERIFICATION.json": "190711cdf1b9203335bae0f7f68bb7e2a6d479af04a3a57541f2058296d0ad2b",
+    "production_native/inferno_10_high.png": "32b5fb37c0c44e1928588193b872f9ec26a6de4ea8ee2676bd4b8e762c1ba0d1"
+  },
+  "root_production_logs": {
+    "import.log": {
+      "sha256": "ec07244d2ccb37985c59f8a6e5df59e6156f830cad8449169c16ca3177a87f1e",
+      "error_lines": []
+    },
+    "boot.log": {
+      "sha256": "721c99edd5271f49bce2266ebf18837b590437480186d781cdb183e60f922331",
+      "error_lines": []
+    },
+    "camera.log": {
+      "sha256": "42ad4ed74aaeed34eed1eaac58543227ebe2d6040d65796045c75ccbbaf0f17a",
+      "error_lines": []
+    },
+    "assets.log": {
+      "sha256": "11afda98ffd7a29e8c9473461649a1e4e542608c087011e0cb9a88c30c305fcf",
+      "error_lines": []
+    }
+  },
+  "camera_fit": {
+    "layouts": 204,
+    "HUD_clips": 0
+  },
+  "asset_audit": {
+    "models": 62,
+    "sources": 6,
+    "passed": true
+  },
+  "whole_symbol_zero_occlusion": false,
+  "binary_upload_authorized_by_review": false,
+  "root_handler_evidence": {
+    "attribution": "Executed by root; report/log and74 source hashes independently verified by reviewer",
+    "report_path": "tests/results/inferno_wall_handlers.json",
+    "report_sha256": "07cc1ca16076ca48100279f1ad32b7e7a5e15116972ae35f7d52b95f25083a8e",
+    "log_path": "tests/results/inferno_wall_handlers.log",
+    "log_sha256": "f5e88a3751307aa44483e374bc6fb05ed5ca35d38e1ce85d90030cf037ccd442",
+    "checks": 8056,
+    "levels_completed": 204,
+    "failures": 0,
+    "exit_code": 0,
+    "source_hashes_verified": 74,
+    "source_changes": [],
+    "error_warning_leak_lines": [],
+    "audio_enabled": true,
+    "resume_sidecar_disabled_by_QA": true
+  }
+}

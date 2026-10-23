@@ -33,3 +33,9 @@ The frozen independent candidate review and its manifest are now included under 
 `PRODUCTION_NATIVE_VERIFICATION.json` reports three production high-quality cases (10/23/45), exact row metadata and PNG byte equality against accepted candidate images; 89 protected files were checked unchanged. This is distinct from the candidate's high/low coverage. The final independent **production addendum** is not yet included in this checkpoint.
 
 WIP publication still changes only this isolated directory. These reports do not authorize main promotion, binary uploading, claim all-surface zero occlusion, or substitute for user aesthetic acceptance. Actual production integration is coordinated separately by root.
+
+## Independent production addendum preserved — 2026-10-23 17:11 UTC
+
+The final `reports/INDEPENDENT_PRODUCTION_ADDENDUM.md` and manifest now close the earlier missing-addendum note. They independently verify the five integrated inputs, 89 protected files and three high-quality production native scenes against the accepted candidate. They also attribute the fresh 8,056-check / 204-level / zero-failure regression and 74 unchanged source hashes to root's execution, not a duplicate reviewer run.
+
+Candidate low-quality coverage, finite sampling and cosmetic ivory-tooth clipping limits remain explicit. This is internal production QA, not user aesthetic acceptance or binary-upload permission. This WIP tree still changes no inherited production paths; final production main text publication is coordinated separately.
