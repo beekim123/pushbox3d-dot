@@ -1,0 +1,5 @@
+heaven_ambient R-L dB 2.5100531778023756 all checks True
+inferno_ambient R-L dB -0.016729583868822607 all checks True
+rainforest_ambient R-L dB 1.6656504978501963 all checks True
+city_ambient R-L dB -0.34830258617938953 all checks True
+PASS fourfold_atelier/tests/ambient_stereo/production/portable_verification.json

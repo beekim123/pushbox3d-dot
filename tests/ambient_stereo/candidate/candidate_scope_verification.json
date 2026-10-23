@@ -1,0 +1,126 @@
+{
+  "candidate": "[workspace]/fourfold_next/audio_fix",
+  "source_change_exactly_one_denominator": true,
+  "production_generator_matches_baseline": true,
+  "production_manifest_matches_baseline": true,
+  "manifest_top_level_unchanged": true,
+  "manifest_asset_key_set_unchanged": true,
+  "preserved_manifest_records": {
+    "hub": true,
+    "heaven": true,
+    "inferno": true,
+    "rainforest": true,
+    "city": true,
+    "confluence": true,
+    "step": true,
+    "push": true,
+    "undo": true,
+    "reset": true,
+    "goal": true,
+    "win": true,
+    "blocked": true,
+    "portal": true
+  },
+  "changed_manifest_records": [
+    "city_ambient",
+    "heaven_ambient",
+    "inferno_ambient",
+    "rainforest_ambient"
+  ],
+  "allowlist_exactly_six_expected_files": true,
+  "allowlist": [
+    {
+      "path": "tools/generate_audio.py",
+      "before_sha256": "ae6e804780811fee52e3acf0e9cd250669dc2f250494256e8fd7e3f43eb81700",
+      "after_sha256": "d8ddfdf231b17c8064872448a6ab97a56bece3808760fd6d4949afa80e972c62",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "assets/audio/audio_validation.json",
+      "before_sha256": "7a439b9d58d791040d343886166106d730bc3ad897dd1a9b808ff20767e0c13d",
+      "after_sha256": "4df7491349148c130da74a00944f6993f2a719a48222507be55021cab906e4f2",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "assets/audio/heaven_ambient.ogg",
+      "before_sha256": "29e5389b97570c7a6b6e76b8dca067b32f4c1f2d5ee65613a7dd5611b89f7a3b",
+      "after_sha256": "23b5925401015b30564bd35b032bcb036e5db27b60e6654d150d6ef6c0fe789a",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "assets/audio/inferno_ambient.ogg",
+      "before_sha256": "7daf939e61f63143e9fdf908c3f0b1dd922461f77c90f8e3565535a6a86657b3",
+      "after_sha256": "c48d0258ee9f579096245b64a0d4db34407afaaec8cf95bb67df5fe3039ef8e8",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "assets/audio/rainforest_ambient.ogg",
+      "before_sha256": "dedcd86f179dd8109e33ec7b37a852fcd20fd70fa7e0cbffe7ec42d20f69be52",
+      "after_sha256": "9d1a6b7ca33a98e50bdebb076aba61d90a0c662528336ab38365670c7b975a7d",
+      "before_matches": true,
+      "after_matches": true
+    },
+    {
+      "path": "assets/audio/city_ambient.ogg",
+      "before_sha256": "9e2a339a0a8091f4c282a9ab08278e8c3480c237042d0fa4576b2bb04003b03d",
+      "after_sha256": "76d9896cdde347876e897e4e710628cd7cb8baf933f568a238ebf078e8ebf106",
+      "before_matches": true,
+      "after_matches": true
+    }
+  ],
+  "retained_source_masters": {
+    "hub": {
+      "sha256": "1122ec03b222138656856a74907fd3edd0d42874de42ccc74281c7358a53c83e",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "heaven": {
+      "sha256": "00287609fc8fb2ae4c8d2537e19c1e42f05f2502e7caad9da688a32ca1388791",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "inferno": {
+      "sha256": "93143f5b1348effa5ab54e0aa421fef8ef207baee6c717e1ff6f79ddf75e506d",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "rainforest": {
+      "sha256": "60d956e04c523b98da59bec94a664fe9a37beba28d3da42905a15d4fa2da2cd0",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "city": {
+      "sha256": "72d30f798d22e6f48f997e6b1cdad9838819d0567d1fcb0ba9c859743796d55c",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "confluence": {
+      "sha256": "c3460d17edb60e2b79a012bce0c4f2472ffccc527bc78b98ad1bf64d2da89701",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "heaven_ambient": {
+      "sha256": "2fa643fb4cb016742e5d0d59112fdf76cf79c4d29cfa9e643ef7ec0fbb12c61b",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "inferno_ambient": {
+      "sha256": "887bf56c1d43289c448c17273d9837305f20021afbc5bb34688a197470ea7d53",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "rainforest_ambient": {
+      "sha256": "6c5569ecbd4e00087f1979e77c8cccc08f60f26d96d408c8ca12c7d49a62513e",
+      "matches_manifest_source_wav_sha256": true
+    },
+    "city_ambient": {
+      "sha256": "60d54da762cf9a0b3216341255813e7196d1c14782f1f57659bd504ea037ef5c",
+      "matches_manifest_source_wav_sha256": true
+    }
+  },
+  "audio_directory_changed_paths": [
+    "assets/audio/audio_validation.json",
+    "assets/audio/city_ambient.ogg",
+    "assets/audio/heaven_ambient.ogg",
+    "assets/audio/inferno_ambient.ogg",
+    "assets/audio/rainforest_ambient.ogg"
+  ],
+  "audio_directory_only_expected_changes": true,
+  "passed": true
+}

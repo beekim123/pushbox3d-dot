@@ -1,0 +1,31 @@
+--- original/verify_ambient_candidate.py
++++ portable/verify_ambient_candidate.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python3
+ """Read-only acceptance of the selective ambience correction against saved baseline.
+ Run: python fourfold_next/audio_review/verify_ambient_candidate.py --project CANDIDATE
+-No files in CANDIDATE are changed; writes candidate_verification.json beside this file.
++No project files are changed; --output is required. Baseline is historical/audit_results.json.
+ """
+ import argparse, json, math
+ from pathlib import Path
+@@ -9,8 +9,9 @@
+ 
+ parser=audit.argparse.ArgumentParser()
+ parser.add_argument('--project',required=True,type=Path)
++parser.add_argument('--output',required=True,type=Path)
+ args=parser.parse_args();project=args.project.resolve()
+-baseline=json.loads((audit.HERE/'audit_results.json').read_text())
++baseline=json.loads((audit.HERE/'historical/audit_results.json').read_text())
+ manifest=json.loads((project/'assets/audio/audio_validation.json').read_text())['assets']
+ source=(project/'tools/generate_audio.py').read_text()
+ old='out[:,1]+=np.sin(2*np.pi*f*t+phase+.14)*.015'
+@@ -43,6 +44,6 @@
+ env=audit.source_namespace(source,capture)
+ for world in ['heaven','inferno','rainforest','city']:env['ambient'](world)
+ result['passed']=result['corrected_formula_present'] and all(result['unchanged_other_assets'].values()) and all(all(x['checks'].values()) for x in result['ambiences'].values())
+-(audit.HERE/'candidate_verification.json').write_text(json.dumps(result,indent=2)+'\n')
+-print('PASS' if result['passed'] else 'FAIL',audit.HERE/'candidate_verification.json')
++args.output.write_text(json.dumps(result,indent=2)+'\n')
++print('PASS' if result['passed'] else 'FAIL',args.output)
+ raise SystemExit(0 if result['passed'] else 1)

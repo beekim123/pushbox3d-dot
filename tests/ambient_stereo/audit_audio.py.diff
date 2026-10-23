@@ -1,0 +1,16 @@
+--- original/audit_audio.py
++++ portable/audit_audio.py
+@@ -236,8 +236,8 @@
+     return '\n'.join(lines)
+ 
+ if __name__=='__main__':
+-    parser=argparse.ArgumentParser();parser.add_argument('--project',type=Path,default=DEFAULT_PROJECT)
+-    args=parser.parse_args(); r=audit(args.project.resolve())
+-    (HERE/'audit_results.json').write_text(json.dumps(r,indent=2)+'\n')
+-    (HERE/'AUDIO_AUDIT.md').write_text(report(r))
+-    print('Reports:',HERE/'AUDIO_AUDIT.md',HERE/'audit_results.json')
++    parser=argparse.ArgumentParser();parser.add_argument('--project',type=Path,required=True);parser.add_argument('--output',type=Path,required=True)
++    args=parser.parse_args(); args.output.mkdir(parents=True,exist_ok=True); r=audit(args.project.resolve())
++    (args.output/'audit_results.json').write_text(json.dumps(r,indent=2)+'\n')
++    (args.output/'AUDIO_AUDIT.md').write_text(report(r))
++    print('Reports:',args.output/'AUDIO_AUDIT.md',args.output/'audit_results.json')

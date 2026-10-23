@@ -106,3 +106,11 @@ CPU软件渲染器的结果不等于Mac/GPU性能；未做真人谜题盲测、�
 - 生产完整语料字体重扫534汉字＋7符号，无缺字，`tests/results/keyboard_navigation_font.log`；候选旧522因语料范围不同保留原值。未验证macOS/Retina/硬件GPU/手柄或完整无障碍认证。
 - 旧帮助行为测试的普通modal“不锁存”断言被获批的全菜单/modal释放契约替代；原脚本存historical，旧已发布测试日志/JSON不覆盖。运行器支持独立输出/XDG；不复制clone/assets/.godot/qa整目录或私人存档。
 - 独审驱动仅extends/output/runner路径适配后，另在实际生产50ff新跑293/293、exit0、75源码/模型/关卡hash不变、无warning/error；证据`tests/keyboard_navigation_audit/portable_smoke_results_final/ADAPTED_SMOKE_SUMMARY.json`。这次是适配烟测，不累计成586独立检查，也不覆盖原冻结293。portable桌面observer只做路径适配，未重跑GUI；生产图形证据仍来自上面明确列明的三图与原CUA旅程。
+
+## 四世界环境音：右声道权重修复
+- 精确六文件合入：生成源码只补右声道`/(k**.55)`、四环境音Ogg、清单仅四记录合并；其它14音频/完整记录、顶层元数据、bus增益、main50ff/模型/关卡不变。独立允许清单与SHA在`tests/ambient_stereo/candidate/`，生产范围证据`production/integration.json`。
+- 独立修正数值与原合成复构核对通过。四条均32000Hz、512000帧/16秒；最终右−左RMS dB分别2.510053、−0.016730、1.665650、−0.348303。有限样本无削波、|DC|<1e−4、接缝/内部最大差≤1.1、无≥100ms内部静音窗口；保留自然事件声像，不强制完全居中。不宣称试听、感知接缝消失或主观听感提升。
+- 全新Godot4.7.2候选导入与直接decode：18/18通过，10循环越过第一圈、8短效EOS检查通过。生产重导入exit0；实际游戏四世界播放/路由及正常finish_exit26检查、0失败、exit0、日志干净，证据`tests/ambient_stereo/production/graceful_runtime.json/.log`。Dummy/direct decode不代表音频设备/耳机监听、完整总线混音真峰值或跨平台认证。
+- 负向诊断：先前强制`--quit-after30 --headless-audio`虽exit0，却泄漏4ObjectDB/2resources，绕过游戏约0.3秒清理。该日志保存在historical/forced_quit_audio_cleanup_diagnostic.log，不记干净通过；不笼统宣称所有日志零ERROR。正常游戏退出的26检查另行验收。
+- 便携移植仅显式project/output与历史基线路径，数值逻辑/阈值不变；在最终生产实际重跑通过，exit0，`production/portable_verification.json/.log`，四RMS值与root一致；原源码哈希/路径diff在PORTABILITY.json及*.diff。未复制WAV母带、导入cache、XDG或私人存档。
+- 最近8056全关回归早于本次音频更新。74运行/模型输入未改，但本轮没有重跑音频更新后的8056，不能挪用旧结果作新全量通过。当前仅数值、引擎解码、生产正常路由与退出的有界证据；旧基线诊断明确归档historical，不被误读为仍未修复。

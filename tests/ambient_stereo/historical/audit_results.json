@@ -1,0 +1,1504 @@
+{
+  "timestamp_utc": "2026-10-23T17:53:43.487676+00:00",
+  "project": "[workspace]/fourfold_atelier",
+  "method": "Numerical analysis and source/import inspection only; no listening or player-experience claim.",
+  "versions": {
+    "numpy": "2.3.5",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "snapshot_sha256": {
+    "tools/generate_audio.py": "ae6e804780811fee52e3acf0e9cd250669dc2f250494256e8fd7e3f43eb81700",
+    "assets/audio/audio_validation.json": "7a439b9d58d791040d343886166106d730bc3ad897dd1a9b808ff20767e0c13d",
+    "default_bus_layout.tres": "fc9e3c3f0957c8f20bf30f19a34e38a510f8de1c3bc39fe030390f67841c7f1a",
+    "project.godot": "a0bca2ccbcdcc25b15b0f8ff59b84307e39c369f851b48f308568f607159850a",
+    "scripts/main.gd": "50ff777465b3b9320ca8fde967c264e6b2f733bbda3447bce80aed79b07bb4b8",
+    "assets/audio/blocked.wav": "40b0d68ce22889d5a3ba6420ee1a817ff944fb8cd9bf1638f82f927bf2a9c217",
+    "assets/audio/city.ogg": "9b6ebde17f77bb19527e3bcc227dfef3d7942f14c133ede5ff084d5fc2fcb89d",
+    "assets/audio/city_ambient.ogg": "9e2a339a0a8091f4c282a9ab08278e8c3480c237042d0fa4576b2bb04003b03d",
+    "assets/audio/confluence.ogg": "c2a08d4561bd21d7c821ee9bff370ad5f98c7212942f57270d934f4ebdbc62f8",
+    "assets/audio/goal.wav": "5c6cf413a4585161cbc03242bb9dc825360737cf2c3db24506b27c5762f0280f",
+    "assets/audio/heaven.ogg": "b048cdf6785d00f55a668ed7da9906be138f33f105fdce983c50ab2d5e33b072",
+    "assets/audio/heaven_ambient.ogg": "29e5389b97570c7a6b6e76b8dca067b32f4c1f2d5ee65613a7dd5611b89f7a3b",
+    "assets/audio/hub.ogg": "f60ba4a4c52483e6623af67b4b0b6b35d6e1506a19fb8b2efaa271316a6e0143",
+    "assets/audio/inferno.ogg": "6a5a26a3b3732a0d418115ff594e87d65e6c555edf90b52ca8a361058c98d01d",
+    "assets/audio/inferno_ambient.ogg": "7daf939e61f63143e9fdf908c3f0b1dd922461f77c90f8e3565535a6a86657b3",
+    "assets/audio/portal.wav": "2a2ef1bfceb44c3264c3ab91768f4eb4dea66e31713b953df8578cb787f06c9a",
+    "assets/audio/push.wav": "3c358e4d07cd7b2b5305a813fb4b74562d0ce9732c9dd69fcdf73472b2dcb9c9",
+    "assets/audio/rainforest.ogg": "3787a136cdcd3963f89611817426da1a2cf47473a81264139ecfe49eedd2a61f",
+    "assets/audio/rainforest_ambient.ogg": "dedcd86f179dd8109e33ec7b37a852fcd20fd70fa7e0cbffe7ec42d20f69be52",
+    "assets/audio/reset.wav": "a95ed741cdbc66577ff37cbff9c61d401b1e6de4c3ed7972a41468f10db35c21",
+    "assets/audio/step.wav": "c34da8389ee496c1325bdecc9b436246ac86e3d9ed338a17abfa24e2f8c0f87b",
+    "assets/audio/undo.wav": "c2e9461cccf3c650ad7877ff22bc653ae8c07458dfb1bce16de85e8e66476d59",
+    "assets/audio/win.wav": "c4b5cdc96d29aed417211a66292b25683d29930ad8f1ccf007be67216219665f"
+  },
+  "expected_asset_count": 18,
+  "actual_asset_count": 18,
+  "missing": [],
+  "unexpected": [],
+  "assets": {
+    "blocked": {
+      "frames": 7040,
+      "seconds": 0.22,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.449981689453125,
+      "peak_dbfs": -6.936103161438021,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.25045742026986795,
+      "rms_dbfs": -12.025321939938936,
+      "channel_rms": [
+        0.25045742026986795,
+        0.25045742026986795
+      ],
+      "right_minus_left_db": 0.0,
+      "channel_dc": [
+        -8.66976651278409e-09,
+        -8.66976651278409e-09
+      ],
+      "max_abs_dc_dbfs": -161.23985196875697,
+      "boundary_step": 0.0,
+      "boundary_step_dbfs": -300.0,
+      "max_internal_sample_step": 0.034454345703125,
+      "boundary_over_max_internal": 0.0,
+      "boundary_percentile_internal_steps": [
+        5.185395652791589,
+        5.185395652791589
+      ],
+      "first_frame": [
+        3.0517578125e-05,
+        3.0517578125e-05
+      ],
+      "last_frame": [
+        3.0517578125e-05,
+        3.0517578125e-05
+      ],
+      "min_10ms_rms_dbfs": -64.97258862956967,
+      "quiet_10ms_windows_below_minus60": 1,
+      "longest_quiet_window_run_ms": 10,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 1,
+      "stereo_correlation": 1.0,
+      "file": "blocked.wav",
+      "sha256": "40b0d68ce22889d5a3ba6420ee1a817ff944fb8cd9bf1638f82f927bf2a9c217",
+      "manifest_sha_match": true,
+      "codec": "pcm_s16le",
+      "bytes": 28204,
+      "decoded_sha256": "3b6b5653b7407821d742bfa2ba50fef0749aeaa3c5670dff1f4d9502e75fc70f",
+      "loop": false,
+      "runtime_total_gain_db": -10,
+      "runtime_rms_dbfs": -22.025321939938934,
+      "runtime_peak_dbfs": -16.93610316143802,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "force/8_bit=false\nforce/mono=false\nforce/max_rate=false\nforce/max_rate_hz=44100\nedit/trim=false\nedit/normalize=false\nedit/loop_mode=0\nedit/loop_begin=0\nedit/loop_end=-1\ncompress/mode=2",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/blocked.wav-4769128089d798a34f8ebe08d8540eed.sample"
+      }
+    },
+    "city": {
+      "frames": 1181538,
+      "seconds": 36.9230625,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.6217077970504761,
+      "peak_dbfs": -4.128273719236113,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.1351802158664444,
+      "rms_dbfs": -17.381737287524903,
+      "channel_rms": [
+        0.1276583451403358,
+        0.14230505415985095
+      ],
+      "right_minus_left_db": 0.943422292740119,
+      "channel_dc": [
+        2.7566860136734146e-05,
+        3.527256120399284e-05
+      ],
+      "max_abs_dc_dbfs": -89.0512600857109,
+      "boundary_step": 0.008609003387391567,
+      "boundary_step_dbfs": -41.3009424259981,
+      "max_internal_sample_step": 0.08972210809588432,
+      "boundary_over_max_internal": 0.09595186259100474,
+      "boundary_percentile_internal_steps": [
+        45.27805731009693,
+        65.07625237296844
+      ],
+      "first_frame": [
+        -0.014644509181380272,
+        -0.009107492864131927
+      ],
+      "last_frame": [
+        -0.010288444347679615,
+        -0.0004984894767403603
+      ],
+      "min_10ms_rms_dbfs": -29.257257879935487,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.9679284833685513,
+      "file": "city.ogg",
+      "sha256": "9b6ebde17f77bb19527e3bcc227dfef3d7942f14c133ede5ff084d5fc2fcb89d",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 432600,
+      "decoded_sha256": "a96d4e1525bb04b2dbaaa6b23d6f447c2a6ee6751aa1e09a8142b211e0534872",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -14,
+      "runtime_rms_dbfs": -31.381737287524903,
+      "runtime_peak_dbfs": -18.128273719236113,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/city.ogg-46dc7f0aa078dfa0a27573649c192e0f.oggvorbisstr"
+      }
+    },
+    "city_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.1504179835319519,
+      "peak_dbfs": -16.45400475337237,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.028755289805219388,
+      "rms_dbfs": -30.825645021646203,
+      "channel_rms": [
+        0.010043202614151975,
+        0.039406439382615184
+      ],
+      "right_minus_left_db": 11.873899421517224,
+      "channel_dc": [
+        4.260041598382891e-07,
+        -8.65784591345875e-06
+      ],
+      "max_abs_dc_dbfs": -101.25180295472633,
+      "boundary_step": 0.00031129317358136177,
+      "boundary_step_dbfs": -70.13660805910601,
+      "max_internal_sample_step": 0.007406618446111679,
+      "boundary_over_max_internal": 0.04202905493866559,
+      "boundary_percentile_internal_steps": [
+        55.716319758437024,
+        9.078923982273404
+      ],
+      "first_frame": [
+        0.006013010162860155,
+        0.054329294711351395
+      ],
+      "last_frame": [
+        0.006324303336441517,
+        0.05410933494567871
+      ],
+      "min_10ms_rms_dbfs": -37.76702183983464,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.167564895697569,
+      "file": "city_ambient.ogg",
+      "sha256": "9e2a339a0a8091f4c282a9ab08278e8c3480c237042d0fa4576b2bb04003b03d",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 251022,
+      "decoded_sha256": "b9724d3b8c4661d72d1f57f8a3075d0b39f8f15dee24ed609bc6e4cfa5c3984c",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -22,
+      "runtime_rms_dbfs": -52.8256450216462,
+      "runtime_peak_dbfs": -38.454004753372374,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/city_ambient.ogg-ae9e9bf4cb305ae433ea7e0b75307c55.oggvorbisstr"
+      }
+    },
+    "confluence": {
+      "frames": 1280000,
+      "seconds": 40.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.6186102628707886,
+      "peak_dbfs": -4.1716575847757875,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.12595450286761975,
+      "rms_dbfs": -17.995726037616084,
+      "channel_rms": [
+        0.12105019044552047,
+        0.13067488273716585
+      ],
+      "right_minus_left_db": 0.6645328401222819,
+      "channel_dc": [
+        2.8669242954404383e-05,
+        3.0832790350226704e-05
+      ],
+      "max_abs_dc_dbfs": -90.21974340175966,
+      "boundary_step": 0.0016797669231891632,
+      "boundary_step_dbfs": -55.49501949637762,
+      "max_internal_sample_step": 0.1098625436425209,
+      "boundary_over_max_internal": 0.015289714469518533,
+      "boundary_percentile_internal_steps": [
+        17.896107731334165,
+        9.528679319280718
+      ],
+      "first_frame": [
+        0.04898731783032417,
+        0.047061942517757416
+      ],
+      "last_frame": [
+        0.04730755090713501,
+        0.045978475362062454
+      ],
+      "min_10ms_rms_dbfs": -31.698059855184766,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.954326631940193,
+      "file": "confluence.ogg",
+      "sha256": "c2a08d4561bd21d7c821ee9bff370ad5f98c7212942f57270d934f4ebdbc62f8",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 409936,
+      "decoded_sha256": "7181d1d4aa5ba16cb37a74d3b70e04a39d03aa2ac270106ee7293cb9e7d45495",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -14,
+      "runtime_rms_dbfs": -31.995726037616084,
+      "runtime_peak_dbfs": -18.171657584775787,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/confluence.ogg-3a8eb87e4186048a98f8b4d364e96d19.oggvorbisstr"
+      }
+    },
+    "goal": {
+      "frames": 35200,
+      "seconds": 1.1,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.649993896484375,
+      "peak_dbfs": -3.7418144282383166,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.14470609550386407,
+      "rms_dbfs": -16.790263491242413,
+      "channel_rms": [
+        0.14470609550386407,
+        0.14470609550386407
+      ],
+      "right_minus_left_db": 0.0,
+      "channel_dc": [
+        5.201859907670454e-08,
+        5.201859907670454e-08
+      ],
+      "max_abs_dc_dbfs": -145.67682696108412,
+      "boundary_step": 0.0,
+      "boundary_step_dbfs": -300.0,
+      "max_internal_sample_step": 0.09906005859375,
+      "boundary_over_max_internal": 0.0,
+      "boundary_percentile_internal_steps": [
+        0.7727492258302793,
+        0.7727492258302793
+      ],
+      "first_frame": [
+        0.0,
+        0.0
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "min_10ms_rms_dbfs": -75.374853899784,
+      "quiet_10ms_windows_below_minus60": 2,
+      "longest_quiet_window_run_ms": 20,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 61,
+      "stereo_correlation": 1.0,
+      "file": "goal.wav",
+      "sha256": "5c6cf413a4585161cbc03242bb9dc825360737cf2c3db24506b27c5762f0280f",
+      "manifest_sha_match": true,
+      "codec": "pcm_s16le",
+      "bytes": 140844,
+      "decoded_sha256": "01d5b52858396d72d589082cc3165f74354675604a124a722a86877f05f4808c",
+      "loop": false,
+      "runtime_total_gain_db": -10,
+      "runtime_rms_dbfs": -26.790263491242413,
+      "runtime_peak_dbfs": -13.741814428238317,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "force/8_bit=false\nforce/mono=false\nforce/max_rate=false\nforce/max_rate_hz=44100\nedit/trim=false\nedit/normalize=false\nedit/loop_mode=0\nedit/loop_begin=0\nedit/loop_end=-1\ncompress/mode=2",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/goal.wav-415081e2acbd77eb907e00d378b10fb6.sample"
+      }
+    },
+    "heaven": {
+      "frames": 1536000,
+      "seconds": 48.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.6257099509239197,
+      "peak_dbfs": -4.072538764058856,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.12042679997563711,
+      "rms_dbfs": -18.385537074462853,
+      "channel_rms": [
+        0.11200079110465747,
+        0.12830062781095583
+      ],
+      "right_minus_left_db": 1.180153824697674,
+      "channel_dc": [
+        1.1255758110948477e-06,
+        1.9334814116017303e-06
+      ],
+      "max_abs_dc_dbfs": -114.27319997714649,
+      "boundary_step": 0.0038086464919615537,
+      "boundary_step_dbfs": -48.38458670963297,
+      "max_internal_sample_step": 0.10672810673713684,
+      "boundary_over_max_internal": 0.035685505987115076,
+      "boundary_percentile_internal_steps": [
+        25.890576751677575,
+        21.974818994022783
+      ],
+      "first_frame": [
+        -0.008272518403828144,
+        0.003351508639752865
+      ],
+      "last_frame": [
+        -0.011856201104819775,
+        -0.00045713785220868886
+      ],
+      "min_10ms_rms_dbfs": -31.048522544108728,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.9468357344649386,
+      "file": "heaven.ogg",
+      "sha256": "b048cdf6785d00f55a668ed7da9906be138f33f105fdce983c50ab2d5e33b072",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 401138,
+      "decoded_sha256": "32de8b8d3b9263b0d95924f066262cd3758d84992e35c70a3d99eccb8e50f093",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -14,
+      "runtime_rms_dbfs": -32.38553707446285,
+      "runtime_peak_dbfs": -18.072538764058855,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/heaven.ogg-431c0a1d52f739c95fbaabcc8785b250.oggvorbisstr"
+      }
+    },
+    "heaven_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.14915356040000916,
+      "peak_dbfs": -16.5273275052912,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.024855291536336827,
+      "rms_dbfs": -32.091622770089415,
+      "channel_rms": [
+        0.0072989500270204625,
+        0.03438453668752676
+      ],
+      "right_minus_left_db": 13.462055732410976,
+      "channel_dc": [
+        -1.1896559854703558e-06,
+        -4.34337916203642e-06
+      ],
+      "max_abs_dc_dbfs": -107.24344513141772,
+      "boundary_step": 0.00015227997209876776,
+      "boundary_step_dbfs": -76.34714422861025,
+      "max_internal_sample_step": 0.015491888858377934,
+      "boundary_over_max_internal": 0.009829658183767277,
+      "boundary_percentile_internal_steps": [
+        31.66529622128168,
+        6.61329416659017
+      ],
+      "first_frame": [
+        0.00191306637134403,
+        -0.022996459156274796
+      ],
+      "last_frame": [
+        0.0020653463434427977,
+        -0.022852018475532532
+      ],
+      "min_10ms_rms_dbfs": -40.9336359914607,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.0698285442096052,
+      "file": "heaven_ambient.ogg",
+      "sha256": "29e5389b97570c7a6b6e76b8dca067b32f4c1f2d5ee65613a7dd5611b89f7a3b",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 251974,
+      "decoded_sha256": "c1acd39ff9768bd69696208100f2668930224d02895c2bdd777aa10735ce460c",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -22,
+      "runtime_rms_dbfs": -54.091622770089415,
+      "runtime_peak_dbfs": -38.5273275052912,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/heaven_ambient.ogg-044f07abcf930422b9c3686c0dbcfa1d.oggvorbisstr"
+      }
+    },
+    "hub": {
+      "frames": 1462857,
+      "seconds": 45.71428125,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.6291491389274597,
+      "peak_dbfs": -4.024927868971199,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.14122807637911067,
+      "rms_dbfs": -17.001579124550673,
+      "channel_rms": [
+        0.13419211854176682,
+        0.14792976183572432
+      ],
+      "right_minus_left_db": 0.8465709745438592,
+      "channel_dc": [
+        3.467367810116471e-06,
+        4.484112409653361e-06
+      ],
+      "max_abs_dc_dbfs": -106.96647017720473,
+      "boundary_step": 0.0021461229771375656,
+      "boundary_step_dbfs": -53.36690791429777,
+      "max_internal_sample_step": 0.07163149118423462,
+      "boundary_over_max_internal": 0.029960607292367884,
+      "boundary_percentile_internal_steps": [
+        1.9651968478100375,
+        16.13986612489541
+      ],
+      "first_frame": [
+        0.0031707072630524635,
+        0.022183725610375404
+      ],
+      "last_frame": [
+        0.002954657655209303,
+        0.02003760263323784
+      ],
+      "min_10ms_rms_dbfs": -29.5488764161674,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.9545048552169539,
+      "file": "hub.ogg",
+      "sha256": "f60ba4a4c52483e6623af67b4b0b6b35d6e1506a19fb8b2efaa271316a6e0143",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 354231,
+      "decoded_sha256": "a509eec99f73f7fe32db4d0c7bcda213b0aa9b9df257344c451d2bb8ffa103c2",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -14,
+      "runtime_rms_dbfs": -31.001579124550673,
+      "runtime_peak_dbfs": -18.024927868971197,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/hub.ogg-5fc5cc3387208ec88e1d38dadf00feff.oggvorbisstr"
+      }
+    },
+    "inferno": {
+      "frames": 1137778,
+      "seconds": 35.5555625,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.6254984736442566,
+      "peak_dbfs": -4.075474914892778,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.13347798084659537,
+      "rms_dbfs": -17.49180743288525,
+      "channel_rms": [
+        0.12685579852280213,
+        0.13978679881491107
+      ],
+      "right_minus_left_db": 0.8431167204887592,
+      "channel_dc": [
+        3.246006394123363e-05,
+        3.1489139403742e-05
+      ],
+      "max_abs_dc_dbfs": -89.77301258033893,
+      "boundary_step": 0.0022374746622517705,
+      "boundary_step_dbfs": -53.00483748096991,
+      "max_internal_sample_step": 0.10462573170661926,
+      "boundary_over_max_internal": 0.02138551029230426,
+      "boundary_percentile_internal_steps": [
+        23.17642209325729,
+        8.20846264250376
+      ],
+      "first_frame": [
+        0.003047768259420991,
+        0.03354600816965103
+      ],
+      "last_frame": [
+        0.0008102935971692204,
+        0.03449754789471626
+      ],
+      "min_10ms_rms_dbfs": -30.41858284538574,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.9614312739202988,
+      "file": "inferno.ogg",
+      "sha256": "6a5a26a3b3732a0d418115ff594e87d65e6c555edf90b52ca8a361058c98d01d",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 355852,
+      "decoded_sha256": "d875f91e40aaae44b7b08c9924a23b69b23c1c271a22bb2f95e19a5447d0de80",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -14,
+      "runtime_rms_dbfs": -31.49180743288525,
+      "runtime_peak_dbfs": -18.07547491489278,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/inferno.ogg-b96f7ea25e128e78daee2ea6143124d2.oggvorbisstr"
+      }
+    },
+    "inferno_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.15403425693511963,
+      "peak_dbfs": -16.24765364257054,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.03452230064869641,
+      "rms_dbfs": -29.23800539138469,
+      "channel_rms": [
+        0.010841352325911529,
+        0.047602978519246136
+      ],
+      "right_minus_left_db": 12.851013377718859,
+      "channel_dc": [
+        4.071577545774308e-06,
+        -3.354020676888325e-05
+      ],
+      "max_abs_dc_dbfs": -89.48868528760508,
+      "boundary_step": 0.005164600908756256,
+      "boundary_step_dbfs": -45.73926465354154,
+      "max_internal_sample_step": 0.007594853639602661,
+      "boundary_over_max_internal": 0.6800132239317849,
+      "boundary_percentile_internal_steps": [
+        46.5045830167637,
+        97.60312031859438
+      ],
+      "first_frame": [
+        -0.007620325777679682,
+        0.04796481877565384
+      ],
+      "last_frame": [
+        -0.007895086891949177,
+        0.04280021786689758
+      ],
+      "min_10ms_rms_dbfs": -35.628732540741346,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.14132772217136405,
+      "file": "inferno_ambient.ogg",
+      "sha256": "7daf939e61f63143e9fdf908c3f0b1dd922461f77c90f8e3565535a6a86657b3",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 255107,
+      "decoded_sha256": "5cd308b005377e21bee6a132806701a4e353a4f29bc685ff98b2f78ead8a9ee1",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -22,
+      "runtime_rms_dbfs": -51.23800539138469,
+      "runtime_peak_dbfs": -38.24765364257054,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/inferno_ambient.ogg-ae63e00c1784b4a55c6a4e5a782015d7.oggvorbisstr"
+      }
+    },
+    "portal": {
+      "frames": 25600,
+      "seconds": 0.8,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.649993896484375,
+      "peak_dbfs": -3.7418144282383166,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.19834933427527685,
+      "rms_dbfs": -14.05138505641158,
+      "channel_rms": [
+        0.19834933427527685,
+        0.19834933427527685
+      ],
+      "right_minus_left_db": 0.0,
+      "channel_dc": [
+        9.179115295410156e-08,
+        9.179115295410156e-08
+      ],
+      "max_abs_dc_dbfs": -140.74398350198172,
+      "boundary_step": 0.0,
+      "boundary_step_dbfs": -300.0,
+      "max_internal_sample_step": 0.0975341796875,
+      "boundary_over_max_internal": 0.0,
+      "boundary_percentile_internal_steps": [
+        0.726590882456346,
+        0.726590882456346
+      ],
+      "first_frame": [
+        0.0,
+        0.0
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "min_10ms_rms_dbfs": -73.8425112564648,
+      "quiet_10ms_windows_below_minus60": 1,
+      "longest_quiet_window_run_ms": 10,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 55,
+      "stereo_correlation": 1.0,
+      "file": "portal.wav",
+      "sha256": "2a2ef1bfceb44c3264c3ab91768f4eb4dea66e31713b953df8578cb787f06c9a",
+      "manifest_sha_match": true,
+      "codec": "pcm_s16le",
+      "bytes": 102444,
+      "decoded_sha256": "c7f964358fc73e1432a6310339f3d13a4eb99d30d0bb0f25f73ec0ffcd466f5e",
+      "loop": false,
+      "runtime_total_gain_db": -10,
+      "runtime_rms_dbfs": -24.05138505641158,
+      "runtime_peak_dbfs": -13.741814428238317,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "force/8_bit=false\nforce/mono=false\nforce/max_rate=false\nforce/max_rate_hz=44100\nedit/trim=false\nedit/normalize=false\nedit/loop_mode=0\nedit/loop_begin=0\nedit/loop_end=-1\ncompress/mode=2",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/portal.wav-7a40435c819249b0c357deedd11069c7.sample"
+      }
+    },
+    "push": {
+      "frames": 10880,
+      "seconds": 0.34,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.649993896484375,
+      "peak_dbfs": -3.7418144282383166,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.21843344346363816,
+      "rms_dbfs": -13.213617355996409,
+      "channel_rms": [
+        0.21843344346363816,
+        0.21843344346363816
+      ],
+      "right_minus_left_db": 0.0,
+      "channel_dc": [
+        5.048864028033088e-08,
+        5.048864028033088e-08
+      ],
+      "max_abs_dc_dbfs": -145.93612650437146,
+      "boundary_step": 0.0,
+      "boundary_step_dbfs": -300.0,
+      "max_internal_sample_step": 0.053558349609375,
+      "boundary_over_max_internal": 0.0,
+      "boundary_percentile_internal_steps": [
+        2.785182461623311,
+        2.785182461623311
+      ],
+      "first_frame": [
+        -9.1552734375e-05,
+        -9.1552734375e-05
+      ],
+      "last_frame": [
+        -9.1552734375e-05,
+        -9.1552734375e-05
+      ],
+      "min_10ms_rms_dbfs": -65.44248049394697,
+      "quiet_10ms_windows_below_minus60": 1,
+      "longest_quiet_window_run_ms": 10,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 4,
+      "stereo_correlation": 1.0,
+      "file": "push.wav",
+      "sha256": "3c358e4d07cd7b2b5305a813fb4b74562d0ce9732c9dd69fcdf73472b2dcb9c9",
+      "manifest_sha_match": true,
+      "codec": "pcm_s16le",
+      "bytes": 43564,
+      "decoded_sha256": "a1faf17a53dc4feeabad17cb56c01fe4da8bcd5d2739a8a702952865e2e17ed9",
+      "loop": false,
+      "runtime_total_gain_db": -10,
+      "runtime_rms_dbfs": -23.21361735599641,
+      "runtime_peak_dbfs": -13.741814428238317,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "force/8_bit=false\nforce/mono=false\nforce/max_rate=false\nforce/max_rate_hz=44100\nedit/trim=false\nedit/normalize=false\nedit/loop_mode=0\nedit/loop_begin=0\nedit/loop_end=-1\ncompress/mode=2",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/push.wav-a1445db2746e003408eb9f4818d4708f.sample"
+      }
+    },
+    "rainforest": {
+      "frames": 1335652,
+      "seconds": 41.739125,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.6231274008750916,
+      "peak_dbfs": -4.108463020572994,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.14063103412190245,
+      "rms_dbfs": -17.038376593344836,
+      "channel_rms": [
+        0.13403642999094892,
+        0.1469299525341447
+      ],
+      "right_minus_left_db": 0.7977497249521255,
+      "channel_dc": [
+        5.057158472927575e-06,
+        5.771122786323892e-06
+      ],
+      "max_abs_dc_dbfs": -104.77479371100006,
+      "boundary_step": 0.01179727166891098,
+      "boundary_step_dbfs": -38.56436838970939,
+      "max_internal_sample_step": 0.13023574464023113,
+      "boundary_over_max_internal": 0.09058397678379522,
+      "boundary_percentile_internal_steps": [
+        58.73510370598307,
+        76.23466010207757
+      ],
+      "first_frame": [
+        0.00762875284999609,
+        0.04926015064120293
+      ],
+      "last_frame": [
+        0.0002094646915793419,
+        0.037462878972291946
+      ],
+      "min_10ms_rms_dbfs": -29.719389220614367,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.9449860119016966,
+      "file": "rainforest.ogg",
+      "sha256": "3787a136cdcd3963f89611817426da1a2cf47473a81264139ecfe49eedd2a61f",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 362357,
+      "decoded_sha256": "633a26ba8e4dffa63d0bf0d01aa1dfc71bfb55d2ca2bf968d038e4bcd7d53d12",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -14,
+      "runtime_rms_dbfs": -31.038376593344836,
+      "runtime_peak_dbfs": -18.108463020572994,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/rainforest.ogg-7345e629a6573a6c5a62e8b5c042575a.oggvorbisstr"
+      }
+    },
+    "rainforest_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.15114884078502655,
+      "peak_dbfs": -16.41190358468813,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.03249932945215786,
+      "rms_dbfs": -29.76251199164217,
+      "channel_rms": [
+        0.008773004309968684,
+        0.04511593094525932
+      ],
+      "right_minus_left_db": 14.223631610680961,
+      "channel_dc": [
+        5.405249516118315e-07,
+        -1.0363091422589399e-05
+      ],
+      "max_abs_dc_dbfs": -99.69021341016003,
+      "boundary_step": 0.0014261603355407715,
+      "boundary_step_dbfs": -56.91663292690269,
+      "max_internal_sample_step": 0.013995448825880885,
+      "boundary_over_max_internal": 0.10190172200147413,
+      "boundary_percentile_internal_steps": [
+        15.286357981167932,
+        43.64539774491747
+      ],
+      "first_frame": [
+        0.002200630959123373,
+        0.064427949488163
+      ],
+      "last_frame": [
+        0.0022956724278628826,
+        0.06585410982370377
+      ],
+      "min_10ms_rms_dbfs": -36.54933847904224,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.08283318222244823,
+      "file": "rainforest_ambient.ogg",
+      "sha256": "dedcd86f179dd8109e33ec7b37a852fcd20fd70fa7e0cbffe7ec42d20f69be52",
+      "manifest_sha_match": true,
+      "codec": "vorbis",
+      "bytes": 228821,
+      "decoded_sha256": "040e1e59d7017f3b610a5de3573dc2f6d982495f6416769bcfd7c8511385b35c",
+      "loop": true,
+      "manifest_source_frames_match": true,
+      "runtime_total_gain_db": -22,
+      "runtime_rms_dbfs": -51.76251199164217,
+      "runtime_peak_dbfs": -38.41190358468813,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "loop=false\nloop_offset=0\nbpm=0\nbeat_count=0\nbar_beats=4",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/rainforest_ambient.ogg-aab3cc53944180269ec2a6f72bfdea5c.oggvorbisstr"
+      }
+    },
+    "reset": {
+      "frames": 24000,
+      "seconds": 0.75,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.649993896484375,
+      "peak_dbfs": -3.7418144282383166,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.1809348751131706,
+      "rms_dbfs": -14.84955430023733,
+      "channel_rms": [
+        0.1809348751131706,
+        0.1809348751131706
+      ],
+      "right_minus_left_db": 0.0,
+      "channel_dc": [
+        2.9246012369791665e-08,
+        2.9246012369791665e-08
+      ],
+      "max_abs_dc_dbfs": -150.6786668130746,
+      "boundary_step": 0.0,
+      "boundary_step_dbfs": -300.0,
+      "max_internal_sample_step": 0.0694580078125,
+      "boundary_over_max_internal": 0.0,
+      "boundary_percentile_internal_steps": [
+        1.3875578149089547,
+        1.3875578149089547
+      ],
+      "first_frame": [
+        0.0,
+        0.0
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "min_10ms_rms_dbfs": -69.34859315624009,
+      "quiet_10ms_windows_below_minus60": 1,
+      "longest_quiet_window_run_ms": 10,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 70,
+      "stereo_correlation": 1.0,
+      "file": "reset.wav",
+      "sha256": "a95ed741cdbc66577ff37cbff9c61d401b1e6de4c3ed7972a41468f10db35c21",
+      "manifest_sha_match": true,
+      "codec": "pcm_s16le",
+      "bytes": 96044,
+      "decoded_sha256": "a621ee96fe9f6b795401b12f05deb7cda21a376614b8dcf02e24595613eaf13e",
+      "loop": false,
+      "runtime_total_gain_db": -10,
+      "runtime_rms_dbfs": -24.84955430023733,
+      "runtime_peak_dbfs": -13.741814428238317,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "force/8_bit=false\nforce/mono=false\nforce/max_rate=false\nforce/max_rate_hz=44100\nedit/trim=false\nedit/normalize=false\nedit/loop_mode=0\nedit/loop_begin=0\nedit/loop_end=-1\ncompress/mode=2",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/reset.wav-e52c35b2bf2fe68b4c00caf054184669.sample"
+      }
+    },
+    "step": {
+      "frames": 5760,
+      "seconds": 0.18,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.449981689453125,
+      "peak_dbfs": -6.936103161438021,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.16940113779659585,
+      "rms_dbfs": -15.42167354042222,
+      "channel_rms": [
+        0.16940113779659585,
+        0.16940113779659585
+      ],
+      "right_minus_left_db": 0.0,
+      "channel_dc": [
+        -2.5961134168836803e-07,
+        -2.5961134168836803e-07
+      ],
+      "max_abs_dc_dbfs": -131.71352676708833,
+      "boundary_step": 0.0,
+      "boundary_step_dbfs": -300.0,
+      "max_internal_sample_step": 0.062103271484375,
+      "boundary_over_max_internal": 0.0,
+      "boundary_percentile_internal_steps": [
+        6.702552526480292,
+        6.702552526480292
+      ],
+      "first_frame": [
+        -9.1552734375e-05,
+        -9.1552734375e-05
+      ],
+      "last_frame": [
+        -9.1552734375e-05,
+        -9.1552734375e-05
+      ],
+      "min_10ms_rms_dbfs": -65.71267116401035,
+      "quiet_10ms_windows_below_minus60": 1,
+      "longest_quiet_window_run_ms": 10,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 4,
+      "stereo_correlation": 1.0,
+      "file": "step.wav",
+      "sha256": "c34da8389ee496c1325bdecc9b436246ac86e3d9ed338a17abfa24e2f8c0f87b",
+      "manifest_sha_match": true,
+      "codec": "pcm_s16le",
+      "bytes": 23084,
+      "decoded_sha256": "2d7ea39d83281b832b6bef3157d119baf297ee8943f52aaf1ad91ed2c8debfd8",
+      "loop": false,
+      "runtime_total_gain_db": -10,
+      "runtime_rms_dbfs": -25.42167354042222,
+      "runtime_peak_dbfs": -16.93610316143802,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "force/8_bit=false\nforce/mono=false\nforce/max_rate=false\nforce/max_rate_hz=44100\nedit/trim=false\nedit/normalize=false\nedit/loop_mode=0\nedit/loop_begin=0\nedit/loop_end=-1\ncompress/mode=2",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/step.wav-7c1afa4d3561f9fd67ecf320728c68cf.sample"
+      }
+    },
+    "undo": {
+      "frames": 14400,
+      "seconds": 0.45,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.649993896484375,
+      "peak_dbfs": -3.7418144282383166,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.2256724148621574,
+      "rms_dbfs": -12.930430475982353,
+      "channel_rms": [
+        0.2256724148621574,
+        0.2256724148621574
+      ],
+      "right_minus_left_db": 0.0,
+      "channel_dc": [
+        -8.689032660590278e-08,
+        -8.689032660590278e-08
+      ],
+      "max_abs_dc_dbfs": -141.22057140670464,
+      "boundary_step": 0.0,
+      "boundary_step_dbfs": -300.0,
+      "max_internal_sample_step": 0.169677734375,
+      "boundary_over_max_internal": 0.0,
+      "boundary_percentile_internal_steps": [
+        1.5209389540940343,
+        1.5209389540940343
+      ],
+      "first_frame": [
+        0.0,
+        0.0
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "min_10ms_rms_dbfs": -70.86910994845664,
+      "quiet_10ms_windows_below_minus60": 1,
+      "longest_quiet_window_run_ms": 10,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 52,
+      "stereo_correlation": 0.9999999999999999,
+      "file": "undo.wav",
+      "sha256": "c2e9461cccf3c650ad7877ff22bc653ae8c07458dfb1bce16de85e8e66476d59",
+      "manifest_sha_match": true,
+      "codec": "pcm_s16le",
+      "bytes": 57644,
+      "decoded_sha256": "c32c44693120160d4663a4ddd0490d2e575ba8559799a7fa3f9a99026ba02060",
+      "loop": false,
+      "runtime_total_gain_db": -10,
+      "runtime_rms_dbfs": -22.930430475982355,
+      "runtime_peak_dbfs": -13.741814428238317,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "force/8_bit=false\nforce/mono=false\nforce/max_rate=false\nforce/max_rate_hz=44100\nedit/trim=false\nedit/normalize=false\nedit/loop_mode=0\nedit/loop_begin=0\nedit/loop_end=-1\ncompress/mode=2",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/undo.wav-f450c67f30df3526994c46609e2b5de0.sample"
+      }
+    },
+    "win": {
+      "frames": 83200,
+      "seconds": 2.6,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.649993896484375,
+      "peak_dbfs": -3.7418144282383166,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.13688308701516344,
+      "rms_dbfs": -17.273004181184046,
+      "channel_rms": [
+        0.13688308701516344,
+        0.13688308701516344
+      ],
+      "right_minus_left_db": 0.0,
+      "channel_dc": [
+        7.335956280048077e-10,
+        7.335956280048077e-10
+      ],
+      "max_abs_dc_dbfs": -182.6908653117292,
+      "boundary_step": 0.0,
+      "boundary_step_dbfs": -300.0,
+      "max_internal_sample_step": 0.148101806640625,
+      "boundary_over_max_internal": 0.0,
+      "boundary_percentile_internal_steps": [
+        0.46394788398899023,
+        0.46394788398899023
+      ],
+      "first_frame": [
+        0.0,
+        0.0
+      ],
+      "last_frame": [
+        0.0,
+        0.0
+      ],
+      "min_10ms_rms_dbfs": -86.52956489663651,
+      "quiet_10ms_windows_below_minus60": 3,
+      "longest_quiet_window_run_ms": 30,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 116,
+      "stereo_correlation": 0.9999999999999998,
+      "file": "win.wav",
+      "sha256": "c4b5cdc96d29aed417211a66292b25683d29930ad8f1ccf007be67216219665f",
+      "manifest_sha_match": true,
+      "codec": "pcm_s16le",
+      "bytes": 332844,
+      "decoded_sha256": "1f468dafcba4d5d7a75c6df9657dc535b91f99083084be29790be4e8b9503dfe",
+      "loop": false,
+      "runtime_total_gain_db": -10,
+      "runtime_rms_dbfs": -27.273004181184046,
+      "runtime_peak_dbfs": -13.741814428238317,
+      "import": {
+        "sidecar_exists": true,
+        "cached_resource_exists": true,
+        "settings": "force/8_bit=false\nforce/mono=false\nforce/max_rate=false\nforce/max_rate_hz=44100\nedit/trim=false\nedit/normalize=false\nedit/loop_mode=0\nedit/loop_begin=0\nedit/loop_end=-1\ncompress/mode=2",
+        "cached_resource_absolute": "[workspace]/fourfold_atelier/.godot/imported/win.wav-ed9b591a574a24bf30e29686ed78ad6a.sample"
+      }
+    }
+  },
+  "synthesis_reproduction": {
+    "hub": {
+      "source_wav_sha256": "1122ec03b222138656856a74907fd3edd0d42874de42ccc74281c7358a53c83e",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 1462857,
+      "delivered_frames": 1462857,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "heaven": {
+      "source_wav_sha256": "00287609fc8fb2ae4c8d2537e19c1e42f05f2502e7caad9da688a32ca1388791",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 1536000,
+      "delivered_frames": 1536000,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "inferno": {
+      "source_wav_sha256": "93143f5b1348effa5ab54e0aa421fef8ef207baee6c717e1ff6f79ddf75e506d",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 1137778,
+      "delivered_frames": 1137778,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "rainforest": {
+      "source_wav_sha256": "60d956e04c523b98da59bec94a664fe9a37beba28d3da42905a15d4fa2da2cd0",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 1335652,
+      "delivered_frames": 1335652,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "city": {
+      "source_wav_sha256": "72d30f798d22e6f48f997e6b1cdad9838819d0567d1fcb0ba9c859743796d55c",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 1181538,
+      "delivered_frames": 1181538,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "confluence": {
+      "source_wav_sha256": "c3460d17edb60e2b79a012bce0c4f2472ffccc527bc78b98ad1bf64d2da89701",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 1280000,
+      "delivered_frames": 1280000,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "heaven_ambient": {
+      "source_wav_sha256": "9cc534c84bbe58f3fb87b270377faf2da8243a5d4e4c52055f32e23f0cab5d0f",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 512000,
+      "delivered_frames": 512000,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "inferno_ambient": {
+      "source_wav_sha256": "1eb8ef5e6d69711c4936dd15ba6bb78dad4664a38b26ae4c1114f43e3681bdf6",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 512000,
+      "delivered_frames": 512000,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "rainforest_ambient": {
+      "source_wav_sha256": "1acfa0b3a9954a58e1ec504a8b3e054ef9bf9dfec72130b76eb93eff51ca6a1b",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 512000,
+      "delivered_frames": 512000,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "city_ambient": {
+      "source_wav_sha256": "11f4521a49b06f5ac70c66651f13f01746f793b3f7e2b83764b28b9a2c7fc19b",
+      "source_wav_hash_match": true,
+      "reencoded_frames": 512000,
+      "delivered_frames": 512000,
+      "reencoded_decoded_bit_identical": true,
+      "reencoded_decoded_max_abs_difference": 0.0
+    },
+    "step": {
+      "source_wav_sha256": "c34da8389ee496c1325bdecc9b436246ac86e3d9ed338a17abfa24e2f8c0f87b",
+      "source_wav_hash_match": true,
+      "delivered_wav_byte_identical": true
+    },
+    "push": {
+      "source_wav_sha256": "3c358e4d07cd7b2b5305a813fb4b74562d0ce9732c9dd69fcdf73472b2dcb9c9",
+      "source_wav_hash_match": true,
+      "delivered_wav_byte_identical": true
+    },
+    "undo": {
+      "source_wav_sha256": "c2e9461cccf3c650ad7877ff22bc653ae8c07458dfb1bce16de85e8e66476d59",
+      "source_wav_hash_match": true,
+      "delivered_wav_byte_identical": true
+    },
+    "reset": {
+      "source_wav_sha256": "a95ed741cdbc66577ff37cbff9c61d401b1e6de4c3ed7972a41468f10db35c21",
+      "source_wav_hash_match": true,
+      "delivered_wav_byte_identical": true
+    },
+    "goal": {
+      "source_wav_sha256": "5c6cf413a4585161cbc03242bb9dc825360737cf2c3db24506b27c5762f0280f",
+      "source_wav_hash_match": true,
+      "delivered_wav_byte_identical": true
+    },
+    "win": {
+      "source_wav_sha256": "c4b5cdc96d29aed417211a66292b25683d29930ad8f1ccf007be67216219665f",
+      "source_wav_hash_match": true,
+      "delivered_wav_byte_identical": true
+    },
+    "blocked": {
+      "source_wav_sha256": "40b0d68ce22889d5a3ba6420ee1a817ff944fb8cd9bf1638f82f927bf2a9c217",
+      "source_wav_hash_match": true,
+      "delivered_wav_byte_identical": true
+    },
+    "portal": {
+      "source_wav_sha256": "2a2ef1bfceb44c3264c3ab91768f4eb4dea66e31713b953df8578cb787f06c9a",
+      "source_wav_hash_match": true,
+      "delivered_wav_byte_identical": true
+    }
+  },
+  "hypothetical_ambient_change": {
+    "heaven_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.15039710700511932,
+      "peak_dbfs": -16.45521035252008,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.015119909545438794,
+      "rms_dbfs": -36.409016139704576,
+      "channel_rms": [
+        0.012819006339207416,
+        0.017114216482208983
+      ],
+      "right_minus_left_db": 2.5100531778023756,
+      "channel_dc": [
+        -6.733462507794232e-07,
+        -2.5554150588786297e-06
+      ],
+      "max_abs_dc_dbfs": -111.85077100537339,
+      "boundary_step": 0.00014111556811258197,
+      "boundary_step_dbfs": -77.00850142974315,
+      "max_internal_sample_step": 0.04838315770030022,
+      "boundary_over_max_internal": 0.0029166258429574625,
+      "boundary_percentile_internal_steps": [
+        16.00960158125309,
+        54.43584850751662
+      ],
+      "first_frame": [
+        -0.0010771398665383458,
+        -0.0009436762193217874
+      ],
+      "last_frame": [
+        -0.0011048313463106751,
+        -0.0008025606512092054
+      ],
+      "min_10ms_rms_dbfs": -66.3118491054892,
+      "quiet_10ms_windows_below_minus60": 35,
+      "longest_quiet_window_run_ms": 10,
+      "longest_interior_quiet_run_ms": 10,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.010446170109669353
+    },
+    "inferno_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.15032947063446045,
+      "peak_dbfs": -16.45911743692598,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.04223318428573565,
+      "rms_dbfs": -27.486923450550833,
+      "channel_rms": [
+        0.04227383658908544,
+        0.04219249281407347
+      ],
+      "right_minus_left_db": -0.016729583868822607,
+      "channel_dc": [
+        -8.196876062906266e-05,
+        -8.067365196333398e-05
+      ],
+      "max_abs_dc_dbfs": -81.72703262827328,
+      "boundary_step": 0.0046540070325136185,
+      "boundary_step_dbfs": -46.643459296019934,
+      "max_internal_sample_step": 0.016303602140396833,
+      "boundary_over_max_internal": 0.28545882023102037,
+      "boundary_percentile_internal_steps": [
+        99.49667870445059,
+        99.85273408737126
+      ],
+      "first_frame": [
+        0.0035992737393826246,
+        0.004200618714094162
+      ],
+      "last_frame": [
+        0.0014086792943999171,
+        -0.0004533883184194565
+      ],
+      "min_10ms_rms_dbfs": -35.21363942350722,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.9980023796775841
+    },
+    "rainforest_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.14948447048664093,
+      "peak_dbfs": -16.508078452111917,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.015606853437883365,
+      "rms_dbfs": -36.13369296029079,
+      "channel_rms": [
+        0.014050948848346963,
+        0.017021121729320063
+      ],
+      "right_minus_left_db": 1.6656504978501963,
+      "channel_dc": [
+        2.566152040305303e-06,
+        2.01081812449988e-07
+      ],
+      "max_abs_dc_dbfs": -111.81435231924138,
+      "boundary_step": 0.00031979335471987724,
+      "boundary_step_dbfs": -69.90261130200665,
+      "max_internal_sample_step": 0.05956469662487507,
+      "boundary_over_max_internal": 0.005368840485058845,
+      "boundary_percentile_internal_steps": [
+        50.393067173959324,
+        57.7081205236729
+      ],
+      "first_frame": [
+        0.003063690382987261,
+        0.0036116517148911953
+      ],
+      "last_frame": [
+        0.0033058240078389645,
+        0.0039314450696110725
+      ],
+      "min_10ms_rms_dbfs": -52.19037852457484,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.5603229596223266
+    },
+    "city_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.15088361501693726,
+      "peak_dbfs": -16.427158384619016,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.030538375538506825,
+      "rms_dbfs": -30.303081371411402,
+      "channel_rms": [
+        0.03114432745657221,
+        0.029920154216513003
+      ],
+      "right_minus_left_db": -0.34830258617938953,
+      "channel_dc": [
+        2.5723724054778074e-06,
+        2.4283579168499215e-06
+      ],
+      "max_abs_dc_dbfs": -111.79332315713137,
+      "boundary_step": 0.0006799715338274837,
+      "boundary_step_dbfs": -63.35018536235809,
+      "max_internal_sample_step": 0.01398811861872673,
+      "boundary_over_max_internal": 0.048610649677874845,
+      "boundary_percentile_internal_steps": [
+        38.16687141967074,
+        71.07552944439345
+      ],
+      "first_frame": [
+        -0.000876131874974817,
+        -0.0009354421636089683
+      ],
+      "last_frame": [
+        -0.0006211148574948311,
+        -0.001615413697436452
+      ],
+      "min_10ms_rms_dbfs": -40.845837915624514,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.983719889838189
+    }
+  },
+  "duplicate_files": [],
+  "duplicate_decoded_audio": [],
+  "level_world_counts": {
+    "heaven": 50,
+    "inferno": 50,
+    "rainforest": 50,
+    "city": 50,
+    "confluence": 4
+  },
+  "all_level_world_music_present": true,
+  "runtime": {
+    "routing": {
+      "music": "Music -10 dB -> Master -4 dB",
+      "ambience": "player -8 dB -> Music -10 dB -> Master -4 dB",
+      "effects": "Effects -6 dB -> Master -4 dB"
+    },
+    "effect_player_pool": 6,
+    "missing_music_behavior": "No replacement or fallback; previous stream continues if one exists. Every current world has a track.",
+    "missing_ambience_behavior": "Existing ambience stops; absent new ambience stays silent. Hub/confluence have no ambient file by design (generator produces four named world ambiences).",
+    "missing_effect_behavior": "Returns silently. All eight explicitly requested action names exist.",
+    "ogg_import_loop_default": false,
+    "ogg_runtime_loop_enabled": true,
+    "wav_import_compress_mode": 2,
+    "source_waveform_vs_imported_note": "ffmpeg checks source delivery assets. Imported Godot resources are separately present; source WAV PCM is not proof of post-import decoding.",
+    "three_effects_plus_music_ambience_peak_bound": 0.7544054861090433,
+    "six_effect_pool_peak_sum_bound": 1.3710438395385445,
+    "peak_bounds_note": "Conservative aligned individual peaks; not an observed mix or evidence of clipping. Six-effect ceiling alone does not prove a reachable same-phase maximum."
+  },
+  "source_audio_and_config_unchanged": true,
+  "changed_during_audit": []
+}

@@ -1,0 +1,37 @@
+DECODE blocked.wav: peak -6.94 dBFS; RMS -12.03; R-L +0.00 dB
+DECODE city.ogg: peak -4.13 dBFS; RMS -17.38; R-L +0.94 dB
+DECODE city_ambient.ogg: peak -16.45 dBFS; RMS -30.83; R-L +11.87 dB
+DECODE confluence.ogg: peak -4.17 dBFS; RMS -18.00; R-L +0.66 dB
+DECODE goal.wav: peak -3.74 dBFS; RMS -16.79; R-L +0.00 dB
+DECODE heaven.ogg: peak -4.07 dBFS; RMS -18.39; R-L +1.18 dB
+DECODE heaven_ambient.ogg: peak -16.53 dBFS; RMS -32.09; R-L +13.46 dB
+DECODE hub.ogg: peak -4.02 dBFS; RMS -17.00; R-L +0.85 dB
+DECODE inferno.ogg: peak -4.08 dBFS; RMS -17.49; R-L +0.84 dB
+DECODE inferno_ambient.ogg: peak -16.25 dBFS; RMS -29.24; R-L +12.85 dB
+DECODE portal.wav: peak -3.74 dBFS; RMS -14.05; R-L +0.00 dB
+DECODE push.wav: peak -3.74 dBFS; RMS -13.21; R-L +0.00 dB
+DECODE rainforest.ogg: peak -4.11 dBFS; RMS -17.04; R-L +0.80 dB
+DECODE rainforest_ambient.ogg: peak -16.41 dBFS; RMS -29.76; R-L +14.22 dB
+DECODE reset.wav: peak -3.74 dBFS; RMS -14.85; R-L +0.00 dB
+DECODE step.wav: peak -6.94 dBFS; RMS -15.42; R-L +0.00 dB
+DECODE undo.wav: peak -3.74 dBFS; RMS -12.93; R-L +0.00 dB
+DECODE win.wav: peak -3.74 dBFS; RMS -17.27; R-L +0.00 dB
+REPRODUCE hub: {'source_wav_sha256': '1122ec03b222138656856a74907fd3edd0d42874de42ccc74281c7358a53c83e', 'source_wav_hash_match': True, 'reencoded_frames': 1462857, 'delivered_frames': 1462857, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE heaven: {'source_wav_sha256': '00287609fc8fb2ae4c8d2537e19c1e42f05f2502e7caad9da688a32ca1388791', 'source_wav_hash_match': True, 'reencoded_frames': 1536000, 'delivered_frames': 1536000, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE inferno: {'source_wav_sha256': '93143f5b1348effa5ab54e0aa421fef8ef207baee6c717e1ff6f79ddf75e506d', 'source_wav_hash_match': True, 'reencoded_frames': 1137778, 'delivered_frames': 1137778, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE rainforest: {'source_wav_sha256': '60d956e04c523b98da59bec94a664fe9a37beba28d3da42905a15d4fa2da2cd0', 'source_wav_hash_match': True, 'reencoded_frames': 1335652, 'delivered_frames': 1335652, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE city: {'source_wav_sha256': '72d30f798d22e6f48f997e6b1cdad9838819d0567d1fcb0ba9c859743796d55c', 'source_wav_hash_match': True, 'reencoded_frames': 1181538, 'delivered_frames': 1181538, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE confluence: {'source_wav_sha256': 'c3460d17edb60e2b79a012bce0c4f2472ffccc527bc78b98ad1bf64d2da89701', 'source_wav_hash_match': True, 'reencoded_frames': 1280000, 'delivered_frames': 1280000, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE heaven_ambient: {'source_wav_sha256': '9cc534c84bbe58f3fb87b270377faf2da8243a5d4e4c52055f32e23f0cab5d0f', 'source_wav_hash_match': True, 'reencoded_frames': 512000, 'delivered_frames': 512000, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE inferno_ambient: {'source_wav_sha256': '1eb8ef5e6d69711c4936dd15ba6bb78dad4664a38b26ae4c1114f43e3681bdf6', 'source_wav_hash_match': True, 'reencoded_frames': 512000, 'delivered_frames': 512000, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE rainforest_ambient: {'source_wav_sha256': '1acfa0b3a9954a58e1ec504a8b3e054ef9bf9dfec72130b76eb93eff51ca6a1b', 'source_wav_hash_match': True, 'reencoded_frames': 512000, 'delivered_frames': 512000, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE city_ambient: {'source_wav_sha256': '11f4521a49b06f5ac70c66651f13f01746f793b3f7e2b83764b28b9a2c7fc19b', 'source_wav_hash_match': True, 'reencoded_frames': 512000, 'delivered_frames': 512000, 'reencoded_decoded_bit_identical': True, 'reencoded_decoded_max_abs_difference': 0.0}
+REPRODUCE step: {'source_wav_sha256': 'c34da8389ee496c1325bdecc9b436246ac86e3d9ed338a17abfa24e2f8c0f87b', 'source_wav_hash_match': True, 'delivered_wav_byte_identical': True}
+REPRODUCE push: {'source_wav_sha256': '3c358e4d07cd7b2b5305a813fb4b74562d0ce9732c9dd69fcdf73472b2dcb9c9', 'source_wav_hash_match': True, 'delivered_wav_byte_identical': True}
+REPRODUCE undo: {'source_wav_sha256': 'c2e9461cccf3c650ad7877ff22bc653ae8c07458dfb1bce16de85e8e66476d59', 'source_wav_hash_match': True, 'delivered_wav_byte_identical': True}
+REPRODUCE reset: {'source_wav_sha256': 'a95ed741cdbc66577ff37cbff9c61d401b1e6de4c3ed7972a41468f10db35c21', 'source_wav_hash_match': True, 'delivered_wav_byte_identical': True}
+REPRODUCE goal: {'source_wav_sha256': '5c6cf413a4585161cbc03242bb9dc825360737cf2c3db24506b27c5762f0280f', 'source_wav_hash_match': True, 'delivered_wav_byte_identical': True}
+REPRODUCE win: {'source_wav_sha256': 'c4b5cdc96d29aed417211a66292b25683d29930ad8f1ccf007be67216219665f', 'source_wav_hash_match': True, 'delivered_wav_byte_identical': True}
+REPRODUCE blocked: {'source_wav_sha256': '40b0d68ce22889d5a3ba6420ee1a817ff944fb8cd9bf1638f82f927bf2a9c217', 'source_wav_hash_match': True, 'delivered_wav_byte_identical': True}
+REPRODUCE portal: {'source_wav_sha256': '2a2ef1bfceb44c3264c3ab91768f4eb4dea66e31713b953df8578cb787f06c9a', 'source_wav_hash_match': True, 'delivered_wav_byte_identical': True}
+Reports: [workspace]/fourfold_next/audio_review/AUDIO_AUDIT.md [workspace]/fourfold_next/audio_review/audit_results.json

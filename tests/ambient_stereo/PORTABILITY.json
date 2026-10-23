@@ -1,0 +1,12 @@
+{
+  "audit_audio.py": {
+    "original_sha256": "7bdbd7b75dfba981b1e9acee1e22538b99eb28c81f1bbb8f4bc2de2696579186",
+    "adapted_sha256": "34ece0465d62073aa1e723ee489de78a2830ce7d8d7296731f719745d1864527",
+    "scope": "Explicit project/output paths; baseline relocated historical; no DSP thresholds changed"
+  },
+  "verify_ambient_candidate.py": {
+    "original_sha256": "f4f97fad37cccb93b53ed8e617c15792754778825312234ba89050216bd1ae6f",
+    "adapted_sha256": "4ac6c25885dd22c33325524cf921c76a3e944aa3169ea731338924c6d5d83372",
+    "scope": "Explicit project/output paths; baseline relocated historical; no DSP thresholds changed"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "assets": {
+    "city": {
+      "length": 16.0,
+      "loop": true,
+      "playing": true,
+      "resource": "res://assets/audio/city_ambient.ogg"
+    },
+    "heaven": {
+      "length": 16.0,
+      "loop": true,
+      "playing": true,
+      "resource": "res://assets/audio/heaven_ambient.ogg"
+    },
+    "inferno": {
+      "length": 16.0,
+      "loop": true,
+      "playing": true,
+      "resource": "res://assets/audio/inferno_ambient.ogg"
+    },
+    "rainforest": {
+      "length": 16.0,
+      "loop": true,
+      "playing": true,
+      "resource": "res://assets/audio/rainforest_ambient.ogg"
+    }
+  },
+  "checks": 26,
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "scope": "Actual game AudioStreamPlayer routing with headless audio enabled, then graceful finish_exit. Not subjective listening or a recorded bus mix."
+}

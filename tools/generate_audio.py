@@ -134,7 +134,7 @@ def ambient(name):
     for k in range(640,6400,97):
         phase=RNG.uniform(0,2*np.pi); f=k/duration
         y=np.sin(2*np.pi*f*t+phase)/(k**.55)
-        out[:,0]+=y*.015; out[:,1]+=np.sin(2*np.pi*f*t+phase+.14)*.015
+        out[:,0]+=y*.015; out[:,1]+=np.sin(2*np.pi*f*t+phase+.14)/(k**.55)*.015
     if name=='heaven':
         for sec,midi in [(2,86),(7.5,81),(11,88)]: add(out,tone(midi,3,'bell'),sec,.08,pan=math.sin(sec))
     elif name=='inferno':

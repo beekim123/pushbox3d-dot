@@ -1,0 +1,280 @@
+{
+  "project": "[workspace]/fourfold_atelier",
+  "scope": "Read-only selective ambience regression; no subjective listening claim",
+  "corrected_formula_present": false,
+  "unchanged_other_assets": {
+    "hub": true,
+    "heaven": true,
+    "inferno": true,
+    "rainforest": true,
+    "city": true,
+    "confluence": true,
+    "step": true,
+    "push": true,
+    "undo": true,
+    "reset": true,
+    "goal": true,
+    "win": true,
+    "blocked": true,
+    "portal": true
+  },
+  "ambiences": {
+    "heaven_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.14915356040000916,
+      "peak_dbfs": -16.5273275052912,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.024855291536336827,
+      "rms_dbfs": -32.091622770089415,
+      "channel_rms": [
+        0.0072989500270204625,
+        0.03438453668752676
+      ],
+      "right_minus_left_db": 13.462055732410976,
+      "channel_dc": [
+        -1.1896559854703558e-06,
+        -4.34337916203642e-06
+      ],
+      "max_abs_dc_dbfs": -107.24344513141772,
+      "boundary_step": 0.00015227997209876776,
+      "boundary_step_dbfs": -76.34714422861025,
+      "max_internal_sample_step": 0.015491888858377934,
+      "boundary_over_max_internal": 0.009829658183767277,
+      "boundary_percentile_internal_steps": [
+        31.66529622128168,
+        6.61329416659017
+      ],
+      "first_frame": [
+        0.00191306637134403,
+        -0.022996459156274796
+      ],
+      "last_frame": [
+        0.0020653463434427977,
+        -0.022852018475532532
+      ],
+      "min_10ms_rms_dbfs": -40.9336359914607,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.0698285442096052,
+      "codec_metadata": {
+        "codec": "vorbis",
+        "sample_rate": 32000,
+        "channels": 2
+      },
+      "delivery_sha_matches_manifest": true,
+      "source_wav_sha_matches_manifest": true,
+      "decoded_equals_corrected_synthesis": true,
+      "same_frames_as_baseline": true,
+      "checks": {
+        "duration_16s_stereo_32k": true,
+        "finite_and_peak_below_point99": true,
+        "dc_below_1e_minus4": true,
+        "seam_ratio_below_1point1": true,
+        "no_100ms_interior_silence": true,
+        "stereo_rms_imbalance_within_3db": false,
+        "manifest_and_reproduction": true
+      }
+    },
+    "inferno_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.15403425693511963,
+      "peak_dbfs": -16.24765364257054,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.03452230064869641,
+      "rms_dbfs": -29.23800539138469,
+      "channel_rms": [
+        0.010841352325911529,
+        0.047602978519246136
+      ],
+      "right_minus_left_db": 12.851013377718859,
+      "channel_dc": [
+        4.071577545774308e-06,
+        -3.354020676888325e-05
+      ],
+      "max_abs_dc_dbfs": -89.48868528760508,
+      "boundary_step": 0.005164600908756256,
+      "boundary_step_dbfs": -45.73926465354154,
+      "max_internal_sample_step": 0.007594853639602661,
+      "boundary_over_max_internal": 0.6800132239317849,
+      "boundary_percentile_internal_steps": [
+        46.5045830167637,
+        97.60312031859438
+      ],
+      "first_frame": [
+        -0.007620325777679682,
+        0.04796481877565384
+      ],
+      "last_frame": [
+        -0.007895086891949177,
+        0.04280021786689758
+      ],
+      "min_10ms_rms_dbfs": -35.628732540741346,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.14132772217136405,
+      "codec_metadata": {
+        "codec": "vorbis",
+        "sample_rate": 32000,
+        "channels": 2
+      },
+      "delivery_sha_matches_manifest": true,
+      "source_wav_sha_matches_manifest": true,
+      "decoded_equals_corrected_synthesis": true,
+      "same_frames_as_baseline": true,
+      "checks": {
+        "duration_16s_stereo_32k": true,
+        "finite_and_peak_below_point99": true,
+        "dc_below_1e_minus4": true,
+        "seam_ratio_below_1point1": true,
+        "no_100ms_interior_silence": true,
+        "stereo_rms_imbalance_within_3db": false,
+        "manifest_and_reproduction": true
+      }
+    },
+    "rainforest_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.15114884078502655,
+      "peak_dbfs": -16.41190358468813,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.03249932945215786,
+      "rms_dbfs": -29.76251199164217,
+      "channel_rms": [
+        0.008773004309968684,
+        0.04511593094525932
+      ],
+      "right_minus_left_db": 14.223631610680961,
+      "channel_dc": [
+        5.405249516118315e-07,
+        -1.0363091422589399e-05
+      ],
+      "max_abs_dc_dbfs": -99.69021341016003,
+      "boundary_step": 0.0014261603355407715,
+      "boundary_step_dbfs": -56.91663292690269,
+      "max_internal_sample_step": 0.013995448825880885,
+      "boundary_over_max_internal": 0.10190172200147413,
+      "boundary_percentile_internal_steps": [
+        15.286357981167932,
+        43.64539774491747
+      ],
+      "first_frame": [
+        0.002200630959123373,
+        0.064427949488163
+      ],
+      "last_frame": [
+        0.0022956724278628826,
+        0.06585410982370377
+      ],
+      "min_10ms_rms_dbfs": -36.54933847904224,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.08283318222244823,
+      "codec_metadata": {
+        "codec": "vorbis",
+        "sample_rate": 32000,
+        "channels": 2
+      },
+      "delivery_sha_matches_manifest": true,
+      "source_wav_sha_matches_manifest": true,
+      "decoded_equals_corrected_synthesis": true,
+      "same_frames_as_baseline": true,
+      "checks": {
+        "duration_16s_stereo_32k": true,
+        "finite_and_peak_below_point99": true,
+        "dc_below_1e_minus4": true,
+        "seam_ratio_below_1point1": true,
+        "no_100ms_interior_silence": true,
+        "stereo_rms_imbalance_within_3db": false,
+        "manifest_and_reproduction": true
+      }
+    },
+    "city_ambient": {
+      "frames": 512000,
+      "seconds": 16.0,
+      "sample_rate": 32000,
+      "channels": 2,
+      "finite": true,
+      "peak": 0.1504179835319519,
+      "peak_dbfs": -16.45400475337237,
+      "clipped_samples_ge_1": 0,
+      "near_full_scale_samples_ge_0_99": 0,
+      "rms": 0.028755289805219388,
+      "rms_dbfs": -30.825645021646203,
+      "channel_rms": [
+        0.010043202614151975,
+        0.039406439382615184
+      ],
+      "right_minus_left_db": 11.873899421517224,
+      "channel_dc": [
+        4.260041598382891e-07,
+        -8.65784591345875e-06
+      ],
+      "max_abs_dc_dbfs": -101.25180295472633,
+      "boundary_step": 0.00031129317358136177,
+      "boundary_step_dbfs": -70.13660805910601,
+      "max_internal_sample_step": 0.007406618446111679,
+      "boundary_over_max_internal": 0.04202905493866559,
+      "boundary_percentile_internal_steps": [
+        55.716319758437024,
+        9.078923982273404
+      ],
+      "first_frame": [
+        0.006013010162860155,
+        0.054329294711351395
+      ],
+      "last_frame": [
+        0.006324303336441517,
+        0.05410933494567871
+      ],
+      "min_10ms_rms_dbfs": -37.76702183983464,
+      "quiet_10ms_windows_below_minus60": 0,
+      "longest_quiet_window_run_ms": 0,
+      "longest_interior_quiet_run_ms": 0,
+      "interior_quiet_runs_100ms_or_more": [],
+      "longest_exact_zero_run_frames": 0,
+      "stereo_correlation": 0.167564895697569,
+      "codec_metadata": {
+        "codec": "vorbis",
+        "sample_rate": 32000,
+        "channels": 2
+      },
+      "delivery_sha_matches_manifest": true,
+      "source_wav_sha_matches_manifest": true,
+      "decoded_equals_corrected_synthesis": true,
+      "same_frames_as_baseline": true,
+      "checks": {
+        "duration_16s_stereo_32k": true,
+        "finite_and_peak_below_point99": true,
+        "dc_below_1e_minus4": true,
+        "seam_ratio_below_1point1": true,
+        "no_100ms_interior_silence": true,
+        "stereo_rms_imbalance_within_3db": false,
+        "manifest_and_reproduction": true
+      }
+    }
+  },
+  "passed": false
+}
