@@ -1,0 +1,18 @@
+# Godot generated import/editor cache and local exports
+.godot/
+export.cfg
+export_credentials.cfg
+# Blender autosaves; editable source .blend files are tracked
+*.blend1
+*.blend2
+# Python/cache/temp delivery bundles
+__pycache__/
+*.py[cod]
+*.zip
+*.tmp
+# Local game/editor state
+user_data/
+/save*.json
+*.log
+# Screenshot drafts are not archival deliverables
+screenshots/v2/*draft*

@@ -1,0 +1,27 @@
+; Original game, all 3D assets authored in Blender.
+config_version=5
+
+[application]
+config/name="四隅织途 · Loom of Four Horizons"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1440
+window/size/viewport_height=900
+window/size/window_width_override=1440
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+window/vsync/vsync_mode=0
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+anti_aliasing/quality/msaa_3d=2
+lights_and_shadows/directional_shadow/size=2048
+
+environment/defaults/default_clear_color=Color(0.08, 0.11, 0.18, 1)
+
+[audio]
+default_bus_layout="res://default_bus_layout.tres"
