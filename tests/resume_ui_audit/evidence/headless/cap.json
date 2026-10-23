@@ -1,0 +1,15 @@
+{
+  "checks": 9,
+  "display": "headless",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "max_tick_ms": 3.072,
+  "mode": "live_history_cap",
+  "observations": [],
+  "passed": true,
+  "pid": 250,
+  "recovery_run": true,
+  "requested_budget_ms": 2,
+  "scope": "8193 valid Reset fixture snapshots in live main; not 8193 manual native actions.",
+  "userdata": "/tmp/fourfold-recovery-audit-vidy8h9p/cap/data/godot/app_userdata/四隅织途 · Loom of Four Horizons"
+}

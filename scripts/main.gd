@@ -4,6 +4,7 @@ const UI = preload("res://scripts/ui_kit.gd")
 const RULES = preload("res://scripts/puzzle_rules.gd")
 const HINTS = preload("res://scripts/hint_solver.gd")
 const HINT_OVERLAY = preload("res://scripts/hint_overlay.gd")
+const RESUME = preload("res://scripts/resume_controller.gd")
 const VIEW = preload("res://scripts/world_view.gd")
 const SAVE_PATH := "user://fourfold_progress.json"
 const WORLD_ORDER := ["heaven","inferno","rainforest","city","confluence"]
@@ -14,6 +15,17 @@ const WORLD_INFO := {
 	"city":{"name":"层桥山城","en":"THE TERRACED CITY","tag":"右 · 压住通途","rule":"箱子压住金色踏板时，所有吊桥开启。最后一块踏板不能让桥上的人或箱悬空。","short":"箱子压板开桥。撤走最后一箱前，桥上必须没有人和箱。","story":"送货员熟悉每一段阶梯。城市的门，往往在另一层打开。"},
 	"confluence":{"name":"四隅交织","en":"THE FINAL WEAVE","tag":"中 · 把远方织在一起","rule":"四种法则开始交织。观察风纹、焰环、叶箭与踏板，逐一建立通路。","short":"混合规则沿用四个世界的法则，没有隐藏的第五种规则。","story":"四根线并不是四条路。把它们织在一起，家才会亮起来。"}
 }
+var resume_session
+var resume_button: Button
+var resume_label: Label
+var exit_pending:=false
+var exit_waiting:=false
+var exit_started_ms:=0
+var exit_timeout_ms:=1500
+var exit_previous_mode:="title"
+var exit_status: Label
+var shutting_down:=false
+var require_direction_release:=false
 var hints = HINTS.new()
 var hint_request: int = -1
 var hint_active := false
@@ -84,6 +96,7 @@ func _ready() -> void:
 	ui.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	canvas.add_child(ui)
 	setup_audio()
+	if not qa_mode: initialize_resume()
 	show_title()
 	if args.has("capture-world"):
 		var w := str(args["capture-world"])
@@ -231,6 +244,8 @@ func clear_ui(w: String) -> void:
 	status_label = null
 	stat_label = null
 	progress_label = null
+	resume_button=null
+	resume_label=null
 	ui.theme = UI.theme(VIEW.THEMES.get(w,VIEW.THEMES.hub).accent)
 
 func panel_at(pos: Vector2, size: Vector2) -> PanelContainer:
@@ -282,13 +297,20 @@ func show_title() -> void:
 	play_music("hub")
 	var p := panel_at(Vector2(70,160),Vector2(440,520))
 	var v := VBoxContainer.new()
-	v.add_theme_constant_override("separation",22)
+	v.add_theme_constant_override("separation",14)
 	p.add_child(v)
 	v.add_child(UI.label("一枚线轴，四段远方",18,Color("dfbd83")))
 	v.add_child(UI.label("四隅织途",52))
 	v.add_child(UI.label("LOOM OF FOUR HORIZONS",16,UI.MUTED))
 	v.add_child(wrapped("青丝断在云上，红丝落入地底。\n沿着四条路，把世界重新织回家。",390,21))
 	v.add_child(UI.button("走进织机中庭  →",show_hub,Vector2(390,62)))
+	if resume_session:
+		resume_button=UI.button("继续此前保存",continue_checkpoint,Vector2(390,52))
+		resume_button.set_meta("resume_action","continue")
+		v.add_child(resume_button)
+		resume_label=wrapped("",390,16)
+		v.add_child(resume_label)
+		refresh_resume_ui()
 	v.add_child(UI.button("操作与法则",show_help,Vector2(390,50)))
 	v.add_child(UI.label("原创 3D 推箱解谜 · %d 道旅途谜题" % levels.size(),16,UI.MUTED))
 	if not progress_writable: v.add_child(wrapped("原存档已保护，本次进度暂不写入。",390,16))
@@ -427,6 +449,7 @@ func start_level(entry: Dictionary) -> void:
 	clear_ui(active_world)
 	play_music(active_world)
 	build_game_hud()
+	mark_resume_changed()
 
 func build_game_hud() -> void:
 	var info: Dictionary=WORLD_INFO[active_world]
@@ -445,11 +468,15 @@ func build_game_hud() -> void:
 	footer.add_child(row)
 	var copy:=VBoxContainer.new()
 	copy.size_flags_horizontal=Control.SIZE_EXPAND_FILL
-	copy.add_theme_constant_override("separation",5)
+	copy.add_theme_constant_override("separation",1)
 	row.add_child(copy)
 	copy.add_child(UI.label(info.short,18))
 	status_label=UI.label("方向键 / WASD 移动 · 所有行动与重置都可以撤销",15,UI.MUTED)
 	copy.add_child(status_label)
+	if resume_session:
+		resume_label=UI.label("",13,UI.MUTED)
+		copy.add_child(resume_label)
+		refresh_resume_ui()
 	row.add_child(hint_button("线索 H",toggle_hint,"toggle",Vector2(98,46)))
 	row.add_child(UI.button("撤销 Z",undo_move,Vector2(124,46)))
 	row.add_child(UI.button("重置 R",reset_level,Vector2(112,46)))
@@ -467,7 +494,7 @@ func cancel_motion() -> void:
 	hold_timer=0.0
 
 func attempt_move(direction: String) -> void:
-	if moving or mode!="level" or modal: return
+	if exit_pending or moving or mode!="level" or modal: return
 	var next:=RULES.step(level,state,direction)
 	if next.is_empty():
 		sfx("blocked")
@@ -477,6 +504,7 @@ func attempt_move(direction: String) -> void:
 	history.append(state.duplicate(true))
 	var old:=state
 	state=next
+	mark_resume_changed()
 	moving=true
 	if status_label: status_label.text="方向键 / WASD 移动 · Z 撤销 · R 重置（也可撤销）"
 	sfx("push" if state.pushed else "step")
@@ -498,10 +526,11 @@ func attempt_move(direction: String) -> void:
 	update_hud()
 
 func undo_move() -> void:
-	if mode!="level" or history.is_empty(): return
+	if exit_pending or mode!="level" or history.is_empty(): return
 	cancel_motion()
 	close_modal()
 	state=history.pop_back()
+	mark_resume_changed()
 	win_shown=false
 	world.sync_state(state)
 	sfx("undo")
@@ -509,11 +538,12 @@ func undo_move() -> void:
 	if status_label: status_label.text="已撤销。你可以一直回到这道谜题的最初。"
 
 func reset_level() -> void:
-	if mode!="level": return
+	if exit_pending or mode!="level": return
 	cancel_motion()
 	close_modal()
 	history.append(state.duplicate(true))
 	state=RULES.initial(level)
+	mark_resume_changed()
 	win_shown=false
 	world.sync_state(state)
 	sfx("reset")
@@ -586,7 +616,9 @@ func toggle_mute() -> void:
 		if n.text.begins_with("声音"): n.text="声音  "+("关" if progress.muted else "开")
 
 func _unhandled_key_input(event: InputEvent) -> void:
+	if exit_pending: return
 	if not event is InputEventKey or not event.pressed or event.echo: return
+	if require_direction_release and event.keycode in [KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_W,KEY_A,KEY_S,KEY_D]: return
 	match event.keycode:
 		KEY_F1: show_help()
 		KEY_M: toggle_mute()
@@ -611,7 +643,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	get_viewport().set_input_as_handled()
 
 func request_direction(direction: String) -> void:
-	if mode!="level" or modal: return
+	if require_direction_release or mode!="level" or modal: return
 	hold_timer=0.24
 	if moving:
 		pending_direction=direction
@@ -619,7 +651,20 @@ func request_direction(direction: String) -> void:
 		attempt_move(direction)
 
 func _process(delta: float) -> void:
+	var frame_budget_start:=Time.get_ticks_usec()
 	pump_hints()
+	if resume_session and not shutting_down and not exit_waiting:
+		var resume_budget:=maxf(0.0,2.0-(Time.get_ticks_usec()-frame_budget_start)/1000.0)
+		if exit_pending and not exit_waiting: resume_budget=8.0
+		if resume_budget>0.0: resume_session.tick(level,state,history,resume_budget,exit_pending and not exit_waiting)
+		refresh_resume_ui()
+		if exit_pending and not exit_waiting: poll_resume_exit()
+	if exit_pending: return
+	if require_direction_release:
+		var held:=false
+		for key in [KEY_UP,KEY_DOWN,KEY_LEFT,KEY_RIGHT,KEY_W,KEY_A,KEY_S,KEY_D]:
+			if Input.is_physical_key_pressed(key): held=true
+		if not held: require_direction_release=false
 	frame_count+=1
 	if frame_count==10: frame_sample_start=Time.get_ticks_usec()
 	elif frame_count>10: frame_sample_count+=1
@@ -627,7 +672,7 @@ func _process(delta: float) -> void:
 		capture_pending=false
 		capture.call_deferred()
 	hold_timer-=delta
-	if mode=="level" and not moving and not modal:
+	if mode=="level" and not moving and not modal and not require_direction_release:
 		if hold_timer<=0.0:
 			var dir:=""
 			if Input.is_physical_key_pressed(KEY_UP) or Input.is_physical_key_pressed(KEY_W): dir="U"
@@ -837,6 +882,8 @@ func stop_audio() -> void:
 			player.stream=null
 
 func finish_exit(code: int) -> void:
+	shutting_down=true
+	if resume_session: resume_session.cancel_jobs()
 	mode="exiting"
 	cancel_motion()
 	stop_audio()
@@ -849,8 +896,7 @@ func finish_exit(code: int) -> void:
 
 func _notification(what: int) -> void:
 	if what==NOTIFICATION_WM_CLOSE_REQUEST:
-		save_progress()
-		finish_exit(0)
+		request_exit()
 
 func _exit_tree() -> void:
 	stop_audio()
@@ -971,3 +1017,82 @@ func hint_button(text: String, callback: Callable, action: String, dimensions: V
 	var button:=UI.button(text,callback,dimensions)
 	button.set_meta("hint_action",action)
 	return button
+
+func initialize_resume(directory: String="user://fourfold_resume") -> void:
+	if resume_session: resume_session.cancel_jobs()
+	resume_session=RESUME.new(RULES,levels,directory)
+
+func mark_resume_changed() -> void:
+	if resume_session:
+		resume_session.changed()
+		refresh_resume_ui()
+
+func refresh_resume_ui() -> void:
+	if not resume_session: return
+	if is_instance_valid(resume_button): resume_button.disabled=resume_session.candidate.is_empty() or resume_session.reading
+	if is_instance_valid(resume_label):
+		resume_label.text=resume_session.message()
+		if mode=="title" and (not resume_session.candidate.is_empty() or not resume_session.invalidated_summary.is_empty()): resume_label.text+="\n此前保存："+resume_session.checkpoint_summary()
+
+func continue_checkpoint() -> void:
+	if not resume_session or exit_pending: return
+	var restored: Dictionary=resume_session.take_checkpoint()
+	if restored.is_empty():
+		refresh_resume_ui()
+		return
+	var entry: Dictionary=resume_session.catalog[str(restored.level_id)]
+	# start_level's transient new-game revision is immediately superseded below.
+	start_level(entry)
+	state=restored.state
+	history=restored.history
+	cancel_motion()
+	world.sync_state(state)
+	update_hud()
+	resume_session.saved_revision=resume_session.revision
+	resume_session.dirty=false
+	resume_session.status="available"
+	refresh_resume_ui()
+	if RULES.won(level,state): complete_level()
+
+func request_exit() -> void:
+	if shutting_down: return
+	if exit_pending: return
+	save_progress()
+	if not resume_session or not resume_session.dirty:
+		finish_exit(0)
+		return
+	exit_pending=true
+	exit_waiting=false
+	exit_previous_mode=mode
+	exit_started_ms=Time.get_ticks_msec()
+	cancel_motion()
+	var content:=open_modal("保存这一小段旅途","正在核对完整局面与撤销记录，请稍候。")
+	exit_status=wrapped("不会保存动画或尚未执行的方向输入。",510,18)
+	content.add_child(exit_status)
+
+func poll_resume_exit() -> void:
+	if not resume_session.dirty:
+		finish_exit(0)
+		return
+	if not resume_session.paused and resume_session.status!="not_saved" and Time.get_ticks_msec()-exit_started_ms<exit_timeout_ms: return
+	exit_waiting=true
+	resume_session.cancel_jobs()
+	refresh_resume_ui()
+	var content:=open_modal("本次局面尚未保存",resume_session.message())
+	content.add_child(wrapped("此前保存："+resume_session.checkpoint_summary()+"\n这不是当前最新局面。上次核对记录仅供参考，不保证仍可恢复。未保存变化在退出后会丢失；本次完整撤销仍保留在当前游戏里。",510,19))
+	var back:=UI.button("返回游戏，不丢掉当前局面",cancel_exit,Vector2(510,54))
+	back.set_meta("resume_action","cancel_exit")
+	content.add_child(back)
+	var leave:=UI.button("仍然退出（本次未保存）",func(): finish_exit(0),Vector2(510,50))
+	leave.set_meta("resume_action","exit_unsaved")
+	content.add_child(leave)
+
+func cancel_exit() -> void:
+	require_direction_release=true
+	exit_pending=false
+	exit_waiting=false
+	close_modal()
+	mode=exit_previous_mode
+	# A stopped win tween must still reconcile its committed logical endpoint.
+	if mode=="level" and RULES.won(level,state) and not win_shown: complete_level()
+	refresh_resume_ui()

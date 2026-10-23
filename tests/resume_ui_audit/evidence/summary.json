@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "fresh_headless_checks": 13114,
+  "fresh_native_checks": 50,
+  "headline_checks": 13164,
+  "headline_processes": 12,
+  "portable_repeat_checks_not_added": 13114,
+  "linux_only": true,
+  "macOS_verified": false,
+  "runtime_source_unchanged": true,
+  "report": "fourfold_atelier/tests/resume_ui_audit/REPORT.md",
+  "final_headless": "results/20261023T142752.177145Z/manifest.json",
+  "native": "results/native_20261023T142253Z/manifest.json",
+  "portable": "export_verification/20261023T143043.131243Z/manifest.json",
+  "checksums_not_authentication": true,
+  "soft_budget_not_hard_realtime": true,
+  "persisted_history_limit": 8192,
+  "old_results_reused": false
+}

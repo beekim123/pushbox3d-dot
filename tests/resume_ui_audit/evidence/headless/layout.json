@@ -1,0 +1,17 @@
+{
+  "checks": 12854,
+  "display": "headless",
+  "engine": "4.7.2-stable (official)",
+  "failures": [],
+  "levels": 204,
+  "mode": "layout",
+  "observations": [],
+  "overlaps": [],
+  "passed": true,
+  "pid": 362,
+  "projected_legal_cells": 30184,
+  "recovery_run": true,
+  "scope": "Actual camera/footer geometry at1440x900. Text fixtures, not fabricated successful save operations.",
+  "templates": 1428,
+  "userdata": "/tmp/fourfold-recovery-audit-vidy8h9p/layout/data/godot/app_userdata/四隅织途 · Loom of Four Horizons"
+}

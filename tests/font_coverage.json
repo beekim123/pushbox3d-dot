@@ -1,5 +1,6 @@
 {
   "engine": "4.7.2-stable (official)",
+  "explicit_symbols": "↑↓←→…✓·",
   "font_families": [
     "Noto Sans CJK JP"
   ],
@@ -9,7 +10,9 @@
   "scope": "Cloud font coverage only; macOS font fallback not tested.",
   "source_files": [
     "scripts/main.gd",
+    "scripts/resume_controller.gd",
     "assets/levels.json"
   ],
-  "unique_cjk_characters": 343
+  "total_checked": 536,
+  "unique_cjk_characters": 529
 }

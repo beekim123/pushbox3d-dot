@@ -1,5 +1,40 @@
 # Cloud interruption and recovery record
 
+## Recovered and revalidated — 2026-10-23 14:39 UTC
+
+The complete delivered project backup has been restored in the recovered cloud workspace.
+The four interrupted resume source modules were reconstructed and matched against their
+original SHA-256 records before testing. The production store has only the recorded
+preload-path adaptation (`a90ec821...`); the isolated original store remains preserved on
+`work/resume-rebuild`. WIP source/evidence history is retained through `e327ae2b12d3432c5a4b0f6ce2fd1b74e185b08e`.
+
+This main checkpoint now includes the recovered production Continue/save integration,
+not the isolated WIP project. Fresh post-recovery evidence: 13,164 independent assertions
+(13,114 headless + 50 native, 12 processes); the portable headless repeat passed 13,114
+again and is not added to that headline. Original gameplay with audio was rerun across
+204 levels: 7,852 checks, zero failures, exit 0. All runtime source locks match. See
+`tests/resume_ui_audit/REPORT.md` and `tests/results/resume_recovered_handlers.json`.
+
+The following 13:25 note is retained as dated history. Its statements that resume was
+not in the checkout apply to `f421db6716fbac6ae1de326b02758e9376ac48a4` and earlier, not
+this recovered source checkpoint. The 13:12 interrupted regression remains uncompleted
+historical evidence and is never counted as a pass. Earlier delivered V2+hints archives
+still do not include the later resume feature.
+
+Remote assets remain incomplete: 47/62 GLBs, 0/18 audio, 0/6 Blender sources; six native
+resume screenshots and other PNG evidence are not uploaded. New binary uploads remain
+paused under the unresolved confirmation. These local tests do not make this remote
+checkout a complete runnable distribution, prove macOS support, or establish user art
+acceptance. No blocked content was sent through a substitute route.
+
+Repository-only documentation banners/this dated note were added after the author's
+final document snapshot. Original `evidence/final_hashes.json` is retained unchanged;
+`RESUME_SOURCE_CHECKPOINT.json` records source-to-repository document transformations.
+
+---
+
+## Historical interruption note (2026-10-23 13:25 UTC)
+
 Updated: 2026-10-23 13:25 UTC. This is a recovery note, not a release or test-pass declaration.
 
 ## Verified remote checkpoint

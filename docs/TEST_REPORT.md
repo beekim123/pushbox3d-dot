@@ -40,3 +40,19 @@ CPU软件渲染器的结果不等于Mac/GPU性能；未做真人谜题盲测、�
 - 独立最终冻结审计：2,610 断言通过（767 行为、53 真实 Input.parse_input_event 事件分发、156 已分配搜索节点的在途中断/替换、1,634 布局断言）。9 类取消动作与未回收完立即重请求均无旧结果残留；8 个生产源/数据资源跑前后 hash 完全一致。0 SCRIPT ERROR/ERROR。独立布局额外覆盖 8,624 个潜在箱子/站位标记采样，重叠 0。证据：`tests/hint_ui_audit_summary.json`、`tests/hint_ui_audit_suite.log`、`tests/hint_ui_audit_report.md`。
 
 补充：2026-10-23 12:38 UTC 前完成提示接入与教学文案修订后的全 204 关真实处理器回归，带混音、隔离存档，7,852 项检查全部通过，完成 204，退出码 0；日志无 ERROR / WARNING / 资源泄漏。源文件指纹与独立提示审计一致。证据：`tests/results/hints_full_handlers.log` 及对应 JSON。没有将 12 帧截图的冷启动指标当作性能基准。macOS、Retina、真实 GPU、手柄仍未验证；2ms 是分帧软预算，不保证硬实时。
+
+## 续玩恢复后增量验证（2026-10-23，14:15 UTC以后）
+
+云端故障前13:12启动的续玩后全204回归没有终态证据，**不计通过**。旧续玩截图/临时日志不作为本轮验收。main/controller逐字重建且与故障前SHA一致，codec原封恢复，store仅preload路径改变；这只是恢复真实性，不替代测试。
+
+- 新环境编辑器导入无ERROR，正常headless标题启动30帧退出0，无错误/资源泄漏。`tests/results/resume_rebuild_import.log`、`resume_boot.log`。
+- 新跑真实处理器自测13断言通过：逻辑移动、重置、标题真实Continue、完整撤销、revision取消、保存失败确认及返回。`tests/results/resume_integration.log`。
+- 新跑真实解锁按钮17项通过；永久进度V2迁移15断言通过，负向故障注入的预期复制失败ERROR单列，不伪称该负向日志零ERROR。`tests/results/resume_unlock.log`、`resume_progress_regression.log`。
+- 最新main/controller/关卡文案的实际Linux字体链529汉字与7符号无缺字。`tests/results/resume_font.log`。
+- 恢复后的最新生产全204关真实处理器已重新完成：7,852检查、0失败、完成204、退出0；全部scripts、levels和project跑前后SHA一致，日志无ERROR/WARNING/资源泄漏。证据 `tests/results/resume_recovered_handlers.log` 与 `.json`。该项带混音但QA关闭sidecar，只证明原玩法无回归，不替代续玩功能验收。13:12中断的旧回归仍不计通过。
+- 恢复后的独立续玩最终新跑：9项headless进程阶段共13,114检查通过，加真实X11原生3进程50检查通过，共13,164，0失败；不累计前面的重复轮。生产与独审隔离副本输入SHA一致，运行前后稳定。证据 `tests/resume_ui_audit/evidence/headless/manifest.json`、`evidence/native/manifest.json` 及分项JSON/日志。
+- Headless分项：57生命周期（包括两项已修缺陷）、138存储保护、10节流/并行软预算、9历史上限、12,854布局、15失败退出事件分发、7跨进程写入、12重启恢复、12未来永久进度保护。8192完整历史保留、8193拒绝不截断运行undo；具体范围以分项证据为准。
+- 原生窗口真实操作完成：Continue→三次Z（含Undo Reset）→Alt+F4；外部future字节替换已验证记录后，移动/退出触发保护，实际点Return回到未保存局面，再次退出并点StillExit。三个进程均exit0，外部原字节完全保留。不是把调用handler的headless测试冒充鼠标键盘验收。
+- 已亲看并复制当前原生窗口截图 `screenshots/v2/resume_title.png`、`resume_restored.png`、`resume_exit_failure.png`。退出图为真实外部文件冲突，显示“不是当前最新局面”“不保证仍可恢复”，无文本裁切；不是停机前的假注入旧图。
+- 原两项阻塞缺陷新环境回归通过：取消启动旧档reader会明确只读暂停，不再静默停存；磁盘token变更清可恢复candidate，禁用Continue，只保留参考摘要，不承诺旧档可恢复。
+- 独审测得本轮共享2ms软预算调用峰9.616ms，8192历史tick峰3.072ms；这些是实际测量而非硬实时保证。当前Linux/X11结果不证明macOS/Retina/硬断电持久性或极限历史完全无卡顿。
