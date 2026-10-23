@@ -1,0 +1,36 @@
+{
+  "recorded_utc": "2026-10-23T16:41:00Z",
+  "delivered_project_utc": "2026-10-23T16:40:00Z",
+  "source_commit": "32b74c8ee98d91ec4fa815020bc5686596a1c3a7",
+  "full_archive": {
+    "filename": "Loom_Orchard_Polish_Full_4.7.2.zip",
+    "bytes": 62829250,
+    "sha256": "1fc0cb70d6c99079cd681532c89038db5cef7cd75c6bc5643c3f4900558c823d",
+    "status": "retained complete archive; not attached in chat"
+  },
+  "project_archive": {
+    "filename": "Loom_Orchard_Polish_Project_4.7.2.zip",
+    "bytes": 17129083,
+    "sha256": "edcf32745af33e2f009fa70c84f130567c08f0c2afe881862dd9093f06070a1d",
+    "status": "delivery accepted; does not establish user download or aesthetic acceptance",
+    "contents": "runtime, assets, Blender sources and code; excludes screenshots"
+  },
+  "fresh_project_zip_validation": {
+    "extracted_fresh": true,
+    "godot_version": "4.7.2",
+    "import_exit": 0,
+    "qa_boot_frames": 30,
+    "qa_boot_exit": 0,
+    "error_warning_leak_lines": [],
+    "scope": "New package import and boot validation, not a new full gameplay regression."
+  },
+  "remote_checkout": {
+    "glb": "47/62",
+    "audio": "0/18",
+    "blend": "0/6",
+    "new_orchard_models_uploaded": false,
+    "complete_playable": false
+  },
+  "public_download_url": null,
+  "historical_docs": "Earlier 16:36 pending-package statements describe the source checkpoint before this delivery; prior recovery records are preserved."
+}

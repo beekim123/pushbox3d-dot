@@ -1,6 +1,6 @@
 # 四隅织途 · Loom of Four Horizons
 
-> **远程资源仍不完整：47/62 GLB、0/18 音频、0/6 Blender 源文件。本阶段只发布桃冠生成源码与审查文本；三种新桃树 GLB 未上传，checkout 仍保留旧模型字节，不能展示本阶段新美术，也不是完整可运行发行包。查看新桃冠需之后发布的完整阶段包，或在完整本地资源基线上用 Blender 重建（不保证 GLB 字节相同）。PNG 也未齐备；本说明不表示新阶段包已经交付。详见 [迁入状态](docs/REPOSITORY_STATUS.md)。**
+> **远程资源仍不完整：47/62 GLB、0/18 音频、0/6 Blender 源文件；新桃冠 GLB 未上传，此 checkout 仍保留旧模型，不是完整可运行发行包。完整本地资源已另以 `Loom_Orchard_Polish_Project_4.7.2.zip` 于 2026-10-23 16:40 UTC 交付（[文件校验与范围](docs/RELEASE_ARCHIVES.json)，无公开下载链接）。PNG 也未齐备；独立包交付不代表 GitHub 二进制迁入已完成或用户审美验收。详见 [迁入状态](docs/REPOSITORY_STATUS.md)。**
 
 原创 Godot 4.7.2 三维推箱解谜游戏。主仓库：https://github.com/beekim123/pushbox3d-dot
 

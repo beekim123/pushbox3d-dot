@@ -72,3 +72,15 @@
 - 14:57 续玩归档不含后续 F1、完成态修复或本桃冠阶段；新完整包尚待发布，本文不宣称已经交付。早期 pending 记录保留时序，后续 `production_verification.json` 与独审补记记录其闭环。
 - WIP 历史保留在 `work/orchard-canopy` 的 `00ffdf6e9e3304ca9106c3b56e474b95cc88b5aa`；生产树不含原型副本。冻结与包装差异见 `docs/ORCHARD_SOURCE_CHECKPOINT.json`。
 
+
+
+## 完整桃冠阶段包已交付 — 2026-10-23 16:40 UTC
+
+本次包的源码检查点为 `32b74c8ee98d91ec4fa815020bc5686596a1c3a7`，包含日光、续玩、F1、完成态修复与新的本地桃冠资源。
+- 保留完整归档：`Loom_Orchard_Polish_Full_4.7.2.zip`，62,829,250 字节，SHA256 `1fc0cb70d6c99079cd681532c89038db5cef7cd75c6bc5643c3f4900558c823d`。
+- 已接受交付的工程包：`Loom_Orchard_Polish_Project_4.7.2.zip`，17,129,083 字节，SHA256 `edcf32745af33e2f009fa70c84f130567c08f0c2afe881862dd9093f06070a1d`。包含运行资产、Blender 源文件和代码，不含截图。交付接受不表示用户已下载或审美验收。
+- 从 Project ZIP 全新解包，以 Godot 4.7.2 导入和 30 帧 QA 启动均退出 0；检查日志没有 error/warning/leak 行。这是新的包导入/启动验证，不重复宣称一次全玩法回归。
+- **此独立交付不等于 GitHub 补齐资产。远端仍为 47/62 GLB、0/18 音频、0/6 .blend；三种新桃树模型、.blend 与 PNG 未上传，旧 GLB 保持原字节。** 包含完整资源的阶段包与部分迁入 checkout 必须区分。
+- 无公开下载 URL；这里仅记公开文件名与校验值，不包含私有 Library/消息 ID。机器可读记录见 `docs/RELEASE_ARCHIVES.json`。
+- 下方 16:36 “尚待发布”与更早记录保留为当时状态；由本条新记录更新当前交付事实，不删除历史。
+
