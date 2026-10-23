@@ -1,5 +1,5 @@
---- fourfold_next/inferno_wall/wall_review/baseline_rebuild_worlds_v2.py	2026-10-23 09:26:49.930024233 -0700
-+++ fourfold_next/inferno_wall/blender/rebuild_worlds_v2.py	2026-10-23 09:28:50.616105590 -0700
+--- wall_review/baseline_rebuild_worlds_v2.py	2026-10-23 09:26:49.930024233 -0700
++++ wall_review/final_source_checkpoint/rebuild_worlds_v2.py	2026-10-23 09:52:02.837718408 -0700
 @@ -12,6 +12,9 @@
  OUT=ROOT+'/assets/models'; SHOTS=ROOT+'/screenshots'; os.makedirs(OUT,exist_ok=True)
  TAU=math.tau
@@ -10,7 +10,7 @@
  # Deliberate game-mesh tessellation: small curves need no film-resolution rings.
  _base_curve=curve
  def curve(name,points,mat,radius=.05):
-@@ -193,10 +196,50 @@
+@@ -193,10 +196,52 @@
        for j,(x,y,w,d) in enumerate([(-.46,-.48,.96,.94),(.50,-.49,.93,.93),(-.69,.48,.50,.93),(.28,.49,1.39,.94)]):
          box('Rounded dungeon paving',(x,y,-.012),(w-.025,d-.025,.065),p['ground'] if j%3 else p['stone_light'],.045)
      elif kind in ['wall','wall_b']:
@@ -19,7 +19,9 @@
 -          width=.84 if row==0 else .55;x=(i-(.5 if row==0 else 1))*(width+.035)
 -          box('Low stacked dungeon boulder',(x,0,.18+row*.28),(width,1.52,.34),p['stone_light'] if (i+row)%3 else p['stone'],.12)
 +      # Six squat ashlar stones, not parallel paving ribs. The original collision
-+      # silhouette stays x +/-0.86, y +/-0.76, z 0.01..0.63 (pipe unchanged).
++      # footprint stays x +/-0.86, y +/-0.76. Measured height fallback C:
++      # root-authorized top 0.80 vs frozen A 0.63 and B 0.88; lower course
++      # gains 0.17. Upper crown plan/materials and copper pipe stay unchanged.
 +      # Twelve-point rounded footprints and four bevel rings cost 92 triangles
 +      # per stone; both variants still consolidate into just two stone batches.
 +      side=material('V2 inferno soot plum masonry',(.20,.125,.255),roughness=.82)
@@ -53,19 +55,19 @@
 +          if f.index<=n or 2*n<f.index<=3*n:f.use_smooth=True
 +        return o
 +      split=.15 if kind=='wall' else -.12
-+      ashlar('Broad lower ashlar left',(-.86,split-.013,-.76,.76),.01,.31,0)
-+      ashlar('Broad lower ashlar right',(split+.013,.86,-.76,.76),.01,.305,1)
++      ashlar('Broad lower ashlar left',(-.86,split-.013,-.76,.76),.01,.48,0)
++      ashlar('Broad lower ashlar right',(split+.013,.86,-.76,.76),.01,.475,1)
 +      # Joints stagger across both axes rather than running front-to-back ribs.
 +      front_split=-.18 if kind=='wall' else .21
 +      back_split=.24 if kind=='wall' else -.25
-+      ashlar('Front left crown',(-.86,front_split-.016,-.76,-.025),.325,.63,2)
-+      ashlar('Front right crown',(front_split+.016,.86,-.76,-.025),.32,.605,3)
-+      ashlar('Rear left crown',(-.86,back_split-.016,.01,.76),.32,.605,4)
-+      ashlar('Rear right crown',(back_split+.016,.86,.01,.76),.325,.62,5)
++      ashlar('Front left crown',(-.86,front_split-.016,-.76,-.025),.495,.80,2)
++      ashlar('Front right crown',(front_split+.016,.86,-.76,-.025),.49,.775,3)
++      ashlar('Rear left crown',(-.86,back_split-.016,.01,.76),.49,.775,4)
++      ashlar('Rear right crown',(back_split+.016,.86,.01,.76),.495,.79,5)
        if kind=='wall_b':pipe(p,[(-.7,-.70,.4),(0,-.79,.48),(.65,-.70,.4)],.055)
      elif kind=='edge':
        for i in range(3):rock('Rounded exposed deep foundation',((i-1)*.65,0,-.48),(.48,.93,.49),p['dark'] if i%2 else p['stone'],i)
-@@ -498,11 +541,15 @@
+@@ -498,11 +543,15 @@
        for o in objs:o.location+=Vector((-1.3,.8,0))
      if not objs:return None
      root=parent_all(objs,t+'_'+kind);objs.append(root)
@@ -84,7 +86,7 @@
      return root
  
  
-@@ -553,7 +600,12 @@
+@@ -553,7 +602,12 @@
        root=make(t,k,p)
        if root:root.location=(60+i*26,0,0)
      preview(t,p)

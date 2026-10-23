@@ -1,10 +1,13 @@
-# Inferno wall masonry prototype — WIP source preservation
+# Inferno wall C0.80 — isolated WIP source preservation
 
-Frozen early source, 2026-10-23 16:39 UTC. Based on production main `32b74c8ee98d91ec4fa815020bc5686596a1c3a7`.
-Only inferno wall/wall_b readability is in scope; gameplay and other production assets are not authorized changes in this branch.
-The two source files match the author's frozen hashes and Python syntax compilation succeeds. Geometry, rendered appearance, gameplay integration and visual acceptance are pending for this early snapshot.
+Current frozen candidate: 2026-10-23 16:53 UTC. Root selected C0.80; final native rendering, camera/assets, semantic rebuild and independent review remain pending for this checkpoint. This is not a production/main promotion or user aesthetic acceptance.
 
-This isolated directory is ignored by the root Godot project. It is not a self-contained Blender project or a production implementation; do not run or apply it as a complete asset package. No GLB, .blend, PNG, audio, cache or user data is included. Existing binary-upload restrictions remain unchanged, and inherited production binaries remain incomplete.
+The source and patch update the earlier syntax-only backup preserved at `b0db72f235b04f0be5a8e9f48de15523a6bc5dce`. The branch retains its production baseline `32b74c8ee98d91ec4fa815020bc5686596a1c3a7`. Only this isolated ignored directory changes; no runtime, gameplay, camera, lighting, terrain or production assets are changed in the branch.
 
-Source SHA256: `5abe7353d687c347505e6d2cb97754d3efc61645b314c2e1cf79aee96a9643c0`.
-Patch SHA256: `f8fa5a00c304624b65396f47c165283cb3c270cebb7e512298e64ead26694341`.
+Read `STATUS.md` for the selected cosmetic tradeoff: some ivory locator-tooth surfaces are newly obscured. Do not claim zero occlusion. The core ring/portal/legal-center result is sampled, finite and not area-weighted, with portals at initial pose; rejected B0.88 is not this candidate.
+
+Author source SHA256: `d11994eaaf30cd29c2cc916e05dc8151137c788ca1c50af64811396e5f515021`.
+Patch SHA256: `68a0e1caac46a3d8929fa197689df5e932cd6c56b2e8b7d07798a42a51b6b859`.
+Author status SHA256: `f2141682c540674c4ecd8752a24c0021e2cc2f80a4f55bb76a8bc9eb49c43b87`.
+
+Python syntax was checked again while freezing this backup, without executing Blender. This directory is not a self-contained build; no GLB, .blend, image, audio, cache or user data is uploaded. Existing binary-upload restrictions and the inherited incomplete checkout remain unchanged.

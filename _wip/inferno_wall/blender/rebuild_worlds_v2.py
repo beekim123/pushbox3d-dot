@@ -197,7 +197,9 @@ def inferno_build(kind,p):
         box('Rounded dungeon paving',(x,y,-.012),(w-.025,d-.025,.065),p['ground'] if j%3 else p['stone_light'],.045)
     elif kind in ['wall','wall_b']:
       # Six squat ashlar stones, not parallel paving ribs. The original collision
-      # silhouette stays x +/-0.86, y +/-0.76, z 0.01..0.63 (pipe unchanged).
+      # footprint stays x +/-0.86, y +/-0.76. Measured height fallback C:
+      # root-authorized top 0.80 vs frozen A 0.63 and B 0.88; lower course
+      # gains 0.17. Upper crown plan/materials and copper pipe stay unchanged.
       # Twelve-point rounded footprints and four bevel rings cost 92 triangles
       # per stone; both variants still consolidate into just two stone batches.
       side=material('V2 inferno soot plum masonry',(.20,.125,.255),roughness=.82)
@@ -231,15 +233,15 @@ def inferno_build(kind,p):
           if f.index<=n or 2*n<f.index<=3*n:f.use_smooth=True
         return o
       split=.15 if kind=='wall' else -.12
-      ashlar('Broad lower ashlar left',(-.86,split-.013,-.76,.76),.01,.31,0)
-      ashlar('Broad lower ashlar right',(split+.013,.86,-.76,.76),.01,.305,1)
+      ashlar('Broad lower ashlar left',(-.86,split-.013,-.76,.76),.01,.48,0)
+      ashlar('Broad lower ashlar right',(split+.013,.86,-.76,.76),.01,.475,1)
       # Joints stagger across both axes rather than running front-to-back ribs.
       front_split=-.18 if kind=='wall' else .21
       back_split=.24 if kind=='wall' else -.25
-      ashlar('Front left crown',(-.86,front_split-.016,-.76,-.025),.325,.63,2)
-      ashlar('Front right crown',(front_split+.016,.86,-.76,-.025),.32,.605,3)
-      ashlar('Rear left crown',(-.86,back_split-.016,.01,.76),.32,.605,4)
-      ashlar('Rear right crown',(back_split+.016,.86,.01,.76),.325,.62,5)
+      ashlar('Front left crown',(-.86,front_split-.016,-.76,-.025),.495,.80,2)
+      ashlar('Front right crown',(front_split+.016,.86,-.76,-.025),.49,.775,3)
+      ashlar('Rear left crown',(-.86,back_split-.016,.01,.76),.49,.775,4)
+      ashlar('Rear right crown',(back_split+.016,.86,.01,.76),.495,.79,5)
       if kind=='wall_b':pipe(p,[(-.7,-.70,.4),(0,-.79,.48),(.65,-.70,.4)],.055)
     elif kind=='edge':
       for i in range(3):rock('Rounded exposed deep foundation',((i-1)*.65,0,-.48),(.48,.93,.49),p['dark'] if i%2 else p['stone'],i)
