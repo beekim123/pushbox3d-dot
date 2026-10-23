@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "production_project": "/workspace/scratch/e4cad742399c/fourfold_atelier",
+  "integration_manifest_sha256": "fc31becb014cccdfcc3bcd9aa7e58102a4ff36735e0bfe8c7f2f91a548832cd9",
+  "verified_files_before_after": 89,
+  "metadata_exact": true,
+  "all_rgb_pixels_equal": true,
+  "captures": [
+    {
+      "id": "inferno_10_high",
+      "candidate_sha256": "32b5fb37c0c44e1928588193b872f9ec26a6de4ea8ee2676bd4b8e762c1ba0d1",
+      "production_sha256": "32b5fb37c0c44e1928588193b872f9ec26a6de4ea8ee2676bd4b8e762c1ba0d1",
+      "png_bytes_equal": true,
+      "rgb_pixels_equal": true,
+      "metadata_exact": true
+    },
+    {
+      "id": "inferno_23_high",
+      "candidate_sha256": "2875eb3de87f3bad53cd997a42cde9e10e43a51ac7b766f373f7ac63646d7224",
+      "production_sha256": "2875eb3de87f3bad53cd997a42cde9e10e43a51ac7b766f373f7ac63646d7224",
+      "png_bytes_equal": true,
+      "rgb_pixels_equal": true,
+      "metadata_exact": true
+    },
+    {
+      "id": "inferno_45_high",
+      "candidate_sha256": "1714117215e94c2b8f5e214abda1944f91097df229c7a5dc749cd835145a33a5",
+      "production_sha256": "1714117215e94c2b8f5e214abda1944f91097df229c7a5dc749cd835145a33a5",
+      "png_bytes_equal": true,
+      "rgb_pixels_equal": true,
+      "metadata_exact": true
+    }
+  ],
+  "engine": "4.7.2-stable (official)",
+  "display": "X11",
+  "adapter": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "renderer": "gl_compatibility",
+  "known_warning": "Unsupported native llvmpipe VSync mode change; capture passes.",
+  "no_source_runtime_model_edits_by_capture": true
+}

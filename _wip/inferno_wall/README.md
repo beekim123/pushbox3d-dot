@@ -25,3 +25,11 @@ These are text backups, not a self-contained successful rerun from this checkout
 `FINAL_C80_INTEGRATION_MANIFEST.json` now pins the photographed C0.80 four core files, recommended stats and clean QA file hashes. The author handoff is preserved exactly as `AUTHOR_README.md`; its original relative QA paths remain usable with a separately complete project/evidence bundle. The final independent review is still not included in this checkpoint; production integration and main publication require separate authorization.
 
 The earlier pending-manifest note above is historical. No listed binary is implicitly published by its hash: GLB/.blend/PNG are still absent from this WIP bundle. The cosmetic locator-tooth tradeoff remains explicit, not zero occlusion or user aesthetic acceptance.
+
+## Candidate review and production comparison — 2026-10-23 17:09 UTC
+
+The frozen independent candidate review and its manifest are now included under `reports/`. This closes the earlier missing-candidate-review note: internal C0.80 visual/geometry review passes under the revised gate, with cosmetic ivory tooth clipping explicitly retained.
+
+`PRODUCTION_NATIVE_VERIFICATION.json` reports three production high-quality cases (10/23/45), exact row metadata and PNG byte equality against accepted candidate images; 89 protected files were checked unchanged. This is distinct from the candidate's high/low coverage. The final independent **production addendum** is not yet included in this checkpoint.
+
+WIP publication still changes only this isolated directory. These reports do not authorize main promotion, binary uploading, claim all-surface zero occlusion, or substitute for user aesthetic acceptance. Actual production integration is coordinated separately by root.
